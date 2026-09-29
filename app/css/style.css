@@ -281,27 +281,22 @@ details summary { cursor: pointer; color: var(--accent); font-weight: 600; paddi
 .ask-meta { font-size: .8rem; color: var(--muted); }
 .ask:hover .ask-q { color: var(--accent); }
 
-/* A past paper shown in the app, opened at one question */
-.pnote { font-size: .9rem; padding: 10px 12px; border-radius: 10px; background: var(--surface-2); margin: 0 0 6px; }
-.pnote-s { margin: 0 0 4px; }
-.paper-view { display: grid; gap: 2px; margin: 10px 0 14px; }
-.ph { margin: 16px 0 4px; }
-.pq { display: grid; grid-template-columns: auto 1fr; gap: 8px; padding: 10px; border-radius: 12px; scroll-margin-top: 80px; }
-.pq.hit { background: var(--accent-soft); box-shadow: inset 3px 0 0 var(--accent); }
-.pq:has(.pimg) { grid-template-columns: 1fr; gap: 0; }
-.pq-n { font-weight: 700; min-width: 18px; }
-.pq-body { min-width: 0; }
-.pp { margin: 0 0 8px; line-height: 1.5; }
+/* One past question shown in the app */
+.qv-meta { display: flex; flex-wrap: wrap; gap: 6px 14px; margin: 0 0 4px; font-size: .9rem; }
+.qv { margin: 6px 0 14px; }
+.qv-pdf { display: block; text-align: center; margin-bottom: 10px; }
+.pp { margin: 0 0 8px; line-height: 1.55; }
 .pp:last-child { margin-bottom: 0; }
-.pp.mark { background: var(--surface); border-radius: 6px; padding: 4px 8px; margin-left: -8px; margin-right: -8px; font-weight: 600; }
+.pp.mark { background: var(--accent-soft); border-radius: 8px; padding: 6px 10px; margin-left: -10px; margin-right: -10px; font-weight: 600; box-shadow: inset 3px 0 0 var(--accent); }
 .pm { font-size: .78rem; font-weight: 600; color: var(--muted); white-space: nowrap; }
+.pm::after { content: " marks"; }
 .por { margin: 2px 0 8px; font-size: .8rem; font-weight: 700; color: var(--muted); text-transform: uppercase; letter-spacing: .06em; }
 .ptable {
-  margin: 4px 0 8px -26px; padding: 10px; border-radius: 8px; background: var(--surface-2); overflow-x: auto;
-  font: .76rem/1.45 ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace; white-space: pre;
+  margin: 4px 0 8px; padding: 10px; border-radius: 8px; background: var(--surface-2); overflow-x: auto;
+  font: .8rem/1.45 ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace; white-space: pre;
 }
-.popts { margin: 6px 0 0; padding-left: 22px; }
-.popts li { margin: 2px 0; }
+.popts { margin: 8px 0 0; padding-left: 22px; }
+.popts li { margin: 3px 0; }
 .pimg { display: block; width: 100%; max-width: 572px; height: auto; filter: var(--img-filter); mix-blend-mode: var(--img-blend); }
 
 .footer { padding-bottom: 28px; font-size: .8rem; color: var(--muted); }

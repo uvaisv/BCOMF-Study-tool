@@ -123,7 +123,7 @@
     if (course) {
       const p = course.pattern;
       return p.mcq ? `${p.time} · ${p.marks} marks · ${p.questions} MCQs, all compulsory`
-        : p.parts ? `${p.time} · ${p.marks} marks · ${pickText(p)}` : `${p.time} · ${p.marks} marks · any ${p.attempt} of ${p.questions} questions`;
+        : p.parts || p.pick ? `${p.time} · ${p.marks} marks · ${pickText(p)}` : `${p.time} · ${p.marks} marks · any ${p.attempt} of ${p.questions} questions`;
     }
     return c.exam ? `${c.exam.time} · ${c.exam.marks} marks · ${c.exam.format}` : "";
   }
@@ -134,8 +134,9 @@
       <p class="muted small head-meta">${esc(c.code)} · Year ${c.year}${examLine(c, course) ? ` · ${esc(examLine(c, course))}` : ""}</p>`;
   }
 
-  // "Q1 + 2 from Part A + 2 from Part B" or "any 5 questions".
+  // "Q1 + 2 from Part A + 2 from Part B" or "any 5 questions" (pattern.pick says it when neither fits).
   function pickText(p) {
+    if (p.pick) return p.pick;
     if (p.mcq) return `all ${p.questions} questions`;
     if (!p.parts) return `any ${p.attempt} questions`;
     return p.parts.map((g) => g.attempt === g.of
@@ -318,9 +319,10 @@
     });
   }
 
-  /* ---------- paper view ---------- */
-  // A past paper shown in the app (no download), opened at one question.
-  // Text comes from data/text/<CODE>.json; ^{..} and _{..} mark super- and subscripts.
+  /* ---------- past question view ---------- */
+  // One past question shown in the app (no download): term, number, marks and the question
+  // as printed, with the part asked marked. Text comes from data/text/<CODE>.json;
+  // ^{..} and _{..} mark super- and subscripts.
   const fmt = (s) => esc(s).replace(/\^\{([^}]*)\}/g, "<sup>$1</sup>").replace(/_\{([^}]*)\}/g, "<sub>$1</sub>");
 
   // "8(b)" → question 8, part b; "2(a,b)", "6(a–c)", "1(ii,iii)", "1 (or)".
@@ -338,53 +340,59 @@
     return { n: +m[1], subs };
   }
 
-  function paperQuestion(q, ref) {
-    const hit = q.n === ref.n;
+  // The question's body, and the marks printed for the part asked (or the whole question).
+  function questionBody(q, ref) {
     let afterOr = false;
+    const marked = [];
     const blocks = (q.b || []).map((b) => {
       if (b.or) { afterOr = true; return `<p class="por">Or</p>`; }
       if (b.t) return `<pre class="ptable">${fmt(b.t.join("\n"))}</pre>`;
-      const mark = hit && ((b.s && ref.subs.includes(b.s)) || (ref.alt && afterOr));
-      return `<p class="pp${mark ? " mark" : ""}">${fmt(b.p)}${b.m ? ` <span class="pm">${esc(b.m)} marks</span>` : ""}</p>`;
+      const mark = (b.s && ref.subs.includes(b.s)) || (ref.alt && afterOr);
+      if (mark) marked.push(b);
+      return `<p class="pp${mark ? " mark" : ""}">${fmt(b.p)}${b.m ? ` <span class="pm">${esc(b.m)}</span>` : ""}</p>`;
     }).join("");
     const opts = q.o ? `<ol class="popts" type="a">${q.o.map((o) => `<li>${fmt(o)}</li>`).join("")}</ol>` : "";
-    const imgs = (q.img || []).map((i) => `<img class="pimg" src="${esc(i.src)}" width="${i.w}" height="${i.h}" alt="Question ${q.n}" loading="${hit ? "eager" : "lazy"}">`).join("");
-    return `<section class="pq${hit ? " hit" : ""}" id="q${q.n}">${imgs ? imgs : `<span class="pq-n">${q.n}.</span><div class="pq-body">${blocks}${opts}</div>`}</section>`;
+    const imgs = (q.img || []).map((i) => `<img class="pimg" src="${esc(i.src)}" width="${i.w}" height="${i.h}" alt="Question ${q.n} as printed">`).join("");
+    // Marks as printed: the part asked if it has its own, else the whole question's
+    // (its first line, or the parts' marks added up when only the parts carry them).
+    const printed = (list) => list.map((b) => b.m).filter(Boolean);
+    const all = (q.b || []).filter((b) => b.p);
+    const whole = all.length && all[0].m ? [all[0].m] : printed(all);
+    const m = printed(marked).length ? printed(marked) : whole.slice(0, marked.length ? 1 : whole.length);
+    return { html: imgs || `${blocks}${opts}`, marks: m.join(" + ") };
   }
 
-  async function viewPaper(code, s, refText) {
+  async function viewQuestion(code, s, refText) {
     const { c, course } = await getCourse(code);
     if (!course) return viewNotFound();
     const [papers, text] = await Promise.all([load("data/papers.json"), load(`data/text/${code}.json`).catch(() => null)]);
     const pdf = ((papers[code] || []).find((p) => p.s === s) || {}).url;
     const paper = text && text.papers[s];
     const ref = parseRef(refText);
-    const back = prevHash ? `<a class="back" href="#${prevHash}" id="back">← Back</a>` : `<a class="back" href="#/c/${code}">← ${esc(c.title)}</a>`;
-    const pdfLink = pdf ? `<a href="${esc(pdf)}" target="_blank" rel="noopener">Download the PDF</a>` : "";
-    if (!paper) {
-      app.innerHTML = `${back}<h1>${sessionLabel(s)} paper</h1>
-        <p class="muted">This paper isn't available as text yet.${pdfLink ? ` ${pdfLink}` : ""}</p>`;
-      return false;
-    }
-    const exact = paper.mcq || course.topics.every((t) => t.kind === "theory") || (paper.items || []).some((i) => i.img);
-    app.innerHTML = `${back}
-      <h1>${sessionLabel(s)} paper</h1>
-      <p class="muted small head-meta">${esc(c.code)} · ${esc(c.title)}${paper.time ? ` · ${esc(paper.time)}` : ""}${paper.marks ? ` · ${esc(paper.marks)} marks` : ""}</p>
-      ${paper.note ? `<p class="pnote">${fmt(paper.note)}</p>` : ""}
-      <div class="paper-view">${paper.items.map((it) => it.h
-        ? `<h3 class="ph">${esc(it.h)}</h3>${it.note ? `<p class="small muted pnote-s">${fmt(it.note)}</p>` : ""}`
-        : paperQuestion(it, ref)).join("")}</div>
-      <p class="small muted">Text from the official paper${exact ? "" : "; tables and formulas may look slightly different in print"}.${pdfLink ? ` ${pdfLink}` : ""}</p>`;
+    const q = paper && paper.items.find((it) => it.n === ref.n);
+    const label = (refText || "").replace(/\s*\(or\)$/, " (Or)");
+    let section = "";
+    if (paper && q) for (const it of paper.items) { if (it === q) break; if (it.h) section = it.h; }
+    const body = q ? questionBody(q, ref) : null;
+    const known = course.questions.find((x) => x.s === s && String(x.q) === refText);
+    const markText = paper && paper.mcq ? "1 mark" : body && body.marks ? `${body.marks} marks` : known ? `${marks(known.m)} marks` : "";
+    const exact = (paper && paper.mcq) || course.topics.every((t) => t.kind === "theory") || (q && q.img);
+    app.innerHTML = `
+      ${prevHash ? `<a class="back" href="#${prevHash}" id="back">← Back</a>` : `<a class="back" href="#/c/${code}">← ${esc(c.title)}</a>`}
+      <h1>Question ${esc(label)}</h1>
+      <p class="qv-meta"><span><strong>${sessionLabel(s)}</strong> term-end exam</span>${markText ? `<span><strong>${esc(markText)}</strong></span>` : ""}${section ? `<span>${esc(section)}</span>` : ""}</p>
+      <p class="muted small head-meta">${esc(c.code)} · ${esc(c.title)}</p>
+      ${q ? `<section class="card qv">${body.html}</section>`
+        : `<p class="muted">This question isn't available as text yet.</p>`}
+      ${pdf ? `<a class="btn secondary qv-pdf" href="${esc(pdf)}" target="_blank" rel="noopener">Download full paper (PDF)</a>` : ""}
+      ${q && !exact ? `<p class="small muted">Text from the official paper; tables and formulas may look slightly different in print.</p>` : ""}`;
     // Wide tables (trial balances) shrink to fit the screen rather than hide columns.
     app.querySelectorAll(".ptable").forEach((t) => {
       const fit = t.clientWidth / t.scrollWidth;
-      if (fit < 1) t.style.fontSize = `${Math.max(0.6, 0.76 * fit * 0.97).toFixed(3)}rem`;
+      if (fit < 1) t.style.fontSize = `${Math.max(0.6, 0.8 * fit * 0.97).toFixed(3)}rem`;
     });
     const backLink = app.querySelector("#back");
     if (backLink) backLink.addEventListener("click", (e) => { e.preventDefault(); history.back(); });
-    const target = app.querySelector(".pq.hit");
-    if (target) { target.scrollIntoView({ block: "start" }); return true; }
-    return false;
   }
 
   /* ---------- planner ---------- */
@@ -492,7 +500,8 @@
     const { c, course, analysis } = await getCourse(code);
     if (!course) return viewNotFound();
     const p = course.pattern;
-    const perMark = Math.round((155 / p.marks) * 10) / 10;
+    // Writing time: the paper's time less 10 minutes to choose and 15 to check.
+    const perMark = Math.round((((parseFloat(p.time) || 3) * 60 - 25) / p.marks) * 10) / 10;
     const eachList = [...new Set((p.parts || [p]).map((g) => g.each || p.each))].sort((a, b) => b - a);
     const top = analysis.topics.slice(0, 4).map((t) => t.name).join(", ");
     const tips = course.examTips || {};
@@ -553,19 +562,18 @@
   }
 
   /* ---------- router ---------- */
-  let prevHash = null;   // the page before this one, for the paper view's Back link
+  let prevHash = null;   // the page before this one, for the question view's Back link
   let thisHash = null;
   async function route() {
     prevHash = thisHash;
     thisHash = location.hash.replace(/^#/, "") || "/";
     const parts = location.hash.replace(/^#\/?/, "").split("/").filter(Boolean).map(decodeURIComponent);
-    let scrolled = false;  // a view that scrolls to something itself returns true
     try {
       if (!parts.length) await viewHome();
       else if (parts[0] === "c" && parts[1]) {
         const code = parts[1];
         if (parts[2] === "t" && parts[3]) await viewTopic(code, parts[3]);
-        else if (parts[2] === "paper" && parts[3]) scrolled = await viewPaper(code, parts[3], parts[4]);
+        else if (parts[2] === "paper" && parts[3]) await viewQuestion(code, parts[3], parts[4]);
         else if (parts[2] === "plan") await viewPlan(code);
         else if (parts[2] === "exam") await viewExam(code);
         else if (parts[2] === "papers") await viewPapers(code);
@@ -575,7 +583,7 @@
       app.innerHTML = `<h1>Couldn't load this page</h1><p class="muted">Check your connection and try again.</p>`;
       console.error(err);
     }
-    if (!scrolled) window.scrollTo(0, 0);
+    window.scrollTo(0, 0);
     app.focus({ preventScroll: true });
   }
 
