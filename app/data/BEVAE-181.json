@@ -1,0 +1,5415 @@
+{
+ "code": "BEVAE-181",
+ "title": "Environmental Studies",
+ "pattern": {
+  "time": "2 hours",
+  "marks": 50,
+  "questions": 50,
+  "attempt": 50,
+  "each": 1,
+  "mcq": true,
+  "spare": 0.7,
+  "summary": "50 multiple-choice questions, 1 mark each, all compulsory, marked on an OMR sheet. About 2 minutes per question."
+ },
+ "blocksOfficial": false,
+ "sessions": [
+  "2020-12",
+  "2021-12",
+  "2022-06",
+  "2022-12",
+  "2023-06",
+  "2023-12",
+  "2024-06",
+  "2024-12",
+  "2025-06",
+  "2025-12",
+  "2026-06"
+ ],
+ "sessionNotes": {
+  "2020-12": "Held in February 2021 (COVID).",
+  "2021-06": "No paper in IGNOU's archive.",
+  "2025-06": "Questions 47 and 49 could not be read from the PDF.",
+  "2026-06": "Question 49 could not be read from the PDF."
+ },
+ "examTips": {
+  "mcq": [
+   "The questions follow the order of the syllabus: environment basics first, laws and ethics at the end.",
+   "Many questions repeat word for word — go through the 'Asked again and again' list on the course page first.",
+   "Answer every question: leave nothing blank on the OMR sheet.",
+   "For 'which is NOT' questions, cross out the three that fit — the one left is the answer.",
+   "Make a one-page list of years (Acts, conventions), places (NGT benches, wetlands, biogeographic zones) and names (movements) and revise it on exam day."
+  ]
+ },
+ "blocks": [
+  {
+   "no": 1,
+   "title": "Environment & Ecosystems"
+  },
+  {
+   "no": 2,
+   "title": "Natural Resources"
+  },
+  {
+   "no": 3,
+   "title": "Biodiversity"
+  },
+  {
+   "no": 4,
+   "title": "Pollution & Waste"
+  },
+  {
+   "no": 5,
+   "title": "Global Issues & Disasters"
+  },
+  {
+   "no": 6,
+   "title": "Laws, Society & Health"
+  }
+ ],
+ "topics": [
+  {
+   "id": "global-issues",
+   "name": "Global Issues: Climate, Ozone, Acid Rain & Disasters",
+   "block": 5,
+   "kind": "theory",
+   "summary": "Greenhouse gases, climate change, ozone depletion, acid rain, international conventions and natural disasters.",
+   "points": [
+    "Greenhouse gases: carbon dioxide, methane, nitrous oxide, CFCs and water vapour. Sulphur dioxide is not a greenhouse gas.",
+    "Ozone layer is in the stratosphere; CFCs deplete it. Ultraviolet radiation causes skin cancer and cataract.",
+    "Normal rain is slightly acidic (pH about 5.6); acid rain has pH below 5.6 — caused by SO₂ and NOₓ.",
+    "Vienna Convention (1985) and Montreal Protocol (1987): ozone layer. UNFCCC (1992, Rio): climate. Kyoto Protocol (1997), Paris Agreement (2015).",
+    "IPCC (Intergovernmental Panel on Climate Change) was set up in 1988.",
+    "Basel Convention: transboundary movement of hazardous wastes. Ramsar (1971): wetlands. CITES: trade in endangered species.",
+    "Disasters: earthquakes, floods, cyclones, droughts, landslides, tsunamis. Asia is the region most prone to natural calamities. Seismic Zone V (highest risk) includes the North-East, Kachchh and parts of the Himalaya."
+   ],
+   "mistakes": [
+    "Confusing the Montreal Protocol (ozone) with the Kyoto Protocol (greenhouse gases)."
+   ]
+  },
+  {
+   "id": "biodiversity",
+   "name": "Biodiversity & Its Conservation",
+   "block": 3,
+   "kind": "theory",
+   "summary": "Levels and values of biodiversity, India as a megadiverse country, biogeographic zones, threats, invasive species, in-situ and ex-situ conservation.",
+   "points": [
+    "Levels: genetic, species and ecosystem diversity.",
+    "Values: direct use (consumptive, productive), indirect use (ecosystem services such as pollination, watershed protection), non-use (option, bequest, existence).",
+    "India is one of the 17 megadiverse countries, with about 2.4% of the world's land and 7–8% of recorded species; it has 4 of the world's biodiversity hotspots (Himalaya, Indo-Burma, Western Ghats–Sri Lanka, Sundaland/Nicobar).",
+    "India has 10 biogeographic zones; the Deccan Peninsula is the largest; the Trans-Himalaya zone is in Ladakh.",
+    "Tropical rain forests hold more than half of the world's plant species.",
+    "Threats: habitat loss, invasive species, pollution, over-exploitation, climate change. Invasive species in India: Parthenium (congress weed — causes skin allergy), water hyacinth, Lantana, Prosopis (mesquite).",
+    "In-situ conservation: national parks, wildlife sanctuaries, biosphere reserves (core, buffer, transition zones). UNESCO's MAB = Man and the Biosphere programme.",
+    "Ex-situ conservation: zoos, botanical gardens, seed and gene banks (genetic insurance), tissue culture, artificial insemination."
+   ],
+   "mistakes": []
+  },
+  {
+   "id": "pollution",
+   "name": "Pollution & Waste Management",
+   "block": 4,
+   "kind": "theory",
+   "summary": "Air, water, noise and soil pollution, pollution standards and tests, solid and hazardous waste management.",
+   "points": [
+    "Primary pollutants are emitted directly (SO₂, CO, NOₓ, hydrocarbons, particulates); secondary pollutants form in the air (ozone, PAN, smog, sulphuric and nitric acid).",
+    "Natural pollutants: pollen, volcanic gases, dust, decaying organic matter.",
+    "Point sources (chimneys, discharge pipes) vs non-point sources (run-off from farms and cities).",
+    "RSPM/PM10 standard in India: 60 µg/m³ (annual average).",
+    "Taj Trapezium Zone around Agra protects the Taj Mahal from air pollution (Mathura refinery, foundries, brick kilns, glass factories).",
+    "Water quality: BOD and COD (organic pollution), TDS = total dissolved solids, MPN test detects coliform bacteria such as E. coli.",
+    "Eutrophication: nutrient overload causes algal blooms. Biomagnification: toxins (DDT, mercury) increase up the food chain.",
+    "Noise is measured in decibels, dB(A).",
+    "Sludge gas (biogas) is mostly methane.",
+    "Waste hierarchy: reduce, reuse, recycle, recover, dispose. Landfill is disposal, not a waste-minimisation method. Treatment: physical (sedimentation, filtration), chemical, biological (composting, activated sludge).",
+    "Disasters: Minamata (mercury), Itai-itai (cadmium), Bhopal gas tragedy 1984 (methyl isocyanate)."
+   ],
+   "mistakes": []
+  },
+  {
+   "id": "resources",
+   "name": "Natural Resources: Water, Land & Energy",
+   "block": 2,
+   "kind": "theory",
+   "summary": "Water on earth and its cycle, soils and erosion, forests, minerals, conventional and non-conventional energy.",
+   "points": [
+    "About 97.5% of the earth's water is salt water and 2.5% fresh; most fresh water is frozen — less than 1% is readily accessible.",
+    "Sublimation: ice changes directly to vapour. Transpiration: water loss as vapour from plants.",
+    "Aquifer: a water-bearing layer of rock or soil that stores groundwater.",
+    "Black (regur) soil is found in the Deccan and Malwa plateau. Ravines form by gully erosion from running water.",
+    "Resources: renewable (forests, wildlife, water) vs non-renewable (minerals, fossil fuels).",
+    "Conventional energy: coal, petroleum, natural gas, (large) hydro, atomic. Non-conventional: solar, wind, geothermal, tidal, biomass.",
+    "China is the world's largest coal producer. Bombay High is India's largest oil-producing field.",
+    "A biomass gasifier converts solid fuel into gaseous fuel. Hydrogen is the best fuel for a fuel cell.",
+    "Joint Forest Management began in West Bengal (Arabari)."
+   ],
+   "mistakes": []
+  },
+  {
+   "id": "ecosystem",
+   "name": "Ecosystem Structure, Energy Flow & Cycles",
+   "block": 1,
+   "kind": "theory",
+   "summary": "Producers, consumers and decomposers, trophic levels and food chains, energy flow, biogeochemical cycles, succession.",
+   "points": [
+    "Producers (autotrophs) make food; consumers are herbivores (primary), carnivores (secondary, tertiary); decomposers are saprophytes (saprotrophs).",
+    "Chemosynthetic bacteria are autotrophs.",
+    "Food chains: grazing and detritus. Only about 10% of energy passes to the next trophic level (Lindeman's 10% law); the pyramid of energy is always upright.",
+    "Biogeochemical cycles: gaseous (nitrogen, carbon, oxygen) and sedimentary (phosphorus, sulphur). The atmosphere is the main nitrogen reservoir; sediments hold most sulphur.",
+    "Ecological succession: pioneer community → intermediate (seral) stages → climax community.",
+    "Niche: an organism's role; habitat: where it lives; ecotone: transition zone between two ecosystems.",
+    "Estuaries are transition zones of very high productivity."
+   ],
+   "mistakes": []
+  },
+  {
+   "id": "major-ecosystems",
+   "name": "Forest, Grassland, Desert & Aquatic Ecosystems",
+   "block": 1,
+   "kind": "theory",
+   "summary": "Types of forests and their features, desert adaptations, lentic and lotic waters, aquatic organisms, wetlands and seas.",
+   "points": [
+    "Coniferous (boreal) forests: spruce, fir, pine; soil is acidic and poor in minerals.",
+    "Temperate deciduous forests shed leaves in winter; tropical rain forests have the highest diversity.",
+    "Desert animals conserve water — some excrete very concentrated urine.",
+    "Lentic (standing) waters: lakes, ponds, wetlands, reservoirs. Lotic (flowing) waters: rivers and streams.",
+    "Aquatic life: plankton (drifting), nekton (swimming), neuston (air–water surface), benthos (bottom), periphyton (attached to surfaces).",
+    "Average salinity of sea water is about 35 parts per thousand (3.5%).",
+    "Wetlands: Chilika (Odisha), Harike (Punjab), Sambhar (Rajasthan), Loktak (Manipur), Sundarbans (West Bengal)."
+   ],
+   "mistakes": []
+  },
+  {
+   "id": "env-basics",
+   "name": "Environment, Population & Sustainable Development",
+   "block": 1,
+   "kind": "theory",
+   "summary": "Components of the environment, human–environment ideas (determinism, possibilism), population growth, carrying capacity, SDGs.",
+   "points": [
+    "Environment: all biotic (living) and abiotic (non-living) surroundings.",
+    "Components: lithosphere (land), hydrosphere (water), atmosphere (air), biosphere (life), cryosphere (ice).",
+    "Natural environment (forests, lakes) vs human-modified (crop fields, plantations) vs human-made (cities, industries).",
+    "Determinism (nature controls humans): Friedrich Ratzel; popularised by Ellen Churchill Semple and Ellsworth Huntington.",
+    "Possibilism (humans choose among nature's possibilities): associated with Vidal de la Blache; the term was coined by Lucien Febvre.",
+    "Demographic transition: movement from high birth and death rates (growing population) to low rates (stable population).",
+    "Carrying capacity: the maximum population an environment can support.",
+    "Sustainable Development Goals: 17 goals adopted by the UN in 2015 for 2030 (e.g. climate action, quality education, gender equality, good health and well-being)."
+   ],
+   "mistakes": []
+  },
+  {
+   "id": "laws-policy",
+   "name": "Environmental Laws, Institutions & Constitution",
+   "block": 6,
+   "kind": "theory",
+   "summary": "Indian environmental Acts with years, constitutional provisions, NGT, NBA, ENVIS, ministries.",
+   "points": [
+    "Wildlife (Protection) Act 1972; Water Act 1974; Forest (Conservation) Act 1980; Air (Prevention and Control of Pollution) Act 1981 — amended in 1987 to include noise; Environment (Protection) Act 1986; Biological Diversity Act 2002; Forest Rights Act 2006 (tribal and forest dwellers); National Green Tribunal Act 2010.",
+    "42nd Amendment (1976) added Article 48A (the State shall protect and improve the environment) and Article 51A(g) (citizens' duty to protect nature).",
+    "National Biodiversity Authority (NBA), Chennai, was set up under the Biological Diversity Act.",
+    "National Green Tribunal: principal bench in New Delhi; zonal benches in Bhopal, Pune, Kolkata and Chennai; decides environmental cases quickly.",
+    "ENVIS: Environmental Information System, a network of centres under the Ministry of Environment.",
+    "The Ministry of Environment and Forests was created in 1985; renamed MoEFCC in 2014.",
+    "Central Pollution Control Board (CPCB) was set up in 1974 under the Water Act."
+   ],
+   "mistakes": [
+    "Mixing up Act years — make a one-line list and revise it on exam day."
+   ]
+  },
+  {
+   "id": "society-ethics",
+   "name": "Environmental Movements, Ethics & Justice",
+   "block": 6,
+   "kind": "theory",
+   "summary": "Chipko, Appiko, Silent Valley and other movements; views of nature; environmental ethics and justice.",
+   "points": [
+    "Chipko (Uttarakhand, 1973): Chandi Prasad Bhatt, Sunderlal Bahuguna, Gaura Devi.",
+    "Appiko (Karnataka, 1983): Panduranga Hegde. Bishnoi sacrifice (1730): Amrita Devi.",
+    "Silent Valley (Kerala): the valley of the Kunthipuzha river; the movement stopped a hydro project.",
+    "Narmada Bachao Andolan: Medha Patkar, Baba Amte.",
+    "Views of nature: Indian/Eastern (nature as mother, to be respected), Western (dominion over nature); ecofeminism arose as an alternative to patriarchal domination of nature.",
+    "Anthropocentrism (humans matter most) vs biocentrism (all living beings have value) vs ecocentrism (whole ecosystems have value).",
+    "Environmental justice: no group should bear an unfair share of environmental harm; holding meetings in remote places or using only English material excludes people (procedural injustice).",
+    "Stewardship: a sense of responsibility for caring for nature."
+   ],
+   "mistakes": []
+  },
+  {
+   "id": "health",
+   "name": "Environment & Human Health",
+   "block": 6,
+   "kind": "theory",
+   "summary": "WHO definition of health, aetiology and epidemiology, genetic and behavioural influences on disease.",
+   "points": [
+    "WHO: health is a state of complete physical, mental and social well-being, not merely the absence of disease or infirmity.",
+    "Aetiology: the study of the cause (origin) of disease. Epidemiology: the study of how diseases spread in populations.",
+    "Genetic diseases: haemophilia, sickle-cell anaemia, thalassaemia, Down's syndrome (mongolism).",
+    "Behavioural influences: smoking, tobacco chewing, alcoholism, diet, lack of exercise.",
+    "Malaria is infectious (a parasite spread by mosquitoes), not genetic."
+   ],
+   "mistakes": []
+  }
+ ],
+ "repeated": [
+  {
+   "t": "‘Sludge gas’ largely consists of",
+   "opts": [
+    "Carbon dioxide",
+    "Sulphur dioxide",
+    "Methane",
+    "Hydrogen sulphide"
+   ],
+   "sessions": [
+    "2022-06",
+    "2022-12",
+    "2024-06",
+    "2024-12",
+    "2025-12",
+    "2026-06"
+   ],
+   "topic": "pollution"
+  },
+  {
+   "t": "Which of the following is not an ENVIS centre",
+   "opts": [
+    "National Institute of Occupational Health (NIOH), Ahmedabad",
+    "Centre for Theoretical Studies (CTS) Indian Institute of Science, Bengaluru",
+    "All India Institute of Medical Sciences, New Delhi",
+    "Industrial Toxicology Research Centre (ITCR), Lucknow"
+   ],
+   "sessions": [
+    "2022-06",
+    "2022-12",
+    "2023-12"
+   ],
+   "topic": "laws-policy"
+  },
+  {
+   "t": "Which of the following is not one of the seventeen Sustainable Development Goals",
+   "opts": [
+    "Climate action",
+    "Quality health care",
+    "Quality education",
+    "Gender equality"
+   ],
+   "sessions": [
+    "2021-12",
+    "2022-12",
+    "2024-06"
+   ],
+   "topic": "env-basics"
+  },
+  {
+   "t": "Which one of the following has maximum genetic diversity in India",
+   "opts": [
+    "Tea",
+    "Teak",
+    "Mango",
+    "Wheat"
+   ],
+   "sessions": [
+    "2020-12",
+    "2024-06",
+    "2024-12"
+   ],
+   "topic": "biodiversity"
+  },
+  {
+   "t": "Which one of the following is not a waste minimisation method",
+   "opts": [
+    "Process modification",
+    "Landfill",
+    "Waste segregation",
+    "Waste minimisation"
+   ],
+   "sessions": [
+    "2020-12",
+    "2023-12",
+    "2024-12"
+   ],
+   "topic": "pollution"
+  },
+  {
+   "t": "Which of the following is a non-renewable resource",
+   "opts": [
+    "Wildlife",
+    "Mineral deposits",
+    "Aquatic life",
+    "Forest"
+   ],
+   "sessions": [
+    "2022-12",
+    "2023-12",
+    "2024-12"
+   ],
+   "topic": "biodiversity"
+  },
+  {
+   "t": "Which one the following is a human modified environment",
+   "opts": [
+    "Cities",
+    "Industries",
+    "Plantations",
+    "Crop fields"
+   ],
+   "sessions": [
+    "2022-12",
+    "2024-12",
+    "2025-06"
+   ],
+   "topic": "env-basics"
+  },
+  {
+   "t": "The most suitable fuel for a fuel cell is",
+   "opts": [
+    "Hydrogen",
+    "Nitrogen",
+    "Water",
+    "Carbon dioxide"
+   ],
+   "sessions": [
+    "2020-12",
+    "2024-06",
+    "2025-12"
+   ],
+   "topic": "ecosystem"
+  },
+  {
+   "t": "Which one of the following invasive species causes skin allergies",
+   "opts": [
+    "Sweet pea",
+    "Congress weed",
+    "Mesquite",
+    "Water hyacinth"
+   ],
+   "sessions": [
+    "2024-12",
+    "2025-06",
+    "2025-12"
+   ],
+   "topic": "biodiversity"
+  },
+  {
+   "t": "Which of the following is a conventional source of energy",
+   "opts": [
+    "Geothermal",
+    "Atomic energy",
+    "Biomass",
+    "Wind"
+   ],
+   "sessions": [
+    "2025-06",
+    "2025-12",
+    "2026-06"
+   ],
+   "topic": "resources"
+  },
+  {
+   "t": "Which of the following animals excretes very concentrated urine",
+   "opts": [
+    "Camel",
+    "Garden lizard",
+    "Nocturnal rodents",
+    "Snakes"
+   ],
+   "sessions": [
+    "2020-12",
+    "2022-06"
+   ],
+   "topic": "major-ecosystems"
+  },
+  {
+   "t": "In coniferous forest the soil is",
+   "opts": [
+    "acidic and mineral deficient",
+    "very rich in mineral nutrients",
+    "basic and mineral deficient",
+    "moderately basic and rich in mineral nutrients"
+   ],
+   "sessions": [
+    "2020-12",
+    "2022-12"
+   ],
+   "topic": "major-ecosystems"
+  },
+  {
+   "t": "Which of the following is not achieved by addition of manure",
+   "opts": [
+    "A more stable aggregate structure",
+    "Improved cohesiveness of soil",
+    "Increase in water retentive capacity",
+    "Decrease in soil salinity"
+   ],
+   "sessions": [
+    "2022-06",
+    "2022-12"
+   ],
+   "topic": "resources"
+  },
+  {
+   "t": "Which one the following is a primary pollutant",
+   "opts": [
+    "Peroxy Acetyl Nitrate (PAN)",
+    "Nitric acid",
+    "Carbon dioxide",
+    "Sulphuric acid"
+   ],
+   "sessions": [
+    "2022-06",
+    "2022-12"
+   ],
+   "topic": "pollution"
+  },
+  {
+   "t": "Maximum population that can be supported by the resources of the planet at a given level of technology is known as",
+   "opts": [
+    "Technological carrying capacity",
+    "Social carrying capacity",
+    "Biophysical carrying capacity",
+    "Sustainable carrying capacity"
+   ],
+   "sessions": [
+    "2021-12",
+    "2023-06"
+   ],
+   "topic": "resources"
+  },
+  {
+   "t": "The Inter-Governmental Panel on Climate Change (IPCC) was established in",
+   "opts": [
+    "1985",
+    "1986",
+    "1987",
+    "1988"
+   ],
+   "sessions": [
+    "2022-06",
+    "2023-06"
+   ],
+   "topic": "global-issues"
+  },
+  {
+   "t": "Which of the following is not a Green House Gas",
+   "opts": [
+    "Carbon dioxide",
+    "Methane",
+    "Sulphur dioxide",
+    "Chlorofluorocarbon"
+   ],
+   "sessions": [
+    "2020-12",
+    "2023-12"
+   ],
+   "topic": "global-issues"
+  },
+  {
+   "t": "Which one of the following is not a non-conventional source of energy",
+   "opts": [
+    "Atomic energy",
+    "Solar energy",
+    "Wind energy",
+    "Geothermal energy"
+   ],
+   "sessions": [
+    "2022-12",
+    "2023-12"
+   ],
+   "topic": "resources"
+  },
+  {
+   "t": "Which of the following biogeographic zone covers the largest area in India",
+   "opts": [
+    "The coasts",
+    "The Western Ghats",
+    "The Deccan peninsula",
+    "The Gangetic plain"
+   ],
+   "sessions": [
+    "2023-06",
+    "2023-12"
+   ],
+   "topic": "biodiversity"
+  },
+  {
+   "t": "Life does not exist beyond ............... metres above mean sea level.",
+   "opts": [
+    "9000",
+    "8000",
+    "7000",
+    "6000"
+   ],
+   "sessions": [
+    "2020-12",
+    "2024-06"
+   ],
+   "topic": "global-issues"
+  },
+  {
+   "t": "An estuary is a transitional zone representing",
+   "opts": [
+    "Vast area of saline water",
+    "Small number of organisms",
+    "Great productivity built on a large base",
+    "Small variation in estuary’s physical environment"
+   ],
+   "sessions": [
+    "2020-12",
+    "2024-06"
+   ],
+   "topic": "ecosystem"
+  },
+  {
+   "t": "NBA has been set up under the",
+   "opts": [
+    "Wildlife (Protection) Act",
+    "Forest (Conservation) Act",
+    "Biodiversity Act",
+    "Environment (Protection) Act"
+   ],
+   "sessions": [
+    "2020-12",
+    "2024-06"
+   ],
+   "topic": "laws-policy"
+  },
+  {
+   "t": "In MAB programme run by UNESCO, MAB stands for",
+   "opts": [
+    "Man and Biosphere",
+    "Man and Biome",
+    "Mankind and Biodiversity",
+    "Mankind and Biomes"
+   ],
+   "sessions": [
+    "2022-06",
+    "2024-06"
+   ],
+   "topic": "biodiversity"
+  },
+  {
+   "t": "Who developed the concept of ‘Determinism’",
+   "opts": [
+    "Alexander Von Humboldt",
+    "Lucien Febre",
+    "Ellisworth Huntington",
+    "Friedrich Ratzel"
+   ],
+   "sessions": [
+    "2022-12",
+    "2024-06"
+   ],
+   "topic": "env-basics"
+  },
+  {
+   "t": "Chandi Prasad Bhatt was associated with",
+   "opts": [
+    "Silent Valley Movement",
+    "Chipko Movement",
+    "Appiko Movement",
+    "Taj Trapezium"
+   ],
+   "sessions": [
+    "2022-12",
+    "2024-06"
+   ],
+   "topic": "society-ethics"
+  },
+  {
+   "t": "Which of the following regions covers more than 50% plant species in the world",
+   "opts": [
+    "Tropical rain forest",
+    "Tropical deciduous forest",
+    "Temperate evergreen forest",
+    "Temperate deciduous forest"
+   ],
+   "sessions": [
+    "2020-12",
+    "2024-12"
+   ],
+   "topic": "biodiversity"
+  },
+  {
+   "t": "A biomass gassifier converts",
+   "opts": [
+    "gaseous fuel to liquid fuel",
+    "solid fuel to gaseous fuel",
+    "liquid fuel to gaseous fuel",
+    "gaseous fuel to solid fuel"
+   ],
+   "sessions": [
+    "2020-12",
+    "2024-12"
+   ],
+   "topic": "resources"
+  },
+  {
+   "t": "Silent Valley is the narrow valley of the .................. river.",
+   "opts": [
+    "Periyar",
+    "Yamuna",
+    "Cauvery",
+    "Kunthi"
+   ],
+   "sessions": [
+    "2021-12",
+    "2024-12"
+   ],
+   "topic": "society-ethics"
+  },
+  {
+   "t": "The example of lotic freshwater ecosystem is",
+   "opts": [
+    "lake",
+    "pool",
+    "swamp",
+    "river"
+   ],
+   "sessions": [
+    "2021-12",
+    "2024-12"
+   ],
+   "topic": "ecosystem"
+  },
+  {
+   "t": "Which one of the following can cause skin cancer and cataract in humans",
+   "opts": [
+    "Ultraviolet radiation",
+    "Methane",
+    "Ozone",
+    "Carbon dioxide"
+   ],
+   "sessions": [
+    "2021-12",
+    "2024-12"
+   ],
+   "topic": "global-issues"
+  },
+  {
+   "t": "The provision for environmental protection in our constitution was made in the year",
+   "opts": [
+    "1971",
+    "1972",
+    "1974",
+    "1976"
+   ],
+   "sessions": [
+    "2022-12",
+    "2024-12"
+   ],
+   "topic": "laws-policy"
+  },
+  {
+   "t": "The main reservoir of sulphur in the biosphere is the",
+   "opts": [
+    "Atmosphere",
+    "Oceans",
+    "Organism",
+    "Sediments"
+   ],
+   "sessions": [
+    "2024-06",
+    "2024-12"
+   ],
+   "topic": "ecosystem"
+  },
+  {
+   "t": "Which one of the following is a biodegradable pollutant",
+   "opts": [
+    "Pesticides",
+    "Plastics",
+    "Paper",
+    "Rubber"
+   ],
+   "sessions": [
+    "2024-06",
+    "2024-12"
+   ],
+   "topic": "pollution"
+  },
+  {
+   "t": "The study of origin of disease is termed as",
+   "opts": [
+    "Aetiology",
+    "Serology",
+    "Epidemiology",
+    "Virology"
+   ],
+   "sessions": [
+    "2024-06",
+    "2024-12"
+   ],
+   "topic": "health"
+  },
+  {
+   "t": "Which one of the following is a non-point source pollution",
+   "opts": [
+    "Discharge of pollution through chimneys",
+    "Run-offs from agricultural fields",
+    "Discharge channels in municipal areas",
+    "Discharge through pipes in industries"
+   ],
+   "sessions": [
+    "2023-06",
+    "2025-06"
+   ],
+   "topic": "pollution"
+  },
+  {
+   "t": "Which one of the following in not one of the seventeen Sustainable Development Goals (SDGs)",
+   "opts": [
+    "Good health",
+    "Zero hunger",
+    "No poverty",
+    "Social equity and equality"
+   ],
+   "sessions": [
+    "2024-12",
+    "2025-06"
+   ],
+   "topic": "env-basics"
+  },
+  {
+   "t": "Chemosynthetic bacteria are",
+   "opts": [
+    "autotrophs",
+    "heterotrophs",
+    "phagotrophs",
+    "saprotrophs"
+   ],
+   "sessions": [
+    "2020-12",
+    "2025-12"
+   ],
+   "topic": "ecosystem"
+  },
+  {
+   "t": "Which one of the following is a secondary pollutant",
+   "opts": [
+    "Sulphur dioxide",
+    "Carbon monoxide",
+    "Hydrocarbons",
+    "Ozone"
+   ],
+   "sessions": [
+    "2021-12",
+    "2025-12"
+   ],
+   "topic": "global-issues"
+  },
+  {
+   "t": "Finer particles in waste water can be made to settle by using",
+   "opts": [
+    "Carbon dioxide gas",
+    "Hydrogen sulphide gas",
+    "Chlorination",
+    "Caustic soda"
+   ],
+   "sessions": [
+    "2022-06",
+    "2025-12"
+   ],
+   "topic": "pollution"
+  },
+  {
+   "t": "MPN test is used to detect",
+   "opts": [
+    "Vibrio cholerae",
+    "S. sonnei",
+    "E. coli",
+    "Shigella boydii"
+   ],
+   "sessions": [
+    "2022-06",
+    "2025-12"
+   ],
+   "topic": "pollution"
+  },
+  {
+   "t": "Which one of the following is an example of selective destruction",
+   "opts": [
+    "Crocodiles",
+    "Cheetah",
+    "Passenger pigeon",
+    "Sea gulls"
+   ],
+   "sessions": [
+    "2023-12",
+    "2025-12"
+   ],
+   "topic": "major-ecosystems"
+  },
+  {
+   "t": "In ecological succession the intermediate community stage is known as",
+   "opts": [
+    "lichen stage",
+    "moss stage",
+    "grass community",
+    "sere"
+   ],
+   "sessions": [
+    "2024-06",
+    "2025-12"
+   ],
+   "topic": "ecosystem"
+  },
+  {
+   "t": "Crown fire takes place in",
+   "opts": [
+    "Dense forest",
+    "Savanna forest",
+    "Thorn forest",
+    "Forest in the hot and humid region"
+   ],
+   "sessions": [
+    "2024-06",
+    "2025-12"
+   ],
+   "topic": "major-ecosystems"
+  },
+  {
+   "t": "Which one of the following in a physical treatment of waste",
+   "opts": [
+    "Conditioning",
+    "Lagooning",
+    "Digestion",
+    "Composting"
+   ],
+   "sessions": [
+    "2024-06",
+    "2025-12"
+   ],
+   "topic": "pollution"
+  },
+  {
+   "t": "Which one of the following is predominantly an indoor pollutant",
+   "opts": [
+    "Lead",
+    "Radon",
+    "Ozone",
+    "Silicon"
+   ],
+   "sessions": [
+    "2024-12",
+    "2025-12"
+   ],
+   "topic": "global-issues"
+  },
+  {
+   "t": "Which of the following is an economic significance of forest",
+   "opts": [
+    "Supporting natural ecological processes",
+    "Moderation of global climate",
+    "Protection of biodiversity",
+    "Deriving products to be used as insecticides and pesticides"
+   ],
+   "sessions": [
+    "2025-06",
+    "2025-12"
+   ],
+   "topic": "global-issues"
+  },
+  {
+   "t": "Which one of the following is NOT a geological hazard",
+   "opts": [
+    "Landslides",
+    "Avalanches",
+    "Earthquakes",
+    "Heat waves"
+   ],
+   "sessions": [
+    "2025-06",
+    "2025-12"
+   ],
+   "topic": "global-issues"
+  },
+  {
+   "t": "Who coined the term ‘Possibilism’",
+   "opts": [
+    "Vidal de la Blache",
+    "Lucien Febre",
+    "Carl Ritter",
+    "Ellisworth Huntington"
+   ],
+   "sessions": [
+    "2021-12",
+    "2026-06"
+   ],
+   "topic": "env-basics"
+  },
+  {
+   "t": "The main centre of ENVIS is located at",
+   "opts": [
+    "Kolkata",
+    "Chennai",
+    "Delhi",
+    "Mumbai"
+   ],
+   "sessions": [
+    "2021-12",
+    "2026-06"
+   ],
+   "topic": "laws-policy"
+  },
+  {
+   "t": "An ‘aquifer’ is",
+   "opts": [
+    "The gap in the soil which is filled both with air and water.",
+    "The gap in the soil which is completely filled with water.",
+    "Layer of rock through which water percolates down.",
+    "The boundary between the saturated and unsaturated zone in rock."
+   ],
+   "sessions": [
+    "2021-12",
+    "2026-06"
+   ],
+   "topic": "resources"
+  },
+  {
+   "t": "The largest coal producing country in the world is",
+   "opts": [
+    "United States of America",
+    "Russia",
+    "India",
+    "China"
+   ],
+   "sessions": [
+    "2021-12",
+    "2026-06"
+   ],
+   "topic": "resources"
+  },
+  {
+   "t": "Which one of the following is not a natural pollutant",
+   "opts": [
+    "Pollens",
+    "Smog",
+    "Decay of organic materials",
+    "Gases from volcanic eruption"
+   ],
+   "sessions": [
+    "2023-06",
+    "2026-06"
+   ],
+   "topic": "pollution"
+  },
+  {
+   "t": "Decomposers are otherwise known as",
+   "opts": [
+    "Epiphytes",
+    "Saprophytes",
+    "Halophytes",
+    "Hygrophytes"
+   ],
+   "sessions": [
+    "2023-12",
+    "2026-06"
+   ],
+   "topic": "ecosystem"
+  },
+  {
+   "t": "Which of the following is a renewable resource",
+   "opts": [
+    "Coal",
+    "Petroleum",
+    "Biogas",
+    "Natural gas"
+   ],
+   "sessions": [
+    "2024-06",
+    "2026-06"
+   ],
+   "topic": "resources"
+  },
+  {
+   "t": "Which of the following is NOT one of the eight missions of National Action Plan on Climate Change (NAPCC)",
+   "opts": [
+    "National Rural Health Mission",
+    "National Solar Mission",
+    "National Mission for Green India",
+    "National Water Mission"
+   ],
+   "sessions": [
+    "2025-12",
+    "2026-06"
+   ],
+   "topic": "health"
+  }
+ ],
+ "questions": [
+  {
+   "s": "2020-12",
+   "q": "1",
+   "t": "In which of the following reports/books was ‘Sustainable Development’ formally defined for the first time",
+   "m": 1,
+   "k": "mcq",
+   "topic": "global-issues"
+  },
+  {
+   "s": "2020-12",
+   "q": "2",
+   "t": "Which one of the following is not one of the seventeen Sustainable Development Goals adopted by UN",
+   "m": 1,
+   "k": "mcq",
+   "topic": "env-basics"
+  },
+  {
+   "s": "2020-12",
+   "q": "3",
+   "t": "Which one of the following is an example of human modified environment",
+   "m": 1,
+   "k": "mcq",
+   "topic": "env-basics"
+  },
+  {
+   "s": "2020-12",
+   "q": "4",
+   "t": "In which of the following do forests not play a significant role",
+   "m": 1,
+   "k": "mcq",
+   "topic": "global-issues"
+  },
+  {
+   "s": "2020-12",
+   "q": "5",
+   "t": "Which one of the following regions covers more than 50% plant species in the world",
+   "m": 1,
+   "k": "mcq",
+   "topic": "biodiversity"
+  },
+  {
+   "s": "2020-12",
+   "q": "6",
+   "t": "Crown fire mostly takes place in which of the following forests",
+   "m": 1,
+   "k": "mcq",
+   "topic": "major-ecosystems"
+  },
+  {
+   "s": "2020-12",
+   "q": "7",
+   "t": "Communities residing near waste disposal sites receiving less economic benefits than the communities generating the waste represents",
+   "m": 1,
+   "k": "mcq",
+   "topic": "society-ethics"
+  },
+  {
+   "s": "2020-12",
+   "q": "8",
+   "t": "Which one of the following communities does not have a strong sense of stewardship",
+   "m": 1,
+   "k": "mcq",
+   "topic": "society-ethics"
+  },
+  {
+   "s": "2020-12",
+   "q": "9",
+   "t": "Which of the following views considers nature as a mother and that she cannot be tamed",
+   "m": 1,
+   "k": "mcq",
+   "topic": "society-ethics"
+  },
+  {
+   "s": "2020-12",
+   "q": "10",
+   "t": "The water cycle is driven by",
+   "m": 1,
+   "k": "mcq",
+   "topic": "ecosystem"
+  },
+  {
+   "s": "2020-12",
+   "q": "11",
+   "t": "Chemosynthetic bacteria are",
+   "m": 1,
+   "k": "mcq",
+   "topic": "ecosystem"
+  },
+  {
+   "s": "2020-12",
+   "q": "12",
+   "t": "Life does not exist beyond _________ metres above mean sea level.",
+   "m": 1,
+   "k": "mcq",
+   "topic": "global-issues"
+  },
+  {
+   "s": "2020-12",
+   "q": "13",
+   "t": "In an ecosystem, the decomposition of organisms takes place by",
+   "m": 1,
+   "k": "mcq",
+   "topic": "ecosystem"
+  },
+  {
+   "s": "2020-12",
+   "q": "14",
+   "t": "The increase in population between 10,000 BC and about 1800 AD coincided with the",
+   "m": 1,
+   "k": "mcq",
+   "topic": "env-basics"
+  },
+  {
+   "s": "2020-12",
+   "q": "15",
+   "t": "During the 14th century more than half the population of Europe and Asia was killed due to",
+   "m": 1,
+   "k": "mcq",
+   "topic": "global-issues"
+  },
+  {
+   "s": "2020-12",
+   "q": "16",
+   "t": "Which one of the following is not a genetic disease",
+   "m": 1,
+   "k": "mcq",
+   "topic": "health"
+  },
+  {
+   "s": "2020-12",
+   "q": "17",
+   "t": "Match the types of environmental influences with their respective category. Environmental Influence Category (a) Poison (i) Physical (b) Noise (ii) Sociological (c) Overcrowding (iii) Biological (d) Allergens (iv) Chemical",
+   "m": 1,
+   "k": "mcq",
+   "topic": "pollution"
+  },
+  {
+   "s": "2020-12",
+   "q": "18",
+   "t": "In a coniferous forest, the soil is",
+   "m": 1,
+   "k": "mcq",
+   "topic": "major-ecosystems"
+  },
+  {
+   "s": "2020-12",
+   "q": "19",
+   "t": "The organisms which are attached to stems and leaves of rooted plants are known as",
+   "m": 1,
+   "k": "mcq",
+   "topic": "major-ecosystems"
+  },
+  {
+   "s": "2020-12",
+   "q": "20",
+   "t": "In an ocean, the zone showing the maximum variability in terms of temperature, light, salinity and moisture is",
+   "m": 1,
+   "k": "mcq",
+   "topic": "major-ecosystems"
+  },
+  {
+   "s": "2020-12",
+   "q": "21",
+   "t": "An estuary is a transitional zone representing",
+   "m": 1,
+   "k": "mcq",
+   "topic": "ecosystem"
+  },
+  {
+   "s": "2020-12",
+   "q": "22",
+   "t": "Which of the following is a major cause of deforestation",
+   "m": 1,
+   "k": "mcq",
+   "topic": "resources"
+  },
+  {
+   "s": "2020-12",
+   "q": "23",
+   "t": "Passenger pigeon is the perfect example of loss of species due to",
+   "m": 1,
+   "k": "mcq",
+   "topic": "global-issues"
+  },
+  {
+   "s": "2020-12",
+   "q": "24",
+   "t": "The weed which causes enormous damage in fish and rice crop is",
+   "m": 1,
+   "k": "mcq",
+   "topic": "resources"
+  },
+  {
+   "s": "2020-12",
+   "q": "25",
+   "t": "Artificial insemination has been useful for conservation of",
+   "m": 1,
+   "k": "mcq",
+   "topic": "biodiversity"
+  },
+  {
+   "s": "2020-12",
+   "q": "26",
+   "t": "Which one of the following is not a major characteristic feature of biodiversity hotspot",
+   "m": 1,
+   "k": "mcq",
+   "topic": "biodiversity"
+  },
+  {
+   "s": "2020-12",
+   "q": "27",
+   "t": "Which one of the following areas in India is a hotspot of biodiversity",
+   "m": 1,
+   "k": "mcq",
+   "topic": "biodiversity"
+  },
+  {
+   "s": "2020-12",
+   "q": "28",
+   "t": "Which one of the following has the maximum genetic diversity in India",
+   "m": 1,
+   "k": "mcq",
+   "topic": "biodiversity"
+  },
+  {
+   "s": "2020-12",
+   "q": "29",
+   "t": "Which of the following has maximum percentage of availability of water",
+   "m": 1,
+   "k": "mcq",
+   "topic": "major-ecosystems"
+  },
+  {
+   "s": "2020-12",
+   "q": "30",
+   "t": "Among the ecosystems mentioned below, where can one find maximum biodiversity",
+   "m": 1,
+   "k": "mcq",
+   "topic": "biodiversity"
+  },
+  {
+   "s": "2020-12",
+   "q": "31",
+   "t": "How much water on the Earth is readily accessible for human use",
+   "m": 1,
+   "k": "mcq",
+   "topic": "resources"
+  },
+  {
+   "s": "2020-12",
+   "q": "32",
+   "t": "The soil which is low in organic matter and has low fertility in India is",
+   "m": 1,
+   "k": "mcq",
+   "topic": "major-ecosystems"
+  },
+  {
+   "s": "2020-12",
+   "q": "33",
+   "t": "Which of the following is not a practice used to prevent soil erosion",
+   "m": 1,
+   "k": "mcq",
+   "topic": "biodiversity"
+  },
+  {
+   "s": "2020-12",
+   "q": "34",
+   "t": "Identify the conventional source of energy from the following",
+   "m": 1,
+   "k": "mcq",
+   "topic": "resources"
+  },
+  {
+   "s": "2020-12",
+   "q": "35",
+   "t": "A biomass gassifier converts",
+   "m": 1,
+   "k": "mcq",
+   "topic": "resources"
+  },
+  {
+   "s": "2020-12",
+   "q": "36",
+   "t": "The most suitable fuel for a fuel cell is",
+   "m": 1,
+   "k": "mcq",
+   "topic": "ecosystem"
+  },
+  {
+   "s": "2020-12",
+   "q": "37",
+   "t": "The biophysical carrying capacity is __________ population that can be supported by the resources of the planet at a given level of technology.",
+   "m": 1,
+   "k": "mcq",
+   "topic": "resources"
+  },
+  {
+   "s": "2020-12",
+   "q": "38",
+   "t": "Which of the following is not a green house gas",
+   "m": 1,
+   "k": "mcq",
+   "topic": "global-issues"
+  },
+  {
+   "s": "2020-12",
+   "q": "39",
+   "t": "Which of the following is not related to climate change",
+   "m": 1,
+   "k": "mcq",
+   "topic": "global-issues"
+  },
+  {
+   "s": "2020-12",
+   "q": "40",
+   "t": "The ozone layer is present in which of the following ranges of the atmosphere",
+   "m": 1,
+   "k": "mcq",
+   "topic": "global-issues"
+  },
+  {
+   "s": "2020-12",
+   "q": "41",
+   "t": "The pH of rainfall was measured to be as per the following at four places A, B, C and D. Which place had the acid deposition",
+   "m": 1,
+   "k": "mcq",
+   "topic": "global-issues"
+  },
+  {
+   "s": "2020-12",
+   "q": "42",
+   "t": "Which of the following chemicals is responsible for ozone depletion",
+   "m": 1,
+   "k": "mcq",
+   "topic": "global-issues"
+  },
+  {
+   "s": "2020-12",
+   "q": "43",
+   "t": "Which of the following animals excretes very concentrated urine",
+   "m": 1,
+   "k": "mcq",
+   "topic": "major-ecosystems"
+  },
+  {
+   "s": "2020-12",
+   "q": "44",
+   "t": "Which of the following is an example of non-point source of pollution",
+   "m": 1,
+   "k": "mcq",
+   "topic": "pollution"
+  },
+  {
+   "s": "2020-12",
+   "q": "45",
+   "t": "When was The Air (Prevention and Control of Pollution) Act enacted",
+   "m": 1,
+   "k": "mcq",
+   "topic": "laws-policy"
+  },
+  {
+   "s": "2020-12",
+   "q": "46",
+   "t": "The main objective of UNFCC relates to",
+   "m": 1,
+   "k": "mcq",
+   "topic": "global-issues"
+  },
+  {
+   "s": "2020-12",
+   "q": "47",
+   "t": "Which is not a waste minimisation method",
+   "m": 1,
+   "k": "mcq",
+   "topic": "pollution"
+  },
+  {
+   "s": "2020-12",
+   "q": "48",
+   "t": "Which is the best method for disposal of hospital and toxic wastes",
+   "m": 1,
+   "k": "mcq",
+   "topic": "pollution"
+  },
+  {
+   "s": "2020-12",
+   "q": "49",
+   "t": "Which method is commonly used to assess the presence of organisms in a water body",
+   "m": 1,
+   "k": "mcq",
+   "topic": "pollution"
+  },
+  {
+   "s": "2020-12",
+   "q": "50",
+   "t": "NBA has been set up under the",
+   "m": 1,
+   "k": "mcq",
+   "topic": "laws-policy"
+  },
+  {
+   "s": "2021-12",
+   "q": "1",
+   "t": "Which one of the following is an example of man-made environment",
+   "m": 1,
+   "k": "mcq",
+   "topic": "env-basics"
+  },
+  {
+   "s": "2021-12",
+   "q": "2",
+   "t": "Who coined the term ‘Possibilism’",
+   "m": 1,
+   "k": "mcq",
+   "topic": "env-basics"
+  },
+  {
+   "s": "2021-12",
+   "q": "3",
+   "t": "Which one of the following is not one of the seventeen Sustainable Development Goals",
+   "m": 1,
+   "k": "mcq",
+   "topic": "env-basics"
+  },
+  {
+   "s": "2021-12",
+   "q": "4",
+   "t": "Holding meeting in a remote location to minimise public participation is an example of ___________.",
+   "m": 1,
+   "k": "mcq",
+   "topic": "society-ethics"
+  },
+  {
+   "s": "2021-12",
+   "q": "5",
+   "t": "Which of the following views towards nature was proposed as an alternative to patriarchal system of domination",
+   "m": 1,
+   "k": "mcq",
+   "topic": "society-ethics"
+  },
+  {
+   "s": "2021-12",
+   "q": "6",
+   "t": "The main centre of ENVIS is located at",
+   "m": 1,
+   "k": "mcq",
+   "topic": "laws-policy"
+  },
+  {
+   "s": "2021-12",
+   "q": "7",
+   "t": "Primary Consumers are",
+   "m": 1,
+   "k": "mcq",
+   "topic": "ecosystem"
+  },
+  {
+   "s": "2021-12",
+   "q": "8",
+   "t": "The following components — sulphates in water, acid rain and fossil fuel are part of the",
+   "m": 1,
+   "k": "mcq",
+   "topic": "global-issues"
+  },
+  {
+   "s": "2021-12",
+   "q": "9",
+   "t": "In ecological succession, the final stage is termed as",
+   "m": 1,
+   "k": "mcq",
+   "topic": "ecosystem"
+  },
+  {
+   "s": "2021-12",
+   "q": "10",
+   "t": "In an ecosystem, energy is lost in the form of",
+   "m": 1,
+   "k": "mcq",
+   "topic": "ecosystem"
+  },
+  {
+   "s": "2021-12",
+   "q": "11",
+   "t": "At global level the region most prone to natural calamities is",
+   "m": 1,
+   "k": "mcq",
+   "topic": "global-issues"
+  },
+  {
+   "s": "2021-12",
+   "q": "12",
+   "t": "Among the following factories, which is not in the ‘‘Taj Trapezium Zone’’",
+   "m": 1,
+   "k": "mcq",
+   "topic": "pollution"
+  },
+  {
+   "s": "2021-12",
+   "q": "13",
+   "t": "Silent Valley is the narrow valley of the __________ river.",
+   "m": 1,
+   "k": "mcq",
+   "topic": "society-ethics"
+  },
+  {
+   "s": "2021-12",
+   "q": "14",
+   "t": "The world population around 800 BC was approximately",
+   "m": 1,
+   "k": "mcq",
+   "topic": "env-basics"
+  },
+  {
+   "s": "2021-12",
+   "q": "15",
+   "t": "The temperate deciduous forests have",
+   "m": 1,
+   "k": "mcq",
+   "topic": "major-ecosystems"
+  },
+  {
+   "s": "2021-12",
+   "q": "16",
+   "t": "In India, Teak and Bamboo are common in",
+   "m": 1,
+   "k": "mcq",
+   "topic": "major-ecosystems"
+  },
+  {
+   "s": "2021-12",
+   "q": "17",
+   "t": "In Indian grassland ecosystem, the biomass peaks in the period between",
+   "m": 1,
+   "k": "mcq",
+   "topic": "ecosystem"
+  },
+  {
+   "s": "2021-12",
+   "q": "18",
+   "t": "An example of lotic freshwater ecosystem is",
+   "m": 1,
+   "k": "mcq",
+   "topic": "ecosystem"
+  },
+  {
+   "s": "2021-12",
+   "q": "19",
+   "t": "Insecticides, particularly DDT, led to the reduction of population of",
+   "m": 1,
+   "k": "mcq",
+   "topic": "pollution"
+  },
+  {
+   "s": "2021-12",
+   "q": "20",
+   "t": "Steady rehabilitation of the Great Indian Rhinoceros was hampered because",
+   "m": 1,
+   "k": "mcq",
+   "topic": "health"
+  },
+  {
+   "s": "2021-12",
+   "q": "21",
+   "t": "The problem of invasive species is likely to increase due to",
+   "m": 1,
+   "k": "mcq",
+   "topic": "global-issues"
+  },
+  {
+   "s": "2021-12",
+   "q": "22",
+   "t": "Alien species which is known to cause skin allergies is",
+   "m": 1,
+   "k": "mcq",
+   "topic": "biodiversity"
+  },
+  {
+   "s": "2021-12",
+   "q": "23",
+   "t": "Which one of the following is not a criterion for designation of biodiversity hotspots",
+   "m": 1,
+   "k": "mcq",
+   "topic": "biodiversity"
+  },
+  {
+   "s": "2021-12",
+   "q": "24",
+   "t": "Biodiversity of a geographical region represents",
+   "m": 1,
+   "k": "mcq",
+   "topic": "biodiversity"
+  },
+  {
+   "s": "2021-12",
+   "q": "25",
+   "t": "Which one of the following animals is found only in Western Ghats",
+   "m": 1,
+   "k": "mcq",
+   "topic": "biodiversity"
+  },
+  {
+   "s": "2021-12",
+   "q": "26",
+   "t": "The main source of water for lakes and rivers is",
+   "m": 1,
+   "k": "mcq",
+   "topic": "major-ecosystems"
+  },
+  {
+   "s": "2021-12",
+   "q": "27",
+   "t": "Which of the following is not true for red soil",
+   "m": 1,
+   "k": "mcq",
+   "topic": "major-ecosystems"
+  },
+  {
+   "s": "2021-12",
+   "q": "28",
+   "t": "An ‘aquifer’ is",
+   "m": 1,
+   "k": "mcq",
+   "topic": "resources"
+  },
+  {
+   "s": "2021-12",
+   "q": "29",
+   "t": "The most effective treatment of alkaline soil is to apply",
+   "m": 1,
+   "k": "mcq",
+   "topic": "resources"
+  },
+  {
+   "s": "2021-12",
+   "q": "30",
+   "t": "From which of the following types of sources can energy be harnessed using photovoltaic cell",
+   "m": 1,
+   "k": "mcq",
+   "topic": "resources"
+  },
+  {
+   "s": "2021-12",
+   "q": "31",
+   "t": "The first wave/tidal energy plant was established in India at",
+   "m": 1,
+   "k": "mcq",
+   "topic": "resources"
+  },
+  {
+   "s": "2021-12",
+   "q": "32",
+   "t": "The largest coal producing country in the world is",
+   "m": 1,
+   "k": "mcq",
+   "topic": "resources"
+  },
+  {
+   "s": "2021-12",
+   "q": "33",
+   "t": "The maximum population that can be supported by the resources of the planet at a given level of technology",
+   "m": 1,
+   "k": "mcq",
+   "topic": "resources"
+  },
+  {
+   "s": "2021-12",
+   "q": "34",
+   "t": "Among the following, which one is the major contributor to greenhouse effect",
+   "m": 1,
+   "k": "mcq",
+   "topic": "global-issues"
+  },
+  {
+   "s": "2021-12",
+   "q": "35",
+   "t": "Which of the following statements is correct for Ultra Violet (UV) radiation",
+   "m": 1,
+   "k": "mcq",
+   "topic": "global-issues"
+  },
+  {
+   "s": "2021-12",
+   "q": "36",
+   "t": "Which one of the following can cause skin cancer and cataract in humans",
+   "m": 1,
+   "k": "mcq",
+   "topic": "global-issues"
+  },
+  {
+   "s": "2021-12",
+   "q": "37",
+   "t": "Which one of the following is a secondary pollutant",
+   "m": 1,
+   "k": "mcq",
+   "topic": "global-issues"
+  },
+  {
+   "s": "2021-12",
+   "q": "38",
+   "t": "The standard level of RSPM is",
+   "m": 1,
+   "k": "mcq",
+   "topic": "pollution"
+  },
+  {
+   "s": "2021-12",
+   "q": "39",
+   "t": "The Kyoto Protocol deals with which environmental issue",
+   "m": 1,
+   "k": "mcq",
+   "topic": "global-issues"
+  },
+  {
+   "s": "2021-12",
+   "q": "40",
+   "t": "Hotspots are regions of high",
+   "m": 1,
+   "k": "mcq",
+   "topic": "biodiversity"
+  },
+  {
+   "s": "2021-12",
+   "q": "41",
+   "t": "What is the main aim of the 1987 Amendment of the Air (Prevention and Control of Pollution) Act, 1981",
+   "m": 1,
+   "k": "mcq",
+   "topic": "laws-policy"
+  },
+  {
+   "s": "2021-12",
+   "q": "42",
+   "t": "The Forest (Conservation) Act was enacted in the year",
+   "m": 1,
+   "k": "mcq",
+   "topic": "laws-policy"
+  },
+  {
+   "s": "2021-12",
+   "q": "43",
+   "t": "Which convention took up the protection of ozone layer",
+   "m": 1,
+   "k": "mcq",
+   "topic": "global-issues"
+  },
+  {
+   "s": "2021-12",
+   "q": "44",
+   "t": "Which one of the following is generally not a recyclable waste",
+   "m": 1,
+   "k": "mcq",
+   "topic": "pollution"
+  },
+  {
+   "s": "2021-12",
+   "q": "45",
+   "t": "Which one of the following is not a method of waste minimisation",
+   "m": 1,
+   "k": "mcq",
+   "topic": "pollution"
+  },
+  {
+   "s": "2021-12",
+   "q": "46",
+   "t": "Which one of the following is not a method of disposal of hazardous waste",
+   "m": 1,
+   "k": "mcq",
+   "topic": "global-issues"
+  },
+  {
+   "s": "2021-12",
+   "q": "47",
+   "t": "Which one of the following is not correct in the context of biodiversity in India",
+   "m": 1,
+   "k": "mcq",
+   "topic": "biodiversity"
+  },
+  {
+   "s": "2021-12",
+   "q": "48",
+   "t": "Which one of the following does not represent ecological significance of forest",
+   "m": 1,
+   "k": "mcq",
+   "topic": "global-issues"
+  },
+  {
+   "s": "2021-12",
+   "q": "49",
+   "t": "Which one of the following is not included in the category of Non-Timber Forest Product",
+   "m": 1,
+   "k": "mcq",
+   "topic": "resources"
+  },
+  {
+   "s": "2021-12",
+   "q": "50",
+   "t": "Joint Forest Management was firstly implemented in the State of",
+   "m": 1,
+   "k": "mcq",
+   "topic": "resources"
+  },
+  {
+   "s": "2022-06",
+   "q": "1",
+   "t": "World Commission on Environment and Development was chaired by",
+   "m": 1,
+   "k": "mcq",
+   "topic": "global-issues"
+  },
+  {
+   "s": "2022-06",
+   "q": "2",
+   "t": "Which one of the following is a decomposer",
+   "m": 1,
+   "k": "mcq",
+   "topic": "ecosystem"
+  },
+  {
+   "s": "2022-06",
+   "q": "3",
+   "t": "Which one of the following is not one of the priority areas for achieving sustainable development goals",
+   "m": 1,
+   "k": "mcq",
+   "topic": "env-basics"
+  },
+  {
+   "s": "2022-06",
+   "q": "4",
+   "t": "The main sulphur reservoir in the sulphur cycle is present in the",
+   "m": 1,
+   "k": "mcq",
+   "topic": "ecosystem"
+  },
+  {
+   "s": "2022-06",
+   "q": "5",
+   "t": "Level IV of the trophic level could be occupied by",
+   "m": 1,
+   "k": "mcq",
+   "topic": "biodiversity"
+  },
+  {
+   "s": "2022-06",
+   "q": "6",
+   "t": "In the biosphere, the main land component is known as",
+   "m": 1,
+   "k": "mcq",
+   "topic": "env-basics"
+  },
+  {
+   "s": "2022-06",
+   "q": "7",
+   "t": "Identify the following types of food chain : Goat  Nematodes  Saprotrophic bacteria",
+   "m": 1,
+   "k": "mcq",
+   "topic": "ecosystem"
+  },
+  {
+   "s": "2022-06",
+   "q": "8",
+   "t": "The discipline of public health was established in Europe after",
+   "m": 1,
+   "k": "mcq",
+   "topic": "health"
+  },
+  {
+   "s": "2022-06",
+   "q": "9",
+   "t": "The occurrence of ............... may take place when sea water in the tropical belt gets heated above 27°C and low pressure areas developed above the water levels.",
+   "m": 1,
+   "k": "mcq",
+   "topic": "global-issues"
+  },
+  {
+   "s": "2022-06",
+   "q": "10",
+   "t": "Floods in which two countries results in two-third of total deaths caused by floods",
+   "m": 1,
+   "k": "mcq",
+   "topic": "global-issues"
+  },
+  {
+   "s": "2022-06",
+   "q": "11",
+   "t": "The natural defence against tsunamis is",
+   "m": 1,
+   "k": "mcq",
+   "topic": "global-issues"
+  },
+  {
+   "s": "2022-06",
+   "q": "12",
+   "t": "In MAB programme run by UNESCO, MAB stands for",
+   "m": 1,
+   "k": "mcq",
+   "topic": "biodiversity"
+  },
+  {
+   "s": "2022-06",
+   "q": "13",
+   "t": "Seed bank is the example of",
+   "m": 1,
+   "k": "mcq",
+   "topic": "biodiversity"
+  },
+  {
+   "s": "2022-06",
+   "q": "14",
+   "t": "A wide diversity in species composition indicates that ecosystem is",
+   "m": 1,
+   "k": "mcq",
+   "topic": "biodiversity"
+  },
+  {
+   "s": "2022-06",
+   "q": "15",
+   "t": "The fostering technique has been used to conserve",
+   "m": 1,
+   "k": "mcq",
+   "topic": "biodiversity"
+  },
+  {
+   "s": "2022-06",
+   "q": "16",
+   "t": "The unattached organisms in an aquatic ecosystem which live at the interface of air-water are known as",
+   "m": 1,
+   "k": "mcq",
+   "topic": "ecosystem"
+  },
+  {
+   "s": "2022-06",
+   "q": "17",
+   "t": "Brackish water ecosystems include",
+   "m": 1,
+   "k": "mcq",
+   "topic": "ecosystem"
+  },
+  {
+   "s": "2022-06",
+   "q": "18",
+   "t": "The average salinity in sea water is about",
+   "m": 1,
+   "k": "mcq",
+   "topic": "major-ecosystems"
+  },
+  {
+   "s": "2022-06",
+   "q": "19",
+   "t": "Which of the following is open or heterotrophic system",
+   "m": 1,
+   "k": "mcq",
+   "topic": "ecosystem"
+  },
+  {
+   "s": "2022-06",
+   "q": "20",
+   "t": "Approximately 50% of the total world species are present in",
+   "m": 1,
+   "k": "mcq",
+   "topic": "biodiversity"
+  },
+  {
+   "s": "2022-06",
+   "q": "21",
+   "t": "Genetic diversity is related to",
+   "m": 1,
+   "k": "mcq",
+   "topic": "biodiversity"
+  },
+  {
+   "s": "2022-06",
+   "q": "22",
+   "t": "Biodiversity hotspots are regions of high",
+   "m": 1,
+   "k": "mcq",
+   "topic": "biodiversity"
+  },
+  {
+   "s": "2022-06",
+   "q": "23",
+   "t": "Which one of the following statements about biodiversity is not true",
+   "m": 1,
+   "k": "mcq",
+   "topic": "biodiversity"
+  },
+  {
+   "s": "2022-06",
+   "q": "24",
+   "t": "Ravine is formed due to",
+   "m": 1,
+   "k": "mcq",
+   "topic": "resources"
+  },
+  {
+   "s": "2022-06",
+   "q": "25",
+   "t": "Finer particles in waste water can be made to settle by using",
+   "m": 1,
+   "k": "mcq",
+   "topic": "pollution"
+  },
+  {
+   "s": "2022-06",
+   "q": "26",
+   "t": "What percentage of global freshwater is available in the liquid form",
+   "m": 1,
+   "k": "mcq",
+   "topic": "resources"
+  },
+  {
+   "s": "2022-06",
+   "q": "27",
+   "t": "Which of the following is not achieved by addition of manure",
+   "m": 1,
+   "k": "mcq",
+   "topic": "resources"
+  },
+  {
+   "s": "2022-06",
+   "q": "28",
+   "t": "Which of the following sources of energy is non-conventional",
+   "m": 1,
+   "k": "mcq",
+   "topic": "resources"
+  },
+  {
+   "s": "2022-06",
+   "q": "29",
+   "t": "Which of the following regions in India is the highest producer of mineral oil",
+   "m": 1,
+   "k": "mcq",
+   "topic": "resources"
+  },
+  {
+   "s": "2022-06",
+   "q": "30",
+   "t": "Economic development leads to declining growth rates of per capita energy demand in which of the following",
+   "m": 1,
+   "k": "mcq",
+   "topic": "pollution"
+  },
+  {
+   "s": "2022-06",
+   "q": "31",
+   "t": "‘Sludge gas’ largely consists of",
+   "m": 1,
+   "k": "mcq",
+   "topic": "pollution"
+  },
+  {
+   "s": "2022-06",
+   "q": "32",
+   "t": "Intergovernmental Panel on Climate Change (IPCC) was established in",
+   "m": 1,
+   "k": "mcq",
+   "topic": "global-issues"
+  },
+  {
+   "s": "2022-06",
+   "q": "33",
+   "t": "Which one of the following is not responsible for acid rain",
+   "m": 1,
+   "k": "mcq",
+   "topic": "global-issues"
+  },
+  {
+   "s": "2022-06",
+   "q": "34",
+   "t": "Which one of the following is not a part of Eight National Missions for climate change",
+   "m": 1,
+   "k": "mcq",
+   "topic": "global-issues"
+  },
+  {
+   "s": "2022-06",
+   "q": "35",
+   "t": "Basel convention is largely related to",
+   "m": 1,
+   "k": "mcq",
+   "topic": "global-issues"
+  },
+  {
+   "s": "2022-06",
+   "q": "36",
+   "t": "The main function of National Green Tribunal is",
+   "m": 1,
+   "k": "mcq",
+   "topic": "laws-policy"
+  },
+  {
+   "s": "2022-06",
+   "q": "37",
+   "t": "The Air (Prevention and Control of Pollution) Act was amended in",
+   "m": 1,
+   "k": "mcq",
+   "topic": "laws-policy"
+  },
+  {
+   "s": "2022-06",
+   "q": "38",
+   "t": "Which toxic gas was released from chemical plant during Bhopal Gas Tragedy",
+   "m": 1,
+   "k": "mcq",
+   "topic": "pollution"
+  },
+  {
+   "s": "2022-06",
+   "q": "39",
+   "t": "Which one of the following is a primary pollutant",
+   "m": 1,
+   "k": "mcq",
+   "topic": "pollution"
+  },
+  {
+   "s": "2022-06",
+   "q": "40",
+   "t": "Which one of the following is responsible for depletion of oxygen in water causing harm to aquatic life",
+   "m": 1,
+   "k": "mcq",
+   "topic": "pollution"
+  },
+  {
+   "s": "2022-06",
+   "q": "41",
+   "t": "What would be the best method for disposal of radioactive nuclear waste",
+   "m": 1,
+   "k": "mcq",
+   "topic": "pollution"
+  },
+  {
+   "s": "2022-06",
+   "q": "42",
+   "t": "Which one of the following is not a biological method of waste treatment",
+   "m": 1,
+   "k": "mcq",
+   "topic": "pollution"
+  },
+  {
+   "s": "2022-06",
+   "q": "43",
+   "t": "Which of the following is not a factor requiring new set of ethics for the environment",
+   "m": 1,
+   "k": "mcq",
+   "topic": "society-ethics"
+  },
+  {
+   "s": "2022-06",
+   "q": "44",
+   "t": "Which one of the following statements related to economic significance of forest is not correct",
+   "m": 1,
+   "k": "mcq",
+   "topic": "resources"
+  },
+  {
+   "s": "2022-06",
+   "q": "45",
+   "t": "Which one of the following is not one of the causes of deforestation",
+   "m": 1,
+   "k": "mcq",
+   "topic": "env-basics"
+  },
+  {
+   "s": "2022-06",
+   "q": "46",
+   "t": "India needs about ................... percentage of its total area under forest to meet the ecological and economic needs.",
+   "m": 1,
+   "k": "mcq",
+   "topic": "resources"
+  },
+  {
+   "s": "2022-06",
+   "q": "47",
+   "t": "Which of the following animals excretes very concentrated urine",
+   "m": 1,
+   "k": "mcq",
+   "topic": "major-ecosystems"
+  },
+  {
+   "s": "2022-06",
+   "q": "48",
+   "t": "The attitude which assigns significantly greater value to human being than any other non-human organisms is known as",
+   "m": 1,
+   "k": "mcq",
+   "topic": "society-ethics"
+  },
+  {
+   "s": "2022-06",
+   "q": "49",
+   "t": "Which one of the following is not an ENVIS Centre",
+   "m": 1,
+   "k": "mcq",
+   "topic": "laws-policy"
+  },
+  {
+   "s": "2022-06",
+   "q": "50",
+   "t": "MPN test is used to detect",
+   "m": 1,
+   "k": "mcq",
+   "topic": "pollution"
+  },
+  {
+   "s": "2022-12",
+   "q": "1",
+   "t": "Who developed the concept of determinism",
+   "m": 1,
+   "k": "mcq",
+   "topic": "env-basics"
+  },
+  {
+   "s": "2022-12",
+   "q": "2",
+   "t": "Which of the following is not one of the seventeen Sustainable Development Goals",
+   "m": 1,
+   "k": "mcq",
+   "topic": "env-basics"
+  },
+  {
+   "s": "2022-12",
+   "q": "3",
+   "t": "Which one of the following is a human modified environment",
+   "m": 1,
+   "k": "mcq",
+   "topic": "env-basics"
+  },
+  {
+   "s": "2022-12",
+   "q": "4",
+   "t": "Which one of the following refers to a position in the food chain",
+   "m": 1,
+   "k": "mcq",
+   "topic": "ecosystem"
+  },
+  {
+   "s": "2022-12",
+   "q": "5",
+   "t": "In the biosphere water component is known as",
+   "m": 1,
+   "k": "mcq",
+   "topic": "env-basics"
+  },
+  {
+   "s": "2022-12",
+   "q": "6",
+   "t": "Sulphur cycle is an example of",
+   "m": 1,
+   "k": "mcq",
+   "topic": "ecosystem"
+  },
+  {
+   "s": "2022-12",
+   "q": "7",
+   "t": "Secondary consumers are",
+   "m": 1,
+   "k": "mcq",
+   "topic": "ecosystem"
+  },
+  {
+   "s": "2022-12",
+   "q": "8",
+   "t": "In coniferous forest the soil is",
+   "m": 1,
+   "k": "mcq",
+   "topic": "major-ecosystems"
+  },
+  {
+   "s": "2022-12",
+   "q": "9",
+   "t": "Chameleons, agamids and geckos are found in",
+   "m": 1,
+   "k": "mcq",
+   "topic": "major-ecosystems"
+  },
+  {
+   "s": "2022-12",
+   "q": "10",
+   "t": "Which one of the following species excretes very concentrated urine and does not use water for temperature regulation and can live in the desert without drinking water",
+   "m": 1,
+   "k": "mcq",
+   "topic": "biodiversity"
+  },
+  {
+   "s": "2022-12",
+   "q": "11",
+   "t": "Unattached aquatic organism which lives at the air-water interface is known as",
+   "m": 1,
+   "k": "mcq",
+   "topic": "major-ecosystems"
+  },
+  {
+   "s": "2022-12",
+   "q": "12",
+   "t": "What is the percentage of fresh water where global distribution of water resources is considered",
+   "m": 1,
+   "k": "mcq",
+   "topic": "resources"
+  },
+  {
+   "s": "2022-12",
+   "q": "13",
+   "t": "Which one of the following is a non-renewable resource",
+   "m": 1,
+   "k": "mcq",
+   "topic": "biodiversity"
+  },
+  {
+   "s": "2022-12",
+   "q": "14",
+   "t": "The average salinity of sea water is",
+   "m": 1,
+   "k": "mcq",
+   "topic": "major-ecosystems"
+  },
+  {
+   "s": "2022-12",
+   "q": "15",
+   "t": "Which of the following is not achieved by addition of manure",
+   "m": 1,
+   "k": "mcq",
+   "topic": "resources"
+  },
+  {
+   "s": "2022-12",
+   "q": "16",
+   "t": "Which one of the following is not a part of supporting ecological systems and processes function of forest",
+   "m": 1,
+   "k": "mcq",
+   "topic": "global-issues"
+  },
+  {
+   "s": "2022-12",
+   "q": "17",
+   "t": "Which one of the following is a consequence of deforestation",
+   "m": 1,
+   "k": "mcq",
+   "topic": "resources"
+  },
+  {
+   "s": "2022-12",
+   "q": "18",
+   "t": "Which one of the following is not a Non-Timber Forest Product (NTFP)",
+   "m": 1,
+   "k": "mcq",
+   "topic": "resources"
+  },
+  {
+   "s": "2022-12",
+   "q": "19",
+   "t": "Which one of the following statements about the biodiversity in India is correct",
+   "m": 1,
+   "k": "mcq",
+   "topic": "biodiversity"
+  },
+  {
+   "s": "2022-12",
+   "q": "20",
+   "t": "An ecosystem with higher diversity will be",
+   "m": 1,
+   "k": "mcq",
+   "topic": "ecosystem"
+  },
+  {
+   "s": "2022-12",
+   "q": "21",
+   "t": "Which of the following animals are exclusively found in Brahmaputra Valley",
+   "m": 1,
+   "k": "mcq",
+   "topic": "biodiversity"
+  },
+  {
+   "s": "2022-12",
+   "q": "22",
+   "t": "Which of the following is not a biodiversity hotspot",
+   "m": 1,
+   "k": "mcq",
+   "topic": "biodiversity"
+  },
+  {
+   "s": "2022-12",
+   "q": "23",
+   "t": "What percentage of energy needs of India are met by the natural gas",
+   "m": 1,
+   "k": "mcq",
+   "topic": "resources"
+  },
+  {
+   "s": "2022-12",
+   "q": "24",
+   "t": "Sludge gas largely consists of",
+   "m": 1,
+   "k": "mcq",
+   "topic": "pollution"
+  },
+  {
+   "s": "2022-12",
+   "q": "25",
+   "t": "Which one of the following is not a non-conventional source of energy",
+   "m": 1,
+   "k": "mcq",
+   "topic": "resources"
+  },
+  {
+   "s": "2022-12",
+   "q": "26",
+   "t": "Which of the following is not an adverse effect of the construction of major dams in India",
+   "m": 1,
+   "k": "mcq",
+   "topic": "biodiversity"
+  },
+  {
+   "s": "2022-12",
+   "q": "27",
+   "t": "Fostering is a useful technique for conservation which has been found successful in",
+   "m": 1,
+   "k": "mcq",
+   "topic": "biodiversity"
+  },
+  {
+   "s": "2022-12",
+   "q": "28",
+   "t": "Mangroves in the coastal areas work against erosion by acting as",
+   "m": 1,
+   "k": "mcq",
+   "topic": "major-ecosystems"
+  },
+  {
+   "s": "2022-12",
+   "q": "29",
+   "t": "Which of the following is not an invasive species in India",
+   "m": 1,
+   "k": "mcq",
+   "topic": "biodiversity"
+  },
+  {
+   "s": "2022-12",
+   "q": "30",
+   "t": "Buffer zone plays a significant role in the preserved areas. Which one of the following is not an important function of the buffer zone",
+   "m": 1,
+   "k": "mcq",
+   "topic": "biodiversity"
+  },
+  {
+   "s": "2022-12",
+   "q": "31",
+   "t": "The size of Respirable Suspended Particulate Matter (RSPM) is",
+   "m": 1,
+   "k": "mcq",
+   "topic": "pollution"
+  },
+  {
+   "s": "2022-12",
+   "q": "32",
+   "t": "__________ is the phenomenon of increase in the concentration of pollutants from one link in a food chain to another.",
+   "m": 1,
+   "k": "mcq",
+   "topic": "pollution"
+  },
+  {
+   "s": "2022-12",
+   "q": "33",
+   "t": "Which one the following is a primary pollutant",
+   "m": 1,
+   "k": "mcq",
+   "topic": "pollution"
+  },
+  {
+   "s": "2022-12",
+   "q": "34",
+   "t": "High level of BOD indicates",
+   "m": 1,
+   "k": "mcq",
+   "topic": "pollution"
+  },
+  {
+   "s": "2022-12",
+   "q": "35",
+   "t": "Underground disposal is preferred for the disposal of",
+   "m": 1,
+   "k": "mcq",
+   "topic": "pollution"
+  },
+  {
+   "s": "2022-12",
+   "q": "36",
+   "t": "Read the below given statements about the single-use plastics and choose the correct options. (i) They clog drains. (ii) They harm animals. (iii) They cause floods in cities. (iv) They can degrade easily.",
+   "m": 1,
+   "k": "mcq",
+   "topic": "global-issues"
+  },
+  {
+   "s": "2022-12",
+   "q": "37",
+   "t": "Eutrophication in water bodies is caused by",
+   "m": 1,
+   "k": "mcq",
+   "topic": "pollution"
+  },
+  {
+   "s": "2022-12",
+   "q": "38",
+   "t": "Which of the following is not true for Chlorofluorocarbons (CFCs)",
+   "m": 1,
+   "k": "mcq",
+   "topic": "global-issues"
+  },
+  {
+   "s": "2022-12",
+   "q": "39",
+   "t": "Which one of the following is used to measure the concentration of ozone",
+   "m": 1,
+   "k": "mcq",
+   "topic": "global-issues"
+  },
+  {
+   "s": "2022-12",
+   "q": "40",
+   "t": "What is the approximate percentage of solar radiation which is absorbed by the atmospheric gases",
+   "m": 1,
+   "k": "mcq",
+   "topic": "resources"
+  },
+  {
+   "s": "2022-12",
+   "q": "41",
+   "t": "The provision for environmental protection in our Constitution was made in the year",
+   "m": 1,
+   "k": "mcq",
+   "topic": "laws-policy"
+  },
+  {
+   "s": "2022-12",
+   "q": "42",
+   "t": "When was the Wildlife Protection Act enacted",
+   "m": 1,
+   "k": "mcq",
+   "topic": "laws-policy"
+  },
+  {
+   "s": "2022-12",
+   "q": "43",
+   "t": "Which one of the following is not one of seventeen categories of polluting industries identified by the Central Pollution Control Board",
+   "m": 1,
+   "k": "mcq",
+   "topic": "laws-policy"
+  },
+  {
+   "s": "2022-12",
+   "q": "44",
+   "t": "Projected world population by 2100 would be",
+   "m": 1,
+   "k": "mcq",
+   "topic": "env-basics"
+  },
+  {
+   "s": "2022-12",
+   "q": "45",
+   "t": "Match the following : Environmental Influence Category (a) Stress (i) Physical (b) Toxins (ii) Psychological (c) Noise (iii) Biological (d) Allergens (iv) Chemical",
+   "m": 1,
+   "k": "mcq",
+   "topic": "pollution"
+  },
+  {
+   "s": "2022-12",
+   "q": "46",
+   "t": "Which one of the following areas in India does not fall under seismic zone",
+   "m": 1,
+   "k": "mcq",
+   "topic": "global-issues"
+  },
+  {
+   "s": "2022-12",
+   "q": "47",
+   "t": "Chandi Prasad Bhatt was associated with",
+   "m": 1,
+   "k": "mcq",
+   "topic": "society-ethics"
+  },
+  {
+   "s": "2022-12",
+   "q": "48",
+   "t": "The teaching that all living organisms have values and rights regardless of whether they are useful or not refers to",
+   "m": 1,
+   "k": "mcq",
+   "topic": "society-ethics"
+  },
+  {
+   "s": "2022-12",
+   "q": "49",
+   "t": "Using English only material for communication to non-English speaking communities is an example of",
+   "m": 1,
+   "k": "mcq",
+   "topic": "society-ethics"
+  },
+  {
+   "s": "2022-12",
+   "q": "50",
+   "t": "Which one of the following is not an ENVIS Centre",
+   "m": 1,
+   "k": "mcq",
+   "topic": "laws-policy"
+  },
+  {
+   "s": "2023-06",
+   "q": "1",
+   "t": "Who was the chairperson of the committee that submitted the report titled “Our Common Future”",
+   "m": 1,
+   "k": "mcq",
+   "topic": "global-issues"
+  },
+  {
+   "s": "2023-06",
+   "q": "2",
+   "t": "Which one of the following is not human-made environment",
+   "m": 1,
+   "k": "mcq",
+   "topic": "env-basics"
+  },
+  {
+   "s": "2023-06",
+   "q": "3",
+   "t": "United Nations’ Conference on Environment and Development (UNCED) in 1992 was organised at",
+   "m": 1,
+   "k": "mcq",
+   "topic": "global-issues"
+  },
+  {
+   "s": "2023-06",
+   "q": "4",
+   "t": "Which one of the following statements related to ecosystem is correct",
+   "m": 1,
+   "k": "mcq",
+   "topic": "ecosystem"
+  },
+  {
+   "s": "2023-06",
+   "q": "5",
+   "t": "In food chain herbivores represent",
+   "m": 1,
+   "k": "mcq",
+   "topic": "ecosystem"
+  },
+  {
+   "s": "2023-06",
+   "q": "6",
+   "t": "The large reservoir of sulphur on the earth’s surface is",
+   "m": 1,
+   "k": "mcq",
+   "topic": "ecosystem"
+  },
+  {
+   "s": "2023-06",
+   "q": "7",
+   "t": "Which one of the following is known as the primary community",
+   "m": 1,
+   "k": "mcq",
+   "topic": "ecosystem"
+  },
+  {
+   "s": "2023-06",
+   "q": "8",
+   "t": "The predominant predatory bird in desert ecosystem is",
+   "m": 1,
+   "k": "mcq",
+   "topic": "ecosystem"
+  },
+  {
+   "s": "2023-06",
+   "q": "9",
+   "t": "The unattached organism in an aquatic ecosystem which lives at the interface of air-water is known as",
+   "m": 1,
+   "k": "mcq",
+   "topic": "ecosystem"
+  },
+  {
+   "s": "2023-06",
+   "q": "10",
+   "t": "In ocean ......... zone is shallow and rich in species with high productivity.",
+   "m": 1,
+   "k": "mcq",
+   "topic": "biodiversity"
+  },
+  {
+   "s": "2023-06",
+   "q": "11",
+   "t": "Which one of the following forests has the most diverse communities",
+   "m": 1,
+   "k": "mcq",
+   "topic": "major-ecosystems"
+  },
+  {
+   "s": "2023-06",
+   "q": "12",
+   "t": "Loss of water in vapour form from the plant is known as",
+   "m": 1,
+   "k": "mcq",
+   "topic": "resources"
+  },
+  {
+   "s": "2023-06",
+   "q": "13",
+   "t": "Which one of the following is an economic impact of drought",
+   "m": 1,
+   "k": "mcq",
+   "topic": "global-issues"
+  },
+  {
+   "s": "2023-06",
+   "q": "14",
+   "t": "The type of soil found in the Deccan Malwa plateau of Western and Central India is",
+   "m": 1,
+   "k": "mcq",
+   "topic": "resources"
+  },
+  {
+   "s": "2023-06",
+   "q": "15",
+   "t": "Which one of the following is not a major cause of land degradation",
+   "m": 1,
+   "k": "mcq",
+   "topic": "resources"
+  },
+  {
+   "s": "2023-06",
+   "q": "16",
+   "t": "Which one of the following statements about the tropical rainforest is not correct",
+   "m": 1,
+   "k": "mcq",
+   "topic": "biodiversity"
+  },
+  {
+   "s": "2023-06",
+   "q": "17",
+   "t": "It has been estimated that India needs .......... percentage area under forest to meet the ecological and economic needs.",
+   "m": 1,
+   "k": "mcq",
+   "topic": "resources"
+  },
+  {
+   "s": "2023-06",
+   "q": "18",
+   "t": "NTFP stands for",
+   "m": 1,
+   "k": "mcq",
+   "topic": "resources"
+  },
+  {
+   "s": "2023-06",
+   "q": "19",
+   "t": "Which one of the following diversity is known as the “fundamental currency of diversity”",
+   "m": 1,
+   "k": "mcq",
+   "topic": "biodiversity"
+  },
+  {
+   "s": "2023-06",
+   "q": "20",
+   "t": "Which one of the following biogeographic zone covers the largest area in India",
+   "m": 1,
+   "k": "mcq",
+   "topic": "biodiversity"
+  },
+  {
+   "s": "2023-06",
+   "q": "21",
+   "t": "About two thirds of India’s endemic plants are confined to",
+   "m": 1,
+   "k": "mcq",
+   "topic": "biodiversity"
+  },
+  {
+   "s": "2023-06",
+   "q": "22",
+   "t": "Which one of the following is not true about India as a mega biodiversity country",
+   "m": 1,
+   "k": "mcq",
+   "topic": "biodiversity"
+  },
+  {
+   "s": "2023-06",
+   "q": "23",
+   "t": "In India the first wave and tidal energy project was set up at",
+   "m": 1,
+   "k": "mcq",
+   "topic": "resources"
+  },
+  {
+   "s": "2023-06",
+   "q": "24",
+   "t": "Which one of the following sources contributes maximum electricity in India",
+   "m": 1,
+   "k": "mcq",
+   "topic": "resources"
+  },
+  {
+   "s": "2023-06",
+   "q": "25",
+   "t": "Which one of the following source of energy is used maximum in rural India",
+   "m": 1,
+   "k": "mcq",
+   "topic": "resources"
+  },
+  {
+   "s": "2023-06",
+   "q": "26",
+   "t": "Maximum population that can be supported by the resources of the planet at a given level of technology is known as",
+   "m": 1,
+   "k": "mcq",
+   "topic": "resources"
+  },
+  {
+   "s": "2023-06",
+   "q": "27",
+   "t": "Which one of the following is an example of selective destruction of species",
+   "m": 1,
+   "k": "mcq",
+   "topic": "biodiversity"
+  },
+  {
+   "s": "2023-06",
+   "q": "28",
+   "t": "Which one of the following is an invasive species in the semi-arid areas of India",
+   "m": 1,
+   "k": "mcq",
+   "topic": "biodiversity"
+  },
+  {
+   "s": "2023-06",
+   "q": "29",
+   "t": "Which one of the following is not an ex-situ conservation of biodiversity",
+   "m": 1,
+   "k": "mcq",
+   "topic": "biodiversity"
+  },
+  {
+   "s": "2023-06",
+   "q": "30",
+   "t": "Match the following : Wetlands States (a) Sunderbans (i) Punjab (b) Harike (ii) Rajasthan (c) Chilka (iii) West Bengal (d) Bharatpur (iv) Odisha Codes",
+   "m": 1,
+   "k": "mcq",
+   "topic": "major-ecosystems"
+  },
+  {
+   "s": "2023-06",
+   "q": "31",
+   "t": "Which one of the following is a non-point source of pollution",
+   "m": 1,
+   "k": "mcq",
+   "topic": "pollution"
+  },
+  {
+   "s": "2023-06",
+   "q": "32",
+   "t": "Which one of the following is not a natural pollutant",
+   "m": 1,
+   "k": "mcq",
+   "topic": "pollution"
+  },
+  {
+   "s": "2023-06",
+   "q": "33",
+   "t": "The full form of TDS stands for",
+   "m": 1,
+   "k": "mcq",
+   "topic": "pollution"
+  },
+  {
+   "s": "2023-06",
+   "q": "34",
+   "t": "Decibel-A (db A) measures",
+   "m": 1,
+   "k": "mcq",
+   "topic": "pollution"
+  },
+  {
+   "s": "2023-06",
+   "q": "35",
+   "t": "Which one of the following is not a characteristic of hazardous waste",
+   "m": 1,
+   "k": "mcq",
+   "topic": "global-issues"
+  },
+  {
+   "s": "2023-06",
+   "q": "36",
+   "t": "Which one of the following is a physical treatment of hazardous waste",
+   "m": 1,
+   "k": "mcq",
+   "topic": "global-issues"
+  },
+  {
+   "s": "2023-06",
+   "q": "37",
+   "t": "Which one of the following methods is generally used when many industries and urban areas do not have enough vacant space for disposal of wastes",
+   "m": 1,
+   "k": "mcq",
+   "topic": "pollution"
+  },
+  {
+   "s": "2023-06",
+   "q": "38",
+   "t": "The Inter-Governmental Panel on Climate Change (IPCC) was established in",
+   "m": 1,
+   "k": "mcq",
+   "topic": "global-issues"
+  },
+  {
+   "s": "2023-06",
+   "q": "39",
+   "t": "Maximum concentration of ozone is found in",
+   "m": 1,
+   "k": "mcq",
+   "topic": "global-issues"
+  },
+  {
+   "s": "2023-06",
+   "q": "40",
+   "t": "Which one of the following is not an effect of acid rain",
+   "m": 1,
+   "k": "mcq",
+   "topic": "global-issues"
+  },
+  {
+   "s": "2023-06",
+   "q": "41",
+   "t": "Earth Summit, 2002 was organised at",
+   "m": 1,
+   "k": "mcq",
+   "topic": "global-issues"
+  },
+  {
+   "s": "2023-06",
+   "q": "42",
+   "t": "In which of the following cities, one of the zonal branches of National Green Tribunal is located",
+   "m": 1,
+   "k": "mcq",
+   "topic": "laws-policy"
+  },
+  {
+   "s": "2023-06",
+   "q": "43",
+   "t": "Which one of the following Articles in the constitution of India states that “The state shall endeavour to protect and improve the environment and safeguard the forest and wildlife of the country”",
+   "m": 1,
+   "k": "mcq",
+   "topic": "laws-policy"
+  },
+  {
+   "s": "2023-06",
+   "q": "44",
+   "t": "The major factors responsible for the increase in population between 10,000 B. C. and about 1800 A. D. was largely due to",
+   "m": 1,
+   "k": "mcq",
+   "topic": "env-basics"
+  },
+  {
+   "s": "2023-06",
+   "q": "45",
+   "t": "Which one of the following diseases cannot be regarded entirely as genetic",
+   "m": 1,
+   "k": "mcq",
+   "topic": "health"
+  },
+  {
+   "s": "2023-06",
+   "q": "46",
+   "t": "Match the following : Types Hazards (a) Atmospheric (i) Pest invasions (b) Biological (ii) Landslides (c) Geological (iii) Heat wave (d) Hydrological (iv) Floods Codes",
+   "m": 1,
+   "k": "mcq",
+   "topic": "global-issues"
+  },
+  {
+   "s": "2023-06",
+   "q": "47",
+   "t": "Silent valley is located along the river",
+   "m": 1,
+   "k": "mcq",
+   "topic": "society-ethics"
+  },
+  {
+   "s": "2023-06",
+   "q": "48",
+   "t": "Which one of the following is not a factor for the creation of new set of environmental ethics",
+   "m": 1,
+   "k": "mcq",
+   "topic": "society-ethics"
+  },
+  {
+   "s": "2023-06",
+   "q": "49",
+   "t": "Who wrote the essay on “The Land Ethics”",
+   "m": 1,
+   "k": "mcq",
+   "topic": "global-issues"
+  },
+  {
+   "s": "2023-06",
+   "q": "50",
+   "t": "Which one of the following statements is false",
+   "m": 1,
+   "k": "mcq",
+   "topic": "laws-policy"
+  },
+  {
+   "s": "2023-12",
+   "q": "1",
+   "t": "The concept of Sustainable Development was formally defined in",
+   "m": 1,
+   "k": "mcq",
+   "topic": "global-issues"
+  },
+  {
+   "s": "2023-12",
+   "q": "2",
+   "t": "Moving from pollution intensive economic production to environment friendly processes",
+   "m": 1,
+   "k": "mcq",
+   "topic": "pollution"
+  },
+  {
+   "s": "2023-12",
+   "q": "3",
+   "t": "Which one of the following is not one of the Sustainable Development Goals (SDGs)",
+   "m": 1,
+   "k": "mcq",
+   "topic": "env-basics"
+  },
+  {
+   "s": "2023-12",
+   "q": "4",
+   "t": "Decomposers are otherwise known as",
+   "m": 1,
+   "k": "mcq",
+   "topic": "ecosystem"
+  },
+  {
+   "s": "2023-12",
+   "q": "5",
+   "t": "Which one of the following statements related to ecosystem is false",
+   "m": 1,
+   "k": "mcq",
+   "topic": "ecosystem"
+  },
+  {
+   "s": "2023-12",
+   "q": "6",
+   "t": "Water component of biosphere is known as",
+   "m": 1,
+   "k": "mcq",
+   "topic": "env-basics"
+  },
+  {
+   "s": "2023-12",
+   "q": "7",
+   "t": "In which of the following trophic level quaternary consumers are found",
+   "m": 1,
+   "k": "mcq",
+   "topic": "ecosystem"
+  },
+  {
+   "s": "2023-12",
+   "q": "8",
+   "t": "In which type of forest hemlock, yew and maple trees are found",
+   "m": 1,
+   "k": "mcq",
+   "topic": "major-ecosystems"
+  },
+  {
+   "s": "2023-12",
+   "q": "9",
+   "t": "Which one of the following is a predator of desert locust",
+   "m": 1,
+   "k": "mcq",
+   "topic": "ecosystem"
+  },
+  {
+   "s": "2023-12",
+   "q": "10",
+   "t": "Organism found living at the bottom of the water mass is known as",
+   "m": 1,
+   "k": "mcq",
+   "topic": "major-ecosystems"
+  },
+  {
+   "s": "2023-12",
+   "q": "11",
+   "t": "Which of the following oceanic zone is rich in species and high in productivity",
+   "m": 1,
+   "k": "mcq",
+   "topic": "biodiversity"
+  },
+  {
+   "s": "2023-12",
+   "q": "12",
+   "t": "Which of the following is a non-renewable resource",
+   "m": 1,
+   "k": "mcq",
+   "topic": "resources"
+  },
+  {
+   "s": "2023-12",
+   "q": "13",
+   "t": "The total salt content in fresh water is",
+   "m": 1,
+   "k": "mcq",
+   "topic": "resources"
+  },
+  {
+   "s": "2023-12",
+   "q": "14",
+   "t": "Which of the following soils is best suited for cotton",
+   "m": 1,
+   "k": "mcq",
+   "topic": "resources"
+  },
+  {
+   "s": "2023-12",
+   "q": "15",
+   "t": "Which one of the following is not a soil conservation method",
+   "m": 1,
+   "k": "mcq",
+   "topic": "biodiversity"
+  },
+  {
+   "s": "2023-12",
+   "q": "16",
+   "t": "Which one of the following is an economic significance of forests",
+   "m": 1,
+   "k": "mcq",
+   "topic": "global-issues"
+  },
+  {
+   "s": "2023-12",
+   "q": "17",
+   "t": "Which of the following statements related to forest is not correct",
+   "m": 1,
+   "k": "mcq",
+   "topic": "health"
+  },
+  {
+   "s": "2023-12",
+   "q": "18",
+   "t": "Deforestation leads to",
+   "m": 1,
+   "k": "mcq",
+   "topic": "pollution"
+  },
+  {
+   "s": "2023-12",
+   "q": "19",
+   "t": "Which one of the following species is highest in number in the biodiversity",
+   "m": 1,
+   "k": "mcq",
+   "topic": "biodiversity"
+  },
+  {
+   "s": "2023-12",
+   "q": "20",
+   "t": "Which of the following biogeographic zone covers the largest area in India",
+   "m": 1,
+   "k": "mcq",
+   "topic": "biodiversity"
+  },
+  {
+   "s": "2023-12",
+   "q": "21",
+   "t": "Which of the following is a biological hotspot in India",
+   "m": 1,
+   "k": "mcq",
+   "topic": "biodiversity"
+  },
+  {
+   "s": "2023-12",
+   "q": "22",
+   "t": "Which one of the following is not an indirect use value of biodiversity",
+   "m": 1,
+   "k": "mcq",
+   "topic": "society-ethics"
+  },
+  {
+   "s": "2023-12",
+   "q": "23",
+   "t": "Which one of the following is not a non-conventional source of energy",
+   "m": 1,
+   "k": "mcq",
+   "topic": "resources"
+  },
+  {
+   "s": "2023-12",
+   "q": "24",
+   "t": "Which of the following areas in India is considered to be suitable for geothermal energy",
+   "m": 1,
+   "k": "mcq",
+   "topic": "resources"
+  },
+  {
+   "s": "2023-12",
+   "q": "25",
+   "t": "More than half of the energy need of India is met by",
+   "m": 1,
+   "k": "mcq",
+   "topic": "resources"
+  },
+  {
+   "s": "2023-12",
+   "q": "26",
+   "t": "Urjagram refers to",
+   "m": 1,
+   "k": "mcq",
+   "topic": "resources"
+  },
+  {
+   "s": "2023-12",
+   "q": "27",
+   "t": "Which of the following is an example of selective destruction",
+   "m": 1,
+   "k": "mcq",
+   "topic": "major-ecosystems"
+  },
+  {
+   "s": "2023-12",
+   "q": "28",
+   "t": "Which one of the following animals is not a part of commerical hunting",
+   "m": 1,
+   "k": "mcq",
+   "topic": "biodiversity"
+  },
+  {
+   "s": "2023-12",
+   "q": "29",
+   "t": "Which of the following is not an example of invasive species",
+   "m": 1,
+   "k": "mcq",
+   "topic": "biodiversity"
+  },
+  {
+   "s": "2023-12",
+   "q": "30",
+   "t": "Which of the following is an example of in-situ conservation",
+   "m": 1,
+   "k": "mcq",
+   "topic": "biodiversity"
+  },
+  {
+   "s": "2023-12",
+   "q": "31",
+   "t": "Which of the following is a non-point source pollutant",
+   "m": 1,
+   "k": "mcq",
+   "topic": "pollution"
+  },
+  {
+   "s": "2023-12",
+   "q": "32",
+   "t": "Which of the following is not a primary pollutant",
+   "m": 1,
+   "k": "mcq",
+   "topic": "pollution"
+  },
+  {
+   "s": "2023-12",
+   "q": "33",
+   "t": "Standard level of RSPM in India is",
+   "m": 1,
+   "k": "mcq",
+   "topic": "pollution"
+  },
+  {
+   "s": "2023-12",
+   "q": "34",
+   "t": "Coliform can be detected by conducting",
+   "m": 1,
+   "k": "mcq",
+   "topic": "pollution"
+  },
+  {
+   "s": "2023-12",
+   "q": "35",
+   "t": "Which one of the following is not a waste minimisation method",
+   "m": 1,
+   "k": "mcq",
+   "topic": "pollution"
+  },
+  {
+   "s": "2023-12",
+   "q": "36",
+   "t": "Which of the following is a biological treatment method of waste",
+   "m": 1,
+   "k": "mcq",
+   "topic": "pollution"
+  },
+  {
+   "s": "2023-12",
+   "q": "37",
+   "t": "The best way to dispose nuclear waste is",
+   "m": 1,
+   "k": "mcq",
+   "topic": "pollution"
+  },
+  {
+   "s": "2023-12",
+   "q": "38",
+   "t": "Which of the following is not a Green House Gas",
+   "m": 1,
+   "k": "mcq",
+   "topic": "global-issues"
+  },
+  {
+   "s": "2023-12",
+   "q": "39",
+   "t": "Which one of the following is not one of the eight missions of National Action Plan on climate change",
+   "m": 1,
+   "k": "mcq",
+   "topic": "health"
+  },
+  {
+   "s": "2023-12",
+   "q": "40",
+   "t": "Ozone layer in the atmosphere is generally found in",
+   "m": 1,
+   "k": "mcq",
+   "topic": "global-issues"
+  },
+  {
+   "s": "2023-12",
+   "q": "41",
+   "t": "The principal bench of National Green Tribunal is located at",
+   "m": 1,
+   "k": "mcq",
+   "topic": "laws-policy"
+  },
+  {
+   "s": "2023-12",
+   "q": "42",
+   "t": "Montreal Protocol on Substances that deplete the ozone layer was agreed by nations in",
+   "m": 1,
+   "k": "mcq",
+   "topic": "global-issues"
+  },
+  {
+   "s": "2023-12",
+   "q": "43",
+   "t": "The Basel Convention is related to",
+   "m": 1,
+   "k": "mcq",
+   "topic": "global-issues"
+  },
+  {
+   "s": "2023-12",
+   "q": "44",
+   "t": "Which of the following diseases is not due to genetic influence",
+   "m": 1,
+   "k": "mcq",
+   "topic": "health"
+  },
+  {
+   "s": "2023-12",
+   "q": "45",
+   "t": "Match the following and find out the correct alternatives given below : Category Name of the hazard (a) Atmospheric (i) Forest fire (b) Biological (ii) Drought (c) Geological (iii) Heat wave (d) Hydrological (iv) Landslides Codes",
+   "m": 1,
+   "k": "mcq",
+   "topic": "global-issues"
+  },
+  {
+   "s": "2023-12",
+   "q": "46",
+   "t": "Which of the following region falls under high seismic zones in India",
+   "m": 1,
+   "k": "mcq",
+   "topic": "global-issues"
+  },
+  {
+   "s": "2023-12",
+   "q": "47",
+   "t": "What could be the population of the world by 2100",
+   "m": 1,
+   "k": "mcq",
+   "topic": "env-basics"
+  },
+  {
+   "s": "2023-12",
+   "q": "48",
+   "t": "Which of the following is not an ENVIS centre",
+   "m": 1,
+   "k": "mcq",
+   "topic": "laws-policy"
+  },
+  {
+   "s": "2023-12",
+   "q": "49",
+   "t": "Which one of the following view towards the nature believes that all organisms on the Earth have values and rights",
+   "m": 1,
+   "k": "mcq",
+   "topic": "society-ethics"
+  },
+  {
+   "s": "2023-12",
+   "q": "50",
+   "t": "Using English material to communicate to non-English speaking communities is an example of",
+   "m": 1,
+   "k": "mcq",
+   "topic": "society-ethics"
+  },
+  {
+   "s": "2024-06",
+   "q": "1",
+   "t": "Which one of the following is a natural environment",
+   "m": 1,
+   "k": "mcq",
+   "topic": "resources"
+  },
+  {
+   "s": "2024-06",
+   "q": "2",
+   "t": "Who developed the concept of ‘Determinism’",
+   "m": 1,
+   "k": "mcq",
+   "topic": "env-basics"
+  },
+  {
+   "s": "2024-06",
+   "q": "3",
+   "t": "Which of the following is not one of the seventeen Sustainable Development Goals",
+   "m": 1,
+   "k": "mcq",
+   "topic": "env-basics"
+  },
+  {
+   "s": "2024-06",
+   "q": "4",
+   "t": "Life does not exist beyond ............... metres above mean sea level.",
+   "m": 1,
+   "k": "mcq",
+   "topic": "global-issues"
+  },
+  {
+   "s": "2024-06",
+   "q": "5",
+   "t": "Which one of the following is placed at trophic level V in an aquatic environment",
+   "m": 1,
+   "k": "mcq",
+   "topic": "ecosystem"
+  },
+  {
+   "s": "2024-06",
+   "q": "6",
+   "t": "The main reservoir of sulphur in the biosphere is",
+   "m": 1,
+   "k": "mcq",
+   "topic": "ecosystem"
+  },
+  {
+   "s": "2024-06",
+   "q": "7",
+   "t": "In ecological succession, the intermediate community stage is termed as",
+   "m": 1,
+   "k": "mcq",
+   "topic": "ecosystem"
+  },
+  {
+   "s": "2024-06",
+   "q": "8",
+   "t": "Ant eaters, giant flying squirrels, and sloths are found in",
+   "m": 1,
+   "k": "mcq",
+   "topic": "major-ecosystems"
+  },
+  {
+   "s": "2024-06",
+   "q": "9",
+   "t": "An estuary is a transitional zone representing",
+   "m": 1,
+   "k": "mcq",
+   "topic": "ecosystem"
+  },
+  {
+   "s": "2024-06",
+   "q": "10",
+   "t": "Which biome experiences intense heat and strong wind with a great desiccating action during the months of April and June",
+   "m": 1,
+   "k": "mcq",
+   "topic": "major-ecosystems"
+  },
+  {
+   "s": "2024-06",
+   "q": "11",
+   "t": "Which of the following aquatic organism is found living at the bottom of the water mass",
+   "m": 1,
+   "k": "mcq",
+   "topic": "major-ecosystems"
+  },
+  {
+   "s": "2024-06",
+   "q": "12",
+   "t": "Which of the following is a renewable resource",
+   "m": 1,
+   "k": "mcq",
+   "topic": "resources"
+  },
+  {
+   "s": "2024-06",
+   "q": "13",
+   "t": "The process by which solid water changes directly to vapour phase is known as",
+   "m": 1,
+   "k": "mcq",
+   "topic": "resources"
+  },
+  {
+   "s": "2024-06",
+   "q": "14",
+   "t": "Which one of the following is not a traditional water management system in India",
+   "m": 1,
+   "k": "mcq",
+   "topic": "resources"
+  },
+  {
+   "s": "2024-06",
+   "q": "15",
+   "t": "Which one of the following is not a measure to control soil erosion",
+   "m": 1,
+   "k": "mcq",
+   "topic": "resources"
+  },
+  {
+   "s": "2024-06",
+   "q": "16",
+   "t": "Which one of the following is an ecological significance of forest",
+   "m": 1,
+   "k": "mcq",
+   "topic": "society-ethics"
+  },
+  {
+   "s": "2024-06",
+   "q": "17",
+   "t": "Crown fire takes place in the",
+   "m": 1,
+   "k": "mcq",
+   "topic": "major-ecosystems"
+  },
+  {
+   "s": "2024-06",
+   "q": "18",
+   "t": "Which of the following enables tribal and other forest dwellers",
+   "m": 1,
+   "k": "mcq",
+   "topic": "laws-policy"
+  },
+  {
+   "s": "2024-06",
+   "q": "19",
+   "t": "Hotspots are regions of",
+   "m": 1,
+   "k": "mcq",
+   "topic": "biodiversity"
+  },
+  {
+   "s": "2024-06",
+   "q": "20",
+   "t": "Which of the following has the maximum genetic diversity in India",
+   "m": 1,
+   "k": "mcq",
+   "topic": "biodiversity"
+  },
+  {
+   "s": "2024-06",
+   "q": "21",
+   "t": "Which one of the following is a use value of biodiversity",
+   "m": 1,
+   "k": "mcq",
+   "topic": "biodiversity"
+  },
+  {
+   "s": "2024-06",
+   "q": "22",
+   "t": "Which one of the following statement about biological diversity in India is not correct",
+   "m": 1,
+   "k": "mcq",
+   "topic": "biodiversity"
+  },
+  {
+   "s": "2024-06",
+   "q": "23",
+   "t": "Which one of the following is a non-conventional source of energy",
+   "m": 1,
+   "k": "mcq",
+   "topic": "resources"
+  },
+  {
+   "s": "2024-06",
+   "q": "24",
+   "t": "Use of non-conventional sources of energy is",
+   "m": 1,
+   "k": "mcq",
+   "topic": "pollution"
+  },
+  {
+   "s": "2024-06",
+   "q": "25",
+   "t": "The most suitable fuel for a fuel cell is",
+   "m": 1,
+   "k": "mcq",
+   "topic": "ecosystem"
+  },
+  {
+   "s": "2024-06",
+   "q": "26",
+   "t": "‘Sludge gas’ largely consists of",
+   "m": 1,
+   "k": "mcq",
+   "topic": "pollution"
+  },
+  {
+   "s": "2024-06",
+   "q": "27",
+   "t": "Artificial insemination is useful for",
+   "m": 1,
+   "k": "mcq",
+   "topic": "biodiversity"
+  },
+  {
+   "s": "2024-06",
+   "q": "28",
+   "t": "Fostering as a conservation technique is found successful in",
+   "m": 1,
+   "k": "mcq",
+   "topic": "biodiversity"
+  },
+  {
+   "s": "2024-06",
+   "q": "29",
+   "t": "Mangrove in the coastal area work against erosion by acting as",
+   "m": 1,
+   "k": "mcq",
+   "topic": "major-ecosystems"
+  },
+  {
+   "s": "2024-06",
+   "q": "30",
+   "t": "In MAB programme run by UNESCO, MAB stands for",
+   "m": 1,
+   "k": "mcq",
+   "topic": "biodiversity"
+  },
+  {
+   "s": "2024-06",
+   "q": "31",
+   "t": "Which one of the following chemical is associated with Bhopal gas tragedy",
+   "m": 1,
+   "k": "mcq",
+   "topic": "pollution"
+  },
+  {
+   "s": "2024-06",
+   "q": "32",
+   "t": "Which one of the following is a measure of oxygen used by bacteria to decompose the organic matter",
+   "m": 1,
+   "k": "mcq",
+   "topic": "pollution"
+  },
+  {
+   "s": "2024-06",
+   "q": "33",
+   "t": "Which of the following is a biodegradable pollutant",
+   "m": 1,
+   "k": "mcq",
+   "topic": "pollution"
+  },
+  {
+   "s": "2024-06",
+   "q": "34",
+   "t": "Prescribed limit of noise pollution in India is",
+   "m": 1,
+   "k": "mcq",
+   "topic": "pollution"
+  },
+  {
+   "s": "2024-06",
+   "q": "35",
+   "t": "Which one of the following is a physical treatment of waste",
+   "m": 1,
+   "k": "mcq",
+   "topic": "pollution"
+  },
+  {
+   "s": "2024-06",
+   "q": "36",
+   "t": "Which of the following is the best method of waste minimisation",
+   "m": 1,
+   "k": "mcq",
+   "topic": "pollution"
+  },
+  {
+   "s": "2024-06",
+   "q": "37",
+   "t": ".............. is the phenomenon of increase in the concentration of pollutant from one link in a food chain to another.",
+   "m": 1,
+   "k": "mcq",
+   "topic": "pollution"
+  },
+  {
+   "s": "2024-06",
+   "q": "38",
+   "t": "The pH value of rainfall of four places A, B, C and D are given below. Identify the place which had the acid deposition",
+   "m": 1,
+   "k": "mcq",
+   "topic": "global-issues"
+  },
+  {
+   "s": "2024-06",
+   "q": "39",
+   "t": "Which day is observed as the “International Day for the preservation of ozone layer”",
+   "m": 1,
+   "k": "mcq",
+   "topic": "global-issues"
+  },
+  {
+   "s": "2024-06",
+   "q": "40",
+   "t": "Which of the following is not true about CFCs",
+   "m": 1,
+   "k": "mcq",
+   "topic": "global-issues"
+  },
+  {
+   "s": "2024-06",
+   "q": "41",
+   "t": "The provision for environmental protection in our constitution was in the year",
+   "m": 1,
+   "k": "mcq",
+   "topic": "laws-policy"
+  },
+  {
+   "s": "2024-06",
+   "q": "42",
+   "t": "NBA has been set up under the",
+   "m": 1,
+   "k": "mcq",
+   "topic": "laws-policy"
+  },
+  {
+   "s": "2024-06",
+   "q": "43",
+   "t": "Which of the following is not a part of conservation projects of endangered species",
+   "m": 1,
+   "k": "mcq",
+   "topic": "biodiversity"
+  },
+  {
+   "s": "2024-06",
+   "q": "44",
+   "t": "The study of origin of disease is termed as",
+   "m": 1,
+   "k": "mcq",
+   "topic": "health"
+  },
+  {
+   "s": "2024-06",
+   "q": "45",
+   "t": "Which of the following is a genetic disease",
+   "m": 1,
+   "k": "mcq",
+   "topic": "health"
+  },
+  {
+   "s": "2024-06",
+   "q": "46",
+   "t": "Which of the following is a geological disaster",
+   "m": 1,
+   "k": "mcq",
+   "topic": "global-issues"
+  },
+  {
+   "s": "2024-06",
+   "q": "47",
+   "t": "Chandi Prasad Bhatt was associated with",
+   "m": 1,
+   "k": "mcq",
+   "topic": "society-ethics"
+  },
+  {
+   "s": "2024-06",
+   "q": "48",
+   "t": "Which of the following views consider nature as mother and cannot be tamed",
+   "m": 1,
+   "k": "mcq",
+   "topic": "society-ethics"
+  },
+  {
+   "s": "2024-06",
+   "q": "49",
+   "t": "Environmental decision that affects certain ethnic groups represents",
+   "m": 1,
+   "k": "mcq",
+   "topic": "society-ethics"
+  },
+  {
+   "s": "2024-06",
+   "q": "50",
+   "t": "ENVIS centres are established by",
+   "m": 1,
+   "k": "mcq",
+   "topic": "laws-policy"
+  },
+  {
+   "s": "2024-12",
+   "q": "1",
+   "t": "Which the following is not one of the seventeen Sustainable Development Goals (SDGs)",
+   "m": 1,
+   "k": "mcq",
+   "topic": "env-basics"
+  },
+  {
+   "s": "2024-12",
+   "q": "2",
+   "t": "Which one of the following is a human modified environment",
+   "m": 1,
+   "k": "mcq",
+   "topic": "env-basics"
+  },
+  {
+   "s": "2024-12",
+   "q": "3",
+   "t": "Who said that the term ‘sustainable development’ is an oxymoron",
+   "m": 1,
+   "k": "mcq",
+   "topic": "global-issues"
+  },
+  {
+   "s": "2024-12",
+   "q": "4",
+   "t": "Which one of the following is a biotic component",
+   "m": 1,
+   "k": "mcq",
+   "topic": "env-basics"
+  },
+  {
+   "s": "2024-12",
+   "q": "5",
+   "t": "Which one of the following statements is correct",
+   "m": 1,
+   "k": "mcq",
+   "topic": "ecosystem"
+  },
+  {
+   "s": "2024-12",
+   "q": "6",
+   "t": "Which one of the following is a top carnivore",
+   "m": 1,
+   "k": "mcq",
+   "topic": "ecosystem"
+  },
+  {
+   "s": "2024-12",
+   "q": "7",
+   "t": "The main reservoir of sulphur in the biosphere is the",
+   "m": 1,
+   "k": "mcq",
+   "topic": "ecosystem"
+  },
+  {
+   "s": "2024-12",
+   "q": "8",
+   "t": "Hemlock and maples are found in",
+   "m": 1,
+   "k": "mcq",
+   "topic": "major-ecosystems"
+  },
+  {
+   "s": "2024-12",
+   "q": "9",
+   "t": "On which animal Calotes and Uromastyx are predatory in the Thar desert",
+   "m": 1,
+   "k": "mcq",
+   "topic": "ecosystem"
+  },
+  {
+   "s": "2024-12",
+   "q": "10",
+   "t": "Organisms which remain attached to stems and roots of the rooted plants are",
+   "m": 1,
+   "k": "mcq",
+   "topic": "major-ecosystems"
+  },
+  {
+   "s": "2024-12",
+   "q": "11",
+   "t": "The example of lotic freshwater ecosystem is",
+   "m": 1,
+   "k": "mcq",
+   "topic": "ecosystem"
+  },
+  {
+   "s": "2024-12",
+   "q": "12",
+   "t": "Which of the following is a non-renewable resource",
+   "m": 1,
+   "k": "mcq",
+   "topic": "biodiversity"
+  },
+  {
+   "s": "2024-12",
+   "q": "13",
+   "t": "The soil having low organic matter and have low fertility is",
+   "m": 1,
+   "k": "mcq",
+   "topic": "major-ecosystems"
+  },
+  {
+   "s": "2024-12",
+   "q": "14",
+   "t": "The average salinity of sea water is",
+   "m": 1,
+   "k": "mcq",
+   "topic": "major-ecosystems"
+  },
+  {
+   "s": "2024-12",
+   "q": "15",
+   "t": "Ravine land is formed due to",
+   "m": 1,
+   "k": "mcq",
+   "topic": "resources"
+  },
+  {
+   "s": "2024-12",
+   "q": "16",
+   "t": "Which of the following regions covers more than 50% plant species in the world",
+   "m": 1,
+   "k": "mcq",
+   "topic": "biodiversity"
+  },
+  {
+   "s": "2024-12",
+   "q": "17",
+   "t": "In which of the following activity forest does not play a significant role",
+   "m": 1,
+   "k": "mcq",
+   "topic": "global-issues"
+  },
+  {
+   "s": "2024-12",
+   "q": "18",
+   "t": "India needs ................ percentages of its area under forest to meet the ecological and economic need.",
+   "m": 1,
+   "k": "mcq",
+   "topic": "resources"
+  },
+  {
+   "s": "2024-12",
+   "q": "19",
+   "t": "Which one of the following methods of ex-situ conservation provides genetic insurance",
+   "m": 1,
+   "k": "mcq",
+   "topic": "biodiversity"
+  },
+  {
+   "s": "2024-12",
+   "q": "20",
+   "t": "Invasive species which causes skin allergies is",
+   "m": 1,
+   "k": "mcq",
+   "topic": "biodiversity"
+  },
+  {
+   "s": "2024-12",
+   "q": "21",
+   "t": "Which one of the following was the first biosphere reserve in India",
+   "m": 1,
+   "k": "mcq",
+   "topic": "biodiversity"
+  },
+  {
+   "s": "2024-12",
+   "q": "22",
+   "t": "Which one of the following is not considered as fragile habitats",
+   "m": 1,
+   "k": "mcq",
+   "topic": "major-ecosystems"
+  },
+  {
+   "s": "2024-12",
+   "q": "23",
+   "t": "Which one of the following is a biodegradable pollutant",
+   "m": 1,
+   "k": "mcq",
+   "topic": "pollution"
+  },
+  {
+   "s": "2024-12",
+   "q": "24",
+   "t": "Which one of the following is predominantly indoor pollutant",
+   "m": 1,
+   "k": "mcq",
+   "topic": "global-issues"
+  },
+  {
+   "s": "2024-12",
+   "q": "25",
+   "t": "Which one of the following is a photochemical oxidant",
+   "m": 1,
+   "k": "mcq",
+   "topic": "global-issues"
+  },
+  {
+   "s": "2024-12",
+   "q": "26",
+   "t": "Sludge gas largely consists of",
+   "m": 1,
+   "k": "mcq",
+   "topic": "pollution"
+  },
+  {
+   "s": "2024-12",
+   "q": "27",
+   "t": "Hot-spots are region of",
+   "m": 1,
+   "k": "mcq",
+   "topic": "biodiversity"
+  },
+  {
+   "s": "2024-12",
+   "q": "28",
+   "t": "Which one of the following is not correct about India as a mega-biodiversity country",
+   "m": 1,
+   "k": "mcq",
+   "topic": "biodiversity"
+  },
+  {
+   "s": "2024-12",
+   "q": "29",
+   "t": "Which one of the following is a non-use value of biodiversity",
+   "m": 1,
+   "k": "mcq",
+   "topic": "society-ethics"
+  },
+  {
+   "s": "2024-12",
+   "q": "30",
+   "t": "Which one of the following has maximum genetic diversity in India",
+   "m": 1,
+   "k": "mcq",
+   "topic": "biodiversity"
+  },
+  {
+   "s": "2024-12",
+   "q": "31",
+   "t": "A biomass gassifier converts",
+   "m": 1,
+   "k": "mcq",
+   "topic": "resources"
+  },
+  {
+   "s": "2024-12",
+   "q": "32",
+   "t": "From which one of the following types of sources, energy can be harnessed using photovoltaic cells",
+   "m": 1,
+   "k": "mcq",
+   "topic": "resources"
+  },
+  {
+   "s": "2024-12",
+   "q": "33",
+   "t": "Which of the following regions in India is the highest producer of oil",
+   "m": 1,
+   "k": "mcq",
+   "topic": "resources"
+  },
+  {
+   "s": "2024-12",
+   "q": "34",
+   "t": "Which one of the following is not a waste minimisation method",
+   "m": 1,
+   "k": "mcq",
+   "topic": "pollution"
+  },
+  {
+   "s": "2024-12",
+   "q": "35",
+   "t": "Which of the following is not a chemical treatment of waste",
+   "m": 1,
+   "k": "mcq",
+   "topic": "pollution"
+  },
+  {
+   "s": "2024-12",
+   "q": "36",
+   "t": "Which one of the following methods is mostly used for disposal of nuclear waste",
+   "m": 1,
+   "k": "mcq",
+   "topic": "pollution"
+  },
+  {
+   "s": "2024-12",
+   "q": "37",
+   "t": "Which one of the following statements related to waste management is true",
+   "m": 1,
+   "k": "mcq",
+   "topic": "global-issues"
+  },
+  {
+   "s": "2024-12",
+   "q": "38",
+   "t": "Which one of the following is related to climate change",
+   "m": 1,
+   "k": "mcq",
+   "topic": "global-issues"
+  },
+  {
+   "s": "2024-12",
+   "q": "39",
+   "t": "The ozone layer is present in which of the following range of the atmosphere",
+   "m": 1,
+   "k": "mcq",
+   "topic": "global-issues"
+  },
+  {
+   "s": "2024-12",
+   "q": "40",
+   "t": "Which one of the following can cause skin cancer and cataract in humans",
+   "m": 1,
+   "k": "mcq",
+   "topic": "global-issues"
+  },
+  {
+   "s": "2024-12",
+   "q": "41",
+   "t": "Air (Prevention and Control of Pollution) Act was enacted in the year",
+   "m": 1,
+   "k": "mcq",
+   "topic": "laws-policy"
+  },
+  {
+   "s": "2024-12",
+   "q": "42",
+   "t": "The Principal Bench of National Green Tribunal is situated at",
+   "m": 1,
+   "k": "mcq",
+   "topic": "laws-policy"
+  },
+  {
+   "s": "2024-12",
+   "q": "43",
+   "t": "The provision for environmental protection in our constitution was made in the year",
+   "m": 1,
+   "k": "mcq",
+   "topic": "laws-policy"
+  },
+  {
+   "s": "2024-12",
+   "q": "44",
+   "t": "The study of origin of disease is termed as",
+   "m": 1,
+   "k": "mcq",
+   "topic": "health"
+  },
+  {
+   "s": "2024-12",
+   "q": "45",
+   "t": "Which of the following is not located in the Taj Trapezium",
+   "m": 1,
+   "k": "mcq",
+   "topic": "pollution"
+  },
+  {
+   "s": "2024-12",
+   "q": "46",
+   "t": "Flooding in two countries namely ................... and ................... result in two-third of the global death count.",
+   "m": 1,
+   "k": "mcq",
+   "topic": "global-issues"
+  },
+  {
+   "s": "2024-12",
+   "q": "47",
+   "t": "Silent Valley is the narrow valley of the .................. river.",
+   "m": 1,
+   "k": "mcq",
+   "topic": "society-ethics"
+  },
+  {
+   "s": "2024-12",
+   "q": "48",
+   "t": "Which one of the following community does not have a strong sense of stewardship",
+   "m": 1,
+   "k": "mcq",
+   "topic": "society-ethics"
+  },
+  {
+   "s": "2024-12",
+   "q": "49",
+   "t": "Holding meeting in a remote area is",
+   "m": 1,
+   "k": "mcq",
+   "topic": "society-ethics"
+  },
+  {
+   "s": "2024-12",
+   "q": "50",
+   "t": "The main centre of Environmental Information System (ENVIS) is located at",
+   "m": 1,
+   "k": "mcq",
+   "topic": "laws-policy"
+  },
+  {
+   "s": "2025-06",
+   "q": "1",
+   "t": "Which one the following is a human modified environment",
+   "m": 1,
+   "k": "mcq",
+   "topic": "env-basics"
+  },
+  {
+   "s": "2025-06",
+   "q": "2",
+   "t": "Which one of the following in not one of the seventeen Sustainable Development Goals (SDGs)",
+   "m": 1,
+   "k": "mcq",
+   "topic": "env-basics"
+  },
+  {
+   "s": "2025-06",
+   "q": "3",
+   "t": "Which one of the following is not a decomposer",
+   "m": 1,
+   "k": "mcq",
+   "topic": "ecosystem"
+  },
+  {
+   "s": "2025-06",
+   "q": "4",
+   "t": "The extent of the biosphere is about",
+   "m": 1,
+   "k": "mcq",
+   "topic": "global-issues"
+  },
+  {
+   "s": "2025-06",
+   "q": "5",
+   "t": "Primary consumers are found at",
+   "m": 1,
+   "k": "mcq",
+   "topic": "ecosystem"
+  },
+  {
+   "s": "2025-06",
+   "q": "6",
+   "t": "How much percent of water is present on the earth surface in the form of fresh water",
+   "m": 1,
+   "k": "mcq",
+   "topic": "resources"
+  },
+  {
+   "s": "2025-06",
+   "q": "7",
+   "t": "Detritus food chain begins",
+   "m": 1,
+   "k": "mcq",
+   "topic": "pollution"
+  },
+  {
+   "s": "2025-06",
+   "q": "8",
+   "t": "Maple, beech and oak are found in",
+   "m": 1,
+   "k": "mcq",
+   "topic": "major-ecosystems"
+  },
+  {
+   "s": "2025-06",
+   "q": "9",
+   "t": "Unattached organisms which live at the air-water interface are known as",
+   "m": 1,
+   "k": "mcq",
+   "topic": "major-ecosystems"
+  },
+  {
+   "s": "2025-06",
+   "q": "10",
+   "t": "Which one of the following is not a part of lentic ecosystems",
+   "m": 1,
+   "k": "mcq",
+   "topic": "ecosystem"
+  },
+  {
+   "s": "2025-06",
+   "q": "11",
+   "t": "In which of the following process, solid water directly changes into water vapour",
+   "m": 1,
+   "k": "mcq",
+   "topic": "resources"
+  },
+  {
+   "s": "2025-06",
+   "q": "12",
+   "t": "Kul is a traditional irrigation practice in the state of",
+   "m": 1,
+   "k": "mcq",
+   "topic": "resources"
+  },
+  {
+   "s": "2025-06",
+   "q": "13",
+   "t": "Which of the following soil supports cultivation of Rubber",
+   "m": 1,
+   "k": "mcq",
+   "topic": "resources"
+  },
+  {
+   "s": "2025-06",
+   "q": "14",
+   "t": "Which one of the following is not one of the consequences of excessive irrigation",
+   "m": 1,
+   "k": "mcq",
+   "topic": "ecosystem"
+  },
+  {
+   "s": "2025-06",
+   "q": "15",
+   "t": "Which one of the following is an economic significance of forest",
+   "m": 1,
+   "k": "mcq",
+   "topic": "biodiversity"
+  },
+  {
+   "s": "2025-06",
+   "q": "16",
+   "t": "Which one of the following is not a cause of deforestation",
+   "m": 1,
+   "k": "mcq",
+   "topic": "resources"
+  },
+  {
+   "s": "2025-06",
+   "q": "17",
+   "t": "In which of the following states was successfully implemented Joint Forest Management",
+   "m": 1,
+   "k": "mcq",
+   "topic": "resources"
+  },
+  {
+   "s": "2025-06",
+   "q": "18",
+   "t": "Which one of the following are the most abundant life forms on the earth in terms of number",
+   "m": 1,
+   "k": "mcq",
+   "topic": "biodiversity"
+  },
+  {
+   "s": "2025-06",
+   "q": "19",
+   "t": "The Trans-Himalayas biogeographic region is found in",
+   "m": 1,
+   "k": "mcq",
+   "topic": "biodiversity"
+  },
+  {
+   "s": "2025-06",
+   "q": "20",
+   "t": "Which one of the following biogeographic region covers the largest in India",
+   "m": 1,
+   "k": "mcq",
+   "topic": "biodiversity"
+  },
+  {
+   "s": "2025-06",
+   "q": "21",
+   "t": "Which one of the following is an indirect use value of biodiversity",
+   "m": 1,
+   "k": "mcq",
+   "topic": "biodiversity"
+  },
+  {
+   "s": "2025-06",
+   "q": "22",
+   "t": "Which one of the following is a conventional source of energy",
+   "m": 1,
+   "k": "mcq",
+   "topic": "resources"
+  },
+  {
+   "s": "2025-06",
+   "q": "23",
+   "t": "The first wave energy project in India was set up at",
+   "m": 1,
+   "k": "mcq",
+   "topic": "resources"
+  },
+  {
+   "s": "2025-06",
+   "q": "24",
+   "t": "India’s maximum commercial energy comes from",
+   "m": 1,
+   "k": "mcq",
+   "topic": "resources"
+  },
+  {
+   "s": "2025-06",
+   "q": "25",
+   "t": "Which one of the following is not a factor for the sustainable carrying capacity for the human species",
+   "m": 1,
+   "k": "mcq",
+   "topic": "biodiversity"
+  },
+  {
+   "s": "2025-06",
+   "q": "26",
+   "t": "Insecticides, particularly chlorinated hydrocarbons reduced the population level of",
+   "m": 1,
+   "k": "mcq",
+   "topic": "biodiversity"
+  },
+  {
+   "s": "2025-06",
+   "q": "27",
+   "t": "Invasive species which causes skin allergies is",
+   "m": 1,
+   "k": "mcq",
+   "topic": "biodiversity"
+  },
+  {
+   "s": "2025-06",
+   "q": "28",
+   "t": "Which one of the following is an in-situ conservation programme",
+   "m": 1,
+   "k": "mcq",
+   "topic": "biodiversity"
+  },
+  {
+   "s": "2025-06",
+   "q": "29",
+   "t": "Which one of the following wetland is located in Odisha",
+   "m": 1,
+   "k": "mcq",
+   "topic": "major-ecosystems"
+  },
+  {
+   "s": "2025-06",
+   "q": "30",
+   "t": "Which one of the following is a non-point source pollution",
+   "m": 1,
+   "k": "mcq",
+   "topic": "pollution"
+  },
+  {
+   "s": "2025-06",
+   "q": "31",
+   "t": "Which one of the following is a major source of ozone as a pollutant",
+   "m": 1,
+   "k": "mcq",
+   "topic": "global-issues"
+  },
+  {
+   "s": "2025-06",
+   "q": "32",
+   "t": "Which one of the following is a secondary air pollutant",
+   "m": 1,
+   "k": "mcq",
+   "topic": "pollution"
+  },
+  {
+   "s": "2025-06",
+   "q": "33",
+   "t": "Which one of the following is a physical agent of water pollution",
+   "m": 1,
+   "k": "mcq",
+   "topic": "pollution"
+  },
+  {
+   "s": "2025-06",
+   "q": "34",
+   "t": "Which one of the following is not a symptom of toxicity",
+   "m": 1,
+   "k": "mcq",
+   "topic": "pollution"
+  },
+  {
+   "s": "2025-06",
+   "q": "35",
+   "t": "Which one of the following is not a biological treatment of waste",
+   "m": 1,
+   "k": "mcq",
+   "topic": "pollution"
+  },
+  {
+   "s": "2025-06",
+   "q": "36",
+   "t": "Which of the following is not a part of organic waste",
+   "m": 1,
+   "k": "mcq",
+   "topic": "pollution"
+  },
+  {
+   "s": "2025-06",
+   "q": "37",
+   "t": "Which one of the following is not a benefit of recycling of waste",
+   "m": 1,
+   "k": "mcq",
+   "topic": "global-issues"
+  },
+  {
+   "s": "2025-06",
+   "q": "38",
+   "t": "Inter-governmental Panel on Climate Change (IPCC) was established in the year",
+   "m": 1,
+   "k": "mcq",
+   "topic": "global-issues"
+  },
+  {
+   "s": "2025-06",
+   "q": "39",
+   "t": "Ozone is found in",
+   "m": 1,
+   "k": "mcq",
+   "topic": "global-issues"
+  },
+  {
+   "s": "2025-06",
+   "q": "40",
+   "t": "pH of unpolluted rain water is",
+   "m": 1,
+   "k": "mcq",
+   "topic": "global-issues"
+  },
+  {
+   "s": "2025-06",
+   "q": "41",
+   "t": "Which of the following amendments made the protection and improvement of natural environment as Fundamental Duty",
+   "m": 1,
+   "k": "mcq",
+   "topic": "laws-policy"
+  },
+  {
+   "s": "2025-06",
+   "q": "42",
+   "t": "Convention on the Control of Transboundary Movement of Hazardous Wastes and Their Disposal is known as",
+   "m": 1,
+   "k": "mcq",
+   "topic": "global-issues"
+  },
+  {
+   "s": "2025-06",
+   "q": "43",
+   "t": "In Delhi, new vehicles should have pollution prevention mechanism comparable to",
+   "m": 1,
+   "k": "mcq",
+   "topic": "pollution"
+  },
+  {
+   "s": "2025-06",
+   "q": "44",
+   "t": "At the dawn of agriculture (about 8000 B. C.) the world population was some- where around",
+   "m": 1,
+   "k": "mcq",
+   "topic": "env-basics"
+  },
+  {
+   "s": "2025-06",
+   "q": "45",
+   "t": "Which one of the following terms is not a part of WHO definition on health",
+   "m": 1,
+   "k": "mcq",
+   "topic": "health"
+  },
+  {
+   "s": "2025-06",
+   "q": "46",
+   "t": "Which one of the following is not a geological hazard",
+   "m": 1,
+   "k": "mcq",
+   "topic": "global-issues"
+  },
+  {
+   "s": "2025-06",
+   "q": "48",
+   "t": "Which one of the following is not one of the three major views on nature",
+   "m": 1,
+   "k": "mcq",
+   "topic": "society-ethics"
+  },
+  {
+   "s": "2025-06",
+   "q": "50",
+   "t": "ENVIS centre at TERI works in the area of ............ .",
+   "m": 1,
+   "k": "mcq",
+   "topic": "laws-policy"
+  },
+  {
+   "s": "2025-12",
+   "q": "1",
+   "t": "The title of the Brundtland Commission Report is",
+   "m": 1,
+   "k": "mcq",
+   "topic": "global-issues"
+  },
+  {
+   "s": "2025-12",
+   "q": "2",
+   "t": "How many goals are there under Sustainable Development Goals",
+   "m": 1,
+   "k": "mcq",
+   "topic": "env-basics"
+  },
+  {
+   "s": "2025-12",
+   "q": "3",
+   "t": "Who coined the term ‘determinism’",
+   "m": 1,
+   "k": "mcq",
+   "topic": "env-basics"
+  },
+  {
+   "s": "2025-12",
+   "q": "4",
+   "t": "Land component of the biosphere is known as",
+   "m": 1,
+   "k": "mcq",
+   "topic": "env-basics"
+  },
+  {
+   "s": "2025-12",
+   "q": "5",
+   "t": "Chemosynthetic bacteria are",
+   "m": 1,
+   "k": "mcq",
+   "topic": "ecosystem"
+  },
+  {
+   "s": "2025-12",
+   "q": "6",
+   "t": "In ecological succession the intermediate community stage is known as",
+   "m": 1,
+   "k": "mcq",
+   "topic": "ecosystem"
+  },
+  {
+   "s": "2025-12",
+   "q": "7",
+   "t": "In sulphur cycle, the main sulphur reservoir is present in the",
+   "m": 1,
+   "k": "mcq",
+   "topic": "ecosystem"
+  },
+  {
+   "s": "2025-12",
+   "q": "8",
+   "t": "In which type of forest maple, beach and oak are found",
+   "m": 1,
+   "k": "mcq",
+   "topic": "major-ecosystems"
+  },
+  {
+   "s": "2025-12",
+   "q": "9",
+   "t": "The organisms which are attached to stem are",
+   "m": 1,
+   "k": "mcq",
+   "topic": "major-ecosystems"
+  },
+  {
+   "s": "2025-12",
+   "q": "10",
+   "t": "In India, grassland ecosystem biomass peaks in the months of",
+   "m": 1,
+   "k": "mcq",
+   "topic": "ecosystem"
+  },
+  {
+   "s": "2025-12",
+   "q": "11",
+   "t": "Example of lotic ecosystem is",
+   "m": 1,
+   "k": "mcq",
+   "topic": "ecosystem"
+  },
+  {
+   "s": "2025-12",
+   "q": "12",
+   "t": "The soil which is low in organic matter and fertility is",
+   "m": 1,
+   "k": "mcq",
+   "topic": "major-ecosystems"
+  },
+  {
+   "s": "2025-12",
+   "q": "13",
+   "t": "Which one of the following is NOT a soil conservation practice",
+   "m": 1,
+   "k": "mcq",
+   "topic": "biodiversity"
+  },
+  {
+   "s": "2025-12",
+   "q": "14",
+   "t": "Finer particles in waste water can be made to settle by using",
+   "m": 1,
+   "k": "mcq",
+   "topic": "pollution"
+  },
+  {
+   "s": "2025-12",
+   "q": "15",
+   "t": "Which of the following is NOT achieved by addition of manures",
+   "m": 1,
+   "k": "mcq",
+   "topic": "resources"
+  },
+  {
+   "s": "2025-12",
+   "q": "16",
+   "t": "Crown fire takes place in",
+   "m": 1,
+   "k": "mcq",
+   "topic": "major-ecosystems"
+  },
+  {
+   "s": "2025-12",
+   "q": "17",
+   "t": "In which of the following activities forest does NOT play a significant role",
+   "m": 1,
+   "k": "mcq",
+   "topic": "global-issues"
+  },
+  {
+   "s": "2025-12",
+   "q": "18",
+   "t": "Which of the following is an economic significance of forest",
+   "m": 1,
+   "k": "mcq",
+   "topic": "global-issues"
+  },
+  {
+   "s": "2025-12",
+   "q": "19",
+   "t": "Which of the following species are highest in number on the earth",
+   "m": 1,
+   "k": "mcq",
+   "topic": "biodiversity"
+  },
+  {
+   "s": "2025-12",
+   "q": "20",
+   "t": "In which of the following biogeographical region of India, species are known for their extraordinary ecological adaptation",
+   "m": 1,
+   "k": "mcq",
+   "topic": "biodiversity"
+  },
+  {
+   "s": "2025-12",
+   "q": "21",
+   "t": "Plataconthomys and the spinny dormouse are found in",
+   "m": 1,
+   "k": "mcq",
+   "topic": "biodiversity"
+  },
+  {
+   "s": "2025-12",
+   "q": "22",
+   "t": "Which one of the following facts is NOT correct related to biological hotspots in the world",
+   "m": 1,
+   "k": "mcq",
+   "topic": "biodiversity"
+  },
+  {
+   "s": "2025-12",
+   "q": "23",
+   "t": "Which one of the following is a conventional source of energy",
+   "m": 1,
+   "k": "mcq",
+   "topic": "resources"
+  },
+  {
+   "s": "2025-12",
+   "q": "24",
+   "t": "The most suitable fuel for a fuel cell is",
+   "m": 1,
+   "k": "mcq",
+   "topic": "ecosystem"
+  },
+  {
+   "s": "2025-12",
+   "q": "25",
+   "t": "The first Tidal Energy Plant in India was established at",
+   "m": 1,
+   "k": "mcq",
+   "topic": "resources"
+  },
+  {
+   "s": "2025-12",
+   "q": "26",
+   "t": "‘Sludge gas’ largely consists of",
+   "m": 1,
+   "k": "mcq",
+   "topic": "pollution"
+  },
+  {
+   "s": "2025-12",
+   "q": "27",
+   "t": "Which one of the following invasive species causes skin allergies",
+   "m": 1,
+   "k": "mcq",
+   "topic": "biodiversity"
+  },
+  {
+   "s": "2025-12",
+   "q": "28",
+   "t": "Which one of the following is an example of selective destruction",
+   "m": 1,
+   "k": "mcq",
+   "topic": "major-ecosystems"
+  },
+  {
+   "s": "2025-12",
+   "q": "29",
+   "t": "Which one of the following animals is NOT a part of commercial hunting",
+   "m": 1,
+   "k": "mcq",
+   "topic": "biodiversity"
+  },
+  {
+   "s": "2025-12",
+   "q": "30",
+   "t": "Which one of the following is an in-situ conservation method",
+   "m": 1,
+   "k": "mcq",
+   "topic": "biodiversity"
+  },
+  {
+   "s": "2025-12",
+   "q": "31",
+   "t": "Which one of the following is predominantly an indoor pollutant",
+   "m": 1,
+   "k": "mcq",
+   "topic": "global-issues"
+  },
+  {
+   "s": "2025-12",
+   "q": "32",
+   "t": "Which one of the following is a secondary pollutant",
+   "m": 1,
+   "k": "mcq",
+   "topic": "global-issues"
+  },
+  {
+   "s": "2025-12",
+   "q": "33",
+   "t": "The chemical which was responsible for Bhopal Gas Tragedy is",
+   "m": 1,
+   "k": "mcq",
+   "topic": "pollution"
+  },
+  {
+   "s": "2025-12",
+   "q": "34",
+   "t": "MPN test is used to detect",
+   "m": 1,
+   "k": "mcq",
+   "topic": "pollution"
+  },
+  {
+   "s": "2025-12",
+   "q": "35",
+   "t": "Which one of the following in a physical treatment of waste",
+   "m": 1,
+   "k": "mcq",
+   "topic": "pollution"
+  },
+  {
+   "s": "2025-12",
+   "q": "36",
+   "t": "Which one of the following is an excellent method of waste minimization, detoxification and disposal",
+   "m": 1,
+   "k": "mcq",
+   "topic": "pollution"
+  },
+  {
+   "s": "2025-12",
+   "q": "37",
+   "t": "Which one of the following is NOT a technology used for sludge processing",
+   "m": 1,
+   "k": "mcq",
+   "topic": "pollution"
+  },
+  {
+   "s": "2025-12",
+   "q": "38",
+   "t": "Which of the following organisations led to the formation of Intergovernmental Panel on Climate Change (IPCC)",
+   "m": 1,
+   "k": "mcq",
+   "topic": "global-issues"
+  },
+  {
+   "s": "2025-12",
+   "q": "39",
+   "t": "Which of the following is NOT one of the eight missions of the National Action Plan on Climate Change (NAPCC)",
+   "m": 1,
+   "k": "mcq",
+   "topic": "global-issues"
+  },
+  {
+   "s": "2025-12",
+   "q": "40",
+   "t": "Ozone Day is celebrated on",
+   "m": 1,
+   "k": "mcq",
+   "topic": "global-issues"
+  },
+  {
+   "s": "2025-12",
+   "q": "41",
+   "t": "The provisions of environmental protection in the constitution of India were made under ............. .",
+   "m": 1,
+   "k": "mcq",
+   "topic": "laws-policy"
+  },
+  {
+   "s": "2025-12",
+   "q": "42",
+   "t": "Which one of the following animals is NOT a part of conservation project for endangered species in India",
+   "m": 1,
+   "k": "mcq",
+   "topic": "biodiversity"
+  },
+  {
+   "s": "2025-12",
+   "q": "43",
+   "t": "The Kyoto Protocol deals with",
+   "m": 1,
+   "k": "mcq",
+   "topic": "global-issues"
+  },
+  {
+   "s": "2025-12",
+   "q": "44",
+   "t": "The study of the cause or origin of diseases is known as",
+   "m": 1,
+   "k": "mcq",
+   "topic": "health"
+  },
+  {
+   "s": "2025-12",
+   "q": "45",
+   "t": "Which one of the following is NOT a geological hazard",
+   "m": 1,
+   "k": "mcq",
+   "topic": "global-issues"
+  },
+  {
+   "s": "2025-12",
+   "q": "46",
+   "t": "Tsunamis are also known as",
+   "m": 1,
+   "k": "mcq",
+   "topic": "global-issues"
+  },
+  {
+   "s": "2025-12",
+   "q": "47",
+   "t": "Silent Valley is a narrow valley of the",
+   "m": 1,
+   "k": "mcq",
+   "topic": "society-ethics"
+  },
+  {
+   "s": "2025-12",
+   "q": "48",
+   "t": "Which of the following view considers nature as mother and cannot be tamed",
+   "m": 1,
+   "k": "mcq",
+   "topic": "society-ethics"
+  },
+  {
+   "s": "2025-12",
+   "q": "49",
+   "t": "Holding meeting in the remote location to minimise public participation is a",
+   "m": 1,
+   "k": "mcq",
+   "topic": "society-ethics"
+  },
+  {
+   "s": "2025-12",
+   "q": "50",
+   "t": "Which one of the following view towards nature were proposed as an alternative of domination",
+   "m": 1,
+   "k": "mcq",
+   "topic": "society-ethics"
+  },
+  {
+   "s": "2026-06",
+   "q": "1",
+   "t": "Which one of the following is an example of human-made environment",
+   "m": 1,
+   "k": "mcq",
+   "topic": "env-basics"
+  },
+  {
+   "s": "2026-06",
+   "q": "2",
+   "t": "Who coined the term ‘Possibilism’",
+   "m": 1,
+   "k": "mcq",
+   "topic": "env-basics"
+  },
+  {
+   "s": "2026-06",
+   "q": "3",
+   "t": "Moving from a continually growing population to one that is stable is known as",
+   "m": 1,
+   "k": "mcq",
+   "topic": "env-basics"
+  },
+  {
+   "s": "2026-06",
+   "q": "4",
+   "t": "Air component of biosphere is known as",
+   "m": 1,
+   "k": "mcq",
+   "topic": "env-basics"
+  },
+  {
+   "s": "2026-06",
+   "q": "5",
+   "t": "Decomposers are otherwise known as",
+   "m": 1,
+   "k": "mcq",
+   "topic": "ecosystem"
+  },
+  {
+   "s": "2026-06",
+   "q": "6",
+   "t": "Which one of the following can be placed at fifth trophic level in a terrestrial trophic level",
+   "m": 1,
+   "k": "mcq",
+   "topic": "ecosystem"
+  },
+  {
+   "s": "2026-06",
+   "q": "7",
+   "t": "The main reservoir of nitrogen in the biosphere is",
+   "m": 1,
+   "k": "mcq",
+   "topic": "ecosystem"
+  },
+  {
+   "s": "2026-06",
+   "q": "8",
+   "t": "Spruce, fir and pine are found in",
+   "m": 1,
+   "k": "mcq",
+   "topic": "major-ecosystems"
+  },
+  {
+   "s": "2026-06",
+   "q": "9",
+   "t": "Organisms which live at the air-water interface are known as",
+   "m": 1,
+   "k": "mcq",
+   "topic": "major-ecosystems"
+  },
+  {
+   "s": "2026-06",
+   "q": "10",
+   "t": "Which one of the following is NOT a part of Lentic ecosystem",
+   "m": 1,
+   "k": "mcq",
+   "topic": "ecosystem"
+  },
+  {
+   "s": "2026-06",
+   "q": "11",
+   "t": "Estuary is a transition zone representing",
+   "m": 1,
+   "k": "mcq",
+   "topic": "ecosystem"
+  },
+  {
+   "s": "2026-06",
+   "q": "12",
+   "t": "Which of the following is a renewable resource",
+   "m": 1,
+   "k": "mcq",
+   "topic": "resources"
+  },
+  {
+   "s": "2026-06",
+   "q": "13",
+   "t": "The process by which solid water changes directly to vapour is known as",
+   "m": 1,
+   "k": "mcq",
+   "topic": "resources"
+  },
+  {
+   "s": "2026-06",
+   "q": "14",
+   "t": "An ‘aquifer’ is",
+   "m": 1,
+   "k": "mcq",
+   "topic": "resources"
+  },
+  {
+   "s": "2026-06",
+   "q": "15",
+   "t": "The most effective treatment of alkaline soil is",
+   "m": 1,
+   "k": "mcq",
+   "topic": "resources"
+  },
+  {
+   "s": "2026-06",
+   "q": "16",
+   "t": "Which one of the following statements is NOT correct about tropical rain forest",
+   "m": 1,
+   "k": "mcq",
+   "topic": "biodiversity"
+  },
+  {
+   "s": "2026-06",
+   "q": "17",
+   "t": "Joint Forest Management was started in the state of",
+   "m": 1,
+   "k": "mcq",
+   "topic": "resources"
+  },
+  {
+   "s": "2026-06",
+   "q": "18",
+   "t": "Which one of the following is NOT a non-timber forest product",
+   "m": 1,
+   "k": "mcq",
+   "topic": "resources"
+  },
+  {
+   "s": "2026-06",
+   "q": "19",
+   "t": "In which of the following ecosystem, maximum diversity is found",
+   "m": 1,
+   "k": "mcq",
+   "topic": "ecosystem"
+  },
+  {
+   "s": "2026-06",
+   "q": "20",
+   "t": "Hot spots are region of high",
+   "m": 1,
+   "k": "mcq",
+   "topic": "biodiversity"
+  },
+  {
+   "s": "2026-06",
+   "q": "21",
+   "t": "Which of the following biogeographic zone in India covers the largest area",
+   "m": 1,
+   "k": "mcq",
+   "topic": "biodiversity"
+  },
+  {
+   "s": "2026-06",
+   "q": "22",
+   "t": "Which of the following is NOT a non-use value of biodiversity",
+   "m": 1,
+   "k": "mcq",
+   "topic": "biodiversity"
+  },
+  {
+   "s": "2026-06",
+   "q": "23",
+   "t": "Which of the following is a conventional source of energy",
+   "m": 1,
+   "k": "mcq",
+   "topic": "resources"
+  },
+  {
+   "s": "2026-06",
+   "q": "24",
+   "t": "The largest coal producing country in the world is",
+   "m": 1,
+   "k": "mcq",
+   "topic": "resources"
+  },
+  {
+   "s": "2026-06",
+   "q": "25",
+   "t": "Economic development leads to declining growth rates of per-capita energy demand in which of the following sectors",
+   "m": 1,
+   "k": "mcq",
+   "topic": "pollution"
+  },
+  {
+   "s": "2026-06",
+   "q": "26",
+   "t": "A biomass gasifier converts",
+   "m": 1,
+   "k": "mcq",
+   "topic": "resources"
+  },
+  {
+   "s": "2026-06",
+   "q": "27",
+   "t": "‘Sludge gas’ largely consists of",
+   "m": 1,
+   "k": "mcq",
+   "topic": "pollution"
+  },
+  {
+   "s": "2026-06",
+   "q": "28",
+   "t": "Which one of the following is NOT a fragile habitat",
+   "m": 1,
+   "k": "mcq",
+   "topic": "major-ecosystems"
+  },
+  {
+   "s": "2026-06",
+   "q": "29",
+   "t": "Which one of the following is the biosphere reserves in India",
+   "m": 1,
+   "k": "mcq",
+   "topic": "biodiversity"
+  },
+  {
+   "s": "2026-06",
+   "q": "30",
+   "t": "Which of the following provides genetic insurance",
+   "m": 1,
+   "k": "mcq",
+   "topic": "biodiversity"
+  },
+  {
+   "s": "2026-06",
+   "q": "31",
+   "t": "Which of the following is NOT one of the benefits local people derive from the buffer zone",
+   "m": 1,
+   "k": "mcq",
+   "topic": "biodiversity"
+  },
+  {
+   "s": "2026-06",
+   "q": "32",
+   "t": "The major source of radon is",
+   "m": 1,
+   "k": "mcq",
+   "topic": "pollution"
+  },
+  {
+   "s": "2026-06",
+   "q": "33",
+   "t": "Which one of the following is not a natural pollutant",
+   "m": 1,
+   "k": "mcq",
+   "topic": "pollution"
+  },
+  {
+   "s": "2026-06",
+   "q": "34",
+   "t": "Water polluted with organic waste is measured by",
+   "m": 1,
+   "k": "mcq",
+   "topic": "pollution"
+  },
+  {
+   "s": "2026-06",
+   "q": "35",
+   "t": ".............. refers to the entry of a pollutant in a food chain.",
+   "m": 1,
+   "k": "mcq",
+   "topic": "pollution"
+  },
+  {
+   "s": "2026-06",
+   "q": "36",
+   "t": "Which one of the following is NOT a part of phase separation process of physical treatment of solid waste",
+   "m": 1,
+   "k": "mcq",
+   "topic": "pollution"
+  },
+  {
+   "s": "2026-06",
+   "q": "37",
+   "t": "The cost of operation of incineration is ............... if the heat content of waste is NOT reutilised.",
+   "m": 1,
+   "k": "mcq",
+   "topic": "pollution"
+  },
+  {
+   "s": "2026-06",
+   "q": "38",
+   "t": "Which one of the following is NOT a characteristic of waste",
+   "m": 1,
+   "k": "mcq",
+   "topic": "pollution"
+  },
+  {
+   "s": "2026-06",
+   "q": "39",
+   "t": "Which of the following is NOT one of the eight missions of National Action Plan on Climate Change (NAPCC)",
+   "m": 1,
+   "k": "mcq",
+   "topic": "health"
+  },
+  {
+   "s": "2026-06",
+   "q": "40",
+   "t": "Which of the following units is used for measuring the concentration of ozone",
+   "m": 1,
+   "k": "mcq",
+   "topic": "global-issues"
+  },
+  {
+   "s": "2026-06",
+   "q": "41",
+   "t": "What is the approximate percent of solar radiation which is absorbed by the atmospheric gases",
+   "m": 1,
+   "k": "mcq",
+   "topic": "resources"
+  },
+  {
+   "s": "2026-06",
+   "q": "42",
+   "t": "The Ministry of Environment, Forest and Climate Change in Government of India was created in the year",
+   "m": 1,
+   "k": "mcq",
+   "topic": "laws-policy"
+  },
+  {
+   "s": "2026-06",
+   "q": "43",
+   "t": "The abbreviation NBA stands for",
+   "m": 1,
+   "k": "mcq",
+   "topic": "laws-policy"
+  },
+  {
+   "s": "2026-06",
+   "q": "44",
+   "t": "Which convention was on Persistent Organic Pollutants (POPs)",
+   "m": 1,
+   "k": "mcq",
+   "topic": "global-issues"
+  },
+  {
+   "s": "2026-06",
+   "q": "45",
+   "t": "During the 14th century, more than half the population of Europe and Asia died due to",
+   "m": 1,
+   "k": "mcq",
+   "topic": "global-issues"
+  },
+  {
+   "s": "2026-06",
+   "q": "46",
+   "t": "Which of the following is NOT due to behavioural influences",
+   "m": 1,
+   "k": "mcq",
+   "topic": "health"
+  },
+  {
+   "s": "2026-06",
+   "q": "47",
+   "t": "Countries that account for two-thirds of the global death due to flooding are",
+   "m": 1,
+   "k": "mcq",
+   "topic": "global-issues"
+  },
+  {
+   "s": "2026-06",
+   "q": "48",
+   "t": "Strong sense of responsibility for a particular part of nature is known as",
+   "m": 1,
+   "k": "mcq",
+   "topic": "society-ethics"
+  },
+  {
+   "s": "2026-06",
+   "q": "50",
+   "t": "The main centre of ENVIS is located at",
+   "m": 1,
+   "k": "mcq",
+   "topic": "laws-policy"
+  }
+ ]
+}

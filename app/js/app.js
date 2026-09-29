@@ -50,6 +50,10 @@
   function analyse(course) {
     const sessions = course.sessions;
     const recent = sessions.slice(-RECENT);
+    // Levels are judged by share of the paper, scaled to a 180-mark paper,
+    // so a 50-mark MCQ paper and a 180-mark written paper rank alike.
+    const offer = course.questions.reduce((a, q) => a + q.m, 0) / sessions.length;
+    const scale = 180 / offer;
     const topics = course.topics.map((t) => {
       const qs = course.questions.filter((q) => q.topic === t.id);
       const total = qs.reduce((a, q) => a + q.m, 0);
@@ -58,7 +62,7 @@
       const bySession = sessions.map((s) => qs.filter((q) => q.s === s).reduce((a, q) => a + q.m, 0));
       const seen = bySession.filter((m) => m > 0).length;
       const score = 0.6 * avg + 0.4 * recentAvg;
-      const level = LEVELS.find((l) => score >= l.min);
+      const level = LEVELS.find((l) => score * scale >= l.min);
       const numShare = total ? qs.filter((q) => q.k === "num").reduce((a, q) => a + q.m, 0) / total : 0;
       return { ...t, qs, total, avg, recentAvg, bySession, seen, score, level, numShare };
     }).sort((a, b) => b.score - a.score);
@@ -73,7 +77,7 @@
     const perPart = p.parts && course.topics.some((t) => t.part);
     const whole = { id: null, name: "", attempt: p.attempt, of: p.questions, target: (p.parts ? p.marks : p.attempt * p.each) * spare };
     const groups = (perPart ? p.parts : [whole])
-      .filter((g) => g.attempt < g.of)
+      .filter((g) => !perPart || g.attempt < g.of)
       .map((g) => {
         const each = g.each || p.each;
         const target = g.target || g.attempt * each * spare;
@@ -97,13 +101,13 @@
 
   /* ---------- small components ---------- */
   const badge = (level) => `<span class="badge ${level.id}">${level.label}</span>`;
-  const evidence = (t, n) => `Asked in ${t.seen} of ${n} papers · avg ${Math.round(t.avg)} marks`;
+  const evidence = (t, n, mcq) => `Asked in ${t.seen} of ${n} papers · avg ${Math.round(t.avg)} ${mcq ? "questions" : "marks"}`;
   const doneMark = (code, id) => (isDone(code, id) ? `<span class="done-tick" aria-label="Done">✓</span>` : "");
 
-  function topicRow(code, t, n) {
+  function topicRow(code, t, n, mcq) {
     return `<a class="row" href="#/c/${code}/t/${t.id}">
       <span class="row-main"><span class="row-title">${esc(t.name)}</span>
-        <span class="row-sub">${evidence(t, n)}</span></span>
+        <span class="row-sub">${evidence(t, n, mcq)}</span></span>
       <span class="row-end">${doneMark(code, t.id)}${badge(t.level)}<span class="chev" aria-hidden="true">›</span></span>
     </a>`;
   }
@@ -117,7 +121,8 @@
   function examLine(c, course) {
     if (course) {
       const p = course.pattern;
-      return p.parts ? `${p.time} · ${p.marks} marks · ${pickText(p)}` : `${p.time} · ${p.marks} marks · any ${p.attempt} of ${p.questions} questions`;
+      return p.mcq ? `${p.time} · ${p.marks} marks · ${p.questions} MCQs, all compulsory`
+        : p.parts ? `${p.time} · ${p.marks} marks · ${pickText(p)}` : `${p.time} · ${p.marks} marks · any ${p.attempt} of ${p.questions} questions`;
     }
     return c.exam ? `${c.exam.time} · ${c.exam.marks} marks · ${c.exam.format}` : "";
   }
@@ -130,6 +135,7 @@
 
   // "Q1 + 2 from Part A + 2 from Part B" or "any 5 questions".
   function pickText(p) {
+    if (p.mcq) return `all ${p.questions} questions`;
     if (!p.parts) return `any ${p.attempt} questions`;
     return p.parts.map((g) => g.attempt === g.of
       ? g.name.replace(/\s*\((compulsory|both)[^)]*\)/i, "") + " (compulsory)"
@@ -211,6 +217,11 @@
     const byId = (id) => topics.find((t) => t.id === id);
     const split = groups.length > 1 || groups[0].id;
     const others = topics.filter((t) => !analysis.mvp.includes(t.id));
+    const mcq = !!course.pattern.mcq;
+    const repeated = course.repeated || [];
+    const repeatItem = (r) => `<li><span class="rep-q">${esc(r.t)}</span>
+        <span class="rep-opts">${r.opts.map((o, i) => `<span>(${i + 1}) ${esc(o)}</span>`).join("")}</span>
+        <span class="rep-meta">Asked ${r.sessions.length}× · ${r.sessions.map(sessionLabel).join(", ")}</span></li>`;
 
     app.innerHTML = `${courseHeader(c, course)}
       ${courseTabs(code, "")}
@@ -219,17 +230,26 @@
         <h2 class="focus-title">Study these first</h2>
         <p class="muted small">${split
           ? `They give you enough choice in each section, based on ${n} past papers.`
-          : `They have carried about ${Math.round(groups[0].covered)} marks on an average paper — enough to answer ${esc(pickText(course.pattern))}. Based on ${n} past papers.`}</p>
+          : mcq
+            ? `They have given about ${Math.round(groups[0].covered)} of the ${course.pattern.questions} questions on an average paper. Based on ${n} past papers.`
+            : `They have carried about ${Math.round(groups[0].covered)} marks on an average paper${(course.pattern.spare || SPARE) >= 1 ? ` — enough to answer ${esc(pickText(course.pattern))}` : ""}. Based on ${n} past papers.`}</p>
+        ${course.pattern.caution ? `<p class="note small">${esc(course.pattern.caution)}</p>` : ""}
         ${compulsory && compulsory.sweep ? `<p class="note small"><strong>${esc(compulsory.name)}:</strong> ${esc(compulsory.sweep)}</p>` : ""}
-        ${groups.map((g) => `${split ? `<h3>${esc(g.name)}</h3>` : ""}<div class="rows">${g.ids.map((id) => topicRow(code, byId(id), n)).join("")}</div>`).join("")}
+        ${groups.map((g) => `${split ? `<h3>${esc(g.name)}</h3>` : ""}<div class="rows">${g.ids.map((id) => topicRow(code, byId(id), n, mcq)).join("")}</div>`).join("")}
       </section>
+
+      ${repeated.length ? `<h2>Asked again and again</h2>
+      <p class="muted small">These exact questions have come up in more than one paper. Read them with the topic notes.</p>
+      <section class="card"><ul class="replist">${repeated.slice(0, 8).map(repeatItem).join("")}</ul>
+        ${repeated.length > 8 ? `<details><summary>Show all ${repeated.length}</summary><ul class="replist">${repeated.slice(8).map(repeatItem).join("")}</ul></details>` : ""}
+      </section>` : ""}
 
       <div class="section-head"><h2>Latest past papers</h2><a href="#/c/${code}/papers">All ${papers.length} →</a></div>
       ${paperButtons(papers, 4)}
 
       ${others.length ? `<h2>Other topics</h2>
       <p class="muted small">In order of priority. Study these after the list above.</p>
-      <div class="rows card">${others.map((t) => topicRow(code, t, n)).join("")}</div>` : ""}`;
+      <div class="rows card">${others.map((t) => topicRow(code, t, n, mcq)).join("")}</div>` : ""}`;
   }
 
   async function viewTopic(code, id) {
@@ -239,7 +259,19 @@
     const n = course.sessions.length;
     const papers = (await load("data/papers.json"))[code] || [];
     const paperUrl = (s) => (papers.find((p) => p.s === s) || {}).url;
-    const asked = [...t.qs].sort((a, b) => b.s.localeCompare(a.s) || a.q.localeCompare(b.q));
+    const mcq = !!course.pattern.mcq;
+    // Group identical questions (common in MCQ papers) and show the most repeated first.
+    const byText = new Map();
+    [...t.qs].sort((a, b) => b.s.localeCompare(a.s)).forEach((q) => {
+      const k = q.t.toLowerCase().replace(/[^a-z0-9]/g, "");
+      if (!byText.has(k)) byText.set(k, { ...q, times: [] });
+      byText.get(k).times.push(q.s);
+    });
+    const asked = [...byText.values()].sort((a, b) => b.times.length - a.times.length || b.s.localeCompare(a.s));
+    const askedItem = (q) => `<li>
+          <span class="qsess">${sessionLabel(q.s)}</span>
+          <span>${esc(q.t)} <span class="qmarks">· ${q.times.length > 1 ? `asked ${q.times.length}×` : mcq ? "1 mark" : `${marks(q.m)} marks`}</span></span>
+          ${paperUrl(q.s) ? `<a class="small" href="${esc(paperUrl(q.s))}" target="_blank" rel="noopener">Paper ↗</a>` : "<span></span>"}</li>`;
     // Next topic in study order: the "study first" list, then the rest.
     const order = [...analysis.mvp, ...analysis.topics.map((x) => x.id).filter((x) => !analysis.mvp.includes(x))];
     const next = analysis.topics.find((x) => x.id === order[order.indexOf(id) + 1]);
@@ -247,7 +279,7 @@
     app.innerHTML = `
       <a class="back" href="#/c/${code}">← ${esc(c.title)}</a>
       <h1>${esc(t.name)}</h1>
-      <p class="head-meta">${badge(t.level)} <span class="muted small">${evidence(t, n)}</span></p>
+      <p class="head-meta">${badge(t.level)} <span class="muted small">${evidence(t, n, mcq)}</span></p>
       <p class="lead">${esc(t.summary)}</p>
 
       <h2>Key points</h2>
@@ -266,12 +298,9 @@
       <div class="callout warn"><ul class="points">${t.mistakes.map((m) => `<li>${esc(m)}</li>`).join("")}</ul></div>` : ""}
 
       <h2>Asked in past papers</h2>
-      <section class="card"><ul class="qlist">
-        ${asked.map((q) => `<li>
-          <span class="qsess">${sessionLabel(q.s)}</span>
-          <span>${esc(q.t)} <span class="qmarks">· ${marks(q.m)} marks</span></span>
-          ${paperUrl(q.s) ? `<a class="small" href="${esc(paperUrl(q.s))}" target="_blank" rel="noopener">Paper ↗</a>` : "<span></span>"}</li>`).join("")}
-      </ul></section>
+      <section class="card"><ul class="qlist">${asked.slice(0, 12).map(askedItem).join("")}</ul>
+        ${asked.length > 12 ? `<details><summary>Show all ${asked.length}</summary><ul class="qlist">${asked.slice(12).map(askedItem).join("")}</ul></details>` : ""}
+      </section>
 
       <div class="topic-foot">
         <button type="button" class="btn secondary" id="done" aria-pressed="${isDone(code, id)}">${isDone(code, id) ? "✓ Done" : "Mark as done"}</button>
@@ -376,6 +405,16 @@
     const top = analysis.topics.slice(0, 4).map((t) => t.name).join(", ");
     const tips = course.examTips || {};
     const list = (items) => items.map((x) => `<li>${esc(x)}</li>`).join("");
+    if (p.mcq) {
+      app.innerHTML = `${courseHeader(c, course)}${courseTabs(code, "/exam")}
+        <section class="card">
+          <p>${esc(p.summary)}</p>
+          <p class="flush">Asked most: <strong>${esc(top)}</strong>.</p>
+        </section>
+        <h2>In the exam hall</h2>
+        <section class="card"><ul class="points">${list(tips.mcq || [])}</ul></section>`;
+      return;
+    }
     app.innerHTML = `${courseHeader(c, course)}${courseTabs(code, "/exam")}
       <section class="card">
         <p>${esc(p.summary)}</p>

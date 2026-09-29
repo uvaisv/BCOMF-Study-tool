@@ -1,0 +1,291 @@
+{
+  "code": "BRL-101",
+  "title": "Overview of Retailing",
+  "pattern": {
+    "time": "3 hours",
+    "marks": 100,
+    "questions": 8,
+    "attempt": 5,
+    "each": 20,
+    "summary": "8 questions, attempt any 5, each carries 20 marks. All theory; Q8 is short notes (any two). Give Indian retail examples (Big Bazaar, DMart, Reliance Trends, Amazon) in every answer."
+  },
+  "blocksOfficial": false,
+  "sessions": ["2022-12", "2023-06", "2023-12", "2024-06", "2024-12", "2025-06", "2025-12", "2026-06"],
+  "sessionNotes": {},
+  "examTips": {
+    "choosing": [
+      "Retail formats, store management (location, layout, space performance), consumer behaviour, technology in retail and ethics come up in almost every paper.",
+      "Name real Indian retailers as examples — it is the easiest way to lift a theory answer."
+    ]
+  },
+  "blocks": [
+    { "no": 1, "title": "Retailing & Its Growth in India" },
+    { "no": 2, "title": "Retail Formats" },
+    { "no": 3, "title": "Retail Consumer" },
+    { "no": 4, "title": "Merchandising, Sourcing & Pricing" },
+    { "no": 5, "title": "Store Management & Operations" },
+    { "no": 6, "title": "Technology, Law & Ethics" }
+  ],
+  "topics": [
+    {
+      "id": "formats", "name": "Retail Formats (Store, Non-store, Franchise, E-tailing)", "block": 2, "kind": "theory",
+      "summary": "Classification of formats, modern vs traditional, non-store retailing, franchising, e-tailing, cash and carry.",
+      "points": [
+        "Traditional formats: kirana/mom-and-pop stores, haats and melas, street vendors, general stores.",
+        "Modern store formats: department store (Shoppers Stop), supermarket, hypermarket (Big Bazaar), convenience store, speciality store (Tanishq), discount store (DMart), category killer, factory outlet, malls, chain stores.",
+        "Modern vs traditional: organised, large, self-service, wide assortment, technology, standard prices vs small, owner-run, credit and personal service.",
+        "Non-store retailing: direct selling (Amway), catalogue shops, telemarketing, vending machines, TV shopping, e-tailing.",
+        "Cash and carry: wholesale self-service for registered businesses (Metro, Walmart Best Price).",
+        "Brick and mortar: physical stores; click and mortar: both physical and online.",
+        "Franchising: franchisor gives the brand and system, franchisee pays a fee/royalty. Types: product/trade-name, business-format, manufacturer–retailer. Merits: fast expansion, low capital for franchisor, proven model for franchisee. Limits: less control, royalty cost, dependence.",
+        "E-tailing: selling online (Amazon, Flipkart). Advantages: 24×7, wide reach, low cost, convenience. Limitations: no touch and feel, delivery and return issues, security concerns."
+      ],
+      "frame": "Meaning → classification chart (store / non-store) → each format with an Indian example → merits → conclusion.",
+      "mistakes": []
+    },
+    {
+      "id": "consumer", "name": "Retail Consumer Behaviour", "block": 3, "kind": "theory",
+      "summary": "Buyer vs consumer, factors influencing retail consumers, buying decision process, situational variables, store image, CRM.",
+      "points": [
+        "Buyer purchases; consumer uses — may be different people.",
+        "Factors: cultural (culture, sub-culture, class), social (family, reference groups, role and status), personal (age, occupation, income, lifestyle), psychological (motivation, perception, learning, attitude).",
+        "Buying decision process: need recognition → information search → evaluation of alternatives → purchase decision → post-purchase behaviour (e.g. buying a new car).",
+        "Situational variables: physical surroundings, social surroundings, time, task (gift or self), mood.",
+        "Store image: how consumers see a store — merchandise, price, service, ambience, location.",
+        "Customer relationship marketing: keeping customers through loyalty programmes, personalised offers and service."
+      ],
+      "frame": "Meaning → factors or stages as headed points with a retail example → why retailers must understand it.",
+      "mistakes": []
+    },
+    {
+      "id": "store", "name": "Store Location, Layout, Display & Space", "block": 5, "kind": "theory",
+      "summary": "Store location factors, layouts, display, atmosphere, internal/external environment, space management and performance measures.",
+      "points": [
+        "Location factors: target population and income, footfall and accessibility, competition, parking, rent and cost, visibility, zoning laws.",
+        "Layouts: grid (supermarkets), free-form (boutiques), racetrack/loop (department stores), spine, herringbone.",
+        "Display: window display, interior display, point-of-purchase displays, fixtures, signage, lighting.",
+        "Store atmosphere: lighting, colour, music, scent, temperature, cleanliness — shapes mood and time spent.",
+        "Internal environment: layout, display, ambience, staff. External: storefront, signage, parking, surroundings.",
+        "Space performance measures: sales per square foot, gross margin per square foot, GMROF, sales per linear foot of shelf, space productivity index.",
+        "Store space management: allocating space to categories by their sales and profit contribution."
+      ],
+      "frame": "Meaning → factors or types with a small layout sketch → examples → conclusion.",
+      "mistakes": []
+    },
+    {
+      "id": "retail-india", "name": "Growth, Trends & Challenges of Retail in India", "block": 1, "kind": "theory",
+      "summary": "Factors driving retail growth in India, global and Indian trends, challenges, future, liberalisation, rural retail.",
+      "points": [
+        "Growth factors: rising incomes, young population, urbanisation, nuclear families, working women, credit and digital payments, FDI and liberalisation, growth of malls and e-commerce.",
+        "Trends: omnichannel, e-commerce and quick commerce, private labels, digital payments (UPI), data analytics, experiential stores, rural retail, sustainability.",
+        "Global trends: consolidation, omnichannel, automation, personalisation, green retail.",
+        "Challenges: high real-estate cost, poor infrastructure and supply chain, skilled-manpower shortage, complex regulations, competition from unorganised and online retail, shrinkage.",
+        "Liberalisation (1991 onwards): FDI in single- and multi-brand retail, entry of global players, better supply chains.",
+        "Rural retailing: large untapped market; e.g. ITC e-Choupal, Hariyali Kisaan Bazaar."
+      ],
+      "frame": "Headed points with Indian examples and a line on the future outlook.",
+      "mistakes": []
+    },
+    {
+      "id": "ethics", "name": "Ethics in Retailing", "block": 6, "kind": "theory",
+      "summary": "Business ethics in retail, ethical and non-ethical behaviour, benefits of managing ethics, the carry-bag charge issue.",
+      "points": [
+        "Business ethics: moral principles guiding retail decisions.",
+        "Areas: with customers (honest pricing, fair weights, no misleading ads), suppliers (fair terms, timely payment), employees (fair wages, safety), competitors (fair competition), society and environment.",
+        "Non-ethical behaviour: misleading discounts, selling expired goods, hidden charges, bait-and-switch, poor treatment of staff, data misuse.",
+        "Benefits of managing ethics: customer trust and loyalty, reputation, employee morale, fewer legal problems, long-term profit.",
+        "Carry-bag charges: consumer forums have held that charging for branded carry bags without prior notice is an unfair trade practice — retailers should inform customers, offer free or eco-friendly bags, or allow customers to bring their own."
+      ],
+      "frame": "Meaning → areas or behaviours as headed points with examples → benefits → conclusion.",
+      "mistakes": []
+    },
+    {
+      "id": "technology", "name": "Technology in Retailing", "block": 6, "kind": "theory",
+      "summary": "Applications and trends of technology in retail, POS, SEO/SEM, harmful impacts and precautions, choosing technology.",
+      "points": [
+        "Applications: POS systems and billing, barcodes and RFID, inventory management, ERP, CRM and loyalty, e-commerce and mobile apps, digital payments, self-checkout, CCTV and EAS tags, data analytics.",
+        "Trends: AI and personalisation, AR/VR try-ons, omnichannel, cashless and contactless payment, electronic shelf labels, robots in warehouses.",
+        "POS software: records sales, prints bills, updates stock, gives sales reports.",
+        "SEO (search engine optimisation): free ranking in search results. SEM (search engine marketing): paid ads in search results.",
+        "Harmful impact: job losses, high costs, data privacy and cyber risks, over-dependence, digital divide. Remedies: staff training, data security, phased adoption.",
+        "Factors for choosing technology: cost, scalability, ease of use, integration, vendor support, security."
+      ],
+      "frame": "Meaning → applications as headed points with retailer examples → precautions → conclusion.",
+      "mistakes": []
+    },
+    {
+      "id": "merchandising", "name": "Merchandising & Visual Merchandising", "block": 4, "kind": "theory",
+      "summary": "Merchandising objectives and budget, merchandise mix, cross merchandising, visual merchandising, private vs national brands.",
+      "points": [
+        "Merchandising: planning and managing the right product, at the right place, time, quantity and price.",
+        "Objectives: meet customer demand, maximise sales and margin, optimise stock, support store image.",
+        "Merchandise budget: planned sales, stock levels, reductions (markdowns, shrinkage), purchases, gross margin; constrained by funds, space, supplier terms, season.",
+        "Merchandise mix: width (number of categories), depth (items per category), consistency. Factors: target customers, store format, competition, space, season, margin.",
+        "Cross merchandising: displaying related products together (pasta with sauce) to raise basket size.",
+        "Visual merchandising: presenting products attractively — window displays, fixtures, lighting, colour, signage, mannequins, planograms.",
+        "Private brands (retailer's own, e.g. DMart's Premia) vs national brands (manufacturer's): higher margin and control vs strong pull and trust."
+      ],
+      "frame": "Meaning → components or factors as headed points → retailer examples → conclusion.",
+      "mistakes": []
+    },
+    {
+      "id": "retail-basics", "name": "Retailing: Meaning, Functions & Structural Change", "block": 1, "kind": "theory",
+      "summary": "Meaning and functions of a retailer, success factors, theories of structural change, careers in retail.",
+      "points": [
+        "Retailing: selling goods and services directly to final consumers for personal use.",
+        "Functions: assortment, breaking bulk, holding stock, services (credit, delivery), information to producers and customers, creating convenience.",
+        "Success factors: understanding customers, right location, merchandise and price, service, technology, cost control.",
+        "Theories of structural change: wheel of retailing (new formats enter low-cost, trade up, leave space for new low-cost entrants), retail accordion (general → specialised → general assortment), retail life cycle (innovation, growth, maturity, decline), dialectic process (thesis + antithesis → synthesis).",
+        "Employment options: store operations (sales associate, store manager), merchandising and buying, visual merchandising, supply chain, marketing, e-commerce, HR and finance."
+      ],
+      "frame": "Definition → points with headings → diagram for the wheel of retailing → conclusion.",
+      "mistakes": []
+    },
+    {
+      "id": "operations", "name": "Security, Finance & Performance in Retail", "block": 5, "kind": "theory",
+      "summary": "Security arrangements and shrinkage, financial planning, performance measurement and retail audit.",
+      "points": [
+        "Shrinkage: loss of stock through shoplifting, employee theft, administrative errors, vendor fraud and damage.",
+        "Security measures: CCTV, EAS tags and gates, security guards, mirrors, locked cases, staff checks, cash controls — they deter theft and reduce losses.",
+        "Financial planning: budgeting sales, costs and capital; inventory valuation; working capital and cash flow; pricing for margin.",
+        "Performance measures: sales per sq ft, GMROI, inventory turnover, conversion rate, average transaction value, same-store sales growth.",
+        "Retail audit: systematic check of operations, stock, finance and compliance."
+      ],
+      "frame": "Meaning → measures as headed points → conclusion.",
+      "mistakes": []
+    },
+    {
+      "id": "sourcing", "name": "Sourcing & Supplier Selection", "block": 4, "kind": "theory",
+      "summary": "Meaning of sourcing, global sourcing decisions, evaluating and selecting suppliers.",
+      "points": [
+        "Sourcing: finding and choosing suppliers of merchandise.",
+        "Global sourcing factors: cost and exchange rates, quality, lead time, duties and trade rules, political stability, logistics, supplier reliability.",
+        "Supplier evaluation criteria: price, quality, reliability of delivery, financial stability, capacity, flexibility, after-sales support, ethics and compliance.",
+        "Comparative evaluation: weighted scoring of suppliers on these criteria."
+      ],
+      "frame": "Meaning → factors as headed points → a small weighted-score table → conclusion.",
+      "mistakes": []
+    },
+    {
+      "id": "legal", "name": "Retail Laws, GST & VAT", "block": 6, "kind": "theory",
+      "summary": "Acts governing retail, Consumer Protection Act, GST and its benefits, VAT.",
+      "points": [
+        "Acts: Consumer Protection Act (1986, replaced in 2019), Shops and Establishments Act, Legal Metrology Act (weights and measures), Food Safety and Standards Act, Sale of Goods Act, GST Act, Trade Marks Act, labour laws.",
+        "Consumer Protection Act: consumer rights (safety, information, choice, to be heard, redressal, education); consumer commissions at district, state and national levels.",
+        "GST (2017): one indirect tax replacing VAT, excise and service tax. Benefits for retail: no cascading tax, input tax credit, simpler compliance, easier inter-state movement, lower logistics cost.",
+        "VAT: state tax on value added at each stage (replaced by GST)."
+      ],
+      "frame": "List the acts → explain three or four in detail with relevance to retail → conclusion.",
+      "mistakes": []
+    },
+    {
+      "id": "pricing", "name": "Retail Pricing", "block": 4, "kind": "theory",
+      "summary": "Methods of setting retail prices, EDLP, psychological pricing.",
+      "points": [
+        "Methods: cost-oriented (mark-up), demand-oriented, competition-oriented.",
+        "Strategies: everyday low pricing (EDLP — DMart, Walmart), high-low pricing (frequent promotions), odd/psychological pricing (₹99), prestige pricing, loss leaders, bundle pricing, price lining.",
+        "Psychological pricing: prices set to influence perception — ₹499 feels cheaper than ₹500."
+      ],
+      "frame": "Meaning → methods with examples → conclusion.",
+      "mistakes": []
+    }
+  ],
+  "questions": [
+    { "s": "2022-12", "q": "1(a)", "t": "Functions of a retailer", "m": 10, "k": "th", "topic": "retail-basics" },
+    { "s": "2022-12", "q": "1(b)", "t": "Factors influencing growth of retail in India", "m": 10, "k": "th", "topic": "retail-india" },
+    { "s": "2022-12", "q": "2", "t": "Consumer behaviour; psychological and personal factors", "m": 20, "k": "th", "topic": "consumer" },
+    { "s": "2022-12", "q": "3", "t": "Non-store retailing; modern retail formats", "m": 20, "k": "th", "topic": "formats" },
+    { "s": "2022-12", "q": "4", "t": "Sourcing; evaluating and selecting suppliers", "m": 20, "k": "th", "topic": "sourcing" },
+    { "s": "2022-12", "q": "5", "t": "Security arrangements in retailing", "m": 20, "k": "th", "topic": "operations" },
+    { "s": "2022-12", "q": "6", "t": "Applications of technology in retailing", "m": 20, "k": "th", "topic": "technology" },
+    { "s": "2022-12", "q": "7", "t": "Business ethics in retailing; broad areas", "m": 20, "k": "th", "topic": "ethics" },
+    { "s": "2022-12", "q": "8(a)", "t": "Note (any two): global trends in retailing", "m": 5, "k": "th", "topic": "retail-india" },
+    { "s": "2022-12", "q": "8(b)", "t": "Note (any two): shrinkage", "m": 5, "k": "th", "topic": "operations" },
+    { "s": "2022-12", "q": "8(c)", "t": "Note (any two): everyday low pricing", "m": 5, "k": "th", "topic": "pricing" },
+    { "s": "2022-12", "q": "8(d)", "t": "Note (any two): store space management", "m": 5, "k": "th", "topic": "store" },
+
+    { "s": "2023-06", "q": "1", "t": "Growth factors and challenges of retail in India", "m": 20, "k": "th", "topic": "retail-india" },
+    { "s": "2023-06", "q": "2", "t": "Merchandising objectives and merchandise budget", "m": 20, "k": "th", "topic": "merchandising" },
+    { "s": "2023-06", "q": "3", "t": "Methods of setting retail prices", "m": 20, "k": "th", "topic": "pricing" },
+    { "s": "2023-06", "q": "4", "t": "Store location choice; space performance measures", "m": 20, "k": "th", "topic": "store" },
+    { "s": "2023-06", "q": "5", "t": "Financial planning and financial management issues in retail", "m": 20, "k": "th", "topic": "operations" },
+    { "s": "2023-06", "q": "6", "t": "Legal acts governing retailing", "m": 20, "k": "th", "topic": "legal" },
+    { "s": "2023-06", "q": "7", "t": "Technological trends in retailing", "m": 20, "k": "th", "topic": "technology" },
+    { "s": "2023-06", "q": "8(i)", "t": "Note (any two): economic liberalisation and retail", "m": 5, "k": "th", "topic": "retail-india" },
+    { "s": "2023-06", "q": "8(ii)", "t": "Note (any two): consumer images of stores", "m": 5, "k": "th", "topic": "consumer" },
+    { "s": "2023-06", "q": "8(iii)", "t": "Note (any two): rural retailing", "m": 5, "k": "th", "topic": "retail-india" },
+    { "s": "2023-06", "q": "8(iv)", "t": "Note (any two): private vs national brands", "m": 5, "k": "th", "topic": "merchandising" },
+
+    { "s": "2023-12", "q": "1", "t": "Retailing", "m": 4, "k": "th", "topic": "retail-basics" },
+    { "s": "2023-12", "q": "1", "t": "Future of retail in India; pros and cons", "m": 16, "k": "th", "topic": "retail-india" },
+    { "s": "2023-12", "q": "2", "t": "Stages of purchase decision when buying a car", "m": 20, "k": "th", "topic": "consumer" },
+    { "s": "2023-12", "q": "3(a)", "t": "Types of retail formats", "m": 10, "k": "th", "topic": "formats" },
+    { "s": "2023-12", "q": "3(b)", "t": "Components of store display", "m": 10, "k": "th", "topic": "store" },
+    { "s": "2023-12", "q": "4", "t": "Visual merchandising: importance and components", "m": 20, "k": "th", "topic": "merchandising" },
+    { "s": "2023-12", "q": "5", "t": "Acts relating to the retail industry", "m": 20, "k": "th", "topic": "legal" },
+    { "s": "2023-12", "q": "6", "t": "Business ethics in retailing", "m": 20, "k": "th", "topic": "ethics" },
+    { "s": "2023-12", "q": "7", "t": "Types of store layouts", "m": 20, "k": "th", "topic": "store" },
+    { "s": "2023-12", "q": "8(a)", "t": "Note (any two): private vs national brand", "m": 5, "k": "th", "topic": "merchandising" },
+    { "s": "2023-12", "q": "8(b)", "t": "Note (any two): e-tailing", "m": 5, "k": "th", "topic": "formats" },
+    { "s": "2023-12", "q": "8(c)", "t": "Note (any two): challenges for retail in India", "m": 5, "k": "th", "topic": "retail-india" },
+    { "s": "2023-12", "q": "8(d)", "t": "Note (any two): cash and carry", "m": 5, "k": "th", "topic": "formats" },
+
+    { "s": "2024-06", "q": "1", "t": "Consumer behaviour; buyer vs consumer; social and cultural factors", "m": 20, "k": "th", "topic": "consumer" },
+    { "s": "2024-06", "q": "2", "t": "Modern vs traditional retail formats", "m": 20, "k": "th", "topic": "formats" },
+    { "s": "2024-06", "q": "3", "t": "Emerging trends and growth factors of Indian retail", "m": 20, "k": "th", "topic": "retail-india" },
+    { "s": "2024-06", "q": "4(a)", "t": "Factors in choosing a store location", "m": 10, "k": "th", "topic": "store" },
+    { "s": "2024-06", "q": "4(b)", "t": "Situational variables and shopping behaviour", "m": 10, "k": "th", "topic": "consumer" },
+    { "s": "2024-06", "q": "5", "t": "Cross merchandising vs merchandise; merchandising factors", "m": 20, "k": "th", "topic": "merchandising" },
+    { "s": "2024-06", "q": "6", "t": "Consumer decision-making process", "m": 20, "k": "th", "topic": "consumer" },
+    { "s": "2024-06", "q": "7", "t": "Ethical dimensions of retailing; benefits of managing ethics", "m": 20, "k": "th", "topic": "ethics" },
+    { "s": "2024-06", "q": "8(a)", "t": "Note (any two): customer relationship marketing", "m": 5, "k": "th", "topic": "consumer" },
+    { "s": "2024-06", "q": "8(b)", "t": "Note (any two): VAT", "m": 5, "k": "th", "topic": "legal" },
+    { "s": "2024-06", "q": "8(c)", "t": "Note (any two): chain stores in India", "m": 5, "k": "th", "topic": "formats" },
+    { "s": "2024-06", "q": "8(d)", "t": "Note (any two): security arrangements", "m": 5, "k": "th", "topic": "operations" },
+
+    { "s": "2024-12", "q": "1", "t": "Global and Indian trends in retailing", "m": 20, "k": "th", "topic": "retail-india" },
+    { "s": "2024-12", "q": "2", "t": "Theories of structural change in retailing", "m": 20, "k": "th", "topic": "retail-basics" },
+    { "s": "2024-12", "q": "3", "t": "Merchandise mix and factors affecting it", "m": 20, "k": "th", "topic": "merchandising" },
+    { "s": "2024-12", "q": "4", "t": "Store atmosphere", "m": 20, "k": "th", "topic": "store" },
+    { "s": "2024-12", "q": "5", "t": "Performance measurement and audit in retailing", "m": 20, "k": "th", "topic": "operations" },
+    { "s": "2024-12", "q": "6", "t": "Technological trends in retailing", "m": 20, "k": "th", "topic": "technology" },
+    { "s": "2024-12", "q": "7", "t": "Employment options in retail", "m": 20, "k": "th", "topic": "retail-basics" },
+    { "s": "2024-12", "q": "8(i)", "t": "Note (any two): benefits of managing ethics", "m": 6.67, "k": "th", "topic": "ethics" },
+    { "s": "2024-12", "q": "8(ii)", "t": "Note (any two): e-tailing", "m": 6.67, "k": "th", "topic": "formats" },
+    { "s": "2024-12", "q": "8(iii)", "t": "Note (any two): POS software", "m": 6.66, "k": "th", "topic": "technology" },
+
+    { "s": "2025-06", "q": "1", "t": "Factors influencing consumer behaviour in retail", "m": 20, "k": "th", "topic": "consumer" },
+    { "s": "2025-06", "q": "2", "t": "Modern retail formats and their benefits", "m": 20, "k": "th", "topic": "formats" },
+    { "s": "2025-06", "q": "3", "t": "Sourcing; global sourcing decisions", "m": 20, "k": "th", "topic": "sourcing" },
+    { "s": "2025-06", "q": "4", "t": "Measures of retail space performance", "m": 20, "k": "th", "topic": "store" },
+    { "s": "2025-06", "q": "5", "t": "GST and its benefits for retail", "m": 20, "k": "th", "topic": "legal" },
+    { "s": "2025-06", "q": "6", "t": "Franchising: types, advantages and limitations", "m": 20, "k": "th", "topic": "formats" },
+    { "s": "2025-06", "q": "7", "t": "Ethical and non-ethical behaviour in retailing", "m": 20, "k": "th", "topic": "ethics" },
+    { "s": "2025-06", "q": "8(a)", "t": "Note (any two): cash and carry", "m": 6.67, "k": "th", "topic": "formats" },
+    { "s": "2025-06", "q": "8(b)", "t": "Note (any two): SEO and SEM", "m": 6.67, "k": "th", "topic": "technology" },
+    { "s": "2025-06", "q": "8(c)", "t": "Note (any two): psychological pricing", "m": 6.66, "k": "th", "topic": "pricing" },
+
+    { "s": "2025-12", "q": "1", "t": "Retailing: functions of a retailer; success in retailing", "m": 20, "k": "th", "topic": "retail-basics" },
+    { "s": "2025-12", "q": "2", "t": "Buyer vs consumer; social and personal factors", "m": 20, "k": "th", "topic": "consumer" },
+    { "s": "2025-12", "q": "3", "t": "Consumer buying decision process", "m": 20, "k": "th", "topic": "consumer" },
+    { "s": "2025-12", "q": "4", "t": "Three theories of structural change in retailing", "m": 20, "k": "th", "topic": "retail-basics" },
+    { "s": "2025-12", "q": "5", "t": "Internal and external store environment", "m": 20, "k": "th", "topic": "store" },
+    { "s": "2025-12", "q": "6", "t": "Harmful impact of new technology in retail and remedies", "m": 20, "k": "th", "topic": "technology" },
+    { "s": "2025-12", "q": "7", "t": "Franchising; advantages and limitations of e-tailing", "m": 20, "k": "th", "topic": "formats" },
+    { "s": "2025-12", "q": "8(a)", "t": "Note (any two): factors in technology selection", "m": 5, "k": "th", "topic": "technology" },
+    { "s": "2025-12", "q": "8(b)", "t": "Note (any two): mom-and-pop stores", "m": 5, "k": "th", "topic": "formats" },
+    { "s": "2025-12", "q": "8(c)", "t": "Note (any two): Consumer Protection Act, 1986", "m": 5, "k": "th", "topic": "legal" },
+    { "s": "2025-12", "q": "8(d)", "t": "Note (any two): non-ethical behaviour in retail", "m": 5, "k": "th", "topic": "ethics" },
+
+    { "s": "2026-06", "q": "1", "t": "Classification of retail formats", "m": 20, "k": "th", "topic": "formats" },
+    { "s": "2026-06", "q": "2", "t": "Technological trends; precautions in handling technology", "m": 20, "k": "th", "topic": "technology" },
+    { "s": "2026-06", "q": "3", "t": "Global sourcing decisions; evaluating and selecting suppliers", "m": 20, "k": "th", "topic": "sourcing" },
+    { "s": "2026-06", "q": "4", "t": "Methods to measure retail space performance", "m": 20, "k": "th", "topic": "store" },
+    { "s": "2026-06", "q": "5", "t": "Ethical practices and non-ethical behaviour in retail", "m": 20, "k": "th", "topic": "ethics" },
+    { "s": "2026-06", "q": "6", "t": "Four retail industry legal acts", "m": 20, "k": "th", "topic": "legal" },
+    { "s": "2026-06", "q": "7", "t": "Carry-bag charges issue; benefits of managing ethics", "m": 20, "k": "th", "topic": "ethics" },
+    { "s": "2026-06", "q": "8(i,ii)", "t": "Notes (any two): bricks and mortar; catalogue shops", "m": 10, "k": "th", "topic": "formats" },
+    { "s": "2026-06", "q": "8(iii)", "t": "Note (any two): everyday low pricing", "m": 5, "k": "th", "topic": "pricing" },
+    { "s": "2026-06", "q": "8(iv)", "t": "Note (any two): technology in store management", "m": 5, "k": "th", "topic": "technology" }
+  ]
+}

@@ -14,7 +14,7 @@ Built around one rule (see `CLAUDE.md`): **help students study — never add set
 - **Plan**: one tap for the time left (3 hours, 6 hours, 2 days, 1 week) and the schedule is there — no settings.
 - **Exam tips** and **Past papers** tabs.
 
-Courses with full analysis: BCOC-131, BCOC-132, BECC-101, BCOS-183 (Year 1) and BCOC-134 (Year 2). Other courses show their past papers until their analysis is added.
+Courses with full analysis: all 8 Year 1 courses (BCOC-131, BCOC-132, BECC-101, BRL-101, BCOS-183, BCOS-186, BEVAE-181, BEDSV-101) and BCOC-134 (Year 2). BEVAE-181 is an MCQ paper: its 547 past questions are tagged by topic, and questions repeated across papers are listed on the course page. Other courses show their past papers until their analysis is added.
 
 ## Run it
 

@@ -1,0 +1,184 @@
+{
+  "code": "BEDSV-101",
+  "title": "Value Education",
+  "pattern": {
+    "time": "3 hours",
+    "marks": 100,
+    "questions": 8,
+    "attempt": 5,
+    "each": 20,
+    "spare": 0.8,
+    "summary": "June 2026 paper: 8 questions, answer any 5, each 20 marks, all theory. Earlier papers had 5 compulsory questions, each with an 'either/or' choice.",
+    "caution": "Only 4 papers exist so far (Dec 2024 – Jun 2026), so these priorities are less certain than for older courses. Because every question has had a choice, the list below is shorter than the paper — it is enough to answer, not the whole syllabus."
+  },
+  "blocksOfficial": false,
+  "sessions": ["2024-12", "2025-06", "2025-12", "2026-06"],
+  "sessionNotes": {
+    "2024-12": "Old pattern: 5 compulsory questions with either/or choice.",
+    "2025-06": "Old pattern: 5 compulsory questions with either/or choice.",
+    "2025-12": "Old pattern: 5 compulsory questions with either/or choice."
+  },
+  "examTips": {
+    "choosing": [
+      "Theories of conduct, cultural pluralism, personality, adjustment and the role of home, parents and media repeat across the papers.",
+      "Use Indian examples (festivals, family practices, Gandhi, Vivekananda) — they make value-education answers concrete."
+    ]
+  },
+  "blocks": [
+    { "no": 1, "title": "Education & Values" },
+    { "no": 2, "title": "Indian Culture & Philosophy" },
+    { "no": 3, "title": "Morality, Conduct & Personality" },
+    { "no": 4, "title": "Interaction, Adjustment & Conflict" },
+    { "no": 5, "title": "Agencies of Value Development" }
+  ],
+  "topics": [
+    {
+      "id": "home-family", "name": "Home, Parents & Community in Value Development", "block": 5, "kind": "theory",
+      "summary": "Home as the first learning place, role of parents, family and community, socialisation, ways to build values at home.",
+      "points": [
+        "Home is the first school: children learn language, habits, manners and values by imitating family members.",
+        "Role of parents: role models, set rules and routines, give love and security, encourage honesty and responsibility, discuss right and wrong, praise good behaviour.",
+        "Socialisation: the process by which a child learns the norms and values of society. Agencies: family (primary), peers, school, community, media, religion.",
+        "Community: festivals, neighbourhood, religious and social groups teach cooperation, respect and service.",
+        "Ways to inculcate values at home: storytelling, family rituals and festivals, shared chores, discussing news and dilemmas, consistent discipline, parents practising what they preach."
+      ],
+      "frame": "Meaning → role or ways as headed points with a home example → conclusion.",
+      "mistakes": []
+    },
+    {
+      "id": "morality", "name": "Morality & Theories of Conduct", "block": 3, "kind": "theory",
+      "summary": "Facets of morality, the 'good' and self-realisation, rules and theories of conduct.",
+      "points": [
+        "Morality: principles of right and wrong that guide behaviour.",
+        "Facets: personal (honesty, self-control), social (justice, respect for others), religious/spiritual, professional.",
+        "The 'Good': what is worth pursuing for its own sake; self-realisation: developing one's full potential — the highest good in Indian and idealist ethics.",
+        "Rules of conduct: customs, laws, social norms and conscience.",
+        "Theories of conduct: hedonism (pleasure is the good — egoistic and altruistic/utilitarian: greatest happiness of the greatest number), rigorism/duty (Kant — act from duty, treat people as ends), perfectionism/self-realisation, intuitionism (conscience knows right), Gita's nishkama karma (action without attachment to results)."
+      ],
+      "frame": "Meaning → each theory with its main idea, a thinker and one example → criticism in one line → conclusion.",
+      "mistakes": []
+    },
+    {
+      "id": "adjustment", "name": "Interaction, Adjustment & Conflict", "block": 4, "kind": "theory",
+      "summary": "Verbal and non-verbal interaction, adjustment and its push/pull factors, adjustment disorder, conflict.",
+      "points": [
+        "Verbal interaction: spoken or written words. Non-verbal: gestures, facial expressions, posture, eye contact, tone, touch, space.",
+        "Adjustment: the process of balancing one's needs with the demands of the environment.",
+        "Push factors (drive a person out of a situation): stress, conflict, failure, rejection. Pull factors (attract towards a new situation): opportunities, acceptance, rewards.",
+        "Adjustment disorder: emotional or behavioural symptoms (anxiety, low mood, aggression) after a stressful change.",
+        "Helping maladjusted children: counselling, supportive family and teachers, a warm class climate, activities and sports, positive reinforcement, cooperation with parents.",
+        "Conflict: a clash of interests, values or needs. Reasons: differences in values and goals, competition for resources, poor communication, personality differences."
+      ],
+      "frame": "Meaning → causes or factors as headed points → remedies → conclusion.",
+      "mistakes": []
+    },
+    {
+      "id": "personality", "name": "Personality & Character", "block": 3, "kind": "theory",
+      "summary": "Characteristics of personality, character–personality patterns, personality disorders.",
+      "points": [
+        "Personality: the unique, organised pattern of a person's thoughts, feelings and behaviour.",
+        "Characteristics: unique, dynamic, consistent, both inherited and acquired, social, goal-directed.",
+        "Character: the moral side of personality — honesty, responsibility, self-control.",
+        "Character–personality patterns: amoral, expedient, conforming, irrational-conscientious, rational-altruistic (Peck and Havighurst).",
+        "Personality disorders: paranoid, schizoid, antisocial, borderline, histrionic, narcissistic, avoidant, dependent, obsessive-compulsive (clusters A, B, C)."
+      ],
+      "frame": "Definition → characteristics or types as headed points → conclusion.",
+      "mistakes": []
+    },
+    {
+      "id": "culture", "name": "Indian Culture, Philosophy & Cultural Pluralism", "block": 2, "kind": "theory",
+      "summary": "Values of Indian culture, schools of Indian philosophy, cultural pluralism and its challenges.",
+      "points": [
+        "Values of Indian culture: tolerance, non-violence (ahimsa), truth, respect for elders, hospitality, family bonds, spirituality, unity in diversity, 'Vasudhaiva Kutumbakam'.",
+        "Schools of Indian philosophy: orthodox (accept the Vedas) — Nyaya, Vaisheshika, Samkhya, Yoga, Mimamsa, Vedanta; heterodox — Charvaka, Buddhism, Jainism.",
+        "Cultural pluralism: many cultures, religions and languages living together while keeping their identity (India's unity in diversity).",
+        "Challenges: communal tension, regionalism, linguistic conflict, stereotypes, inequality. Response: tolerance, dialogue, constitutional values, education."
+      ],
+      "frame": "Meaning → headed points → Indian examples → conclusion.",
+      "mistakes": []
+    },
+    {
+      "id": "value-edu", "name": "Value Education: Meaning, Need & Methods", "block": 1, "kind": "theory",
+      "summary": "Education and value education, need and importance, moral vs religious education, ways to develop values, malaise of society.",
+      "points": [
+        "Value education: education that develops moral, social, cultural and spiritual values along with knowledge.",
+        "Need: moral decline, violence, corruption, consumerism, stress; to build character, responsible citizens and social harmony.",
+        "Moral education teaches right conduct based on reason and universal values; religious education teaches the beliefs and practices of a particular religion.",
+        "Ways to develop values: school curriculum, teacher as role model, stories and discussions, co-curricular activities, community service, celebrating festivals, value clarification.",
+        "Malaise of Indian society: corruption, communalism, casteism, gender discrimination, violence, consumerism, environmental neglect."
+      ],
+      "frame": "Meaning → need or methods as headed points → conclusion.",
+      "mistakes": []
+    },
+    {
+      "id": "peers-media", "name": "Peers & Media", "block": 5, "kind": "theory",
+      "summary": "Value development through peers; role, functions, evolution and negative effects of media.",
+      "points": [
+        "Peers: people of the same age group. They shape values through acceptance, imitation, cooperation and competition — positively (teamwork, sharing) or negatively (peer pressure).",
+        "Media: channels of mass communication — print, radio, TV, cinema, internet and social media.",
+        "Evolution: print → radio → television → internet → social media and mobile.",
+        "Functions: inform, educate, entertain, persuade, shape public opinion, transmit culture.",
+        "Negative effects: violence and obscenity, misinformation, addiction and screen time, consumerism, unrealistic body images, cyberbullying."
+      ],
+      "frame": "Meaning → role or effects as headed points → how parents and schools can guide → conclusion.",
+      "mistakes": []
+    },
+    {
+      "id": "democracy-sd", "name": "Democracy & Sustainable Development", "block": 1, "kind": "theory",
+      "summary": "Principles of democracy, democracy in education, sustainable development and the role of education.",
+      "points": [
+        "Principles of democracy: liberty, equality, fraternity, justice, rule of law, respect for individual dignity.",
+        "Democracy in education: equal opportunity, student participation, freedom of expression, respect for differences, cooperative learning.",
+        "Sustainable development: meeting present needs without compromising future generations (Brundtland, 1987); economic, social and environmental pillars.",
+        "Education for sustainable development: awareness, responsible consumption, conservation habits, values of care for nature."
+      ],
+      "frame": "Meaning → principles or role as headed points → conclusion.",
+      "mistakes": []
+    }
+  ],
+  "questions": [
+    { "s": "2024-12", "q": "1", "t": "Education and value education; need for value-oriented education", "m": 10, "k": "th", "topic": "value-edu" },
+    { "s": "2024-12", "q": "1 (or)", "t": "Principles of democracy", "m": 10, "k": "th", "topic": "democracy-sd" },
+    { "s": "2024-12", "q": "2", "t": "Values underlying Indian culture", "m": 10, "k": "th", "topic": "culture" },
+    { "s": "2024-12", "q": "2 (or)", "t": "Sustainable development; developing values in children", "m": 10, "k": "th", "topic": "democracy-sd" },
+    { "s": "2024-12", "q": "3", "t": "The 'Good' and self-realisation", "m": 10, "k": "th", "topic": "morality" },
+    { "s": "2024-12", "q": "3 (or)", "t": "Characteristics of personality; personality disorders", "m": 10, "k": "th", "topic": "personality" },
+    { "s": "2024-12", "q": "4", "t": "Socialisation; role of family and peers", "m": 10, "k": "th", "topic": "home-family" },
+    { "s": "2024-12", "q": "4 (or)", "t": "Role of parents in value development", "m": 10, "k": "th", "topic": "home-family" },
+    { "s": "2024-12", "q": "5", "t": "Home: the first learning place", "m": 10, "k": "th", "topic": "home-family" },
+    { "s": "2024-12", "q": "5 (or)", "t": "Media and its negative effects", "m": 10, "k": "th", "topic": "peers-media" },
+
+    { "s": "2025-06", "q": "1", "t": "Moral education vs religious education", "m": 10, "k": "th", "topic": "value-edu" },
+    { "s": "2025-06", "q": "1 (or)", "t": "Facets of morality", "m": 10, "k": "th", "topic": "morality" },
+    { "s": "2025-06", "q": "2", "t": "Schools of Indian philosophy; two orthodox schools", "m": 10, "k": "th", "topic": "culture" },
+    { "s": "2025-06", "q": "2 (or)", "t": "Cultural pluralism in India", "m": 10, "k": "th", "topic": "culture" },
+    { "s": "2025-06", "q": "3", "t": "Theories of conduct", "m": 10, "k": "th", "topic": "morality" },
+    { "s": "2025-06", "q": "3 (or)", "t": "Character–personality patterns", "m": 10, "k": "th", "topic": "personality" },
+    { "s": "2025-06", "q": "4", "t": "Verbal and non-verbal interaction", "m": 10, "k": "th", "topic": "adjustment" },
+    { "s": "2025-06", "q": "4 (or)", "t": "Adjustment; push and pull factors", "m": 10, "k": "th", "topic": "adjustment" },
+    { "s": "2025-06", "q": "5", "t": "Peers and value development through peers", "m": 10, "k": "th", "topic": "peers-media" },
+    { "s": "2025-06", "q": "5 (or)", "t": "Role and functions of media", "m": 10, "k": "th", "topic": "peers-media" },
+
+    { "s": "2025-12", "q": "1", "t": "Malaise of Indian society", "m": 10, "k": "th", "topic": "value-edu" },
+    { "s": "2025-12", "q": "1 (or)", "t": "Democracy in education", "m": 10, "k": "th", "topic": "democracy-sd" },
+    { "s": "2025-12", "q": "2", "t": "Sustainable development and education", "m": 10, "k": "th", "topic": "democracy-sd" },
+    { "s": "2025-12", "q": "2 (or)", "t": "Cultural pluralism and its challenges", "m": 10, "k": "th", "topic": "culture" },
+    { "s": "2025-12", "q": "3", "t": "Theories of conduct", "m": 10, "k": "th", "topic": "morality" },
+    { "s": "2025-12", "q": "3 (or)", "t": "Personality disorders and their types", "m": 10, "k": "th", "topic": "personality" },
+    { "s": "2025-12", "q": "4", "t": "Conflict and its reasons", "m": 10, "k": "th", "topic": "adjustment" },
+    { "s": "2025-12", "q": "4 (or)", "t": "Adjustment disorder; helping maladjusted children", "m": 10, "k": "th", "topic": "adjustment" },
+    { "s": "2025-12", "q": "5", "t": "Inculcating values at home", "m": 10, "k": "th", "topic": "home-family" },
+    { "s": "2025-12", "q": "5 (or)", "t": "Role of parents and community in value development", "m": 10, "k": "th", "topic": "home-family" },
+
+    { "s": "2026-06", "q": "1", "t": "Morality and its facets", "m": 20, "k": "th", "topic": "morality" },
+    { "s": "2026-06", "q": "2", "t": "Cultural pluralism in India and its challenges", "m": 20, "k": "th", "topic": "culture" },
+    { "s": "2026-06", "q": "3", "t": "Personality and character; character–personality patterns", "m": 20, "k": "th", "topic": "personality" },
+    { "s": "2026-06", "q": "4", "t": "Rules of conduct; theories of conduct", "m": 20, "k": "th", "topic": "morality" },
+    { "s": "2026-06", "q": "5", "t": "Adjustment; adjustment disorder and remedy", "m": 20, "k": "th", "topic": "adjustment" },
+    { "s": "2026-06", "q": "6", "t": "Importance of value education; ways to develop values", "m": 20, "k": "th", "topic": "value-edu" },
+    { "s": "2026-06", "q": "7", "t": "Media and its evolution", "m": 20, "k": "th", "topic": "peers-media" },
+    { "s": "2026-06", "q": "8(i)", "t": "Note (any two): religious vs moral education", "m": 6.67, "k": "th", "topic": "value-edu" },
+    { "s": "2026-06", "q": "8(ii)", "t": "Note (any two): negative effects of media", "m": 6.67, "k": "th", "topic": "peers-media" },
+    { "s": "2026-06", "q": "8(iii)", "t": "Note (any two): push factors of adjustment", "m": 6.66, "k": "th", "topic": "adjustment" }
+  ]
+}

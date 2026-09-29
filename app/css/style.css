@@ -232,6 +232,14 @@ ul.points li:last-child, ol.steps li:last-child { margin-bottom: 0; }
 .qsess { font-size: .8rem; font-weight: 700; color: var(--muted); }
 .qmarks { font-size: .8rem; color: var(--muted); white-space: nowrap; }
 
+.replist { list-style: none; padding: 0; margin: 0; }
+.replist li { display: grid; gap: 4px; padding: 10px 0; border-bottom: 1px solid var(--border); }
+.replist li:last-child { border-bottom: 0; }
+.rep-q { font-weight: 600; }
+.rep-opts { display: flex; flex-wrap: wrap; gap: 4px 12px; font-size: .85rem; }
+.rep-meta { font-size: .75rem; color: var(--muted); }
+details summary { cursor: pointer; color: var(--accent); font-weight: 600; padding: 10px 0 2px; }
+
 .topic-foot { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 20px; }
 .topic-foot .btn { flex: 1 1 200px; text-align: center; }
 
