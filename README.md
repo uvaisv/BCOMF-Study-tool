@@ -4,18 +4,17 @@ An exam-preparation tool for IGNOU BCOMF (B.Com Honours) students. It uses previ
 
 > An independent study aid — not an official IGNOU product. Priorities are based on past papers and are guidance, not a guarantee.
 
-## What's in v1
+## What it does
 
-- **Course picker** — Year 1–3 tabs and one search box (type `131` or `financial`).
-- **BCOC-131 Financial Accounting**, analysed from 11 papers (Dec 2020 – Jun 2026):
-  - **Priorities** — every topic ranked Critical / High / Moderate / Low, with the evidence (papers asked, average marks, a per-session strip) and a marks-by-block chart.
-  - **Minimum preparation** — the smallest set of topics that covers enough marks to choose 5 questions.
-  - **Topic pages** — key points, method for problems, formulas, answer structure, common mistakes, and every past question on the topic.
-  - **Plan** — pick hours left and a mode (Exam today, Last minute, Score-oriented, Full) to get a timed schedule.
-  - **Exam tips** — time plan, choosing questions, writing theory answers, presenting numericals.
-  - **Progress** — mark each topic Learned / Practised / Revised; readiness is saved on the device.
-- **BCOC-134 Business Mathematics and Statistics**, analysed from 11 papers. Its paper is split into parts (Q1 compulsory, then 2 of 4 from Part A and 2 of 4 from Part B), so the minimum preparation is worked out per part.
-- Other courses show their exam format and past papers until their analysis is added.
+Built around one rule (see `CLAUDE.md`): **help students study — never add setup or extra work.**
+
+- **Home** says in one glance what the app gives: ranked topics, short notes, past papers, a study plan. Pick a year or search `131` / `financial`.
+- **Course page** opens straight on **Study these first** — the smallest set of topics that has carried enough marks to answer the paper (worked out per part when the paper is split into parts). Then the latest past papers (one tap to the PDF) and the other topics in priority order.
+- **Topic page**: key points, how to solve, formulas, how to write the answer, common mistakes, and every past question on it with a link to the paper. **Next topic** keeps you moving; **Mark as done** is optional.
+- **Plan**: one tap for the time left (3 hours, 6 hours, 2 days, 1 week) and the schedule is there — no settings.
+- **Exam tips** and **Past papers** tabs.
+
+Courses with full analysis: BCOC-131, BCOC-132, BECC-101, BCOS-183 (Year 1) and BCOC-134 (Year 2). Other courses show their past papers until their analysis is added.
 
 ## Run it
 
@@ -47,7 +46,7 @@ For each topic, from the tagged questions in `data/<CODE>.json`:
 - **score** = 0.6 × avg + 0.4 × recent
 - Critical ≥ 15, High ≥ 10, Moderate ≥ 6, otherwise Low (marks per paper, out of 180 on offer)
 
-The minimum set takes topics in score order until they cover the marks needed plus spare choice (`pattern.spare`, default 1.2 × questions × marks). When `pattern.parts` is set, this is done separately for each part that has a choice, counting only that part's questions; a compulsory part is covered by a definitions sweep in the planner.
+The minimum set takes topics in score order until they cover 1.2 × the marks a student must answer (`pattern.spare` overrides 1.2). When the paper has parts and every topic belongs to one part (`topic.part`), this is done per part; a compulsory part can add a quick `sweep` to the plan.
 
 ## Adding a new exam session
 

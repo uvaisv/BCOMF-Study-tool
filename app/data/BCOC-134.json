@@ -9,7 +9,7 @@
     "each": 20,
     "spare": 1.25,
     "parts": [
-      { "id": "C", "name": "Q1 (compulsory)", "attempt": 1, "of": 1 },
+      { "id": "C", "name": "Q1 (compulsory)", "attempt": 1, "of": 1, "sweep": "Short answers from across the syllabus. Read the key points and formulas of every topic once — 30 minutes is enough." },
       { "id": "A", "name": "Part A: Business Mathematics", "attempt": 2, "of": 4 },
       { "id": "B", "name": "Part B: Business Statistics", "attempt": 2, "of": 4 }
     ],
