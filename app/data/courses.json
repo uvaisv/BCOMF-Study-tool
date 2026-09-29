@@ -12,7 +12,7 @@
     { "code": "BEDSV-101", "title": "Value Education", "year": 1, "type": "theory", "exam": { "time": "3 hours", "marks": 100, "format": "Written" }, "papers": 4 },
 
     { "code": "BCOC-133", "title": "Business Law", "year": 2, "type": "theory", "exam": { "time": "3 hours", "marks": 100, "format": "Written" }, "papers": 11 },
-    { "code": "BCOC-134", "title": "Business Mathematics and Statistics", "year": 2, "type": "numerical", "exam": { "time": "3 hours", "marks": 100, "format": "Written" }, "papers": 11 },
+    { "code": "BCOC-134", "title": "Business Mathematics and Statistics", "year": 2, "type": "numerical", "exam": { "time": "3 hours", "marks": 100, "format": "Written" }, "papers": 11, "ready": true },
     { "code": "BCOC-136", "title": "Income Tax Law and Practice", "year": 2, "type": "mixed", "exam": { "time": "3 hours", "marks": 100, "format": "Written" }, "papers": 9 },
     { "code": "BCOE-141", "title": "Principles of Marketing", "year": 2, "type": "theory", "exam": { "time": "3 hours", "marks": 100, "format": "Written" }, "papers": 9 },
     { "code": "BCOS-184", "title": "E-Commerce", "year": 2, "type": "theory", "exam": { "time": "3 hours", "marks": 100, "format": "Written" }, "papers": 9 },

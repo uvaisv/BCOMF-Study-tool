@@ -14,6 +14,16 @@
     "2020-12": "Held in February 2021 (COVID).",
     "2021-06": "No paper in IGNOU's archive."
   },
+  "examTips": {
+    "choosing": [
+      "Q9 (computerised accounting / Tally) is theory and often lets you pick two of three notes — a reliable choice."
+    ],
+    "numerical": [
+      "Draw proper T-accounts or formats with Dr/Cr and dates. Show the balancing figure clearly.",
+      "Write working notes for every calculation (interest, loading, closing stock) — they earn marks on their own.",
+      "Journal entries need narrations."
+    ]
+  },
   "blocks": [
     { "no": 1, "title": "Theoretical Framework", "units": "1–4" },
     { "no": 2, "title": "Accounting Process", "units": "5–7" },

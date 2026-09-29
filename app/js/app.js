@@ -16,7 +16,7 @@
     { id: "low", label: "Low", min: 0, advice: "Optional" }
   ];
   const RECENT = 4;          // sessions counted as "recent"
-  const MVP_TARGET = 120;    // average marks the minimum set should cover (5 × 20 plus spare choice)
+  const MVP_TARGET = 120;    // default: average marks the minimum set should cover (5 × 20 plus spare choice)
   const HOURS_BY_KIND = { theory: 1, numerical: 1.5, mixed: 2 };
 
   /* ---------- storage (per-viewer convenience only) ---------- */
@@ -65,14 +65,28 @@
       return { ...t, qs, total, avg, recentAvg, bySession, seen, score, level, trend, numShare };
     }).sort((a, b) => b.score - a.score);
 
-    let covered = 0;
-    const mvp = [];
-    for (const t of topics) {
-      if (covered >= MVP_TARGET) break;
-      mvp.push(t.id);
-      covered += t.avg;
-    }
-    return { topics, mvp, mvpCovered: covered };
+    // Minimum preparation: per part where the paper is split into parts with their own choice
+    // (e.g. "2 of 4 from Part A"), otherwise across the whole paper. A compulsory part is
+    // covered by the definitions sweep, not by picking topics.
+    const p = course.pattern;
+    const spare = p.spare || MVP_TARGET / (p.attempt * p.each);
+    const groups = (p.parts || [{ id: null, name: "", attempt: p.attempt, of: p.questions }])
+      .filter((g) => g.attempt < g.of)
+      .map((g) => {
+        const target = g.attempt * p.each * spare;
+        const inGroup = (q) => !g.id || q.part === g.id;
+        let covered = 0;
+        const ids = [];
+        for (const t of topics.filter((x) => !g.id || x.part === g.id)) {
+          if (covered >= target) break;
+          ids.push(t.id);
+          covered += t.qs.filter(inGroup).reduce((a, q) => a + q.m, 0) / sessions.length;
+        }
+        return { ...g, ids, covered, need: g.attempt * p.each };
+      });
+    const mvp = groups.flatMap((g) => g.ids);
+    const compulsory = (p.parts || []).find((g) => g.attempt === g.of);
+    return { topics, mvp, groups, compulsory };
   }
 
   function readiness(code, topics) {
@@ -189,9 +203,37 @@
     const { c, course, analysis } = await getCourse(code);
     if (!c) return viewNotFound();
     if (!course) return viewCoursePending(c);
-    const { topics, mvp, mvpCovered } = analysis;
+    const { topics, groups, compulsory } = analysis;
     const n = course.sessions.length;
-    const mvpTopics = topics.filter((t) => mvp.includes(t.id));
+    const parts = course.pattern.parts || [];
+    const byId = (id) => topics.find((t) => t.id === id);
+    const checkRow = (t) => `
+          <label class="check">
+            <input type="checkbox" data-topic="${t.id}" ${getStage(code, t.id) >= 3 ? "checked" : ""}>
+            <span><a href="#/c/${code}/t/${t.id}">${esc(t.name)}</a><br><span class="muted small">${badge(t.level)} ${t.seen} of ${n} papers · avg ${t.avg.toFixed(0)} marks</span></span>
+          </label>`;
+    const topicCard = (t) => `
+        <a class="card card-link" href="#/c/${code}/t/${t.id}">
+          <div class="topic-head">
+            <span class="topic-name">${esc(t.name)}</span>
+            <span>${badge(t.level)}</span>
+          </div>
+          <div class="evidence">${evidenceLine(t, n)}${t.trend ? ` · <span class="trend">${t.trend} recently</span>` : ""}</div>
+          ${dots(t, course.sessions)}
+          ${getStage(code, t.id) ? `<div class="stage" style="margin-top:8px">✓ ${STAGES[getStage(code, t.id)]}</div>` : ""}
+        </a>`;
+    const mvpHtml = groups.length === 1 && !groups[0].id
+      ? `<p>Short on time? These <strong>${groups[0].ids.length} topics</strong> have carried about <strong>${Math.round(groups[0].covered)} marks</strong> on an average paper — enough to pick your ${groups[0].attempt} questions with some choice to spare.</p>
+        ${groups[0].ids.map((id) => checkRow(byId(id))).join("")}`
+      : `<p>Short on time? You need <strong>${groups.map((g) => `${g.attempt} questions from ${esc(g.name.split(":")[0])}`).join(" and ")}</strong>. These topics give you enough choice in each part.</p>
+        ${compulsory ? `<div class="callout small"><strong>${esc(compulsory.name)}:</strong> short answers from across the syllabus. Read the key points and formulas of every topic once — 30 minutes is enough.</div>` : ""}
+        ${groups.map((g) => `<h3>${esc(g.name)}</h3>
+          <p class="muted small">These have carried about ${Math.round(g.covered)} marks per paper in this part; you need ${g.need}.</p>
+          ${g.ids.map((id) => checkRow(byId(id))).join("")}`).join("")}`;
+    const topicsHtml = parts.some((g) => g.attempt < g.of)
+      ? parts.filter((g) => g.attempt < g.of).map((g) =>
+          `<h3>${esc(g.name)}</h3>${topics.filter((t) => t.part === g.id).map(topicCard).join("")}`).join("")
+      : topics.map(topicCard).join("");
 
     const blocks = course.blocks.map((b) => {
       const marks = topics.filter((t) => t.block === b.no).reduce((a, t) => a + t.avg, 0);
@@ -210,35 +252,21 @@
 
       <h2>Start here: minimum preparation</h2>
       <section class="card">
-        <p>Short on time? These <strong>${mvpTopics.length} topics</strong> have carried about <strong>${Math.round(mvpCovered)} of 180 marks</strong> on an average paper — enough to pick your ${course.pattern.attempt} questions with some choice to spare.</p>
-        ${mvpTopics.map((t) => `
-          <label class="check">
-            <input type="checkbox" data-topic="${t.id}" ${getStage(code, t.id) >= 3 ? "checked" : ""}>
-            <span><a href="#/c/${code}/t/${t.id}">${esc(t.name)}</a><br><span class="muted small">${badge(t.level)} ${t.seen} of ${n} papers · avg ${t.avg.toFixed(0)} marks</span></span>
-          </label>`).join("")}
+        ${mvpHtml}
         <p class="muted small">Ticking a topic marks it as Revised.</p>
       </section>
 
       <h2>All topics by priority</h2>
       <p class="muted small">Ranked from ${n} papers (${sessionLabel(course.sessions[0])} – ${sessionLabel(course.sessions[n - 1])}). Recent papers count extra. Full squares = a 20-mark question that session; half = 10 marks or less.</p>
-      ${topics.map((t) => `
-        <a class="card card-link" href="#/c/${code}/t/${t.id}">
-          <div class="topic-head">
-            <span class="topic-name">${esc(t.name)}</span>
-            <span>${badge(t.level)}</span>
-          </div>
-          <div class="evidence">${evidenceLine(t, n)}${t.trend ? ` · <span class="trend">${t.trend} recently</span>` : ""}</div>
-          ${dots(t, course.sessions)}
-          ${getStage(code, t.id) ? `<div class="stage" style="margin-top:8px">✓ ${STAGES[getStage(code, t.id)]}</div>` : ""}
-        </a>`).join("")}
+      ${topicsHtml}
 
-      <h2>Marks by block</h2>
+      <h2>Marks by ${parts.length ? "area" : "block"}</h2>
       <section class="card">
-        <p class="muted small">Average marks each block of the syllabus carries per paper (out of 180 on offer).</p>
+        <p class="muted small">Average marks each ${parts.length ? "area" : "block"} of the syllabus carries per paper.</p>
         <div class="bars">
           ${blocks.map((b) => `
             <div class="bar-row">
-              <span>Block ${b.no}: ${esc(b.title)}</span>
+              <span>${b.part ? `Part ${b.part} · ` : `Block ${b.no}: `}${esc(b.title)}</span>
               <span class="bar-track"><span class="bar-fill" style="width:${(b.marks / maxBlock) * 100}%;display:block"></span></span>
               <span class="bar-val">${Math.round(b.marks)}</span>
             </div>`).join("")}
@@ -267,7 +295,7 @@
     app.innerHTML = `
       <a class="back" href="#/c/${code}">← ${esc(code)} priorities</a>
       <h1>${esc(t.name)}</h1>
-      <div class="chips">${badge(t.level)}<span class="chip">Block ${block.no}: ${esc(block.title)}</span><span class="chip">${esc(t.level.advice)}</span></div>
+      <div class="chips">${badge(t.level)}<span class="chip">${block.part ? `Part ${block.part} · ` : `Block ${block.no}: `}${esc(block.title)}</span><span class="chip">${esc(t.level.advice)}</span></div>
       <p class="evidence" style="margin-top:10px">${evidenceLine(t, n)}${t.trend ? ` · ${t.trend} recently` : ""}</p>
       ${dots(t, course.sessions)}
       <div class="callout">${esc(t.summary)}</div>
@@ -318,12 +346,24 @@
   ];
   const HOUR_PRESETS = [3, 5, 8, 16, 24, 40];
 
+  // "Q1 plus 2 from Part A and 2 from Part B" or "5 questions".
+  function pickText(p) {
+    if (!p.parts) return `pick ${p.attempt} questions`;
+    return "answer " + p.parts.map((g) => g.attempt === g.of
+      ? g.name.replace(/\s*\(compulsory\)/, "")
+      : `${g.attempt} from ${g.name.split(":")[0]}`).join(" + ");
+  }
+
   function buildPlan(code, course, analysis, mode, hours) {
     const reserve = Math.max(0.5, hours * mode.reserve);
     let left = hours - reserve;
     const slots = [];
     const skipped = [];
     let at = 0;
+    if (analysis.compulsory && left >= 1.5) {
+      slots.push({ from: 0, to: 0.5, what: `${analysis.compulsory.name}: definitions sweep`, how: "Read the key points and formulas of every topic once. Q1 asks short answers from across the syllabus." });
+      at = 0.5; left -= 0.5;
+    }
     const todo = analysis.topics
       .filter((x) => mode.pick(x, analysis) && getStage(code, x.id) < 3)
       .map((t) => ({ t, need: HOURS_BY_KIND[t.kind] * (1 - STAGE_WEIGHT[getStage(code, t.id)]) }));
@@ -338,7 +378,7 @@
       const latest = [...t.qs].sort((a, b) => b.s.localeCompare(a.s));
       const num = latest.find((q) => q.k === "num");
       const th = latest.find((q) => q.k === "th");
-      const partial = give < need - 0.01;
+      const partial = give < need * 0.75;
       const how = partial
         ? `Short on time: learn the key points${t.kind === "theory" ? " and the answer outline" : ", the method steps and formulas"} only.`
         : t.kind === "theory"
@@ -350,7 +390,7 @@
     if (left >= 1 && mode.id !== "today") {
       const last = course.sessions[course.sessions.length - 1];
       const mock = Math.min(3, left);
-      slots.push({ from: at, to: at + mock, what: "Mock paper", how: `Attempt the ${sessionLabel(last)} paper: pick ${course.pattern.attempt} questions and write against the clock.` });
+      slots.push({ from: at, to: at + mock, what: "Mock paper", how: `Attempt the ${sessionLabel(last)} paper: ${pickText(course.pattern)}, and write against the clock.` });
       at += mock; left -= mock;
     }
     const rev = reserve + Math.max(0, left);
@@ -408,22 +448,25 @@
     const p = course.pattern;
     const perQ = Math.floor((180 - 25) / p.attempt);
     const top = analysis.topics.slice(0, 5).map((t) => t.name).join(", ");
+    const tips = course.examTips || {};
+    const list = (items) => items.map((x) => `<li>${esc(x)}</li>`).join("");
     app.innerHTML = `${courseHeader(c, course)}${courseTabs(code, "/exam")}
       <h2>The paper</h2>
       <section class="card"><p>${esc(p.summary)}</p>
-        <p style="margin:0">The same areas return every session: <strong>${esc(top)}</strong>. If you have prepared these, you can usually find ${p.attempt} questions you know.</p></section>
+        ${p.note ? `<p class="muted small">${esc(p.note)}</p>` : ""}
+        <p style="margin:0">The same areas return every session: <strong>${esc(top)}</strong>. If you have prepared these, you can usually find the questions you need.</p></section>
 
       <h2>Time plan (3 hours)</h2>
       <section class="card"><table class="simple"><tbody>
-        <tr><td><strong>First 10 min</strong></td><td>Read all ${p.questions} questions. Tick the ${p.attempt} you will attempt and one backup.</td></tr>
+        <tr><td><strong>First 10 min</strong></td><td>Read all ${p.questions} questions. Decide what you will attempt (${esc(pickText(p))}) and one backup.</td></tr>
         <tr><td><strong>${p.attempt} × ${perQ} min</strong></td><td>One question at a time. Start with the one you know best to build confidence.</td></tr>
-        <tr><td><strong>Last 15 min</strong></td><td>Check totals and balances in numericals, number every answer correctly, fill any gaps.</td></tr>
+        <tr><td><strong>Last 15 min</strong></td><td>Check totals and calculations, number every answer correctly, fill any gaps.</td></tr>
       </tbody></table></section>
 
       <h2>Choosing questions</h2>
       <section class="card"><ul class="points">
         <li>A numerical you can solve fully is the safest 20 marks — step marks are usually given even if the final figure is off.</li>
-        <li>Q9 (computerised accounting / Tally) is theory and often lets you pick two of three notes — a reliable choice.</li>
+        ${list(tips.choosing || [])}
         <li>For 10 + 10 questions, attempt only if you can write both parts; half an answer caps you at 10.</li>
       </ul></section>
 
@@ -432,22 +475,20 @@
         <li><strong>Definition first</strong> (2–3 lines), in textbook words where you can.</li>
         <li><strong>Headed points</strong>: 6–8 points for 20 marks, 4–5 for 10 marks — a heading plus one or two lines each.</li>
         <li><strong>Diagram or table</strong> for any "distinguish between" question — a two-column comparison scores well.</li>
-        <li><strong>Example</strong> for concepts (e.g. going concern, matching) — one line each.</li>
+        <li><strong>Example</strong> for each concept — one line each.</li>
         <li><strong>One-line conclusion.</strong></li>
       </ol></section>
 
       <h2>Presenting numericals</h2>
       <section class="card"><ul class="points">
-        <li>Draw proper T-accounts or formats with Dr/Cr and dates. Show the balancing figure clearly.</li>
-        <li>Write <strong>working notes</strong> for every calculation (interest, loading, closing stock) — they earn marks on their own.</li>
-        <li>Journal entries need narrations.</li>
+        ${list(tips.numerical || ["Write working notes for every calculation — they earn marks on their own."])}
         <li>State any assumption you make in one line.</li>
       </ul></section>
 
       <h2>If you only partly know a question</h2>
       <section class="card"><ul class="points">
-        <li>Write the definition, the format of the account, and the steps — partial credit is common.</li>
-        <li>In a numerical, set up the accounts and post what you can; don't leave it blank.</li>
+        <li>Write the definition, the format or formula, and the steps — partial credit is common.</li>
+        <li>In a numerical, set up the working and get as far as you can; don't leave it blank.</li>
       </ul></section>
 
       <h2>The night before and on the day</h2>

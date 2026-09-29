@@ -1,0 +1,552 @@
+{
+  "code": "BCOC-134",
+  "title": "Business Mathematics and Statistics",
+  "pattern": {
+    "time": "3 hours",
+    "marks": 100,
+    "questions": 9,
+    "attempt": 5,
+    "each": 20,
+    "spare": 1.25,
+    "parts": [
+      { "id": "C", "name": "Q1 (compulsory)", "attempt": 1, "of": 1 },
+      { "id": "A", "name": "Part A: Business Mathematics", "attempt": 2, "of": 4 },
+      { "id": "B", "name": "Part B: Business Statistics", "attempt": 2, "of": 4 }
+    ],
+    "summary": "Q1 is compulsory (10 marks of short maths answers + 10 marks of short statistics answers). Then answer 2 of 4 questions from Part A (Maths) and 2 of 4 from Part B (Statistics). Each question carries 20 marks. A simple, non-scientific calculator is allowed.",
+    "note": "Before June 2022 the paper had no compulsory question: 2 of 4 questions from each part, 25 marks each."
+  },
+  "sessions": ["2020-12", "2021-12", "2022-06", "2022-12", "2023-06", "2023-12", "2024-06", "2024-12", "2025-06", "2025-12", "2026-06"],
+  "sessionNotes": {
+    "2020-12": "Held in February 2021 (COVID). Old pattern: 2 of 4 questions per part, 25 marks each.",
+    "2021-12": "Old pattern: 2 of 4 questions per part, 25 marks each.",
+    "2021-06": "No paper in IGNOU's archive."
+  },
+  "blocks": [
+    { "no": 1, "title": "Matrices & Determinants", "part": "A" },
+    { "no": 2, "title": "Functions & Calculus", "part": "A" },
+    { "no": 3, "title": "Mathematics of Finance", "part": "A" },
+    { "no": 4, "title": "Statistics, Averages & Dispersion", "part": "B" },
+    { "no": 5, "title": "Correlation & Regression", "part": "B" },
+    { "no": 6, "title": "Index Numbers & Time Series", "part": "B" }
+  ],
+  "examTips": {
+    "choosing": [
+      "Q1 is compulsory: learn one-line definitions and formulas from every topic — matrix types, SI/CI formulas, quartiles, index number, time-series components.",
+      "Part A: Differentiation ('find dy/dx, any four') and Compound Interest appear almost every session and are pure method — the safest picks.",
+      "Part B: Index Numbers (Fisher's index and its tests) and Time Series (least squares trend, components) are asked every session.",
+      "Pick numericals you can finish. A fully worked problem scores more reliably than a long theory answer in this paper."
+    ],
+    "numerical": [
+      "Write the formula first, then substitute, then the answer with units (₹, years, %). Formula lines earn marks by themselves.",
+      "Show the working table (x, y, x², xy …) for correlation, regression, SD and trend questions — examiners mark the table.",
+      "For 'any four' dy/dx questions, attempt exactly four and name the rule used (product, quotient, chain).",
+      "Round only at the last step; keep 2–4 decimals in between."
+    ]
+  },
+  "topics": [
+    {
+      "id": "differentiation",
+      "name": "Differentiation (dy/dx)",
+      "block": 2,
+      "part": "A",
+      "kind": "numerical",
+      "summary": "Usually 'find dy/dx, any four' for 20 marks — pure practice, very predictable.",
+      "points": [
+        "Derivative dy/dx = rate of change of y with respect to x.",
+        "Standard results: d/dx(xⁿ) = n·xⁿ⁻¹; d/dx(constant) = 0; d/dx(eˣ) = eˣ; d/dx(log x) = 1/x; d/dx(aˣ) = aˣ·log a.",
+        "Implicit functions (e.g. x² + y² = 25): differentiate both sides, collect dy/dx terms.",
+        "Parametric (x = at², y = 2at): dy/dx = (dy/dt) ÷ (dx/dt).",
+        "Function of a function (y = u³, u = 3x + 9): chain rule dy/dx = dy/du × du/dx."
+      ],
+      "method": [
+        "Identify the form: sum, product, quotient, chain, implicit or parametric.",
+        "Write the rule you are using as the first line.",
+        "Differentiate each part, then simplify.",
+        "For xˣ type: take log on both sides, then differentiate (logarithmic differentiation)."
+      ],
+      "formula": [
+        "Product: d(uv)/dx = u·dv/dx + v·du/dx",
+        "Quotient: d(u/v)/dx = (v·du/dx − u·dv/dx) / v²",
+        "Chain: dy/dx = dy/du × du/dx"
+      ],
+      "mistakes": ["Wrong sign order in the quotient rule (it is v·u′ − u·v′).", "Forgetting to multiply by du/dx in the chain rule."]
+    },
+    {
+      "id": "interest",
+      "name": "Simple & Compound Interest",
+      "block": 3,
+      "part": "A",
+      "kind": "mixed",
+      "summary": "Asked every session: CI numericals (varying rates, half-yearly, doubling time) or theory on SI vs CI, present value, nominal vs effective rate.",
+      "points": [
+        "Simple interest: interest only on the principal. Compound interest: interest on principal plus accumulated interest.",
+        "Nominal rate: stated annual rate. Effective rate: actual annual rate when interest compounds more than once a year.",
+        "Present value: today's value of a future sum, found by discounting.",
+        "Discount factor = 1 / (1 + r)ⁿ.",
+        "Equation of value: equates the values of two sets of payments at one date."
+      ],
+      "method": [
+        "Write P, R, T (and n compounding periods per year).",
+        "Half-yearly: rate ÷ 2, periods × 2. Monthly: rate ÷ 12, periods × 12.",
+        "Different rates each year: A = P(1 + r₁)(1 + r₂)(1 + r₃).",
+        "Doubling time: 2 = (1 + r)ⁿ → n = log 2 ÷ log(1 + r).",
+        "CI = A − P."
+      ],
+      "formula": [
+        "SI = P × R × T / 100",
+        "A = P(1 + r/100)ⁿ",
+        "Effective rate = (1 + i/m)ᵐ − 1",
+        "PV = A / (1 + r)ⁿ"
+      ],
+      "mistakes": ["Not adjusting the rate and periods for half-yearly or monthly compounding.", "Giving the amount when the question asks for compound interest."]
+    },
+    {
+      "id": "maxima",
+      "name": "Maxima, Minima & Applications of Derivatives",
+      "block": 2,
+      "part": "A",
+      "kind": "mixed",
+      "summary": "Local maxima/minima, increasing/decreasing intervals, marginal revenue and elasticity.",
+      "points": [
+        "Increasing where f′(x) > 0, decreasing where f′(x) < 0.",
+        "Stationary points where f′(x) = 0.",
+        "Second derivative test: f″(x) < 0 → local maximum; f″(x) > 0 → local minimum.",
+        "Marginal revenue MR = d(TR)/dx; marginal cost MC = d(TC)/dx; profit is maximum where MR = MC.",
+        "Price elasticity of demand = (% change in quantity) ÷ (% change in price); income elasticity uses income; cross elasticity uses the price of another good."
+      ],
+      "method": [
+        "Find f′(x) and set it to 0; solve for x.",
+        "Find f″(x) and check its sign at each x.",
+        "Put each x back into f(x) to get the maximum or minimum value.",
+        "For intervals: factor f′(x), mark the roots on a number line, test signs."
+      ],
+      "formula": ["Ed = (dq/dp) × (p/q)", "TR = P × X, MR = d(TR)/dX"],
+      "mistakes": ["Stopping at f′(x) = 0 without the second-derivative test.", "Not stating the maximum or minimum value itself."]
+    },
+    {
+      "id": "functions",
+      "name": "Functions in Business (Cost, Revenue, Profit)",
+      "block": 2,
+      "part": "A",
+      "kind": "mixed",
+      "summary": "Cost, revenue, profit and demand functions, break-even, and composite/inverse functions (f∘g, g∘f).",
+      "points": [
+        "Function: a rule giving exactly one output for each input.",
+        "Types: linear (y = a + bx), quadratic, absolute value |x|, step function, exponential.",
+        "Cost function C(x) = fixed cost + variable cost × x. Average cost = C(x)/x.",
+        "Revenue function R(x) = price × x. Profit P(x) = R(x) − C(x).",
+        "Demand function: quantity demanded as a function of price.",
+        "Composite function: (f∘g)(x) = f(g(x)). Inverse function: reverses f, exists when f is one-to-one."
+      ],
+      "method": [
+        "Break-even: set R(x) = C(x) and solve for x.",
+        "f∘g: substitute g(x) wherever x appears in f.",
+        "g∘f: substitute f(x) into g — usually a different answer."
+      ],
+      "formula": ["BEP (units) = Fixed cost ÷ (Selling price − Variable cost per unit)"],
+      "mistakes": ["Mixing up the order in f∘g and g∘f."]
+    },
+    {
+      "id": "linear-equations",
+      "name": "Inverse Matrix, Cramer's Rule & Equations",
+      "block": 1,
+      "part": "A",
+      "kind": "numerical",
+      "summary": "Solve 2 or 3 equations by Cramer's rule or the matrix (inverse) method, or find an inverse.",
+      "points": [
+        "A system AX = B has solution X = A⁻¹B when |A| ≠ 0.",
+        "Inverse exists only for a square matrix with non-zero determinant.",
+        "Properties: (A⁻¹)⁻¹ = A; (AB)⁻¹ = B⁻¹A⁻¹; (Aᵀ)⁻¹ = (A⁻¹)ᵀ; AA⁻¹ = A⁻¹A = I."
+      ],
+      "method": [
+        "Cramer's rule: find D = |A|. Replace column 1 by constants → D₁; column 2 → D₂; column 3 → D₃.",
+        "x = D₁/D, y = D₂/D, z = D₃/D.",
+        "Inverse method: find |A|, the cofactor matrix, adjoint (transpose of cofactors), then A⁻¹ = adj A ÷ |A|.",
+        "Check: substitute the answers back into one equation."
+      ],
+      "formula": ["A⁻¹ = adj(A) / |A|", "Cofactor Cᵢⱼ = (−1)ⁱ⁺ʲ × Minorᵢⱼ"],
+      "mistakes": ["Forgetting the sign pattern (+ − +) for cofactors.", "Not transposing the cofactor matrix to get the adjoint."]
+    },
+    {
+      "id": "matrices",
+      "name": "Matrices & Determinants",
+      "block": 1,
+      "part": "A",
+      "kind": "mixed",
+      "summary": "Types of matrices (often in Q1), operations, determinants and their properties, business uses.",
+      "points": [
+        "Matrix: a rectangular arrangement of numbers in rows and columns; order m × n.",
+        "Types: row, column, square, rectangular, diagonal, scalar, identity/unit, zero, symmetric, skew-symmetric, orthogonal (AAᵀ = I), transpose.",
+        "Equal matrices: same order and equal corresponding elements.",
+        "Multiplication AB is possible when columns of A = rows of B; AB ≠ BA in general; (AB)C = A(BC); A(B + C) = AB + AC.",
+        "Determinant properties: interchanging rows changes the sign; two identical rows → 0; |Aᵀ| = |A|; a common factor can be taken out.",
+        "Business uses: storing sales/production data, costing orders (quantity × price), solving equations, input–output analysis."
+      ],
+      "method": [
+        "Construct aᵢⱼ matrix: substitute each i (row) and j (column) in the given rule.",
+        "Bill/production problems: write quantities as one matrix, prices as another, multiply."
+      ],
+      "formula": ["|A| (2×2) = ad − bc"],
+      "mistakes": ["Multiplying matrices element by element."]
+    },
+    {
+      "id": "input-output",
+      "name": "Input–Output Analysis",
+      "block": 1,
+      "part": "A",
+      "kind": "theory",
+      "summary": "An occasional 20-mark theory question on Leontief's input–output model.",
+      "points": [
+        "Developed by Wassily Leontief: shows how the output of one industry is an input to others.",
+        "Transaction table: rows show how each sector's output is used; columns show the inputs each sector uses.",
+        "Technology (input) coefficient aᵢⱼ = input from sector i per unit output of sector j.",
+        "Output needed: X = (I − A)⁻¹ D, where D is final demand.",
+        "Hawkins–Simon conditions ensure the system is workable.",
+        "Uses: economic planning, forecasting sector output, finding the effect of demand changes."
+      ],
+      "frame": "Meaning and origin → assumptions → transaction table with a small 2-sector example → the formula X = (I − A)⁻¹D → uses and limitations.",
+      "formula": ["X = (I − A)⁻¹ D"],
+      "mistakes": []
+    },
+    {
+      "id": "limits",
+      "name": "Limits & Continuity",
+      "block": 2,
+      "part": "A",
+      "kind": "numerical",
+      "summary": "Occasional: evaluate limits (factorisation, rationalisation) or find points of discontinuity.",
+      "points": [
+        "lim x→a f(x) is the value f(x) approaches as x gets close to a.",
+        "0/0 form: factorise and cancel, or rationalise, then substitute.",
+        "Continuity at a: f(a) exists, the limit exists and equals f(a).",
+        "Standard limits: lim (xⁿ − aⁿ)/(x − a) = n·aⁿ⁻¹; lim (eˣ − 1)/x = 1 as x → 0."
+      ],
+      "method": ["Substitute first. If you get 0/0, factorise or rationalise, cancel, substitute again."],
+      "formula": ["lim (xⁿ − aⁿ)/(x − a) = n·aⁿ⁻¹ as x → a"],
+      "mistakes": []
+    },
+    {
+      "id": "index-numbers",
+      "name": "Index Numbers",
+      "block": 6,
+      "part": "B",
+      "kind": "mixed",
+      "summary": "Every session: Fisher's ideal index with time and factor reversal tests, or theory on types, tests and construction problems.",
+      "points": [
+        "Index number: measures relative change in price, quantity or value compared with a base year.",
+        "Types: price, quantity, value; simple and weighted (Laspeyres, Paasche, Fisher).",
+        "Problems in construction: purpose, choice of base year, selection of items, price quotations, choice of average, weights, formula.",
+        "Tests: unit test, time reversal test (P₀₁ × P₁₀ = 1), factor reversal test (P₀₁ × Q₀₁ = Σp₁q₁/Σp₀q₀), circular test.",
+        "Fisher's index satisfies both time reversal and factor reversal tests — hence 'ideal'."
+      ],
+      "method": [
+        "Make a table: p₀q₀, p₁q₀, p₀q₁, p₁q₁ for each item; total each column.",
+        "Laspeyres = Σp₁q₀/Σp₀q₀ × 100; Paasche = Σp₁q₁/Σp₀q₁ × 100.",
+        "Fisher = √(L × P).",
+        "Expenditure given instead of quantity: q = expenditure ÷ price."
+      ],
+      "formula": [
+        "P₀₁ (Fisher) = √[(Σp₁q₀/Σp₀q₀) × (Σp₁q₁/Σp₀q₁)] × 100",
+        "TRT: P₀₁ × P₁₀ = 1",
+        "FRT: P₀₁ × Q₀₁ = Σp₁q₁ / Σp₀q₀"
+      ],
+      "mistakes": ["Multiplying by 100 before checking the reversal tests (tests use ratios without ×100)."]
+    },
+    {
+      "id": "time-series",
+      "name": "Time Series",
+      "block": 6,
+      "part": "B",
+      "kind": "mixed",
+      "summary": "Every session: components/utility theory, or fitting a straight-line trend by least squares.",
+      "points": [
+        "Time series: data arranged in order of time.",
+        "Components: secular trend, seasonal variation, cyclical variation, irregular variation.",
+        "Models: additive Y = T + S + C + I; multiplicative Y = T × S × C × I.",
+        "Trend methods: freehand, semi-averages, moving averages, least squares.",
+        "Utility: understand past behaviour, forecast, compare, plan business activity.",
+        "Preliminary adjustments: calendar days, population, price changes, comparability of data."
+      ],
+      "method": [
+        "Take X = year − middle year (odd number of years) so ΣX = 0.",
+        "a = ΣY / n, b = ΣXY / ΣX².",
+        "Trend Yc = a + bX for each year.",
+        "Forecast: put the X of the required year into Yc = a + bX."
+      ],
+      "formula": ["Yc = a + bX", "a = ΣY/n, b = ΣXY/ΣX² (when ΣX = 0)"],
+      "mistakes": ["Using the actual year instead of the deviation X.", "Wrong X for the forecast year."]
+    },
+    {
+      "id": "dispersion",
+      "name": "Measures of Dispersion",
+      "block": 4,
+      "part": "B",
+      "kind": "numerical",
+      "summary": "Standard deviation, variance, quartile deviation, mean deviation and combined SD.",
+      "points": [
+        "Dispersion: how spread out values are around the average.",
+        "Absolute measures (range, QD, MD, SD) are in original units; relative measures (coefficients, CV) are pure numbers for comparison.",
+        "Coefficient of variation CV = SD/Mean × 100 — lower CV means more consistent.",
+        "Quartile deviation = (Q₃ − Q₁)/2."
+      ],
+      "method": [
+        "Grouped SD (step deviation): d = (x − A)/i; SD = i × √[Σfd²/N − (Σfd/N)²].",
+        "Quartiles: Q₁ at N/4 item, Q₃ at 3N/4 item, then L + (pos − cf)/f × i.",
+        "Combined mean = (N₁x̄₁ + N₂x̄₂)/(N₁ + N₂); combined SD uses dᵢ = x̄ᵢ − x̄₁₂."
+      ],
+      "formula": [
+        "σ = √[Σf(x − x̄)²/N]",
+        "σ₁₂ = √{[N₁(σ₁² + d₁²) + N₂(σ₂² + d₂²)] / (N₁ + N₂)}",
+        "CV = σ/x̄ × 100"
+      ],
+      "mistakes": ["Forgetting to multiply by the class width i in step deviation.", "Using cumulative frequency of the quartile class instead of the class before it."]
+    },
+    {
+      "id": "stats-intro",
+      "name": "Meaning, Functions & Limitations of Statistics",
+      "block": 4,
+      "part": "B",
+      "kind": "theory",
+      "summary": "Theory for Q1(b) or a full 20-mark Part B question.",
+      "points": [
+        "Statistics (plural): numerical data; (singular): methods of collecting, organising, analysing and interpreting data.",
+        "Functions: simplifies complex data, enables comparison, helps forecasting, tests hypotheses, helps policy making.",
+        "Importance in business: market research, quality control, forecasting sales, financial analysis, auditing (sampling).",
+        "Limitations: studies aggregates not individuals, only quantitative facts, results true on average only, can be misused.",
+        "Descriptive statistics summarise data; inferential statistics draw conclusions about a population from a sample."
+      ],
+      "frame": "Definition (both senses) → 6–8 headed points → one business example each → conclusion.",
+      "mistakes": []
+    },
+    {
+      "id": "central-tendency",
+      "name": "Measures of Central Tendency",
+      "block": 4,
+      "part": "B",
+      "kind": "mixed",
+      "summary": "Mean, median, mode calculations and theory on merits, demerits and requisites of a good average.",
+      "points": [
+        "Measures: arithmetic mean, median, mode, geometric mean, harmonic mean, weighted mean.",
+        "Requisites of a good average: rigidly defined, easy to understand, based on all items, capable of algebraic treatment, least affected by sampling and extreme values.",
+        "AM ≥ GM ≥ HM for positive values.",
+        "Empirical relation: Mode ≈ 3 Median − 2 Mean."
+      ],
+      "method": [
+        "Mean (grouped): x̄ = A + (Σfd/N) × i.",
+        "Median: find N/2 in the cf column → L + (N/2 − cf)/f × i.",
+        "Mode: modal class (highest f) → L + (f₁ − f₀)/(2f₁ − f₀ − f₂) × i.",
+        "'Less than' cumulative data: convert to class frequencies first."
+      ],
+      "formula": ["Median = L + (N/2 − cf)/f × i", "Mode = L + (f₁ − f₀)/(2f₁ − f₀ − f₂) × i"],
+      "mistakes": ["Using the cf of the median class instead of the class before it."]
+    },
+    {
+      "id": "regression",
+      "name": "Regression",
+      "block": 5,
+      "part": "B",
+      "kind": "mixed",
+      "summary": "Regression equations/coefficients by least squares, and theory on properties of regression coefficients.",
+      "points": [
+        "Regression estimates the value of one variable from another.",
+        "Two lines: Y on X (estimate Y) and X on Y (estimate X); both pass through (x̄, ȳ).",
+        "Properties: r = ±√(bᵧₓ × bₓᵧ); both coefficients have the same sign; if one is > 1 the other is < 1; independent of change of origin but not of scale."
+      ],
+      "method": [
+        "Table: x, y, x², y², xy (or deviations from the means).",
+        "bᵧₓ = [nΣxy − ΣxΣy]/[nΣx² − (Σx)²]; bₓᵧ = [nΣxy − ΣxΣy]/[nΣy² − (Σy)²].",
+        "Y on X: y − ȳ = bᵧₓ(x − x̄). X on Y: x − x̄ = bₓᵧ(y − ȳ)."
+      ],
+      "formula": ["y − ȳ = bᵧₓ(x − x̄)", "r = ±√(bᵧₓ · bₓᵧ)"],
+      "mistakes": ["Swapping bᵧₓ and bₓᵧ.", "Giving r a sign different from the coefficients."]
+    },
+    {
+      "id": "correlation",
+      "name": "Correlation",
+      "block": 5,
+      "part": "B",
+      "kind": "mixed",
+      "summary": "Karl Pearson's or Spearman's rank correlation numericals, and correlation vs regression theory.",
+      "points": [
+        "Correlation measures the degree and direction of relationship between two variables; r lies between −1 and +1.",
+        "Positive (move together), negative (move opposite), zero (no linear relation).",
+        "r is unaffected by change of origin and scale (only sign may change with a negative scale).",
+        "Correlation vs regression: degree of relationship vs estimating one variable; r symmetric vs two different lines; no cause-effect vs dependent/independent variables."
+      ],
+      "method": [
+        "Karl Pearson: table of x, y, dx, dy, dx², dy², dxdy; r = Σdxdy / √(Σdx² × Σdy²) (deviations from actual means).",
+        "Spearman: rank both series, D = R₁ − R₂, ρ = 1 − 6ΣD²/[n(n² − 1)]."
+      ],
+      "formula": ["r = Σdxdy / √(Σdx²·Σdy²)", "ρ = 1 − 6ΣD² / n(n² − 1)"],
+      "mistakes": ["Ranking in opposite orders for the two series."]
+    }
+  ],
+  "questions": [
+    { "s": "2020-12", "q": "1(a)", "t": "Simple and compound interest with examples", "m": 15, "k": "th", "topic": "interest", "part": "A" },
+    { "s": "2020-12", "q": "1(b)", "t": "Nominal and effective rates of interest", "m": 10, "k": "th", "topic": "interest", "part": "A" },
+    { "s": "2020-12", "q": "2(a)", "t": "Types of matrices with examples", "m": 15, "k": "th", "topic": "matrices", "part": "A" },
+    { "s": "2020-12", "q": "2(b)", "t": "Total production of two factories by matrix addition", "m": 10, "k": "num", "topic": "matrices", "part": "A" },
+    { "s": "2020-12", "q": "3(a)", "t": "Find det(A) of a 3×3 matrix", "m": 10, "k": "num", "topic": "matrices", "part": "A" },
+    { "s": "2020-12", "q": "3(b)", "t": "Evaluate lim x→5 (x² − 25)/(x − 5)", "m": 15, "k": "num", "topic": "limits", "part": "A" },
+    { "s": "2020-12", "q": "4(a)", "t": "dy/dx of (2x² − 6)(3x³ + 8)", "m": 15, "k": "num", "topic": "differentiation", "part": "A" },
+    { "s": "2020-12", "q": "4(b)", "t": "Price, income and cross elasticity of demand", "m": 10, "k": "th", "topic": "maxima", "part": "A" },
+    { "s": "2020-12", "q": "5(a)", "t": "Missing frequency when mean is 30", "m": 10, "k": "num", "topic": "central-tendency", "part": "B" },
+    { "s": "2020-12", "q": "5(b)", "t": "Weighted mean pass rates of two colleges", "m": 15, "k": "num", "topic": "central-tendency", "part": "B" },
+    { "s": "2020-12", "q": "6(a)", "t": "Descriptive vs inferential statistics", "m": 5, "k": "th", "topic": "stats-intro", "part": "B" },
+    { "s": "2020-12", "q": "6(b)", "t": "Functions and importance of statistics", "m": 20, "k": "th", "topic": "stats-intro", "part": "B" },
+    { "s": "2020-12", "q": "7(a)", "t": "Standard deviation of individual series", "m": 10, "k": "num", "topic": "dispersion", "part": "B" },
+    { "s": "2020-12", "q": "7(b)", "t": "Least squares trend of sales and estimate for 2000", "m": 15, "k": "num", "topic": "time-series", "part": "B" },
+    { "s": "2020-12", "q": "8(a)", "t": "Preliminary adjustments before time-series analysis", "m": 10, "k": "th", "topic": "time-series", "part": "B" },
+    { "s": "2020-12", "q": "8(b)", "t": "Fisher's ideal index with time and factor reversal tests", "m": 15, "k": "num", "topic": "index-numbers", "part": "B" },
+
+    { "s": "2021-12", "q": "1(a)", "t": "Total, fixed, variable, average and marginal cost", "m": 10, "k": "th", "topic": "functions", "part": "A" },
+    { "s": "2021-12", "q": "1(b)", "t": "Revenue function with hypothetical figures", "m": 15, "k": "th", "topic": "functions", "part": "A" },
+    { "s": "2021-12", "q": "2(a)", "t": "Local maxima and minima by first derivative", "m": 15, "k": "num", "topic": "maxima", "part": "A" },
+    { "s": "2021-12", "q": "2(b)", "t": "SI and CI on ₹10,000 at 10% for 5 years", "m": 10, "k": "num", "topic": "interest", "part": "A" },
+    { "s": "2021-12", "q": "3(a)", "t": "Construct a 3×2 matrix from a rule", "m": 10, "k": "num", "topic": "matrices", "part": "A" },
+    { "s": "2021-12", "q": "3(b)", "t": "Inverse matrix and four properties", "m": 5, "k": "th", "topic": "linear-equations", "part": "A" },
+    { "s": "2021-12", "q": "3(c)", "t": "Solve three simultaneous equations", "m": 10, "k": "num", "topic": "linear-equations", "part": "A" },
+    { "s": "2021-12", "q": "4(a)", "t": "Find dy/dx", "m": 10, "k": "num", "topic": "differentiation", "part": "A" },
+    { "s": "2021-12", "q": "4(b)", "t": "Points of discontinuity of a function", "m": 10, "k": "num", "topic": "limits", "part": "A" },
+    { "s": "2021-12", "q": "4(c)", "t": "Linear, absolute value and step functions", "m": 5, "k": "th", "topic": "functions", "part": "A" },
+    { "s": "2021-12", "q": "5(a)", "t": "Karl Pearson's correlation of marks", "m": 15, "k": "num", "topic": "correlation", "part": "B" },
+    { "s": "2021-12", "q": "5(b)", "t": "Regression lines from summary totals", "m": 10, "k": "num", "topic": "regression", "part": "B" },
+    { "s": "2021-12", "q": "6(a)", "t": "Mean, median and mode of marks", "m": 18, "k": "num", "topic": "central-tendency", "part": "B" },
+    { "s": "2021-12", "q": "6(b)", "t": "Correlation vs regression", "m": 7, "k": "th", "topic": "correlation", "part": "B" },
+    { "s": "2021-12", "q": "7(a)", "t": "Objectives of averages; essentials of an ideal average", "m": 15, "k": "th", "topic": "central-tendency", "part": "B" },
+    { "s": "2021-12", "q": "7(b)", "t": "Issues in constructing index numbers", "m": 10, "k": "th", "topic": "index-numbers", "part": "B" },
+    { "s": "2021-12", "q": "8(a)", "t": "Least squares trend and estimate for 2021", "m": 15, "k": "num", "topic": "time-series", "part": "B" },
+    { "s": "2021-12", "q": "8(b)", "t": "Mean deviation from mean", "m": 10, "k": "num", "topic": "dispersion", "part": "B" },
+
+    { "s": "2022-06", "q": "1(a)", "t": "Properties of determinants with examples", "m": 10, "k": "th", "topic": "matrices", "part": "C" },
+    { "s": "2022-06", "q": "1(b)", "t": "Functions of statistics with an example", "m": 10, "k": "th", "topic": "stats-intro", "part": "C" },
+    { "s": "2022-06", "q": "2", "t": "Find principal and rate from compound amounts", "m": 20, "k": "num", "topic": "interest", "part": "A" },
+    { "s": "2022-06", "q": "3", "t": "Show (AB)C = A(BC), A(B + C) = AB + AC, AI = IA = A", "m": 20, "k": "num", "topic": "matrices", "part": "A" },
+    { "s": "2022-06", "q": "4", "t": "Input–output analysis with an example", "m": 20, "k": "th", "topic": "input-output", "part": "A" },
+    { "s": "2022-06", "q": "5", "t": "Inverse and composite functions with examples", "m": 20, "k": "th", "topic": "functions", "part": "A" },
+    { "s": "2022-06", "q": "6", "t": "Median and mode from 'marks below' data", "m": 20, "k": "num", "topic": "central-tendency", "part": "B" },
+    { "s": "2022-06", "q": "7(a)", "t": "Utility of time-series analysis", "m": 10, "k": "th", "topic": "time-series", "part": "B" },
+    { "s": "2022-06", "q": "7(b)", "t": "Types of index numbers", "m": 10, "k": "th", "topic": "index-numbers", "part": "B" },
+    { "s": "2022-06", "q": "8", "t": "SD by direct and short-cut methods", "m": 20, "k": "num", "topic": "dispersion", "part": "B" },
+    { "s": "2022-06", "q": "9(a)", "t": "Correlation vs regression", "m": 10, "k": "th", "topic": "correlation", "part": "B" },
+    { "s": "2022-06", "q": "9(b)", "t": "Absolute vs relative measures of dispersion", "m": 10, "k": "th", "topic": "dispersion", "part": "B" },
+
+    { "s": "2022-12", "q": "1(a)", "t": "Define matrix; types of matrices", "m": 10, "k": "th", "topic": "matrices", "part": "C" },
+    { "s": "2022-12", "q": "1(b)", "t": "Dispersion and why it matters", "m": 10, "k": "th", "topic": "dispersion", "part": "C" },
+    { "s": "2022-12", "q": "2(a)", "t": "Find matrices A and B from two relations", "m": 10, "k": "num", "topic": "matrices", "part": "A" },
+    { "s": "2022-12", "q": "2(b)", "t": "Find A² − 3A + 2I", "m": 10, "k": "num", "topic": "matrices", "part": "A" },
+    { "s": "2022-12", "q": "3", "t": "Mathematical functions in business and economics", "m": 20, "k": "th", "topic": "functions", "part": "A" },
+    { "s": "2022-12", "q": "4", "t": "CI compounded half-yearly and monthly", "m": 20, "k": "num", "topic": "interest", "part": "A" },
+    { "s": "2022-12", "q": "5(a)", "t": "Maxima vs minima of functions", "m": 10, "k": "th", "topic": "maxima", "part": "A" },
+    { "s": "2022-12", "q": "5(b)", "t": "Price vs income elasticity of demand", "m": 10, "k": "th", "topic": "maxima", "part": "A" },
+    { "s": "2022-12", "q": "6", "t": "Fisher's ideal index with reversal tests", "m": 20, "k": "num", "topic": "index-numbers", "part": "B" },
+    { "s": "2022-12", "q": "7", "t": "Relationship between correlation and regression coefficients", "m": 20, "k": "th", "topic": "regression", "part": "B" },
+    { "s": "2022-12", "q": "8(a)", "t": "Arithmetic mean vs harmonic mean", "m": 10, "k": "th", "topic": "central-tendency", "part": "B" },
+    { "s": "2022-12", "q": "8(b)", "t": "Additive vs multiplicative time-series models", "m": 10, "k": "th", "topic": "time-series", "part": "B" },
+    { "s": "2022-12", "q": "9", "t": "Regression coefficients and equations (ages of couples)", "m": 20, "k": "num", "topic": "regression", "part": "B" },
+
+    { "s": "2023-06", "q": "1(a)", "t": "Uses of matrices in business decisions", "m": 10, "k": "th", "topic": "matrices", "part": "C" },
+    { "s": "2023-06", "q": "1(b)", "t": "Importance and scope of statistics", "m": 10, "k": "th", "topic": "stats-intro", "part": "C" },
+    { "s": "2023-06", "q": "2", "t": "Solve three equations by matrix method", "m": 20, "k": "num", "topic": "linear-equations", "part": "A" },
+    { "s": "2023-06", "q": "3", "t": "Find dy/dx (any four)", "m": 20, "k": "num", "topic": "differentiation", "part": "A" },
+    { "s": "2023-06", "q": "4(a)", "t": "Find f∘g and g∘f", "m": 10, "k": "num", "topic": "functions", "part": "A" },
+    { "s": "2023-06", "q": "4(b)", "t": "Construct demand, cost and profit functions", "m": 10, "k": "th", "topic": "functions", "part": "A" },
+    { "s": "2023-06", "q": "5", "t": "Present value and discount factor; SI and CI", "m": 20, "k": "th", "topic": "interest", "part": "A" },
+    { "s": "2023-06", "q": "6", "t": "Arithmetic mean and variance of marks (mean part)", "m": 10, "k": "num", "topic": "central-tendency", "part": "B" },
+    { "s": "2023-06", "q": "6", "t": "Arithmetic mean and variance of marks (variance part)", "m": 10, "k": "num", "topic": "dispersion", "part": "B" },
+    { "s": "2023-06", "q": "7", "t": "Regression coefficients and r from them", "m": 20, "k": "num", "topic": "regression", "part": "B" },
+    { "s": "2023-06", "q": "8", "t": "Problems in constructing index numbers", "m": 20, "k": "th", "topic": "index-numbers", "part": "B" },
+    { "s": "2023-06", "q": "9", "t": "Time series and its components", "m": 20, "k": "th", "topic": "time-series", "part": "B" },
+
+    { "s": "2023-12", "q": "1(a)", "t": "Identity, rectangular, orthogonal, scalar and transpose matrices", "m": 10, "k": "th", "topic": "matrices", "part": "C" },
+    { "s": "2023-12", "q": "1(b)", "t": "Limitations of statistics", "m": 10, "k": "th", "topic": "stats-intro", "part": "C" },
+    { "s": "2023-12", "q": "2", "t": "Solve two equations by Cramer's rule", "m": 20, "k": "num", "topic": "linear-equations", "part": "A" },
+    { "s": "2023-12", "q": "3", "t": "Local maxima and minima with values", "m": 20, "k": "num", "topic": "maxima", "part": "A" },
+    { "s": "2023-12", "q": "4", "t": "Find dy/dx (four parts)", "m": 20, "k": "num", "topic": "differentiation", "part": "A" },
+    { "s": "2023-12", "q": "5", "t": "Time for money to double at 6% compound", "m": 20, "k": "num", "topic": "interest", "part": "A" },
+    { "s": "2023-12", "q": "6", "t": "Measures of central tendency: merits, demerits, uses", "m": 20, "k": "th", "topic": "central-tendency", "part": "B" },
+    { "s": "2023-12", "q": "7", "t": "Rank correlation coefficient", "m": 20, "k": "num", "topic": "correlation", "part": "B" },
+    { "s": "2023-12", "q": "8", "t": "Fisher's index from prices and expenditure", "m": 20, "k": "num", "topic": "index-numbers", "part": "B" },
+    { "s": "2023-12", "q": "9", "t": "Notes: moving average method; utility of time series", "m": 20, "k": "th", "topic": "time-series", "part": "B" },
+
+    { "s": "2024-06", "q": "1(a)", "t": "Short answers: construct a matrix, determinant, inverse matrix", "m": 5, "k": "num", "topic": "matrices", "part": "C" },
+    { "s": "2024-06", "q": "1(a)", "t": "Short answer: dy/dx of x·log x", "m": 2.5, "k": "num", "topic": "differentiation", "part": "C" },
+    { "s": "2024-06", "q": "1(a)", "t": "Short answer: SI vs CI", "m": 2.5, "k": "th", "topic": "interest", "part": "C" },
+    { "s": "2024-06", "q": "1(b)", "t": "Short answer: measures of central tendency", "m": 2.5, "k": "th", "topic": "central-tendency", "part": "C" },
+    { "s": "2024-06", "q": "1(b)", "t": "Short answer: positive and negative correlation", "m": 2.5, "k": "th", "topic": "correlation", "part": "C" },
+    { "s": "2024-06", "q": "1(b)", "t": "Short answer: price indices", "m": 2.5, "k": "th", "topic": "index-numbers", "part": "C" },
+    { "s": "2024-06", "q": "1(b)", "t": "Short answer: components of time series", "m": 2.5, "k": "th", "topic": "time-series", "part": "C" },
+    { "s": "2024-06", "q": "2", "t": "Cramer's rule for two equations", "m": 20, "k": "num", "topic": "linear-equations", "part": "A" },
+    { "s": "2024-06", "q": "3", "t": "Find dy/dx (four parts)", "m": 20, "k": "num", "topic": "differentiation", "part": "A" },
+    { "s": "2024-06", "q": "4(a)", "t": "Find f∘g and g∘f", "m": 10, "k": "num", "topic": "functions", "part": "A" },
+    { "s": "2024-06", "q": "4(b)", "t": "Cost, revenue and profit functions", "m": 10, "k": "th", "topic": "functions", "part": "A" },
+    { "s": "2024-06", "q": "5", "t": "Amount and CI with rates of 5% and 6%", "m": 20, "k": "num", "topic": "interest", "part": "A" },
+    { "s": "2024-06", "q": "6", "t": "Quartile deviation of employees' ages", "m": 20, "k": "num", "topic": "dispersion", "part": "B" },
+    { "s": "2024-06", "q": "7", "t": "Correlation and regression and their business use", "m": 20, "k": "th", "topic": "correlation", "part": "B" },
+    { "s": "2024-06", "q": "8", "t": "Fisher's ideal price index", "m": 20, "k": "num", "topic": "index-numbers", "part": "B" },
+    { "s": "2024-06", "q": "9", "t": "Time series and its importance", "m": 20, "k": "th", "topic": "time-series", "part": "B" },
+
+    { "s": "2024-12", "q": "1(a)", "t": "Short answers: equal matrices, inverse matrix", "m": 5, "k": "th", "topic": "matrices", "part": "C" },
+    { "s": "2024-12", "q": "1(a)", "t": "Short answer: linear and quadratic function examples", "m": 2.5, "k": "th", "topic": "functions", "part": "C" },
+    { "s": "2024-12", "q": "1(a)", "t": "Short answer: dy/dx of f(x)·g(x)", "m": 2.5, "k": "num", "topic": "differentiation", "part": "C" },
+    { "s": "2024-12", "q": "1(b)", "t": "Short answer: data in statistics", "m": 2.5, "k": "th", "topic": "stats-intro", "part": "C" },
+    { "s": "2024-12", "q": "1(b)", "t": "Short answer: relation between AM and GM", "m": 2.5, "k": "th", "topic": "central-tendency", "part": "C" },
+    { "s": "2024-12", "q": "1(b)", "t": "Short answer: Spearman's rank correlation formula", "m": 2.5, "k": "th", "topic": "correlation", "part": "C" },
+    { "s": "2024-12", "q": "1(b)", "t": "Short answer: base year and current year", "m": 2.5, "k": "th", "topic": "index-numbers", "part": "C" },
+    { "s": "2024-12", "q": "2", "t": "Input–output analysis and matrix algebra", "m": 20, "k": "th", "topic": "input-output", "part": "A" },
+    { "s": "2024-12", "q": "3", "t": "Cost and revenue functions, break-even, profit at 1,000 units", "m": 20, "k": "num", "topic": "functions", "part": "A" },
+    { "s": "2024-12", "q": "4", "t": "Find dy/dx (any four)", "m": 20, "k": "num", "topic": "differentiation", "part": "A" },
+    { "s": "2024-12", "q": "5", "t": "Amount and CI with rates of 6%, 8% and 10%", "m": 20, "k": "num", "topic": "interest", "part": "A" },
+    { "s": "2024-12", "q": "6", "t": "Statistics and its importance in different fields", "m": 20, "k": "th", "topic": "stats-intro", "part": "B" },
+    { "s": "2024-12", "q": "7", "t": "Mean and SD of a frequency distribution (mean part)", "m": 10, "k": "num", "topic": "central-tendency", "part": "B" },
+    { "s": "2024-12", "q": "7", "t": "Mean and SD of a frequency distribution (SD part)", "m": 10, "k": "num", "topic": "dispersion", "part": "B" },
+    { "s": "2024-12", "q": "8", "t": "Regression of X on Y by least squares", "m": 20, "k": "num", "topic": "regression", "part": "B" },
+    { "s": "2024-12", "q": "9(a)", "t": "Tests for index numbers", "m": 10, "k": "th", "topic": "index-numbers", "part": "B" },
+    { "s": "2024-12", "q": "9(b)", "t": "Components of time series", "m": 10, "k": "th", "topic": "time-series", "part": "B" },
+
+    { "s": "2025-06", "q": "1(a)", "t": "Diagonal, scalar, unit, transpose and inverse matrices", "m": 10, "k": "th", "topic": "matrices", "part": "C" },
+    { "s": "2025-06", "q": "1(b)", "t": "Uses and misuses of statistics", "m": 10, "k": "th", "topic": "stats-intro", "part": "C" },
+    { "s": "2025-06", "q": "2(a)", "t": "Shopkeepers' bills by matrix multiplication", "m": 10, "k": "num", "topic": "matrices", "part": "A" },
+    { "s": "2025-06", "q": "2(b)", "t": "Increasing/decreasing function; where f(x) decreases", "m": 10, "k": "num", "topic": "maxima", "part": "A" },
+    { "s": "2025-06", "q": "3", "t": "Find dy/dx (any four)", "m": 20, "k": "num", "topic": "differentiation", "part": "A" },
+    { "s": "2025-06", "q": "4(a)", "t": "Find f∘g and g∘f", "m": 10, "k": "num", "topic": "functions", "part": "A" },
+    { "s": "2025-06", "q": "4(b)", "t": "TR and MR from a demand function", "m": 10, "k": "num", "topic": "maxima", "part": "A" },
+    { "s": "2025-06", "q": "5(a)", "t": "SI vs CI with a calculation", "m": 10, "k": "num", "topic": "interest", "part": "A" },
+    { "s": "2025-06", "q": "5(b)", "t": "Present value and equation of value", "m": 10, "k": "th", "topic": "interest", "part": "A" },
+    { "s": "2025-06", "q": "6", "t": "Simple linear regression; properties of regression coefficients", "m": 20, "k": "th", "topic": "regression", "part": "B" },
+    { "s": "2025-06", "q": "7", "t": "Two firms: total salary, variability, combined mean and variance", "m": 20, "k": "num", "topic": "dispersion", "part": "B" },
+    { "s": "2025-06", "q": "8", "t": "Index numbers: types and problems of construction", "m": 20, "k": "th", "topic": "index-numbers", "part": "B" },
+    { "s": "2025-06", "q": "9", "t": "Least squares trend of sugar production; estimate for 2025", "m": 20, "k": "num", "topic": "time-series", "part": "B" },
+
+    { "s": "2025-12", "q": "1(a)", "t": "Cost, composite, inverse and demand functions", "m": 10, "k": "th", "topic": "functions", "part": "C" },
+    { "s": "2025-12", "q": "1(b)", "t": "Importance of statistics in business and accountancy", "m": 10, "k": "th", "topic": "stats-intro", "part": "C" },
+    { "s": "2025-12", "q": "2(a)", "t": "Properties of determinants", "m": 10, "k": "th", "topic": "matrices", "part": "A" },
+    { "s": "2025-12", "q": "2(b)", "t": "Cramer's rule for two equations", "m": 10, "k": "num", "topic": "linear-equations", "part": "A" },
+    { "s": "2025-12", "q": "3", "t": "Find dy/dx (any four)", "m": 20, "k": "num", "topic": "differentiation", "part": "A" },
+    { "s": "2025-12", "q": "4(a)", "t": "Intervals where a cubic is increasing or decreasing", "m": 10, "k": "num", "topic": "maxima", "part": "A" },
+    { "s": "2025-12", "q": "4(b)", "t": "Local maxima and minima by second derivative", "m": 10, "k": "num", "topic": "maxima", "part": "A" },
+    { "s": "2025-12", "q": "5", "t": "Notes: nominal vs effective rate, present value, types of discounts", "m": 20, "k": "th", "topic": "interest", "part": "A" },
+    { "s": "2025-12", "q": "6", "t": "Measures of central tendency with merits and demerits", "m": 20, "k": "th", "topic": "central-tendency", "part": "B" },
+    { "s": "2025-12", "q": "7", "t": "Correlation coefficient and effect of change of origin and scale", "m": 20, "k": "num", "topic": "correlation", "part": "B" },
+    { "s": "2025-12", "q": "8", "t": "Index numbers: uses and tests of a good index", "m": 20, "k": "th", "topic": "index-numbers", "part": "B" },
+    { "s": "2025-12", "q": "9", "t": "Linear trend by least squares; estimate for 2025", "m": 20, "k": "num", "topic": "time-series", "part": "B" },
+
+    { "s": "2026-06", "q": "1(a)", "t": "Short answers: construct matrix, transpose, cofactors", "m": 5, "k": "num", "topic": "matrices", "part": "C" },
+    { "s": "2026-06", "q": "1(a)", "t": "Short answer: dy/dx of x(x + 1)(x + 2)", "m": 2.5, "k": "num", "topic": "differentiation", "part": "C" },
+    { "s": "2026-06", "q": "1(a)", "t": "Short answer: evaluate a limit", "m": 2.5, "k": "num", "topic": "limits", "part": "C" },
+    { "s": "2026-06", "q": "1(b)", "t": "Short answers: quartiles; meaning of dispersion", "m": 5, "k": "th", "topic": "dispersion", "part": "C" },
+    { "s": "2026-06", "q": "1(b)", "t": "Short answer: simple regression", "m": 2.5, "k": "th", "topic": "regression", "part": "C" },
+    { "s": "2026-06", "q": "1(b)", "t": "Short answer: simple price and quantity index", "m": 2.5, "k": "th", "topic": "index-numbers", "part": "C" },
+    { "s": "2026-06", "q": "2", "t": "Inverse of a 3×3 matrix and check AA⁻¹ = I", "m": 20, "k": "num", "topic": "linear-equations", "part": "A" },
+    { "s": "2026-06", "q": "3", "t": "Evaluate limits (any four)", "m": 20, "k": "num", "topic": "limits", "part": "A" },
+    { "s": "2026-06", "q": "4", "t": "Find dy/dx (any four)", "m": 20, "k": "num", "topic": "differentiation", "part": "A" },
+    { "s": "2026-06", "q": "5", "t": "SI at 10.5% vs CI at 10% — who pays more", "m": 20, "k": "num", "topic": "interest", "part": "A" },
+    { "s": "2026-06", "q": "6", "t": "Statistics and its functions", "m": 20, "k": "th", "topic": "stats-intro", "part": "B" },
+    { "s": "2026-06", "q": "7(a)", "t": "Requisites of a good measure of central tendency", "m": 10, "k": "th", "topic": "central-tendency", "part": "B" },
+    { "s": "2026-06", "q": "7(b)", "t": "Standard deviation of grouped data", "m": 10, "k": "num", "topic": "dispersion", "part": "B" },
+    { "s": "2026-06", "q": "8", "t": "Regression of y on x by least squares", "m": 20, "k": "num", "topic": "regression", "part": "B" },
+    { "s": "2026-06", "q": "9(a)", "t": "Tests of consistency of index number formulae", "m": 10, "k": "th", "topic": "index-numbers", "part": "B" },
+    { "s": "2026-06", "q": "9(b)", "t": "Components of a time series", "m": 10, "k": "th", "topic": "time-series", "part": "B" }
+  ]
+}
