@@ -37,6 +37,7 @@
   const MONTHS = { "06": "Jun", "12": "Dec", "02": "Feb" };
   const sessionLabel = (s) => `${MONTHS[s.slice(5)] || s.slice(5)} ${s.slice(0, 4)}`;
   const clock = (h) => { const m = Math.round(h * 60); return `${Math.floor(m / 60)}:${String(m % 60).padStart(2, "0")}`; };
+  const duration = (h) => { const m = Math.round(h * 60); return m < 60 ? `${m}m` : `${Math.floor(m / 60)}h${m % 60 ? ` ${m % 60}m` : ""}`; };
   const marks = (m) => Math.round(m * 10) / 10;
 
   async function load(path) {
@@ -257,21 +258,23 @@
     const t = analysis && analysis.topics.find((x) => x.id === id);
     if (!t) return viewNotFound();
     const n = course.sessions.length;
-    const papers = (await load("data/papers.json"))[code] || [];
-    const paperUrl = (s) => (papers.find((p) => p.s === s) || {}).url;
     const mcq = !!course.pattern.mcq;
-    // Group identical questions (common in MCQ papers) and show the most repeated first.
+    // Past questions, most important first: identical questions grouped, ranked by the
+    // marks they have carried in all papers together, then by how recent they are.
     const byText = new Map();
     [...t.qs].sort((a, b) => b.s.localeCompare(a.s)).forEach((q) => {
       const k = q.t.toLowerCase().replace(/[^a-z0-9]/g, "");
-      if (!byText.has(k)) byText.set(k, { ...q, times: [] });
-      byText.get(k).times.push(q.s);
+      if (!byText.has(k)) byText.set(k, { ...q, times: 0, carried: 0 });
+      const g = byText.get(k);
+      g.times += 1; g.carried += q.m;
     });
-    const asked = [...byText.values()].sort((a, b) => b.times.length - a.times.length || b.s.localeCompare(a.s));
-    const askedItem = (q) => `<li>
-          <span class="qsess">${sessionLabel(q.s)}</span>
-          <span>${esc(q.t)} <span class="qmarks">· ${q.times.length > 1 ? `asked ${q.times.length}×` : mcq ? "1 mark" : `${marks(q.m)} marks`}</span></span>
-          ${paperUrl(q.s) ? `<a class="small" href="${esc(paperUrl(q.s))}" target="_blank" rel="noopener">Paper ↗</a>` : "<span></span>"}</li>`;
+    const asked = [...byText.values()].sort((a, b) => b.carried - a.carried || b.s.localeCompare(a.s));
+    const SHOW = 3;
+    // Each row opens the latest paper it was asked in, at that question.
+    const askedItem = (q) => `<li><a class="ask" href="#/c/${code}/paper/${q.s}/${encodeURIComponent(q.q)}">
+          <span class="ask-main"><span class="ask-q">${esc(q.t)}</span>
+            <span class="ask-meta">${q.times > 1 ? `Asked ${q.times}× · ` : ""}${sessionLabel(q.s)}${mcq ? "" : ` · ${marks(q.m)} marks`}</span></span>
+          <span class="chev" aria-hidden="true">›</span></a></li>`;
     // Next topic in study order: the "study first" list, then the rest.
     const order = [...analysis.mvp, ...analysis.topics.map((x) => x.id).filter((x) => !analysis.mvp.includes(x))];
     const next = analysis.topics.find((x) => x.id === order[order.indexOf(id) + 1]);
@@ -298,8 +301,8 @@
       <div class="callout warn"><ul class="points">${t.mistakes.map((m) => `<li>${esc(m)}</li>`).join("")}</ul></div>` : ""}
 
       <h2>Asked in past papers</h2>
-      <section class="card"><ul class="qlist">${asked.slice(0, 12).map(askedItem).join("")}</ul>
-        ${asked.length > 12 ? `<details><summary>Show all ${asked.length}</summary><ul class="qlist">${asked.slice(12).map(askedItem).join("")}</ul></details>` : ""}
+      <section class="card asked-card"><ul class="asked">${asked.slice(0, SHOW).map(askedItem).join("")}</ul>
+        ${asked.length > SHOW ? `<details><summary>Show ${asked.length - SHOW} more</summary><ul class="asked">${asked.slice(SHOW).map(askedItem).join("")}</ul></details>` : ""}
       </section>
 
       <div class="topic-foot">
@@ -315,6 +318,75 @@
     });
   }
 
+  /* ---------- paper view ---------- */
+  // A past paper shown in the app (no download), opened at one question.
+  // Text comes from data/text/<CODE>.json; ^{..} and _{..} mark super- and subscripts.
+  const fmt = (s) => esc(s).replace(/\^\{([^}]*)\}/g, "<sup>$1</sup>").replace(/_\{([^}]*)\}/g, "<sub>$1</sub>");
+
+  // "8(b)" → question 8, part b; "2(a,b)", "6(a–c)", "1(ii,iii)", "1 (or)".
+  function parseRef(ref) {
+    const m = /^(\d+)\s*(?:\(([^)]*)\))?/.exec(ref || "");
+    if (!m) return { n: null, subs: [] };
+    const inner = (m[2] || "").trim();
+    if (inner === "or") return { n: +m[1], subs: [], alt: true };
+    const subs = [];
+    inner.split(",").map((x) => x.trim()).filter(Boolean).forEach((x) => {
+      const r = /^([a-h])\s*[–-]\s*([a-h])$/.exec(x);
+      if (r) for (let c = r[1].charCodeAt(0); c <= r[2].charCodeAt(0); c++) subs.push(String.fromCharCode(c));
+      else subs.push(x);
+    });
+    return { n: +m[1], subs };
+  }
+
+  function paperQuestion(q, ref) {
+    const hit = q.n === ref.n;
+    let afterOr = false;
+    const blocks = (q.b || []).map((b) => {
+      if (b.or) { afterOr = true; return `<p class="por">Or</p>`; }
+      if (b.t) return `<pre class="ptable">${fmt(b.t.join("\n"))}</pre>`;
+      const mark = hit && ((b.s && ref.subs.includes(b.s)) || (ref.alt && afterOr));
+      return `<p class="pp${mark ? " mark" : ""}">${fmt(b.p)}${b.m ? ` <span class="pm">${esc(b.m)} marks</span>` : ""}</p>`;
+    }).join("");
+    const opts = q.o ? `<ol class="popts" type="a">${q.o.map((o) => `<li>${fmt(o)}</li>`).join("")}</ol>` : "";
+    const imgs = (q.img || []).map((i) => `<img class="pimg" src="${esc(i.src)}" width="${i.w}" height="${i.h}" alt="Question ${q.n}" loading="${hit ? "eager" : "lazy"}">`).join("");
+    return `<section class="pq${hit ? " hit" : ""}" id="q${q.n}">${imgs ? imgs : `<span class="pq-n">${q.n}.</span><div class="pq-body">${blocks}${opts}</div>`}</section>`;
+  }
+
+  async function viewPaper(code, s, refText) {
+    const { c, course } = await getCourse(code);
+    if (!course) return viewNotFound();
+    const [papers, text] = await Promise.all([load("data/papers.json"), load(`data/text/${code}.json`).catch(() => null)]);
+    const pdf = ((papers[code] || []).find((p) => p.s === s) || {}).url;
+    const paper = text && text.papers[s];
+    const ref = parseRef(refText);
+    const back = prevHash ? `<a class="back" href="#${prevHash}" id="back">← Back</a>` : `<a class="back" href="#/c/${code}">← ${esc(c.title)}</a>`;
+    const pdfLink = pdf ? `<a href="${esc(pdf)}" target="_blank" rel="noopener">Download the PDF</a>` : "";
+    if (!paper) {
+      app.innerHTML = `${back}<h1>${sessionLabel(s)} paper</h1>
+        <p class="muted">This paper isn't available as text yet.${pdfLink ? ` ${pdfLink}` : ""}</p>`;
+      return false;
+    }
+    const exact = paper.mcq || course.topics.every((t) => t.kind === "theory") || (paper.items || []).some((i) => i.img);
+    app.innerHTML = `${back}
+      <h1>${sessionLabel(s)} paper</h1>
+      <p class="muted small head-meta">${esc(c.code)} · ${esc(c.title)}${paper.time ? ` · ${esc(paper.time)}` : ""}${paper.marks ? ` · ${esc(paper.marks)} marks` : ""}</p>
+      ${paper.note ? `<p class="pnote">${fmt(paper.note)}</p>` : ""}
+      <div class="paper-view">${paper.items.map((it) => it.h
+        ? `<h3 class="ph">${esc(it.h)}</h3>${it.note ? `<p class="small muted pnote-s">${fmt(it.note)}</p>` : ""}`
+        : paperQuestion(it, ref)).join("")}</div>
+      <p class="small muted">Text from the official paper${exact ? "" : "; tables and formulas may look slightly different in print"}.${pdfLink ? ` ${pdfLink}` : ""}</p>`;
+    // Wide tables (trial balances) shrink to fit the screen rather than hide columns.
+    app.querySelectorAll(".ptable").forEach((t) => {
+      const fit = t.clientWidth / t.scrollWidth;
+      if (fit < 1) t.style.fontSize = `${Math.max(0.6, 0.76 * fit * 0.97).toFixed(3)}rem`;
+    });
+    const backLink = app.querySelector("#back");
+    if (backLink) backLink.addEventListener("click", (e) => { e.preventDefault(); history.back(); });
+    const target = app.querySelector(".pq.hit");
+    if (target) { target.scrollIntoView({ block: "start" }); return true; }
+    return false;
+  }
+
   /* ---------- planner ---------- */
   // One tap: the time left decides which topics go in. No separate mode setting.
   const TIME_CHOICES = [
@@ -324,12 +396,26 @@
     { h: 40, label: "1 week", pick: (t) => t.level.id !== "low" }
   ];
 
+  // What to do in a topic's slot.
+  function slotHow(t, short, mcq) {
+    if (mcq) return short ? "Read the key points." : "Read the notes, then go through its past questions.";
+    if (short) return `Read the key points${t.kind === "theory" ? " and answer outline" : ", method and formulas"}.`;
+    const nums = t.qs.filter((q) => q.k === "num");
+    const solve = t.kind !== "theory" && nums.length > 0;
+    const qs = solve ? nums : t.qs.filter((q) => q.k === "th");
+    // Practise on a full-length question: a short note is weak practice for a long answer.
+    const big = Math.max(0, ...qs.map((q) => q.m)) / 2;
+    const q = qs.filter((x) => x.m >= big).sort((a, b) => b.s.localeCompare(a.s))[0];
+    const ref = q ? `“${q.t}” (${sessionLabel(q.s)})` : "a past question";
+    return solve ? `Learn the method, then solve: ${ref}.` : `Read the notes, then outline: ${ref}.`;
+  }
+
   function buildPlan(code, course, analysis, choice) {
     const hours = choice.h;
+    const mcq = !!course.pattern.mcq;
     const reserve = Math.max(0.5, hours * 0.15);
     let left = hours - reserve;
     const slots = [];
-    const skipped = [];
     let at = 0;
     if (analysis.compulsory && analysis.compulsory.sweep && left >= 1.5) {
       slots.push({ from: 0, to: 0.5, what: `${analysis.compulsory.name}: quick sweep`, how: analysis.compulsory.sweep });
@@ -340,30 +426,36 @@
       .map((t) => ({ t, need: HOURS_BY_KIND[t.kind] }));
     // When time is short, shrink every topic rather than dropping later ones:
     // the student needs enough topics to choose their questions from.
+    // Round down to quarter hours so the plan fits, then give the spare
+    // quarters back to the highest-priority topics.
     const totalNeed = todo.reduce((a, x) => a + x.need, 0);
     const squeeze = totalNeed > left ? left / totalNeed : 1;
-    const quarter = (h) => Math.max(0.5, Math.round(h * 4) / 4);
-    for (const { t, need } of todo) {
-      if (left < 0.5) { skipped.push(t); continue; }
-      const give = Math.min(quarter(need * squeeze), left);
-      const latest = [...t.qs].sort((a, b) => b.s.localeCompare(a.s));
-      const num = latest.find((q) => q.k === "num");
-      const th = latest.find((q) => q.k === "th");
-      const how = give < need * 0.75
-        ? `Read the key points${t.kind === "theory" ? " and answer outline" : ", method and formulas"}.`
-        : t.kind === "theory"
-          ? `Read the notes, then outline: “${th ? th.t : "a past question"}”${th ? ` (${sessionLabel(th.s)})` : ""}.`
-          : `Learn the method, then solve: “${num ? num.t : "a past problem"}”${num ? ` (${sessionLabel(num.s)})` : ""}.`;
-      slots.push({ from: at, to: at + give, what: t.name, id: t.id, level: t.level, how });
-      at += give; left -= give;
+    const gives = todo.map(({ need }) => Math.max(0.5, Math.floor(need * squeeze * 4 + 1e-9) / 4));
+    const used = (k) => gives.slice(0, k).reduce((a, b) => a + b, 0);
+    let keep = todo.length;
+    while (keep > 0 && used(keep) > left + 1e-9) keep--;
+    let spare = left - used(keep);
+    for (let more = true; more; ) {
+      more = false;
+      for (let i = 0; i < keep && spare >= 0.25 - 1e-9; i++) {
+        if (gives[i] + 0.25 <= todo[i].need + 1e-9) { gives[i] += 0.25; spare -= 0.25; more = true; }
+      }
     }
+    todo.slice(0, keep).forEach(({ t, need }, i) => {
+      slots.push({ from: at, to: at + gives[i], what: t.name, id: t.id, level: t.level, how: slotHow(t, gives[i] < need * 0.75, mcq) });
+      at += gives[i]; left -= gives[i];
+    });
+    const skipped = todo.slice(keep).map((x) => x.t);
     if (left >= 1 && hours > 6) {
       const last = course.sessions[course.sessions.length - 1];
       const mock = Math.min(3, left);
-      slots.push({ from: at, to: at + mock, what: "Mock paper", how: `Write the ${sessionLabel(last)} paper against the clock (${pickText(course.pattern)}).` });
+      slots.push({ from: at, to: at + mock, what: "Mock paper", how: `${mcq ? "Attempt" : "Write"} the ${sessionLabel(last)} paper against the clock (${pickText(course.pattern)}).` });
       at += mock; left -= mock;
     }
-    slots.push({ from: at, to: at + reserve + Math.max(0, left), what: "Final revision", how: "Go over the formulas, key points and answer outlines above." });
+    const formulas = analysis.topics.some((t) => t.formula || t.kind !== "theory");
+    slots.push({ from: at, to: at + reserve + Math.max(0, left), what: "Final revision",
+      how: mcq ? "Go over the key points and the questions asked again and again."
+        : `Go over the ${formulas ? "formulas, " : ""}key points and answer outlines above.` });
     return { slots, skipped };
   }
 
@@ -384,7 +476,7 @@
       const { slots, skipped } = buildPlan(code, course, analysis, choice);
       app.querySelector("#plan").innerHTML = `
         ${slots.map((s) => `<div class="slot">
-          <span class="slot-time">${h > 8 ? `${Math.round((s.to - s.from) * 10) / 10}h` : `${clock(s.from)}–${clock(s.to)}`}</span>
+          <span class="slot-time">${h > 8 ? duration(s.to - s.from) : `${clock(s.from)}–${clock(s.to)}`}</span>
           <span><span class="slot-what">${s.id ? `<a href="#/c/${code}/t/${s.id}">${esc(s.what)}</a>` : esc(s.what)}</span> ${s.level ? badge(s.level) : ""}<br>
           <span class="slot-how">${esc(s.how)}</span></span></div>`).join("")}
         ${skipped.length ? `<p class="small muted">No time left for: ${skipped.map((t) => esc(t.name)).join(", ")}.</p>` : ""}`;
@@ -461,13 +553,19 @@
   }
 
   /* ---------- router ---------- */
+  let prevHash = null;   // the page before this one, for the paper view's Back link
+  let thisHash = null;
   async function route() {
+    prevHash = thisHash;
+    thisHash = location.hash.replace(/^#/, "") || "/";
     const parts = location.hash.replace(/^#\/?/, "").split("/").filter(Boolean).map(decodeURIComponent);
+    let scrolled = false;  // a view that scrolls to something itself returns true
     try {
       if (!parts.length) await viewHome();
       else if (parts[0] === "c" && parts[1]) {
         const code = parts[1];
         if (parts[2] === "t" && parts[3]) await viewTopic(code, parts[3]);
+        else if (parts[2] === "paper" && parts[3]) scrolled = await viewPaper(code, parts[3], parts[4]);
         else if (parts[2] === "plan") await viewPlan(code);
         else if (parts[2] === "exam") await viewExam(code);
         else if (parts[2] === "papers") await viewPapers(code);
@@ -477,7 +575,7 @@
       app.innerHTML = `<h1>Couldn't load this page</h1><p class="muted">Check your connection and try again.</p>`;
       console.error(err);
     }
-    window.scrollTo(0, 0);
+    if (!scrolled) window.scrollTo(0, 0);
     app.focus({ preventScroll: true });
   }
 

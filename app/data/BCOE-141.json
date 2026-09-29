@@ -1,0 +1,1215 @@
+{
+ "code": "BCOE-141",
+ "title": "Principles of Marketing",
+ "pattern": {
+  "time": "3 hours",
+  "marks": 100,
+  "questions": 8,
+  "attempt": 5,
+  "each": 20,
+  "summary": "8 questions, attempt any 5, each carries 20 marks. All theory. Q8 is always 'short notes on any four of six'. Questions repeat heavily — use Indian brand examples (Amul, Maggi, Tata, Patanjali) in every answer."
+ },
+ "blocksOfficial": false,
+ "sessions": [
+  "2022-06",
+  "2022-12",
+  "2023-06",
+  "2023-12",
+  "2024-06",
+  "2024-12",
+  "2025-06",
+  "2025-12",
+  "2026-06"
+ ],
+ "sessionNotes": {},
+ "examTips": {
+  "choosing": [
+   "Promotion mix, distribution channels, marketing environment, product life cycle and segmentation/targeting come up in almost every paper — five dependable choices.",
+   "Q8 (four notes out of six) rewards broad revision: digital, green, social and rural marketing, branding and services recur."
+  ]
+ },
+ "blocks": [
+  {
+   "no": 1,
+   "title": "Marketing, Environment & Consumers"
+  },
+  {
+   "no": 2,
+   "title": "Segmentation, Targeting & Positioning"
+  },
+  {
+   "no": 3,
+   "title": "Product"
+  },
+  {
+   "no": 4,
+   "title": "Price & Place"
+  },
+  {
+   "no": 5,
+   "title": "Promotion"
+  },
+  {
+   "no": 6,
+   "title": "Services, Rural & New Trends"
+  }
+ ],
+ "topics": [
+  {
+   "id": "promotion",
+   "name": "Promotion Mix & IMC",
+   "block": 5,
+   "kind": "theory",
+   "summary": "Role of promotion, components of the promotion mix, choosing the best tool, integrated marketing communication.",
+   "points": [
+    "Promotion: communicating with customers to inform, persuade and remind them about a product.",
+    "Components: advertising (paid, non-personal, mass reach — costly, one-way), personal selling (face-to-face, flexible — expensive per contact), sales promotion (short-term incentives: coupons, discounts, contests — quick sales, can hurt brand), publicity/PR (unpaid media coverage — credible, not controllable), direct marketing (catalogues, e-mail, telemarketing — targeted, measurable).",
+    "Factors in choosing the mix: nature of product (consumer vs industrial), stage of PLC, target market size and spread, push vs pull strategy, budget, competition.",
+    "Integrated marketing communication: coordinating all promotion tools to deliver one consistent message.",
+    "Criticism of advertising: raises prices, misleading claims, promotes materialism, creates unnecessary wants.",
+    "Selling theories: AIDA, right set of circumstances, buying formula, behavioural equation."
+   ],
+   "frame": "Meaning → each component with merits and limits (a table works well) → selection factors → Indian example → conclusion.",
+   "mistakes": []
+  },
+  {
+   "id": "distribution",
+   "name": "Channels of Distribution",
+   "block": 4,
+   "kind": "theory",
+   "summary": "Types of channels, functions of channel members and middlemen, factors in channel choice, intensity of distribution, wholesalers.",
+   "points": [
+    "Channel of distribution: route through which goods pass from producer to consumer.",
+    "Types: zero-level (direct — Amway, company websites), one-level (producer → retailer → consumer), two-level (producer → wholesaler → retailer → consumer), three-level (with agents).",
+    "Functions: information, promotion, contact, matching (sorting, grading, packaging), negotiation, physical distribution, financing, risk-taking.",
+    "Role of middlemen: reduce the number of transactions, provide assortment, storage, credit, market feedback.",
+    "Factors in channel choice: product (perishability, value, technical nature), market (number and location of buyers, order size), company (resources, control desired), middlemen (availability, cost), environment and competition.",
+    "Intensity: intensive (convenience goods everywhere — soap), selective (few outlets — electronics), exclusive (one dealer per area — luxury cars).",
+    "Services of wholesalers: to manufacturers (bulk buying, storage, finance, market information) and to retailers (assortment, credit, quick supply)."
+   ],
+   "frame": "Meaning → channel diagram (levels) → functions or factors as headed points → examples → conclusion.",
+   "mistakes": [
+    "Skipping the channel-level diagram — a simple flow chart earns marks."
+   ]
+  },
+  {
+   "id": "environment",
+   "name": "Marketing Environment",
+   "block": 1,
+   "kind": "theory",
+   "summary": "Meaning, importance of environmental scanning, micro and macro environment.",
+   "points": [
+    "Marketing environment: all forces outside marketing management that affect its ability to build customer relationships.",
+    "Why scan: spot opportunities and threats, plan strategy, adapt to change, beat competitors.",
+    "Micro environment (close to the company): company's internal departments, suppliers, marketing intermediaries, customers, competitors, publics.",
+    "Macro environment (PESTLE-type forces): demographic, economic, natural/ecological, technological, political-legal, socio-cultural.",
+    "Examples: rising incomes and smartphones (economic, technological) driving e-commerce; GST (legal) changing pricing; health awareness (cultural) boosting organic foods."
+   ],
+   "frame": "Meaning → micro and macro forces in two groups, one Indian example each → importance of scanning → conclusion.",
+   "mistakes": []
+  },
+  {
+   "id": "stp",
+   "name": "Segmentation, Targeting & Positioning",
+   "block": 2,
+   "kind": "theory",
+   "summary": "Bases of consumer market segmentation, segmentation vs targeting, targeting strategies, positioning.",
+   "points": [
+    "Segmentation: dividing a market into groups of buyers with similar needs.",
+    "Bases: geographic (region, urban/rural, climate), demographic (age, gender, income, occupation, family size), psychographic (lifestyle, personality, values), behavioural (occasion, benefits sought, usage rate, loyalty).",
+    "Segmentation divides the market; targeting chooses which segments to serve.",
+    "Targeting strategies: undifferentiated/mass (one offer for all), differentiated (different offers for several segments — Maruti's range), concentrated/niche (one segment — Rolex), micro-marketing (local or individual).",
+    "Positioning: creating a distinct place for the brand in the customer's mind — by attribute, benefit, price-quality, use, user, competitor (e.g. Volvo = safety).",
+    "Requirements of effective segments: measurable, accessible, substantial, differentiable, actionable."
+   ],
+   "frame": "Meaning → bases or strategies as headed points with brand examples → conclusion.",
+   "mistakes": []
+  },
+  {
+   "id": "plc",
+   "name": "Product Life Cycle",
+   "block": 3,
+   "kind": "theory",
+   "summary": "Stages of the PLC and marketing strategies at each stage.",
+   "points": [
+    "PLC: stages a product passes through in the market — introduction, growth, maturity, decline.",
+    "Introduction: low sales, high costs, losses; strategy — create awareness, trial offers, skimming or penetration pricing, limited distribution.",
+    "Growth: sales rise fast, competitors enter, profits rise; strategy — improve quality, add features, enter new segments, widen distribution, brand-preference advertising.",
+    "Maturity: sales peak and slow, intense competition; strategy — modify market, product and marketing mix, price cuts, promotions.",
+    "Decline: sales and profits fall; strategy — cut costs, harvest, reposition or withdraw.",
+    "Examples: feature phones (decline), electric vehicles (growth), toothpaste (maturity)."
+   ],
+   "frame": "Meaning → PLC curve diagram (sales and profit vs time) → each stage: features + strategy → conclusion.",
+   "mistakes": [
+    "Leaving out the PLC graph."
+   ]
+  },
+  {
+   "id": "pricing",
+   "name": "Pricing",
+   "block": 4,
+   "kind": "theory",
+   "summary": "Relevance and objectives of pricing, factors affecting price, pricing methods, geographical pricing, break-even.",
+   "points": [
+    "Price is the only element of the marketing mix that brings revenue; it signals quality and affects demand.",
+    "Objectives: profit maximisation, target return, market share, survival, market skimming, penetration, meeting competition, product-quality leadership.",
+    "Factors: internal (costs, objectives, marketing mix, product life-cycle stage) and external (demand, competition, government regulation, economic conditions, buyers' perception).",
+    "Methods: cost-based (cost-plus, mark-up, break-even/target profit), demand-based (perceived value, price discrimination), competition-based (going-rate, sealed bid).",
+    "Geographical pricing: FOB origin, uniform delivered, zone pricing, basing-point, freight absorption.",
+    "Break-even point = fixed costs ÷ (price − variable cost per unit).",
+    "International price quotations: EXW, FOB, CIF and other Incoterms."
+   ],
+   "frame": "Meaning → objectives or methods as headed points with examples → conclusion.",
+   "mistakes": []
+  },
+  {
+   "id": "services",
+   "name": "Services Marketing",
+   "block": 6,
+   "kind": "theory",
+   "summary": "Goods vs services, characteristics of services, challenges in marketing services.",
+   "points": [
+    "Service: an intangible activity offered for sale (banking, hotels, education).",
+    "Characteristics: intangibility, inseparability (produced and consumed together), variability/heterogeneity, perishability, no ownership.",
+    "Goods vs services: tangible vs intangible, can be stored vs perishable, standardised vs variable, ownership transfers vs does not.",
+    "Challenges: showing quality before purchase, keeping service consistent, matching supply with fluctuating demand, pricing intangibles, training staff, managing customer participation.",
+    "Extended mix (7 Ps): product, price, place, promotion + people, process, physical evidence."
+   ],
+   "frame": "Meaning → characteristics with examples → challenges → 7 Ps → conclusion.",
+   "mistakes": []
+  },
+  {
+   "id": "consumer",
+   "name": "Consumer Behaviour & Buying Process",
+   "block": 1,
+   "kind": "theory",
+   "summary": "Factors influencing consumer behaviour and the stages of the buying decision (e.g. buying a washing machine or TV).",
+   "points": [
+    "Factors: cultural (culture, sub-culture, social class), social (reference groups, family, roles and status), personal (age, life-cycle stage, occupation, income, lifestyle, personality), psychological (motivation, perception, learning, beliefs and attitudes).",
+    "Buying decision process: need recognition → information search → evaluation of alternatives → purchase decision → post-purchase behaviour.",
+    "Example (washing machine): the old one breaks (need) → asks friends, reads reviews, visits stores (search) → compares capacity, brand, price, warranty (evaluation) → buys a front-load model during a sale (purchase) → satisfaction or cognitive dissonance (post-purchase)."
+   ],
+   "frame": "Meaning → five stages as a flow chart applied to the product in the question → factors → conclusion.",
+   "mistakes": [
+    "Describing stages without applying them to the product the question names."
+   ]
+  },
+  {
+   "id": "npd",
+   "name": "New Product Development",
+   "block": 3,
+   "kind": "theory",
+   "summary": "Concept and steps of NPD.",
+   "points": [
+    "New product: original, improved or modified product, or a new brand.",
+    "Steps: idea generation → idea screening → concept development and testing → marketing strategy → business analysis → product development → test marketing → commercialisation.",
+    "Why it is complex: high cost, high failure rate, long time, changing customer needs, competition.",
+    "Example: Maggi Oats Noodles or a new flavour — screened, test-marketed in a few cities before national launch."
+   ],
+   "frame": "Meaning → steps as a numbered flow chart with one line each → example → conclusion.",
+   "mistakes": []
+  },
+  {
+   "id": "emerging",
+   "name": "Digital, Green, Social & Other New Marketing",
+   "block": 6,
+   "kind": "theory",
+   "summary": "Digital marketing and its tools, e-retailing, green, social, relationship, experiential and direct marketing.",
+   "points": [
+    "Digital marketing: promoting through digital channels. Tools: SEO, SEM/pay-per-click, social media, content, e-mail, affiliate and influencer marketing, mobile apps. Advantages: low cost, targeting, measurable, two-way. Limits: clutter, privacy concerns, needs skills, digital divide.",
+    "E-retailing: selling to consumers online (Amazon, Flipkart).",
+    "Green marketing: promoting environmentally safe products and practices (eco-labels, recyclable packaging).",
+    "Social marketing: using marketing to promote social good (Swachh Bharat, anti-smoking).",
+    "Relationship marketing: building long-term customer relationships (loyalty programmes, CRM).",
+    "Experiential marketing: engaging customers through memorable brand experiences (product trials, pop-up events)."
+   ],
+   "frame": "Meaning → features or tools as headed points → Indian example → merits and limits → conclusion.",
+   "mistakes": []
+  },
+  {
+   "id": "product",
+   "name": "Product Classification, Packaging & Branding",
+   "block": 3,
+   "kind": "theory",
+   "summary": "Classification of products, product mix, packaging functions and strategies, branding.",
+   "points": [
+    "Consumer products: convenience, shopping, speciality, unsought. Industrial products: materials and parts, capital items, supplies and services. Also durable vs non-durable.",
+    "Product mix: all product lines a company sells — width, length, depth, consistency.",
+    "Packaging functions: protection, convenience, information, promotion ('silent salesman'), identification.",
+    "Packaging strategies: family packaging, reusable packaging, multiple packaging, kit packaging, changing the package.",
+    "Branding: name, term, sign or design that identifies a seller's product. Benefits: recognition, loyalty, premium pricing, easier new launches. Types: individual, family, private (store) brands."
+   ],
+   "frame": "Meaning → classification chart or functions as headed points → examples → conclusion.",
+   "mistakes": []
+  },
+  {
+   "id": "rural",
+   "name": "Rural Marketing",
+   "block": 6,
+   "kind": "theory",
+   "summary": "Meaning, features and challenges of rural markets, 4 A's of rural marketing.",
+   "points": [
+    "Rural marketing: marketing goods and services to rural consumers (and rural produce to urban markets).",
+    "Features: large and scattered population, agriculture-dependent income, low literacy, seasonal demand, strong traditions, growing incomes and aspirations.",
+    "Challenges: poor roads and storage, low and irregular incomes, communication barriers, many languages, spurious products, credit needs.",
+    "4 A's: availability (reach every village), affordability (small packs — sachets), acceptability (products suited to rural needs), awareness (vernacular media, haats, melas).",
+    "Examples: HUL's Project Shakti, ITC e-Choupal, sachet shampoos."
+   ],
+   "frame": "Meaning → features/challenges → 4 A's with examples → conclusion.",
+   "mistakes": []
+  },
+  {
+   "id": "marketing-basics",
+   "name": "Marketing Concept & Marketing Mix",
+   "block": 1,
+   "kind": "theory",
+   "summary": "Marketing vs selling, relevance of marketing, the 4 Ps.",
+   "points": [
+    "Marketing: identifying and satisfying customer needs profitably.",
+    "Marketing vs selling: customer needs vs seller's need to sell; long term vs short term; integrated marketing vs sales push.",
+    "Marketing mix (4 Ps): product, price, place, promotion — extended to 7 Ps for services.",
+    "Relevance: creates demand, satisfies customers, builds brands, generates revenue and employment, raises living standards."
+   ],
+   "frame": "Meaning → comparison table (marketing vs selling) → 4 Ps with one example each → conclusion.",
+   "mistakes": []
+  }
+ ],
+ "questions": [
+  {
+   "s": "2022-06",
+   "q": "1",
+   "t": "Bases for segmenting consumer markets",
+   "m": 20,
+   "k": "th",
+   "topic": "stp"
+  },
+  {
+   "s": "2022-06",
+   "q": "2",
+   "t": "Factors influencing consumer behaviour",
+   "m": 20,
+   "k": "th",
+   "topic": "consumer"
+  },
+  {
+   "s": "2022-06",
+   "q": "3",
+   "t": "New product development process",
+   "m": 20,
+   "k": "th",
+   "topic": "npd"
+  },
+  {
+   "s": "2022-06",
+   "q": "4",
+   "t": "Objectives of pricing",
+   "m": 20,
+   "k": "th",
+   "topic": "pricing"
+  },
+  {
+   "s": "2022-06",
+   "q": "5",
+   "t": "Four geographical pricing strategies",
+   "m": 20,
+   "k": "th",
+   "topic": "pricing"
+  },
+  {
+   "s": "2022-06",
+   "q": "6",
+   "t": "Factors influencing choice of channel",
+   "m": 20,
+   "k": "th",
+   "topic": "distribution"
+  },
+  {
+   "s": "2022-06",
+   "q": "7",
+   "t": "Components of promotion mix: merits and limits",
+   "m": 20,
+   "k": "th",
+   "topic": "promotion"
+  },
+  {
+   "s": "2022-06",
+   "q": "8(a)",
+   "t": "Note (any four): importance of personal selling",
+   "m": 3.33,
+   "k": "th",
+   "topic": "promotion"
+  },
+  {
+   "s": "2022-06",
+   "q": "8(b)",
+   "t": "Note (any four): sales promotion",
+   "m": 3.33,
+   "k": "th",
+   "topic": "promotion"
+  },
+  {
+   "s": "2022-06",
+   "q": "8(c)",
+   "t": "Note (any four): criticism of advertising",
+   "m": 3.33,
+   "k": "th",
+   "topic": "promotion"
+  },
+  {
+   "s": "2022-06",
+   "q": "8(d)",
+   "t": "Note (any four): publicity",
+   "m": 3.33,
+   "k": "th",
+   "topic": "promotion"
+  },
+  {
+   "s": "2022-06",
+   "q": "8(e)",
+   "t": "Note (any four): services marketing",
+   "m": 3.33,
+   "k": "th",
+   "topic": "services"
+  },
+  {
+   "s": "2022-06",
+   "q": "8(f)",
+   "t": "Note (any four): rural marketing",
+   "m": 3.33,
+   "k": "th",
+   "topic": "rural"
+  },
+  {
+   "s": "2022-12",
+   "q": "1",
+   "t": "Buying process for a washing machine",
+   "m": 20,
+   "k": "th",
+   "topic": "consumer"
+  },
+  {
+   "s": "2022-12",
+   "q": "2",
+   "t": "Challenges in marketing services",
+   "m": 20,
+   "k": "th",
+   "topic": "services"
+  },
+  {
+   "s": "2022-12",
+   "q": "3",
+   "t": "Features and challenges of rural markets",
+   "m": 20,
+   "k": "th",
+   "topic": "rural"
+  },
+  {
+   "s": "2022-12",
+   "q": "4",
+   "t": "Micro and macro marketing environment",
+   "m": 20,
+   "k": "th",
+   "topic": "environment"
+  },
+  {
+   "s": "2022-12",
+   "q": "5",
+   "t": "Targeting and positioning; targeting strategies",
+   "m": 20,
+   "k": "th",
+   "topic": "stp"
+  },
+  {
+   "s": "2022-12",
+   "q": "6",
+   "t": "Stages of the product life cycle",
+   "m": 20,
+   "k": "th",
+   "topic": "plc"
+  },
+  {
+   "s": "2022-12",
+   "q": "7",
+   "t": "Factors affecting price determination",
+   "m": 20,
+   "k": "th",
+   "topic": "pricing"
+  },
+  {
+   "s": "2022-12",
+   "q": "8(a)",
+   "t": "Note (any four): break-even analysis",
+   "m": 3.33,
+   "k": "th",
+   "topic": "pricing"
+  },
+  {
+   "s": "2022-12",
+   "q": "8(b)",
+   "t": "Note (any four): price quotation in international markets",
+   "m": 3.33,
+   "k": "th",
+   "topic": "pricing"
+  },
+  {
+   "s": "2022-12",
+   "q": "8(c)",
+   "t": "Note (any four): intensity of distribution",
+   "m": 3.33,
+   "k": "th",
+   "topic": "distribution"
+  },
+  {
+   "s": "2022-12",
+   "q": "8(d)",
+   "t": "Note (any four): services of wholesalers",
+   "m": 3.33,
+   "k": "th",
+   "topic": "distribution"
+  },
+  {
+   "s": "2022-12",
+   "q": "8(e)",
+   "t": "Note (any four): integrated marketing communication",
+   "m": 3.33,
+   "k": "th",
+   "topic": "promotion"
+  },
+  {
+   "s": "2022-12",
+   "q": "8(f)",
+   "t": "Note (any four): selling theories",
+   "m": 3.33,
+   "k": "th",
+   "topic": "promotion"
+  },
+  {
+   "s": "2023-06",
+   "q": "1",
+   "t": "Marketing environment: scanning and components",
+   "m": 20,
+   "k": "th",
+   "topic": "environment"
+  },
+  {
+   "s": "2023-06",
+   "q": "2",
+   "t": "Bases of market segmentation",
+   "m": 20,
+   "k": "th",
+   "topic": "stp"
+  },
+  {
+   "s": "2023-06",
+   "q": "3",
+   "t": "Steps in new product development",
+   "m": 20,
+   "k": "th",
+   "topic": "npd"
+  },
+  {
+   "s": "2023-06",
+   "q": "4",
+   "t": "PLC stages and strategies at each stage",
+   "m": 20,
+   "k": "th",
+   "topic": "plc"
+  },
+  {
+   "s": "2023-06",
+   "q": "5",
+   "t": "Methods of setting price",
+   "m": 20,
+   "k": "th",
+   "topic": "pricing"
+  },
+  {
+   "s": "2023-06",
+   "q": "6",
+   "t": "Functions of channel members; types of channels",
+   "m": 20,
+   "k": "th",
+   "topic": "distribution"
+  },
+  {
+   "s": "2023-06",
+   "q": "7",
+   "t": "Promotion mix and choosing the best tool",
+   "m": 20,
+   "k": "th",
+   "topic": "promotion"
+  },
+  {
+   "s": "2023-06",
+   "q": "8(a)",
+   "t": "Note (any four): packaging",
+   "m": 3.33,
+   "k": "th",
+   "topic": "product"
+  },
+  {
+   "s": "2023-06",
+   "q": "8(b)",
+   "t": "Note (any four): service marketing",
+   "m": 3.33,
+   "k": "th",
+   "topic": "services"
+  },
+  {
+   "s": "2023-06",
+   "q": "8(c)",
+   "t": "Note (any four): digital marketing",
+   "m": 3.33,
+   "k": "th",
+   "topic": "emerging"
+  },
+  {
+   "s": "2023-06",
+   "q": "8(d)",
+   "t": "Note (any four): market targeting",
+   "m": 3.33,
+   "k": "th",
+   "topic": "stp"
+  },
+  {
+   "s": "2023-06",
+   "q": "8(e)",
+   "t": "Note (any four): green marketing",
+   "m": 3.33,
+   "k": "th",
+   "topic": "emerging"
+  },
+  {
+   "s": "2023-06",
+   "q": "8(f)",
+   "t": "Note (any four): marketing mix",
+   "m": 3.33,
+   "k": "th",
+   "topic": "marketing-basics"
+  },
+  {
+   "s": "2023-12",
+   "q": "1",
+   "t": "Consumer decision process and influencing factors",
+   "m": 20,
+   "k": "th",
+   "topic": "consumer"
+  },
+  {
+   "s": "2023-12",
+   "q": "2",
+   "t": "Targeting vs segmentation; targeting strategies",
+   "m": 20,
+   "k": "th",
+   "topic": "stp"
+  },
+  {
+   "s": "2023-12",
+   "q": "3",
+   "t": "Classification of products",
+   "m": 20,
+   "k": "th",
+   "topic": "product"
+  },
+  {
+   "s": "2023-12",
+   "q": "4",
+   "t": "Packaging: importance, functions, strategies",
+   "m": 20,
+   "k": "th",
+   "topic": "product"
+  },
+  {
+   "s": "2023-12",
+   "q": "5",
+   "t": "Pricing objectives and two methods",
+   "m": 20,
+   "k": "th",
+   "topic": "pricing"
+  },
+  {
+   "s": "2023-12",
+   "q": "6",
+   "t": "Channels of distribution and factors in selection",
+   "m": 20,
+   "k": "th",
+   "topic": "distribution"
+  },
+  {
+   "s": "2023-12",
+   "q": "7",
+   "t": "Promotion mix and its components",
+   "m": 20,
+   "k": "th",
+   "topic": "promotion"
+  },
+  {
+   "s": "2023-12",
+   "q": "8(a)",
+   "t": "Note (any four): marketing mix",
+   "m": 3.33,
+   "k": "th",
+   "topic": "marketing-basics"
+  },
+  {
+   "s": "2023-12",
+   "q": "8(b)",
+   "t": "Note (any four): branding",
+   "m": 3.33,
+   "k": "th",
+   "topic": "product"
+  },
+  {
+   "s": "2023-12",
+   "q": "8(c)",
+   "t": "Note (any four): rural marketing",
+   "m": 3.33,
+   "k": "th",
+   "topic": "rural"
+  },
+  {
+   "s": "2023-12",
+   "q": "8(d)",
+   "t": "Note (any four): e-retailing",
+   "m": 3.33,
+   "k": "th",
+   "topic": "emerging"
+  },
+  {
+   "s": "2023-12",
+   "q": "8(e)",
+   "t": "Note (any four): social marketing",
+   "m": 3.33,
+   "k": "th",
+   "topic": "emerging"
+  },
+  {
+   "s": "2023-12",
+   "q": "8(f)",
+   "t": "Note (any four): positioning",
+   "m": 3.33,
+   "k": "th",
+   "topic": "stp"
+  },
+  {
+   "s": "2024-06",
+   "q": "1",
+   "t": "Marketing vs selling; relevance and marketing mix",
+   "m": 20,
+   "k": "th",
+   "topic": "marketing-basics"
+  },
+  {
+   "s": "2024-06",
+   "q": "2",
+   "t": "Bases for segmenting consumer markets",
+   "m": 20,
+   "k": "th",
+   "topic": "stp"
+  },
+  {
+   "s": "2024-06",
+   "q": "3",
+   "t": "New product development process",
+   "m": 20,
+   "k": "th",
+   "topic": "npd"
+  },
+  {
+   "s": "2024-06",
+   "q": "4",
+   "t": "Methods of price determination",
+   "m": 20,
+   "k": "th",
+   "topic": "pricing"
+  },
+  {
+   "s": "2024-06",
+   "q": "5",
+   "t": "Role of middlemen; functions of channels",
+   "m": 20,
+   "k": "th",
+   "topic": "distribution"
+  },
+  {
+   "s": "2024-06",
+   "q": "6",
+   "t": "Promotion mix and its components",
+   "m": 20,
+   "k": "th",
+   "topic": "promotion"
+  },
+  {
+   "s": "2024-06",
+   "q": "7",
+   "t": "Characteristics of services; challenges",
+   "m": 20,
+   "k": "th",
+   "topic": "services"
+  },
+  {
+   "s": "2024-06",
+   "q": "8(a)",
+   "t": "Note (any four): rural marketing",
+   "m": 3.33,
+   "k": "th",
+   "topic": "rural"
+  },
+  {
+   "s": "2024-06",
+   "q": "8(b)",
+   "t": "Note (any four): product life cycle",
+   "m": 3.33,
+   "k": "th",
+   "topic": "plc"
+  },
+  {
+   "s": "2024-06",
+   "q": "8(c)",
+   "t": "Note (any four): social marketing",
+   "m": 3.33,
+   "k": "th",
+   "topic": "emerging"
+  },
+  {
+   "s": "2024-06",
+   "q": "8(d)",
+   "t": "Note (any four): market positioning",
+   "m": 3.33,
+   "k": "th",
+   "topic": "stp"
+  },
+  {
+   "s": "2024-06",
+   "q": "8(e)",
+   "t": "Note (any four): digital marketing",
+   "m": 3.33,
+   "k": "th",
+   "topic": "emerging"
+  },
+  {
+   "s": "2024-06",
+   "q": "8(f)",
+   "t": "Note (any four): branding",
+   "m": 3.33,
+   "k": "th",
+   "topic": "product"
+  },
+  {
+   "s": "2024-12",
+   "q": "1",
+   "t": "Micro and macro marketing environment",
+   "m": 20,
+   "k": "th",
+   "topic": "environment"
+  },
+  {
+   "s": "2024-12",
+   "q": "2",
+   "t": "Targeting vs segmentation; targeting strategies",
+   "m": 20,
+   "k": "th",
+   "topic": "stp"
+  },
+  {
+   "s": "2024-12",
+   "q": "3",
+   "t": "PLC stages and strategies",
+   "m": 20,
+   "k": "th",
+   "topic": "plc"
+  },
+  {
+   "s": "2024-12",
+   "q": "4",
+   "t": "Channels of distribution and selection factors",
+   "m": 20,
+   "k": "th",
+   "topic": "distribution"
+  },
+  {
+   "s": "2024-12",
+   "q": "5",
+   "t": "Role of promotion; factors in promotion mix",
+   "m": 20,
+   "k": "th",
+   "topic": "promotion"
+  },
+  {
+   "s": "2024-12",
+   "q": "6",
+   "t": "Rural marketing and its 4 A's",
+   "m": 20,
+   "k": "th",
+   "topic": "rural"
+  },
+  {
+   "s": "2024-12",
+   "q": "7",
+   "t": "Digital marketing: advantages, limits and tools",
+   "m": 20,
+   "k": "th",
+   "topic": "emerging"
+  },
+  {
+   "s": "2024-12",
+   "q": "8(a)",
+   "t": "Note (any four): relationship marketing",
+   "m": 3.33,
+   "k": "th",
+   "topic": "emerging"
+  },
+  {
+   "s": "2024-12",
+   "q": "8(b)",
+   "t": "Note (any four): objectives of pricing",
+   "m": 3.33,
+   "k": "th",
+   "topic": "pricing"
+  },
+  {
+   "s": "2024-12",
+   "q": "8(c)",
+   "t": "Note (any four): direct marketing",
+   "m": 3.33,
+   "k": "th",
+   "topic": "promotion"
+  },
+  {
+   "s": "2024-12",
+   "q": "8(d)",
+   "t": "Note (any four): green marketing",
+   "m": 3.33,
+   "k": "th",
+   "topic": "emerging"
+  },
+  {
+   "s": "2024-12",
+   "q": "8(e)",
+   "t": "Note (any four): experiential marketing",
+   "m": 3.33,
+   "k": "th",
+   "topic": "emerging"
+  },
+  {
+   "s": "2024-12",
+   "q": "8(f)",
+   "t": "Note (any four): advertising",
+   "m": 3.33,
+   "k": "th",
+   "topic": "promotion"
+  },
+  {
+   "s": "2025-06",
+   "q": "1",
+   "t": "Components of the marketing environment",
+   "m": 20,
+   "k": "th",
+   "topic": "environment"
+  },
+  {
+   "s": "2025-06",
+   "q": "2",
+   "t": "Segmentation vs targeting; bases of segmentation",
+   "m": 20,
+   "k": "th",
+   "topic": "stp"
+  },
+  {
+   "s": "2025-06",
+   "q": "3",
+   "t": "New product development process",
+   "m": 20,
+   "k": "th",
+   "topic": "npd"
+  },
+  {
+   "s": "2025-06",
+   "q": "4",
+   "t": "Relevance and objectives of pricing",
+   "m": 20,
+   "k": "th",
+   "topic": "pricing"
+  },
+  {
+   "s": "2025-06",
+   "q": "5",
+   "t": "Factors influencing channel choice",
+   "m": 20,
+   "k": "th",
+   "topic": "distribution"
+  },
+  {
+   "s": "2025-06",
+   "q": "6",
+   "t": "Role and components of the promotion mix",
+   "m": 20,
+   "k": "th",
+   "topic": "promotion"
+  },
+  {
+   "s": "2025-06",
+   "q": "7",
+   "t": "Services marketing: characteristics and challenges",
+   "m": 20,
+   "k": "th",
+   "topic": "services"
+  },
+  {
+   "s": "2025-06",
+   "q": "8(a)",
+   "t": "Note (any four): integrated marketing communication",
+   "m": 3.33,
+   "k": "th",
+   "topic": "promotion"
+  },
+  {
+   "s": "2025-06",
+   "q": "8(b)",
+   "t": "Note (any four): product life cycle",
+   "m": 3.33,
+   "k": "th",
+   "topic": "plc"
+  },
+  {
+   "s": "2025-06",
+   "q": "8(c)",
+   "t": "Note (any four): social marketing",
+   "m": 3.33,
+   "k": "th",
+   "topic": "emerging"
+  },
+  {
+   "s": "2025-06",
+   "q": "8(d)",
+   "t": "Note (any four): sales promotion",
+   "m": 3.33,
+   "k": "th",
+   "topic": "promotion"
+  },
+  {
+   "s": "2025-06",
+   "q": "8(e)",
+   "t": "Note (any four): digital marketing",
+   "m": 3.33,
+   "k": "th",
+   "topic": "emerging"
+  },
+  {
+   "s": "2025-06",
+   "q": "8(f)",
+   "t": "Note (any four): rural marketing",
+   "m": 3.33,
+   "k": "th",
+   "topic": "rural"
+  },
+  {
+   "s": "2025-12",
+   "q": "1",
+   "t": "Scanning and components of the marketing environment",
+   "m": 20,
+   "k": "th",
+   "topic": "environment"
+  },
+  {
+   "s": "2025-12",
+   "q": "2",
+   "t": "Factors influencing consumer behaviour",
+   "m": 20,
+   "k": "th",
+   "topic": "consumer"
+  },
+  {
+   "s": "2025-12",
+   "q": "3",
+   "t": "PLC stages and strategies",
+   "m": 20,
+   "k": "th",
+   "topic": "plc"
+  },
+  {
+   "s": "2025-12",
+   "q": "4",
+   "t": "Factors influencing channel choice",
+   "m": 20,
+   "k": "th",
+   "topic": "distribution"
+  },
+  {
+   "s": "2025-12",
+   "q": "5",
+   "t": "Role of promotion; promotion mix decisions in IMC",
+   "m": 20,
+   "k": "th",
+   "topic": "promotion"
+  },
+  {
+   "s": "2025-12",
+   "q": "6",
+   "t": "Goods vs services; characteristics of services",
+   "m": 20,
+   "k": "th",
+   "topic": "services"
+  },
+  {
+   "s": "2025-12",
+   "q": "7",
+   "t": "Digital marketing: advantages, limits and tools",
+   "m": 20,
+   "k": "th",
+   "topic": "emerging"
+  },
+  {
+   "s": "2025-12",
+   "q": "8(a)",
+   "t": "Note (any four): direct marketing",
+   "m": 3.33,
+   "k": "th",
+   "topic": "promotion"
+  },
+  {
+   "s": "2025-12",
+   "q": "8(b)",
+   "t": "Note (any four): pricing",
+   "m": 3.33,
+   "k": "th",
+   "topic": "pricing"
+  },
+  {
+   "s": "2025-12",
+   "q": "8(c)",
+   "t": "Note (any four): new product development",
+   "m": 3.33,
+   "k": "th",
+   "topic": "npd"
+  },
+  {
+   "s": "2025-12",
+   "q": "8(d)",
+   "t": "Note (any four): green marketing",
+   "m": 3.33,
+   "k": "th",
+   "topic": "emerging"
+  },
+  {
+   "s": "2025-12",
+   "q": "8(e)",
+   "t": "Note (any four): service marketing",
+   "m": 3.33,
+   "k": "th",
+   "topic": "services"
+  },
+  {
+   "s": "2025-12",
+   "q": "8(f)",
+   "t": "Note (any four): advertising",
+   "m": 3.33,
+   "k": "th",
+   "topic": "promotion"
+  },
+  {
+   "s": "2026-06",
+   "q": "1",
+   "t": "Scanning and components of the marketing environment",
+   "m": 20,
+   "k": "th",
+   "topic": "environment"
+  },
+  {
+   "s": "2026-06",
+   "q": "2",
+   "t": "Bases of market segmentation",
+   "m": 20,
+   "k": "th",
+   "topic": "stp"
+  },
+  {
+   "s": "2026-06",
+   "q": "3",
+   "t": "Buying process for a television",
+   "m": 20,
+   "k": "th",
+   "topic": "consumer"
+  },
+  {
+   "s": "2026-06",
+   "q": "4",
+   "t": "Stages of the product life cycle",
+   "m": 20,
+   "k": "th",
+   "topic": "plc"
+  },
+  {
+   "s": "2026-06",
+   "q": "5",
+   "t": "Methods of setting price",
+   "m": 20,
+   "k": "th",
+   "topic": "pricing"
+  },
+  {
+   "s": "2026-06",
+   "q": "6",
+   "t": "Relevance and functions of channel partners",
+   "m": 20,
+   "k": "th",
+   "topic": "distribution"
+  },
+  {
+   "s": "2026-06",
+   "q": "7",
+   "t": "Promotion mix and choosing the best tool",
+   "m": 20,
+   "k": "th",
+   "topic": "promotion"
+  },
+  {
+   "s": "2026-06",
+   "q": "8(a)",
+   "t": "Note (any four): branding",
+   "m": 3.33,
+   "k": "th",
+   "topic": "product"
+  },
+  {
+   "s": "2026-06",
+   "q": "8(b)",
+   "t": "Note (any four): green marketing",
+   "m": 3.33,
+   "k": "th",
+   "topic": "emerging"
+  },
+  {
+   "s": "2026-06",
+   "q": "8(c)",
+   "t": "Note (any four): digital marketing",
+   "m": 3.33,
+   "k": "th",
+   "topic": "emerging"
+  },
+  {
+   "s": "2026-06",
+   "q": "8(d)",
+   "t": "Note (any four): new product development",
+   "m": 3.33,
+   "k": "th",
+   "topic": "npd"
+  },
+  {
+   "s": "2026-06",
+   "q": "8(e)",
+   "t": "Note (any four): product mix",
+   "m": 3.33,
+   "k": "th",
+   "topic": "product"
+  },
+  {
+   "s": "2026-06",
+   "q": "8(f)",
+   "t": "Note (any four): services marketing",
+   "m": 3.33,
+   "k": "th",
+   "topic": "services"
+  }
+ ]
+}

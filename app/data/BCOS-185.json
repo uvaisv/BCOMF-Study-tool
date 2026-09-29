@@ -1,0 +1,1189 @@
+{
+ "code": "BCOS-185",
+ "title": "Entrepreneurship",
+ "pattern": {
+  "time": "3 hours",
+  "marks": 100,
+  "questions": 8,
+  "attempt": 5,
+  "each": 20,
+  "summary": "8 questions, attempt any 5, each carries 20 marks. All theory. Q8 is always short notes (any 2 of 4). The same questions come back almost word for word — business plan, MSMEs, start-ups and sources of finance appear in nearly every paper."
+ },
+ "blocksOfficial": false,
+ "sessions": [
+  "2022-06",
+  "2022-12",
+  "2023-06",
+  "2023-12",
+  "2024-06",
+  "2024-12",
+  "2025-06",
+  "2025-12",
+  "2026-06"
+ ],
+ "sessionNotes": {},
+ "examTips": {
+  "choosing": [
+   "The business-plan question appears in every paper — prepare it fully with examples.",
+   "MSMEs (role, MSMED Act 2006, government schemes, MUDRA) and Start-up India are the next safest questions.",
+   "Q8 short notes: pick the two you know best from ecosystem, feasibility analysis, MUDRA, start-ups and rural/social entrepreneurship.",
+   "Use Indian examples — Tata and Godrej for family business, Zomato or Nykaa for start-ups, Amul for social entrepreneurship."
+  ]
+ },
+ "blocks": [
+  {
+   "no": 1,
+   "title": "Entrepreneurship & the Entrepreneur"
+  },
+  {
+   "no": 2,
+   "title": "Ecosystem, Creativity & Types"
+  },
+  {
+   "no": 3,
+   "title": "Ideas, Feasibility & Business Plan"
+  },
+  {
+   "no": 4,
+   "title": "Resources & Finance"
+  },
+  {
+   "no": 5,
+   "title": "MSMEs, Start-ups & Family Business"
+  }
+ ],
+ "topics": [
+  {
+   "id": "business-plan",
+   "name": "Business Plan & DPR",
+   "block": 3,
+   "kind": "theory",
+   "summary": "What a business plan is, why it matters, its elements, the Detailed Project Report (DPR), marketing plan and location/layout.",
+   "points": [
+    "Business plan: a written document describing the business, its goals and how they will be achieved — a road map for the entrepreneur and a selling document for investors and banks.",
+    "Relevance: clarifies the idea, tests feasibility, raises finance, sets targets, reduces risk, guides operations and helps attract partners and employees.",
+    "Elements: executive summary; company description; industry and market analysis; product or service; marketing and sales plan; operations plan (location, layout, technology, suppliers); management and organisation; financial plan (project cost, means of finance, projected P&L, cash flow, break-even); risk analysis; appendices.",
+    "Detailed Project Report (DPR): the full technical and financial report submitted to banks and agencies — promoter profile, project description, market potential, technical aspects (process, machinery, capacity, raw material, utilities), location, manpower, project cost and means of finance, profitability and cash-flow projections, break-even, DSCR, implementation schedule, SWOT.",
+    "Marketing plan steps: situation analysis → set objectives → identify target market → decide the 4Ps → budget → implementation and control.",
+    "Location and layout: choose a site by nearness to market and raw materials, labour, transport, power, cost and government incentives; plan the layout (process, product, fixed-position) for smooth flow of material and people."
+   ],
+   "frame": "Meaning → relevance (5 points) → elements as headings, each with one example line (e.g. a tiffin service or a small bakery) → conclusion.",
+   "mistakes": [
+    "Writing only the meaning — most marks are for the elements with examples."
+   ]
+  },
+  {
+   "id": "msme",
+   "name": "MSMEs, MSMED Act & Schemes",
+   "block": 5,
+   "kind": "theory",
+   "summary": "Role of MSMEs in entrepreneurship and economic development, MSMED Act 2006, government initiatives, MUDRA Yojana and KVIC.",
+   "points": [
+    "Role of MSMEs: large-scale employment at low capital cost, balanced regional growth, use of local resources and skills, exports, ancillaries to large industries, a nursery for new entrepreneurs, promote an entrepreneurial culture.",
+    "MSMED Act, 2006: first law covering the whole MSME sector (including services) — classification of enterprises, National Board for MSME, advisory committee, measures for promotion and development, credit facilities, procurement preference, protection against delayed payments (buyers must pay within 45 days; compound interest at three times the RBI bank rate on delay), MSE Facilitation Councils for disputes, filing of the memorandum (now Udyam Registration).",
+    "Classification: the 2006 Act used investment only — manufacturing: micro up to ₹25 lakh, small up to ₹5 crore, medium up to ₹10 crore (plant and machinery); services: ₹10 lakh, ₹2 crore, ₹5 crore (equipment). Since 2020 it is a composite test of investment and turnover; the limits from 1 April 2025 are: micro — investment up to ₹2.5 crore and turnover up to ₹10 crore; small — ₹25 crore and ₹100 crore; medium — ₹125 crore and ₹500 crore.",
+    "Government initiatives: Udyam Registration, PMEGP, CGTMSE credit guarantee, MUDRA, Stand-Up India, ZED certification, TReDS for invoice discounting, the Samadhaan portal for delayed payments, GeM procurement, the Emergency Credit Line Guarantee Scheme (2020), Champions portal, the 25% public procurement policy for MSEs.",
+    "MUDRA Yojana (PMMY, 2015): collateral-free loans to non-farm micro enterprises in three categories — Shishu (up to ₹50,000), Kishore (₹50,000–₹5 lakh), Tarun (₹5–10 lakh; Tarun Plus up to ₹20 lakh from 2024) — through banks, NBFCs and MFIs.",
+    "KVIC (Khadi and Village Industries Commission, 1957): promotes khadi and village industries for rural employment; nodal agency for PMEGP."
+   ],
+   "frame": "Meaning of MSME → classification table → role/provisions as headed points → schemes list → conclusion.",
+   "mistakes": [
+    "Giving only the 2006 investment limits — add the current investment + turnover limits."
+   ]
+  },
+  {
+   "id": "finance",
+   "name": "Financial & Non-financial Resources",
+   "block": 4,
+   "kind": "theory",
+   "summary": "Sources of finance (long and short term), factors in choosing a source, non-financial resources (human, physical, technology, information, networks, mentoring).",
+   "points": [
+    "Financial resources — owned: own savings, family and friends, equity; borrowed: term loans from banks and financial institutions, debentures, public deposits.",
+    "Start-up finance: angel investors, venture capital, private equity, crowdfunding, government schemes (MUDRA, Stand-Up India, SIDBI), bootstrapping.",
+    "Short-term sources: trade credit, bank overdraft and cash credit, bill discounting, factoring, customer advances, commercial paper, invoice discounting (TReDS) — they fund working capital, keep operations running and cost less for short gaps.",
+    "Factors in choosing a source: cost, amount needed, period, risk, control (equity dilutes ownership), flexibility, legal form, stage of business, collateral available, market conditions.",
+    "Non-financial resources: human resources (skills, team), physical resources (land, building, machinery), technology, information and market knowledge, networks and relationships, mentoring and incubation support, legal and institutional support.",
+    "Good mentor: experienced, available, a good listener, honest in feedback, shares networks, motivates and has no conflicting interest — e.g. an incubator mentor guiding a first-time founder.",
+    "Entrepreneur vs intrapreneur: the entrepreneur owns the business, bears the risk and raises the capital; the intrapreneur innovates inside an existing organisation with its resources (e.g. Gmail was built inside Google)."
+   ],
+   "frame": "Classify sources (owned/borrowed, long/short term) in a table → explain each in 2–3 lines → factors for choice → conclusion.",
+   "mistakes": []
+  },
+  {
+   "id": "feasibility",
+   "name": "Feasibility & Market Research",
+   "block": 3,
+   "kind": "theory",
+   "summary": "Feasibility analysis of a business proposal (market, technical, financial, organisational), market research process, critical factors for a new venture.",
+   "points": [
+    "Feasibility analysis: checking whether a business idea is viable before investing.",
+    "Components: market feasibility (demand, customers, competition, price), technical feasibility (technology, raw materials, location, capacity), financial feasibility (cost, funding, profitability), organisational/managerial feasibility (skills, team), legal and environmental feasibility.",
+    "Financial analysis of a proposal: project cost, means of finance, projected income statement and balance sheet, cash-flow projection, break-even analysis, ratios (DSCR, return on investment), payback period, NPV and IRR, sensitivity analysis.",
+    "Market research: systematic collection and analysis of information about customers, competitors and market. Process: define the problem → research design → collect data (primary and secondary) → analyse → report and act. Significance: reduces risk, identifies opportunities, sets price and product, supports the business plan.",
+    "Critical factors for a new venture: a viable idea, market demand, adequate finance, the right team, location, technology, legal compliance, timing, competition, risk tolerance."
+   ],
+   "frame": "Meaning → components as headings with one line each → conclusion.",
+   "mistakes": []
+  },
+  {
+   "id": "ideas",
+   "name": "Business Ideas & Opportunities",
+   "block": 3,
+   "kind": "theory",
+   "summary": "Sources of business ideas, methods and techniques of idea generation, sources for identifying business opportunities.",
+   "points": [
+    "Sources of business ideas: consumers (complaints, needs), existing products and services, distribution channels, government (policies, patents, schemes), research and development, hobbies and personal experience, trade fairs and exhibitions, media and the internet, changes in technology and society.",
+    "Idea-generation techniques: brainstorming, focus groups, surveys, problem inventory analysis, checklist method, mind mapping, SCAMPER, attribute listing, the Delphi technique, reverse brainstorming, gap analysis.",
+    "Opportunity identification: from market gaps, changing customer needs, demographic and lifestyle trends, new technology, government policy changes (e.g. Digital India opening fintech), import substitution, export demand.",
+    "Idea vs opportunity: an idea is a thought; an opportunity is an idea with real market demand and viability — screen ideas by feasibility."
+   ],
+   "frame": "Meaning → list sources/techniques as headings with an Indian example each (Zomato: problem of finding restaurant menus) → conclusion.",
+   "mistakes": []
+  },
+  {
+   "id": "startups",
+   "name": "Start-ups & Start-up India",
+   "block": 5,
+   "kind": "theory",
+   "summary": "Concept of start-ups, challenges, Start-up India (2016) objectives and support measures, success stories.",
+   "points": [
+    "Start-up (DPIIT definition): an entity incorporated for up to 10 years, turnover not above ₹100 crore in any year, working on innovation or a scalable business model with high potential for employment or wealth creation.",
+    "Challenges: funding, finding the right talent, regulatory compliance, market acceptance, competition from established firms, infrastructure, scaling, cash-flow management, high failure rate.",
+    "Start-up India (launched 16 January 2016): objectives — build a strong ecosystem for innovation, generate employment, promote entrepreneurship, especially among youth, women and in Tier-2/3 cities.",
+    "Support measures: self-certification under labour and environmental laws, a single-window Startup India Hub, fast-tracked patents with 80% fee rebate, Fund of Funds for Startups (₹10,000 crore via SIDBI), Credit Guarantee Scheme for Startups, income-tax holiday for 3 of 10 years (Sec 80-IAC), easier public procurement, faster exit, Startup India Seed Fund Scheme, incubators (Atal Innovation Mission).",
+    "Success stories: Zomato, Flipkart, Paytm, Nykaa (Falguni Nayar), OYO (Ritesh Agarwal), PhysicsWallah (Alakh Pandey), Zerodha (bootstrapped, no outside funding)."
+   ],
+   "frame": "Meaning (DPIIT definition) → objectives → measures as headed points → one success story in 5–6 lines → conclusion.",
+   "mistakes": []
+  },
+  {
+   "id": "family-business",
+   "name": "Family Business",
+   "block": 5,
+   "kind": "theory",
+   "summary": "Concept, types, challenges, conflicts and their management, the systems theory of family business.",
+   "points": [
+    "Family business: owned and managed by members of one or more families, with the intention of passing it to the next generation (e.g. Tata, Birla, Godrej, Bajaj).",
+    "Types: family-owned and family-managed; family-owned but professionally managed; joint family businesses; partnership among family members; family-controlled listed companies.",
+    "Challenges: succession planning, conflicts among members, resistance to change, nepotism over merit, informal decision-making, limited capital, keeping family and business apart, retaining professional managers.",
+    "Kinds of conflict: between generations, among siblings and cousins, between family and non-family managers, over ownership and money, over roles and succession, values and lifestyle.",
+    "Managing conflict: a family constitution, a family council, clear roles and succession plan, professional managers and an independent board, open communication, mediation, a fair compensation policy.",
+    "Systems theory (three-circle model — Tagiuri and Davis): family, ownership and business are overlapping systems; a person's position in the overlaps explains their interests and conflicts."
+   ],
+   "frame": "Meaning with an Indian example → types or challenges as headed points → how to manage → conclusion.",
+   "mistakes": []
+  },
+  {
+   "id": "competencies",
+   "name": "Entrepreneurial Competencies",
+   "block": 1,
+   "kind": "theory",
+   "summary": "Who an entrepreneur is, competencies for success, what makes an entrepreneur successful, whether entrepreneurs are made or born.",
+   "points": [
+    "Entrepreneur: a person who spots an opportunity, organises resources and bears risk to start and run a venture for profit and growth.",
+    "Competencies (McClelland): initiative, seeing and acting on opportunities, persistence, information seeking, concern for quality, commitment, efficiency orientation, systematic planning, problem solving, self-confidence, assertiveness, persuasion, use of influence strategies, monitoring, concern for employees' welfare.",
+    "Other success factors: risk-taking, creativity and innovation, leadership, decision-making, networking, financial literacy, adaptability.",
+    "Made, not born: most competencies can be learnt through education, training (EDPs), experience, mentoring and exposure — traits like risk appetite may be inborn but are shaped by environment; give an example (Dhirubhai Ambani, first-generation founders of start-ups).",
+    "Answer with a clear view — agree that entrepreneurs are mostly made, and give reasons."
+   ],
+   "frame": "Meaning → list the competencies with one example each → conclusion. For 'made not born', state your view, give 5–6 reasons, then a balanced conclusion.",
+   "mistakes": []
+  },
+  {
+   "id": "ent-concept",
+   "name": "Entrepreneurship & Economic Development",
+   "block": 1,
+   "kind": "theory",
+   "summary": "Concept of entrepreneurship, its role in economic and social development, factors affecting entrepreneurship development.",
+   "points": [
+    "Entrepreneurship: the process of creating a new enterprise by identifying opportunities, mobilising resources and bearing risk — innovation, risk-bearing and organisation are its core.",
+    "Role in economic development: capital formation, employment generation, balanced regional development, higher per-capita income and standard of living, innovation and productivity, exports and foreign exchange, reduces concentration of economic power, links rural and urban markets.",
+    "Social development: solves social problems (social enterprises), empowers women and marginalised groups, creates local jobs — 'need of the hour' for India's youth population.",
+    "Factors affecting entrepreneurship development: economic (capital, labour, raw materials, market), social (family background, caste, education, social attitudes), psychological (need for achievement, risk-taking), political and legal (government policy, stability, regulation), infrastructure and technology, cultural values.",
+    "Pick one factor as most important if asked (e.g. government policy or access to finance) and justify with examples."
+   ],
+   "frame": "Meaning → role as 8–10 headed points → factors in groups → conclusion.",
+   "mistakes": []
+  },
+  {
+   "id": "ecosystem",
+   "name": "Entrepreneurial Ecosystem",
+   "block": 2,
+   "kind": "theory",
+   "summary": "Meaning of an entrepreneurial ecosystem, its components, factors influencing it, India's ecosystem.",
+   "points": [
+    "Entrepreneurial ecosystem: the interconnected set of people, institutions, resources and policies in a region that supports the birth and growth of new ventures.",
+    "Components (Isenberg's six domains): policy (government, regulation, incentives), finance (banks, angel investors, VC), culture (attitude to risk and failure, success stories), supports (incubators, accelerators, infrastructure, professional services), human capital (education, skilled workforce), markets (customers, networks).",
+    "Factors influencing the ecosystem: government policy, access to capital, education and skills, infrastructure, culture, universities and research, large companies, market size, networks and mentors.",
+    "India's ecosystem: third-largest start-up ecosystem in the world, over 100 unicorns; Start-up India, Atal Innovation Mission, incubators at IITs/IIMs, hubs in Bengaluru, Delhi-NCR, Mumbai, Hyderabad; UPI and India Stack as digital public infrastructure.",
+    "Determinants of entrepreneurship: economic, social, cultural, psychological and political factors (see Entrepreneurship & Economic Development)."
+   ],
+   "frame": "Meaning → a diagram of the six domains → each domain in 2–3 lines → India example → conclusion.",
+   "mistakes": []
+  },
+  {
+   "id": "creativity",
+   "name": "Creativity & Innovation",
+   "block": 2,
+   "kind": "theory",
+   "summary": "Creativity and innovation in entrepreneurship, how they relate, steps of the creative process, challenges.",
+   "points": [
+    "Creativity: generating new and useful ideas. Innovation: turning a creative idea into a product, process or service that creates value in the market — 'they go hand in hand'.",
+    "Importance for entrepreneurship: finds new opportunities, competitive advantage, solves customer problems, improves productivity, drives growth and survival.",
+    "Creative process (Wallas): preparation → incubation → illumination (insight) → verification/evaluation → implementation — give one example for each step.",
+    "Types of innovation: product, process, marketing, organisational; incremental vs radical/disruptive.",
+    "Challenges: fear of failure, lack of resources and finance, resistance to change, rigid organisation, time pressure, lack of skills, IP protection issues."
+   ],
+   "frame": "Meaning of both → how they relate → process steps as a flow chart → challenges → conclusion.",
+   "mistakes": []
+  },
+  {
+   "id": "theories",
+   "name": "Theories & Models of Entrepreneurship",
+   "block": 1,
+   "kind": "theory",
+   "summary": "Economic, psychological, sociological, anthropological and management theories; models of entrepreneurship development.",
+   "points": [
+    "Economic theories: Schumpeter's innovation theory (the entrepreneur as innovator — new product, method, market, source of supply, organisation); Knight's risk and uncertainty theory; Cantillon's risk-bearing; Leibenstein's X-efficiency gap-filling.",
+    "Psychological theories: McClelland's need for achievement (nAch); Hagen's withdrawal of status respect; Kunkel's behavioural theory.",
+    "Sociological theories: Max Weber (the Protestant ethic, religious beliefs); Cochran's role expectations and social sanctions; Hoselitz's marginal groups.",
+    "Anthropological theory: culture and social context shape entrepreneurship.",
+    "Management/opportunity theory: Peter Drucker — the entrepreneur searches for change and exploits it as an opportunity; resource-based theory (access to finance, human and social capital).",
+    "Models of entrepreneurship: Timmons model (the founder balances opportunity, resources and team); Shapero's entrepreneurial event model (a trigger event plus perceived desirability and feasibility leads to a new venture); Gartner's framework (individual, organisation, environment, process). In India, entrepreneurship development programmes (EDPs) grew from McClelland's achievement-motivation training in the Kakinada experiment (1964) and the Gujarat model of the 1970s (identify, train and support new entrepreneurs).",
+    "For India: argue for an integrated view — McClelland's achievement training (used in EDPs) combined with government support and innovation."
+   ],
+   "frame": "Group theories under Economic / Psychological / Sociological / Management headings → give each theorist and one line → your view for India → conclusion.",
+   "mistakes": []
+  },
+  {
+   "id": "types-ent",
+   "name": "Rural, Social, Agri & Techno Entrepreneurship",
+   "block": 2,
+   "kind": "theory",
+   "summary": "Rural entrepreneurship and its challenges, social entrepreneurship, agri-entrepreneurship, techno-entrepreneurship and its factors.",
+   "points": [
+    "Rural entrepreneurship: enterprises in rural areas using local resources (agro-processing, handicrafts, dairy) — creates rural jobs and checks migration.",
+    "Challenges in rural areas: finance, poor infrastructure (roads, power, internet), lack of skills and training, limited market access, middlemen, low risk-taking, weak institutional support.",
+    "Social entrepreneurship: ventures that solve social problems with a sustainable business model — the aim is social impact, not just profit (Amul, SELCO, Goonj, Grameen Bank).",
+    "Agri-entrepreneurship: agriculture-based businesses — organic farming, food processing, agri-inputs, dairy, poultry, agri-tech (DeHaat, Ninjacart); supported by FPOs and schemes.",
+    "Techno-entrepreneurship: ventures built on technology or innovation (software, biotech, fintech). Factors: R&D and innovation, technical skills, venture capital, incubators and university links, IP protection, government policy, market demand."
+   ],
+   "frame": "Meaning → features/challenges as headed points → Indian examples → conclusion.",
+   "mistakes": []
+  }
+ ],
+ "questions": [
+  {
+   "s": "2022-06",
+   "q": "1",
+   "t": "Theories of entrepreneurship",
+   "m": 20,
+   "k": "th",
+   "topic": "theories"
+  },
+  {
+   "s": "2022-06",
+   "q": "2(a)",
+   "t": "'Innovation and creativity go hand in hand'",
+   "m": 10,
+   "k": "th",
+   "topic": "creativity"
+  },
+  {
+   "s": "2022-06",
+   "q": "2(b)",
+   "t": "Challenges for entrepreneurs in rural areas",
+   "m": 10,
+   "k": "th",
+   "topic": "types-ent"
+  },
+  {
+   "s": "2022-06",
+   "q": "3",
+   "t": "Market research: process and significance",
+   "m": 20,
+   "k": "th",
+   "topic": "feasibility"
+  },
+  {
+   "s": "2022-06",
+   "q": "4",
+   "t": "Business plan and its key elements",
+   "m": 20,
+   "k": "th",
+   "topic": "business-plan"
+  },
+  {
+   "s": "2022-06",
+   "q": "5",
+   "t": "Non-financial resources for setting up an enterprise",
+   "m": 20,
+   "k": "th",
+   "topic": "finance"
+  },
+  {
+   "s": "2022-06",
+   "q": "6",
+   "t": "Conflicts in family business and their management",
+   "m": 20,
+   "k": "th",
+   "topic": "family-business"
+  },
+  {
+   "s": "2022-06",
+   "q": "7",
+   "t": "'MSMEs promote entrepreneurial opportunities and culture'",
+   "m": 20,
+   "k": "th",
+   "topic": "msme"
+  },
+  {
+   "s": "2022-06",
+   "q": "8(a)",
+   "t": "Note: entrepreneurial ecosystem",
+   "m": 5,
+   "k": "th",
+   "topic": "ecosystem"
+  },
+  {
+   "s": "2022-06",
+   "q": "8(b)",
+   "t": "Note: project feasibility analysis",
+   "m": 5,
+   "k": "th",
+   "topic": "feasibility"
+  },
+  {
+   "s": "2022-06",
+   "q": "8(c)",
+   "t": "Note: family business in India",
+   "m": 5,
+   "k": "th",
+   "topic": "family-business"
+  },
+  {
+   "s": "2022-06",
+   "q": "8(d)",
+   "t": "Note: start-ups",
+   "m": 5,
+   "k": "th",
+   "topic": "startups"
+  },
+  {
+   "s": "2022-12",
+   "q": "1",
+   "t": "Competencies that help entrepreneurs",
+   "m": 20,
+   "k": "th",
+   "topic": "competencies"
+  },
+  {
+   "s": "2022-12",
+   "q": "2(a)",
+   "t": "Steps in preparing a marketing plan",
+   "m": 10,
+   "k": "th",
+   "topic": "business-plan"
+  },
+  {
+   "s": "2022-12",
+   "q": "2(b)",
+   "t": "Sources of business ideas",
+   "m": 10,
+   "k": "th",
+   "topic": "ideas"
+  },
+  {
+   "s": "2022-12",
+   "q": "3(a)",
+   "t": "Short-term sources of finance",
+   "m": 10,
+   "k": "th",
+   "topic": "finance"
+  },
+  {
+   "s": "2022-12",
+   "q": "3(b)",
+   "t": "Characteristics of a good mentor",
+   "m": 10,
+   "k": "th",
+   "topic": "finance"
+  },
+  {
+   "s": "2022-12",
+   "q": "4",
+   "t": "MSMED Act 2006: features and provisions",
+   "m": 20,
+   "k": "th",
+   "topic": "msme"
+  },
+  {
+   "s": "2022-12",
+   "q": "5",
+   "t": "Systems theory of family business",
+   "m": 20,
+   "k": "th",
+   "topic": "family-business"
+  },
+  {
+   "s": "2022-12",
+   "q": "6",
+   "t": "Challenges of family businesses in India",
+   "m": 20,
+   "k": "th",
+   "topic": "family-business"
+  },
+  {
+   "s": "2022-12",
+   "q": "7",
+   "t": "Entrepreneurial ecosystem in India",
+   "m": 12,
+   "k": "th",
+   "topic": "ecosystem"
+  },
+  {
+   "s": "2022-12",
+   "q": "7",
+   "t": "Determinants of entrepreneurship",
+   "m": 8,
+   "k": "th",
+   "topic": "ent-concept"
+  },
+  {
+   "s": "2022-12",
+   "q": "8(a)",
+   "t": "Note: location and layout",
+   "m": 5,
+   "k": "th",
+   "topic": "business-plan"
+  },
+  {
+   "s": "2022-12",
+   "q": "8(b)",
+   "t": "Note: MUDRA Yojana",
+   "m": 5,
+   "k": "th",
+   "topic": "msme"
+  },
+  {
+   "s": "2022-12",
+   "q": "8(c)",
+   "t": "Note: techno-entrepreneurship",
+   "m": 5,
+   "k": "th",
+   "topic": "types-ent"
+  },
+  {
+   "s": "2022-12",
+   "q": "8(d)",
+   "t": "Note: KVIC",
+   "m": 5,
+   "k": "th",
+   "topic": "msme"
+  },
+  {
+   "s": "2023-06",
+   "q": "1",
+   "t": "Theories of entrepreneurship; best for India",
+   "m": 20,
+   "k": "th",
+   "topic": "theories"
+  },
+  {
+   "s": "2023-06",
+   "q": "2",
+   "t": "Entrepreneur and competencies for success",
+   "m": 20,
+   "k": "th",
+   "topic": "competencies"
+  },
+  {
+   "s": "2023-06",
+   "q": "3(a)",
+   "t": "Sources of business ideas",
+   "m": 10,
+   "k": "th",
+   "topic": "ideas"
+  },
+  {
+   "s": "2023-06",
+   "q": "3(b)",
+   "t": "Critical factors in developing a new venture",
+   "m": 10,
+   "k": "th",
+   "topic": "feasibility"
+  },
+  {
+   "s": "2023-06",
+   "q": "4",
+   "t": "Business plan: relevance and elements",
+   "m": 20,
+   "k": "th",
+   "topic": "business-plan"
+  },
+  {
+   "s": "2023-06",
+   "q": "5",
+   "t": "Start-ups: challenges and support in India",
+   "m": 20,
+   "k": "th",
+   "topic": "startups"
+  },
+  {
+   "s": "2023-06",
+   "q": "6",
+   "t": "Entrepreneur vs intrapreneur; financial and non-financial resources",
+   "m": 20,
+   "k": "th",
+   "topic": "finance"
+  },
+  {
+   "s": "2023-06",
+   "q": "7",
+   "t": "Types and challenges of family businesses in India",
+   "m": 20,
+   "k": "th",
+   "topic": "family-business"
+  },
+  {
+   "s": "2023-06",
+   "q": "8(a)",
+   "t": "Note: social entrepreneurship",
+   "m": 5,
+   "k": "th",
+   "topic": "types-ent"
+  },
+  {
+   "s": "2023-06",
+   "q": "8(b)",
+   "t": "Note: MSMEs and economic development",
+   "m": 5,
+   "k": "th",
+   "topic": "msme"
+  },
+  {
+   "s": "2023-06",
+   "q": "8(c)",
+   "t": "Note: feasibility analysis",
+   "m": 5,
+   "k": "th",
+   "topic": "feasibility"
+  },
+  {
+   "s": "2023-06",
+   "q": "8(d)",
+   "t": "Note: start-ups",
+   "m": 5,
+   "k": "th",
+   "topic": "startups"
+  },
+  {
+   "s": "2023-12",
+   "q": "1",
+   "t": "Relevance of entrepreneurship; factors affecting its development",
+   "m": 20,
+   "k": "th",
+   "topic": "ent-concept"
+  },
+  {
+   "s": "2023-12",
+   "q": "2",
+   "t": "Entrepreneurial ecosystem and its components",
+   "m": 20,
+   "k": "th",
+   "topic": "ecosystem"
+  },
+  {
+   "s": "2023-12",
+   "q": "3(a)",
+   "t": "Methods of business idea generation",
+   "m": 10,
+   "k": "th",
+   "topic": "ideas"
+  },
+  {
+   "s": "2023-12",
+   "q": "3(b)",
+   "t": "Financial analysis of a business proposal",
+   "m": 10,
+   "k": "th",
+   "topic": "feasibility"
+  },
+  {
+   "s": "2023-12",
+   "q": "4",
+   "t": "Components of a Detailed Project Report",
+   "m": 20,
+   "k": "th",
+   "topic": "business-plan"
+  },
+  {
+   "s": "2023-12",
+   "q": "5",
+   "t": "Start-up India: objectives and measures",
+   "m": 20,
+   "k": "th",
+   "topic": "startups"
+  },
+  {
+   "s": "2023-12",
+   "q": "6",
+   "t": "Sources of finance; factors in choosing",
+   "m": 20,
+   "k": "th",
+   "topic": "finance"
+  },
+  {
+   "s": "2023-12",
+   "q": "7",
+   "t": "Role of MSMEs; recent government initiatives",
+   "m": 20,
+   "k": "th",
+   "topic": "msme"
+  },
+  {
+   "s": "2023-12",
+   "q": "8(a)",
+   "t": "Note: rural entrepreneurship",
+   "m": 5,
+   "k": "th",
+   "topic": "types-ent"
+  },
+  {
+   "s": "2023-12",
+   "q": "8(b)",
+   "t": "Note: feasibility analysis",
+   "m": 5,
+   "k": "th",
+   "topic": "feasibility"
+  },
+  {
+   "s": "2023-12",
+   "q": "8(c)",
+   "t": "Note: MUDRA Yojana",
+   "m": 5,
+   "k": "th",
+   "topic": "msme"
+  },
+  {
+   "s": "2023-12",
+   "q": "8(d)",
+   "t": "Note: MSMED Act, 2006",
+   "m": 5,
+   "k": "th",
+   "topic": "msme"
+  },
+  {
+   "s": "2024-06",
+   "q": "1",
+   "t": "Concept of entrepreneurship",
+   "m": 5,
+   "k": "th",
+   "topic": "ent-concept"
+  },
+  {
+   "s": "2024-06",
+   "q": "1",
+   "t": "Entrepreneurial ecosystem: components and influencing factors",
+   "m": 15,
+   "k": "th",
+   "topic": "ecosystem"
+  },
+  {
+   "s": "2024-06",
+   "q": "2",
+   "t": "What makes an entrepreneur successful; competencies",
+   "m": 20,
+   "k": "th",
+   "topic": "competencies"
+  },
+  {
+   "s": "2024-06",
+   "q": "3(a)",
+   "t": "Sources of business opportunity identification",
+   "m": 10,
+   "k": "th",
+   "topic": "ideas"
+  },
+  {
+   "s": "2024-06",
+   "q": "3(b)",
+   "t": "Techniques of business idea generation",
+   "m": 10,
+   "k": "th",
+   "topic": "ideas"
+  },
+  {
+   "s": "2024-06",
+   "q": "4",
+   "t": "Business plan: importance and elements",
+   "m": 20,
+   "k": "th",
+   "topic": "business-plan"
+  },
+  {
+   "s": "2024-06",
+   "q": "5",
+   "t": "Start-ups: challenges and a success story",
+   "m": 20,
+   "k": "th",
+   "topic": "startups"
+  },
+  {
+   "s": "2024-06",
+   "q": "6",
+   "t": "Financial sources; factors in choosing",
+   "m": 20,
+   "k": "th",
+   "topic": "finance"
+  },
+  {
+   "s": "2024-06",
+   "q": "7",
+   "t": "Family business: concept and challenges",
+   "m": 20,
+   "k": "th",
+   "topic": "family-business"
+  },
+  {
+   "s": "2024-06",
+   "q": "8(a)",
+   "t": "Note: rural entrepreneurship",
+   "m": 5,
+   "k": "th",
+   "topic": "types-ent"
+  },
+  {
+   "s": "2024-06",
+   "q": "8(b)",
+   "t": "Note: MSMEs and economic development",
+   "m": 5,
+   "k": "th",
+   "topic": "msme"
+  },
+  {
+   "s": "2024-06",
+   "q": "8(c)",
+   "t": "Note: creativity and innovation",
+   "m": 5,
+   "k": "th",
+   "topic": "creativity"
+  },
+  {
+   "s": "2024-06",
+   "q": "8(d)",
+   "t": "Note: market feasibility analysis",
+   "m": 5,
+   "k": "th",
+   "topic": "feasibility"
+  },
+  {
+   "s": "2024-12",
+   "q": "1",
+   "t": "Role of entrepreneurship in economic development",
+   "m": 10,
+   "k": "th",
+   "topic": "ent-concept"
+  },
+  {
+   "s": "2024-12",
+   "q": "1",
+   "t": "Models of entrepreneurship",
+   "m": 10,
+   "k": "th",
+   "topic": "theories"
+  },
+  {
+   "s": "2024-12",
+   "q": "2",
+   "t": "Creativity and innovation: importance and challenges",
+   "m": 20,
+   "k": "th",
+   "topic": "creativity"
+  },
+  {
+   "s": "2024-12",
+   "q": "3(a)",
+   "t": "Steps of the creative process",
+   "m": 10,
+   "k": "th",
+   "topic": "creativity"
+  },
+  {
+   "s": "2024-12",
+   "q": "3(b)",
+   "t": "Feasibility analysis of a business proposal",
+   "m": 10,
+   "k": "th",
+   "topic": "feasibility"
+  },
+  {
+   "s": "2024-12",
+   "q": "4",
+   "t": "Business plan: relevance and components",
+   "m": 20,
+   "k": "th",
+   "topic": "business-plan"
+  },
+  {
+   "s": "2024-12",
+   "q": "5",
+   "t": "Start-up India: objectives and measures",
+   "m": 20,
+   "k": "th",
+   "topic": "startups"
+  },
+  {
+   "s": "2024-12",
+   "q": "6",
+   "t": "Non-financial resources for an entrepreneur",
+   "m": 20,
+   "k": "th",
+   "topic": "finance"
+  },
+  {
+   "s": "2024-12",
+   "q": "7",
+   "t": "Role of MSMEs; government initiatives",
+   "m": 20,
+   "k": "th",
+   "topic": "msme"
+  },
+  {
+   "s": "2024-12",
+   "q": "8(a)",
+   "t": "Note: techniques of idea generation",
+   "m": 5,
+   "k": "th",
+   "topic": "ideas"
+  },
+  {
+   "s": "2024-12",
+   "q": "8(b)",
+   "t": "Note: entrepreneurial ecosystem",
+   "m": 5,
+   "k": "th",
+   "topic": "ecosystem"
+  },
+  {
+   "s": "2024-12",
+   "q": "8(c)",
+   "t": "Note: MUDRA Yojana",
+   "m": 5,
+   "k": "th",
+   "topic": "msme"
+  },
+  {
+   "s": "2024-12",
+   "q": "8(d)",
+   "t": "Note: sources of business idea",
+   "m": 5,
+   "k": "th",
+   "topic": "ideas"
+  },
+  {
+   "s": "2025-06",
+   "q": "1",
+   "t": "Factors affecting entrepreneurship development — which matters most",
+   "m": 20,
+   "k": "th",
+   "topic": "ent-concept"
+  },
+  {
+   "s": "2025-06",
+   "q": "2",
+   "t": "'Entrepreneurs are made, not born'",
+   "m": 20,
+   "k": "th",
+   "topic": "competencies"
+  },
+  {
+   "s": "2025-06",
+   "q": "3(a)",
+   "t": "Financial analysis of a business proposal",
+   "m": 10,
+   "k": "th",
+   "topic": "feasibility"
+  },
+  {
+   "s": "2025-06",
+   "q": "3(b)",
+   "t": "Techniques of business idea generation",
+   "m": 10,
+   "k": "th",
+   "topic": "ideas"
+  },
+  {
+   "s": "2025-06",
+   "q": "4",
+   "t": "Business plan; components of a DPR",
+   "m": 20,
+   "k": "th",
+   "topic": "business-plan"
+  },
+  {
+   "s": "2025-06",
+   "q": "5",
+   "t": "Entrepreneurial ecosystem in India",
+   "m": 10,
+   "k": "th",
+   "topic": "ecosystem"
+  },
+  {
+   "s": "2025-06",
+   "q": "5",
+   "t": "Start-up success stories",
+   "m": 10,
+   "k": "th",
+   "topic": "startups"
+  },
+  {
+   "s": "2025-06",
+   "q": "6",
+   "t": "Sources of finance; factors in choosing",
+   "m": 20,
+   "k": "th",
+   "topic": "finance"
+  },
+  {
+   "s": "2025-06",
+   "q": "7",
+   "t": "Conflicts in family business and their management",
+   "m": 20,
+   "k": "th",
+   "topic": "family-business"
+  },
+  {
+   "s": "2025-06",
+   "q": "8(a)",
+   "t": "Note: agri-entrepreneurship",
+   "m": 5,
+   "k": "th",
+   "topic": "types-ent"
+  },
+  {
+   "s": "2025-06",
+   "q": "8(b)",
+   "t": "Note: MSMEs and economic development",
+   "m": 5,
+   "k": "th",
+   "topic": "msme"
+  },
+  {
+   "s": "2025-06",
+   "q": "8(c)",
+   "t": "Note: MUDRA Yojana",
+   "m": 5,
+   "k": "th",
+   "topic": "msme"
+  },
+  {
+   "s": "2025-06",
+   "q": "8(d)",
+   "t": "Note: family business in India",
+   "m": 5,
+   "k": "th",
+   "topic": "family-business"
+  },
+  {
+   "s": "2025-12",
+   "q": "1",
+   "t": "Concept and relevance of entrepreneurship",
+   "m": 10,
+   "k": "th",
+   "topic": "ent-concept"
+  },
+  {
+   "s": "2025-12",
+   "q": "1",
+   "t": "Models of entrepreneurship development",
+   "m": 10,
+   "k": "th",
+   "topic": "theories"
+  },
+  {
+   "s": "2025-12",
+   "q": "2",
+   "t": "Entrepreneurship for social and economic development",
+   "m": 20,
+   "k": "th",
+   "topic": "ent-concept"
+  },
+  {
+   "s": "2025-12",
+   "q": "3(a)",
+   "t": "Steps of the creative process",
+   "m": 10,
+   "k": "th",
+   "topic": "creativity"
+  },
+  {
+   "s": "2025-12",
+   "q": "3(b)",
+   "t": "Techno-entrepreneurship and its factors",
+   "m": 10,
+   "k": "th",
+   "topic": "types-ent"
+  },
+  {
+   "s": "2025-12",
+   "q": "4",
+   "t": "Business plan and its key elements",
+   "m": 20,
+   "k": "th",
+   "topic": "business-plan"
+  },
+  {
+   "s": "2025-12",
+   "q": "5",
+   "t": "Start-up India: objectives and measures",
+   "m": 20,
+   "k": "th",
+   "topic": "startups"
+  },
+  {
+   "s": "2025-12",
+   "q": "6",
+   "t": "MSMED Act 2006: features and provisions",
+   "m": 20,
+   "k": "th",
+   "topic": "msme"
+  },
+  {
+   "s": "2025-12",
+   "q": "7",
+   "t": "Role of MSMEs; recent government initiatives",
+   "m": 20,
+   "k": "th",
+   "topic": "msme"
+  },
+  {
+   "s": "2025-12",
+   "q": "8(a)",
+   "t": "Note: social entrepreneurship",
+   "m": 5,
+   "k": "th",
+   "topic": "types-ent"
+  },
+  {
+   "s": "2025-12",
+   "q": "8(b)",
+   "t": "Note: entrepreneurial ecosystem",
+   "m": 5,
+   "k": "th",
+   "topic": "ecosystem"
+  },
+  {
+   "s": "2025-12",
+   "q": "8(c)",
+   "t": "Note: start-ups",
+   "m": 5,
+   "k": "th",
+   "topic": "startups"
+  },
+  {
+   "s": "2025-12",
+   "q": "8(d)",
+   "t": "Note: feasibility analysis",
+   "m": 5,
+   "k": "th",
+   "topic": "feasibility"
+  },
+  {
+   "s": "2026-06",
+   "q": "1",
+   "t": "Relevance of entrepreneurship; factors affecting its development",
+   "m": 20,
+   "k": "th",
+   "topic": "ent-concept"
+  },
+  {
+   "s": "2026-06",
+   "q": "2",
+   "t": "Theories of entrepreneurship",
+   "m": 20,
+   "k": "th",
+   "topic": "theories"
+  },
+  {
+   "s": "2026-06",
+   "q": "3(a)",
+   "t": "Sources of business ideas",
+   "m": 10,
+   "k": "th",
+   "topic": "ideas"
+  },
+  {
+   "s": "2026-06",
+   "q": "3(b)",
+   "t": "'Entrepreneurs are made, not born'",
+   "m": 10,
+   "k": "th",
+   "topic": "competencies"
+  },
+  {
+   "s": "2026-06",
+   "q": "4",
+   "t": "Business plan: importance and components",
+   "m": 20,
+   "k": "th",
+   "topic": "business-plan"
+  },
+  {
+   "s": "2026-06",
+   "q": "5",
+   "t": "Types and challenges of family businesses in India",
+   "m": 20,
+   "k": "th",
+   "topic": "family-business"
+  },
+  {
+   "s": "2026-06",
+   "q": "6",
+   "t": "Financial and non-financial sources for an enterprise",
+   "m": 20,
+   "k": "th",
+   "topic": "finance"
+  },
+  {
+   "s": "2026-06",
+   "q": "7",
+   "t": "Role of MSMEs; government policy measures",
+   "m": 20,
+   "k": "th",
+   "topic": "msme"
+  },
+  {
+   "s": "2026-06",
+   "q": "8(a)",
+   "t": "Note: rural entrepreneurship",
+   "m": 5,
+   "k": "th",
+   "topic": "types-ent"
+  },
+  {
+   "s": "2026-06",
+   "q": "8(b)",
+   "t": "Note: short-term sources of finance",
+   "m": 5,
+   "k": "th",
+   "topic": "finance"
+  },
+  {
+   "s": "2026-06",
+   "q": "8(c)",
+   "t": "Note: Start-up India initiative",
+   "m": 5,
+   "k": "th",
+   "topic": "startups"
+  },
+  {
+   "s": "2026-06",
+   "q": "8(d)",
+   "t": "Note: creativity and innovation",
+   "m": 5,
+   "k": "th",
+   "topic": "creativity"
+  }
+ ]
+}

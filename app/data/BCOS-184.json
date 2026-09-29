@@ -1,0 +1,1639 @@
+{
+ "code": "BCOS-184",
+ "title": "E-Commerce",
+ "pattern": {
+  "time": "3 hours",
+  "marks": 100,
+  "questions": 8,
+  "attempt": 5,
+  "each": 20,
+  "summary": "8–10 questions, attempt any 5, each carries 20 marks. All theory, with many 'distinguish between', 'comment on' and 'short notes' questions (4–5 parts of 4–5 marks). Use Indian examples: UPI, Flipkart, Digital India, GeM."
+ },
+ "blocksOfficial": false,
+ "sessions": [
+  "2022-06",
+  "2022-12",
+  "2023-06",
+  "2023-12",
+  "2024-06",
+  "2024-12",
+  "2025-06",
+  "2025-12",
+  "2026-06"
+ ],
+ "sessionNotes": {
+  "2025-06": "10 questions.",
+  "2025-12": "10 questions."
+ },
+ "examTips": {
+  "choosing": [
+   "Cyber law (IT Act 2000 and the 2008 amendment, offences and penalties) and e-payments (NEFT, RTGS, IMPS, UPI, payment gateways) come up in every paper.",
+   "Website hosting and web server vs application server are asked almost every session — short, easy marks.",
+   "The 'distinguish between' questions reuse the same pairs: Internet vs WWW, Windows vs Linux, symmetric vs asymmetric encryption, digital vs electronic signature."
+  ]
+ },
+ "blocks": [
+  {
+   "no": 1,
+   "title": "E-Commerce Concepts & Models"
+  },
+  {
+   "no": 2,
+   "title": "Web, Hosting & Software"
+  },
+  {
+   "no": 3,
+   "title": "E-Payments & FinTech"
+  },
+  {
+   "no": 4,
+   "title": "E-Governance & E-Services"
+  },
+  {
+   "no": 5,
+   "title": "Cyber Security & Cyber Law"
+  }
+ ],
+ "topics": [
+  {
+   "id": "cyber-law",
+   "name": "IT Act, Cyber Crime & Cyber Forensics",
+   "block": 5,
+   "kind": "theory",
+   "summary": "IT Act 2000 and the 2008 amendment, offences and punishments, penalties and adjudication, Appellate Tribunal, cyber crimes, cyber forensics, cyber terrorism.",
+   "points": [
+    "IT Act, 2000: legal recognition of electronic records and digital signatures, e-governance, certifying authorities, offences and penalties; based on the UNCITRAL Model Law.",
+    "IT (Amendment) Act, 2008: technology-neutral 'electronic signature', data protection (Sec 43A — compensation for failing to protect sensitive data), new offences (Sec 66B–66F: receiving stolen computer resources, identity theft, cheating by personation, violation of privacy, cyber terrorism; Sec 66A on offensive messages was struck down by the Supreme Court in 2015), child pornography (67B), intermediary liability (79), CERT-In's role.",
+    "Offences: tampering with source code (Sec 65), computer-related offences/hacking (66), identity theft (66C), cheating by personation (66D), privacy violation (66E), cyber terrorism (66F — up to life imprisonment), publishing obscene material (67).",
+    "Penalties and adjudication: compensation for damage to computer systems (Sec 43), adjudicating officers for claims; appeals to the Appellate Tribunal (now TDSAT), then the High Court.",
+    "Cyber crime: crime using a computer or network — hacking, phishing, identity theft, cyber stalking, cyber bullying, online fraud, ransomware, child pornography, cyber terrorism.",
+    "Cyber forensics: identifying, preserving, analysing and presenting digital evidence (hard disks, logs, mobiles) for use in court; electronic evidence may not be visible to an ordinary user."
+   ],
+   "frame": "Meaning → sections as headed points (section number + offence + punishment) → conclusion.",
+   "mistakes": [
+    "Mixing up IT Act 2000 and 2008 — list what the amendment added."
+   ]
+  },
+  {
+   "id": "epayments",
+   "name": "E-Payments & E-Banking",
+   "block": 3,
+   "kind": "theory",
+   "summary": "Types of electronic payment, EFT/NEFT/RTGS/IMPS/UPI, payment gateways, e-wallets, e-banking, online fund transfer, e-payment vs traditional payment.",
+   "points": [
+    "Electronic payment systems: cards (credit, debit, prepaid), net banking, e-wallets (Paytm), UPI, EFT systems (NEFT, RTGS, IMPS), mobile banking, e-cheques.",
+    "EFT: electronic transfer from one account to another within or across banks.",
+    "NEFT: batch-wise settlement, no minimum, 24×7. RTGS: real-time gross settlement, one by one, minimum ₹2 lakh. IMPS: instant, 24×7, via mobile/net banking. UPI: instant real-time payments using a virtual payment address (VPA), linked to bank accounts.",
+    "Payment gateway: bridge between customer, merchant and banks that authorises online payments. Hosted (customer redirected to the gateway page — PayPal) vs self-hosted/integrated (payment on the merchant's site — more control, more security responsibility).",
+    "Online fund transfer requirements: bank account with net/mobile banking, beneficiary details (name, account number, IFSC), registered mobile for OTP, internet access; tools: net banking, mobile app, UPI app.",
+    "E-banking: banking over the internet — 24×7, lower costs, convenience; risks: fraud, phishing.",
+    "E-payment vs traditional payment: instant, trackable, no cash handling vs cash/cheque, slower; limits — cyber risk and need for connectivity vs theft, forgery.",
+    "Credit card (bank credit, pay later) vs e-wallet (prepaid balance stored in an app)."
+   ],
+   "frame": "Meaning → types as headed points → comparison table (NEFT/RTGS/IMPS/UPI) → conclusion.",
+   "mistakes": []
+  },
+  {
+   "id": "web-hosting",
+   "name": "Websites, Hosting & Web Servers",
+   "block": 2,
+   "kind": "theory",
+   "summary": "Website types and development, web hosting and its types, web server vs application server, HTTP vs HTTPS, Internet vs WWW.",
+   "points": [
+    "Website: collection of related web pages under one domain. Types: static vs dynamic; personal, business/corporate, e-commerce, blog, portfolio, informational, social media, educational.",
+    "Web development process: information gathering → planning (sitemap) → design → content writing → coding → testing → launch → maintenance.",
+    "Web hosting: storing a website on a server connected to the internet. Types: shared, VPS, dedicated, cloud, managed WordPress, reseller, colocation.",
+    "Web server: serves static content over HTTP (Apache, Nginx). Application server: runs business logic and dynamic content (Tomcat, JBoss).",
+    "HTTP: unencrypted, port 80. HTTPS: encrypted with SSL/TLS, port 443, needed for payments.",
+    "Internet: the global network of networks. WWW: a service on the internet — linked web pages accessed by browsers. Evolution: Web 1.0 (read-only), Web 2.0 (interactive, social), Web 3.0 (semantic, decentralised)."
+   ],
+   "frame": "Meaning → types or steps as headed points → comparison table → conclusion.",
+   "mistakes": []
+  },
+  {
+   "id": "eservices",
+   "name": "E-Tailing & E-Services",
+   "block": 4,
+   "kind": "theory",
+   "summary": "E-tailing and its models, 7 Cs of e-retail mix, e-services, e-publishing, online entertainment, e-learning and SWAYAM, OTT.",
+   "points": [
+    "E-tailing: selling goods to consumers online. Models: pure-play (Amazon), brick-and-click (Reliance Digital), direct sales by manufacturer (D2C), marketplace, subscription.",
+    "Advantages for retailers: wider reach, lower costs, 24×7, customer data. For buyers: convenience, variety, price comparison, home delivery. Disadvantages: no touch and feel, delivery delays, returns, fraud risk.",
+    "7 Cs of the e-retail mix (Rayport and Jaworski's customer interface): context (site layout and design), content (products and information), community (reviews, user interaction), customisation (personalised pages), communication (messages to customers), connection (links to other sites), commerce (cart, payment, order tracking).",
+    "E-services: services delivered online (banking, ticketing, education, government). Advantages: speed, 24×7, lower cost, transparency.",
+    "E-publishing: publishing e-books, e-journals and news online; approaches — self-publishing, online platforms (Kindle), print-on-demand, open access.",
+    "Online entertainment and OTT: streaming platforms (Netflix, Hotstar) delivering content over the internet.",
+    "E-learning: learning over the internet. SWAYAM: Government of India's free MOOC platform with credit transfer."
+   ],
+   "frame": "Meaning → models or advantages as headed points with examples → conclusion.",
+   "mistakes": []
+  },
+  {
+   "id": "ecom-models",
+   "name": "E-Commerce & Business Models",
+   "block": 1,
+   "kind": "theory",
+   "summary": "B2B, B2C, C2C, D2C, P2P and other models; business and revenue models; e-auctions, drop shipping, labelling; how major players work.",
+   "points": [
+    "Transaction models: B2B (IndiaMART), B2C (Amazon), C2C (OLX, eBay), C2B, B2G (GeM), D2C (brands selling directly — boAt), P2P (peer-to-peer lending or sharing).",
+    "Business model elements: value proposition, revenue model, market opportunity, competitive environment, competitive advantage, market strategy, organisational development, management team.",
+    "Revenue models: advertising, subscription, transaction fee/commission, sales, affiliate.",
+    "E-auction: online real-time bidding (forward auction to sell, reverse auction to buy from pre-qualified suppliers).",
+    "Drop shipping: seller does not stock goods; the supplier ships directly to the customer.",
+    "Private labelling (product made for and sold under the retailer's brand) vs white labelling (generic product rebranded by many sellers).",
+    "App-based vs web-based business: mobile-first, push notifications vs browser-based, wider reach.",
+    "How players work: Flipkart/Amazon (marketplace + logistics), BigBasket (online grocery with warehouses), Zomato (restaurant aggregator and delivery), BookMyShow (ticketing), FirstCry (baby products, online + stores), eBay (C2C auctions)."
+   ],
+   "frame": "Meaning → models with one Indian example each (a table) → merits and limits → conclusion.",
+   "mistakes": []
+  },
+  {
+   "id": "cyber-security",
+   "name": "Cyber Security & Threats",
+   "block": 5,
+   "kind": "theory",
+   "summary": "Cyber security and its types and trends, threats and malware, spoofing, sniffing, phishing, internet vulnerabilities, cyber-physical systems.",
+   "points": [
+    "Cyber security: protecting systems, networks and data from digital attacks. Information security protects all information (paper and digital); cyber security focuses on cyberspace.",
+    "Types/categories: network, application, information/data, cloud, endpoint, operational security, disaster recovery, user education.",
+    "Trends: AI-driven attacks and defence, ransomware, IoT vulnerabilities, cloud security, zero-trust, mobile threats, remote-work risks.",
+    "Malware: virus, worm, Trojan, ransomware, spyware, adware, rootkit, keylogger.",
+    "Spoofing: disguising as a trusted source. Sniffing: capturing data travelling on a network. Phishing: fake messages to steal credentials. Spyware: secretly monitors the user.",
+    "Internet vulnerabilities: weak passwords, unpatched software, insecure Wi-Fi, social engineering, misconfiguration.",
+    "Cyber-physical systems: computing controlling physical processes (smart grids, medical devices) — need security across sensors, networks and controllers.",
+    "Impact on e-commerce: builds trust, protects payments and customer data, avoids losses and legal liability."
+   ],
+   "frame": "Meaning → types or threats as headed points with examples → prevention → conclusion.",
+   "mistakes": []
+  },
+  {
+   "id": "egov",
+   "name": "E-Governance & Digital India",
+   "block": 4,
+   "kind": "theory",
+   "summary": "E-governance vs e-government, Gartner's four-phase model, India's e-governance journey, Digital India and its nine pillars, e-NAM, GeM, MyGov.",
+   "points": [
+    "E-government: using ICT to deliver government services. E-governance: wider — ICT for government, citizens and businesses to interact, making governance transparent and participative.",
+    "Gartner's model: Phase 1 information (publish information online), Phase 2 interaction (downloadable forms, e-mail), Phase 3 transaction (pay bills, file returns online), Phase 4 transformation (integrated, citizen-centric services).",
+    "India's journey: 1990s computerisation (NIC, railway reservation), 2006 National e-Governance Plan (Mission Mode Projects), 2015 Digital India, then Aadhaar, UPI, DigiLocker, UMANG.",
+    "Digital India (2015) aims: digital infrastructure, governance and services on demand, digital empowerment. Nine pillars: broadband highways, universal mobile access, public internet access, e-governance, e-Kranti, information for all, electronics manufacturing, IT for jobs, early harvest programmes.",
+    "e-NAM: online national agricultural market. GeM: Government e-Marketplace for public procurement. MyGov: citizen participation platform.",
+    "E-commerce (business transactions for profit) vs e-governance (government services for citizens)."
+   ],
+   "frame": "Meaning → phases or pillars as a numbered list → examples → conclusion.",
+   "mistakes": []
+  },
+  {
+   "id": "software-apps",
+   "name": "Operating Systems, SDLC & Apps",
+   "block": 2,
+   "kind": "theory",
+   "summary": "Operating systems (Windows vs Linux), software platforms, SDLC for e-commerce, app development, app stores, mobile frameworks.",
+   "points": [
+    "Operating system: software that manages hardware and runs applications. Windows: proprietary, paid, user-friendly GUI. Linux: open source, free, secure, customisable, popular for servers.",
+    "Software platforms: desktop (Windows, macOS), mobile (Android, iOS), web, cloud (AWS), e-commerce platforms (Shopify, Magento, WooCommerce).",
+    "SDLC for e-commerce solutions: planning → requirement analysis → design → development → testing → deployment → maintenance.",
+    "App development process: idea and research → planning → UI/UX design → development (front end and back end) → testing → launch on app stores → updates.",
+    "App store: marketplace to distribute apps. Types: platform stores (Google Play, Apple App Store), third-party stores, enterprise stores.",
+    "Mobile development frameworks: native (Swift, Kotlin), cross-platform (Flutter, React Native), hybrid (Ionic).",
+    "E-commerce software for SMEs: ready-made storefronts, payment and inventory integration (Shopify, Dukaan)."
+   ],
+   "frame": "Meaning → steps as a flow chart or comparison table → examples → conclusion.",
+   "mistakes": []
+  },
+  {
+   "id": "ecom-concepts",
+   "name": "E-Commerce: Meaning, Evolution & Impact",
+   "block": 1,
+   "kind": "theory",
+   "summary": "Meaning, evolution, advantages and disadvantages, e-commerce vs traditional commerce and e-business, 24×7 service, impact of AI and IoT.",
+   "points": [
+    "E-commerce: buying and selling goods and services over electronic networks. E-business is wider — all business processes online (supply chain, HR, CRM).",
+    "Evolution: EDI and EFT (1970s–80s) → WWW and early online stores (1990s) → dot-com boom → mobile and social commerce → AI-driven, omnichannel commerce.",
+    "Advantages: global reach, 24×7, lower costs, personalisation, easy comparison. Disadvantages: security and privacy concerns, no physical inspection, delivery and return problems, digital divide.",
+    "E-commerce vs traditional: online vs physical; 24×7 vs limited hours; global vs local; digital vs cash payments.",
+    "Architectural framework: network infrastructure, publishing and multimedia content, messaging, business services (security, payment), applications.",
+    "Emerging technologies: AI (recommendations, chatbots), IoT (smart devices ordering automatically), AR/VR, blockchain, big data."
+   ],
+   "frame": "Meaning → headed points (advantages vs disadvantages table) → conclusion.",
+   "mistakes": []
+  },
+  {
+   "id": "encryption",
+   "name": "Encryption & Digital Signatures",
+   "block": 5,
+   "kind": "theory",
+   "summary": "Encryption, symmetric vs asymmetric, digital signature, electronic signature, digital signature certificates.",
+   "points": [
+    "Encryption: converting plaintext into ciphertext so only authorised parties can read it; decryption reverses it.",
+    "Symmetric encryption: one shared key (fast; key-sharing problem — AES). Asymmetric: public key encrypts, private key decrypts (slower, secure key exchange — RSA).",
+    "Digital signature: created with the signer's private key and a hash of the document; verified with the public key — ensures authenticity, integrity and non-repudiation.",
+    "Electronic signature: any electronic means of signing (typed name, scanned signature, OTP-based e-Sign) — digital signature is a secure type of electronic signature.",
+    "Digital Signature Certificate (DSC): issued by a Certifying Authority under the IT Act; classes by level of verification; used for e-filing, MCA and GST filings, e-tenders."
+   ],
+   "frame": "Meaning → process diagram (sender signs with private key → receiver verifies with public key) → comparison table → conclusion.",
+   "mistakes": []
+  },
+  {
+   "id": "fintech",
+   "name": "FinTech, DLT & Digital Currencies",
+   "block": 3,
+   "kind": "theory",
+   "summary": "FinTech and its technologies, distributed ledger technology, digital vs virtual vs crypto currencies.",
+   "points": [
+    "FinTech: innovative use of technology to deliver financial services (Paytm, Zerodha, PhonePe).",
+    "Technologies: AI and machine learning, blockchain/DLT, cloud computing, big-data analytics, APIs/open banking, biometrics, robotic process automation.",
+    "Distributed ledger technology: a shared, replicated record across many nodes. Advantages: transparency, security, no single point of failure, faster settlement, lower costs.",
+    "Digital currency: any money in electronic form (includes central bank digital currency — the e-Rupee). Virtual currency: digital value issued by private developers, used in a specific community (game tokens). Cryptocurrency: decentralised virtual currency secured by cryptography (Bitcoin)."
+   ],
+   "frame": "Meaning → headed points → comparison table → conclusion.",
+   "mistakes": []
+  }
+ ],
+ "questions": [
+  {
+   "s": "2022-06",
+   "q": "1",
+   "t": "Advantages and disadvantages of e-commerce",
+   "m": 20,
+   "k": "th",
+   "topic": "ecom-concepts"
+  },
+  {
+   "s": "2022-06",
+   "q": "2",
+   "t": "E-governance; e-government vs e-governance",
+   "m": 20,
+   "k": "th",
+   "topic": "egov"
+  },
+  {
+   "s": "2022-06",
+   "q": "3",
+   "t": "Website and types of websites",
+   "m": 20,
+   "k": "th",
+   "topic": "web-hosting"
+  },
+  {
+   "s": "2022-06",
+   "q": "4",
+   "t": "Operating system; Linux vs Windows",
+   "m": 20,
+   "k": "th",
+   "topic": "software-apps"
+  },
+  {
+   "s": "2022-06",
+   "q": "5(a)",
+   "t": "Comment: aim of cyber security",
+   "m": 5.0,
+   "k": "th",
+   "topic": "cyber-security"
+  },
+  {
+   "s": "2022-06",
+   "q": "5(b)",
+   "t": "Comment: AI and IoT transforming the economy",
+   "m": 5.0,
+   "k": "th",
+   "topic": "ecom-concepts"
+  },
+  {
+   "s": "2022-06",
+   "q": "5(c)",
+   "t": "Comment: cyber crime regulated by cyber laws",
+   "m": 5.0,
+   "k": "th",
+   "topic": "cyber-law"
+  },
+  {
+   "s": "2022-06",
+   "q": "5(d)",
+   "t": "Comment: electronic proof on storage media",
+   "m": 5.0,
+   "k": "th",
+   "topic": "cyber-law"
+  },
+  {
+   "s": "2022-06",
+   "q": "6(a)",
+   "t": "Distinguish (any four): e-tail vs retail",
+   "m": 4.0,
+   "k": "th",
+   "topic": "eservices"
+  },
+  {
+   "s": "2022-06",
+   "q": "6(b)",
+   "t": "Distinguish (any four): web server vs application server",
+   "m": 4.0,
+   "k": "th",
+   "topic": "web-hosting"
+  },
+  {
+   "s": "2022-06",
+   "q": "6(c)",
+   "t": "Distinguish (any four): banking vs e-banking",
+   "m": 4.0,
+   "k": "th",
+   "topic": "epayments"
+  },
+  {
+   "s": "2022-06",
+   "q": "6(d)",
+   "t": "Distinguish (any four): credit card vs e-wallet",
+   "m": 4.0,
+   "k": "th",
+   "topic": "epayments"
+  },
+  {
+   "s": "2022-06",
+   "q": "6(e)",
+   "t": "Distinguish (any four): e-commerce vs e-governance",
+   "m": 4.0,
+   "k": "th",
+   "topic": "egov"
+  },
+  {
+   "s": "2022-06",
+   "q": "7(a)",
+   "t": "Note (any four): encryption",
+   "m": 4.0,
+   "k": "th",
+   "topic": "encryption"
+  },
+  {
+   "s": "2022-06",
+   "q": "7(b)",
+   "t": "Note (any four): digital signature certificates",
+   "m": 4.0,
+   "k": "th",
+   "topic": "encryption"
+  },
+  {
+   "s": "2022-06",
+   "q": "7(c)",
+   "t": "Note (any four): internet vulnerabilities",
+   "m": 4.0,
+   "k": "th",
+   "topic": "cyber-security"
+  },
+  {
+   "s": "2022-06",
+   "q": "7(d)",
+   "t": "Note (any four): e-commerce software for SMEs",
+   "m": 4.0,
+   "k": "th",
+   "topic": "software-apps"
+  },
+  {
+   "s": "2022-06",
+   "q": "7(e)",
+   "t": "Note (any four): website hosting",
+   "m": 4.0,
+   "k": "th",
+   "topic": "web-hosting"
+  },
+  {
+   "s": "2022-06",
+   "q": "8",
+   "t": "How Flipkart, BigBasket and FirstCry work",
+   "m": 15,
+   "k": "th",
+   "topic": "ecom-models"
+  },
+  {
+   "s": "2022-06",
+   "q": "8",
+   "t": "How MyGov.in works",
+   "m": 5,
+   "k": "th",
+   "topic": "egov"
+  },
+  {
+   "s": "2022-12",
+   "q": "1",
+   "t": "Business model and its key elements",
+   "m": 20,
+   "k": "th",
+   "topic": "ecom-models"
+  },
+  {
+   "s": "2022-12",
+   "q": "2",
+   "t": "Gartner's evolution model of e-governance",
+   "m": 20,
+   "k": "th",
+   "topic": "egov"
+  },
+  {
+   "s": "2022-12",
+   "q": "3",
+   "t": "EFT; NEFT vs RTGS vs IMPS",
+   "m": 20,
+   "k": "th",
+   "topic": "epayments"
+  },
+  {
+   "s": "2022-12",
+   "q": "4",
+   "t": "E-publishing and online publishing approaches",
+   "m": 20,
+   "k": "th",
+   "topic": "eservices"
+  },
+  {
+   "s": "2022-12",
+   "q": "5(a)",
+   "t": "Comment: e-financial services and growth",
+   "m": 5.0,
+   "k": "th",
+   "topic": "epayments"
+  },
+  {
+   "s": "2022-12",
+   "q": "5(b)",
+   "t": "Comment: cyber security",
+   "m": 5.0,
+   "k": "th",
+   "topic": "cyber-security"
+  },
+  {
+   "s": "2022-12",
+   "q": "5(c)",
+   "t": "Comment: websites in business",
+   "m": 5.0,
+   "k": "th",
+   "topic": "web-hosting"
+  },
+  {
+   "s": "2022-12",
+   "q": "5(d)",
+   "t": "Comment: payment gateway",
+   "m": 5.0,
+   "k": "th",
+   "topic": "epayments"
+  },
+  {
+   "s": "2022-12",
+   "q": "6(a)",
+   "t": "Distinguish (any four): hosted vs self-hosted payment gateway",
+   "m": 4.0,
+   "k": "th",
+   "topic": "epayments"
+  },
+  {
+   "s": "2022-12",
+   "q": "6(b)",
+   "t": "Distinguish (any four): Linux vs Windows",
+   "m": 4.0,
+   "k": "th",
+   "topic": "software-apps"
+  },
+  {
+   "s": "2022-12",
+   "q": "6(c)",
+   "t": "Distinguish (any four): information vs cyber security",
+   "m": 4.0,
+   "k": "th",
+   "topic": "cyber-security"
+  },
+  {
+   "s": "2022-12",
+   "q": "6(d)",
+   "t": "Distinguish (any four): spoofing vs sniffing",
+   "m": 4.0,
+   "k": "th",
+   "topic": "cyber-security"
+  },
+  {
+   "s": "2022-12",
+   "q": "6(e)",
+   "t": "Distinguish (any four): offences and punishment in cyber crime",
+   "m": 4.0,
+   "k": "th",
+   "topic": "cyber-law"
+  },
+  {
+   "s": "2022-12",
+   "q": "7(a)",
+   "t": "Note (any four): digital signature",
+   "m": 4.0,
+   "k": "th",
+   "topic": "encryption"
+  },
+  {
+   "s": "2022-12",
+   "q": "7(b)",
+   "t": "Note (any four): e-tailing",
+   "m": 4.0,
+   "k": "th",
+   "topic": "eservices"
+  },
+  {
+   "s": "2022-12",
+   "q": "7(c)",
+   "t": "Note (any four): IT Act, 2000",
+   "m": 4.0,
+   "k": "th",
+   "topic": "cyber-law"
+  },
+  {
+   "s": "2022-12",
+   "q": "7(d)",
+   "t": "Note (any four): artificial intelligence",
+   "m": 4.0,
+   "k": "th",
+   "topic": "ecom-concepts"
+  },
+  {
+   "s": "2022-12",
+   "q": "7(e)",
+   "t": "Note (any four): cyber forensics",
+   "m": 4.0,
+   "k": "th",
+   "topic": "cyber-law"
+  },
+  {
+   "s": "2022-12",
+   "q": "8",
+   "t": "How Amazon, Zomato, BookMyShow and eBay work",
+   "m": 20,
+   "k": "th",
+   "topic": "ecom-models"
+  },
+  {
+   "s": "2023-06",
+   "q": "1",
+   "t": "E-commerce vs traditional commerce",
+   "m": 11,
+   "k": "th",
+   "topic": "ecom-concepts"
+  },
+  {
+   "s": "2023-06",
+   "q": "1",
+   "t": "Impact of cyber security on e-commerce",
+   "m": 9,
+   "k": "th",
+   "topic": "cyber-security"
+  },
+  {
+   "s": "2023-06",
+   "q": "2",
+   "t": "Cyber security and seven trends",
+   "m": 20,
+   "k": "th",
+   "topic": "cyber-security"
+  },
+  {
+   "s": "2023-06",
+   "q": "3",
+   "t": "Types of electronic payment systems",
+   "m": 20,
+   "k": "th",
+   "topic": "epayments"
+  },
+  {
+   "s": "2023-06",
+   "q": "4",
+   "t": "IT Act 2000 vs IT Amendment Act 2008",
+   "m": 20,
+   "k": "th",
+   "topic": "cyber-law"
+  },
+  {
+   "s": "2023-06",
+   "q": "5",
+   "t": "B2B vs B2C: advantages and disadvantages",
+   "m": 20,
+   "k": "th",
+   "topic": "ecom-models"
+  },
+  {
+   "s": "2023-06",
+   "q": "6(a)",
+   "t": "Comment: digital vs electronic signatures",
+   "m": 5.0,
+   "k": "th",
+   "topic": "encryption"
+  },
+  {
+   "s": "2023-06",
+   "q": "6(b)",
+   "t": "Comment: malicious software and cyber crime",
+   "m": 5.0,
+   "k": "th",
+   "topic": "cyber-security"
+  },
+  {
+   "s": "2023-06",
+   "q": "6(c)",
+   "t": "Comment: online web-based learning",
+   "m": 5.0,
+   "k": "th",
+   "topic": "eservices"
+  },
+  {
+   "s": "2023-06",
+   "q": "6(d)",
+   "t": "Comment: app stores in e-commerce",
+   "m": 5.0,
+   "k": "th",
+   "topic": "software-apps"
+  },
+  {
+   "s": "2023-06",
+   "q": "7(a)",
+   "t": "Distinguish (any four): spoofing vs sniffing",
+   "m": 4.0,
+   "k": "th",
+   "topic": "cyber-security"
+  },
+  {
+   "s": "2023-06",
+   "q": "7(b)",
+   "t": "Distinguish (any four): RTGS vs NEFT",
+   "m": 4.0,
+   "k": "th",
+   "topic": "epayments"
+  },
+  {
+   "s": "2023-06",
+   "q": "7(c)",
+   "t": "Distinguish (any four): e-NAM vs GeM",
+   "m": 4.0,
+   "k": "th",
+   "topic": "egov"
+  },
+  {
+   "s": "2023-06",
+   "q": "7(d)",
+   "t": "Distinguish (any four): cyber forensics vs cyber crimes",
+   "m": 4.0,
+   "k": "th",
+   "topic": "cyber-law"
+  },
+  {
+   "s": "2023-06",
+   "q": "7(e)",
+   "t": "Distinguish (any four): symmetric vs asymmetric encryption",
+   "m": 4.0,
+   "k": "th",
+   "topic": "encryption"
+  },
+  {
+   "s": "2023-06",
+   "q": "8(a)",
+   "t": "Note (any four): Appellate Tribunal",
+   "m": 4.0,
+   "k": "th",
+   "topic": "cyber-law"
+  },
+  {
+   "s": "2023-06",
+   "q": "8(b)",
+   "t": "Note (any four): e-tailing models",
+   "m": 4.0,
+   "k": "th",
+   "topic": "eservices"
+  },
+  {
+   "s": "2023-06",
+   "q": "8(c)",
+   "t": "Note (any four): e-publishing services",
+   "m": 4.0,
+   "k": "th",
+   "topic": "eservices"
+  },
+  {
+   "s": "2023-06",
+   "q": "8(d)",
+   "t": "Note (any four): online entertainment",
+   "m": 4.0,
+   "k": "th",
+   "topic": "eservices"
+  },
+  {
+   "s": "2023-06",
+   "q": "8(e)",
+   "t": "Note (any four): mobile development frameworks",
+   "m": 4.0,
+   "k": "th",
+   "topic": "software-apps"
+  },
+  {
+   "s": "2023-12",
+   "q": "1",
+   "t": "Revenue models of e-commerce",
+   "m": 20,
+   "k": "th",
+   "topic": "ecom-models"
+  },
+  {
+   "s": "2023-12",
+   "q": "2",
+   "t": "Digital India; e-commerce vs e-governance",
+   "m": 20,
+   "k": "th",
+   "topic": "egov"
+  },
+  {
+   "s": "2023-12",
+   "q": "3",
+   "t": "Requirements and tools for online fund transfer",
+   "m": 20,
+   "k": "th",
+   "topic": "epayments"
+  },
+  {
+   "s": "2023-12",
+   "q": "4",
+   "t": "Types of websites; web development process",
+   "m": 20,
+   "k": "th",
+   "topic": "web-hosting"
+  },
+  {
+   "s": "2023-12",
+   "q": "5",
+   "t": "Offences and punishments under the IT Act",
+   "m": 20,
+   "k": "th",
+   "topic": "cyber-law"
+  },
+  {
+   "s": "2023-12",
+   "q": "6(a)",
+   "t": "Distinguish (any four): Windows vs Linux",
+   "m": 4.0,
+   "k": "th",
+   "topic": "software-apps"
+  },
+  {
+   "s": "2023-12",
+   "q": "6(b)",
+   "t": "Distinguish (any four): web server vs application server",
+   "m": 4.0,
+   "k": "th",
+   "topic": "web-hosting"
+  },
+  {
+   "s": "2023-12",
+   "q": "6(c)",
+   "t": "Distinguish (any four): digital platforms vs e-commerce",
+   "m": 4.0,
+   "k": "th",
+   "topic": "ecom-models"
+  },
+  {
+   "s": "2023-12",
+   "q": "6(d)",
+   "t": "Distinguish (any four): NEFT vs UPI",
+   "m": 4.0,
+   "k": "th",
+   "topic": "epayments"
+  },
+  {
+   "s": "2023-12",
+   "q": "6(e)",
+   "t": "Distinguish (any four): Internet vs WWW",
+   "m": 4.0,
+   "k": "th",
+   "topic": "web-hosting"
+  },
+  {
+   "s": "2023-12",
+   "q": "7(a)",
+   "t": "Note (any four): cyber threats and types",
+   "m": 4.0,
+   "k": "th",
+   "topic": "cyber-security"
+  },
+  {
+   "s": "2023-12",
+   "q": "7(b)",
+   "t": "Note (any four): SDLC",
+   "m": 4.0,
+   "k": "th",
+   "topic": "software-apps"
+  },
+  {
+   "s": "2023-12",
+   "q": "7(c)",
+   "t": "Note (any four): virtual currency",
+   "m": 4.0,
+   "k": "th",
+   "topic": "fintech"
+  },
+  {
+   "s": "2023-12",
+   "q": "7(d)",
+   "t": "Note (any four): web hosting and types",
+   "m": 4.0,
+   "k": "th",
+   "topic": "web-hosting"
+  },
+  {
+   "s": "2023-12",
+   "q": "7(e)",
+   "t": "Note (any four): architectural framework of e-commerce",
+   "m": 4.0,
+   "k": "th",
+   "topic": "ecom-concepts"
+  },
+  {
+   "s": "2023-12",
+   "q": "8(a)",
+   "t": "Justify: data encryption from plaintext to ciphertext",
+   "m": 10,
+   "k": "th",
+   "topic": "encryption"
+  },
+  {
+   "s": "2023-12",
+   "q": "8(b)",
+   "t": "Justify: FinTech in financial services",
+   "m": 10,
+   "k": "th",
+   "topic": "fintech"
+  },
+  {
+   "s": "2024-06",
+   "q": "1",
+   "t": "E-commerce: advantages, disadvantages, 24×7 service",
+   "m": 20,
+   "k": "th",
+   "topic": "ecom-concepts"
+  },
+  {
+   "s": "2024-06",
+   "q": "2",
+   "t": "Website hosting and its types; types of web server",
+   "m": 20,
+   "k": "th",
+   "topic": "web-hosting"
+  },
+  {
+   "s": "2024-06",
+   "q": "3(a)",
+   "t": "Distinguish (any four): Internet vs WWW",
+   "m": 4.0,
+   "k": "th",
+   "topic": "web-hosting"
+  },
+  {
+   "s": "2024-06",
+   "q": "3(b)",
+   "t": "Distinguish (any four): spyware vs phishing",
+   "m": 4.0,
+   "k": "th",
+   "topic": "cyber-security"
+  },
+  {
+   "s": "2024-06",
+   "q": "3(c)",
+   "t": "Distinguish (any four): digital vs electronic signature",
+   "m": 4.0,
+   "k": "th",
+   "topic": "encryption"
+  },
+  {
+   "s": "2024-06",
+   "q": "3(d)",
+   "t": "Distinguish (any four): IT Act 2000 vs 2008",
+   "m": 4.0,
+   "k": "th",
+   "topic": "cyber-law"
+  },
+  {
+   "s": "2024-06",
+   "q": "3(e)",
+   "t": "Distinguish (any four): symmetric vs asymmetric encryption",
+   "m": 4.0,
+   "k": "th",
+   "topic": "encryption"
+  },
+  {
+   "s": "2024-06",
+   "q": "4(a)",
+   "t": "E-services and their advantages",
+   "m": 12,
+   "k": "th",
+   "topic": "eservices"
+  },
+  {
+   "s": "2024-06",
+   "q": "4(b)",
+   "t": "Cyber security and its types",
+   "m": 8,
+   "k": "th",
+   "topic": "cyber-security"
+  },
+  {
+   "s": "2024-06",
+   "q": "5(a)",
+   "t": "Steps of app development",
+   "m": 10,
+   "k": "th",
+   "topic": "software-apps"
+  },
+  {
+   "s": "2024-06",
+   "q": "5(b)",
+   "t": "7 Cs of retail mix",
+   "m": 10,
+   "k": "th",
+   "topic": "eservices"
+  },
+  {
+   "s": "2024-06",
+   "q": "6(a)",
+   "t": "E-tailing: advantages for retailers and buyers",
+   "m": 10,
+   "k": "th",
+   "topic": "eservices"
+  },
+  {
+   "s": "2024-06",
+   "q": "6(b)",
+   "t": "Things to consider before online fund transfer",
+   "m": 10,
+   "k": "th",
+   "topic": "epayments"
+  },
+  {
+   "s": "2024-06",
+   "q": "7(a)",
+   "t": "Justify: Gartner model of e-governance",
+   "m": 10,
+   "k": "th",
+   "topic": "egov"
+  },
+  {
+   "s": "2024-06",
+   "q": "7(b)",
+   "t": "Justify: e-commerce features through mobile apps",
+   "m": 10,
+   "k": "th",
+   "topic": "software-apps"
+  },
+  {
+   "s": "2024-06",
+   "q": "8(a)",
+   "t": "Note (any four): traditional vs e-payment",
+   "m": 4.0,
+   "k": "th",
+   "topic": "epayments"
+  },
+  {
+   "s": "2024-06",
+   "q": "8(b)",
+   "t": "Note (any four): EFT, NEFT and RTGS",
+   "m": 4.0,
+   "k": "th",
+   "topic": "epayments"
+  },
+  {
+   "s": "2024-06",
+   "q": "8(c)",
+   "t": "Note (any four): advantages of DLT",
+   "m": 4.0,
+   "k": "th",
+   "topic": "fintech"
+  },
+  {
+   "s": "2024-06",
+   "q": "8(d)",
+   "t": "Note (any four): digital, virtual and crypto currencies",
+   "m": 4.0,
+   "k": "th",
+   "topic": "fintech"
+  },
+  {
+   "s": "2024-06",
+   "q": "8(e)",
+   "t": "Note (any four): nine pillars of Digital India",
+   "m": 4.0,
+   "k": "th",
+   "topic": "egov"
+  },
+  {
+   "s": "2024-12",
+   "q": "1",
+   "t": "Models of electronic transactions with examples",
+   "m": 20,
+   "k": "th",
+   "topic": "ecom-models"
+  },
+  {
+   "s": "2024-12",
+   "q": "2(a)",
+   "t": "SDLC for e-commerce solutions",
+   "m": 10,
+   "k": "th",
+   "topic": "software-apps"
+  },
+  {
+   "s": "2024-12",
+   "q": "2(b)",
+   "t": "India's e-governance journey",
+   "m": 10,
+   "k": "th",
+   "topic": "egov"
+  },
+  {
+   "s": "2024-12",
+   "q": "3(a)",
+   "t": "HTTP vs HTTPS",
+   "m": 10,
+   "k": "th",
+   "topic": "web-hosting"
+  },
+  {
+   "s": "2024-12",
+   "q": "3(b)",
+   "t": "Types of software platforms",
+   "m": 10,
+   "k": "th",
+   "topic": "software-apps"
+  },
+  {
+   "s": "2024-12",
+   "q": "4",
+   "t": "E-tailing: features, advantages, disadvantages",
+   "m": 20,
+   "k": "th",
+   "topic": "eservices"
+  },
+  {
+   "s": "2024-12",
+   "q": "5",
+   "t": "Kinds of cyber crime; cyber forensics",
+   "m": 20,
+   "k": "th",
+   "topic": "cyber-law"
+  },
+  {
+   "s": "2024-12",
+   "q": "6(a)",
+   "t": "Distinguish (any four): AI vs IoT in e-commerce",
+   "m": 4.0,
+   "k": "th",
+   "topic": "ecom-concepts"
+  },
+  {
+   "s": "2024-12",
+   "q": "6(b)",
+   "t": "Distinguish (any four): app-based vs web-based business",
+   "m": 4.0,
+   "k": "th",
+   "topic": "ecom-models"
+  },
+  {
+   "s": "2024-12",
+   "q": "6(c)",
+   "t": "Distinguish (any four): traditional vs e-payment",
+   "m": 4.0,
+   "k": "th",
+   "topic": "epayments"
+  },
+  {
+   "s": "2024-12",
+   "q": "6(d)",
+   "t": "Distinguish (any four): NEFT, RTGS and IMPS",
+   "m": 4.0,
+   "k": "th",
+   "topic": "epayments"
+  },
+  {
+   "s": "2024-12",
+   "q": "6(e)",
+   "t": "Distinguish (any four): Windows vs Linux",
+   "m": 4.0,
+   "k": "th",
+   "topic": "software-apps"
+  },
+  {
+   "s": "2024-12",
+   "q": "7(a)",
+   "t": "Justify: e-auctions",
+   "m": 10,
+   "k": "th",
+   "topic": "ecom-models"
+  },
+  {
+   "s": "2024-12",
+   "q": "7(b)",
+   "t": "Justify: drop shipping",
+   "m": 10,
+   "k": "th",
+   "topic": "ecom-models"
+  },
+  {
+   "s": "2024-12",
+   "q": "8(a)",
+   "t": "Note (any four): evolution of WWW",
+   "m": 4.0,
+   "k": "th",
+   "topic": "web-hosting"
+  },
+  {
+   "s": "2024-12",
+   "q": "8(b)",
+   "t": "Note (any four): categories of cyber security",
+   "m": 4.0,
+   "k": "th",
+   "topic": "cyber-security"
+  },
+  {
+   "s": "2024-12",
+   "q": "8(c)",
+   "t": "Note (any four): malicious software and types",
+   "m": 4.0,
+   "k": "th",
+   "topic": "cyber-security"
+  },
+  {
+   "s": "2024-12",
+   "q": "8(d)",
+   "t": "Note (any four): penalties and adjudication under IT Act 2008",
+   "m": 4.0,
+   "k": "th",
+   "topic": "cyber-law"
+  },
+  {
+   "s": "2024-12",
+   "q": "8(e)",
+   "t": "Note (any four): encryption in digital signatures",
+   "m": 4.0,
+   "k": "th",
+   "topic": "encryption"
+  },
+  {
+   "s": "2025-06",
+   "q": "1",
+   "t": "Evolution, advantages and disadvantages of e-commerce",
+   "m": 20,
+   "k": "th",
+   "topic": "ecom-concepts"
+  },
+  {
+   "s": "2025-06",
+   "q": "2",
+   "t": "Digital payment: categories and impact",
+   "m": 20,
+   "k": "th",
+   "topic": "epayments"
+  },
+  {
+   "s": "2025-06",
+   "q": "3",
+   "t": "E-banking; NEFT vs RTGS vs IMPS",
+   "m": 20,
+   "k": "th",
+   "topic": "epayments"
+  },
+  {
+   "s": "2025-06",
+   "q": "4",
+   "t": "Web server vs application server; website development",
+   "m": 20,
+   "k": "th",
+   "topic": "web-hosting"
+  },
+  {
+   "s": "2025-06",
+   "q": "5",
+   "t": "HTTP vs HTTPS; website hosting types",
+   "m": 20,
+   "k": "th",
+   "topic": "web-hosting"
+  },
+  {
+   "s": "2025-06",
+   "q": "6(a)",
+   "t": "Forms of cyber crime",
+   "m": 10,
+   "k": "th",
+   "topic": "cyber-law"
+  },
+  {
+   "s": "2025-06",
+   "q": "6(b)",
+   "t": "Cyber-physical security system",
+   "m": 10,
+   "k": "th",
+   "topic": "cyber-security"
+  },
+  {
+   "s": "2025-06",
+   "q": "7(a)",
+   "t": "Digital vs electronic signature",
+   "m": 10,
+   "k": "th",
+   "topic": "encryption"
+  },
+  {
+   "s": "2025-06",
+   "q": "7(b)",
+   "t": "Offences and punishments under the IT Act",
+   "m": 10,
+   "k": "th",
+   "topic": "cyber-law"
+  },
+  {
+   "s": "2025-06",
+   "q": "8(a)",
+   "t": "App store and its types",
+   "m": 10,
+   "k": "th",
+   "topic": "software-apps"
+  },
+  {
+   "s": "2025-06",
+   "q": "8(b)",
+   "t": "Advantages of e-services",
+   "m": 10,
+   "k": "th",
+   "topic": "eservices"
+  },
+  {
+   "s": "2025-06",
+   "q": "9(a)",
+   "t": "FinTech and its technologies",
+   "m": 12,
+   "k": "th",
+   "topic": "fintech"
+  },
+  {
+   "s": "2025-06",
+   "q": "9(b)",
+   "t": "E-tailing and its disadvantages",
+   "m": 8,
+   "k": "th",
+   "topic": "eservices"
+  },
+  {
+   "s": "2025-06",
+   "q": "10",
+   "t": "E-commerce vs e-business",
+   "m": 10,
+   "k": "th",
+   "topic": "ecom-concepts"
+  },
+  {
+   "s": "2025-06",
+   "q": "10",
+   "t": "Models of e-commerce",
+   "m": 10,
+   "k": "th",
+   "topic": "ecom-models"
+  },
+  {
+   "s": "2025-12",
+   "q": "1(a)",
+   "t": "Comment: 24×7 flexibility of e-commerce",
+   "m": 5.0,
+   "k": "th",
+   "topic": "ecom-concepts"
+  },
+  {
+   "s": "2025-12",
+   "q": "1(b)",
+   "t": "Comment: malicious software and cyber crime",
+   "m": 5.0,
+   "k": "th",
+   "topic": "cyber-security"
+  },
+  {
+   "s": "2025-12",
+   "q": "1(c)",
+   "t": "Comment: phases of website development",
+   "m": 5.0,
+   "k": "th",
+   "topic": "web-hosting"
+  },
+  {
+   "s": "2025-12",
+   "q": "1(d)",
+   "t": "Comment: UPI as real-time payment",
+   "m": 5.0,
+   "k": "th",
+   "topic": "epayments"
+  },
+  {
+   "s": "2025-12",
+   "q": "2",
+   "t": "Digital India and its key initiatives",
+   "m": 20,
+   "k": "th",
+   "topic": "egov"
+  },
+  {
+   "s": "2025-12",
+   "q": "3(a)",
+   "t": "E-payment vs conventional payment",
+   "m": 10,
+   "k": "th",
+   "topic": "epayments"
+  },
+  {
+   "s": "2025-12",
+   "q": "3(b)",
+   "t": "Digital vs virtual vs crypto currencies",
+   "m": 10,
+   "k": "th",
+   "topic": "fintech"
+  },
+  {
+   "s": "2025-12",
+   "q": "4(a)",
+   "t": "Note (any four): e-wallet",
+   "m": 4.0,
+   "k": "th",
+   "topic": "epayments"
+  },
+  {
+   "s": "2025-12",
+   "q": "4(b)",
+   "t": "Note (any four): shopping cart",
+   "m": 4.0,
+   "k": "th",
+   "topic": "ecom-models"
+  },
+  {
+   "s": "2025-12",
+   "q": "4(c)",
+   "t": "Note (any four): operating system",
+   "m": 4.0,
+   "k": "th",
+   "topic": "software-apps"
+  },
+  {
+   "s": "2025-12",
+   "q": "4(d)",
+   "t": "Note (any four): cyberspace",
+   "m": 4.0,
+   "k": "th",
+   "topic": "cyber-security"
+  },
+  {
+   "s": "2025-12",
+   "q": "4(e)",
+   "t": "Note (any four): e-auction",
+   "m": 4.0,
+   "k": "th",
+   "topic": "ecom-models"
+  },
+  {
+   "s": "2025-12",
+   "q": "5",
+   "t": "Website hosting and its types",
+   "m": 20,
+   "k": "th",
+   "topic": "web-hosting"
+  },
+  {
+   "s": "2025-12",
+   "q": "6(a)",
+   "t": "Contributions of the IT Amendment Act 2008",
+   "m": 10,
+   "k": "th",
+   "topic": "cyber-law"
+  },
+  {
+   "s": "2025-12",
+   "q": "6(b)",
+   "t": "Threats of malicious software",
+   "m": 10,
+   "k": "th",
+   "topic": "cyber-security"
+  },
+  {
+   "s": "2025-12",
+   "q": "7(a)",
+   "t": "E-governance and Gartner's model",
+   "m": 12,
+   "k": "th",
+   "topic": "egov"
+  },
+  {
+   "s": "2025-12",
+   "q": "7(b)",
+   "t": "Internet and the entertainment industry",
+   "m": 8,
+   "k": "th",
+   "topic": "eservices"
+  },
+  {
+   "s": "2025-12",
+   "q": "8",
+   "t": "E-tailing: advantages for retailers and buyers",
+   "m": 20,
+   "k": "th",
+   "topic": "eservices"
+  },
+  {
+   "s": "2025-12",
+   "q": "9(a)",
+   "t": "Internet vs WWW; web vs application server",
+   "m": 10,
+   "k": "th",
+   "topic": "web-hosting"
+  },
+  {
+   "s": "2025-12",
+   "q": "9(b)",
+   "t": "E-learning and SWAYAM",
+   "m": 10,
+   "k": "th",
+   "topic": "eservices"
+  },
+  {
+   "s": "2025-12",
+   "q": "10(a)",
+   "t": "Note (any four): 7 Cs of e-retail mix",
+   "m": 4.0,
+   "k": "th",
+   "topic": "eservices"
+  },
+  {
+   "s": "2025-12",
+   "q": "10(b)",
+   "t": "Note (any four): e-publication services",
+   "m": 4.0,
+   "k": "th",
+   "topic": "eservices"
+  },
+  {
+   "s": "2025-12",
+   "q": "10(c)",
+   "t": "Note (any four): distributed ledger technology",
+   "m": 4.0,
+   "k": "th",
+   "topic": "fintech"
+  },
+  {
+   "s": "2025-12",
+   "q": "10(d)",
+   "t": "Note (any four): OTT",
+   "m": 4.0,
+   "k": "th",
+   "topic": "eservices"
+  },
+  {
+   "s": "2025-12",
+   "q": "10(e)",
+   "t": "Note (any four): FinTech",
+   "m": 4.0,
+   "k": "th",
+   "topic": "fintech"
+  },
+  {
+   "s": "2026-06",
+   "q": "1(a)",
+   "t": "E-commerce and two models",
+   "m": 10,
+   "k": "th",
+   "topic": "ecom-models"
+  },
+  {
+   "s": "2026-06",
+   "q": "1(b)",
+   "t": "Impact of emerging technologies on e-commerce",
+   "m": 10,
+   "k": "th",
+   "topic": "ecom-concepts"
+  },
+  {
+   "s": "2026-06",
+   "q": "2(a)",
+   "t": "E-commerce vs e-governance",
+   "m": 10,
+   "k": "th",
+   "topic": "egov"
+  },
+  {
+   "s": "2026-06",
+   "q": "2(b)",
+   "t": "SDLC for e-commerce solutions",
+   "m": 10,
+   "k": "th",
+   "topic": "software-apps"
+  },
+  {
+   "s": "2026-06",
+   "q": "3(a)",
+   "t": "Payment gateway and its types",
+   "m": 10,
+   "k": "th",
+   "topic": "epayments"
+  },
+  {
+   "s": "2026-06",
+   "q": "3(b)",
+   "t": "NEFT vs RTGS vs IMPS vs UPI",
+   "m": 10,
+   "k": "th",
+   "topic": "epayments"
+  },
+  {
+   "s": "2026-06",
+   "q": "4",
+   "t": "Web hosting types; web server vs application server",
+   "m": 20,
+   "k": "th",
+   "topic": "web-hosting"
+  },
+  {
+   "s": "2026-06",
+   "q": "5(a)",
+   "t": "Distinguish: Internet vs WWW",
+   "m": 5.0,
+   "k": "th",
+   "topic": "web-hosting"
+  },
+  {
+   "s": "2026-06",
+   "q": "5(b)",
+   "t": "Distinguish: D2C vs P2P",
+   "m": 5.0,
+   "k": "th",
+   "topic": "ecom-models"
+  },
+  {
+   "s": "2026-06",
+   "q": "5(c)",
+   "t": "Distinguish: private vs white labelling",
+   "m": 5.0,
+   "k": "th",
+   "topic": "ecom-models"
+  },
+  {
+   "s": "2026-06",
+   "q": "5(d)",
+   "t": "Distinguish: app-based vs web-based business",
+   "m": 5.0,
+   "k": "th",
+   "topic": "ecom-models"
+  },
+  {
+   "s": "2026-06",
+   "q": "6(a)",
+   "t": "Cyber terrorism and cyber law provisions",
+   "m": 10,
+   "k": "th",
+   "topic": "cyber-law"
+  },
+  {
+   "s": "2026-06",
+   "q": "6(b)",
+   "t": "App store and its types",
+   "m": 10,
+   "k": "th",
+   "topic": "software-apps"
+  },
+  {
+   "s": "2026-06",
+   "q": "7",
+   "t": "Amendments of the IT Act, 2008",
+   "m": 20,
+   "k": "th",
+   "topic": "cyber-law"
+  },
+  {
+   "s": "2026-06",
+   "q": "8(a)",
+   "t": "Note: digital signatures and encryption",
+   "m": 5.0,
+   "k": "th",
+   "topic": "encryption"
+  },
+  {
+   "s": "2026-06",
+   "q": "8(b)",
+   "t": "Note: cyber forensics",
+   "m": 5.0,
+   "k": "th",
+   "topic": "cyber-law"
+  },
+  {
+   "s": "2026-06",
+   "q": "8(c)",
+   "t": "Note: Appellate Tribunal",
+   "m": 5.0,
+   "k": "th",
+   "topic": "cyber-law"
+  },
+  {
+   "s": "2026-06",
+   "q": "8(d)",
+   "t": "Note: e-tailing models",
+   "m": 5.0,
+   "k": "th",
+   "topic": "eservices"
+  }
+ ]
+}

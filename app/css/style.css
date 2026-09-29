@@ -21,6 +21,8 @@
   --done: #15803d;
   --shadow: 0 1px 2px rgba(16, 24, 40, .06), 0 1px 3px rgba(16, 24, 40, .08);
   --radius: 14px;
+  --img-filter: none;
+  --img-blend: multiply;
   color-scheme: light;
 }
 
@@ -47,6 +49,8 @@
     --low-soft: #242d36;
     --done: #4ade80;
     --shadow: none;
+    --img-filter: invert(1) hue-rotate(180deg) brightness(.9);
+    --img-blend: screen;
     color-scheme: dark;
   }
 }
@@ -73,6 +77,8 @@
   --low-soft: #242d36;
   --done: #4ade80;
   --shadow: none;
+  --img-filter: invert(1) hue-rotate(180deg) brightness(.9);
+  --img-blend: screen;
   color-scheme: dark;
 }
 
@@ -264,6 +270,39 @@ details summary { cursor: pointer; color: var(--accent); font-weight: 600; paddi
 .slot-what { font-weight: 600; }
 .slot-what a { text-decoration: none; }
 .slot-how { font-size: .85rem; color: var(--muted); }
+
+/* Past questions on a topic: the top few, the rest behind "Show more" */
+.asked { list-style: none; padding: 0; margin: 0; }
+.asked li + li, details .asked li:first-child { border-top: 1px solid var(--border); }
+.card.asked-card { padding-top: 4px; padding-bottom: 6px; }
+.ask { display: flex; align-items: center; gap: 10px; padding: 11px 0; text-decoration: none; color: inherit; }
+.ask-main { flex: 1; min-width: 0; display: grid; gap: 3px; }
+.ask-q { line-height: 1.35; }
+.ask-meta { font-size: .8rem; color: var(--muted); }
+.ask:hover .ask-q { color: var(--accent); }
+
+/* A past paper shown in the app, opened at one question */
+.pnote { font-size: .9rem; padding: 10px 12px; border-radius: 10px; background: var(--surface-2); margin: 0 0 6px; }
+.pnote-s { margin: 0 0 4px; }
+.paper-view { display: grid; gap: 2px; margin: 10px 0 14px; }
+.ph { margin: 16px 0 4px; }
+.pq { display: grid; grid-template-columns: auto 1fr; gap: 8px; padding: 10px; border-radius: 12px; scroll-margin-top: 80px; }
+.pq.hit { background: var(--accent-soft); box-shadow: inset 3px 0 0 var(--accent); }
+.pq:has(.pimg) { grid-template-columns: 1fr; gap: 0; }
+.pq-n { font-weight: 700; min-width: 18px; }
+.pq-body { min-width: 0; }
+.pp { margin: 0 0 8px; line-height: 1.5; }
+.pp:last-child { margin-bottom: 0; }
+.pp.mark { background: var(--surface); border-radius: 6px; padding: 4px 8px; margin-left: -8px; margin-right: -8px; font-weight: 600; }
+.pm { font-size: .78rem; font-weight: 600; color: var(--muted); white-space: nowrap; }
+.por { margin: 2px 0 8px; font-size: .8rem; font-weight: 700; color: var(--muted); text-transform: uppercase; letter-spacing: .06em; }
+.ptable {
+  margin: 4px 0 8px -26px; padding: 10px; border-radius: 8px; background: var(--surface-2); overflow-x: auto;
+  font: .76rem/1.45 ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace; white-space: pre;
+}
+.popts { margin: 6px 0 0; padding-left: 22px; }
+.popts li { margin: 2px 0; }
+.pimg { display: block; width: 100%; max-width: 572px; height: auto; filter: var(--img-filter); mix-blend-mode: var(--img-blend); }
 
 .footer { padding-bottom: 28px; font-size: .8rem; color: var(--muted); }
 

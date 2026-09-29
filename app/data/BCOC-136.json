@@ -1,0 +1,369 @@
+{
+  "code": "BCOC-136",
+  "title": "Income Tax Law and Practice",
+  "pattern": {
+    "time": "3 hours",
+    "marks": 100,
+    "questions": 8,
+    "attempt": 5,
+    "each": 20,
+    "summary": "8 questions, attempt any 5, each carries 20 marks. About half are computations (salary, house property, capital gains, other sources, total income); the rest are provisions and short notes.",
+    "caution": "Tax rates, limits and rules change every year and these papers use older assessment years. The notes give the method; for exact limits use the figures in your IGNOU course material or those given in the question."
+  },
+  "blocksOfficial": false,
+  "sessions": ["2022-06", "2022-12", "2023-06", "2023-12", "2024-06", "2024-12", "2025-06", "2025-12", "2026-06"],
+  "sessionNotes": {},
+  "examTips": {
+    "choosing": [
+      "A salary computation (allowances, perquisites, gratuity or pension) appears in every paper — master one full format and you have a safe 20 marks.",
+      "House property annual value, capital gains with indexation, and income from other sources are the other regular computations.",
+      "Theory questions repeat: residential status, casual and agricultural income, clubbing, set-off of losses, e-filing, and section 54 exemptions."
+    ],
+    "numerical": [
+      "Write the name of the head and the assessment year at the top, then a two-column format (Particulars / ₹).",
+      "Mark each item Taxable / Exempt with the section number in brackets — examiners give marks for the reasoning.",
+      "Show a working note for every exemption calculation (HRA, gratuity, commuted pension): list the three limits and pick the least.",
+      "Use the limits stated in the question; if none, state the figure you assumed."
+    ]
+  },
+  "blocks": [
+    { "no": 1, "title": "Basic Concepts & Residential Status" },
+    { "no": 2, "title": "Income from Salary" },
+    { "no": 3, "title": "House Property & Business" },
+    { "no": 4, "title": "Capital Gains & Other Sources" },
+    { "no": 5, "title": "Total Income, Deductions & Procedure" }
+  ],
+  "topics": [
+    {
+      "id": "salary", "name": "Income from Salaries", "block": 2, "kind": "mixed",
+      "summary": "Computation of taxable salary: allowances (HRA, entertainment), perquisites (house, car, servants), gratuity, pension, leave encashment, provident funds.",
+      "points": [
+        "Salary includes basic pay, DA, bonus, commission, fees, allowances, perquisites, retirement benefits, advance salary (taxed when received).",
+        "Allowances: fully taxable (DA, city compensatory, overtime, servant, medical); partly exempt (HRA, children education, hostel); entertainment allowance — deduction u/s 16(ii) only for government employees.",
+        "HRA exemption (Sec 10(13A)) = least of: actual HRA received; rent paid − 10% of salary; 50% of salary in Delhi, Mumbai, Kolkata, Chennai (40% elsewhere). Salary = basic + DA (forming part of retirement benefits) + commission at a fixed % of turnover.",
+        "Perquisites: rent-free house (a % of salary depending on city population), car (depends on engine capacity and private/official use), servants (sweeper, gardener, cook — actual cost), free gas, electricity and water.",
+        "Gratuity (Sec 10(10)) — covered by the Gratuity Act: least of actual, 15/26 × last month's salary × completed years (part over 6 months counts as a year), statutory limit. Not covered: least of actual, ½ × average salary of last 10 months × completed years, limit.",
+        "Commuted pension (Sec 10(10A)): government employees — fully exempt; others — ⅓ of full commuted value exempt if gratuity also received, ½ if not. Uncommuted pension is fully taxable.",
+        "Leave encashment on retirement: least of actual, 10 months' average salary, cash equivalent of unavailed leave (max 30 days per year of service), statutory limit.",
+        "Provident funds: statutory (fully exempt), recognised (employer's contribution exempt up to 12% of salary; interest up to 9.5%), unrecognised, public provident fund.",
+        "Deductions from gross salary: standard deduction, entertainment allowance (government), professional tax (Sec 16(iii))."
+      ],
+      "method": [
+        "List basic, DA, bonus, commission → add taxable allowances (show HRA working) → add perquisites → gross salary.",
+        "Less deductions u/s 16 → income under the head Salaries.",
+        "For retirement benefits, compute each exemption in a separate working note."
+      ],
+      "formula": [
+        "HRA exempt = min(HRA, Rent − 10% of salary, 50%/40% of salary)",
+        "Gratuity (covered) = min(actual, 15/26 × salary × years, limit)",
+        "Commuted pension exempt = ⅓ (with gratuity) or ½ (without) of full commuted value"
+      ],
+      "mistakes": ["Using basic pay only for HRA 'salary' — add DA that forms part of retirement benefits and commission on turnover.", "Not rounding service years (over 6 months = full year) for covered gratuity."]
+    },
+    {
+      "id": "basics", "name": "Basic Concepts, Casual & Agricultural Income", "block": 1, "kind": "mixed",
+      "summary": "Previous year and assessment year, person and assessee, GTI vs total income, casual income, agricultural income and partial integration, exempt incomes.",
+      "points": [
+        "Income of the previous year (PY) is taxed in the assessment year (AY) that follows it. Exceptions (taxed in the same year): non-resident shipping companies, persons leaving India, bodies formed for a short duration, assets transferred to avoid tax, discontinued business.",
+        "Person (Sec 2(31)): individual, HUF, company, firm, AOP/BOI, local authority, artificial juridical person. Assessee: person by whom tax is payable; assessee in default fails to pay or deduct tax.",
+        "Gross total income = total of the five heads after clubbing and set-off. Total income = GTI − deductions under Chapter VI-A.",
+        "Casual income: lottery, crossword puzzles, races, card games, gambling, TV game shows — taxed at a flat 30% with no deduction of expenses or basic exemption.",
+        "Agricultural income (Sec 10(1)) is exempt: rent or revenue from agricultural land in India, income from agriculture, farm buildings. Partly agricultural: tea (40% business income), coffee (25%), rubber (35%).",
+        "Partial integration: when a non-corporate assessee has agricultural income above ₹5,000 and non-agricultural income above the basic exemption limit, agricultural income is used to fix the tax rate.",
+        "Exempt incomes u/s 10: agricultural income, share of profit from a firm, HUF receipts, gratuity/commuted pension (limits), leave encashment (limits), scholarships, PPF interest, etc.",
+        "Capital receipts are generally not taxable; revenue receipts are taxable unless exempt."
+      ],
+      "method": ["Agricultural income from land: sale proceeds − cultivation expenses (seeds, fertiliser, labour, depreciation, electricity)."],
+      "formula": ["Total income = GTI − Chapter VI-A deductions"],
+      "mistakes": []
+    },
+    {
+      "id": "capital-gains", "name": "Capital Gains & Exemptions (54, 54B, 54F)", "block": 4, "kind": "mixed",
+      "summary": "Capital asset, short- and long-term gains, computation with indexation, exemptions u/s 54, 54B, 54F, Capital Gains Account Scheme.",
+      "points": [
+        "Capital asset: property of any kind held by the assessee — excludes stock-in-trade, personal effects (except jewellery, paintings), rural agricultural land, certain bonds.",
+        "Short-term vs long-term: depends on holding period (e.g. listed shares 12 months, immovable property 24 months, other assets 36 months — as per the course material).",
+        "Transfer includes sale, exchange, relinquishment, compulsory acquisition.",
+        "LTCG = full value of consideration − transfer expenses − indexed cost of acquisition − indexed cost of improvement. For assets bought before 1-4-2001, cost may be taken as FMV on 1-4-2001.",
+        "Sec 54: LTCG on a residential house exempt if invested in another residential house (bought 1 year before or 2 years after, or built within 3 years).",
+        "Sec 54B: gains on agricultural land invested in new agricultural land within 2 years.",
+        "Sec 54F: LTCG on any other asset exempt proportionately if net consideration is invested in a residential house.",
+        "Capital Gains Account Scheme, 1988: unutilised amount deposited in a bank before the return due date is treated as invested."
+      ],
+      "method": [
+        "Full value of consideration − transfer expenses = net consideration.",
+        "Indexed cost = cost × CII of year of transfer ÷ CII of year of acquisition (or 2001-02).",
+        "Capital gain = net consideration − indexed cost; then subtract exemption (amount invested + CGAS deposit, up to the gain)."
+      ],
+      "formula": ["Indexed cost = Cost × CII(transfer) / CII(acquisition)"],
+      "mistakes": ["Indexing a short-term asset.", "Forgetting the CGAS deposit when computing the exemption."]
+    },
+    {
+      "id": "house-property", "name": "Income from House Property", "block": 3, "kind": "mixed",
+      "summary": "Chargeability (Sec 22), annual value, let-out and self-occupied property, deductions u/s 24, interest on borrowed capital.",
+      "points": [
+        "Sec 22: annual value of buildings or land appurtenant, owned by the assessee, not used for own business or profession.",
+        "Gross annual value: expected rent (higher of municipal value and fair rent, but not more than standard rent) compared with actual rent received — the higher is GAV.",
+        "Net annual value = GAV − municipal taxes actually paid by the owner.",
+        "Self-occupied property: annual value nil (for one or two houses); interest deduction limited.",
+        "Deductions u/s 24: (a) standard deduction 30% of NAV; (b) interest on borrowed capital (pre-construction interest in 5 equal instalments).",
+        "Part let-out, part self-occupied, part used for own profession: split the property and compute each part separately; the professional-use part is not taxed under this head."
+      ],
+      "method": [
+        "Expected rent = max(municipal value, fair rent), capped at standard rent.",
+        "GAV = max(expected rent, actual rent).",
+        "NAV = GAV − municipal tax paid by owner.",
+        "Income = NAV − 30% − interest on loan."
+      ],
+      "formula": ["NAV = GAV − municipal tax", "Income = NAV − 30% of NAV − interest u/s 24(b)"],
+      "mistakes": ["Deducting municipal tax paid by the tenant."]
+    },
+    {
+      "id": "deductions-total", "name": "Deductions (80C, 80D, 80G) & Total Income", "block": 5, "kind": "numerical",
+      "summary": "Computing total income across heads, and Chapter VI-A deductions — 80C, 80D, 80G, political donations.",
+      "points": [
+        "Compute income under each head, add (after clubbing and set-off) → GTI → less deductions → total income.",
+        "80C: LIC premium, provident fund, PPF, NSC, ELSS, tuition fees, home-loan principal — up to the overall limit.",
+        "80D: medical insurance premium for self/family and parents (higher limit for senior citizens); must not be paid in cash (except preventive health check-up).",
+        "80G: donations to funds and charities — 100% or 50%, with or without a qualifying limit (e.g. PM National Relief Fund 100% without limit).",
+        "80GGC: donations to political parties — 100%, not in cash.",
+        "Casual winnings, LTCG and STCG u/s 111A are taxed at special rates — Chapter VI-A deductions are not allowed against them.",
+        "Income from growing mushrooms is not agricultural income; share of profit from a firm is exempt."
+      ],
+      "method": [
+        "Head-wise schedule: Salary, House Property, PGBP, Capital Gains, Other Sources → GTI.",
+        "Less Chapter VI-A deductions (show each with its section) → total income."
+      ],
+      "formula": ["Total income = Σ heads − deductions"],
+      "mistakes": ["Allowing 80C against capital gains or lottery income."]
+    },
+    {
+      "id": "residential-status", "name": "Residential Status & Incidence of Tax", "block": 1, "kind": "mixed",
+      "summary": "Residential status of individuals, HUF and companies; ordinarily resident vs not ordinarily resident; income deemed to accrue in India.",
+      "points": [
+        "Individual is resident if in India for 182 days or more in the PY, or 60 days in the PY and 365 days in the 4 preceding years (the 60-day rule is replaced by 182 for Indian citizens leaving for employment and for visiting NRIs, with conditions).",
+        "Resident and ordinarily resident (ROR) vs resident but not ordinarily resident (RNOR): RNOR if non-resident in 9 of 10 preceding years or in India 729 days or less in 7 preceding years.",
+        "HUF is resident if control and management is wholly or partly in India. Company is resident if Indian or its place of effective management is in India.",
+        "Incidence: ROR — global income; RNOR — Indian income plus foreign income from a business controlled from India; non-resident — only income received or accrued/deemed to accrue in India.",
+        "Income deemed to accrue in India (Sec 9): business connection, property or asset in India, salary for services in India, interest, royalty, fees for technical services paid by residents."
+      ],
+      "method": ["Count days of stay in the PY and preceding years; apply the basic conditions, then the additional conditions."],
+      "formula": [],
+      "mistakes": ["Counting the day of departure and arrival wrongly — both days count as days in India."]
+    },
+    {
+      "id": "other-sources", "name": "Income from Other Sources", "block": 4, "kind": "mixed",
+      "summary": "Chargeable incomes, casual winnings, dividends, interest on securities, composite letting, bond washing, allowed deductions.",
+      "points": [
+        "Residual head: dividends, interest on securities and bank deposits, casual winnings, gifts above limits, composite letting of building with machinery, director's sitting fees, family pension, ground rent.",
+        "Winnings from lottery, races, card games: grossed up if received net of TDS (net ÷ 70%) and taxed at 30%; losses from such games cannot be set off.",
+        "Dividends: taxable in the shareholder's hands (from AY 2021-22); dividend from a co-operative society is taxable.",
+        "Deductions allowed: collection charges, interest on borrowed money, depreciation and repairs on let machinery/building, standard deduction on family pension.",
+        "Bond washing (Sec 94): selling securities just before interest is due and buying them back after — the interest is taxed in the seller's hands.",
+        "Exempt: share of HUF income, agricultural income, salary of an MLA is taxed under Other Sources (not Salaries)."
+      ],
+      "method": ["List each receipt: taxable/exempt with section → deduct allowed expenses → income from other sources."],
+      "formula": ["Gross winning = Net received ÷ 0.70"],
+      "mistakes": ["Allowing expenses on lottery tickets against winnings."]
+    },
+    {
+      "id": "clubbing-setoff", "name": "Clubbing of Income & Set-off of Losses", "block": 5, "kind": "theory",
+      "summary": "When another person's income is clubbed; set-off and carry forward of business, capital, speculative and lottery losses.",
+      "points": [
+        "Clubbing (Secs 60–64): transfer of income without transfer of asset; revocable transfer of assets; remuneration of spouse from a concern where the individual has substantial interest (unless due to technical skill); assets transferred to spouse or son's wife without adequate consideration; income of a minor child (clubbed with the parent with the higher income; exemption up to ₹1,500 per child; not clubbed if from the child's own skill or if the child is disabled).",
+        "Set-off within the same head first, then against other heads.",
+        "Speculative business loss: only against speculative income; carried forward 4 years.",
+        "Short-term capital loss: against STCG or LTCG. Long-term capital loss: only against LTCG. Both carried forward 8 years.",
+        "Non-speculative business loss: against any head except salary; carried forward 8 years (only against business income).",
+        "Losses from lottery, card games, races: cannot be set off or carried forward.",
+        "House property loss: inter-head set-off limited; carried forward 8 years."
+      ],
+      "frame": "Meaning → each rule as a headed point with the section and a one-line example → conclusion.",
+      "mistakes": []
+    },
+    {
+      "id": "procedure", "name": "Return Filing, PAN, Assessment & Authorities", "block": 5, "kind": "theory",
+      "summary": "e-filing steps and benefits, consequences of late filing, PAN, best judgement assessment, income tax authorities.",
+      "points": [
+        "e-Filing steps: register/log in on the income tax portal with PAN → choose the correct ITR form (e.g. ITR-1 Sahaj for salary, one house property, other sources up to the limit) → fill or use pre-filled data → compute and pay tax → submit → e-verify (Aadhaar OTP, net banking, DSC) within the time allowed.",
+        "Benefits: loan and visa proof of income, claim refunds, carry forward losses, avoid penalties, quick processing.",
+        "Late filing: late fee u/s 234F, interest u/s 234A, some losses cannot be carried forward, belated return u/s 139(4).",
+        "PAN (Sec 139A): 10-character alphanumeric number; required for filing returns and many financial transactions.",
+        "Best judgement assessment (Sec 144): when the assessee fails to file a return or comply with notices, the AO assesses to the best of judgement.",
+        "Income tax authorities: CBDT, Principal Chief Commissioners/Chief Commissioners, Commissioners (incl. Appeals), Joint/Additional Commissioners, Deputy/Assistant Commissioners, Income Tax Officers, Tax Recovery Officers, Inspectors.",
+        "Marginal relief: surcharge limited so that extra tax does not exceed the extra income above the threshold."
+      ],
+      "frame": "Meaning → steps or provisions as headed points → conclusion.",
+      "mistakes": []
+    },
+    {
+      "id": "business", "name": "Profits & Gains of Business or Profession", "block": 3, "kind": "theory",
+      "summary": "Conditions for chargeability, depreciation, Sec 43B, Sec 37(1) general deduction, inadmissible expenses, presumptive tax u/s 44AD.",
+      "points": [
+        "Conditions: business or profession carried on by the assessee during the PY; income is taxed on accrual (mercantile) or cash basis.",
+        "Depreciation (Sec 32): block-of-assets, WDV method; asset used for less than 180 days in the year of purchase gets half the rate.",
+        "Sec 43B: certain expenses allowed only when actually paid (by the return due date) — taxes and duties, employer's PF/ESI contribution, bonus, commission, interest to banks/financial institutions, leave encashment.",
+        "Sec 37(1) general deduction: expenditure wholly and exclusively for business, not capital, not personal — e.g. advertisement, repairs, staff welfare, legal expenses.",
+        "Not allowed: income tax, personal expenses, penalties for breaking the law, capital expenditure, cash payments above the limit (Sec 40A(3)), interest/salary to partners beyond Sec 40(b) limits.",
+        "Sec 44AD presumptive taxation: eligible small businesses declare profit at 8% of turnover (6% for digital receipts), no books needed."
+      ],
+      "frame": "Section → rules as headed points with examples → conclusion.",
+      "mistakes": []
+    },
+    {
+      "id": "partnership-firms", "name": "Assessment of Firms & Partners", "block": 5, "kind": "theory",
+      "summary": "Partnership deed, conditions u/s 184, working and non-working partners, interest and remuneration to partners.",
+      "points": [
+        "A firm is assessed as a firm (Sec 184) if there is a written partnership deed, a certified copy is filed with the first return, and partners' individual shares are specified.",
+        "Deed contents: names, business, capital, profit-sharing ratio, interest on capital, remuneration to working partners, duration.",
+        "Working partner: actively engaged in the business; non-working (sleeping) partner is not.",
+        "Sec 40(b): interest to partners allowed up to 12% simple p.a.; remuneration only to working partners within prescribed limits based on book profit.",
+        "Partner's share of profit from the firm is exempt (Sec 10(2A)); interest and remuneration are taxed as business income in the partner's hands."
+      ],
+      "frame": "Meaning → conditions/provisions as headed points → conclusion.",
+      "mistakes": []
+    }
+  ],
+  "questions": [
+    { "s": "2022-06", "q": "1(a)", "t": "Casual income; partial integration of agricultural income", "m": 10, "k": "th", "topic": "basics" },
+    { "s": "2022-06", "q": "1(b)", "t": "Compute agricultural income from cultivation", "m": 10, "k": "num", "topic": "basics" },
+    { "s": "2022-06", "q": "2", "t": "Taxable salary of Mr. Radhey Shyam with perquisites", "m": 20, "k": "num", "topic": "salary" },
+    { "s": "2022-06", "q": "3", "t": "Depreciation rules; Sec 43B deductions on payment basis", "m": 20, "k": "th", "topic": "business" },
+    { "s": "2022-06", "q": "4(a)", "t": "Sec 54 exemption on sale of residential house", "m": 10, "k": "th", "topic": "capital-gains" },
+    { "s": "2022-06", "q": "4(b)", "t": "Income from other sources: winnings from races, lottery, TV show", "m": 10, "k": "num", "topic": "other-sources" },
+    { "s": "2022-06", "q": "5", "t": "Clubbing of income and its provisions", "m": 20, "k": "th", "topic": "clubbing-setoff" },
+    { "s": "2022-06", "q": "6", "t": "Taxable income of Shri Apoorva", "m": 20, "k": "num", "topic": "deductions-total" },
+    { "s": "2022-06", "q": "7", "t": "Tax authorities and their functions", "m": 20, "k": "th", "topic": "procedure" },
+    { "s": "2022-06", "q": "8(i)", "t": "Note (any four): residential status of a company", "m": 4, "k": "th", "topic": "residential-status" },
+    { "s": "2022-06", "q": "8(ii)", "t": "Note (any four): house rent allowance", "m": 4, "k": "th", "topic": "salary" },
+    { "s": "2022-06", "q": "8(iii)", "t": "Note (any four): bond washing transactions", "m": 4, "k": "th", "topic": "other-sources" },
+    { "s": "2022-06", "q": "8(iv)", "t": "Note (any four): deduction u/s 80G", "m": 4, "k": "th", "topic": "deductions-total" },
+    { "s": "2022-06", "q": "8(v)", "t": "Note (any four): online filing of return", "m": 4, "k": "th", "topic": "procedure" },
+
+    { "s": "2022-12", "q": "1(a)", "t": "Rules for residential status of an individual", "m": 10, "k": "th", "topic": "residential-status" },
+    { "s": "2022-12", "q": "1(b)", "t": "Taxable HRA in Agra and Delhi", "m": 10, "k": "num", "topic": "salary" },
+    { "s": "2022-12", "q": "2", "t": "Income from house property under Sec 22", "m": 20, "k": "th", "topic": "house-property" },
+    { "s": "2022-12", "q": "3(a)", "t": "Capital gains; long-term vs short-term", "m": 10, "k": "th", "topic": "capital-gains" },
+    { "s": "2022-12", "q": "3(b)", "t": "Total income of Shri Hemendra", "m": 10, "k": "num", "topic": "deductions-total" },
+    { "s": "2022-12", "q": "4", "t": "Partnership firm: features and partnership deed", "m": 20, "k": "th", "topic": "partnership-firms" },
+    { "s": "2022-12", "q": "5", "t": "Income from other sources of M/s Preeti", "m": 20, "k": "num", "topic": "other-sources" },
+    { "s": "2022-12", "q": "6(a)", "t": "Features of a 2018 judgement", "m": 10, "k": "th", "topic": "procedure" },
+    { "s": "2022-12", "q": "6(b)", "t": "Sec 54 exemption on residential property", "m": 10, "k": "th", "topic": "capital-gains" },
+    { "s": "2022-12", "q": "7", "t": "Set-off of business and capital losses", "m": 20, "k": "th", "topic": "clubbing-setoff" },
+    { "s": "2022-12", "q": "8(a)", "t": "Note (any four): pension", "m": 4, "k": "th", "topic": "salary" },
+    { "s": "2022-12", "q": "8(b)", "t": "Note (any four): Capital Gains Account Scheme", "m": 4, "k": "th", "topic": "capital-gains" },
+    { "s": "2022-12", "q": "8(c)", "t": "Note (any four): deduction u/s 80D", "m": 4, "k": "th", "topic": "deductions-total" },
+    { "s": "2022-12", "q": "8(d,e)", "t": "Notes (any four): best judgement assessment; PAN", "m": 8, "k": "th", "topic": "procedure" },
+
+    { "s": "2023-06", "q": "1(a)", "t": "Agricultural vs partly agricultural income", "m": 10, "k": "th", "topic": "basics" },
+    { "s": "2023-06", "q": "1(b)", "t": "Exempt gratuity of Mr. Ashutosh", "m": 10, "k": "num", "topic": "salary" },
+    { "s": "2023-06", "q": "2(a)", "t": "Leave encashment at retirement or death", "m": 10, "k": "th", "topic": "salary" },
+    { "s": "2023-06", "q": "2(b)", "t": "When an HUF and an Indian company are resident", "m": 10, "k": "th", "topic": "residential-status" },
+    { "s": "2023-06", "q": "3(a)", "t": "Gross and taxable salary with HRA (Chennai)", "m": 10, "k": "num", "topic": "salary" },
+    { "s": "2023-06", "q": "3(b)", "t": "Five deductions under business and profession", "m": 10, "k": "th", "topic": "business" },
+    { "s": "2023-06", "q": "4(a)", "t": "Capital gain; short-term vs long-term", "m": 10, "k": "th", "topic": "capital-gains" },
+    { "s": "2023-06", "q": "4(b)", "t": "Benefits of filing returns; e-filing procedure", "m": 10, "k": "th", "topic": "procedure" },
+    { "s": "2023-06", "q": "5", "t": "Clubbing of income; income of a minor child", "m": 20, "k": "th", "topic": "clubbing-setoff" },
+    { "s": "2023-06", "q": "6", "t": "Set-off of short- and long-term capital, lottery and speculative losses", "m": 20, "k": "th", "topic": "clubbing-setoff" },
+    { "s": "2023-06", "q": "7(a)", "t": "Gross total income vs total income", "m": 6, "k": "th", "topic": "basics" },
+    { "s": "2023-06", "q": "7(b)", "t": "Total taxable income of Mrs. Neha with deductions", "m": 14, "k": "num", "topic": "deductions-total" },
+    { "s": "2023-06", "q": "8(a)", "t": "Consequences of delay in filing return", "m": 10, "k": "th", "topic": "procedure" },
+    { "s": "2023-06", "q": "8(b)(i)", "t": "Capital assets", "m": 5, "k": "th", "topic": "capital-gains" },
+    { "s": "2023-06", "q": "8(b)(ii)", "t": "Residential status of a company", "m": 5, "k": "th", "topic": "residential-status" },
+
+    { "s": "2023-12", "q": "1", "t": "Income of PY taxed in AY; GTI vs TI; PY vs AY", "m": 20, "k": "th", "topic": "basics" },
+    { "s": "2023-12", "q": "2", "t": "Casual income; ten exempt incomes u/s 10", "m": 20, "k": "th", "topic": "basics" },
+    { "s": "2023-12", "q": "3(a)", "t": "Exempt gratuity (covered by the Gratuity Act)", "m": 10, "k": "num", "topic": "salary" },
+    { "s": "2023-12", "q": "3(b)", "t": "Value of car perquisite in three cases", "m": 10, "k": "num", "topic": "salary" },
+    { "s": "2023-12", "q": "4(a)", "t": "Recognised provident fund", "m": 10, "k": "th", "topic": "salary" },
+    { "s": "2023-12", "q": "4(b)", "t": "Business losses not deductible", "m": 10, "k": "th", "topic": "business" },
+    { "s": "2023-12", "q": "5(a)", "t": "Capital gain on sale of house with Sec 54 and CGAS", "m": 15, "k": "num", "topic": "capital-gains" },
+    { "s": "2023-12", "q": "5(b)", "t": "Benefits of e-filing", "m": 5, "k": "th", "topic": "procedure" },
+    { "s": "2023-12", "q": "6(a)(i)", "t": "Capital assets and cost of improvement", "m": 5, "k": "th", "topic": "capital-gains" },
+    { "s": "2023-12", "q": "6", "t": "Partnership deed; working vs non-working partner", "m": 15, "k": "th", "topic": "partnership-firms" },
+    { "s": "2023-12", "q": "7", "t": "Total income of Shri Hemendra", "m": 20, "k": "num", "topic": "deductions-total" },
+    { "s": "2023-12", "q": "8(a)", "t": "Note (any four): deduction u/s 80G", "m": 4, "k": "th", "topic": "deductions-total" },
+    { "s": "2023-12", "q": "8(b,c,e)", "t": "Notes (any four): best judgement assessment; PAN; assessee in default", "m": 12, "k": "th", "topic": "procedure" },
+    { "s": "2023-12", "q": "8(d)", "t": "Note (any four): person", "m": 4, "k": "th", "topic": "basics" },
+
+    { "s": "2024-06", "q": "1", "t": "PY income taxed in AY and exceptions; casual income", "m": 20, "k": "th", "topic": "basics" },
+    { "s": "2024-06", "q": "2", "t": "Gratuity provisions; fully taxable and partly exempt allowances", "m": 20, "k": "th", "topic": "salary" },
+    { "s": "2024-06", "q": "3(a)", "t": "Annuity; exempt commuted pension with and without gratuity", "m": 12, "k": "num", "topic": "salary" },
+    { "s": "2024-06", "q": "3(b)", "t": "Entertainment allowance u/s 16(ii)", "m": 8, "k": "th", "topic": "salary" },
+    { "s": "2024-06", "q": "4", "t": "Taxable salary of Mr. Radheyshyam with perquisites", "m": 20, "k": "num", "topic": "salary" },
+    { "s": "2024-06", "q": "5", "t": "Annual value of a part-let, part-self-used house", "m": 20, "k": "num", "topic": "house-property" },
+    { "s": "2024-06", "q": "6(a)", "t": "Allowed and disallowed expenses under Sec 37(1)", "m": 5, "k": "th", "topic": "business" },
+    { "s": "2024-06", "q": "6(b)", "t": "STCG vs LTCG; Capital Gains Account Scheme", "m": 15, "k": "th", "topic": "capital-gains" },
+    { "s": "2024-06", "q": "7", "t": "Total income of Mr. K", "m": 20, "k": "num", "topic": "deductions-total" },
+    { "s": "2024-06", "q": "8(a,f)", "t": "Notes (any four): PY and AY; agricultural income", "m": 6.67, "k": "th", "topic": "basics" },
+    { "s": "2024-06", "q": "8(b,d)", "t": "Notes (any four): public provident fund; deduction u/s 80D", "m": 6.67, "k": "th", "topic": "deductions-total" },
+    { "s": "2024-06", "q": "8(c)", "t": "Note (any four): bond washing transactions", "m": 3.33, "k": "th", "topic": "other-sources" },
+    { "s": "2024-06", "q": "8(e)", "t": "Note (any four): income tax authorities", "m": 3.33, "k": "th", "topic": "procedure" },
+
+    { "s": "2024-12", "q": "1(a)", "t": "Agricultural vs partly agricultural income", "m": 8, "k": "th", "topic": "basics" },
+    { "s": "2024-12", "q": "1(b)", "t": "Tax provisions for resident, RNOR and non-resident", "m": 12, "k": "th", "topic": "residential-status" },
+    { "s": "2024-12", "q": "2", "t": "Leave encashment on retirement; retrenchment compensation", "m": 20, "k": "th", "topic": "salary" },
+    { "s": "2024-12", "q": "3", "t": "Gross and taxable salary (RBI manager); HRA provisions", "m": 20, "k": "num", "topic": "salary" },
+    { "s": "2024-12", "q": "4", "t": "Capital gain on agricultural land (Sec 54B, CGAS)", "m": 20, "k": "num", "topic": "capital-gains" },
+    { "s": "2024-12", "q": "5", "t": "Clubbing of income", "m": 20, "k": "th", "topic": "clubbing-setoff" },
+    { "s": "2024-12", "q": "6", "t": "Taxable salary of Smt. Suman Garg", "m": 20, "k": "num", "topic": "salary" },
+    { "s": "2024-12", "q": "7", "t": "Five steps of e-filing; benefits of filing returns", "m": 20, "k": "th", "topic": "procedure" },
+    { "s": "2024-12", "q": "8(a)", "t": "Note (any four): annual value of house property", "m": 3.33, "k": "th", "topic": "house-property" },
+    { "s": "2024-12", "q": "8(b)", "t": "Note (any four): allowances", "m": 3.33, "k": "th", "topic": "salary" },
+    { "s": "2024-12", "q": "8(c)", "t": "Note (any four): capital gains exempt from tax", "m": 3.34, "k": "th", "topic": "capital-gains" },
+    { "s": "2024-12", "q": "8(d)", "t": "Note (any four): dividend", "m": 3.33, "k": "th", "topic": "other-sources" },
+    { "s": "2024-12", "q": "8(e,f)", "t": "Notes (any four): Sec 184 assessment of firms; features of a firm", "m": 6.67, "k": "th", "topic": "partnership-firms" },
+
+    { "s": "2025-06", "q": "1(a)", "t": "Categories of residence and their taxation", "m": 10, "k": "th", "topic": "residential-status" },
+    { "s": "2025-06", "q": "1(b)", "t": "PY income taxed in AY and its exceptions", "m": 10, "k": "th", "topic": "basics" },
+    { "s": "2025-06", "q": "2(a)", "t": "Provisions on house rent allowance", "m": 10, "k": "th", "topic": "salary" },
+    { "s": "2025-06", "q": "2(b)", "t": "Annual value and deductions from it", "m": 10, "k": "th", "topic": "house-property" },
+    { "s": "2025-06", "q": "3(a)", "t": "Clubbing of income", "m": 10, "k": "th", "topic": "clubbing-setoff" },
+    { "s": "2025-06", "q": "3(b)", "t": "Exempt gratuity (not covered by the Gratuity Act)", "m": 10, "k": "num", "topic": "salary" },
+    { "s": "2025-06", "q": "4", "t": "Taxable income of Shri Apoorva", "m": 20, "k": "num", "topic": "deductions-total" },
+    { "s": "2025-06", "q": "5", "t": "Annual value of a house used partly for profession", "m": 20, "k": "num", "topic": "house-property" },
+    { "s": "2025-06", "q": "6(a)", "t": "Conditions for income under business or profession", "m": 10, "k": "th", "topic": "business" },
+    { "s": "2025-06", "q": "6(b)", "t": "Exemption u/s 54F", "m": 10, "k": "th", "topic": "capital-gains" },
+    { "s": "2025-06", "q": "7", "t": "Income from other sources of Mr. Shankar Lal", "m": 20, "k": "num", "topic": "other-sources" },
+    { "s": "2025-06", "q": "8(a)", "t": "Note (any four): deduction u/s 80G", "m": 3.33, "k": "th", "topic": "deductions-total" },
+    { "s": "2025-06", "q": "8(b)", "t": "Note (any four): agricultural and partly agricultural income", "m": 3.33, "k": "th", "topic": "basics" },
+    { "s": "2025-06", "q": "8(c)", "t": "Note (any four): bond washing transactions", "m": 3.34, "k": "th", "topic": "other-sources" },
+    { "s": "2025-06", "q": "8(d)", "t": "Note (any four): transfer of capital asset", "m": 3.33, "k": "th", "topic": "capital-gains" },
+    { "s": "2025-06", "q": "8(e)", "t": "Note (any four): ITR-1 form", "m": 3.33, "k": "th", "topic": "procedure" },
+    { "s": "2025-06", "q": "8(f)", "t": "Note (any four): rent-free accommodation", "m": 3.34, "k": "th", "topic": "salary" },
+
+    { "s": "2025-12", "q": "1(a)", "t": "Casual income and its treatment", "m": 10, "k": "th", "topic": "basics" },
+    { "s": "2025-12", "q": "1(b)", "t": "Tax provisions for ordinary resident and RNOR", "m": 10, "k": "th", "topic": "residential-status" },
+    { "s": "2025-12", "q": "2", "t": "Commutation of pension; recognised provident fund", "m": 20, "k": "th", "topic": "salary" },
+    { "s": "2025-12", "q": "3(a)(i)", "t": "Meaning of capital gains", "m": 3, "k": "th", "topic": "capital-gains" },
+    { "s": "2025-12", "q": "3(a)(ii)", "t": "Residential status of a foreign citizen staying in India", "m": 7, "k": "num", "topic": "residential-status" },
+    { "s": "2025-12", "q": "3(b)", "t": "Income deemed to accrue or arise in India", "m": 10, "k": "th", "topic": "residential-status" },
+    { "s": "2025-12", "q": "4", "t": "Taxable income of Prof. Vijeta Aggarwal", "m": 20, "k": "num", "topic": "deductions-total" },
+    { "s": "2025-12", "q": "5", "t": "House property income where tenant pays municipal tax", "m": 20, "k": "num", "topic": "house-property" },
+    { "s": "2025-12", "q": "6", "t": "Dividend: meaning, types and taxation", "m": 20, "k": "th", "topic": "other-sources" },
+    { "s": "2025-12", "q": "7", "t": "Taxable salary of Mr. Rahul with perquisites", "m": 20, "k": "num", "topic": "salary" },
+    { "s": "2025-12", "q": "8(a,e)", "t": "Notes (any four): marginal relief; e-filing", "m": 6.67, "k": "th", "topic": "procedure" },
+    { "s": "2025-12", "q": "8(b)", "t": "Note (any four): deduction u/s 80D", "m": 3.33, "k": "th", "topic": "deductions-total" },
+    { "s": "2025-12", "q": "8(c)", "t": "Note (any four): clubbing of income", "m": 3.33, "k": "th", "topic": "clubbing-setoff" },
+    { "s": "2025-12", "q": "8(d)", "t": "Note (any four): gratuity", "m": 3.34, "k": "th", "topic": "salary" },
+    { "s": "2025-12", "q": "8(f)", "t": "Note (any four): previous year and assessment year", "m": 3.33, "k": "th", "topic": "basics" },
+
+    { "s": "2026-06", "q": "1(a)", "t": "Tax provisions for resident, RNOR and non-resident", "m": 12, "k": "th", "topic": "residential-status" },
+    { "s": "2026-06", "q": "1(b)", "t": "Partial integration of agricultural income", "m": 8, "k": "th", "topic": "basics" },
+    { "s": "2026-06", "q": "2(a)", "t": "Annual value of let-out and self-occupied houses", "m": 12, "k": "th", "topic": "house-property" },
+    { "s": "2026-06", "q": "2(b)", "t": "Presumptive business income u/s 44AD", "m": 8, "k": "th", "topic": "business" },
+    { "s": "2026-06", "q": "3(a)", "t": "Capital asset", "m": 6, "k": "th", "topic": "capital-gains" },
+    { "s": "2026-06", "q": "3(b)", "t": "Exempt commuted pension with and without gratuity", "m": 14, "k": "num", "topic": "salary" },
+    { "s": "2026-06", "q": "4(a)", "t": "Taxable income of Shri Apoorva", "m": 15, "k": "num", "topic": "deductions-total" },
+    { "s": "2026-06", "q": "4(b)", "t": "Meaning of perquisites", "m": 5, "k": "th", "topic": "salary" },
+    { "s": "2026-06", "q": "5(a)", "t": "Interest on borrowed capital for house property", "m": 12, "k": "th", "topic": "house-property" },
+    { "s": "2026-06", "q": "5(b)", "t": "Sec 54 exemption on sale of residential house", "m": 8, "k": "th", "topic": "capital-gains" },
+    { "s": "2026-06", "q": "6", "t": "Set-off and carry forward of losses; clubbing of a minor's income", "m": 20, "k": "th", "topic": "clubbing-setoff" },
+    { "s": "2026-06", "q": "7", "t": "Taxable salary of Smt. Suman Garg", "m": 20, "k": "num", "topic": "salary" },
+    { "s": "2026-06", "q": "8(a)", "t": "Note (any four): deduction u/s 80G", "m": 3.33, "k": "th", "topic": "deductions-total" },
+    { "s": "2026-06", "q": "8(b)", "t": "Note (any four): bond washing transactions", "m": 3.33, "k": "th", "topic": "other-sources" },
+    { "s": "2026-06", "q": "8(c)", "t": "Note (any four): advance against salary", "m": 3.34, "k": "th", "topic": "salary" },
+    { "s": "2026-06", "q": "8(d,e)", "t": "Notes (any four): capital and revenue incomes; casual income", "m": 6.67, "k": "th", "topic": "basics" },
+    { "s": "2026-06", "q": "8(f)", "t": "Note (any four): tax authorities", "m": 3.33, "k": "th", "topic": "procedure" }
+  ]
+}
