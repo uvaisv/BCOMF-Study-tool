@@ -9,7 +9,7 @@
     "each": 20,
     "summary": "8 questions, attempt any 5, each carries 20 marks. All theory; Q8 is always 'short notes on any two of four'. Examiners ask for examples in almost every question."
   },
-  "blocksOfficial": false,
+  "blocksOfficial": true,
   "sessions": ["2022-06", "2022-12", "2023-06", "2023-12", "2024-06", "2024-12", "2025-06", "2025-12", "2026-06"],
   "sessionNotes": {},
   "examTips": {
@@ -20,30 +20,32 @@
     ]
   },
   "blocks": [
-    { "no": 1, "title": "Personal Selling & Salesmanship" },
-    { "no": 2, "title": "Buyer Behaviour & Motives" },
-    { "no": 3, "title": "The Selling Process" },
-    { "no": 4, "title": "Sales Management & Motivation" },
-    { "no": 5, "title": "Reports & Ethics" }
+    { "no": 1, "title": "Personal Selling and Sales Management" },
+    { "no": 2, "title": "Buying Motives and Sales Force Motivation" },
+    { "no": 3, "title": "Selling Process" },
+    { "no": 4, "title": "Sales Report, Ethics and Career Opportunities" }
   ],
   "topics": [
     {
       "id": "reports",
       "name": "Sales Reports, Documents & Sales Manual",
-      "block": 5,
+      "block": 4,
       "kind": "theory",
       "summary": "Sales reports (objectives, features, types), documents salespeople prepare, sales manual, order book.",
       "points": [
-        "Sales report: a written account of a salesperson's activities and results for a period.",
-        "Objectives: record performance, give market feedback (competitors, prices, complaints), help planning and control, basis for evaluation and pay.",
-        "Features of a good report: accurate, timely, brief and clear, complete, standard format, factual, action-oriented.",
-        "Types: daily call report, weekly/monthly work report, expense report, new-customer report, lost-sale report, complaint report, market/competitor report.",
-        "Documents: sales manual, order book/order form, route plan, price list, product catalogue, quotation, invoice, customer records.",
-        "Sales manual: a handbook of company policies, product details, selling methods and procedures. Contents: company history and policies, product information, prices and terms, selling techniques, handling objections, reporting procedures. Benefits: uniform approach, training aid, confidence, saves supervisors' time.",
-        "Order book: records orders taken with customer details, quantity, price and delivery terms."
+        "Sales reports record what salespeople do and achieve, and help managers plan, control and evaluate.",
+        "Types of documents: progress or call report (each call, orders, competing brands), sales work plan report (accounts, routes, travel ahead), expense report (for reimbursement), new business report, lost sales report, and complaints and adjustments report.",
+        "Features of a good report: accurate, timely, brief and clear, complete, in a standard format and factual.",
+        "Sales manual: a guide to the company's best policies, practices, procedures and standards for salespeople; a key training resource that must be kept up to date.",
+        "Order book: records orders taken — customer, items, quantity, price and delivery terms.",
+        "Cash memo: given by the seller when goods are sold for cash — date, serial number, names and addresses, description, rate, discount, tax, total in words and figures, signature. It differs from a money receipt, which only acknowledges cash received.",
+        "Tour diary: a small book of the sales visits made during a period — dates, places, purpose and results."
       ],
       "frame": "Meaning → objectives or contents as headed points → a sample format (columns of a call report) → benefits → conclusion.",
-      "mistakes": []
+      "mistakes": [],
+      "units": [
+        { "block": 4, "unit": 11, "title": "Report and Documents in Sales" }
+      ]
     },
     {
       "id": "presentation",
@@ -52,33 +54,43 @@
       "kind": "theory",
       "summary": "Presentation and demonstration steps and strategies, and handling objections.",
       "points": [
-        "Presentation: telling the prospect how the product meets their needs; demonstration: showing it in action.",
-        "Steps: prepare (know the prospect and product) → approach and gain attention → identify needs → present benefits (features → advantages → benefits) → demonstrate → handle objections → move to close.",
-        "Strategies/methods: stimulus–response (canned), formula (AIDA — attention, interest, desire, action), need-satisfaction, problem-solution, consultative.",
-        "Good demonstration: let the prospect handle the product, show the key benefit, keep it short, use testimonials.",
-        "Objections: price, product, company, timing ('I'll think about it'), need.",
-        "Handling techniques: listen fully, 'yes… but', direct denial (for wrong facts), boomerang (turn the objection into a reason to buy), compensation (admit and offset), question method, third-party proof, postpone."
+        "A sales presentation is a talk giving information about a product to persuade people to buy; a demonstration shows the product working.",
+        "Steps: attract attention → create interest → arouse desire → build conviction → get action.",
+        "Types of presentation: canned (memorised), organised and tailored (fitted to the customer).",
+        "Strategies: stimulus–response, AIDA, need identification and satisfaction, consultative selling, professional selling and depth selling.",
+        "Types of prospects: sceptical, procrastinator, silent, opinionated, talkative, timid and cautious, methodical, impulsive and 'chip on the shoulder' — each needs a different handling.",
+        "Methods of handling objections: 'yes, but' (indirect denial), counterbalance (offset a valid objection with an advantage), denial (firmly deny a wrong one), question method, failure-to-hear (deliberately ignore) and boomerang (turn the objection into a reason to buy).",
+        "Rules: never argue, pause before answering, don't over-answer, find out if you don't know, stay confident."
       ],
       "frame": "Meaning → steps or strategies as headed points, each with one product example → conclusion.",
       "mistakes": [
         "Arguing with the prospect is itself a listed mistake — mention 'never argue' when writing on objections."
+      ],
+      "units": [
+        { "block": 3, "unit": 9, "title": "Sales Presentation and Demonstration" },
+        { "block": 3, "unit": 8, "title": "Sales Process", "part": "Handling objections" }
       ]
     },
     {
       "id": "motivation",
       "name": "Motivating & Paying Salespeople",
-      "block": 4,
+      "block": 2,
       "kind": "theory",
       "summary": "Role of motivation, Maslow's theory for salespeople, financial and non-financial techniques, compensation plans.",
       "points": [
-        "Salespeople work alone, face rejection and irregular results — so motivation matters more than in most jobs.",
-        "Maslow applied to salespeople: physiological (fair salary), safety (job security, insurance), social (team meetings, belonging), esteem (recognition, awards, titles), self-actualisation (challenging targets, promotion).",
-        "Financial techniques: salary, commission, bonus, incentives, contests with cash prizes, profit sharing, fringe benefits.",
-        "Non-financial: recognition, praise, job enrichment, training, promotion, participation in goal setting, sales meetings, conventions.",
-        "Compensation plans: straight salary (security, less push), straight commission (strong push, insecure), combination (salary + commission/bonus — most common), plus expense allowances."
+        "Motivation creates an urge in a person to reach a goal; a salesperson's motivation directly affects performance and targets.",
+        "Salespeople work alone, face rejection and irregular results, so they need more motivation than most staff.",
+        "Motivation is dynamic — needs change, and a satisfied need no longer motivates.",
+        "Maslow applied to salespeople: physiological (fair pay), safety (job security, insurance), social (team belonging), esteem (recognition, awards) and self-actualisation (challenging targets, growth).",
+        "Monetary rewards: salary, commission, bonus, incentives, contests, profit sharing, fringe benefits. Non-monetary: recognition, praise, promotion, training, participation in setting targets, sales meetings.",
+        "Compensation plans: straight salary (security, less push), straight commission (strong push, insecure) and combination plans (salary plus commission or bonus — most common). The right plan depends on the firm's nature and size and the length of the sales cycle."
       ],
       "frame": "Meaning → Maslow pyramid adapted to salespeople → financial vs non-financial table → conclusion.",
-      "mistakes": []
+      "mistakes": [],
+      "units": [
+        { "block": 2, "unit": 7, "title": "Sales Force Motivation" },
+        { "block": 1, "unit": 4, "title": "Sales Force Management", "part": "4.7–4.8" }
+      ]
     },
     {
       "id": "buying-motives",
@@ -87,13 +99,19 @@
       "kind": "theory",
       "summary": "Meaning, types and application of buying motives in personal selling.",
       "points": [
-        "Buying motive: the reason or urge that makes a customer buy.",
-        "Types: product motives (why this product) vs patronage motives (why from this seller); emotional (pride, fear, love, imitation, comfort) vs rational (economy, durability, safety, utility).",
-        "Primary (buy the product class) vs selective (buy a particular brand).",
-        "Application: identify the dominant motive early, stress the benefit that matches it, use it in the presentation and in handling objections and closing."
+        "A buying motive is the urge or reason that leads a customer to buy.",
+        "Two main types: product motives (why this product — size, colour, package, quality, design) and patronage motives (why from this seller).",
+        "Each is either rational (decided logically) or emotional (driven by feelings).",
+        "Rational product motives: safety or security, economy (low running cost), price, suitability, versatility, durability, convenience or comfort.",
+        "Emotional product motives: prestige or pride, emulation (copying others), affection, individuality, pleasure or recreation, habit.",
+        "Patronage motives: convenience, lower prices, credit facilities, wider choice, the shop's reputation and appearance, recommendations, emulation, prestige and habit.",
+        "Use in selling: find the prospect's dominant motive early, stress the benefit that matches it, and use it when handling objections and closing."
       ],
       "frame": "Meaning → types in a chart with an example each → how a salesperson uses them → conclusion.",
-      "mistakes": []
+      "mistakes": [],
+      "units": [
+        { "block": 2, "unit": 5, "title": "Buying Motives" }
+      ]
     },
     {
       "id": "buyer-behaviour",
@@ -102,12 +120,16 @@
       "kind": "theory",
       "summary": "Buyer vs consumer, factors affecting buyer behaviour, why understanding it matters.",
       "points": [
-        "Buyer: the person who purchases; consumer: the person who uses (a parent buys toys, the child uses them).",
-        "Factors: cultural (culture, sub-culture, social class), social (family, reference groups, roles), personal (age, occupation, income, lifestyle, personality), psychological (motivation, perception, learning, beliefs and attitudes).",
-        "Why it matters for a salesperson: identify needs, choose the right approach, predict objections, build long-term relationships, increase sales."
+        "Buyer behaviour: how people decide what, when, where and how to buy.",
+        "Buyer vs consumer: the buyer purchases; the consumer uses (a parent buys toys, the child uses them) — they may be the same person or different people.",
+        "Factors: cultural (culture, sub-culture, social class), social (family, reference groups, roles and status), personal (age, occupation, income, lifestyle, personality) and psychological (motivation, perception, learning, beliefs and attitudes).",
+        "Why a salesperson must know it: to spot needs, choose the right approach, expect objections, build lasting relationships and sell more."
       ],
       "frame": "Meaning → four factor groups as headings with examples → importance → conclusion.",
-      "mistakes": []
+      "mistakes": [],
+      "units": [
+        { "block": 2, "unit": 6, "title": "Buyer Behaviour" }
+      ]
     },
     {
       "id": "sales-process",
@@ -116,14 +138,19 @@
       "kind": "theory",
       "summary": "Steps of the personal selling process; prospecting vs qualifying; types of prospects.",
       "points": [
-        "Selling process: prospecting and qualifying → pre-approach → approach → presentation and demonstration → handling objections → closing → follow-up.",
-        "Prospecting: finding potential customers. Qualifying: checking they have need, ability to pay (money), authority to buy and are approachable (MAN — money, authority, need).",
-        "Prospecting methods: endless chain (referrals), centres of influence, cold calling, direct mail and e-mail, trade shows, internet and social media, company records, observation.",
-        "Prospect categories: hot (ready to buy), warm (interested), cold (unaware) — strategy for each: close quickly, nurture, educate.",
-        "The most crucial step is often identifying needs/pre-approach — a well-researched approach makes the rest easier (any step can be argued with reasons)."
+        "A sales process is the set of steps a salesperson follows to turn a prospect into a customer; it varies by industry (cars vs insurance).",
+        "Seven steps: prospecting and qualifying → pre-approach → approach → presentation or demonstration → handling objections → closing → follow-up.",
+        "Qualifying: a prospect must have the need, the authority, the ability (money) and the eligibility to buy.",
+        "Prospecting methods: centre of influence, spotters, advertising, endless chain (referrals), observation, cold canvassing, company records and retailers.",
+        "Pre-approach: learn the prospect's needs, behaviour, likes, preferences and status; it saves time by focusing on real prospects, not mere suspects.",
+        "Approach methods: introductory, customer-benefit, compliment, reference, interactive, dramatic and sample approach.",
+        "Objections are a sign of interest — a request for more information, time or assurance."
       ],
       "frame": "Meaning → flow chart of steps → one line and one example per step → conclusion.",
-      "mistakes": []
+      "mistakes": [],
+      "units": [
+        { "block": 3, "unit": 8, "title": "Sales Process" }
+      ]
     },
     {
       "id": "salesmanship",
@@ -132,36 +159,43 @@
       "kind": "theory",
       "summary": "Types of salesmanship, creative selling, role, qualities, duties and skills of a (modern) salesperson; careers.",
       "points": [
-        "Salesmanship: the art of persuading people to buy goods or services that satisfy their needs.",
-        "Types: creative (creating new demand), competitive (winning customers from rivals), service (after-sales support); also industrial, retail, wholesale.",
-        "Creative salesmanship process: identify prospects → understand needs → create desire → convince → close → follow-up.",
-        "Role of a modern salesperson: problem solver and consultant, relationship builder, source of market information, brand ambassador.",
-        "Qualities: physical (appearance, health), mental (alertness, memory, imagination), social (courtesy, tact), character (honesty, loyalty), vocational (product and customer knowledge).",
-        "Skills: communication, interpersonal, listening, negotiation, organisational (time and territory management), technology use.",
-        "Duties: meet targets, call on customers, collect orders and payments, report, handle complaints.",
-        "Careers: sales executive, key account manager, territory/area manager, retail, B2B, e-commerce sales."
+        "Salesmanship is the art of persuading people to buy goods or services that satisfy their needs.",
+        "Types in the book: wholesaler's salesman; manufacturer's salesman (missionary, technical, merchandising, sales promotion); retailer's salesman (indoor and outdoor); specialty salesman (costly durables like cars, furniture, appliances).",
+        "Creative salesmanship creates demand for old and new products by arousing wants the buyer did not feel; the creative selling process runs from finding prospects and their needs to closing and follow-up.",
+        "Role of a salesperson: link between firm and customer, creates new customers, sells more to existing ones, solves problems, gives service and gathers market information.",
+        "Qualities: physical (health, appearance), mental (alertness, memory, imagination), social (courtesy, tact), character (honesty, loyalty) and knowledge of product, company and customer.",
+        "Why choose a sales career: earning potential, flexibility, job security, satisfaction, a stepping stone to management and in-demand skills. Big sales industries: IT, real estate, pharma, healthcare, food and financial services.",
+        "Changing role: with digital marketing and e-commerce the salesperson is becoming a trusted adviser and consultant, travelling less and using online audio and video calls more."
       ],
       "frame": "Definition → qualities or duties grouped under headings, with examples → conclusion.",
-      "mistakes": []
+      "mistakes": [],
+      "units": [
+        { "block": 1, "unit": 2, "title": "Salesmanship" },
+        { "block": 4, "unit": 14, "title": "Career Opportunities in Personal Selling" }
+      ]
     },
     {
       "id": "sales-mgmt",
       "name": "Sales Management & Salesforce",
-      "block": 4,
+      "block": 1,
       "kind": "theory",
       "summary": "Meaning, importance and scope of sales management; salesforce management process; recruitment, selection, training.",
       "points": [
-        "Sales management: planning, organising, directing and controlling the sales force to achieve sales objectives.",
-        "Importance: achieves revenue, links company and customer, market feedback, efficient use of salespeople.",
-        "Scope: sales planning and forecasting, territory and quota setting, organising the sales department, recruitment and selection, training, compensation, motivation, supervision and control, evaluation.",
-        "Salesforce management process: planning → recruitment → selection → training → compensation → motivation → supervision → evaluation.",
-        "Recruitment sources: internal (promotion, transfer, referrals) and external (advertisements, campus, agencies, online portals).",
-        "Selection: application → screening → tests → interviews → reference check → medical → offer and induction.",
-        "Training methods: classroom, on-the-job, role-play, case studies, e-learning, field training with a senior.",
-        "Trends: CRM software, data analytics, digital and social selling, remote selling."
+        "Sales is the only marketing function that brings revenue; salespeople are the link between the firm and its customers.",
+        "Sales management today means developing the sales staff, managing sales operations and using sales techniques so that targets are met.",
+        "Scope: sales forecasting and budgeting, sales team structure, manpower planning and hiring, training, sales territories and sales force management.",
+        "Sales management process: planning, organising, staffing, training, leading and controlling the sales force.",
+        "Trends: global markets, new technology, a diverse workforce, omni-channel management and e-selling.",
+        "Sales force management: recruitment planning → recruitment (sourcing candidates, internal and external, ends when applications are received) → selection (choosing the best from the applicants) → training → compensation → motivation → evaluation.",
+        "Training costs a lot but pays back — customers judge the firm by how well the salesperson demonstrates, handles objections and shows confidence.",
+        "Evaluation compares actual performance with objectives to find gaps and act in time; it also motivates by giving feedback."
       ],
       "frame": "Definition → process as a flow chart → one line per step → conclusion.",
-      "mistakes": []
+      "mistakes": [],
+      "units": [
+        { "block": 1, "unit": 3, "title": "Sales Management" },
+        { "block": 1, "unit": 4, "title": "Sales Force Management" }
+      ]
     },
     {
       "id": "personal-selling",
@@ -170,15 +204,21 @@
       "kind": "theory",
       "summary": "Meaning, nature, characteristics and objectives of personal selling; selling situations; selling vs marketing.",
       "points": [
-        "Personal selling: face-to-face, two-way communication to persuade a prospect to buy.",
-        "Characteristics: personal contact, two-way, flexible, relationship-building, immediate feedback, costly per contact.",
-        "Objectives: build sales, win new customers, keep existing ones, provide information and service, gather market feedback.",
-        "When to use: high-value or technical products, few large buyers, products needing demonstration, B2B.",
-        "Selling situations: retail (counter) selling, door-to-door, industrial/B2B, missionary selling (e.g. medical representatives), trade selling, telemarketing, service selling.",
-        "Selling vs marketing: selling focuses on the seller's need to convert products into cash; marketing on satisfying customer needs."
+        "Personal selling is the part of the promotion mix where a salesperson deals with the customer personally — face to face or online — in direct two-way communication, using words and body language. It is a 'push' strategy.",
+        "Characteristics: flexible (presentation fits the customer), engaging, builds relationships, quick response and feedback.",
+        "Use it for B2B selling, high-priced or technical products, new products that need explaining, a few large customers, serving middlemen, or when the advertising budget is small.",
+        "Advantages: two-way and flexible, sharp focus on target customers, personal attention, instant feedback, measurable results, extra non-selling tasks. Disadvantages: high cost, high staff turnover, message not standardised, salespeople differ in ability and motivation.",
+        "Qualitative objectives: find prospects, stimulate demand, serve and keep customers, collect market information, support middlemen, build brand image and goodwill. Quantitative (short-term): sales volume, product mix, expense limits, market share, number of new customers.",
+        "Selling functions: delivery salesperson, inside and outside order-takers, missionary salespeople, support staff (technical, merchandisers, customer service) and creative salespeople (order-getters).",
+        "Process: prospecting → preparation → approach → presentation → handling objections → closing → follow-up.",
+        "Selling vs marketing: selling is part of marketing — exchanging goods for a price; marketing starts with finding customer needs and ends with customer satisfaction and feedback."
       ],
       "frame": "Definition → characteristics as headed points → situations table with examples → conclusion.",
-      "mistakes": []
+      "mistakes": [],
+      "units": [
+        { "block": 1, "unit": 1, "title": "Introduction to Personal Selling" },
+        { "block": 1, "unit": 3, "title": "Sales Management", "part": "3.7 Selling vs marketing" }
+      ]
     },
     {
       "id": "closing",
@@ -187,32 +227,37 @@
       "kind": "theory",
       "summary": "Closing techniques, trial close and closing cues.",
       "points": [
-        "Closing: getting the prospect's commitment to buy.",
-        "Closing cues (buying signals): questions about price, delivery, guarantee; handling the product closely; nodding; asking others' opinion.",
-        "Trial close: a question to test readiness ('Which colour would you prefer?').",
-        "Techniques: assumptive close, alternative-choice close, summary close, special-offer (urgency) close, standing-room-only close, minor-point close, trial order, direct request, balance-sheet (pros and cons) close.",
-        "After closing: thank the customer, confirm the order, follow up to build repeat business."
+        "Closing is the outcome of the whole selling process — getting the order after objections are answered. The salesperson must know both how and when to close.",
+        "Closing cues: buying signals such as questions on price, delivery or guarantee, handling the product closely, or nodding.",
+        "Trial close: a question used after the presentation to check if the prospect likes the product, whether objections are cleared and whether they are ready; if an indirect trial close fails, try a direct close.",
+        "Closing techniques in the book: choice, minor-point, assumptive, stimulus–response, summary, special-deal and turnover close.",
+        "Closing is not the end: follow-up calls calm the buyer's anxiety and start a long-term relationship (relationship marketing)."
       ],
       "frame": "Meaning → techniques as headed points each with a one-line example dialogue → conclusion.",
-      "mistakes": []
+      "mistakes": [],
+      "units": [
+        { "block": 3, "unit": 10, "title": "Concluding" }
+      ]
     },
     {
       "id": "ethics",
       "name": "Ethics in Selling",
-      "block": 5,
+      "block": 4,
       "kind": "theory",
       "summary": "Ethical and legal issues in selling, importance of ethics, sales code of conduct.",
       "points": [
-        "Ethics: moral principles of right and wrong in selling.",
-        "Ethical issues with customers: misrepresentation, high-pressure selling, bribes and gifts, favouritism, confidentiality.",
-        "With the employer: fudging expense accounts, misuse of company assets, moonlighting, misreporting calls.",
-        "With competitors: false statements about rivals, tampering with their products or displays.",
-        "Legal issues: Consumer Protection Act (unfair trade practices), Sale of Goods Act, contract law, misleading advertisements.",
-        "Importance: trust, long-term relationships, company reputation, avoiding legal action.",
-        "Code of conduct: honesty, transparency on price and terms, respect for customers' time and privacy, fair competition."
+        "Ethics means values and principles of right and wrong; legal issues are those set by government law. Some unethical selling is also illegal.",
+        "Common issues: misrepresenting or hiding facts, price discrimination, bribes, tie-in sales, false promises or exaggeration (puffery) and invasion of privacy.",
+        "Bribes are covered by the Contract Act, 1872 and the Sale of Goods Act, 1930.",
+        "Pressure to meet targets is the main reason salespeople take shortcuts.",
+        "Compliance techniques: hire the right salespeople, set a code of conduct for ethical selling, train people in ethical selling, and avoid exaggerated or unverified claims.",
+        "Why it matters: customer trust, long-term relationships, company reputation and avoiding legal trouble."
       ],
       "frame": "Meaning → issues grouped by stakeholder with examples → legal angle → conclusion.",
-      "mistakes": []
+      "mistakes": [],
+      "units": [
+        { "block": 4, "unit": 12, "title": "Ethics in Selling" }
+      ]
     }
   ],
   "questions": [
@@ -330,5 +375,6 @@
     { "s": "2026-06", "q": "8(b)", "t": "Note (any two): types of buying motives", "m": 5, "k": "th", "topic": "buying-motives" },
     { "s": "2026-06", "q": "8(c)", "t": "Note (any two): prospecting and qualifying", "m": 5, "k": "th", "topic": "sales-process" },
     { "s": "2026-06", "q": "8(d)", "t": "Note (any two): salesmanship vs marketing", "m": 5, "k": "th", "topic": "personal-selling" }
-  ]
+  ],
+  "notesSource": "Notes written from the IGNOU BCOS-186 study material."
 }
