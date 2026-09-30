@@ -42,7 +42,10 @@
   ],
   "topics": [
     {
-      "id": "production", "name": "Production: Stages, Isoquants & Returns to Scale", "block": 3, "kind": "theory",
+      "id": "production",
+      "name": "Production: Stages, Isoquants & Returns to Scale",
+      "block": 3,
+      "kind": "theory",
       "summary": "Law of variable proportions (three stages), isoquants and ridge lines, least-cost combination, expansion path, returns to scale, economies of scale.",
       "points": [
         "Law of variable proportions (short run, one input variable): Stage I — AP rises (increasing returns); Stage II — AP and MP fall, MP > 0 (rational stage); Stage III — MP negative. A rational producer operates in Stage II.",
@@ -58,7 +61,10 @@
       "mistakes": ["Confusing returns to a factor (short run) with returns to scale (long run).", "Drawing isoquants that cross."]
     },
     {
-      "id": "price-effect", "name": "Income, Substitution & Price Effects", "block": 2, "kind": "theory",
+      "id": "price-effect",
+      "name": "Income, Substitution & Price Effects",
+      "block": 2,
+      "kind": "theory",
       "summary": "Splitting the price effect (Hicks and Slutsky), inferior and Giffen goods, deriving demand curves.",
       "points": [
         "Price effect = substitution effect + income effect.",
@@ -72,7 +78,10 @@
       "mistakes": ["Drawing the compensated budget line not parallel to the new one."]
     },
     {
-      "id": "demand-supply", "name": "Demand, Supply, Equilibrium & Tax Incidence", "block": 1, "kind": "mixed",
+      "id": "demand-supply",
+      "name": "Demand, Supply, Equilibrium & Tax Incidence",
+      "block": 1,
+      "kind": "mixed",
       "summary": "Equilibrium from equations, shifts, price ceilings and floors, consumer/producer surplus, tax burden and deadweight loss.",
       "points": [
         "Demand Q = a − bP slopes down; supply Q = c + dP slopes up.",
@@ -91,7 +100,10 @@
       "mistakes": ["Forgetting to draw the diagram with the equilibrium marked."]
     },
     {
-      "id": "monopolistic-oligopoly", "name": "Monopolistic Competition & Oligopoly", "block": 4, "kind": "theory",
+      "id": "monopolistic-oligopoly",
+      "name": "Monopolistic Competition & Oligopoly",
+      "block": 4,
+      "kind": "theory",
       "summary": "Excess capacity, kinked demand curve, Cournot and Stackelberg models, prisoner's dilemma.",
       "points": [
         "Monopolistic competition: many firms, differentiated products, free entry; long-run tangency of AR with LAC on its falling part → excess capacity.",
@@ -100,15 +112,15 @@
         "Stackelberg: leader moves first knowing the follower's reaction — first-mover advantage.",
         "Prisoner's dilemma: each player's dominant strategy leads to a worse joint outcome (e.g. cartel cheating)."
       ],
-      "method": [
-        "Cournot (linear demand P = a − bQ, equal cost c): each firm q = (a − c)/(3b).",
-        "Stackelberg: leader q₁ = (a − c)/(2b); follower q₂ = (a − c)/(4b)."
-      ],
+      "method": ["Cournot (linear demand P = a − bQ, equal cost c): each firm q = (a − c)/(3b).", "Stackelberg: leader q₁ = (a − c)/(2b); follower q₂ = (a − c)/(4b)."],
       "formula": ["Cournot: q = (a − c)/3b each", "Stackelberg: q₁ = (a − c)/2b, q₂ = (a − c)/4b"],
       "mistakes": ["Drawing the kinked MR without the vertical gap."]
     },
     {
-      "id": "perfect-competition", "name": "Perfect Competition", "block": 4, "kind": "mixed",
+      "id": "perfect-competition",
+      "name": "Perfect Competition",
+      "block": 4,
+      "kind": "mixed",
       "summary": "Short- and long-run equilibrium, shutdown point, supply curve, efficiency and the role of marginal cost.",
       "points": [
         "Features: many buyers and sellers, homogeneous product, free entry and exit, perfect knowledge; firm is a price-taker (P = AR = MR).",
@@ -123,7 +135,10 @@
       "mistakes": []
     },
     {
-      "id": "factor-markets", "name": "Labour Market & Rent", "block": 5, "kind": "mixed",
+      "id": "factor-markets",
+      "name": "Labour Market & Rent",
+      "block": 5,
+      "kind": "mixed",
       "summary": "Labour demand/supply numericals with minimum wage, backward-bending supply, wage differences, and theories of rent.",
       "points": [
         "Labour supply from labour–leisure choice; backward-bending at high wages when the income effect outweighs the substitution effect.",
@@ -138,7 +153,10 @@
       "mistakes": []
     },
     {
-      "id": "welfare-failure", "name": "Welfare, Market Failure & Externalities", "block": 6, "kind": "theory",
+      "id": "welfare-failure",
+      "name": "Welfare, Market Failure & Externalities",
+      "block": 6,
+      "kind": "theory",
       "summary": "Pareto efficiency and welfare theorems, sources of market failure, externalities, public goods, asymmetric information.",
       "points": [
         "Pareto efficiency: no one can be made better off without making someone worse off; needs efficiency in exchange, production and product mix.",
@@ -152,7 +170,10 @@
       "mistakes": []
     },
     {
-      "id": "costs", "name": "Cost Curves (Short & Long Run)", "block": 3, "kind": "theory",
+      "id": "costs",
+      "name": "Cost Curves (Short & Long Run)",
+      "block": 3,
+      "kind": "theory",
       "summary": "LAC as the envelope of SAC curves, LMC vs SMC, economies of scale and the shape of LAC, economic vs accounting profit.",
       "points": [
         "Short run: fixed and variable costs; AFC falls continuously; AVC, ATC and MC are U-shaped; MC cuts AVC and ATC at their minima.",
@@ -165,7 +186,10 @@
       "mistakes": ["Drawing LAC through the minimum of every SAC (it touches only the minimum of the optimal plant)."]
     },
     {
-      "id": "elasticity", "name": "Elasticity of Demand & Supply", "block": 1, "kind": "mixed",
+      "id": "elasticity",
+      "name": "Elasticity of Demand & Supply",
+      "block": 1,
+      "kind": "mixed",
       "summary": "Price, income and cross elasticity; point and midpoint methods; determinants; elasticity and marginal revenue.",
       "points": [
         "Price elasticity of demand: % change in quantity ÷ % change in price.",
@@ -175,16 +199,15 @@
         "Point elasticity on a straight-line demand curve = lower segment ÷ upper segment.",
         "Elasticity of supply depends on time, spare capacity, ease of storing, and factor mobility."
       ],
-      "method": [
-        "Point: e = (dQ/dP) × (P/Q).",
-        "Midpoint (arc): e = [(Q₂ − Q₁)/((Q₂ + Q₁)/2)] ÷ [(P₂ − P₁)/((P₂ + P₁)/2)].",
-        "From total revenue R(Q): MR = dR/dQ, then use MR = P(1 − 1/e)."
-      ],
+      "method": ["Point: e = (dQ/dP) × (P/Q).", "Midpoint (arc): e = [(Q₂ − Q₁)/((Q₂ + Q₁)/2)] ÷ [(P₂ − P₁)/((P₂ + P₁)/2)].", "From total revenue R(Q): MR = dR/dQ, then use MR = P(1 − 1/e)."],
       "formula": ["MR = P (1 − 1/e)", "e = (dQ/dP)·(P/Q)"],
       "mistakes": ["Dropping the minus sign without saying you use absolute values."]
     },
     {
-      "id": "utility", "name": "Cardinal Utility & Consumer Surplus", "block": 2, "kind": "mixed",
+      "id": "utility",
+      "name": "Cardinal Utility & Consumer Surplus",
+      "block": 2,
+      "kind": "mixed",
       "summary": "Law of diminishing marginal utility, equi-marginal utility, consumer equilibrium, deriving demand, consumer surplus.",
       "points": [
         "Cardinal approach: utility measurable in units (utils); assumptions include constant marginal utility of money and independent utilities.",
@@ -199,7 +222,10 @@
       "mistakes": []
     },
     {
-      "id": "monopoly", "name": "Monopoly & Price Discrimination", "block": 4, "kind": "theory",
+      "id": "monopoly",
+      "name": "Monopoly & Price Discrimination",
+      "block": 4,
+      "kind": "theory",
       "summary": "Monopoly equilibrium, no supply curve, deadweight loss, price discrimination, public monopoly pricing, mark-up pricing.",
       "points": [
         "Monopoly: single seller, no close substitutes, barriers to entry; downward-sloping AR with MR below it.",
@@ -214,7 +240,10 @@
       "mistakes": []
     },
     {
-      "id": "indifference", "name": "Indifference Curve Analysis", "block": 2, "kind": "theory",
+      "id": "indifference",
+      "name": "Indifference Curve Analysis",
+      "block": 2,
+      "kind": "theory",
       "summary": "Indifference curves and budget line, consumer equilibrium, PCC/ICC/Engel curve, corner solutions.",
       "points": [
         "Indifference curve: bundles giving equal satisfaction; slopes down, convex to origin (diminishing MRS), never intersect, higher is better.",
@@ -228,7 +257,10 @@
       "mistakes": []
     },
     {
-      "id": "ppc-basics", "name": "PPC, Scarcity & Basic Concepts", "block": 1, "kind": "theory",
+      "id": "ppc-basics",
+      "name": "PPC, Scarcity & Basic Concepts",
+      "block": 1,
+      "kind": "theory",
       "summary": "Production possibility curve, central problems, scarcity and choice, micro vs macro, positive vs normative.",
       "points": [
         "PPC: combinations of two goods an economy can produce with given resources and technology, fully and efficiently used.",
@@ -259,7 +291,6 @@
     { "s": "2020-12", "q": "10", "t": "Note: economic rent", "m": 3, "k": "th", "topic": "factor-markets", "part": "B" },
     { "s": "2020-12", "q": "11", "t": "Externality; correcting it with taxes and subsidies", "m": 6, "k": "th", "topic": "welfare-failure", "part": "C" },
     { "s": "2020-12", "q": "12", "t": "First- vs third-degree price discrimination", "m": 6, "k": "th", "topic": "monopoly", "part": "C" },
-
     { "s": "2021-12", "q": "1", "t": "PPC: assumptions, under-utilised resources, shifts", "m": 20, "k": "th", "topic": "ppc-basics", "part": "A" },
     { "s": "2021-12", "q": "2", "t": "Demand/supply equations: equilibrium P* and Q*", "m": 20, "k": "num", "topic": "demand-supply", "part": "A" },
     { "s": "2021-12", "q": "3", "t": "LAC envelopes SATC; short-run vs long-run efficiency", "m": 20, "k": "th", "topic": "costs", "part": "A" },
@@ -275,7 +306,6 @@
     { "s": "2021-12", "q": "10", "t": "Note: moral hazard", "m": 3, "k": "th", "topic": "welfare-failure", "part": "B" },
     { "s": "2021-12", "q": "11", "t": "Negative externality and government intervention", "m": 6, "k": "th", "topic": "welfare-failure", "part": "C" },
     { "s": "2021-12", "q": "12", "t": "Cournot vs Stackelberg models", "m": 6, "k": "th", "topic": "monopolistic-oligopoly", "part": "C" },
-
     { "s": "2022-06", "q": "1", "t": "TP and MP curves; isoquants, ridge lines, economic region", "m": 20, "k": "th", "topic": "production", "part": "A" },
     { "s": "2022-06", "q": "2", "t": "Demand/supply equations: equilibrium P* and Q*", "m": 20, "k": "num", "topic": "demand-supply", "part": "A" },
     { "s": "2022-06", "q": "3", "t": "Three stages of production; where a rational producer operates", "m": 20, "k": "th", "topic": "production", "part": "A" },
@@ -291,7 +321,6 @@
     { "s": "2022-06", "q": "10", "t": "Note: imperfect information", "m": 3, "k": "th", "topic": "welfare-failure", "part": "B" },
     { "s": "2022-06", "q": "11", "t": "Government intervention for externality (with diagram)", "m": 6, "k": "th", "topic": "welfare-failure", "part": "C" },
     { "s": "2022-06", "q": "12", "t": "Monopolist's demand curve vs kinked oligopoly demand", "m": 6, "k": "th", "topic": "monopolistic-oligopoly", "part": "C" },
-
     { "s": "2022-12", "q": "1", "t": "PPC and central problems; unemployment and the PPC; stock/flow, positive/normative", "m": 20, "k": "th", "topic": "ppc-basics", "part": "A" },
     { "s": "2022-12", "q": "2(a)", "t": "Tax burden with perfectly elastic demand or supply", "m": 10, "k": "th", "topic": "demand-supply", "part": "A" },
     { "s": "2022-12", "q": "2(b,c)", "t": "Law of diminishing marginal utility; consumer's surplus", "m": 10, "k": "th", "topic": "utility", "part": "A" },
@@ -310,7 +339,6 @@
     { "s": "2022-12", "q": "10", "t": "Notes: Ricardian rent, minimum wage law", "m": 6, "k": "th", "topic": "factor-markets", "part": "B" },
     { "s": "2022-12", "q": "11", "t": "Public goods: non-rival and non-excludable", "m": 6, "k": "th", "topic": "welfare-failure", "part": "C" },
     { "s": "2022-12", "q": "12", "t": "First-mover advantage with a game example", "m": 6, "k": "th", "topic": "monopolistic-oligopoly", "part": "C" },
-
     { "s": "2023-06", "q": "1(a)", "t": "PPC under increasing and constant costs", "m": 6, "k": "th", "topic": "ppc-basics", "part": "A" },
     { "s": "2023-06", "q": "1(b)", "t": "Full employment and best technology = efficiency?", "m": 6, "k": "th", "topic": "welfare-failure", "part": "A" },
     { "s": "2023-06", "q": "1(c)", "t": "Effect on demand when prices of substitute and complement rise", "m": 8, "k": "th", "topic": "demand-supply", "part": "A" },
@@ -332,7 +360,6 @@
     { "s": "2023-06", "q": "10", "t": "Note: prisoner's dilemma", "m": 3, "k": "th", "topic": "monopolistic-oligopoly", "part": "B" },
     { "s": "2023-06", "q": "11", "t": "Kinked demand curve and price rigidity; limitations", "m": 6, "k": "th", "topic": "monopolistic-oligopoly", "part": "C" },
     { "s": "2023-06", "q": "12", "t": "Excess capacity in monopolistic competition", "m": 6, "k": "th", "topic": "monopolistic-oligopoly", "part": "C" },
-
     { "s": "2023-12", "q": "1(a,b)", "t": "Micro vs macro; does an economy always produce on the PPC?", "m": 12, "k": "th", "topic": "ppc-basics", "part": "A" },
     { "s": "2023-12", "q": "1(c)", "t": "Static vs dynamic economies; public vs private goods", "m": 8, "k": "th", "topic": "welfare-failure", "part": "A" },
     { "s": "2023-12", "q": "2(a)", "t": "Incidence of a ₹500 tax on luxury cars", "m": 8, "k": "th", "topic": "demand-supply", "part": "A" },
@@ -353,7 +380,6 @@
     { "s": "2023-12", "q": "10(ii)", "t": "Note: kinked demand curve", "m": 6, "k": "th", "topic": "monopolistic-oligopoly", "part": "B" },
     { "s": "2023-12", "q": "11", "t": "Policy instruments for inefficient markets", "m": 6, "k": "th", "topic": "welfare-failure", "part": "C" },
     { "s": "2023-12", "q": "12", "t": "First welfare theorem; adverse selection", "m": 6, "k": "th", "topic": "welfare-failure", "part": "C" },
-
     { "s": "2024-06", "q": "1", "t": "PPC movements and shifts; science of choice; static/dynamic, micro/macro", "m": 20, "k": "th", "topic": "ppc-basics", "part": "A" },
     { "s": "2024-06", "q": "2", "t": "Price ceiling vs floor and shortages; division of tax burden", "m": 20, "k": "th", "topic": "demand-supply", "part": "A" },
     { "s": "2024-06", "q": "3", "t": "Three stages of production; cost minimisation and output maximisation", "m": 20, "k": "th", "topic": "production", "part": "A" },
@@ -373,7 +399,6 @@
     { "s": "2024-06", "q": "10(c)", "t": "Note (any three): Ricardian rent", "m": 3, "k": "th", "topic": "factor-markets", "part": "B" },
     { "s": "2024-06", "q": "11", "t": "Market failure and its sources", "m": 6, "k": "th", "topic": "welfare-failure", "part": "C" },
     { "s": "2024-06", "q": "12", "t": "Role of marginal cost in competitive efficiency", "m": 6, "k": "th", "topic": "perfect-competition", "part": "C" },
-
     { "s": "2024-12", "q": "1(i)", "t": "PPC and increasing, constant and decreasing returns", "m": 10, "k": "th", "topic": "ppc-basics", "part": "A" },
     { "s": "2024-12", "q": "1(ii)", "t": "Equilibrium price and quantity from equations", "m": 10, "k": "num", "topic": "demand-supply", "part": "A" },
     { "s": "2024-12", "q": "2(i)", "t": "Point elasticity at P = 6, Q = 2000", "m": 10, "k": "num", "topic": "elasticity", "part": "A" },
@@ -393,7 +418,6 @@
     { "s": "2024-12", "q": "10(ii)", "t": "Note: excess capacity", "m": 6, "k": "th", "topic": "monopolistic-oligopoly", "part": "B" },
     { "s": "2024-12", "q": "11", "t": "Role of marginal cost in competitive efficiency", "m": 6, "k": "th", "topic": "perfect-competition", "part": "C" },
     { "s": "2024-12", "q": "12", "t": "Market failure and its sources", "m": 6, "k": "th", "topic": "welfare-failure", "part": "C" },
-
     { "s": "2025-06", "q": "1(i)", "t": "Does technology shift the PPC? Positive vs normative economics", "m": 8, "k": "th", "topic": "ppc-basics", "part": "A" },
     { "s": "2025-06", "q": "1(ii,iii)", "t": "Consumer vs producer surplus; tax burden with perfectly elastic curves", "m": 12, "k": "th", "topic": "demand-supply", "part": "A" },
     { "s": "2025-06", "q": "2(i)", "t": "Demand curve from diminishing marginal utility", "m": 6, "k": "th", "topic": "utility", "part": "A" },
@@ -413,7 +437,6 @@
     { "s": "2025-06", "q": "10(ii)", "t": "Note: first theorem of welfare economics", "m": 6, "k": "th", "topic": "welfare-failure", "part": "B" },
     { "s": "2025-06", "q": "11", "t": "Market failure and its sources", "m": 6, "k": "th", "topic": "welfare-failure", "part": "C" },
     { "s": "2025-06", "q": "12", "t": "Utility maximisation and cost minimisation in general equilibrium", "m": 6, "k": "th", "topic": "welfare-failure", "part": "C" },
-
     { "s": "2025-12", "q": "1(a)", "t": "Scarcity and choice", "m": 10, "k": "th", "topic": "ppc-basics", "part": "A" },
     { "s": "2025-12", "q": "1(b)", "t": "Ice-cream equilibrium before and after an income rise", "m": 10, "k": "num", "topic": "demand-supply", "part": "A" },
     { "s": "2025-12", "q": "2(a)", "t": "Midpoint price elasticity for two consumers", "m": 15, "k": "num", "topic": "elasticity", "part": "A" },
@@ -432,7 +455,6 @@
     { "s": "2025-12", "q": "10(ii)", "t": "Note: degrees of price discrimination", "m": 6, "k": "th", "topic": "monopoly", "part": "B" },
     { "s": "2025-12", "q": "11", "t": "Stackelberg's model", "m": 6, "k": "th", "topic": "monopolistic-oligopoly", "part": "C" },
     { "s": "2025-12", "q": "12", "t": "Modern theory of rent", "m": 6, "k": "th", "topic": "factor-markets", "part": "C" },
-
     { "s": "2026-06", "q": "1(a)", "t": "Economy produces on the PPC rather than inside it", "m": 10, "k": "th", "topic": "ppc-basics", "part": "A" },
     { "s": "2026-06", "q": "1(b)", "t": "Consumer surplus: meaning and calculation", "m": 10, "k": "th", "topic": "utility", "part": "A" },
     { "s": "2026-06", "q": "2(a)", "t": "Marginal revenue from elasticity 1/3 and price ₹40", "m": 10, "k": "num", "topic": "elasticity", "part": "A" },

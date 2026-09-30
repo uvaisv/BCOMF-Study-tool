@@ -18,10 +18,7 @@
       "'Compare' and 'short notes' questions (4–5 parts × 4–5 marks) reward broad revision: learn one-line differences for every pair in the Key points.",
       "Mail merge, operating systems and e-payment methods are asked most sessions."
     ],
-    "numerical": [
-      "For ratios, write the formula, then an example with figures, then what a high or low value means.",
-      "For NPV/IRR, show the Excel syntax: =NPV(rate, value1, …) + initial outlay, and =IRR(values)."
-    ]
+    "numerical": ["For ratios, write the formula, then an example with figures, then what a high or low value means.", "For NPV/IRR, show the Excel syntax: =NPV(rate, value1, …) + initial outlay, and =IRR(values)."]
   },
   "blocks": [
     { "no": 1, "title": "Computer & Software Basics" },
@@ -32,7 +29,10 @@
   ],
   "topics": [
     {
-      "id": "security", "name": "Cyber Security, Authentication & Data Protection", "block": 2, "kind": "theory",
+      "id": "security",
+      "name": "Cyber Security, Authentication & Data Protection",
+      "block": 2,
+      "kind": "theory",
       "summary": "CIA principles, authentication vs authorisation, 2FA and OTP, CAPTCHA, identity theft, firewall, GDPR vs DPD.",
       "points": [
         "Cyber security: protecting systems, networks and data from attacks.",
@@ -51,7 +51,10 @@
       "mistakes": ["Mixing up authentication and authorisation."]
     },
     {
-      "id": "software-os", "name": "Software & Operating Systems", "block": 1, "kind": "theory",
+      "id": "software-os",
+      "name": "Software & Operating Systems",
+      "block": 1,
+      "kind": "theory",
       "summary": "System vs application software, OS functions and types, language processors, utility programs, open source.",
       "points": [
         "System software runs the computer (OS, drivers, utilities); application software does user tasks (Word, Tally).",
@@ -67,7 +70,10 @@
       "mistakes": []
     },
     {
-      "id": "networks", "name": "Networks, Internet & E-mail", "block": 2, "kind": "theory",
+      "id": "networks",
+      "name": "Networks, Internet & E-mail",
+      "block": 2,
+      "kind": "theory",
       "summary": "Network types, internet vs intranet vs extranet, WWW, URLs and domains, browsers, e-mail protocols, cloud computing.",
       "points": [
         "Computer network: connected devices sharing data and resources.",
@@ -83,7 +89,10 @@
       "mistakes": []
     },
     {
-      "id": "word-ppt", "name": "MS Word, PowerPoint & Google Docs", "block": 3, "kind": "theory",
+      "id": "word-ppt",
+      "name": "MS Word, PowerPoint & Google Docs",
+      "block": 3,
+      "kind": "theory",
       "summary": "Mail merge, word processing features, equation editor, presentations and animation, Google Docs vs Word.",
       "points": [
         "Mail merge: creates personalised letters, labels or envelopes from one main document and a data source.",
@@ -98,7 +107,10 @@
       "mistakes": []
     },
     {
-      "id": "finance-excel", "name": "Ratios, Capital Budgeting & Depreciation", "block": 5, "kind": "mixed",
+      "id": "finance-excel",
+      "name": "Ratios, Capital Budgeting & Depreciation",
+      "block": 5,
+      "kind": "mixed",
       "summary": "Ratio analysis, NPV and IRR (with Excel syntax), depreciation methods, loan and lease statements, payroll.",
       "points": [
         "Ratio analysis: comparing figures from financial statements to judge liquidity, profitability and efficiency.",
@@ -116,7 +128,10 @@
       "mistakes": ["Forgetting that Excel's NPV() does not include the year-0 outlay."]
     },
     {
-      "id": "epayment", "name": "E-payment, Plastic Money & Wallets", "block": 5, "kind": "theory",
+      "id": "epayment",
+      "name": "E-payment, Plastic Money & Wallets",
+      "block": 5,
+      "kind": "theory",
       "summary": "E-payment methods, plastic money, NEFT vs RTGS, digital wallets, QR codes, B2B vs B2C.",
       "points": [
         "E-payment: paying electronically instead of cash or cheque. Methods: debit/credit cards, net banking, UPI, e-wallets, NEFT, RTGS, IMPS, QR codes.",
@@ -131,7 +146,10 @@
       "mistakes": []
     },
     {
-      "id": "info-systems", "name": "Business Information Systems (MIS, DSS, ERP)", "block": 4, "kind": "theory",
+      "id": "info-systems",
+      "name": "Business Information Systems (MIS, DSS, ERP)",
+      "block": 4,
+      "kind": "theory",
       "summary": "Business and information systems, MIS vs DSS, ERP, data vs information, business ownership forms.",
       "points": [
         "Data: raw facts; information: processed, meaningful data.",
@@ -144,7 +162,10 @@
       "mistakes": []
     },
     {
-      "id": "dbms", "name": "DBMS, RDBMS & Data Models", "block": 4, "kind": "theory",
+      "id": "dbms",
+      "name": "DBMS, RDBMS & Data Models",
+      "block": 4,
+      "kind": "theory",
       "summary": "File processing vs DBMS, DBMS vs RDBMS, data models, data abstraction and independence, database administrator.",
       "points": [
         "File processing limits: redundancy, inconsistency, difficult access, isolation, integrity and security problems.",
@@ -159,7 +180,10 @@
       "mistakes": []
     },
     {
-      "id": "computer-basics", "name": "Computer Fundamentals & Generations", "block": 1, "kind": "theory",
+      "id": "computer-basics",
+      "name": "Computer Fundamentals & Generations",
+      "block": 1,
+      "kind": "theory",
       "summary": "What a computer is, generations, types (analog/digital/hybrid, micro to super), hardware components, applications.",
       "points": [
         "Computer: a programmable electronic device that accepts data (input), processes it and gives results (output), and stores them.",
@@ -173,7 +197,10 @@
       "mistakes": []
     },
     {
-      "id": "youtube-digital", "name": "YouTube, AdSense & Digitisation", "block": 5, "kind": "theory",
+      "id": "youtube-digital",
+      "name": "YouTube, AdSense & Digitisation",
+      "block": 5,
+      "kind": "theory",
       "summary": "YouTube channels and revenue, Google AdSense, digitisation's impact on business, AI.",
       "points": [
         "YouTube: video platform for marketing, training and brand building.",
@@ -187,7 +214,10 @@
       "mistakes": []
     },
     {
-      "id": "project-research", "name": "DPR, Research Proposal & Data Analysis", "block": 5, "kind": "theory",
+      "id": "project-research",
+      "name": "DPR, Research Proposal & Data Analysis",
+      "block": 5,
+      "kind": "theory",
       "summary": "Detailed project report, research proposal components, data collection, frequency distribution, correlation and regression.",
       "points": [
         "DPR (detailed project report): the final plan used for funding and approval. Components: executive summary, promoters, market analysis, technical details, cost of project, means of finance, profitability, risks.",
@@ -200,7 +230,10 @@
       "mistakes": []
     },
     {
-      "id": "excel", "name": "MS Excel Features & Functions", "block": 3, "kind": "theory",
+      "id": "excel",
+      "name": "MS Excel Features & Functions",
+      "block": 3,
+      "kind": "theory",
       "summary": "Charts, worksheets, relative vs absolute addressing, logical and financial functions, formulas vs functions.",
       "points": [
         "Relative reference (A1) changes when copied; absolute ($A$1) stays fixed; mixed ($A1).",
@@ -225,7 +258,6 @@
     { "s": "2022-06", "q": "7", "t": "Comment: data collection; frequency distribution table", "m": 20, "k": "th", "topic": "project-research" },
     { "s": "2022-06", "q": "8(a)", "t": "Correlation vs regression", "m": 10, "k": "th", "topic": "project-research" },
     { "s": "2022-06", "q": "8(b)", "t": "DBMS vs RDBMS", "m": 10, "k": "th", "topic": "dbms" },
-
     { "s": "2022-12", "q": "1", "t": "Computer as a programmable device; generations of computers", "m": 20, "k": "th", "topic": "computer-basics" },
     { "s": "2022-12", "q": "2", "t": "GDPR; DPD vs GDPR", "m": 20, "k": "th", "topic": "security" },
     { "s": "2022-12", "q": "3", "t": "Plastic money: origin and uses in business", "m": 20, "k": "th", "topic": "epayment" },
@@ -238,7 +270,6 @@
     { "s": "2022-12", "q": "8(b)", "t": "Note: operating system", "m": 5, "k": "th", "topic": "software-os" },
     { "s": "2022-12", "q": "8(c)", "t": "Note: RDBMS", "m": 5, "k": "th", "topic": "dbms" },
     { "s": "2022-12", "q": "8(d)", "t": "Note: identity theft", "m": 5, "k": "th", "topic": "security" },
-
     { "s": "2023-06", "q": "1", "t": "Network types PAN–HAN; internet, intranet, extranet", "m": 20, "k": "th", "topic": "networks" },
     { "s": "2023-06", "q": "2(a,b)", "t": "Compare: graphical vs non-graphical browser; file storage vs synchronisation", "m": 8, "k": "th", "topic": "networks" },
     { "s": "2023-06", "q": "2(c)", "t": "Compare: B2B vs B2C", "m": 4, "k": "th", "topic": "epayment" },
@@ -250,7 +281,6 @@
     { "s": "2023-06", "q": "6(d,e)", "t": "Notes: relative and absolute addressing; financial functions in Excel", "m": 8, "k": "th", "topic": "excel" },
     { "s": "2023-06", "q": "7", "t": "Ratio analysis: current, quick, GP, operating cost ratios", "m": 20, "k": "th", "topic": "finance-excel" },
     { "s": "2023-06", "q": "8", "t": "CAPTCHA: purpose and types", "m": 20, "k": "th", "topic": "security" },
-
     { "s": "2023-12", "q": "1", "t": "Generations of computers; digital vs hybrid; mini vs super; advantages", "m": 16, "k": "th", "topic": "computer-basics" },
     { "s": "2023-12", "q": "1(a)", "t": "System vs application software", "m": 4, "k": "th", "topic": "software-os" },
     { "s": "2023-12", "q": "2", "t": "Operating system: purpose and functions", "m": 20, "k": "th", "topic": "software-os" },
@@ -264,7 +294,6 @@
     { "s": "2023-12", "q": "7(d)", "t": "Explain: CAPTCHA", "m": 4, "k": "th", "topic": "security" },
     { "s": "2023-12", "q": "7(e)", "t": "Explain: enterprise resource planning", "m": 4, "k": "th", "topic": "info-systems" },
     { "s": "2023-12", "q": "8", "t": "Digitisation and its impact on business", "m": 20, "k": "th", "topic": "youtube-digital" },
-
     { "s": "2024-06", "q": "1", "t": "Information systems and their importance for business", "m": 20, "k": "th", "topic": "info-systems" },
     { "s": "2024-06", "q": "2(a)", "t": "Plastic money", "m": 10, "k": "th", "topic": "epayment" },
     { "s": "2024-06", "q": "2(b)", "t": "Mail merge in MS Word", "m": 10, "k": "th", "topic": "word-ppt" },
@@ -280,7 +309,6 @@
     { "s": "2024-06", "q": "7(e)", "t": "Note (any four): RTGS", "m": 4, "k": "th", "topic": "epayment" },
     { "s": "2024-06", "q": "8(a)", "t": "Mainframe vs supercomputers", "m": 10, "k": "th", "topic": "computer-basics" },
     { "s": "2024-06", "q": "8(b)", "t": "File management vs memory management", "m": 10, "k": "th", "topic": "software-os" },
-
     { "s": "2024-12", "q": "1", "t": "Computer applications in business; use in military and defence", "m": 20, "k": "th", "topic": "computer-basics" },
     { "s": "2024-12", "q": "2(a)", "t": "Wide area network", "m": 10, "k": "th", "topic": "networks" },
     { "s": "2024-12", "q": "2(b)", "t": "Saving PPT files in the cloud", "m": 10, "k": "th", "topic": "word-ppt" },
@@ -296,7 +324,6 @@
     { "s": "2024-12", "q": "7(e)", "t": "Note (any four): NEFT", "m": 4, "k": "th", "topic": "epayment" },
     { "s": "2024-12", "q": "8(a)", "t": "Android vs Windows OS", "m": 10, "k": "th", "topic": "software-os" },
     { "s": "2024-12", "q": "8(b)", "t": "SMTP vs POP", "m": 10, "k": "th", "topic": "networks" },
-
     { "s": "2025-06", "q": "1(a)", "t": "4th–6th generation computers; analog vs digital", "m": 10, "k": "th", "topic": "computer-basics" },
     { "s": "2025-06", "q": "1(b)", "t": "Depreciation accounting: straight line vs diminishing balance", "m": 10, "k": "th", "topic": "finance-excel" },
     { "s": "2025-06", "q": "2(a,b)", "t": "Compare: compiler vs interpreter; Android vs Windows", "m": 8, "k": "th", "topic": "software-os" },
@@ -319,7 +346,6 @@
     { "s": "2025-06", "q": "7(b)", "t": "Open-source software", "m": 2, "k": "th", "topic": "software-os" },
     { "s": "2025-06", "q": "8(a)", "t": "Functions vs formulas; array formulas; absolute vs relative addressing", "m": 12, "k": "th", "topic": "excel" },
     { "s": "2025-06", "q": "8(b)", "t": "Operating system functions", "m": 8, "k": "th", "topic": "software-os" },
-
     { "s": "2025-12", "q": "1", "t": "Computers in medicine; micro, mini, mainframe, super computers", "m": 20, "k": "th", "topic": "computer-basics" },
     { "s": "2025-12", "q": "2(a,d)", "t": "Compare: real-time vs time-sharing OS; system vs application software", "m": 8, "k": "th", "topic": "software-os" },
     { "s": "2025-12", "q": "2(b)", "t": "Compare: analog vs digital computer", "m": 4, "k": "th", "topic": "computer-basics" },
@@ -338,7 +364,6 @@
     { "s": "2025-12", "q": "7(b)", "t": "Sole proprietorship vs partnership; MIS vs DSS", "m": 10, "k": "th", "topic": "info-systems" },
     { "s": "2025-12", "q": "8(a)", "t": "Steps to prepare a business presentation", "m": 10, "k": "th", "topic": "word-ppt" },
     { "s": "2025-12", "q": "8(b)", "t": "Cyber security: confidentiality, integrity, availability", "m": 10, "k": "th", "topic": "security" },
-
     { "s": "2026-06", "q": "1", "t": "Application software; application vs system software", "m": 20, "k": "th", "topic": "software-os" },
     { "s": "2026-06", "q": "2", "t": "Capital budgeting and its methods", "m": 20, "k": "th", "topic": "finance-excel" },
     { "s": "2026-06", "q": "3", "t": "Word processing; personalised documents with mail merge", "m": 20, "k": "th", "topic": "word-ppt" },

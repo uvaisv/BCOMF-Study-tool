@@ -32,7 +32,10 @@
   ],
   "topics": [
     {
-      "id": "planning", "name": "Planning", "block": 4, "kind": "theory",
+      "id": "planning",
+      "name": "Planning",
+      "block": 4,
+      "kind": "theory",
       "summary": "Meaning, nature, importance, principles, process; plans vs policies; long vs short range.",
       "points": [
         "Planning: deciding in advance what to do, how, when and by whom — the first function of management.",
@@ -47,7 +50,10 @@
       "mistakes": ["Listing process steps without one line of explanation each."]
     },
     {
-      "id": "organising", "name": "Organisation Structure", "block": 4, "kind": "theory",
+      "id": "organising",
+      "name": "Organisation Structure",
+      "block": 4,
+      "kind": "theory",
       "summary": "Types of structure (line, functional, line & staff), formal vs informal, departmentation, span of control, charts and manuals.",
       "points": [
         "Organisation structure: the framework of roles, authority and relationships in an enterprise.",
@@ -63,7 +69,10 @@
       "mistakes": ["Not drawing a chart — a simple diagram earns marks."]
     },
     {
-      "id": "marketing", "name": "Marketing (Concepts, PLC, Pricing)", "block": 6, "kind": "theory",
+      "id": "marketing",
+      "name": "Marketing (Concepts, PLC, Pricing)",
+      "block": 6,
+      "kind": "theory",
       "summary": "Marketing concepts, marketing mix, product life cycle and pricing — asked in almost every paper.",
       "points": [
         "Marketing: identifying and satisfying customer needs profitably.",
@@ -77,7 +86,10 @@
       "mistakes": ["Skipping the PLC graph."]
     },
     {
-      "id": "leadership", "name": "Leadership & Morale", "block": 5, "kind": "theory",
+      "id": "leadership",
+      "name": "Leadership & Morale",
+      "block": 5,
+      "kind": "theory",
       "summary": "Meaning, styles, qualities of a leader, manager as leader, and morale.",
       "points": [
         "Leadership: influencing people to work willingly towards group goals.",
@@ -91,7 +103,10 @@
       "mistakes": []
     },
     {
-      "id": "motivation", "name": "Motivation & Incentives", "block": 5, "kind": "theory",
+      "id": "motivation",
+      "name": "Motivation & Incentives",
+      "block": 5,
+      "kind": "theory",
       "summary": "Meaning, process, Maslow and Herzberg theories, financial vs non-financial incentives.",
       "points": [
         "Motivation: the process that stimulates people to act towards desired goals.",
@@ -105,7 +120,10 @@
       "mistakes": ["Drawing Maslow's pyramid in the wrong order."]
     },
     {
-      "id": "entrepreneurship", "name": "Innovation, Skill Development & Start-ups", "block": 3, "kind": "theory",
+      "id": "entrepreneurship",
+      "name": "Innovation, Skill Development & Start-ups",
+      "block": 3,
+      "kind": "theory",
       "summary": "Innovation types and process, skill development initiatives, Start-up India, Make in India, MSMEs.",
       "points": [
         "Creativity: generating new ideas. Invention: creating something new. Innovation: turning an idea into a useful product, service or process.",
@@ -120,7 +138,10 @@
       "mistakes": []
     },
     {
-      "id": "csr-ethics", "name": "CSR & Business Ethics", "block": 1, "kind": "theory",
+      "id": "csr-ethics",
+      "name": "CSR & Business Ethics",
+      "block": 1,
+      "kind": "theory",
       "summary": "Corporate social responsibility, its paradigm shift and theories, and components of business ethics.",
       "points": [
         "CSR: a company's responsibility towards society and stakeholders beyond profit.",
@@ -134,7 +155,10 @@
       "mistakes": []
     },
     {
-      "id": "emerging", "name": "E-commerce & Emerging Trends", "block": 3, "kind": "theory",
+      "id": "emerging",
+      "name": "E-commerce & Emerging Trends",
+      "block": 3,
+      "kind": "theory",
       "summary": "E-commerce vs traditional commerce, m-commerce, Digital India, outsourcing, franchising.",
       "points": [
         "E-commerce: buying and selling over the internet. Types: B2B, B2C, C2C, C2B.",
@@ -149,7 +173,10 @@
       "mistakes": []
     },
     {
-      "id": "business-basics", "name": "Business, Commerce, Trade & Profession", "block": 1, "kind": "theory",
+      "id": "business-basics",
+      "name": "Business, Commerce, Trade & Profession",
+      "block": 1,
+      "kind": "theory",
       "summary": "Business vs profession vs employment, commerce, trade and aids to trade, industry, objectives of business.",
       "points": [
         "Economic activities (for money) vs non-economic (for love, social or religious reasons).",
@@ -163,7 +190,10 @@
       "mistakes": []
     },
     {
-      "id": "company", "name": "Joint Stock Company & Public Enterprises", "block": 2, "kind": "theory",
+      "id": "company",
+      "name": "Joint Stock Company & Public Enterprises",
+      "block": 2,
+      "kind": "theory",
       "summary": "Company features and types, private vs public, OPC, government companies, Maharatna/Navratna/Miniratna.",
       "points": [
         "Company: an artificial person created by law, with separate legal entity, perpetual succession, common seal, limited liability, transferable shares.",
@@ -177,7 +207,10 @@
       "mistakes": []
     },
     {
-      "id": "decision-making", "name": "Decision-Making", "block": 4, "kind": "theory",
+      "id": "decision-making",
+      "name": "Decision-Making",
+      "block": 4,
+      "kind": "theory",
       "summary": "Meaning, relationship with planning, and the steps of scientific decision-making.",
       "points": [
         "Decision-making: choosing the best course of action from alternatives.",
@@ -189,7 +222,10 @@
       "mistakes": []
     },
     {
-      "id": "cooperative", "name": "Co-operative Organisation", "block": 2, "kind": "theory",
+      "id": "cooperative",
+      "name": "Co-operative Organisation",
+      "block": 2,
+      "kind": "theory",
       "summary": "Meaning, features, types, merits, limitations and objectives of co-operatives.",
       "points": [
         "Co-operative: a voluntary association of people who work together for mutual benefit (e.g. Amul).",
@@ -202,7 +238,10 @@
       "mistakes": []
     },
     {
-      "id": "sole-partnership", "name": "Sole Proprietorship & Partnership", "block": 2, "kind": "theory",
+      "id": "sole-partnership",
+      "name": "Sole Proprietorship & Partnership",
+      "block": 2,
+      "kind": "theory",
       "summary": "Sole trader features, partnership deed, kinds of partners, sole vs partnership.",
       "points": [
         "Sole proprietorship: owned and controlled by one person; unlimited liability; no separate legal entity; easy formation; full profit and control; limited capital and continuity.",
@@ -214,7 +253,10 @@
       "mistakes": []
     },
     {
-      "id": "delegation", "name": "Delegation of Authority", "block": 4, "kind": "theory",
+      "id": "delegation",
+      "name": "Delegation of Authority",
+      "block": 4,
+      "kind": "theory",
       "summary": "Meaning, principles, and why managers and subordinates avoid delegation.",
       "points": [
         "Delegation: a manager assigns work and grants authority to a subordinate, who becomes accountable.",
@@ -227,7 +269,10 @@
       "mistakes": []
     },
     {
-      "id": "communication", "name": "Communication", "block": 5, "kind": "theory",
+      "id": "communication",
+      "name": "Communication",
+      "block": 5,
+      "kind": "theory",
       "summary": "Process, barriers and making communication effective.",
       "points": [
         "Communication: transfer of information and understanding from one person to another.",
@@ -239,7 +284,10 @@
       "mistakes": []
     },
     {
-      "id": "control", "name": "Controlling", "block": 5, "kind": "theory",
+      "id": "control",
+      "name": "Controlling",
+      "block": 5,
+      "kind": "theory",
       "summary": "Meaning, nature, principles, advantages and limitations of control; control techniques.",
       "points": [
         "Control: measuring performance against standards and correcting deviations.",
@@ -252,7 +300,10 @@
       "mistakes": []
     },
     {
-      "id": "finance", "name": "Financial Management & Sources of Finance", "block": 6, "kind": "theory",
+      "id": "finance",
+      "name": "Financial Management & Sources of Finance",
+      "block": 6,
+      "kind": "theory",
       "summary": "Functions and objectives of financial management, wealth maximisation, venture capital, lease, shares.",
       "points": [
         "Financial management: planning, raising, using and controlling funds.",
@@ -267,7 +318,10 @@
       "mistakes": []
     },
     {
-      "id": "hrm", "name": "Human Resource Management", "block": 6, "kind": "theory",
+      "id": "hrm",
+      "name": "Human Resource Management",
+      "block": 6,
+      "kind": "theory",
       "summary": "Functions of HRM, challenges for HR managers, HR planning, employer–employee relations, team building.",
       "points": [
         "HRM: acquiring, developing, motivating and retaining people.",
@@ -280,7 +334,10 @@
       "mistakes": []
     },
     {
-      "id": "forms", "name": "Choosing a Form of Organisation", "block": 2, "kind": "theory",
+      "id": "forms",
+      "name": "Choosing a Form of Organisation",
+      "block": 2,
+      "kind": "theory",
       "summary": "Overview of forms and the features of an ideal form of business organisation.",
       "points": [
         "Forms: sole proprietorship, Hindu undivided family, partnership, LLP, co-operative, joint stock company.",
@@ -291,7 +348,10 @@
       "mistakes": []
     },
     {
-      "id": "mnc", "name": "Multinational Corporations", "block": 2, "kind": "theory",
+      "id": "mnc",
+      "name": "Multinational Corporations",
+      "block": 2,
+      "kind": "theory",
       "summary": "Why firms become multinational; issues, trends and controversies of MNCs.",
       "points": [
         "MNC: a company with operations in several countries, headquartered in one.",
@@ -320,7 +380,6 @@
     { "s": "2020-12", "q": "9(ii)", "t": "Sole trader vs partnership", "m": 5, "k": "th", "topic": "sole-partnership" },
     { "s": "2020-12", "q": "9(iii)", "t": "Vertical vs horizontal relationship", "m": 5, "k": "th", "topic": "organising" },
     { "s": "2020-12", "q": "9(iv)", "t": "Line vs staff organisation", "m": 5, "k": "th", "topic": "organising" },
-
     { "s": "2021-12", "q": "1", "t": "Human resource management and its functions", "m": 20, "k": "th", "topic": "hrm" },
     { "s": "2021-12", "q": "2", "t": "Globalisation, technology and demographics changing HR work", "m": 20, "k": "th", "topic": "hrm" },
     { "s": "2021-12", "q": "3", "t": "Morale, factors affecting it, and leadership", "m": 20, "k": "th", "topic": "leadership" },
@@ -342,7 +401,6 @@
     { "s": "2021-12", "q": "9(b)", "t": "Limited vs unlimited company", "m": 5, "k": "th", "topic": "company" },
     { "s": "2021-12", "q": "9(c)", "t": "Long-range vs short-range planning", "m": 5, "k": "th", "topic": "planning" },
     { "s": "2021-12", "q": "9(d)", "t": "Economic vs social objectives", "m": 5, "k": "th", "topic": "business-basics" },
-
     { "s": "2022-06", "q": "1", "t": "Technological innovation and the innovation process", "m": 20, "k": "th", "topic": "entrepreneurship" },
     { "s": "2022-06", "q": "2(a)", "t": "One Person Company and its relaxations", "m": 10, "k": "th", "topic": "company" },
     { "s": "2022-06", "q": "2(b)", "t": "Features of co-operative organisation", "m": 10, "k": "th", "topic": "cooperative" },
@@ -359,7 +417,6 @@
     { "s": "2022-06", "q": "9(a)", "t": "Note (any two): franchising", "m": 6.67, "k": "th", "topic": "emerging" },
     { "s": "2022-06", "q": "9(b)", "t": "Note (any two): skills of HR professionals", "m": 6.67, "k": "th", "topic": "hrm" },
     { "s": "2022-06", "q": "9(c)", "t": "Note (any two): social responsibility of business", "m": 6.66, "k": "th", "topic": "csr-ethics" },
-
     { "s": "2022-12", "q": "1", "t": "Skill development and Government of India initiatives", "m": 20, "k": "th", "topic": "entrepreneurship" },
     { "s": "2022-12", "q": "2", "t": "Classification of partners", "m": 20, "k": "th", "topic": "sole-partnership" },
     { "s": "2022-12", "q": "3", "t": "Public enterprises; Maharatna, Navratna, Miniratna", "m": 20, "k": "th", "topic": "company" },
@@ -375,7 +432,6 @@
     { "s": "2022-12", "q": "9(a)", "t": "Note (any two): objectives of financial management", "m": 6.67, "k": "th", "topic": "finance" },
     { "s": "2022-12", "q": "9(b)", "t": "Note (any two): lease financing", "m": 6.67, "k": "th", "topic": "finance" },
     { "s": "2022-12", "q": "9(c)", "t": "Note (any two): Made in India", "m": 6.66, "k": "th", "topic": "entrepreneurship" },
-
     { "s": "2023-06", "q": "1", "t": "Corporate responsibility and its paradigm shift", "m": 20, "k": "th", "topic": "csr-ethics" },
     { "s": "2023-06", "q": "2", "t": "Sole trader organisation and its features", "m": 20, "k": "th", "topic": "sole-partnership" },
     { "s": "2023-06", "q": "3", "t": "Planning and its importance", "m": 20, "k": "th", "topic": "planning" },
@@ -391,7 +447,6 @@
     { "s": "2023-06", "q": "9(i)", "t": "Note (any two): start-up and incubator", "m": 6.67, "k": "th", "topic": "entrepreneurship" },
     { "s": "2023-06", "q": "9(ii)", "t": "Note (any two): bases of departmentation", "m": 6.67, "k": "th", "topic": "organising" },
     { "s": "2023-06", "q": "9(iii)", "t": "Note (any two): employer–employee relations", "m": 6.66, "k": "th", "topic": "hrm" },
-
     { "s": "2023-12", "q": "1(a)", "t": "Classification of industry", "m": 10, "k": "th", "topic": "business-basics" },
     { "s": "2023-12", "q": "1(b)", "t": "Aids to trade with examples", "m": 10, "k": "th", "topic": "business-basics" },
     { "s": "2023-12", "q": "2", "t": "Innovation: types and process", "m": 20, "k": "th", "topic": "entrepreneurship" },
@@ -407,7 +462,6 @@
     { "s": "2023-12", "q": "9(b)", "t": "Comment: human resource planning", "m": 5, "k": "th", "topic": "hrm" },
     { "s": "2023-12", "q": "9(c)", "t": "Comment: profession", "m": 5, "k": "th", "topic": "business-basics" },
     { "s": "2023-12", "q": "9(d)", "t": "Comment: business ethics", "m": 5, "k": "th", "topic": "csr-ethics" },
-
     { "s": "2024-06", "q": "1", "t": "Forms of business organisation and their features", "m": 20, "k": "th", "topic": "forms" },
     { "s": "2024-06", "q": "2(a)", "t": "CSR and its benefits", "m": 10, "k": "th", "topic": "csr-ethics" },
     { "s": "2024-06", "q": "2(b)", "t": "Offshoring vs outsourcing", "m": 10, "k": "th", "topic": "emerging" },
@@ -421,7 +475,6 @@
     { "s": "2024-06", "q": "9(b)", "t": "Employee engagement", "m": 5, "k": "th", "topic": "hrm" },
     { "s": "2024-06", "q": "9(c)", "t": "Team building", "m": 5, "k": "th", "topic": "hrm" },
     { "s": "2024-06", "q": "9(d)", "t": "Organisation chart", "m": 5, "k": "th", "topic": "organising" },
-
     { "s": "2024-12", "q": "1", "t": "E-commerce vs traditional commerce", "m": 20, "k": "th", "topic": "emerging" },
     { "s": "2024-12", "q": "2", "t": "Approaches and strategies of skill development", "m": 20, "k": "th", "topic": "entrepreneurship" },
     { "s": "2024-12", "q": "3", "t": "Profession vs business", "m": 20, "k": "th", "topic": "business-basics" },
@@ -431,7 +484,6 @@
     { "s": "2024-12", "q": "7", "t": "Control: nature, advantages, limitations", "m": 20, "k": "th", "topic": "control" },
     { "s": "2024-12", "q": "8", "t": "Motivation: nature and objectives", "m": 20, "k": "th", "topic": "motivation" },
     { "s": "2024-12", "q": "9", "t": "Delegation of authority and its principles", "m": 20, "k": "th", "topic": "delegation" },
-
     { "s": "2025-06", "q": "1", "t": "Commerce: functions and importance", "m": 20, "k": "th", "topic": "business-basics" },
     { "s": "2025-06", "q": "2", "t": "Digital India programme: features and objectives", "m": 20, "k": "th", "topic": "emerging" },
     { "s": "2025-06", "q": "3", "t": "Business ethics and its components", "m": 20, "k": "th", "topic": "csr-ethics" },
@@ -441,7 +493,6 @@
     { "s": "2025-06", "q": "7", "t": "Informal organisation and how managers can use it", "m": 20, "k": "th", "topic": "organising" },
     { "s": "2025-06", "q": "8", "t": "Leadership: functions, styles, characteristics", "m": 20, "k": "th", "topic": "leadership" },
     { "s": "2025-06", "q": "9", "t": "Control and its principles", "m": 20, "k": "th", "topic": "control" },
-
     { "s": "2025-12", "q": "1", "t": "Theories of CSR", "m": 20, "k": "th", "topic": "csr-ethics" },
     { "s": "2025-12", "q": "2", "t": "E-commerce: features; vs traditional commerce", "m": 20, "k": "th", "topic": "emerging" },
     { "s": "2025-12", "q": "3", "t": "Co-operative organisation: features and merits", "m": 20, "k": "th", "topic": "cooperative" },
@@ -454,7 +505,6 @@
     { "s": "2025-12", "q": "9(ii)", "t": "Note (any two): one-person company", "m": 5, "k": "th", "topic": "company" },
     { "s": "2025-12", "q": "9(iii)", "t": "Note (any two): marketing management", "m": 5, "k": "th", "topic": "marketing" },
     { "s": "2025-12", "q": "9(iv)", "t": "Note (any two): barriers to communication", "m": 5, "k": "th", "topic": "communication" },
-
     { "s": "2026-06", "q": "1", "t": "Business ethics and its components", "m": 20, "k": "th", "topic": "csr-ethics" },
     { "s": "2026-06", "q": "2", "t": "Innovation and its process", "m": 20, "k": "th", "topic": "entrepreneurship" },
     { "s": "2026-06", "q": "3", "t": "Sole proprietorship: features, merits, limitations", "m": 20, "k": "th", "topic": "sole-partnership" },

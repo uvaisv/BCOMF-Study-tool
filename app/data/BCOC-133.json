@@ -33,7 +33,10 @@
   ],
   "topics": [
     {
-      "id": "sale-goods", "name": "Sale of Goods Act", "block": 3, "kind": "theory",
+      "id": "sale-goods",
+      "name": "Sale of Goods Act",
+      "block": 3,
+      "kind": "theory",
       "summary": "Contract of sale, goods, conditions and warranties, caveat emptor, transfer of ownership, delivery, sale by non-owners, unpaid seller.",
       "points": [
         "Contract of sale (Sec 4): seller transfers or agrees to transfer property in goods to the buyer for a price. Sale (property passes now) vs agreement to sell (passes later/on conditions); risk follows ownership.",
@@ -50,7 +53,10 @@
       "mistakes": ["Mixing up lien (goods still with seller) and stoppage in transit (goods with carrier)."]
     },
     {
-      "id": "negotiable", "name": "Negotiable Instruments", "block": 5, "kind": "theory",
+      "id": "negotiable",
+      "name": "Negotiable Instruments",
+      "block": 5,
+      "kind": "theory",
       "summary": "Promissory note, bill of exchange, cheque, endorsement, crossing, holder in due course, presentment, lost/stolen/forged instruments.",
       "points": [
         "Negotiable instrument: promissory note, bill of exchange or cheque payable to order or bearer (Sec 13). Features: freely transferable, holder in due course gets good title, presumptions of consideration and date.",
@@ -68,7 +74,10 @@
       "mistakes": []
     },
     {
-      "id": "discharge-remedies", "name": "Discharge, Breach, Remedies & Quasi Contracts", "block": 1, "kind": "theory",
+      "id": "discharge-remedies",
+      "name": "Discharge, Breach, Remedies & Quasi Contracts",
+      "block": 1,
+      "kind": "theory",
       "summary": "Modes of discharge, supervening impossibility, breach and remedies (damages, specific performance, injunction, quantum meruit), quasi and contingent contracts.",
       "points": [
         "Discharge by: performance, mutual agreement (novation, rescission, alteration, remission, waiver), impossibility, lapse of time, operation of law (death, insolvency, merger), breach.",
@@ -82,7 +91,10 @@
       "mistakes": []
     },
     {
-      "id": "offer-acceptance", "name": "Offer & Acceptance", "block": 1, "kind": "theory",
+      "id": "offer-acceptance",
+      "name": "Offer & Acceptance",
+      "block": 1,
+      "kind": "theory",
       "summary": "Offer and its legal rules, types of offer, invitation to offer, acceptance, communication, revocation and lapse.",
       "points": [
         "Offer/proposal (Sec 2(a)): willingness to do or abstain, to obtain the other's assent.",
@@ -98,7 +110,10 @@
       "mistakes": []
     },
     {
-      "id": "contract-basics", "name": "Nature & Essentials of a Contract", "block": 1, "kind": "theory",
+      "id": "contract-basics",
+      "name": "Nature & Essentials of a Contract",
+      "block": 1,
+      "kind": "theory",
       "summary": "Contract and agreement, essentials of a valid contract, types of contracts, void/voidable/illegal.",
       "points": [
         "Contract = agreement enforceable by law (Sec 2(h)); agreement = offer + acceptance. 'All contracts are agreements but all agreements are not contracts.'",
@@ -111,7 +126,10 @@
       "mistakes": []
     },
     {
-      "id": "partnership", "name": "Partnership & LLP", "block": 4, "kind": "theory",
+      "id": "partnership",
+      "name": "Partnership & LLP",
+      "block": 4,
+      "kind": "theory",
       "summary": "Partnership and its tests, kinds of partners, registration, rights of partners, dissolution, LLP.",
       "points": [
         "Partnership (Sec 4, 1932 Act): relation between persons who agree to share profits of a business carried on by all or any of them acting for all. Mutual agency is the true test; profit sharing alone is not conclusive.",
@@ -125,7 +143,10 @@
       "mistakes": []
     },
     {
-      "id": "free-consent", "name": "Free Consent (Coercion, Undue Influence, Fraud)", "block": 1, "kind": "theory",
+      "id": "free-consent",
+      "name": "Free Consent (Coercion, Undue Influence, Fraud)",
+      "block": 1,
+      "kind": "theory",
       "summary": "Consent and free consent, coercion, undue influence, fraud, misrepresentation, mistake.",
       "points": [
         "Consent (Sec 13): agreeing on the same thing in the same sense. Free consent (Sec 14): not caused by coercion, undue influence, fraud, misrepresentation or mistake.",
@@ -139,7 +160,10 @@
       "mistakes": []
     },
     {
-      "id": "agency", "name": "Agency", "block": 2, "kind": "theory",
+      "id": "agency",
+      "name": "Agency",
+      "block": 2,
+      "kind": "theory",
       "summary": "Agent and principal, creation of agency (incl. ratification), irrevocable agency, rights and duties of agent, sub-agent, termination.",
       "points": [
         "Agent (Sec 182): person employed to do any act for another or represent another; principal: the person represented. Any person may be an agent — even a minor (the principal is liable, not the minor).",
@@ -155,7 +179,10 @@
       "mistakes": []
     },
     {
-      "id": "bailment-pledge", "name": "Bailment, Pledge & Finder of Goods", "block": 2, "kind": "theory",
+      "id": "bailment-pledge",
+      "name": "Bailment, Pledge & Finder of Goods",
+      "block": 2,
+      "kind": "theory",
       "summary": "Bailment and its kinds, rights and duties of bailee, lien, finder of goods, pledge and pledge by non-owners.",
       "points": [
         "Bailment (Sec 148): delivery of goods for a purpose on the contract that they will be returned or disposed of as directed. Essentials: delivery of goods (movable), for a purpose, return of the same goods.",
@@ -169,7 +196,10 @@
       "mistakes": []
     },
     {
-      "id": "guarantee", "name": "Indemnity & Guarantee", "block": 2, "kind": "theory",
+      "id": "guarantee",
+      "name": "Indemnity & Guarantee",
+      "block": 2,
+      "kind": "theory",
       "summary": "Contract of indemnity vs guarantee, surety's rights against the debtor, creditor and co-sureties, continuing guarantee, discharge of surety.",
       "points": [
         "Indemnity (Sec 124): one party promises to save the other from loss — two parties, primary liability.",
@@ -182,7 +212,10 @@
       "mistakes": []
     },
     {
-      "id": "consideration", "name": "Consideration & Privity", "block": 1, "kind": "theory",
+      "id": "consideration",
+      "name": "Consideration & Privity",
+      "block": 1,
+      "kind": "theory",
       "summary": "Consideration and its legal rules, 'no consideration no contract' and its exceptions, stranger to a contract.",
       "points": [
         "Consideration (Sec 2(d)): at the desire of the promisor, the promisee or any other person has done or abstained, or does or promises to do or abstain.",
@@ -194,7 +227,10 @@
       "mistakes": []
     },
     {
-      "id": "capacity", "name": "Capacity to Contract (Minor, Unsound Mind)", "block": 1, "kind": "theory",
+      "id": "capacity",
+      "name": "Capacity to Contract (Minor, Unsound Mind)",
+      "block": 1,
+      "kind": "theory",
       "summary": "Competent parties, minor's agreements, necessaries, persons of unsound mind, pardanashin women.",
       "points": [
         "Competent (Sec 11): of the age of majority, of sound mind, not disqualified by law.",
@@ -208,7 +244,10 @@
       "mistakes": []
     },
     {
-      "id": "void-agreements", "name": "Void Agreements & Public Policy", "block": 1, "kind": "theory",
+      "id": "void-agreements",
+      "name": "Void Agreements & Public Policy",
+      "block": 1,
+      "kind": "theory",
       "summary": "Agreements in restraint of trade, opposed to public policy, unlawful object or consideration, wagering agreements.",
       "points": [
         "Restraint of trade (Sec 27) is void. Exceptions: seller of goodwill agreeing not to compete within local limits, partners' agreements, trade combinations regulating business, service agreements during employment.",
@@ -235,7 +274,6 @@
     { "s": "2020-12", "q": "10(b)", "t": "Note (any two): condition and warranty", "m": 5, "k": "th", "topic": "sale-goods" },
     { "s": "2020-12", "q": "10(c)", "t": "Note (any two): inchoate instruments", "m": 5, "k": "th", "topic": "negotiable" },
     { "s": "2020-12", "q": "10(d)", "t": "Note (any two): remedies for breach", "m": 5, "k": "th", "topic": "discharge-remedies" },
-
     { "s": "2021-12", "q": "1", "t": "Essential elements of a valid contract", "m": 20, "k": "th", "topic": "contract-basics" },
     { "s": "2021-12", "q": "2", "t": "Consideration; exceptions to 'no consideration no contract'", "m": 20, "k": "th", "topic": "consideration" },
     { "s": "2021-12", "q": "3", "t": "Minor's agreements", "m": 20, "k": "th", "topic": "capacity" },
@@ -249,7 +287,6 @@
     { "s": "2021-12", "q": "10(ii)", "t": "Note (any two): coercion", "m": 5, "k": "th", "topic": "free-consent" },
     { "s": "2021-12", "q": "10(iii)", "t": "Note (any two): holder in due course", "m": 5, "k": "th", "topic": "negotiable" },
     { "s": "2021-12", "q": "10(iv)", "t": "Note (any two): irrevocable agency", "m": 5, "k": "th", "topic": "agency" },
-
     { "s": "2022-06", "q": "1", "t": "Contract and essentials of a valid contract", "m": 20, "k": "th", "topic": "contract-basics" },
     { "s": "2022-06", "q": "2", "t": "Acceptance; invitation to offer is not an offer", "m": 20, "k": "th", "topic": "offer-acceptance" },
     { "s": "2022-06", "q": "3(a)", "t": "Competence to contract; minors", "m": 12, "k": "th", "topic": "capacity" },
@@ -263,7 +300,6 @@
     { "s": "2022-06", "q": "9(ii)", "t": "Note (any two): quantum meruit", "m": 5, "k": "th", "topic": "discharge-remedies" },
     { "s": "2022-06", "q": "9(iii)", "t": "Note (any two): irrevocable agency", "m": 5, "k": "th", "topic": "agency" },
     { "s": "2022-06", "q": "9(iv)", "t": "Note (any two): unpaid seller", "m": 5, "k": "th", "topic": "sale-goods" },
-
     { "s": "2022-12", "q": "1", "t": "Offer: how made and legal rules", "m": 20, "k": "th", "topic": "offer-acceptance" },
     { "s": "2022-12", "q": "2", "t": "Free consent; fraud and its elements", "m": 20, "k": "th", "topic": "free-consent" },
     { "s": "2022-12", "q": "3", "t": "Rules for valid consideration; a stranger cannot sue", "m": 20, "k": "th", "topic": "consideration" },
@@ -277,7 +313,6 @@
     { "s": "2022-12", "q": "9(b)", "t": "Note (any two): sale by non-owners", "m": 5, "k": "th", "topic": "sale-goods" },
     { "s": "2022-12", "q": "9(c)", "t": "Note (any two): modes of dissolution of a firm", "m": 5, "k": "th", "topic": "partnership" },
     { "s": "2022-12", "q": "9(d)", "t": "Note (any two): quasi contracts", "m": 5, "k": "th", "topic": "discharge-remedies" },
-
     { "s": "2023-06", "q": "1(a)", "t": "Law of contract is not the whole law of agreements", "m": 8, "k": "th", "topic": "contract-basics" },
     { "s": "2023-06", "q": "1(b)", "t": "Cross, standing and general offers", "m": 12, "k": "th", "topic": "offer-acceptance" },
     { "s": "2023-06", "q": "2(a)", "t": "Coercion vs undue influence; fraud vs misrepresentation", "m": 10, "k": "th", "topic": "free-consent" },
@@ -293,7 +328,6 @@
     { "s": "2023-06", "q": "9(b)", "t": "Note (any two): transfer of ownership", "m": 5, "k": "th", "topic": "sale-goods" },
     { "s": "2023-06", "q": "9(c)", "t": "Note (any two): classification of agents", "m": 5, "k": "th", "topic": "agency" },
     { "s": "2023-06", "q": "9(d)", "t": "Note (any two): lapse of an offer", "m": 5, "k": "th", "topic": "offer-acceptance" },
-
     { "s": "2023-12", "q": "1", "t": "Law of contract is not the whole law of agreements; void vs voidable vs illegal", "m": 20, "k": "th", "topic": "contract-basics" },
     { "s": "2023-12", "q": "2", "t": "Offer and legal rules for a valid offer", "m": 20, "k": "th", "topic": "offer-acceptance" },
     { "s": "2023-12", "q": "3", "t": "Consideration and legal rules", "m": 20, "k": "th", "topic": "consideration" },
@@ -308,7 +342,6 @@
     { "s": "2023-12", "q": "10(b)", "t": "Note (any two): pledge by non-owners", "m": 5, "k": "th", "topic": "bailment-pledge" },
     { "s": "2023-12", "q": "10(c)", "t": "Note (any two): fraud", "m": 5, "k": "th", "topic": "free-consent" },
     { "s": "2023-12", "q": "10(d)", "t": "Note (any two): limited liability partnership", "m": 5, "k": "th", "topic": "partnership" },
-
     { "s": "2024-06", "q": "1", "t": "Types of contracts by creation, execution and enforceability", "m": 20, "k": "th", "topic": "contract-basics" },
     { "s": "2024-06", "q": "2", "t": "Cross, standing, general and implied offers", "m": 20, "k": "th", "topic": "offer-acceptance" },
     { "s": "2024-06", "q": "3", "t": "Coercion and undue influence: effects and differences", "m": 20, "k": "th", "topic": "free-consent" },
@@ -324,7 +357,6 @@
     { "s": "2024-06", "q": "10(b)", "t": "Note (any two): minor's position in contract", "m": 5, "k": "th", "topic": "capacity" },
     { "s": "2024-06", "q": "10(c)", "t": "Note (any two): bill of exchange", "m": 5, "k": "th", "topic": "negotiable" },
     { "s": "2024-06", "q": "10(d)", "t": "Note (any two): irrevocable agency", "m": 5, "k": "th", "topic": "agency" },
-
     { "s": "2024-12", "q": "1", "t": "Contract and essentials of a valid contract", "m": 20, "k": "th", "topic": "contract-basics" },
     { "s": "2024-12", "q": "2", "t": "Necessaries and minor's liability; agreements with minors", "m": 20, "k": "th", "topic": "capacity" },
     { "s": "2024-12", "q": "3", "t": "When a contract without consideration is valid", "m": 8, "k": "th", "topic": "consideration" },
@@ -341,7 +373,6 @@
     { "s": "2024-12", "q": "9(c,e)", "t": "Notes (any four): stoppage in transit; condition vs warranty", "m": 6.67, "k": "th", "topic": "sale-goods" },
     { "s": "2024-12", "q": "9(d)", "t": "Note (any four): implied authority of a partner", "m": 3.33, "k": "th", "topic": "partnership" },
     { "s": "2024-12", "q": "9(f)", "t": "Note (any four): hundi", "m": 3.34, "k": "th", "topic": "negotiable" },
-
     { "s": "2025-06", "q": "1(a)", "t": "Acceptance: how and by whom", "m": 12, "k": "th", "topic": "offer-acceptance" },
     { "s": "2025-06", "q": "1(b)", "t": "All contracts are agreements but not all agreements are contracts", "m": 8, "k": "th", "topic": "contract-basics" },
     { "s": "2025-06", "q": "2(a)", "t": "Persons of unsound mind", "m": 12, "k": "th", "topic": "capacity" },
@@ -362,7 +393,6 @@
     { "s": "2025-06", "q": "9(d)", "t": "Note (any four): breach of contract", "m": 3.33, "k": "th", "topic": "discharge-remedies" },
     { "s": "2025-06", "q": "9(e)", "t": "Note (any four): cheque vs bill of exchange", "m": 3.33, "k": "th", "topic": "negotiable" },
     { "s": "2025-06", "q": "9(f)", "t": "Note (any four): counter-offer", "m": 3.34, "k": "th", "topic": "offer-acceptance" },
-
     { "s": "2025-12", "q": "1", "t": "Contract and essentials of a valid contract", "m": 20, "k": "th", "topic": "contract-basics" },
     { "s": "2025-12", "q": "2(a)", "t": "Necessaries and minor's liability", "m": 10, "k": "th", "topic": "capacity" },
     { "s": "2025-12", "q": "2(b)", "t": "Is silence fraud? Consequences of fraud", "m": 10, "k": "th", "topic": "free-consent" },
@@ -380,7 +410,6 @@
     { "s": "2025-12", "q": "9(c)", "t": "Note (any two): promissory note vs bill of exchange", "m": 4, "k": "th", "topic": "negotiable" },
     { "s": "2025-12", "q": "9(d)", "t": "Note (any two): right of subrogation", "m": 4, "k": "th", "topic": "guarantee" },
     { "s": "2025-12", "q": "9(e)", "t": "Note (any two): sub-agent vs substituted agent", "m": 4, "k": "th", "topic": "agency" },
-
     { "s": "2026-06", "q": "1(a)", "t": "Communication of offer and acceptance", "m": 10, "k": "th", "topic": "offer-acceptance" },
     { "s": "2026-06", "q": "1(b)", "t": "Elements of fraud", "m": 10, "k": "th", "topic": "free-consent" },
     { "s": "2026-06", "q": "2(a)", "t": "Quasi contracts and their types", "m": 12, "k": "th", "topic": "discharge-remedies" },

@@ -178,10 +178,7 @@
         "Methods: Straight Line / Fixed Instalment, Written Down Value / Diminishing Balance, Annuity, Sinking Fund, Insurance Policy, Machine Hour, Depletion.",
         "SLM: simple, same charge each year; ignores falling repairs. WDV: higher charge early, balances with repairs, accepted by income tax, never reaches zero."
       ],
-      "method": [
-        "Machinery A/c: purchase cost + installation; depreciation each year (pro rata for part years).",
-        "On sale: find book value on date of sale; profit/loss = sale price − book value; transfer to P&L."
-      ],
+      "method": ["Machinery A/c: purchase cost + installation; depreciation each year (pro rata for part years).", "On sale: find book value on date of sale; profit/loss = sale price − book value; transfer to P&L."],
       "formula": ["SLM: (Cost − Scrap) ÷ Life", "WDV: Book value × Rate%"],
       "mistakes": ["Not charging depreciation for the part year before sale.", "Leaving out installation charges from cost."]
     },
@@ -261,11 +258,7 @@
         "Manufacturing A/c: raw materials consumed + direct wages + factory overheads ± WIP → cost of production.",
         "Asset types: fixed, current/floating, liquid, fictitious (e.g. preliminary expenses), wasting (e.g. mines)."
       ],
-      "method": [
-        "Classify each item: direct (Trading) vs indirect (P&L) vs balance sheet.",
-        "Carriage inwards/wages → Trading; carriage on sales, salaries, rent → P&L.",
-        "Apply adjustments before totalling."
-      ],
+      "method": ["Classify each item: direct (Trading) vs indirect (P&L) vs balance sheet.", "Carriage inwards/wages → Trading; carriage on sales, salaries, rent → P&L.", "Apply adjustments before totalling."],
       "formula": ["COGS = Opening stock + Purchases − Purchase returns + Direct expenses − Closing stock"],
       "mistakes": ["Putting carriage on sales in Trading A/c.", "Forgetting closing stock on both P&L side (Trading credit) and Balance Sheet."]
     },
@@ -275,15 +268,7 @@
       "block": 3,
       "kind": "theory",
       "summary": "20-mark theory question on the adjustments and their two-fold effect.",
-      "points": [
-        "Closing stock: credit Trading A/c, asset in Balance Sheet.",
-        "Outstanding expenses: add to expense in P&L, liability in Balance Sheet.",
-        "Prepaid expenses: deduct from expense, asset in Balance Sheet.",
-        "Accrued income: add to income, asset. Income received in advance: deduct from income, liability.",
-        "Depreciation: debit P&L, deduct from asset.",
-        "Bad debts and provision for doubtful debts: debit P&L, deduct from debtors.",
-        "Interest on capital (expense) and interest on drawings (income)."
-      ],
+      "points": ["Closing stock: credit Trading A/c, asset in Balance Sheet.", "Outstanding expenses: add to expense in P&L, liability in Balance Sheet.", "Prepaid expenses: deduct from expense, asset in Balance Sheet.", "Accrued income: add to income, asset. Income received in advance: deduct from income, liability.", "Depreciation: debit P&L, deduct from asset.", "Bad debts and provision for doubtful debts: debit P&L, deduct from debtors.", "Interest on capital (expense) and interest on drawings (income)."],
       "frame": "Meaning of adjustment → each adjustment with its two effects (P&L side and Balance Sheet) — a table works well.",
       "mistakes": ["Showing only one effect of an adjustment (every adjustment has two)."]
     },
@@ -313,12 +298,10 @@
       "block": 2,
       "kind": "numerical",
       "summary": "Rare as a full question, but journal entries are needed for every numerical topic.",
-      "points": [
-        "Journal: book of original entry — transactions recorded date-wise with narration.",
-        "Ledger: accounts classified from the journal; balanced periodically.",
-        "Opening entry: Assets A/cs Dr To Liabilities and Capital A/c."
+      "points": ["Journal: book of original entry — transactions recorded date-wise with narration.", "Ledger: accounts classified from the journal; balanced periodically.", "Opening entry: Assets A/cs Dr To Liabilities and Capital A/c."],
+      "method": [
+        "Identify accounts → classify (personal/real/nominal) → apply golden rules → write entry with narration."
       ],
-      "method": ["Identify accounts → classify (personal/real/nominal) → apply golden rules → write entry with narration."],
       "formula": [],
       "mistakes": ["Missing narrations.", "Recording trade discount."]
     }
@@ -334,7 +317,6 @@
     { "s": "2020-12", "q": "7", "t": "Computerised accounting; manual vs computerised; choosing accounting software", "m": 20, "k": "th", "topic": "computerised" },
     { "s": "2020-12", "q": "8", "t": "Consignment of 500 bicycles — journal entries and Consignment Account", "m": 20, "k": "num", "topic": "consignment" },
     { "s": "2020-12", "q": "9", "t": "Conservatism, consistency, full disclosure and materiality concepts", "m": 20, "k": "th", "topic": "concepts" },
-
     { "s": "2021-12", "q": "1(a)", "t": "Define accounting; objectives and scope", "m": 12, "k": "th", "topic": "basics" },
     { "s": "2021-12", "q": "1(b)", "t": "Cash basis vs accrual basis with examples", "m": 8, "k": "th", "topic": "double-entry" },
     { "s": "2021-12", "q": "2", "t": "Rectifying entries and Suspense Account (difference of ₹175)", "m": 20, "k": "num", "topic": "trial-balance" },
@@ -345,7 +327,6 @@
     { "s": "2021-12", "q": "7", "t": "Creating a voucher type in Tally; stock item vs stock group vs stock category", "m": 20, "k": "th", "topic": "computerised" },
     { "s": "2021-12", "q": "8", "t": "Consignment at invoice price with over-riding commission — accounts in both books", "m": 20, "k": "num", "topic": "consignment" },
     { "s": "2021-12", "q": "9", "t": "Going concern concept; accounting period concept", "m": 20, "k": "th", "topic": "concepts" },
-
     { "s": "2022-06", "q": "1(a)", "t": "Define accounting; qualitative characteristics of accounting information", "m": 10, "k": "th", "topic": "basics" },
     { "s": "2022-06", "q": "1(b)", "t": "Indian Accounting Standards vs International Accounting Standards", "m": 10, "k": "th", "topic": "standards" },
     { "s": "2022-06", "q": "2", "t": "Why is the journal sub-divided? Special journals and their transactions", "m": 20, "k": "th", "topic": "subsidiary-books" },
@@ -357,7 +338,6 @@
     { "s": "2022-06", "q": "7", "t": "Objectives of branch accounts; branch stock account as stock control", "m": 20, "k": "th", "topic": "branch" },
     { "s": "2022-06", "q": "8", "t": "HP of 10 machines, transfer after two instalments — accounts in both books", "m": 20, "k": "num", "topic": "hire-purchase" },
     { "s": "2022-06", "q": "9", "t": "Computerised accounting merits and demerits; choosing software", "m": 20, "k": "th", "topic": "computerised" },
-
     { "s": "2022-12", "q": "1(a)", "t": "Scope of accounting; steps in the accounting process", "m": 10, "k": "th", "topic": "double-entry" },
     { "s": "2022-12", "q": "1(b)", "t": "Bases of accounting with examples", "m": 10, "k": "th", "topic": "double-entry" },
     { "s": "2022-12", "q": "2(a)", "t": "Matching concept and its importance", "m": 10, "k": "th", "topic": "concepts" },
@@ -370,7 +350,6 @@
     { "s": "2022-12", "q": "7", "t": "Ledger vs group; types of vouchers; post-dated vouchers", "m": 20, "k": "th", "topic": "computerised" },
     { "s": "2022-12", "q": "8", "t": "HP of 5 scooters with default and return of 2 — hirer's accounts", "m": 20, "k": "num", "topic": "hire-purchase" },
     { "s": "2022-12", "q": "9", "t": "Mumbai branch accounts in HO books", "m": 20, "k": "num", "topic": "branch" },
-
     { "s": "2023-06", "q": "1(a)", "t": "Accounting principles and their significance", "m": 10, "k": "th", "topic": "concepts" },
     { "s": "2023-06", "q": "1(b)", "t": "Indian vs International Accounting Standards", "m": 10, "k": "th", "topic": "standards" },
     { "s": "2023-06", "q": "2", "t": "Journalise opening balances and January transactions", "m": 20, "k": "num", "topic": "journal-ledger" },
@@ -382,7 +361,6 @@
     { "s": "2023-06", "q": "7", "t": "JV accounts with a separate set of books", "m": 20, "k": "th", "topic": "joint-venture" },
     { "s": "2023-06", "q": "8", "t": "Consignment of wheat with abnormal loss and insurance claim", "m": 20, "k": "num", "topic": "consignment" },
     { "s": "2023-06", "q": "9", "t": "Tally and its components; preparation of reports", "m": 20, "k": "th", "topic": "computerised" },
-
     { "s": "2023-12", "q": "1(a)", "t": "Objectives and significance of accounting standards", "m": 10, "k": "th", "topic": "standards" },
     { "s": "2023-12", "q": "1(b)", "t": "Steps in the accounting process", "m": 10, "k": "th", "topic": "double-entry" },
     { "s": "2023-12", "q": "2", "t": "Classification of transactions/accounts; rules of debit and credit", "m": 20, "k": "th", "topic": "double-entry" },
@@ -393,7 +371,6 @@
     { "s": "2023-12", "q": "7", "t": "Loading; del credere commission", "m": 20, "k": "th", "topic": "consignment" },
     { "s": "2023-12", "q": "8", "t": "JV turned into consignment — ledger accounts", "m": 20, "k": "num", "topic": "joint-venture" },
     { "s": "2023-12", "q": "9", "t": "Computerised accounting; creating vouchers and recording entries", "m": 20, "k": "th", "topic": "computerised" },
-
     { "s": "2024-06", "q": "1(a)", "t": "Objectives and functions of accounting", "m": 8, "k": "th", "topic": "basics" },
     { "s": "2024-06", "q": "1(b)", "t": "Basic accounting concepts and conventions", "m": 12, "k": "th", "topic": "concepts" },
     { "s": "2024-06", "q": "2(a)", "t": "Principles governing measurement of accounting income", "m": 10, "k": "th", "topic": "concepts" },
@@ -406,7 +383,6 @@
     { "s": "2024-06", "q": "7(b)", "t": "Proforma invoice with assumed figures", "m": 10, "k": "th", "topic": "consignment" },
     { "s": "2024-06", "q": "8", "t": "JV to underwrite 50,000 shares — ledger accounts", "m": 20, "k": "num", "topic": "joint-venture" },
     { "s": "2024-06", "q": "9", "t": "Computer accounting; creating vouchers and their uses", "m": 20, "k": "th", "topic": "computerised" },
-
     { "s": "2024-12", "q": "1(a)", "t": "Double entry book-keeping and its advantages", "m": 10, "k": "th", "topic": "double-entry" },
     { "s": "2024-12", "q": "1(b)", "t": "Accounting standards; steps in framing them in India", "m": 10, "k": "th", "topic": "standards" },
     { "s": "2024-12", "q": "2(a)", "t": "Concepts and conventions with examples", "m": 10, "k": "th", "topic": "concepts" },
@@ -419,7 +395,6 @@
     { "s": "2024-12", "q": "7(b)", "t": "Features of JV; JV vs consignment", "m": 10, "k": "th", "topic": "joint-venture" },
     { "s": "2024-12", "q": "8", "t": "Consignment Account with natural wastage — unsold stock calculation", "m": 20, "k": "num", "topic": "consignment" },
     { "s": "2024-12", "q": "9", "t": "Stock item vs group vs category; reports in Tally ERP", "m": 20, "k": "th", "topic": "computerised" },
-
     { "s": "2025-06", "q": "1(a)", "t": "Accounting information system and its features", "m": 10, "k": "th", "topic": "basics" },
     { "s": "2025-06", "q": "1(b)", "t": "Accounting process and its stages", "m": 10, "k": "th", "topic": "double-entry" },
     { "s": "2025-06", "q": "2(a)", "t": "Concepts and conventions of financial accounting", "m": 10, "k": "th", "topic": "concepts" },
@@ -432,7 +407,6 @@
     { "s": "2025-06", "q": "7", "t": "Methods of recording JV without separate books", "m": 20, "k": "th", "topic": "joint-venture" },
     { "s": "2025-06", "q": "8", "t": "Memorandum JV and JV with co-venturer accounts (Gita & Sita)", "m": 20, "k": "num", "topic": "joint-venture" },
     { "s": "2025-06", "q": "9", "t": "Notes (any two): computerised vs manual; types of vouchers; petty cash book", "m": 20, "k": "th", "topic": "computerised" },
-
     { "s": "2025-12", "q": "1(a)", "t": "Characteristics of accounting information", "m": 10, "k": "th", "topic": "basics" },
     { "s": "2025-12", "q": "1(b)", "t": "Double entry system and its advantages", "m": 10, "k": "th", "topic": "double-entry" },
     { "s": "2025-12", "q": "2(a)", "t": "Principles of measuring accounting income", "m": 10, "k": "th", "topic": "concepts" },
@@ -445,7 +419,6 @@
     { "s": "2025-12", "q": "7", "t": "Items at invoice price in consignment; loading adjustment entries", "m": 20, "k": "th", "topic": "consignment" },
     { "s": "2025-12", "q": "8", "t": "Closing stock of coal consignment with normal wastage", "m": 20, "k": "num", "topic": "consignment" },
     { "s": "2025-12", "q": "9", "t": "Notes (any two): ledger and groups; reports; opening entry", "m": 20, "k": "th", "topic": "computerised" },
-
     { "s": "2026-06", "q": "1(a)", "t": "Accounting information and five users", "m": 10, "k": "th", "topic": "basics" },
     { "s": "2026-06", "q": "1(b)", "t": "Double entry vs single entry system", "m": 10, "k": "th", "topic": "double-entry" },
     { "s": "2026-06", "q": "2(a)", "t": "Accounting standards; role of IFRS", "m": 10, "k": "th", "topic": "standards" },

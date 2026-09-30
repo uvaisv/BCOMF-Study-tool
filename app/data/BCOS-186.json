@@ -28,7 +28,10 @@
   ],
   "topics": [
     {
-      "id": "reports", "name": "Sales Reports, Documents & Sales Manual", "block": 5, "kind": "theory",
+      "id": "reports",
+      "name": "Sales Reports, Documents & Sales Manual",
+      "block": 5,
+      "kind": "theory",
       "summary": "Sales reports (objectives, features, types), documents salespeople prepare, sales manual, order book.",
       "points": [
         "Sales report: a written account of a salesperson's activities and results for a period.",
@@ -43,7 +46,10 @@
       "mistakes": []
     },
     {
-      "id": "presentation", "name": "Sales Presentation, Demonstration & Objections", "block": 3, "kind": "theory",
+      "id": "presentation",
+      "name": "Sales Presentation, Demonstration & Objections",
+      "block": 3,
+      "kind": "theory",
       "summary": "Presentation and demonstration steps and strategies, and handling objections.",
       "points": [
         "Presentation: telling the prospect how the product meets their needs; demonstration: showing it in action.",
@@ -54,10 +60,15 @@
         "Handling techniques: listen fully, 'yes… but', direct denial (for wrong facts), boomerang (turn the objection into a reason to buy), compensation (admit and offset), question method, third-party proof, postpone."
       ],
       "frame": "Meaning → steps or strategies as headed points, each with one product example → conclusion.",
-      "mistakes": ["Arguing with the prospect is itself a listed mistake — mention 'never argue' when writing on objections."]
+      "mistakes": [
+        "Arguing with the prospect is itself a listed mistake — mention 'never argue' when writing on objections."
+      ]
     },
     {
-      "id": "motivation", "name": "Motivating & Paying Salespeople", "block": 4, "kind": "theory",
+      "id": "motivation",
+      "name": "Motivating & Paying Salespeople",
+      "block": 4,
+      "kind": "theory",
       "summary": "Role of motivation, Maslow's theory for salespeople, financial and non-financial techniques, compensation plans.",
       "points": [
         "Salespeople work alone, face rejection and irregular results — so motivation matters more than in most jobs.",
@@ -70,7 +81,10 @@
       "mistakes": []
     },
     {
-      "id": "buying-motives", "name": "Buying Motives", "block": 2, "kind": "theory",
+      "id": "buying-motives",
+      "name": "Buying Motives",
+      "block": 2,
+      "kind": "theory",
       "summary": "Meaning, types and application of buying motives in personal selling.",
       "points": [
         "Buying motive: the reason or urge that makes a customer buy.",
@@ -82,7 +96,10 @@
       "mistakes": []
     },
     {
-      "id": "buyer-behaviour", "name": "Buyer Behaviour", "block": 2, "kind": "theory",
+      "id": "buyer-behaviour",
+      "name": "Buyer Behaviour",
+      "block": 2,
+      "kind": "theory",
       "summary": "Buyer vs consumer, factors affecting buyer behaviour, why understanding it matters.",
       "points": [
         "Buyer: the person who purchases; consumer: the person who uses (a parent buys toys, the child uses them).",
@@ -93,7 +110,10 @@
       "mistakes": []
     },
     {
-      "id": "sales-process", "name": "Selling Process, Prospecting & Qualifying", "block": 3, "kind": "theory",
+      "id": "sales-process",
+      "name": "Selling Process, Prospecting & Qualifying",
+      "block": 3,
+      "kind": "theory",
       "summary": "Steps of the personal selling process; prospecting vs qualifying; types of prospects.",
       "points": [
         "Selling process: prospecting and qualifying → pre-approach → approach → presentation and demonstration → handling objections → closing → follow-up.",
@@ -106,7 +126,10 @@
       "mistakes": []
     },
     {
-      "id": "salesmanship", "name": "Salesmanship & Qualities of a Salesperson", "block": 1, "kind": "theory",
+      "id": "salesmanship",
+      "name": "Salesmanship & Qualities of a Salesperson",
+      "block": 1,
+      "kind": "theory",
       "summary": "Types of salesmanship, creative selling, role, qualities, duties and skills of a (modern) salesperson; careers.",
       "points": [
         "Salesmanship: the art of persuading people to buy goods or services that satisfy their needs.",
@@ -122,7 +145,10 @@
       "mistakes": []
     },
     {
-      "id": "sales-mgmt", "name": "Sales Management & Salesforce", "block": 4, "kind": "theory",
+      "id": "sales-mgmt",
+      "name": "Sales Management & Salesforce",
+      "block": 4,
+      "kind": "theory",
       "summary": "Meaning, importance and scope of sales management; salesforce management process; recruitment, selection, training.",
       "points": [
         "Sales management: planning, organising, directing and controlling the sales force to achieve sales objectives.",
@@ -138,7 +164,10 @@
       "mistakes": []
     },
     {
-      "id": "personal-selling", "name": "Personal Selling: Concept & Situations", "block": 1, "kind": "theory",
+      "id": "personal-selling",
+      "name": "Personal Selling: Concept & Situations",
+      "block": 1,
+      "kind": "theory",
       "summary": "Meaning, nature, characteristics and objectives of personal selling; selling situations; selling vs marketing.",
       "points": [
         "Personal selling: face-to-face, two-way communication to persuade a prospect to buy.",
@@ -152,7 +181,10 @@
       "mistakes": []
     },
     {
-      "id": "closing", "name": "Closing the Sale", "block": 3, "kind": "theory",
+      "id": "closing",
+      "name": "Closing the Sale",
+      "block": 3,
+      "kind": "theory",
       "summary": "Closing techniques, trial close and closing cues.",
       "points": [
         "Closing: getting the prospect's commitment to buy.",
@@ -165,7 +197,10 @@
       "mistakes": []
     },
     {
-      "id": "ethics", "name": "Ethics in Selling", "block": 5, "kind": "theory",
+      "id": "ethics",
+      "name": "Ethics in Selling",
+      "block": 5,
+      "kind": "theory",
       "summary": "Ethical and legal issues in selling, importance of ethics, sales code of conduct.",
       "points": [
         "Ethics: moral principles of right and wrong in selling.",
@@ -192,7 +227,6 @@
     { "s": "2022-06", "q": "8(b)", "t": "Note (any two): importance of ethics in selling", "m": 5, "k": "th", "topic": "ethics" },
     { "s": "2022-06", "q": "8(c)", "t": "Note (any two): Maslow's need hierarchy", "m": 5, "k": "th", "topic": "motivation" },
     { "s": "2022-06", "q": "8(d)", "t": "Note (any two): types of buying motives", "m": 5, "k": "th", "topic": "buying-motives" },
-
     { "s": "2022-12", "q": "1", "t": "Types of selling situations", "m": 20, "k": "th", "topic": "personal-selling" },
     { "s": "2022-12", "q": "2", "t": "Importance and scope of sales management", "m": 20, "k": "th", "topic": "sales-mgmt" },
     { "s": "2022-12", "q": "3", "t": "Sources of recruitment; selection of sales force", "m": 20, "k": "th", "topic": "sales-mgmt" },
@@ -205,7 +239,6 @@
     { "s": "2022-12", "q": "8(b)", "t": "Note (any two): prospecting and qualifying", "m": 5, "k": "th", "topic": "sales-process" },
     { "s": "2022-12", "q": "8(c)", "t": "Note (any two): buyer motivation", "m": 5, "k": "th", "topic": "buying-motives" },
     { "s": "2022-12", "q": "8(d)", "t": "Note (any two): trends in sales management", "m": 5, "k": "th", "topic": "sales-mgmt" },
-
     { "s": "2023-06", "q": "1", "t": "Salesmanship; role and qualities of a salesman", "m": 20, "k": "th", "topic": "salesmanship" },
     { "s": "2023-06", "q": "2(a)", "t": "Process of salesforce management", "m": 10, "k": "th", "topic": "sales-mgmt" },
     { "s": "2023-06", "q": "2(b)", "t": "Process of creative selling", "m": 10, "k": "th", "topic": "salesmanship" },
@@ -220,7 +253,6 @@
     { "s": "2023-06", "q": "8(b)", "t": "Note (any two): sales manual", "m": 5, "k": "th", "topic": "reports" },
     { "s": "2023-06", "q": "8(c)", "t": "Note (any two): presentation and demonstration", "m": 5, "k": "th", "topic": "presentation" },
     { "s": "2023-06", "q": "8(d)", "t": "Note (any two): careers in personal selling", "m": 5, "k": "th", "topic": "salesmanship" },
-
     { "s": "2023-12", "q": "1", "t": "Salesforce management and its process", "m": 20, "k": "th", "topic": "sales-mgmt" },
     { "s": "2023-12", "q": "2", "t": "Steps to sell a product; the most crucial step", "m": 20, "k": "th", "topic": "sales-process" },
     { "s": "2023-12", "q": "3", "t": "Factors affecting buyer behaviour", "m": 20, "k": "th", "topic": "buyer-behaviour" },
@@ -232,7 +264,6 @@
     { "s": "2023-12", "q": "8(b)", "t": "Note (any two): skills for personal selling", "m": 5, "k": "th", "topic": "salesmanship" },
     { "s": "2023-12", "q": "8(c)", "t": "Note (any two): trial close", "m": 5, "k": "th", "topic": "closing" },
     { "s": "2023-12", "q": "8(d)", "t": "Note (any two): sales reports", "m": 5, "k": "th", "topic": "reports" },
-
     { "s": "2024-06", "q": "1", "t": "Creative salesmanship; functions and duties of a salesman", "m": 20, "k": "th", "topic": "salesmanship" },
     { "s": "2024-06", "q": "2", "t": "When to use personal selling", "m": 10, "k": "th", "topic": "personal-selling" },
     { "s": "2024-06", "q": "2", "t": "Process of personal selling", "m": 10, "k": "th", "topic": "sales-process" },
@@ -247,7 +278,6 @@
     { "s": "2024-06", "q": "8(b)", "t": "Note (any two): professional salesmanship", "m": 5, "k": "th", "topic": "salesmanship" },
     { "s": "2024-06", "q": "8(c)", "t": "Note (any two): presentation and demonstration", "m": 5, "k": "th", "topic": "presentation" },
     { "s": "2024-06", "q": "8(d)", "t": "Note (any two): selling vs marketing", "m": 5, "k": "th", "topic": "personal-selling" },
-
     { "s": "2024-12", "q": "1", "t": "Personal selling: characteristics and objectives", "m": 20, "k": "th", "topic": "personal-selling" },
     { "s": "2024-12", "q": "2", "t": "Buyer vs consumer; importance of buyer behaviour", "m": 20, "k": "th", "topic": "buyer-behaviour" },
     { "s": "2024-12", "q": "3", "t": "Sales closing techniques", "m": 20, "k": "th", "topic": "closing" },
@@ -260,7 +290,6 @@
     { "s": "2024-12", "q": "8(b)", "t": "Note (any two): ethical selling", "m": 5, "k": "th", "topic": "ethics" },
     { "s": "2024-12", "q": "8(c)", "t": "Note (any two): sales closing cues", "m": 5, "k": "th", "topic": "closing" },
     { "s": "2024-12", "q": "8(d)", "t": "Note (any two): order book", "m": 5, "k": "th", "topic": "reports" },
-
     { "s": "2025-06", "q": "1", "t": "Salesmanship; role and qualities of a modern salesman", "m": 20, "k": "th", "topic": "salesmanship" },
     { "s": "2025-06", "q": "2", "t": "Factors affecting buyer behaviour", "m": 20, "k": "th", "topic": "buyer-behaviour" },
     { "s": "2025-06", "q": "3(a)", "t": "Prospect categories and strategies", "m": 10, "k": "th", "topic": "sales-process" },
@@ -274,7 +303,6 @@
     { "s": "2025-06", "q": "8(b)", "t": "Note (any two): prospecting and qualifying", "m": 5, "k": "th", "topic": "sales-process" },
     { "s": "2025-06", "q": "8(c)", "t": "Note (any two): sales management", "m": 5, "k": "th", "topic": "sales-mgmt" },
     { "s": "2025-06", "q": "8(d)", "t": "Note (any two): order book", "m": 5, "k": "th", "topic": "reports" },
-
     { "s": "2025-12", "q": "1", "t": "Personal selling", "m": 4, "k": "th", "topic": "personal-selling" },
     { "s": "2025-12", "q": "1", "t": "Steps in the sales process", "m": 16, "k": "th", "topic": "sales-process" },
     { "s": "2025-12", "q": "2", "t": "Types of selling situations", "m": 20, "k": "th", "topic": "personal-selling" },
@@ -289,7 +317,6 @@
     { "s": "2025-12", "q": "8(b)", "t": "Note (any two): interpersonal skills", "m": 5, "k": "th", "topic": "salesmanship" },
     { "s": "2025-12", "q": "8(c)", "t": "Note (any two): sales management", "m": 5, "k": "th", "topic": "sales-mgmt" },
     { "s": "2025-12", "q": "8(d)", "t": "Note (any two): buying motives", "m": 5, "k": "th", "topic": "buying-motives" },
-
     { "s": "2026-06", "q": "1", "t": "Modern salesmanship; role and qualities of a modern salesman", "m": 20, "k": "th", "topic": "salesmanship" },
     { "s": "2026-06", "q": "2", "t": "Factors affecting buyer behaviour", "m": 20, "k": "th", "topic": "buyer-behaviour" },
     { "s": "2026-06", "q": "3(a)", "t": "Types of selling situations", "m": 10, "k": "th", "topic": "personal-selling" },

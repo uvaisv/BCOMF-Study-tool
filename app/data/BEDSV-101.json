@@ -33,7 +33,10 @@
   ],
   "topics": [
     {
-      "id": "home-family", "name": "Home, Parents & Community in Value Development", "block": 5, "kind": "theory",
+      "id": "home-family",
+      "name": "Home, Parents & Community in Value Development",
+      "block": 5,
+      "kind": "theory",
       "summary": "Home as the first learning place, role of parents, family and community, socialisation, ways to build values at home.",
       "points": [
         "Home is the first school: children learn language, habits, manners and values by imitating family members.",
@@ -46,7 +49,10 @@
       "mistakes": []
     },
     {
-      "id": "morality", "name": "Morality & Theories of Conduct", "block": 3, "kind": "theory",
+      "id": "morality",
+      "name": "Morality & Theories of Conduct",
+      "block": 3,
+      "kind": "theory",
       "summary": "Facets of morality, the 'good' and self-realisation, rules and theories of conduct.",
       "points": [
         "Morality: principles of right and wrong that guide behaviour.",
@@ -59,7 +65,10 @@
       "mistakes": []
     },
     {
-      "id": "adjustment", "name": "Interaction, Adjustment & Conflict", "block": 4, "kind": "theory",
+      "id": "adjustment",
+      "name": "Interaction, Adjustment & Conflict",
+      "block": 4,
+      "kind": "theory",
       "summary": "Verbal and non-verbal interaction, adjustment and its push/pull factors, adjustment disorder, conflict.",
       "points": [
         "Verbal interaction: spoken or written words. Non-verbal: gestures, facial expressions, posture, eye contact, tone, touch, space.",
@@ -73,7 +82,10 @@
       "mistakes": []
     },
     {
-      "id": "personality", "name": "Personality & Character", "block": 3, "kind": "theory",
+      "id": "personality",
+      "name": "Personality & Character",
+      "block": 3,
+      "kind": "theory",
       "summary": "Characteristics of personality, character–personality patterns, personality disorders.",
       "points": [
         "Personality: the unique, organised pattern of a person's thoughts, feelings and behaviour.",
@@ -86,7 +98,10 @@
       "mistakes": []
     },
     {
-      "id": "culture", "name": "Indian Culture, Philosophy & Cultural Pluralism", "block": 2, "kind": "theory",
+      "id": "culture",
+      "name": "Indian Culture, Philosophy & Cultural Pluralism",
+      "block": 2,
+      "kind": "theory",
       "summary": "Values of Indian culture, schools of Indian philosophy, cultural pluralism and its challenges.",
       "points": [
         "Values of Indian culture: tolerance, non-violence (ahimsa), truth, respect for elders, hospitality, family bonds, spirituality, unity in diversity, 'Vasudhaiva Kutumbakam'.",
@@ -98,7 +113,10 @@
       "mistakes": []
     },
     {
-      "id": "value-edu", "name": "Value Education: Meaning, Need & Methods", "block": 1, "kind": "theory",
+      "id": "value-edu",
+      "name": "Value Education: Meaning, Need & Methods",
+      "block": 1,
+      "kind": "theory",
       "summary": "Education and value education, need and importance, moral vs religious education, ways to develop values, malaise of society.",
       "points": [
         "Value education: education that develops moral, social, cultural and spiritual values along with knowledge.",
@@ -111,7 +129,10 @@
       "mistakes": []
     },
     {
-      "id": "peers-media", "name": "Peers & Media", "block": 5, "kind": "theory",
+      "id": "peers-media",
+      "name": "Peers & Media",
+      "block": 5,
+      "kind": "theory",
       "summary": "Value development through peers; role, functions, evolution and negative effects of media.",
       "points": [
         "Peers: people of the same age group. They shape values through acceptance, imitation, cooperation and competition — positively (teamwork, sharing) or negatively (peer pressure).",
@@ -124,7 +145,10 @@
       "mistakes": []
     },
     {
-      "id": "democracy-sd", "name": "Democracy & Sustainable Development", "block": 1, "kind": "theory",
+      "id": "democracy-sd",
+      "name": "Democracy & Sustainable Development",
+      "block": 1,
+      "kind": "theory",
       "summary": "Principles of democracy, democracy in education, sustainable development and the role of education.",
       "points": [
         "Principles of democracy: liberty, equality, fraternity, justice, rule of law, respect for individual dignity.",
@@ -147,7 +171,6 @@
     { "s": "2024-12", "q": "4 (or)", "t": "Role of parents in value development", "m": 10, "k": "th", "topic": "home-family" },
     { "s": "2024-12", "q": "5", "t": "Home: the first learning place", "m": 10, "k": "th", "topic": "home-family" },
     { "s": "2024-12", "q": "5 (or)", "t": "Media and its negative effects", "m": 10, "k": "th", "topic": "peers-media" },
-
     { "s": "2025-06", "q": "1", "t": "Moral education vs religious education", "m": 10, "k": "th", "topic": "value-edu" },
     { "s": "2025-06", "q": "1 (or)", "t": "Facets of morality", "m": 10, "k": "th", "topic": "morality" },
     { "s": "2025-06", "q": "2", "t": "Schools of Indian philosophy; two orthodox schools", "m": 10, "k": "th", "topic": "culture" },
@@ -158,7 +181,6 @@
     { "s": "2025-06", "q": "4 (or)", "t": "Adjustment; push and pull factors", "m": 10, "k": "th", "topic": "adjustment" },
     { "s": "2025-06", "q": "5", "t": "Peers and value development through peers", "m": 10, "k": "th", "topic": "peers-media" },
     { "s": "2025-06", "q": "5 (or)", "t": "Role and functions of media", "m": 10, "k": "th", "topic": "peers-media" },
-
     { "s": "2025-12", "q": "1", "t": "Malaise of Indian society", "m": 10, "k": "th", "topic": "value-edu" },
     { "s": "2025-12", "q": "1 (or)", "t": "Democracy in education", "m": 10, "k": "th", "topic": "democracy-sd" },
     { "s": "2025-12", "q": "2", "t": "Sustainable development and education", "m": 10, "k": "th", "topic": "democracy-sd" },
@@ -169,7 +191,6 @@
     { "s": "2025-12", "q": "4 (or)", "t": "Adjustment disorder; helping maladjusted children", "m": 10, "k": "th", "topic": "adjustment" },
     { "s": "2025-12", "q": "5", "t": "Inculcating values at home", "m": 10, "k": "th", "topic": "home-family" },
     { "s": "2025-12", "q": "5 (or)", "t": "Role of parents and community in value development", "m": 10, "k": "th", "topic": "home-family" },
-
     { "s": "2026-06", "q": "1", "t": "Morality and its facets", "m": 20, "k": "th", "topic": "morality" },
     { "s": "2026-06", "q": "2", "t": "Cultural pluralism in India and its challenges", "m": 20, "k": "th", "topic": "culture" },
     { "s": "2026-06", "q": "3", "t": "Personality and character; character–personality patterns", "m": 20, "k": "th", "topic": "personality" },
