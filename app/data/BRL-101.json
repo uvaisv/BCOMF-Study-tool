@@ -41,10 +41,17 @@
         "Cash and carry: wholesale self-service for registered businesses (Metro, Walmart Best Price).",
         "Brick and mortar: physical stores; click and mortar: both physical and online.",
         "Franchising: franchisor gives the brand and system, franchisee pays a fee/royalty. Types: product/trade-name, business-format, manufacturer–retailer. Merits: fast expansion, low capital for franchisor, proven model for franchisee. Limits: less control, royalty cost, dependence.",
-        "E-tailing: selling online (Amazon, Flipkart). Advantages: 24×7, wide reach, low cost, convenience. Limitations: no touch and feel, delivery and return issues, security concerns."
+        "E-tailing: selling online (Amazon, Flipkart). Advantages: 24×7, wide reach, low cost, convenience. Limitations: no touch and feel, delivery and return issues, security concerns.",
+        "Choice of format follows location: department stores suit scarce central city space, hypermarkets need large plots on the outskirts, neighbourhoods suit food and daily-needs stores, high streets suit brand stores, and malls offer everything under one roof.",
+        "Emerging trends in the book: cash-and-carry, growth through mergers and acquisitions, and the rise of private brands changing the manufacturer–retailer relationship."
       ],
       "frame": "Meaning → classification chart (store / non-store) → each format with an Indian example → merits → conclusion.",
-      "mistakes": []
+      "mistakes": [],
+      "units": [
+        { "unit": 3, "title": "Retail Formats" },
+        { "unit": 9, "title": "Rural Retailing and E-Tailing", "part": "E-tailing and franchising" },
+        { "unit": 10, "title": "Emerging Trends and Careers in Retail Industry", "part": "Cash and carry" }
+      ]
     },
     {
       "id": "consumer",
@@ -58,10 +65,15 @@
         "Buying decision process: need recognition → information search → evaluation of alternatives → purchase decision → post-purchase behaviour (e.g. buying a new car).",
         "Situational variables: physical surroundings, social surroundings, time, task (gift or self), mood.",
         "Store image: how consumers see a store — merchandise, price, service, ambience, location.",
-        "Customer relationship marketing: keeping customers through loyalty programmes, personalised offers and service."
+        "Customer relationship marketing: keeping customers through loyalty programmes, personalised offers and service.",
+        "Buying roles: initiator, influencer, decider, buyer and user — often the household, not one person, is the real target.",
+        "The book's four situational dimensions: physical setting, social setting, temporal (time) setting and task setting. Every store must communicate its own individuality (store image) to its target customers."
       ],
       "frame": "Meaning → factors or stages as headed points with a retail example → why retailers must understand it.",
-      "mistakes": []
+      "mistakes": [],
+      "units": [
+        { "unit": 2, "title": "Retail Consumer" }
+      ]
     },
     {
       "id": "store",
@@ -76,10 +88,14 @@
         "Store atmosphere: lighting, colour, music, scent, temperature, cleanliness — shapes mood and time spent.",
         "Internal environment: layout, display, ambience, staff. External: storefront, signage, parking, surroundings.",
         "Space performance measures: sales per square foot, gross margin per square foot, GMROF, sales per linear foot of shelf, space productivity index.",
-        "Store space management: allocating space to categories by their sales and profit contribution."
+        "Store space management: allocating space to categories by their sales and profit contribution.",
+        "Atmospherics has four parts in the book: exterior atmospherics (entrance, signboard, window display, parking), interior atmospherics (flooring, design, cleanliness), store layout (free-flow, grid, boutique) and visual merchandising."
       ],
       "frame": "Meaning → factors or types with a small layout sketch → examples → conclusion.",
-      "mistakes": []
+      "mistakes": [],
+      "units": [
+        { "unit": 5, "title": "Store Design and Visual Merchandising" }
+      ]
     },
     {
       "id": "retail-india",
@@ -93,10 +109,16 @@
         "Global trends: consolidation, omnichannel, automation, personalisation, green retail.",
         "Challenges: high real-estate cost, poor infrastructure and supply chain, skilled-manpower shortage, complex regulations, competition from unorganised and online retail, shrinkage.",
         "Liberalisation (1991 onwards): FDI in single- and multi-brand retail, entry of global players, better supply chains.",
-        "Rural retailing: large untapped market; e.g. ITC e-Choupal, Hariyali Kisaan Bazaar."
+        "Rural retailing: large untapped market; e.g. ITC e-Choupal, Hariyali Kisaan Bazaar.",
+        "The book notes that retail is India's biggest employer after agriculture and that organised retail is still a small share (just over 10%) of sales; policy has tried to protect small unorganised retailers from big foreign chains.",
+        "Foreign entry has been bumpy: Walmart's venture with Bharti and Shoprite's with Nirmal Lifestyle broke up, while Indian players such as Reliance Retail grew fast. Congestion, high city rents, and labour and land laws hold organised retail back."
       ],
       "frame": "Headed points with Indian examples and a line on the future outlook.",
-      "mistakes": []
+      "mistakes": [],
+      "units": [
+        { "unit": 1, "title": "Retail Scenario" },
+        { "unit": 9, "title": "Rural Retailing and E-Tailing", "part": "Rural retailing" }
+      ]
     },
     {
       "id": "ethics",
@@ -109,10 +131,14 @@
         "Areas: with customers (honest pricing, fair weights, no misleading ads), suppliers (fair terms, timely payment), employees (fair wages, safety), competitors (fair competition), society and environment.",
         "Non-ethical behaviour: misleading discounts, selling expired goods, hidden charges, bait-and-switch, poor treatment of staff, data misuse.",
         "Benefits of managing ethics: customer trust and loyalty, reputation, employee morale, fewer legal problems, long-term profit.",
-        "Carry-bag charges: consumer forums have held that charging for branded carry bags without prior notice is an unfair trade practice — retailers should inform customers, offer free or eco-friendly bags, or allow customers to bring their own."
+        "Carry-bag charges: consumer forums have held that charging for branded carry bags without prior notice is an unfair trade practice — retailers should inform customers, offer free or eco-friendly bags, or allow customers to bring their own.",
+        "Ethical grey areas the book discusses: the carry-bag charge (settled in the courts), frisking customers at the exit, giving sweets instead of exact change, pushing impulse buys, and promoting offers that are already 'sold out'. Shoplifting shows the retailer is not always the one at fault."
       ],
       "frame": "Meaning → areas or behaviours as headed points with examples → benefits → conclusion.",
-      "mistakes": []
+      "mistakes": [],
+      "units": [
+        { "unit": 11, "title": "Ethics in Retailing" }
+      ]
     },
     {
       "id": "technology",
@@ -126,10 +152,14 @@
         "POS software: records sales, prints bills, updates stock, gives sales reports.",
         "SEO (search engine optimisation): free ranking in search results. SEM (search engine marketing): paid ads in search results.",
         "Harmful impact: job losses, high costs, data privacy and cyber risks, over-dependence, digital divide. Remedies: staff training, data security, phased adoption.",
-        "Factors for choosing technology: cost, scalability, ease of use, integration, vendor support, security."
+        "Factors for choosing technology: cost, scalability, ease of use, integration, vendor support, security.",
+        "The book warns that retail technology dates quickly, so a retailer must weigh its needs against the risk of buying something that is soon obsolete."
       ],
       "frame": "Meaning → applications as headed points with retailer examples → precautions → conclusion.",
-      "mistakes": []
+      "mistakes": [],
+      "units": [
+        { "unit": 8, "title": "Technology in Retailing" }
+      ]
     },
     {
       "id": "merchandising",
@@ -147,7 +177,11 @@
         "Private brands (retailer's own, e.g. DMart's Premia) vs national brands (manufacturer's): higher margin and control vs strong pull and trust."
       ],
       "frame": "Meaning → components or factors as headed points → retailer examples → conclusion.",
-      "mistakes": []
+      "mistakes": [],
+      "units": [
+        { "unit": 4, "title": "Sourcing and Merchandising" },
+        { "unit": 5, "title": "Store Design and Visual Merchandising" }
+      ]
     },
     {
       "id": "retail-basics",
@@ -160,10 +194,15 @@
         "Functions: assortment, breaking bulk, holding stock, services (credit, delivery), information to producers and customers, creating convenience.",
         "Success factors: understanding customers, right location, merchandise and price, service, technology, cost control.",
         "Theories of structural change: wheel of retailing (new formats enter low-cost, trade up, leave space for new low-cost entrants), retail accordion (general → specialised → general assortment), retail life cycle (innovation, growth, maturity, decline), dialectic process (thesis + antithesis → synthesis).",
-        "Employment options: store operations (sales associate, store manager), merchandising and buying, visual merchandising, supply chain, marketing, e-commerce, HR and finance."
+        "Employment options: store operations (sales associate, store manager), merchandising and buying, visual merchandising, supply chain, marketing, e-commerce, HR and finance.",
+        "Newer retail careers named in the book: category management, data analytics, CRM and loyalty, trend analysis and competition screening, plus the growing online-retail roles."
       ],
       "frame": "Definition → points with headings → diagram for the wheel of retailing → conclusion.",
-      "mistakes": []
+      "mistakes": [],
+      "units": [
+        { "unit": 1, "title": "Retail Scenario" },
+        { "unit": 10, "title": "Emerging Trends and Careers in Retail Industry", "part": "Careers in retail" }
+      ]
     },
     {
       "id": "operations",
@@ -176,10 +215,16 @@
         "Security measures: CCTV, EAS tags and gates, security guards, mirrors, locked cases, staff checks, cash controls — they deter theft and reduce losses.",
         "Financial planning: budgeting sales, costs and capital; inventory valuation; working capital and cash flow; pricing for margin.",
         "Performance measures: sales per sq ft, GMROI, inventory turnover, conversion rate, average transaction value, same-store sales growth.",
-        "Retail audit: systematic check of operations, stock, finance and compliance."
+        "Retail audit: systematic check of operations, stock, finance and compliance.",
+        "Retail audits in the book: store operations audit, inventory audit, financial (commercial) audit and customer-service audit — done internally and externally.",
+        "CRM keeps customers coming back through membership cards, loyalty and referral programmes; performance is tracked with KRAs and score cards."
       ],
       "frame": "Meaning → measures as headed points → conclusion.",
-      "mistakes": []
+      "mistakes": [],
+      "units": [
+        { "unit": 6, "title": "Retail Operations and Store Management" },
+        { "unit": 7, "title": "Legal Environment and Security Issues", "part": "Security issues" }
+      ]
     },
     {
       "id": "sourcing",
@@ -194,7 +239,10 @@
         "Comparative evaluation: weighted scoring of suppliers on these criteria."
       ],
       "frame": "Meaning → factors as headed points → a small weighted-score table → conclusion.",
-      "mistakes": []
+      "mistakes": [],
+      "units": [
+        { "unit": 4, "title": "Sourcing and Merchandising" }
+      ]
     },
     {
       "id": "legal",
@@ -209,7 +257,10 @@
         "VAT: state tax on value added at each stage (replaced by GST)."
       ],
       "frame": "List the acts → explain three or four in detail with relevance to retail → conclusion.",
-      "mistakes": []
+      "mistakes": [],
+      "units": [
+        { "unit": 7, "title": "Legal Environment and Security Issues" }
+      ]
     },
     {
       "id": "pricing",
@@ -223,7 +274,10 @@
         "Psychological pricing: prices set to influence perception — ₹499 feels cheaper than ₹500."
       ],
       "frame": "Meaning → methods with examples → conclusion.",
-      "mistakes": []
+      "mistakes": [],
+      "units": [
+        { "unit": 4, "title": "Sourcing and Merchandising", "part": "Pricing strategies" }
+      ]
     }
   ],
   "questions": [
@@ -316,5 +370,6 @@
     { "s": "2026-06", "q": "8(i,ii)", "t": "Notes (any two): bricks and mortar; catalogue shops", "m": 10, "k": "th", "topic": "formats" },
     { "s": "2026-06", "q": "8(iii)", "t": "Note (any two): everyday low pricing", "m": 5, "k": "th", "topic": "pricing" },
     { "s": "2026-06", "q": "8(iv)", "t": "Note (any two): technology in store management", "m": 5, "k": "th", "topic": "technology" }
-  ]
+  ],
+  "notesSource": "Notes checked against and linked to the IGNOU BRL-101 study material."
 }
