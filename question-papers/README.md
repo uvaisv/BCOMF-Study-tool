@@ -2,7 +2,7 @@
 
 Official IGNOU term-end examination papers for the BCOMF (B.Com Honours) courses, used as the evidence base for topic-priority and trend analysis.
 
-- **200 papers**, 21 courses, December 2020 – June 2026
+- **220 papers**, 23 courses, December 2020 – June 2026
 - Downloaded from IGNOU's official sites (`webservices.ignou.ac.in` and `www.ignou.ac.in`); each paper's source link is in `index.csv`
 - Every PDF was checked against its course code and exam session
 
@@ -36,6 +36,8 @@ Year-<n>/<COURSE-CODE>/<COURSE-CODE>_<YYYY-MM>.pdf
 | BCOE-141 | Principles of Marketing | 9 | 2022-06 – 2026-06 |
 | BCOS-184 | E-Commerce | 9 | 2022-06 – 2026-06 |
 | BCOS-185 | Entrepreneurship | 9 | 2022-06 – 2026-06 |
+| BEGAE-182 | English Communication Skills | 11 | 2020-12 – 2026-06 |
+| BPAS-184 | Logistics Management | 9 | 2022-06 – 2026-06 |
 | **Year 3** | | | |
 | BCOC-135 | Company Law | 9 | 2022-06 – 2026-06 |
 | BCOC-137 | Corporate Accounting | 9 | 2022-06 – 2026-06 |

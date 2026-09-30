@@ -10,11 +10,11 @@ Built around one rule (see `CLAUDE.md`): **help students study — never add set
 
 - **Home** says in one glance what the app gives: ranked topics, short notes, past papers, a study plan. Pick a year or search `131` / `financial`.
 - **Course page** opens straight on **Study these first** — the smallest set of topics that has carried enough marks to answer the paper (worked out per part when the paper is split into parts). Then the latest past papers (one tap to the PDF) and the other topics in priority order.
-- **Topic page**: key points, how to solve, formulas, how to write the answer, common mistakes, and the 3 most important past questions on it (the rest behind **Show more**). Tapping a question opens that paper **inside the app**, scrolled to the question and highlighted — no download. **Next topic** keeps you moving; **Mark as done** is optional.
+- **Topic page**: key points, how to solve, formulas, how to write the answer, common mistakes, and the 3 most important past questions on it (the rest behind **Show more**). Tapping a question opens **just that question inside the app** — term, question number, printed marks and the part asked — with a button to download the full paper. **Next topic** keeps you moving; **Mark as done** is optional.
 - **Plan**: one tap for the time left (3 hours, 6 hours, 2 days, 1 week) and the schedule is there — no settings.
 - **Exam tips** and **Past papers** tabs.
 
-Courses with full analysis: all 8 Year 1 courses (BCOC-131, BCOC-132, BECC-101, BRL-101, BCOS-183, BCOS-186, BEVAE-181, BEDSV-101) and 6 of the 8 Year 2 courses (BCOC-133, BCOC-134, BCOC-136, BCOE-141, BCOS-184, BCOS-185; BEGAE-182 and BPAS-184 are being added). BEVAE-181 is an MCQ paper: its 547 past questions are tagged by topic, and questions repeated across papers are listed on the course page. Other courses show their past papers until their analysis is added.
+Courses with full analysis: all 8 Year 1 courses (BCOC-131, BCOC-132, BECC-101, BRL-101, BCOS-183, BCOS-186, BEVAE-181, BEDSV-101) and all 8 Year 2 courses (BCOC-133, BCOC-134, BCOC-136, BCOE-141, BCOS-184, BCOS-185, BEGAE-182, BPAS-184). BEVAE-181 is an MCQ paper: its 547 past questions are tagged by topic, and questions repeated across papers are listed on the course page. Other courses show their past papers until their analysis is added.
 
 ## Run it
 
@@ -36,7 +36,7 @@ app/
   data/<CODE>.json        topics, study notes, exam tips and every past question tagged to a topic
   data/text/<CODE>.json   each paper's English questions as text, for the in-app paper view
   qimg/<CODE>/            question images for papers whose maths does not survive as text (BCOC-134)
-question-papers/          200 official papers + index.csv (see its README)
+question-papers/          220 official papers + index.csv (see its README)
 ```
 
 ## How priorities are calculated

@@ -1,0 +1,907 @@
+{
+ "code": "BPAS-184",
+ "title": "Logistics Management",
+ "pattern": {
+  "time": "2 hours",
+  "marks": 50,
+  "questions": 8,
+  "attempt": 5,
+  "each": 10,
+  "pick": "any 5 questions, at least 2 from each section",
+  "summary": "8 questions in two sections of four. Answer any 5, at least 2 from each section; each carries 10 marks (about 300 words). Some questions are two short notes of 5 marks each.",
+  "note": "Section I is usually concepts, the logistics cycle, supply chains, procurement and material handling; Section II is information systems, green logistics, customers and transport."
+ },
+ "blocksOfficial": false,
+ "sessions": [
+  "2022-06",
+  "2022-12",
+  "2023-06",
+  "2023-12",
+  "2024-06",
+  "2024-12",
+  "2025-06",
+  "2025-12",
+  "2026-06"
+ ],
+ "sessionNotes": {},
+ "examTips": {
+  "choosing": [
+   "Pick at least 2 questions from each section — plan 3 from the section you know better and 2 from the other.",
+   "The logistics management cycle, the logistics information system and green logistics have come up in almost every paper.",
+   "Answers are about 300 words: a definition, 5–6 headed points with a line each, and a one-line conclusion."
+  ]
+ },
+ "blocks": [
+  {
+   "no": 1,
+   "title": "Logistics & Supply Chains"
+  },
+  {
+   "no": 2,
+   "title": "Procurement, Inventory & Material Handling"
+  },
+  {
+   "no": 3,
+   "title": "Transport, Warehousing & Information"
+  },
+  {
+   "no": 4,
+   "title": "Green Logistics"
+  },
+  {
+   "no": 5,
+   "title": "Customers"
+  }
+ ],
+ "topics": [
+  {
+   "id": "lis",
+   "name": "Logistics Information System",
+   "block": 3,
+   "kind": "theory",
+   "summary": "What a logistics information system is, its components and requirements, its role, information flows, internal and external information, information processing and technology applications.",
+   "points": [
+    "Logistics information system (LIS): people, procedures, hardware and software that collect, process, store and report logistics data (orders, stock, shipments, costs) so managers can plan and control the flow of goods.",
+    "Components: data capture (stock cards, receipts, barcodes), data processing and storage (database, software), reporting and decision support, communication network, and users. Sub-systems: order management, procurement, inventory, warehouse management (WMS) and transportation management (TMS).",
+    "Requirements of good logistics information: available, accurate, timely, exception-based (flags problems), flexible, and in a usable format.",
+    "Role: links every activity of the logistics cycle; gives visibility of stock and shipments; supports forecasting and planning; speeds order processing; controls cost; measures performance; improves customer service.",
+    "Information flows: planning and coordination flows (strategic objectives, capacity limits, logistics requirements, forecasts, procurement and production plans) and operational flows (order management, order processing, distribution, inventory, transport and shipping, procurement). Features: two-way, continuous, integrated across partners, increasingly real-time.",
+    "Internal information: sales and orders, stock levels, production schedules, costs, staff and capacity. External information: customer orders and feedback, supplier lead times and prices, carrier and shipment status, market demand, government rules.",
+    "Information processing: capturing, checking, storing, analysing and communicating data. It integrates all areas of logistics because one order triggers stock allocation, picking, transport, billing and after-sales records.",
+    "Technology applications: barcodes and RFID, EDI, GPS and GIS vehicle tracking, ERP, WMS and TMS software, cloud platforms, IoT sensors for cold chains, analytics and AI for demand forecasting and route planning, drones and robotics in warehouses, blockchain for traceability. In India: FASTag, e-way bill, Unified Logistics Interface Platform (ULIP)."
+   ],
+   "frame": "Meaning → components or features as headings → role with examples (a courier's tracking system) → conclusion.",
+   "mistakes": [
+    "Listing technologies without saying what each does for logistics."
+   ]
+  },
+  {
+   "id": "green",
+   "name": "Green Logistics & the Environment",
+   "block": 4,
+   "kind": "theory",
+   "summary": "Green logistics: meaning, strategies and protocols, challenges, environmental impacts of logistics, regulatory issues, pollution and environmental management systems.",
+   "points": [
+    "Green logistics: planning and running logistics so that harm to the environment (emissions, pollution, noise, waste, congestion) is as low as possible while service and cost stay acceptable.",
+    "Environmental impacts: greenhouse-gas emissions from fuel, air pollution (NOx, particulates), water pollution (oil and chemical spills, ballast water), noise, packaging waste, land used by warehouses and roads, congestion and accidents.",
+    "Strategies: shift freight to rail and water; consolidate loads and optimise routes; cleaner fuels and electric vehicles; eco-driving; green warehouses (solar power, LED lighting, better insulation); less and reusable packaging; reverse logistics and recycling; shared or collaborative logistics; measuring and offsetting carbon; green procurement.",
+    "Protocols for implementing it: a written environmental policy with targets; measuring the carbon footprint (GHG Protocol); an environmental management system such as ISO 14001; standards for suppliers and carriers; staff training; monitoring and public reporting; compliance with law.",
+    "Challenges: higher upfront cost, missing infrastructure (charging points, rail sidings), trade-offs with speed and cost, difficulty measuring emissions, low awareness, a fragmented transport industry, weak enforcement.",
+    "Regulatory and environmental issues: vehicle emission norms (Bharat Stage VI), vehicle scrappage policy, rules for hazardous goods, Plastic Waste Management Rules and extended producer responsibility, e-waste rules, pollution control boards, workplace safety.",
+    "Environmental management system (EMS): a framework (ISO 14001) to manage environmental effects — environmental policy, planning, implementation, checking and corrective action, management review (plan–do–check–act)."
+   ],
+   "frame": "Meaning → headed points (strategies or challenges) with one example each → conclusion on balancing economy and environment.",
+   "mistakes": []
+  },
+  {
+   "id": "concept",
+   "name": "Logistics: Concept, Types & Importance",
+   "block": 1,
+   "kind": "theory",
+   "summary": "Meaning and concept of logistics, types and classification, principles and activities, operating objectives, scope and importance, the logistics environment and challenges.",
+   "points": [
+    "Logistics: planning, implementing and controlling the efficient flow and storage of goods, services and related information from the point of origin to the point of consumption to meet customer needs.",
+    "Types: inbound logistics (suppliers to firm), production or in-plant logistics, outbound or distribution logistics (firm to customer), reverse logistics (returns, recycling), third-party logistics (3PL) and fourth-party logistics (4PL), green logistics, e-commerce logistics, humanitarian logistics.",
+    "Principles — the 7 Rs: the right product, in the right quantity and condition, at the right place and time, to the right customer, at the right cost.",
+    "Activities: order processing, procurement, inventory management, warehousing, material handling and packaging, transportation, information flow and customer service.",
+    "Operating objectives: rapid response, minimum variance (reliable, predictable service), minimum inventory, movement consolidation (fuller loads), quality improvement and life-cycle support (returns and repair).",
+    "Scope and importance: lowers total cost, creates time and place utility, improves customer satisfaction, gives competitive advantage, supports production and marketing, helps e-commerce and exports. India's National Logistics Policy (2022) and PM Gati Shakti aim to cut logistics costs.",
+    "Logistics environment: economic conditions, infrastructure, technology, government regulation, competition, globalisation and customer expectations.",
+    "Challenges to effective logistics management: high costs, poor infrastructure, fragmented service providers, shortage of skilled staff, slow technology adoption, complex rules, fuel price swings, poor visibility and pressure to be sustainable."
+   ],
+   "frame": "Meaning with definition → types or objectives as headings → importance → conclusion.",
+   "mistakes": []
+  },
+  {
+   "id": "customer",
+   "name": "Customer Service, Satisfaction & Success",
+   "block": 5,
+   "kind": "theory",
+   "summary": "Customer service in logistics, customer satisfaction and expectations, customer focus, customer success and customer management.",
+   "points": [
+    "Customer service in logistics: making the product available when and where the customer wants it — measured by availability (stock), operational performance (speed, consistency, flexibility, recovery from failure) and reliability.",
+    "Elements: pre-transaction (policies, service standards), transaction (order cycle time, stock availability, order accuracy) and post-transaction (delivery, installation, returns, complaints, warranty).",
+    "Customer satisfaction: the degree to which customer expectations are met. Expectations cover reliability, responsiveness, access, communication, credibility, security, courtesy, competence, tangibles and understanding the customer.",
+    "Customer focus: organising the whole logistics system around what customers need. Customer satisfaction information (surveys, complaints, feedback, returns data) shows where to improve products and services.",
+    "Customer success: going beyond satisfaction — helping customers achieve their own goals. Aspects: understanding the customer's objectives, smooth onboarding, proactive support, a dedicated relationship manager, value-added services, measuring outcomes (retention, repeat orders, Net Promoter Score).",
+    "Customer management: segmenting customers, managing relationships (CRM), handling complaints quickly, keeping loyal customers."
+   ],
+   "frame": "Meaning → elements or ways as headed points → example (an e-commerce delivery promise) → conclusion.",
+   "mistakes": []
+  },
+  {
+   "id": "cycle",
+   "name": "Logistics Management Cycle",
+   "block": 1,
+   "kind": "theory",
+   "summary": "The logistics management cycle and how its key activities are interrelated.",
+   "points": [
+    "Logistics management cycle: the repeating set of activities that keeps goods moving to users — serving customers, product selection, forecasting or quantification of needs, procurement, inventory management (storage and distribution) and use, with reverse logistics at the end.",
+    "At the centre sits the logistics management information system (LMIS), which links every activity.",
+    "Management support surrounds the cycle: organisation and staffing, budget, supervision, monitoring and evaluation, and quality assurance, all within government policy.",
+    "Why the activities are interrelated: each activity's output is the next one's input — wrong forecasts lead to wrong procurement, which causes stock-outs or overstock; poor storage damages goods; data from use feeds the next forecast.",
+    "A failure at any point breaks the whole chain, so the cycle is managed as one system rather than separate departments."
+   ],
+   "frame": "Draw the cycle as a circle with LMIS in the middle → explain each activity in two lines → show two links between activities → conclusion.",
+   "mistakes": [
+    "Explaining the activities one by one without showing how they connect — the question asks why they are interrelated."
+   ]
+  },
+  {
+   "id": "procurement",
+   "name": "Procurement & Inventory Control",
+   "block": 2,
+   "kind": "theory",
+   "summary": "Methods of procurement, the procurement process and cycle, the conceptual framework and techniques of inventory control, VED analysis and automation.",
+   "points": [
+    "Procurement: getting goods and services of the right quality and quantity, at the right time and price, from the right source.",
+    "Methods: open (public) tender, limited tender, single-source or proprietary purchase, spot purchase, rate contract, negotiation, reverse auction, e-procurement (the Government e-Marketplace, GeM, in India).",
+    "Procurement process and cycle: identify the need → write specifications → find and shortlist suppliers → invite quotations or tenders → evaluate and negotiate → place the purchase order or contract → follow up → receive and inspect → approve the invoice and pay → keep records and rate suppliers.",
+    "Inventory control — conceptual framework: stock is held as a buffer against uncertain demand and supply, but it ties up money and space. Balance three costs: ordering, carrying and stock-out. Key decisions: how much to order (EOQ = √(2DS/H)), when to order (reorder level = lead-time demand + safety stock) and how much safety stock to keep.",
+    "Techniques: ABC (by value), VED — Vital, Essential, Desirable (by how critical the item is; used for spare parts and medicines), FSN (fast, slow, non-moving), HML (high, medium, low price), SDE (scarce, difficult, easy to obtain), EOQ, JIT, minimum–maximum levels, the two-bin system and perpetual inventory.",
+    "Automation: e-procurement portals, barcodes and RFID, ERP inventory modules with automatic reorder, vendor-managed inventory."
+   ],
+   "frame": "Meaning → steps as a flow chart or methods as headings → one technique explained with an example → conclusion.",
+   "mistakes": []
+  },
+  {
+   "id": "handling",
+   "name": "Material Handling & Packaging",
+   "block": 2,
+   "kind": "theory",
+   "summary": "Material handling systems and their significance, types of material handling equipment, and packaging and disposal of packaging waste.",
+   "points": [
+    "Material handling: moving, storing, protecting and controlling materials inside factories, warehouses and distribution centres.",
+    "Significance: cuts handling cost and damage, speeds the flow of goods, improves use of space, raises productivity, improves safety and reduces worker fatigue.",
+    "Principles: plan the system, standardise, minimise handling (work principle), ergonomics, unit loads, space utilisation, see it as a system, automate where it pays, consider the environment and life-cycle cost.",
+    "Equipment types: transport equipment (conveyors, cranes, forklifts, pallet jacks, automated guided vehicles); positioning equipment (lift tables, hoists); unit-load equipment (pallets, containers, shrink wrap); storage equipment (racks, shelves, bins, mezzanines, automated storage and retrieval systems); identification and control (barcodes, RFID).",
+    "Material handling systems: manual, mechanised and automated (AS/RS, AGVs, robots).",
+    "Packaging protects goods, makes handling easier, identifies the product and promotes it. Disposing of packaging waste: reduce, reuse, recycle, recover energy, compost, and use landfill only as a last resort; producers carry responsibility under extended producer responsibility (EPR) rules."
+   ],
+   "frame": "Meaning → significance → types of equipment as headings with an example each → conclusion.",
+   "mistakes": []
+  },
+  {
+   "id": "scm",
+   "name": "Supply Chain Management",
+   "block": 1,
+   "kind": "theory",
+   "summary": "Supply chain management, its challenges, supply chain management tools and their applications, and business process planning.",
+   "points": [
+    "Supply chain management (SCM): managing the flow of goods, information and money from suppliers through manufacturers, distributors and retailers to the final customer, so the whole chain works as one.",
+    "Logistics vs SCM: logistics is the movement and storage part; SCM also covers sourcing, production planning, partner coordination and customer demand.",
+    "Challenges: uncertain demand and the bullwhip effect, supply disruptions (pandemics, conflicts, natural disasters), rising costs, poor visibility and data sharing, weak coordination between partners, too much or too little inventory, infrastructure gaps, sustainability demands, cyber risks, shortage of skilled staff.",
+    "Tools and application areas: ERP, supply chain planning software, WMS and TMS, barcodes and RFID, EDI, GPS tracking, demand forecasting and analytics, vendor-managed inventory, blockchain. They are applied in procurement, demand planning, inventory, order management, transport, warehousing and supplier and customer relationships.",
+    "Business process planning: mapping how work flows (for example order to delivery), removing delays and waste, setting standards and redesigning processes (business process reengineering)."
+   ],
+   "frame": "Meaning → challenges or tools as headed points with an example → conclusion.",
+   "mistakes": []
+  },
+  {
+   "id": "transport",
+   "name": "Transportation & Warehousing",
+   "block": 3,
+   "kind": "theory",
+   "summary": "Modes of transportation, types and functions of warehouses, and documents used in transportation and warehousing.",
+   "points": [
+    "Modes of transport: road (flexible, door to door, short distances), rail (bulk, long distances, cheap), water — inland, coastal and ocean (cheapest, slow), air (fastest, costly; for high-value and perishable goods), pipeline (oil and gas) and multimodal transport using containers.",
+    "Choosing a mode: cost, speed, reliability, capacity, nature of goods, distance, safety and accessibility.",
+    "Functions of warehouses: storage, consolidation, break-bulk, cross-docking, value-added services (packing, labelling), price stabilisation, risk bearing and financing through warehouse receipts.",
+    "Types of warehouses: private, public, bonded, government (Central and State Warehousing Corporations), cooperative, cold storage, distribution centres and automated warehouses.",
+    "Transport documents: bill of lading (sea), airway bill (air), lorry receipt or consignment note (road), railway receipt, e-way bill (GST), delivery challan, invoice, packing list, certificate of origin, insurance certificate, shipping bill.",
+    "Warehouse documents: warehouse receipt, goods received note (GRN), stock or bin card, material issue slip, delivery order, dock receipt."
+   ],
+   "frame": "Meaning → modes or types as a table (mode, advantage, limitation) → conclusion.",
+   "mistakes": []
+  },
+  {
+   "id": "outsourcing",
+   "name": "Logistics Outsourcing",
+   "block": 3,
+   "kind": "theory",
+   "summary": "Outsourcing logistics to third-party providers: reasons, issues and how to make it work.",
+   "points": [
+    "Logistics outsourcing: contracting logistics work (transport, warehousing, freight forwarding, or the whole function) to a third-party (3PL) or fourth-party (4PL) provider.",
+    "Reasons: focus on core business, lower cost, specialist expertise and technology, flexibility to scale, wider network.",
+    "Issues: loss of control, dependence on the provider, data confidentiality, service quality, hidden costs, cultural fit, contract terms, measuring performance, and the risk during transition.",
+    "Making it effective: clear objectives and scope, careful choice of provider, service-level agreements with KPIs, shared information systems, a good working relationship and regular reviews."
+   ],
+   "frame": "Meaning → issues as headed points → how to manage them → conclusion.",
+   "mistakes": []
+  }
+ ],
+ "questions": [
+  {
+   "s": "2022-06",
+   "q": "1",
+   "t": "Operating objectives of logistics",
+   "m": 10,
+   "k": "th",
+   "topic": "concept"
+  },
+  {
+   "s": "2022-06",
+   "q": "2",
+   "t": "Importance of logistics management",
+   "m": 10,
+   "k": "th",
+   "topic": "concept"
+  },
+  {
+   "s": "2022-06",
+   "q": "3",
+   "t": "Logistics management cycle: interrelated activities",
+   "m": 10,
+   "k": "th",
+   "topic": "cycle"
+  },
+  {
+   "s": "2022-06",
+   "q": "4",
+   "t": "Ways of disposing of packaging waste",
+   "m": 10,
+   "k": "th",
+   "topic": "handling"
+  },
+  {
+   "s": "2022-06",
+   "q": "5",
+   "t": "Types and functions of warehouses",
+   "m": 10,
+   "k": "th",
+   "topic": "transport"
+  },
+  {
+   "s": "2022-06",
+   "q": "6",
+   "t": "Requirements and components of a logistics information system",
+   "m": 10,
+   "k": "th",
+   "topic": "lis"
+  },
+  {
+   "s": "2022-06",
+   "q": "7",
+   "t": "Green logistics strategies",
+   "m": 10,
+   "k": "th",
+   "topic": "green"
+  },
+  {
+   "s": "2022-06",
+   "q": "8",
+   "t": "Issues in effective logistics outsourcing",
+   "m": 10,
+   "k": "th",
+   "topic": "outsourcing"
+  },
+  {
+   "s": "2022-12",
+   "q": "1",
+   "t": "Logistics principles, activities and classification",
+   "m": 10,
+   "k": "th",
+   "topic": "concept"
+  },
+  {
+   "s": "2022-12",
+   "q": "2",
+   "t": "Importance of logistics management for an enterprise",
+   "m": 10,
+   "k": "th",
+   "topic": "concept"
+  },
+  {
+   "s": "2022-12",
+   "q": "3",
+   "t": "Procurement methods and inventory control",
+   "m": 10,
+   "k": "th",
+   "topic": "procurement"
+  },
+  {
+   "s": "2022-12",
+   "q": "4",
+   "t": "Types of material handling equipment",
+   "m": 10,
+   "k": "th",
+   "topic": "handling"
+  },
+  {
+   "s": "2022-12",
+   "q": "5",
+   "t": "Modes of transportation in logistics",
+   "m": 10,
+   "k": "th",
+   "topic": "transport"
+  },
+  {
+   "s": "2022-12",
+   "q": "6",
+   "t": "Components of a logistics information system",
+   "m": 10,
+   "k": "th",
+   "topic": "lis"
+  },
+  {
+   "s": "2022-12",
+   "q": "7",
+   "t": "Protocols for implementing green logistics",
+   "m": 10,
+   "k": "th",
+   "topic": "green"
+  },
+  {
+   "s": "2022-12",
+   "q": "8",
+   "t": "Regulatory and environmental issues in logistics",
+   "m": 10,
+   "k": "th",
+   "topic": "green"
+  },
+  {
+   "s": "2023-06",
+   "q": "1",
+   "t": "Specific concepts of logistics management",
+   "m": 10,
+   "k": "th",
+   "topic": "concept"
+  },
+  {
+   "s": "2023-06",
+   "q": "2",
+   "t": "Challenges of supply chain management",
+   "m": 10,
+   "k": "th",
+   "topic": "scm"
+  },
+  {
+   "s": "2023-06",
+   "q": "3",
+   "t": "Logistics management cycle: interrelated activities",
+   "m": 10,
+   "k": "th",
+   "topic": "cycle"
+  },
+  {
+   "s": "2023-06",
+   "q": "4(a)",
+   "t": "Note: inventory control — conceptual framework",
+   "m": 5,
+   "k": "th",
+   "topic": "procurement"
+  },
+  {
+   "s": "2023-06",
+   "q": "4(b)",
+   "t": "Note: material handling systems",
+   "m": 5,
+   "k": "th",
+   "topic": "handling"
+  },
+  {
+   "s": "2023-06",
+   "q": "5",
+   "t": "Logistics information flow",
+   "m": 10,
+   "k": "th",
+   "topic": "lis"
+  },
+  {
+   "s": "2023-06",
+   "q": "6",
+   "t": "Technology applications of logistics information systems",
+   "m": 10,
+   "k": "th",
+   "topic": "lis"
+  },
+  {
+   "s": "2023-06",
+   "q": "7",
+   "t": "Customer satisfaction: meeting expectations",
+   "m": 10,
+   "k": "th",
+   "topic": "customer"
+  },
+  {
+   "s": "2023-06",
+   "q": "8(a)",
+   "t": "Note: air and water pollution",
+   "m": 5,
+   "k": "th",
+   "topic": "green"
+  },
+  {
+   "s": "2023-06",
+   "q": "8(b)",
+   "t": "Note: information processing",
+   "m": 5,
+   "k": "th",
+   "topic": "lis"
+  },
+  {
+   "s": "2023-12",
+   "q": "1",
+   "t": "Scope and importance of logistics management",
+   "m": 10,
+   "k": "th",
+   "topic": "concept"
+  },
+  {
+   "s": "2023-12",
+   "q": "2",
+   "t": "Key activities in the logistics management cycle",
+   "m": 10,
+   "k": "th",
+   "topic": "cycle"
+  },
+  {
+   "s": "2023-12",
+   "q": "3",
+   "t": "Inventory control: framework and techniques",
+   "m": 10,
+   "k": "th",
+   "topic": "procurement"
+  },
+  {
+   "s": "2023-12",
+   "q": "4",
+   "t": "Significance of material handling",
+   "m": 10,
+   "k": "th",
+   "topic": "handling"
+  },
+  {
+   "s": "2023-12",
+   "q": "5",
+   "t": "Role of the logistics information system",
+   "m": 10,
+   "k": "th",
+   "topic": "lis"
+  },
+  {
+   "s": "2023-12",
+   "q": "6",
+   "t": "Green logistics",
+   "m": 10,
+   "k": "th",
+   "topic": "green"
+  },
+  {
+   "s": "2023-12",
+   "q": "7",
+   "t": "Technological developments in logistics companies",
+   "m": 10,
+   "k": "th",
+   "topic": "lis"
+  },
+  {
+   "s": "2023-12",
+   "q": "8",
+   "t": "Important aspects of customer success",
+   "m": 10,
+   "k": "th",
+   "topic": "customer"
+  },
+  {
+   "s": "2024-06",
+   "q": "1",
+   "t": "Concept and types of logistics",
+   "m": 10,
+   "k": "th",
+   "topic": "concept"
+  },
+  {
+   "s": "2024-06",
+   "q": "2",
+   "t": "Challenges in supply chain management",
+   "m": 10,
+   "k": "th",
+   "topic": "scm"
+  },
+  {
+   "s": "2024-06",
+   "q": "3",
+   "t": "Logistics management cycle: interrelated activities",
+   "m": 10,
+   "k": "th",
+   "topic": "cycle"
+  },
+  {
+   "s": "2024-06",
+   "q": "4(a)",
+   "t": "Note: scope of logistics management",
+   "m": 5,
+   "k": "th",
+   "topic": "concept"
+  },
+  {
+   "s": "2024-06",
+   "q": "4(b)",
+   "t": "Note: material handling systems",
+   "m": 5,
+   "k": "th",
+   "topic": "handling"
+  },
+  {
+   "s": "2024-06",
+   "q": "5",
+   "t": "Documents used in transportation and warehousing",
+   "m": 10,
+   "k": "th",
+   "topic": "transport"
+  },
+  {
+   "s": "2024-06",
+   "q": "6",
+   "t": "Role of IT and information systems in logistics",
+   "m": 10,
+   "k": "th",
+   "topic": "lis"
+  },
+  {
+   "s": "2024-06",
+   "q": "7",
+   "t": "Ways to achieve customer success",
+   "m": 10,
+   "k": "th",
+   "topic": "customer"
+  },
+  {
+   "s": "2024-06",
+   "q": "8(a)",
+   "t": "Note: challenges of green logistics",
+   "m": 5,
+   "k": "th",
+   "topic": "green"
+  },
+  {
+   "s": "2024-06",
+   "q": "8(b)",
+   "t": "Note: customer management",
+   "m": 5,
+   "k": "th",
+   "topic": "customer"
+  },
+  {
+   "s": "2024-12",
+   "q": "1",
+   "t": "Importance of logistics management for an enterprise",
+   "m": 10,
+   "k": "th",
+   "topic": "concept"
+  },
+  {
+   "s": "2024-12",
+   "q": "2",
+   "t": "Application areas of supply chain management tools",
+   "m": 10,
+   "k": "th",
+   "topic": "scm"
+  },
+  {
+   "s": "2024-12",
+   "q": "3",
+   "t": "Logistics management cycle: interrelated activities",
+   "m": 10,
+   "k": "th",
+   "topic": "cycle"
+  },
+  {
+   "s": "2024-12",
+   "q": "4(a)",
+   "t": "Note: automation in procurement and inventory control",
+   "m": 5,
+   "k": "th",
+   "topic": "procurement"
+  },
+  {
+   "s": "2024-12",
+   "q": "4(b)",
+   "t": "Note: transportation modes",
+   "m": 5,
+   "k": "th",
+   "topic": "transport"
+  },
+  {
+   "s": "2024-12",
+   "q": "5",
+   "t": "Role of the logistics information system",
+   "m": 10,
+   "k": "th",
+   "topic": "lis"
+  },
+  {
+   "s": "2024-12",
+   "q": "6",
+   "t": "Customer satisfaction information and improvement",
+   "m": 10,
+   "k": "th",
+   "topic": "customer"
+  },
+  {
+   "s": "2024-12",
+   "q": "7",
+   "t": "Key green logistics strategies",
+   "m": 10,
+   "k": "th",
+   "topic": "green"
+  },
+  {
+   "s": "2024-12",
+   "q": "8(a)",
+   "t": "Note: outsourcing logistics management",
+   "m": 5,
+   "k": "th",
+   "topic": "outsourcing"
+  },
+  {
+   "s": "2024-12",
+   "q": "8(b)",
+   "t": "Note: business process planning",
+   "m": 5,
+   "k": "th",
+   "topic": "scm"
+  },
+  {
+   "s": "2025-06",
+   "q": "1",
+   "t": "Concept of logistics",
+   "m": 10,
+   "k": "th",
+   "topic": "concept"
+  },
+  {
+   "s": "2025-06",
+   "q": "2",
+   "t": "Methods of procurement of material",
+   "m": 10,
+   "k": "th",
+   "topic": "procurement"
+  },
+  {
+   "s": "2025-06",
+   "q": "3",
+   "t": "Industrial material handling equipment",
+   "m": 10,
+   "k": "th",
+   "topic": "handling"
+  },
+  {
+   "s": "2025-06",
+   "q": "4(a)",
+   "t": "Note: logistics management cycle",
+   "m": 5,
+   "k": "th",
+   "topic": "cycle"
+  },
+  {
+   "s": "2025-06",
+   "q": "4(b)",
+   "t": "Note: VED analysis",
+   "m": 5,
+   "k": "th",
+   "topic": "procurement"
+  },
+  {
+   "s": "2025-06",
+   "q": "5",
+   "t": "Features of logistics information flows",
+   "m": 10,
+   "k": "th",
+   "topic": "lis"
+  },
+  {
+   "s": "2025-06",
+   "q": "6",
+   "t": "Role of the logistics information system",
+   "m": 10,
+   "k": "th",
+   "topic": "lis"
+  },
+  {
+   "s": "2025-06",
+   "q": "7",
+   "t": "Challenges of green logistics",
+   "m": 10,
+   "k": "th",
+   "topic": "green"
+  },
+  {
+   "s": "2025-06",
+   "q": "8(a)",
+   "t": "Note: customer service",
+   "m": 5,
+   "k": "th",
+   "topic": "customer"
+  },
+  {
+   "s": "2025-06",
+   "q": "8(b)",
+   "t": "Note: environmental management system",
+   "m": 5,
+   "k": "th",
+   "topic": "green"
+  },
+  {
+   "s": "2025-12",
+   "q": "1",
+   "t": "Supply chain management tools and challenges",
+   "m": 10,
+   "k": "th",
+   "topic": "scm"
+  },
+  {
+   "s": "2025-12",
+   "q": "2",
+   "t": "Activities of the logistics management cycle",
+   "m": 10,
+   "k": "th",
+   "topic": "cycle"
+  },
+  {
+   "s": "2025-12",
+   "q": "3",
+   "t": "Principles, activities and classification of logistics",
+   "m": 10,
+   "k": "th",
+   "topic": "concept"
+  },
+  {
+   "s": "2025-12",
+   "q": "4(a)",
+   "t": "Note: procurement cycle",
+   "m": 5,
+   "k": "th",
+   "topic": "procurement"
+  },
+  {
+   "s": "2025-12",
+   "q": "4(b)",
+   "t": "Note: material handling systems",
+   "m": 5,
+   "k": "th",
+   "topic": "handling"
+  },
+  {
+   "s": "2025-12",
+   "q": "5",
+   "t": "Customer focus and customer service in customer satisfaction",
+   "m": 10,
+   "k": "th",
+   "topic": "customer"
+  },
+  {
+   "s": "2025-12",
+   "q": "6",
+   "t": "Green logistics and its challenges",
+   "m": 10,
+   "k": "th",
+   "topic": "green"
+  },
+  {
+   "s": "2025-12",
+   "q": "7",
+   "t": "Information processing integrates logistics",
+   "m": 10,
+   "k": "th",
+   "topic": "lis"
+  },
+  {
+   "s": "2025-12",
+   "q": "8(a)",
+   "t": "Note: environmental impacts of logistics",
+   "m": 5,
+   "k": "th",
+   "topic": "green"
+  },
+  {
+   "s": "2025-12",
+   "q": "8(b)",
+   "t": "Note: customer satisfaction",
+   "m": 5,
+   "k": "th",
+   "topic": "customer"
+  },
+  {
+   "s": "2026-06",
+   "q": "1",
+   "t": "Meaning and types of logistics",
+   "m": 10,
+   "k": "th",
+   "topic": "concept"
+  },
+  {
+   "s": "2026-06",
+   "q": "2",
+   "t": "Challenges of supply chain management",
+   "m": 10,
+   "k": "th",
+   "topic": "scm"
+  },
+  {
+   "s": "2026-06",
+   "q": "3",
+   "t": "Procurement process and procurement cycle",
+   "m": 10,
+   "k": "th",
+   "topic": "procurement"
+  },
+  {
+   "s": "2026-06",
+   "q": "4(a)",
+   "t": "Note: logistics environment",
+   "m": 5,
+   "k": "th",
+   "topic": "concept"
+  },
+  {
+   "s": "2026-06",
+   "q": "4(b)",
+   "t": "Note: material handling systems",
+   "m": 5,
+   "k": "th",
+   "topic": "handling"
+  },
+  {
+   "s": "2026-06",
+   "q": "5",
+   "t": "Internal and external information in logistics",
+   "m": 10,
+   "k": "th",
+   "topic": "lis"
+  },
+  {
+   "s": "2026-06",
+   "q": "6",
+   "t": "Technology applications of logistics information systems",
+   "m": 10,
+   "k": "th",
+   "topic": "lis"
+  },
+  {
+   "s": "2026-06",
+   "q": "7",
+   "t": "Environmental impact of logistics",
+   "m": 10,
+   "k": "th",
+   "topic": "green"
+  },
+  {
+   "s": "2026-06",
+   "q": "8(a)",
+   "t": "Note: challenges to effective logistics management",
+   "m": 5,
+   "k": "th",
+   "topic": "concept"
+  },
+  {
+   "s": "2026-06",
+   "q": "8(b)",
+   "t": "Note: customer success",
+   "m": 5,
+   "k": "th",
+   "topic": "customer"
+  }
+ ]
+}

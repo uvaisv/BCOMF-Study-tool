@@ -502,7 +502,7 @@
     const p = course.pattern;
     // Writing time: the paper's time less 10 minutes to choose and 15 to check.
     const perMark = Math.round((((parseFloat(p.time) || 3) * 60 - 25) / p.marks) * 10) / 10;
-    const eachList = [...new Set((p.parts || [p]).map((g) => g.each || p.each))].sort((a, b) => b - a);
+    const eachList = p.marksEach || [...new Set((p.parts || [p]).map((g) => g.each || p.each))].sort((a, b) => b - a);
     const top = analysis.topics.slice(0, 4).map((t) => t.name).join(", ");
     const tips = course.examTips || {};
     const list = (items) => items.map((x) => `<li>${esc(x)}</li>`).join("");

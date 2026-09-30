@@ -17,6 +17,8 @@
     { "code": "BCOE-141", "title": "Principles of Marketing", "year": 2, "type": "theory", "exam": { "time": "3 hours", "marks": 100, "format": "Written" }, "papers": 9, "ready": true },
     { "code": "BCOS-184", "title": "E-Commerce", "year": 2, "type": "theory", "exam": { "time": "3 hours", "marks": 100, "format": "Written" }, "papers": 9, "ready": true },
     { "code": "BCOS-185", "title": "Entrepreneurship", "year": 2, "type": "theory", "exam": { "time": "3 hours", "marks": 100, "format": "Written" }, "papers": 9, "ready": true },
+    { "code": "BEGAE-182", "title": "English Communication Skills", "year": 2, "type": "theory", "exam": { "time": "2 hours", "marks": 50, "format": "Written" }, "papers": 11, "ready": true },
+    { "code": "BPAS-184", "title": "Logistics Management", "year": 2, "type": "theory", "exam": { "time": "2 hours", "marks": 50, "format": "Written" }, "papers": 9, "ready": true },
 
     { "code": "BCOC-135", "title": "Company Law", "year": 3, "type": "theory", "exam": { "time": "3 hours", "marks": 100, "format": "Written" }, "papers": 9 },
     { "code": "BCOC-137", "title": "Corporate Accounting", "year": 3, "type": "mixed", "exam": { "time": "3 hours", "marks": 100, "format": "Written" }, "papers": 9 },

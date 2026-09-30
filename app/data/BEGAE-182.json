@@ -1,0 +1,1168 @@
+{
+ "code": "BEGAE-182",
+ "title": "English Communication Skills",
+ "pattern": {
+  "time": "2 hours",
+  "marks": 50,
+  "questions": 4,
+  "attempt": 4,
+  "each": 12.5,
+  "spare": 0.75,
+  "marksEach": [
+   10,
+   5
+  ],
+  "pick": "all 4 questions — 4 of 6 short answers in Q1, one side of each OR",
+  "summary": "All 4 questions are compulsory. Q1: answer 4 of 6 short questions (5 marks each, about 100 words). Q2–Q4: 10 marks each — usually a letter, a group discussion, and a presentation, dialogue or essay — often with an OR choice.",
+  "caution": "Every question has a choice, so this list is shorter than the syllabus — it is enough to answer the paper, not everything."
+ },
+ "blocksOfficial": false,
+ "sessions": [
+  "2020-12",
+  "2021-12",
+  "2022-06",
+  "2022-12",
+  "2023-06",
+  "2023-12",
+  "2024-06",
+  "2024-12",
+  "2025-06",
+  "2025-12",
+  "2026-06"
+ ],
+ "sessionNotes": {
+  "2020-12": "Held in February 2021."
+ },
+ "examTips": {
+  "choosing": [
+   "A formal letter and a group discussion have come up in almost every paper — learn one format for each and practise it.",
+   "In Q1 pick the four you can answer with a definition and an example; homophones, reading levels and barriers to communication repeat often.",
+   "Where there is an OR, choose the writing task (letter, dialogue, presentation) if you know its format — format earns marks."
+  ]
+ },
+ "blocks": [
+  {
+   "no": 1,
+   "title": "Communication, Conversation & Meetings"
+  },
+  {
+   "no": 2,
+   "title": "Reading & Vocabulary"
+  },
+  {
+   "no": 3,
+   "title": "Writing Tasks & Presentations"
+  }
+ ],
+ "topics": [
+  {
+   "id": "letter",
+   "name": "Formal Letters",
+   "block": 3,
+   "kind": "theory",
+   "summary": "Writing formal letters: job applications, accepting an offer, letters to the editor, enquiries, orders, leave applications and letters to a client.",
+   "points": [
+    "Layout: sender's address → date → receiver's name, designation and address → subject line → salutation (Dear Sir/Madam) → body → complimentary close (Yours faithfully with 'Sir/Madam'; Yours sincerely with a name) → signature and name.",
+    "Body in three short paragraphs: why you are writing; the details; what you want done, with a polite close.",
+    "Job application: the post and where you saw it; qualifications and experience; why you suit the post; availability for interview; mention the enclosed résumé.",
+    "Accepting an offer: thank them; accept the post and terms; confirm the joining date (or the time needed to join); say you look forward to joining.",
+    "Letter to the editor: 'The Editor, <newspaper>'; subject naming the problem; describe the problem and who it affects; suggest solutions; request publication.",
+    "Enquiry or order letters: exact items or information needed, quantities, delivery and payment terms. Leave application: dates, reason, arrangements for your work.",
+    "Tone: formal, polite, gender-neutral (Dear Sir/Madam, 'the candidate', they), short sentences, no slang or abbreviations."
+   ],
+   "frame": "Write the full layout even in the exam — marks are given for format, content and language.",
+   "mistakes": [
+    "Mixing 'Yours faithfully' and 'Yours sincerely', or leaving out the subject line."
+   ]
+  },
+  {
+   "id": "group-discussion",
+   "name": "Group Discussion",
+   "block": 3,
+   "kind": "theory",
+   "summary": "Writing out a group discussion among five students, and the essentials and rules of a good group discussion.",
+   "points": [
+    "Format: name the speakers (A–E, or names); one opens by defining the topic; each speaker gives a point with a reason or example; speakers respond to each other; one summarises at the end.",
+    "Cover both sides of the topic: at least two points for and two against, then a balanced conclusion.",
+    "Useful phrases: 'I'd like to begin by…', 'I agree with you, and I'd add…', 'I see your point, but…', 'Could we also consider…', 'To sum up…'.",
+    "Essentials and rules: listen actively; stay on the topic; give everyone a chance and don't interrupt; disagree politely with reasons; support points with facts; don't dominate; keep to time; summarise.",
+    "Give each speaker at least three turns when the question asks for them."
+   ],
+   "frame": "Speaker names + opening → points for and against in turns → summary. Aim for 15–20 turns.",
+   "mistakes": [
+    "Writing an essay with names in front — a GD needs people responding to each other."
+   ]
+  },
+  {
+   "id": "presentation",
+   "name": "Presentations & Visual Aids",
+   "block": 3,
+   "kind": "theory",
+   "summary": "Structuring a presentation, making a five-minute presentation on a topic, visual aids and their functions, symbols and graphs, and essentials of presentation skills.",
+   "points": [
+    "Structure: introduction (greet, topic, purpose, outline) → body (3–4 main points, each with an example or figure) → conclusion (summary, one take-away, thanks, invite questions).",
+    "A five-minute presentation: about 1 minute introduction, 3 minutes for three points, 1 minute conclusion. Write it as slide headings with 2–3 bullet points each plus what you would say.",
+    "Preparing for a job interview (asked often): research the organisation; know your résumé; practise common questions; dress and body language; documents to carry; reach early; follow up with thanks.",
+    "Visual aids: slides, charts, graphs, tables, pictures, videos, handouts. Functions: catch attention, simplify complex data, show trends and comparisons, help memory, save time.",
+    "Good visuals: one idea per slide, large readable text, few words, clear labels; use symbols and graphs to show numbers and trends at a glance.",
+    "Essentials of presentation skills: know your audience; practise; clear voice and good pace; eye contact and open posture; manage time; handle questions calmly."
+   ],
+   "frame": "Title → introduction → three headed points → conclusion; mention one visual aid you would use for each point.",
+   "mistakes": []
+  },
+  {
+   "id": "writing",
+   "name": "Dialogue, Essay & Paragraph Writing",
+   "block": 3,
+   "kind": "theory",
+   "summary": "Writing a dialogue in ten turns, a well-structured essay, completing or writing a descriptive paragraph.",
+   "points": [
+    "Dialogue in ten turns: set the scene in one line; label speakers; alternate turns; greet, move to the purpose, close politely. Use natural, polite spoken English (Could you…, I'd like to…, That sounds good).",
+    "Essay: an introduction that defines the topic and states your view; three or four body paragraphs, each with a topic sentence and an example; a conclusion that sums up and looks ahead.",
+    "Paragraph completion: continue the idea of the given opening; one clear line of thought; use linking words (on the one hand, also, however, not only… but also, ultimately).",
+    "Descriptive paragraph (e.g. your city for a travel magazine): location, layout, landmarks, history, food and culture, best time to visit — vivid but factual.",
+    "Common essay topics: education and online learning, technology, climate change, globalisation, tourism, careers for young Indians."
+   ],
+   "frame": "Plan for 2 minutes: list your points, then write in paragraphs with linking words.",
+   "mistakes": []
+  },
+  {
+   "id": "communication",
+   "name": "Communication: Process, Functions & Barriers",
+   "block": 1,
+   "kind": "theory",
+   "summary": "Elements and process of communication, its functions, characteristics of good communication, style, and barriers to communication and how to overcome them.",
+   "points": [
+    "Elements: sender, message, encoding, channel, receiver, decoding, feedback, noise and context.",
+    "Functions: to inform, instruct, persuade, express feelings and build relationships. Halliday's macro-functions of language: ideational (conveying ideas and experience), interpersonal (building relationships) and textual (organising the message).",
+    "Good communication — the 7 Cs: clear, concise, concrete, correct, coherent, complete, courteous.",
+    "Barriers, in three broad groups: physical or environmental (noise, distance, faulty equipment); linguistic or semantic (jargon, ambiguous words, different languages, poor vocabulary); socio-psychological (attitudes, emotions, prejudice, status, perception, cultural differences).",
+    "Overcoming barriers: simple, precise language; the right channel; checking understanding through feedback; active listening; empathy and respect for other cultures.",
+    "Style: formal or informal register chosen to fit the purpose, audience and situation."
+   ],
+   "frame": "Meaning → elements or barriers as headings with one example each → how to overcome → conclusion.",
+   "mistakes": []
+  },
+  {
+   "id": "reading",
+   "name": "Reading Skills & Comprehension",
+   "block": 2,
+   "kind": "theory",
+   "summary": "Levels of reading comprehension, literal, interpretive and critical reading, reading as a cognitive skill, schemata, faulty reading habits, silent reading and subvocalising.",
+   "points": [
+    "Four levels of comprehension: literal (what the text says), interpretive or inferential (what it means — reading between the lines), critical or evaluative (judging its truth, purpose and bias), creative or applied (using ideas beyond the text).",
+    "Interpretive reading: working out implied meaning, the writer's attitude and the reasons behind statements. Critical reading: questioning evidence, argument and bias.",
+    "Reading involves complex cognitive skills: recognising words, knowing vocabulary, predicting, inferring, linking to background knowledge and monitoring your own understanding.",
+    "Schemata: the background knowledge structures a reader brings; they help the reader predict and make sense of a new text.",
+    "Faulty reading habits: word-by-word reading, subvocalising (saying words in your head), vocalising, finger-pointing, moving the head, regression (going back again and again).",
+    "Silent reading is faster and better for understanding; reading aloud helps pronunciation and sharing a text."
+   ],
+   "frame": "Meaning → levels or habits as headings with a short example → conclusion.",
+   "mistakes": []
+  },
+  {
+   "id": "vocabulary",
+   "name": "Words: Homophones, Word Formation & Idioms",
+   "block": 2,
+   "kind": "theory",
+   "summary": "Homonyms, homophones and homographs; word formation by affixation, compounding and word shift; jargon, acronyms, idioms and ambiguity.",
+   "points": [
+    "Homonyms: same spelling and sound, different meanings (bank — river bank / a bank). Homophones: same sound, different spelling and meaning (their/there, write/right, sea/see). Homographs: same spelling, different meaning and often sound (lead — metal / to guide; tear — cry / rip).",
+    "Affixation: adding prefixes (un-happy, re-write, dis-agree) or suffixes (kind-ness, develop-ment, care-ful).",
+    "Compounding: joining two words (blackboard, notebook, well-known, mother-in-law).",
+    "Word shift (conversion): using a word as a new part of speech without change (email a report, a good read, to Google something).",
+    "Jargon: specialist words of a field (bandwidth, liquidity). Acronyms: words formed from initials (NASA, UNESCO); abbreviations read letter by letter (RBI).",
+    "Idioms with 'feet': find one's feet (settle in), put one's feet up (relax), fall on one's feet (be lucky after trouble), have both feet on the ground (be practical), be back on one's feet (recover).",
+    "Ambiguity: a sentence with two meanings, from a word (lexical) or from its structure ('I saw the man with the telescope')."
+   ],
+   "frame": "Definition → two or three examples of each → conclusion.",
+   "mistakes": []
+  },
+  {
+   "id": "nonverbal",
+   "name": "Verbal & Non-verbal Communication",
+   "block": 1,
+   "kind": "theory",
+   "summary": "Oral and written modes of verbal communication, non-verbal communication and its advantages, and stress and intonation.",
+   "points": [
+    "Verbal communication uses words, spoken (oral) or written.",
+    "Oral: quick, immediate feedback, personal, uses tone — suited to meetings, interviews, phone calls and presentations. Written: a permanent record, precise, formal, legal proof — suited to letters, reports, contracts, notices and instructions. Both together: a meeting followed by written minutes; an interview followed by an offer letter.",
+    "Non-verbal communication: body language (gestures, facial expression, eye contact, posture), space (proxemics), touch, use of time, appearance and paralanguage (tone, pitch, pace, pauses).",
+    "Advantages of non-verbal communication: supports or replaces words, shows feelings and attitudes, crosses language barriers, gives quick feedback, adds credibility.",
+    "Stress: the extra force on a syllable or word (PHOtograph, phoTOgraphy; stressing a word changes the sense). Intonation: the rise and fall of the voice (a rising tone for yes/no questions, falling for statements)."
+   ],
+   "frame": "Meaning → types or advantages as headings with an example → conclusion.",
+   "mistakes": []
+  },
+  {
+   "id": "conversation",
+   "name": "Conversation, Speech Events & Discourse",
+   "block": 1,
+   "kind": "theory",
+   "summary": "Characteristics and conventions of conversation, how it differs from other speech events, introducing oneself, and forms of discourse.",
+   "points": [
+    "Conversation: an informal, spontaneous, two-way exchange with turn-taking, shared responsibility and no fixed agenda.",
+    "Conventions: openings and greetings, taking turns, adjacency pairs (question–answer, greeting–greeting), politeness, closings.",
+    "Speech events: lectures, interviews, meetings, debates, telephone calls, speeches, conversations. A conversation differs because it is unplanned, equal between speakers and has no set purpose, time or order.",
+    "Introducing yourself: greeting, name, where you are from or your role, one or two personal details, a question back to the other person.",
+    "Forms of discourse: narration (tells events), description (paints a picture), exposition (explains) and argumentation (persuades). Argumentative discourse gives a claim, reasons and evidence, and answers the counter-argument."
+   ],
+   "frame": "Meaning → features as headings → a short example exchange → conclusion.",
+   "mistakes": []
+  },
+  {
+   "id": "meetings",
+   "name": "Meetings",
+   "block": 1,
+   "kind": "theory",
+   "summary": "Meeting etiquette, language and tone, preparing for and taking part in meetings, making a meeting successful, and ending it well.",
+   "points": [
+    "Before the meeting: read the agenda and last minutes, gather facts and figures, prepare your points and questions.",
+    "Etiquette: be on time, phone on silent, address the chair, don't interrupt, use formal, polite, positive language and a calm tone.",
+    "Active participation: listen, contribute relevant points with facts, ask for clarification, support or disagree politely, take notes of decisions and your actions.",
+    "A successful meeting: a clear purpose and agenda, the right people, time kept, a chairperson guiding discussion, decisions recorded in minutes, follow-up.",
+    "Ending a meeting: summarise the decisions, confirm who does what by when, fix the next meeting, thank everyone."
+   ],
+   "frame": "Headed points with one line each → conclusion.",
+   "mistakes": []
+  }
+ ],
+ "questions": [
+  {
+   "s": "2020-12",
+   "q": "1(i)",
+   "t": "Barriers to communication and removing them",
+   "m": 3.33,
+   "k": "th",
+   "topic": "communication"
+  },
+  {
+   "s": "2020-12",
+   "q": "1(ii)",
+   "t": "Advantages of non-verbal communication",
+   "m": 3.33,
+   "k": "th",
+   "topic": "nonverbal"
+  },
+  {
+   "s": "2020-12",
+   "q": "1(iii)",
+   "t": "Structuring an effective presentation",
+   "m": 3.33,
+   "k": "th",
+   "topic": "presentation"
+  },
+  {
+   "s": "2020-12",
+   "q": "1(iv)",
+   "t": "Homophones and homographs",
+   "m": 3.33,
+   "k": "th",
+   "topic": "vocabulary"
+  },
+  {
+   "s": "2020-12",
+   "q": "1(v)",
+   "t": "Gender-neutral formal letters",
+   "m": 3.33,
+   "k": "th",
+   "topic": "letter"
+  },
+  {
+   "s": "2020-12",
+   "q": "1(vi)",
+   "t": "Schemata in reading",
+   "m": 3.33,
+   "k": "th",
+   "topic": "reading"
+  },
+  {
+   "s": "2020-12",
+   "q": "2",
+   "t": "Dialogue in 10 turns: a new recruit's role",
+   "m": 5,
+   "k": "th",
+   "topic": "writing"
+  },
+  {
+   "s": "2020-12",
+   "q": "2 (or)",
+   "t": "Essay: higher education or cultural diversity in India",
+   "m": 5,
+   "k": "th",
+   "topic": "writing"
+  },
+  {
+   "s": "2020-12",
+   "q": "3",
+   "t": "Letter accepting a research assistant post",
+   "m": 5,
+   "k": "th",
+   "topic": "letter"
+  },
+  {
+   "s": "2020-12",
+   "q": "3 (or)",
+   "t": "Group discussion: good reading habits in children",
+   "m": 5,
+   "k": "th",
+   "topic": "group-discussion"
+  },
+  {
+   "s": "2020-12",
+   "q": "4",
+   "t": "Conversation vs other speech events",
+   "m": 5,
+   "k": "th",
+   "topic": "conversation"
+  },
+  {
+   "s": "2020-12",
+   "q": "4 (or)",
+   "t": "Four levels of reading comprehension",
+   "m": 5,
+   "k": "th",
+   "topic": "reading"
+  },
+  {
+   "s": "2021-12",
+   "q": "1(i)",
+   "t": "Conversation vs other speech events",
+   "m": 3.33,
+   "k": "th",
+   "topic": "conversation"
+  },
+  {
+   "s": "2021-12",
+   "q": "1(ii)",
+   "t": "Interpretive reading",
+   "m": 3.33,
+   "k": "th",
+   "topic": "reading"
+  },
+  {
+   "s": "2021-12",
+   "q": "1(iii)",
+   "t": "Faulty reading habits",
+   "m": 3.33,
+   "k": "th",
+   "topic": "reading"
+  },
+  {
+   "s": "2021-12",
+   "q": "1(iv)",
+   "t": "Word formation: affixation and compounding",
+   "m": 3.33,
+   "k": "th",
+   "topic": "vocabulary"
+  },
+  {
+   "s": "2021-12",
+   "q": "1(v)",
+   "t": "Homonyms and homographs",
+   "m": 3.33,
+   "k": "th",
+   "topic": "vocabulary"
+  },
+  {
+   "s": "2021-12",
+   "q": "1(vi)",
+   "t": "Argumentative discourse",
+   "m": 3.33,
+   "k": "th",
+   "topic": "conversation"
+  },
+  {
+   "s": "2021-12",
+   "q": "2",
+   "t": "Letter applying for a Research Analyst post",
+   "m": 10,
+   "k": "th",
+   "topic": "letter"
+  },
+  {
+   "s": "2021-12",
+   "q": "3",
+   "t": "Group discussion: qualities of an effective team leader",
+   "m": 10,
+   "k": "th",
+   "topic": "group-discussion"
+  },
+  {
+   "s": "2021-12",
+   "q": "4",
+   "t": "Semantic and linguistic barriers to communication",
+   "m": 5,
+   "k": "th",
+   "topic": "communication"
+  },
+  {
+   "s": "2021-12",
+   "q": "4 (or)",
+   "t": "Structure and outline of a presentation",
+   "m": 5,
+   "k": "th",
+   "topic": "presentation"
+  },
+  {
+   "s": "2022-06",
+   "q": "1(i)",
+   "t": "Characteristics and conventions of conversation",
+   "m": 3.33,
+   "k": "th",
+   "topic": "conversation"
+  },
+  {
+   "s": "2022-06",
+   "q": "1(ii)",
+   "t": "Reading as a complex cognitive skill",
+   "m": 3.33,
+   "k": "th",
+   "topic": "reading"
+  },
+  {
+   "s": "2022-06",
+   "q": "1(iii)",
+   "t": "Literal vs interpretive reading",
+   "m": 3.33,
+   "k": "th",
+   "topic": "reading"
+  },
+  {
+   "s": "2022-06",
+   "q": "1(iv)",
+   "t": "Meeting etiquette",
+   "m": 3.33,
+   "k": "th",
+   "topic": "meetings"
+  },
+  {
+   "s": "2022-06",
+   "q": "1(v)",
+   "t": "Homonyms and homophones",
+   "m": 3.33,
+   "k": "th",
+   "topic": "vocabulary"
+  },
+  {
+   "s": "2022-06",
+   "q": "1(vi)",
+   "t": "Visual aids in presentations",
+   "m": 3.33,
+   "k": "th",
+   "topic": "presentation"
+  },
+  {
+   "s": "2022-06",
+   "q": "2",
+   "t": "Letter applying for an Assistant Editor post",
+   "m": 10,
+   "k": "th",
+   "topic": "letter"
+  },
+  {
+   "s": "2022-06",
+   "q": "3",
+   "t": "Group discussion: online learning in Indian schools",
+   "m": 10,
+   "k": "th",
+   "topic": "group-discussion"
+  },
+  {
+   "s": "2022-06",
+   "q": "4",
+   "t": "Socio-psychological barriers to communication",
+   "m": 5,
+   "k": "th",
+   "topic": "communication"
+  },
+  {
+   "s": "2022-06",
+   "q": "4 (or)",
+   "t": "Basic forms of discourse",
+   "m": 5,
+   "k": "th",
+   "topic": "conversation"
+  },
+  {
+   "s": "2022-12",
+   "q": "1(i)",
+   "t": "Functions of visuals",
+   "m": 3.33,
+   "k": "th",
+   "topic": "presentation"
+  },
+  {
+   "s": "2022-12",
+   "q": "1(ii)",
+   "t": "Language and tone in a meeting",
+   "m": 3.33,
+   "k": "th",
+   "topic": "meetings"
+  },
+  {
+   "s": "2022-12",
+   "q": "1(iii)",
+   "t": "Non-verbal communication",
+   "m": 3.33,
+   "k": "th",
+   "topic": "nonverbal"
+  },
+  {
+   "s": "2022-12",
+   "q": "1(iv)",
+   "t": "Macro-functions of communication",
+   "m": 3.33,
+   "k": "th",
+   "topic": "communication"
+  },
+  {
+   "s": "2022-12",
+   "q": "1(v)",
+   "t": "Essentials of a group discussion",
+   "m": 3.33,
+   "k": "th",
+   "topic": "group-discussion"
+  },
+  {
+   "s": "2022-12",
+   "q": "1(vi)",
+   "t": "Interpretive reading",
+   "m": 3.33,
+   "k": "th",
+   "topic": "reading"
+  },
+  {
+   "s": "2022-12",
+   "q": "2",
+   "t": "Letter accepting a Research Associate offer",
+   "m": 10,
+   "k": "th",
+   "topic": "letter"
+  },
+  {
+   "s": "2022-12",
+   "q": "3",
+   "t": "Five-minute presentation: preparing for a job interview",
+   "m": 10,
+   "k": "th",
+   "topic": "presentation"
+  },
+  {
+   "s": "2022-12",
+   "q": "4",
+   "t": "Group discussion: social media or money and happiness",
+   "m": 10,
+   "k": "th",
+   "topic": "group-discussion"
+  },
+  {
+   "s": "2023-06",
+   "q": "1(i)",
+   "t": "Elements of communication",
+   "m": 3.33,
+   "k": "th",
+   "topic": "communication"
+  },
+  {
+   "s": "2023-06",
+   "q": "1(ii)",
+   "t": "Types of speech events",
+   "m": 3.33,
+   "k": "th",
+   "topic": "conversation"
+  },
+  {
+   "s": "2023-06",
+   "q": "1(iii)",
+   "t": "Rules for a successful group discussion",
+   "m": 3.33,
+   "k": "th",
+   "topic": "group-discussion"
+  },
+  {
+   "s": "2023-06",
+   "q": "1(iv)",
+   "t": "Benefits of visual aids",
+   "m": 3.33,
+   "k": "th",
+   "topic": "presentation"
+  },
+  {
+   "s": "2023-06",
+   "q": "1(v)",
+   "t": "Homonyms and homophones",
+   "m": 3.33,
+   "k": "th",
+   "topic": "vocabulary"
+  },
+  {
+   "s": "2023-06",
+   "q": "1(vi)",
+   "t": "Critical reading",
+   "m": 3.33,
+   "k": "th",
+   "topic": "reading"
+  },
+  {
+   "s": "2023-06",
+   "q": "2",
+   "t": "Dialogue in 10 turns: meeting a conference participant",
+   "m": 5,
+   "k": "th",
+   "topic": "writing"
+  },
+  {
+   "s": "2023-06",
+   "q": "2 (or)",
+   "t": "Essay: India as a tourist destination or career paths",
+   "m": 5,
+   "k": "th",
+   "topic": "writing"
+  },
+  {
+   "s": "2023-06",
+   "q": "3",
+   "t": "Letter accepting a copy editor post",
+   "m": 5,
+   "k": "th",
+   "topic": "letter"
+  },
+  {
+   "s": "2023-06",
+   "q": "3 (or)",
+   "t": "Group discussion: saving India's rivers",
+   "m": 5,
+   "k": "th",
+   "topic": "group-discussion"
+  },
+  {
+   "s": "2023-06",
+   "q": "4",
+   "t": "Four levels of meaning in reading",
+   "m": 5,
+   "k": "th",
+   "topic": "reading"
+  },
+  {
+   "s": "2023-06",
+   "q": "4 (or)",
+   "t": "Written vs oral communication",
+   "m": 5,
+   "k": "th",
+   "topic": "nonverbal"
+  },
+  {
+   "s": "2023-12",
+   "q": "1(i)",
+   "t": "Macro-functions of communication",
+   "m": 3.33,
+   "k": "th",
+   "topic": "communication"
+  },
+  {
+   "s": "2023-12",
+   "q": "1(ii)",
+   "t": "Conversation vs other speech events",
+   "m": 3.33,
+   "k": "th",
+   "topic": "conversation"
+  },
+  {
+   "s": "2023-12",
+   "q": "1(iii)",
+   "t": "Making a meeting successful",
+   "m": 3.33,
+   "k": "th",
+   "topic": "meetings"
+  },
+  {
+   "s": "2023-12",
+   "q": "1(iv)",
+   "t": "Word formation: affixation and compounding",
+   "m": 3.33,
+   "k": "th",
+   "topic": "vocabulary"
+  },
+  {
+   "s": "2023-12",
+   "q": "1(v)",
+   "t": "Four basic forms of discourse",
+   "m": 3.33,
+   "k": "th",
+   "topic": "conversation"
+  },
+  {
+   "s": "2023-12",
+   "q": "1(vi)",
+   "t": "Visual aids in presentations",
+   "m": 3.33,
+   "k": "th",
+   "topic": "presentation"
+  },
+  {
+   "s": "2023-12",
+   "q": "2",
+   "t": "Dialogue in 10 turns with a travel agent",
+   "m": 5,
+   "k": "th",
+   "topic": "writing"
+  },
+  {
+   "s": "2023-12",
+   "q": "2 (or)",
+   "t": "Essay: the internet in learning or globalisation",
+   "m": 5,
+   "k": "th",
+   "topic": "writing"
+  },
+  {
+   "s": "2023-12",
+   "q": "3",
+   "t": "Letter accepting an analyst post",
+   "m": 5,
+   "k": "th",
+   "topic": "letter"
+  },
+  {
+   "s": "2023-12",
+   "q": "3 (or)",
+   "t": "Group discussion: pollution-free cities",
+   "m": 5,
+   "k": "th",
+   "topic": "group-discussion"
+  },
+  {
+   "s": "2023-12",
+   "q": "4",
+   "t": "Barriers to communication: three categories",
+   "m": 5,
+   "k": "th",
+   "topic": "communication"
+  },
+  {
+   "s": "2023-12",
+   "q": "4 (or)",
+   "t": "Four levels of reading comprehension",
+   "m": 5,
+   "k": "th",
+   "topic": "reading"
+  },
+  {
+   "s": "2024-06",
+   "q": "1(i)",
+   "t": "Stress and intonation",
+   "m": 3.33,
+   "k": "th",
+   "topic": "nonverbal"
+  },
+  {
+   "s": "2024-06",
+   "q": "1(ii)",
+   "t": "Homophones and word shift",
+   "m": 3.33,
+   "k": "th",
+   "topic": "vocabulary"
+  },
+  {
+   "s": "2024-06",
+   "q": "1(iii)",
+   "t": "Essentials of a group discussion",
+   "m": 3.33,
+   "k": "th",
+   "topic": "group-discussion"
+  },
+  {
+   "s": "2024-06",
+   "q": "1(iv)",
+   "t": "Characteristics of reading",
+   "m": 3.33,
+   "k": "th",
+   "topic": "reading"
+  },
+  {
+   "s": "2024-06",
+   "q": "1(v)",
+   "t": "Faulty reading habits",
+   "m": 3.33,
+   "k": "th",
+   "topic": "reading"
+  },
+  {
+   "s": "2024-06",
+   "q": "1(vi)",
+   "t": "Forms of discourse",
+   "m": 3.33,
+   "k": "th",
+   "topic": "conversation"
+  },
+  {
+   "s": "2024-06",
+   "q": "2",
+   "t": "Letter to the editor: power breakdowns",
+   "m": 10,
+   "k": "th",
+   "topic": "letter"
+  },
+  {
+   "s": "2024-06",
+   "q": "3",
+   "t": "Group discussion: online learning, media or creativity",
+   "m": 10,
+   "k": "th",
+   "topic": "group-discussion"
+  },
+  {
+   "s": "2024-06",
+   "q": "4",
+   "t": "Paragraph describing your city for a travel magazine",
+   "m": 5,
+   "k": "th",
+   "topic": "writing"
+  },
+  {
+   "s": "2024-06",
+   "q": "4 (or)",
+   "t": "Completing paragraphs from given beginnings",
+   "m": 5,
+   "k": "th",
+   "topic": "writing"
+  },
+  {
+   "s": "2024-12",
+   "q": "1(i)",
+   "t": "Non-verbal communication",
+   "m": 3.33,
+   "k": "th",
+   "topic": "nonverbal"
+  },
+  {
+   "s": "2024-12",
+   "q": "1(ii)",
+   "t": "Barriers to communication",
+   "m": 3.33,
+   "k": "th",
+   "topic": "communication"
+  },
+  {
+   "s": "2024-12",
+   "q": "1(iii)",
+   "t": "Levels of meaning for a good reader",
+   "m": 3.33,
+   "k": "th",
+   "topic": "reading"
+  },
+  {
+   "s": "2024-12",
+   "q": "1(iv)",
+   "t": "Introducing oneself",
+   "m": 3.33,
+   "k": "th",
+   "topic": "conversation"
+  },
+  {
+   "s": "2024-12",
+   "q": "1(v)",
+   "t": "Homonyms and homophones",
+   "m": 3.33,
+   "k": "th",
+   "topic": "vocabulary"
+  },
+  {
+   "s": "2024-12",
+   "q": "1(vi)",
+   "t": "Characteristics of good communication",
+   "m": 3.33,
+   "k": "th",
+   "topic": "communication"
+  },
+  {
+   "s": "2024-12",
+   "q": "2",
+   "t": "Five-minute presentation: global warming, G-20 or social media",
+   "m": 10,
+   "k": "th",
+   "topic": "presentation"
+  },
+  {
+   "s": "2024-12",
+   "q": "3",
+   "t": "Group discussion: AI and jobs or electric vehicles",
+   "m": 10,
+   "k": "th",
+   "topic": "group-discussion"
+  },
+  {
+   "s": "2024-12",
+   "q": "4",
+   "t": "Letter enquiring about scholarships",
+   "m": 5,
+   "k": "th",
+   "topic": "letter"
+  },
+  {
+   "s": "2024-12",
+   "q": "4 (or)",
+   "t": "Leave application to the Director",
+   "m": 5,
+   "k": "th",
+   "topic": "letter"
+  },
+  {
+   "s": "2025-06",
+   "q": "1(i)",
+   "t": "Verbal communication",
+   "m": 3.33,
+   "k": "th",
+   "topic": "nonverbal"
+  },
+  {
+   "s": "2025-06",
+   "q": "1(ii)",
+   "t": "Essentials of a group discussion",
+   "m": 3.33,
+   "k": "th",
+   "topic": "group-discussion"
+  },
+  {
+   "s": "2025-06",
+   "q": "1(iii)",
+   "t": "Barriers to communication",
+   "m": 3.33,
+   "k": "th",
+   "topic": "communication"
+  },
+  {
+   "s": "2025-06",
+   "q": "1(iv)",
+   "t": "Style in communication",
+   "m": 3.33,
+   "k": "th",
+   "topic": "communication"
+  },
+  {
+   "s": "2025-06",
+   "q": "1(v)",
+   "t": "Preparing to attend a meeting",
+   "m": 3.33,
+   "k": "th",
+   "topic": "meetings"
+  },
+  {
+   "s": "2025-06",
+   "q": "1(vi)",
+   "t": "Essentials of presentation skills",
+   "m": 3.33,
+   "k": "th",
+   "topic": "presentation"
+  },
+  {
+   "s": "2025-06",
+   "q": "2",
+   "t": "Five-minute presentation: G-20 or climate change",
+   "m": 10,
+   "k": "th",
+   "topic": "presentation"
+  },
+  {
+   "s": "2025-06",
+   "q": "3",
+   "t": "Group discussion: freedom or e-learning",
+   "m": 10,
+   "k": "th",
+   "topic": "group-discussion"
+  },
+  {
+   "s": "2025-06",
+   "q": "4",
+   "t": "Letter to the editor: poor water supply",
+   "m": 5,
+   "k": "th",
+   "topic": "letter"
+  },
+  {
+   "s": "2025-06",
+   "q": "4 (or)",
+   "t": "Letter placing a bulk order for uniforms",
+   "m": 5,
+   "k": "th",
+   "topic": "letter"
+  },
+  {
+   "s": "2025-12",
+   "q": "1(i)",
+   "t": "Silent reading vs reading aloud",
+   "m": 3.33,
+   "k": "th",
+   "topic": "reading"
+  },
+  {
+   "s": "2025-12",
+   "q": "1(ii)",
+   "t": "Subvocalising",
+   "m": 3.33,
+   "k": "th",
+   "topic": "reading"
+  },
+  {
+   "s": "2025-12",
+   "q": "1(iii)",
+   "t": "Being an active participant in a meeting",
+   "m": 3.33,
+   "k": "th",
+   "topic": "meetings"
+  },
+  {
+   "s": "2025-12",
+   "q": "1(iv)",
+   "t": "Symbols and graphs in communication",
+   "m": 3.33,
+   "k": "th",
+   "topic": "presentation"
+  },
+  {
+   "s": "2025-12",
+   "q": "1(v)",
+   "t": "Homophones",
+   "m": 3.33,
+   "k": "th",
+   "topic": "vocabulary"
+  },
+  {
+   "s": "2025-12",
+   "q": "1(vi)",
+   "t": "Jargon and acronyms",
+   "m": 3.33,
+   "k": "th",
+   "topic": "vocabulary"
+  },
+  {
+   "s": "2025-12",
+   "q": "2",
+   "t": "Oral and written modes of verbal communication",
+   "m": 10,
+   "k": "th",
+   "topic": "nonverbal"
+  },
+  {
+   "s": "2025-12",
+   "q": "3",
+   "t": "Group discussion: traditional knowledge or G20",
+   "m": 5,
+   "k": "th",
+   "topic": "group-discussion"
+  },
+  {
+   "s": "2025-12",
+   "q": "3 (or)",
+   "t": "Letter to a bank client on account terms",
+   "m": 5,
+   "k": "th",
+   "topic": "letter"
+  },
+  {
+   "s": "2025-12",
+   "q": "4",
+   "t": "Essay: technology or climate change",
+   "m": 5,
+   "k": "th",
+   "topic": "writing"
+  },
+  {
+   "s": "2025-12",
+   "q": "4 (or)",
+   "t": "Essay: barriers to communication",
+   "m": 5,
+   "k": "th",
+   "topic": "communication"
+  },
+  {
+   "s": "2026-06",
+   "q": "1(i)",
+   "t": "Word shift and ambiguity",
+   "m": 3.33,
+   "k": "th",
+   "topic": "vocabulary"
+  },
+  {
+   "s": "2026-06",
+   "q": "1(ii)",
+   "t": "Advantages of non-verbal communication",
+   "m": 3.33,
+   "k": "th",
+   "topic": "nonverbal"
+  },
+  {
+   "s": "2026-06",
+   "q": "1(iii)",
+   "t": "Idioms with 'feet'",
+   "m": 3.33,
+   "k": "th",
+   "topic": "vocabulary"
+  },
+  {
+   "s": "2026-06",
+   "q": "1(iv)",
+   "t": "Ending a meeting",
+   "m": 3.33,
+   "k": "th",
+   "topic": "meetings"
+  },
+  {
+   "s": "2026-06",
+   "q": "1(v)",
+   "t": "Functions of visual aids",
+   "m": 3.33,
+   "k": "th",
+   "topic": "presentation"
+  },
+  {
+   "s": "2026-06",
+   "q": "1(vi)",
+   "t": "Levels of reading comprehension",
+   "m": 3.33,
+   "k": "th",
+   "topic": "reading"
+  },
+  {
+   "s": "2026-06",
+   "q": "2",
+   "t": "Presentation: preparing for a job interview",
+   "m": 10,
+   "k": "th",
+   "topic": "presentation"
+  },
+  {
+   "s": "2026-06",
+   "q": "3",
+   "t": "Completing a paragraph on liberty",
+   "m": 5,
+   "k": "th",
+   "topic": "writing"
+  },
+  {
+   "s": "2026-06",
+   "q": "3 (or)",
+   "t": "Dialogue: Bharatiya knowledge in education",
+   "m": 5,
+   "k": "th",
+   "topic": "writing"
+  },
+  {
+   "s": "2026-06",
+   "q": "4",
+   "t": "Letter to the editor: traffic congestion",
+   "m": 5,
+   "k": "th",
+   "topic": "letter"
+  },
+  {
+   "s": "2026-06",
+   "q": "4 (or)",
+   "t": "Essay: essentials of presentation or process of communication",
+   "m": 5,
+   "k": "th",
+   "topic": "writing"
+  }
+ ]
+}
