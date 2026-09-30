@@ -9,7 +9,7 @@
   "each": 20,
   "summary": "8 questions, attempt any 5, each carries 20 marks. All theory. Q8 is always short notes (any 2 of 4). The same questions come back almost word for word — business plan, MSMEs, start-ups and sources of finance appear in nearly every paper."
  },
- "blocksOfficial": false,
+ "blocksOfficial": true,
  "sessions": [
   "2022-06",
   "2022-12",
@@ -33,30 +33,26 @@
  "blocks": [
   {
    "no": 1,
-   "title": "Entrepreneurship & the Entrepreneur"
+   "title": "Entrepreneurship: A Perspective"
   },
   {
    "no": 2,
-   "title": "Ecosystem, Creativity & Types"
+   "title": "Business Idea Selection and Feasibility"
   },
   {
    "no": 3,
-   "title": "Ideas, Feasibility & Business Plan"
+   "title": "Mobilising Resources and Start-up"
   },
   {
    "no": 4,
-   "title": "Resources & Finance"
-  },
-  {
-   "no": 5,
-   "title": "MSMEs, Start-ups & Family Business"
+   "title": "Entrepreneurship and Micro, Small and Medium Enterprises (MSMEs)"
   }
  ],
  "topics": [
   {
    "id": "business-plan",
    "name": "Business Plan & DPR",
-   "block": 3,
+   "block": 2,
    "kind": "theory",
    "summary": "What a business plan is, why it matters, its elements, the Detailed Project Report (DPR), marketing plan and location/layout.",
    "points": [
@@ -70,12 +66,30 @@
    "frame": "Meaning → relevance (5 points) → elements as headings, each with one example line (e.g. a tiffin service or a small bakery) → conclusion.",
    "mistakes": [
     "Writing only the meaning — most marks are for the elements with examples."
+   ],
+   "units": [
+    {
+     "block": 2,
+     "unit": 7,
+     "title": "Business Plan Preparation"
+    },
+    {
+     "block": 2,
+     "unit": 9,
+     "title": "Business Plan Implementation"
+    },
+    {
+     "block": 2,
+     "unit": 6,
+     "title": "Market Research",
+     "part": "6.5 Marketing plan"
+    }
    ]
   },
   {
    "id": "msme",
    "name": "MSMEs, MSMED Act & Schemes",
-   "block": 5,
+   "block": 4,
    "kind": "theory",
    "summary": "Role of MSMEs in entrepreneurship and economic development, MSMED Act 2006, government initiatives, MUDRA Yojana and KVIC.",
    "points": [
@@ -89,12 +103,19 @@
    "frame": "Meaning of MSME → classification table → role/provisions as headed points → schemes list → conclusion.",
    "mistakes": [
     "Giving only the 2006 investment limits — add the current investment + turnover limits."
+   ],
+   "units": [
+    {
+     "block": 4,
+     "unit": 13,
+     "title": "Entrepreneurship Development and MSMEs"
+    }
    ]
   },
   {
    "id": "finance",
    "name": "Financial & Non-financial Resources",
-   "block": 4,
+   "block": 3,
    "kind": "theory",
    "summary": "Sources of finance (long and short term), factors in choosing a source, non-financial resources (human, physical, technology, information, networks, mentoring).",
    "points": [
@@ -104,15 +125,28 @@
     "Factors in choosing a source: cost, amount needed, period, risk, control (equity dilutes ownership), flexibility, legal form, stage of business, collateral available, market conditions.",
     "Non-financial resources: human resources (skills, team), physical resources (land, building, machinery), technology, information and market knowledge, networks and relationships, mentoring and incubation support, legal and institutional support.",
     "Good mentor: experienced, available, a good listener, honest in feedback, shares networks, motivates and has no conflicting interest — e.g. an incubator mentor guiding a first-time founder.",
-    "Entrepreneur vs intrapreneur: the entrepreneur owns the business, bears the risk and raises the capital; the intrapreneur innovates inside an existing organisation with its resources (e.g. Gmail was built inside Google)."
+    "Entrepreneur vs intrapreneur: the entrepreneur owns the business, bears the risk and raises the capital; the intrapreneur innovates inside an existing organisation with its resources (e.g. Gmail was built inside Google).",
+    "PMEGP (Prime Minister's Employment Generation Programme): credit-linked subsidy for new micro enterprises, run through KVIC."
    ],
    "frame": "Classify sources (owned/borrowed, long/short term) in a table → explain each in 2–3 lines → factors for choice → conclusion.",
-   "mistakes": []
+   "mistakes": [],
+   "units": [
+    {
+     "block": 3,
+     "unit": 11,
+     "title": "Mobilising Financial Resources"
+    },
+    {
+     "block": 3,
+     "unit": 12,
+     "title": "Mobilising Non-Financial Resources"
+    }
+   ]
   },
   {
    "id": "feasibility",
    "name": "Feasibility & Market Research",
-   "block": 3,
+   "block": 2,
    "kind": "theory",
    "summary": "Feasibility analysis of a business proposal (market, technical, financial, organisational), market research process, critical factors for a new venture.",
    "points": [
@@ -123,12 +157,24 @@
     "Critical factors for a new venture: a viable idea, market demand, adequate finance, the right team, location, technology, legal compliance, timing, competition, risk tolerance."
    ],
    "frame": "Meaning → components as headings with one line each → conclusion.",
-   "mistakes": []
+   "mistakes": [],
+   "units": [
+    {
+     "block": 2,
+     "unit": 8,
+     "title": "Business Plan Feasibility"
+    },
+    {
+     "block": 2,
+     "unit": 6,
+     "title": "Market Research"
+    }
+   ]
   },
   {
    "id": "ideas",
    "name": "Business Ideas & Opportunities",
-   "block": 3,
+   "block": 2,
    "kind": "theory",
    "summary": "Sources of business ideas, methods and techniques of idea generation, sources for identifying business opportunities.",
    "points": [
@@ -138,12 +184,19 @@
     "Idea vs opportunity: an idea is a thought; an opportunity is an idea with real market demand and viability — screen ideas by feasibility."
    ],
    "frame": "Meaning → list sources/techniques as headings with an Indian example each (Zomato: problem of finding restaurant menus) → conclusion.",
-   "mistakes": []
+   "mistakes": [],
+   "units": [
+    {
+     "block": 2,
+     "unit": 5,
+     "title": "Business Opportunity Identification and Selection"
+    }
+   ]
   },
   {
    "id": "startups",
    "name": "Start-ups & Start-up India",
-   "block": 5,
+   "block": 3,
    "kind": "theory",
    "summary": "Concept of start-ups, challenges, Start-up India (2016) objectives and support measures, success stories.",
    "points": [
@@ -151,15 +204,28 @@
     "Challenges: funding, finding the right talent, regulatory compliance, market acceptance, competition from established firms, infrastructure, scaling, cash-flow management, high failure rate.",
     "Start-up India (launched 16 January 2016): objectives — build a strong ecosystem for innovation, generate employment, promote entrepreneurship, especially among youth, women and in Tier-2/3 cities.",
     "Support measures: self-certification under labour and environmental laws, a single-window Startup India Hub, fast-tracked patents with 80% fee rebate, Fund of Funds for Startups (₹10,000 crore via SIDBI), Credit Guarantee Scheme for Startups, income-tax holiday for 3 of 10 years (Sec 80-IAC), easier public procurement, faster exit, Startup India Seed Fund Scheme, incubators (Atal Innovation Mission).",
-    "Success stories: Zomato, Flipkart, Paytm, Nykaa (Falguni Nayar), OYO (Ritesh Agarwal), PhysicsWallah (Alakh Pandey), Zerodha (bootstrapped, no outside funding)."
+    "Success stories: Zomato, Flipkart, Paytm, Nykaa (Falguni Nayar), OYO (Ritesh Agarwal), PhysicsWallah (Alakh Pandey), Zerodha (bootstrapped, no outside funding).",
+    "Other support in the book: the national incubation network and the Atal Innovation Mission (Atal Tinkering Labs and Atal Incubation Centres). Unit 15 tells success stories of first-generation entrepreneurs and small business owners."
    ],
    "frame": "Meaning (DPIIT definition) → objectives → measures as headed points → one success story in 5–6 lines → conclusion.",
-   "mistakes": []
+   "mistakes": [],
+   "units": [
+    {
+     "block": 3,
+     "unit": 10,
+     "title": "Start-up Initiatives"
+    },
+    {
+     "block": 4,
+     "unit": 15,
+     "title": "Success Stories"
+    }
+   ]
   },
   {
    "id": "family-business",
    "name": "Family Business",
-   "block": 5,
+   "block": 4,
    "kind": "theory",
    "summary": "Concept, types, challenges, conflicts and their management, the systems theory of family business.",
    "points": [
@@ -168,10 +234,18 @@
     "Challenges: succession planning, conflicts among members, resistance to change, nepotism over merit, informal decision-making, limited capital, keeping family and business apart, retaining professional managers.",
     "Kinds of conflict: between generations, among siblings and cousins, between family and non-family managers, over ownership and money, over roles and succession, values and lifestyle.",
     "Managing conflict: a family constitution, a family council, clear roles and succession plan, professional managers and an independent board, open communication, mediation, a fair compensation policy.",
-    "Systems theory (three-circle model — Tagiuri and Davis): family, ownership and business are overlapping systems; a person's position in the overlaps explains their interests and conflicts."
+    "Systems theory (three-circle model — Tagiuri and Davis): family, ownership and business are overlapping systems; a person's position in the overlaps explains their interests and conflicts.",
+    "Other theories of family business in the book: agency, stewardship, resource-based, socio-emotional wealth and stakeholder theory."
    ],
    "frame": "Meaning with an Indian example → types or challenges as headed points → how to manage → conclusion.",
-   "mistakes": []
+   "mistakes": [],
+   "units": [
+    {
+     "block": 4,
+     "unit": 14,
+     "title": "Family Businesses in India"
+    }
+   ]
   },
   {
    "id": "competencies",
@@ -187,7 +261,14 @@
     "Answer with a clear view — agree that entrepreneurs are mostly made, and give reasons."
    ],
    "frame": "Meaning → list the competencies with one example each → conclusion. For 'made not born', state your view, give 5–6 reasons, then a balanced conclusion.",
-   "mistakes": []
+   "mistakes": [],
+   "units": [
+    {
+     "block": 1,
+     "unit": 4,
+     "title": "Entrepreneurs Competencies"
+    }
+   ]
   },
   {
    "id": "ent-concept",
@@ -203,12 +284,20 @@
     "Pick one factor as most important if asked (e.g. government policy or access to finance) and justify with examples."
    ],
    "frame": "Meaning → role as 8–10 headed points → factors in groups → conclusion.",
-   "mistakes": []
+   "mistakes": [],
+   "units": [
+    {
+     "block": 1,
+     "unit": 1,
+     "title": "An Introduction to Entrepreneurship",
+     "part": "1.2–1.5"
+    }
+   ]
   },
   {
    "id": "ecosystem",
    "name": "Entrepreneurial Ecosystem",
-   "block": 2,
+   "block": 1,
    "kind": "theory",
    "summary": "Meaning of an entrepreneurial ecosystem, its components, factors influencing it, India's ecosystem.",
    "points": [
@@ -219,12 +308,19 @@
     "Determinants of entrepreneurship: economic, social, cultural, psychological and political factors (see Entrepreneurship & Economic Development)."
    ],
    "frame": "Meaning → a diagram of the six domains → each domain in 2–3 lines → India example → conclusion.",
-   "mistakes": []
+   "mistakes": [],
+   "units": [
+    {
+     "block": 1,
+     "unit": 2,
+     "title": "Entrepreneurial Eco-system"
+    }
+   ]
   },
   {
    "id": "creativity",
    "name": "Creativity & Innovation",
-   "block": 2,
+   "block": 1,
    "kind": "theory",
    "summary": "Creativity and innovation in entrepreneurship, how they relate, steps of the creative process, challenges.",
    "points": [
@@ -235,7 +331,15 @@
     "Challenges: fear of failure, lack of resources and finance, resistance to change, rigid organisation, time pressure, lack of skills, IP protection issues."
    ],
    "frame": "Meaning of both → how they relate → process steps as a flow chart → challenges → conclusion.",
-   "mistakes": []
+   "mistakes": [],
+   "units": [
+    {
+     "block": 1,
+     "unit": 4,
+     "title": "Entrepreneurs Competencies",
+     "part": "4.4–4.5"
+    }
+   ]
   },
   {
    "id": "theories",
@@ -250,15 +354,25 @@
     "Anthropological theory: culture and social context shape entrepreneurship.",
     "Management/opportunity theory: Peter Drucker — the entrepreneur searches for change and exploits it as an opportunity; resource-based theory (access to finance, human and social capital).",
     "Models of entrepreneurship: Timmons model (the founder balances opportunity, resources and team); Shapero's entrepreneurial event model (a trigger event plus perceived desirability and feasibility leads to a new venture); Gartner's framework (individual, organisation, environment, process). In India, entrepreneurship development programmes (EDPs) grew from McClelland's achievement-motivation training in the Kakinada experiment (1964) and the Gujarat model of the 1970s (identify, train and support new entrepreneurs).",
-    "For India: argue for an integrated view — McClelland's achievement training (used in EDPs) combined with government support and innovation."
+    "For India: argue for an integrated view — McClelland's achievement training (used in EDPs) combined with government support and innovation.",
+    "The book groups theories as psychological (McClelland's need for achievement, Rotter's locus of control, Frese's action regulation), economic (classical, Cantillon's risk-bearing, Schumpeter's innovation), opportunity-based, sociological and anthropological (culture and community beliefs), plus network and resource-based theories.",
+    "Models of entrepreneurship in the book: ambitious innovators (radical, high-risk ventures like tech start-ups), adaptive innovators, solo self-employed, managerial employers and social entrepreneurs."
    ],
    "frame": "Group theories under Economic / Psychological / Sociological / Management headings → give each theorist and one line → your view for India → conclusion.",
-   "mistakes": []
+   "mistakes": [],
+   "units": [
+    {
+     "block": 1,
+     "unit": 1,
+     "title": "An Introduction to Entrepreneurship",
+     "part": "1.6–1.7"
+    }
+   ]
   },
   {
    "id": "types-ent",
    "name": "Rural, Social, Agri & Techno Entrepreneurship",
-   "block": 2,
+   "block": 1,
    "kind": "theory",
    "summary": "Rural entrepreneurship and its challenges, social entrepreneurship, agri-entrepreneurship, techno-entrepreneurship and its factors.",
    "points": [
@@ -266,10 +380,18 @@
     "Challenges in rural areas: finance, poor infrastructure (roads, power, internet), lack of skills and training, limited market access, middlemen, low risk-taking, weak institutional support.",
     "Social entrepreneurship: ventures that solve social problems with a sustainable business model — the aim is social impact, not just profit (Amul, SELCO, Goonj, Grameen Bank).",
     "Agri-entrepreneurship: agriculture-based businesses — organic farming, food processing, agri-inputs, dairy, poultry, agri-tech (DeHaat, Ninjacart); supported by FPOs and schemes.",
-    "Techno-entrepreneurship: ventures built on technology or innovation (software, biotech, fintech). Factors: R&D and innovation, technical skills, venture capital, incubators and university links, IP protection, government policy, market demand."
+    "Techno-entrepreneurship: ventures built on technology or innovation (software, biotech, fintech). Factors: R&D and innovation, technical skills, venture capital, incubators and university links, IP protection, government policy, market demand.",
+    "The book's dimensions of entrepreneurship also include women entrepreneurship, ecopreneurship (green ventures), cultural, heritage and tourism, and international entrepreneurship."
    ],
    "frame": "Meaning → features/challenges as headed points → Indian examples → conclusion.",
-   "mistakes": []
+   "mistakes": [],
+   "units": [
+    {
+     "block": 1,
+     "unit": 3,
+     "title": "Dimensions of Entrepreneurship"
+    }
+   ]
   }
  ],
  "questions": [
@@ -1185,5 +1307,6 @@
    "k": "th",
    "topic": "creativity"
   }
- ]
+ ],
+ "notesSource": "Notes written from the IGNOU BCOS-185 study material."
 }
