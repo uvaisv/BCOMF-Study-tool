@@ -151,6 +151,12 @@
     ? `href="${esc(PAPER_ROOT + p.file)}" download="${esc(`${code} ${sessionLabel(p.s)}.pdf`)}"`
     : `href="${esc(p.url)}"`;
 
+  // MCQ answers are our own (IGNOU publishes no answer key). Ones not confirmed say so.
+  const ANSWER_NOTE = "Our answers, not an official IGNOU key.";
+  const answerText = (i, opt, unsure) => unsure
+    ? `Probably (${i}) ${esc(opt)} <span class="ans-unsure">not confirmed — check your study material</span>`
+    : `(${i}) ${esc(opt)}`;
+
   function paperButtons(code, papers, limit) {
     const list = limit ? papers.slice(0, limit) : papers;
     return `<div class="papers">${list.map((p) =>
@@ -230,6 +236,7 @@
     const repeated = course.repeated || [];
     const repeatItem = (r) => `<li><span class="rep-q">${esc(r.t)}</span>
         <span class="rep-opts">${r.opts.map((o, i) => `<span>(${i + 1}) ${esc(o)}</span>`).join("")}</span>
+        ${r.a ? `<span class="rep-ans"><strong>Answer:</strong> ${answerText(r.a, r.opts[r.a - 1], r.unsure)}</span>` : ""}
         <span class="rep-meta">Asked ${r.sessions.length}× · ${r.sessions.map(sessionLabel).join(", ")}</span></li>`;
 
     app.innerHTML = `${courseHeader(c, course)}
@@ -248,7 +255,7 @@
       </section>
 
       ${repeated.length ? `<h2>Asked again and again</h2>
-      <p class="muted small">These exact questions have come up in more than one paper. Read them with the topic notes.</p>
+      <p class="muted small">These exact questions have come up in more than one paper. Read them with the topic notes.${repeated.some((r) => r.a) ? ` ${ANSWER_NOTE}` : ""}</p>
       <section class="card"><ul class="replist">${repeated.slice(0, 8).map(repeatItem).join("")}</ul>
         ${repeated.length > 8 ? `<details><summary>Show all ${repeated.length}</summary><ul class="replist">${repeated.slice(8).map(repeatItem).join("")}</ul></details>` : ""}
       </section>` : ""}
@@ -374,7 +381,7 @@
       if (mark) marked.push(b);
       return `<p class="pp${mark ? " mark" : ""}">${fmt(b.p)}${b.m ? ` <span class="pm">${esc(b.m)}</span>` : ""}</p>`;
     }).join("");
-    const opts = q.o ? `<ol class="popts" type="a">${q.o.map((o) => `<li>${fmt(o)}</li>`).join("")}</ol>` : "";
+    const opts = q.o ? `<ol class="popts">${q.o.map((o) => `<li>${fmt(o)}</li>`).join("")}</ol>` : "";
     const imgs = (q.img || []).map((i) => `<img class="pimg" src="${esc(i.src)}" width="${i.w}" height="${i.h}" alt="Question ${q.n} as printed">`).join("");
     // Marks as printed: the part asked if it has its own, else the whole question's
     // (its first line, or the parts' marks added up when only the parts carry them).
@@ -400,6 +407,8 @@
     const known = course.questions.find((x) => x.s === s && String(x.q) === refText);
     const markText = paper && paper.mcq ? "1 mark" : body && body.marks ? `${body.marks} marks` : known ? `${marks(known.m)} marks` : "";
     const exact = (paper && paper.mcq) || course.topics.every((t) => t.kind === "theory") || (q && q.img);
+    const ansKey = `${s}/${ref.n}`;
+    const ans = q && q.o && course.answers && course.answers[ansKey];
     app.innerHTML = `
       ${prevHash ? `<a class="back" href="#${prevHash}" id="back">← Back</a>` : `<a class="back" href="#/c/${code}">← ${esc(c.title)}</a>`}
       <h1>Question ${esc(label)}</h1>
@@ -407,6 +416,9 @@
       <p class="muted small head-meta">${esc(c.code)} · ${esc(c.title)}</p>
       ${q ? `<section class="card qv">${body.html}</section>`
         : `<p class="muted">This question isn't available as text yet.</p>`}
+      ${ans ? `<details class="qv-ans"><summary>Show answer</summary>
+        <p><strong>Answer:</strong> ${answerText(ans, q.o[ans - 1], (course.answersUnsure || []).includes(ansKey))}</p>
+        <p class="small muted">${ANSWER_NOTE}</p></details>` : ""}
       ${pdf ? `<a class="btn secondary qv-pdf" ${paperHref(code, pdf)} target="_blank" rel="noopener">Download full paper (PDF)</a>` : ""}
       ${q && !exact ? `<p class="small muted">Text from the official paper; tables and formulas may look slightly different in print.</p>` : ""}`;
     // Wide tables (trial balances) shrink to fit the screen rather than hide columns.
