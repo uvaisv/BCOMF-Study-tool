@@ -32,7 +32,7 @@
   ],
   "summary": "Three compulsory parts, all theory: Part A — 4 of 5 short notes (5 marks, about 150 words); Part B — 5 of 7 (10 marks, about 300 words); Part C — 2 of 4 (15 marks, about 500 words)."
  },
- "blocksOfficial": false,
+ "blocksOfficial": true,
  "sessions": [
   "2020-12",
   "2021-06",
@@ -60,38 +60,26 @@
  "blocks": [
   {
    "no": 1,
-   "title": "Consumerism & Protection Machinery"
+   "title": "Role of Media and State/Government in Consumer Protection"
   },
   {
    "no": 2,
-   "title": "Advertising & Media"
+   "title": "Role of Industry Bodies and Voluntary Consumer Organisations (VCOs)"
   },
   {
    "no": 3,
-   "title": "Consumer Organisations"
+   "title": "Alternate Dispute Redressal Mechanism"
   },
   {
    "no": 4,
-   "title": "Government Initiatives"
-  },
-  {
-   "no": 5,
-   "title": "ADR & Advocacy"
-  },
-  {
-   "no": 6,
-   "title": "Ombudsman & Industry Bodies"
-  },
-  {
-   "no": 7,
-   "title": "International & Standards"
+   "title": "Consumer Organisations"
   }
  ],
  "topics": [
   {
    "id": "advertising",
    "name": "Advertising, Media & Misleading Advertisements",
-   "block": 2,
+   "block": 1,
    "kind": "theory",
    "summary": "Objectives and impact of advertisements, misleading advertisements, laws governing advertising, ASCI and its code, and the role of media in society and consumer protection.",
    "points": [
@@ -101,15 +89,29 @@
     "Action under CPA 2019: the Central Consumer Protection Authority (CCPA) can order withdrawal or correction and impose penalties on manufacturers and endorsers (up to ₹10 lakh, ₹50 lakh for repeat offences; endorsers can be barred); false or misleading ads can also bring imprisonment. CCPA issued guidelines on misleading ads and endorsements (2022). The Department of Consumer Affairs also runs the GAMA portal for complaints.",
     "Other laws: Drugs and Magic Remedies (Objectionable Advertisements) Act 1954, Cable Television Networks (Regulation) Act 1995 and its Advertising Code, Indecent Representation of Women (Prohibition) Act 1986, COTPA 2003 (tobacco), FSSAI advertising and claims regulations 2018, Emblems and Names Act 1950.",
     "ASCI (Advertising Standards Council of India, 1985): the industry's self-regulatory body. Code: ads must be honest and truthful, not offensive to public decency, not promote harmful products or situations, and be fair in competition. Its Consumer Complaints Council decides complaints.",
-    "Media and society: media informs, educates, shapes opinion and acts as a watchdog; businesses use it to reach and persuade consumers; its enhanced role today comes from the spread of TV, internet and social media, and its power to expose unfair practices and raise consumer awareness."
+    "Media and society: media informs, educates, shapes opinion and acts as a watchdog; businesses use it to reach and persuade consumers; its enhanced role today comes from the spread of TV, internet and social media, and its power to expose unfair practices and raise consumer awareness.",
+    "Complaints about an advert can go to ASCI's Consumer Complaints Council, which decides whether it breaks the ASCI Code and asks the advertiser to change or withdraw it.",
+    "The Press Council of India (a statutory body under the Press Council Act, 1978) sets norms of journalistic conduct and hears complaints against newspapers, including on objectionable advertisements."
    ],
    "frame": "Meaning → headed points (objectives, effects or laws) with Indian examples → conclusion.",
-   "mistakes": []
+   "mistakes": [],
+   "units": [
+    {
+     "block": 1,
+     "unit": 1,
+     "title": "Role of Media and its Impact on Consumers"
+    },
+    {
+     "block": 1,
+     "unit": 2,
+     "title": "Misleading Advertisement: Regulatory Mechanism"
+    }
+   ]
   },
   {
    "id": "vco",
    "name": "Voluntary Consumer Organisations & NGOs",
-   "block": 3,
+   "block": 2,
    "kind": "theory",
    "summary": "Voluntary consumer organisations (VCOs) and NGOs — nature, characteristics, functions and activities, role under the Consumer Protection Act, selected organisations, management in NGOs, consumer clubs, and do's and don'ts for consumer activists.",
    "points": [
@@ -123,12 +125,19 @@
     "Do's for a consumer activist: know the law, collect facts and documents, act through proper channels, be fair and courteous, keep records. Don'ts: make false allegations, seek personal gain, use threats or violence, publicise unverified claims."
    ],
    "frame": "Meaning → functions or features as headings → one Indian organisation as example → conclusion.",
-   "mistakes": []
+   "mistakes": [],
+   "units": [
+    {
+     "block": 2,
+     "unit": 7,
+     "title": "Role of Voluntary Consumer Organisations (VCOs)"
+    }
+   ]
   },
   {
    "id": "nch-gsk",
    "name": "National Consumer Helpline & Grahak Suvidha Kendras",
-   "block": 4,
+   "block": 3,
    "kind": "theory",
    "summary": "The National Consumer Helpline — role, functions and stages of resolving consumer issues — and Grahak Suvidha Kendras.",
    "points": [
@@ -139,12 +148,25 @@
     "Importance: quick, free, pre-litigation settlement; reduces the load on consumer commissions; builds consumer confidence."
    ],
    "frame": "Meaning → functions → stages as a flow chart → conclusion.",
-   "mistakes": []
+   "mistakes": [],
+   "units": [
+    {
+     "block": 3,
+     "unit": 8,
+     "title": "National Consumer Helpline (NCH)"
+    },
+    {
+     "block": 1,
+     "unit": 4,
+     "title": "Government Initiatives",
+     "part": "4.5 NCH, 4.7 Grahak Suvidha Kendras"
+    }
+   ]
   },
   {
    "id": "adr",
    "name": "ADR: Mediation, Conciliation, Arbitration & Lok Adalats",
-   "block": 5,
+   "block": 3,
    "kind": "theory",
    "summary": "Mediation (types, advantages, stages), conciliation, arbitration and the law on it, Lok Adalats, and how they differ.",
    "points": [
@@ -154,15 +176,23 @@
     "Conciliation (Arbitration and Conciliation Act 1996, Part III): the conciliator helps the parties and may propose terms of settlement; a signed settlement agreement is binding like an arbitral award. Suitable for commercial and civil disputes; not for criminal matters.",
     "Conciliation vs mediation: a conciliator may suggest solutions, a mediator only facilitates; conciliation has a statutory settlement under the 1996 Act.",
     "Arbitration: disputes decided by an arbitrator chosen by the parties (or appointed by the court, Sec 11); the award is binding and enforceable like a decree, with limited grounds to challenge.",
-    "Lok Adalats (Legal Services Authorities Act 1987): people's courts that settle disputes by compromise; no court fee, fee refunded if pending in court; the award is final with no appeal. Permanent Lok Adalats handle public utility services. Lok Adalat vs mediation: a Lok Adalat award is a decree of a civil court; mediation ends in a settlement agreement."
+    "Lok Adalats (Legal Services Authorities Act 1987): people's courts that settle disputes by compromise; no court fee, fee refunded if pending in court; the award is final with no appeal. Permanent Lok Adalats handle public utility services. Lok Adalat vs mediation: a Lok Adalat award is a decree of a civil court; mediation ends in a settlement agreement.",
+    "Grievances against government departments can be lodged online on the Public Grievances (CPGRAMS) portal."
    ],
    "frame": "Meaning → stages or features as headings → comparison table where asked → conclusion.",
-   "mistakes": []
+   "mistakes": [],
+   "units": [
+    {
+     "block": 3,
+     "unit": 10,
+     "title": "Arbitration, Mediation, Conciliation and Other Mechanisms"
+    }
+   ]
   },
   {
    "id": "ombudsman",
    "name": "Ombudsman, Lokpal & Sector Ombudsmen",
-   "block": 6,
+   "block": 3,
    "kind": "theory",
    "summary": "The institution of Ombudsman, its characteristics and Indian perspective, Lokpal (role, structure, jurisdiction, rationale), and Banking, SEBI and Telecom ombudsmen.",
    "points": [
@@ -176,12 +206,19 @@
    "frame": "Meaning → features or structure as headings → one sector example → conclusion.",
    "mistakes": [
     "Describing the old Banking Ombudsman Scheme 2006 only — mention the Integrated Ombudsman Scheme 2021."
+   ],
+   "units": [
+    {
+     "block": 3,
+     "unit": 9,
+     "title": "Complaint to Ombudsman"
+    }
    ]
   },
   {
    "id": "campaign",
    "name": "Campaign & Advocacy Programmes",
-   "block": 5,
+   "block": 4,
    "kind": "theory",
    "summary": "Meaning of campaign and advocacy, public and private advocacy, requisites, strategies, techniques (information and publicity), steps of an effective programme, and written protests.",
    "points": [
@@ -193,12 +230,19 @@
     "Written protests: letters, memoranda and petitions to companies or authorities — a peaceful, documented way to press consumer demands."
    ],
    "frame": "Meaning → types or steps as headings → a consumer example → conclusion.",
-   "mistakes": []
+   "mistakes": [],
+   "units": [
+    {
+     "block": 4,
+     "unit": 11,
+     "title": "Strategies (Campaign and Advocacy)"
+    }
+   ]
   },
   {
    "id": "international",
    "name": "Consumers International & Consumer Interpol",
-   "block": 7,
+   "block": 4,
    "kind": "theory",
    "summary": "Consumers International — status, scope, objectives, activities, charter for consumer action and coordination — and Consumer Interpol's origin, growth and aims.",
    "points": [
@@ -209,12 +253,19 @@
     "Consumer Interpol: a network set up by IOCU in 1981 to alert countries about hazardous products, drugs and technologies. Aims: exchange information quickly, warn consumers, stop dumping of banned products in developing countries, press for action."
    ],
    "frame": "Meaning → objectives or activities as headed points → relevance to Indian consumers → conclusion.",
-   "mistakes": []
+   "mistakes": [],
+   "units": [
+    {
+     "block": 4,
+     "unit": 13,
+     "title": "International Consumer Organisations"
+    }
+   ]
   },
   {
    "id": "organisation",
    "name": "Setting Up & Running a Consumer Organisation",
-   "block": 3,
+   "block": 2,
    "kind": "theory",
    "summary": "Basic requirements for a consumer organisation, objectives, membership and registration, managerial processes and the alternative view, dynamics and structure, making it viable, and guidelines for public meetings.",
    "points": [
@@ -226,12 +277,24 @@
     "Guidelines for public meetings: clear purpose and agenda, permission where needed, suitable venue and time, publicity, expert speakers, orderly conduct, record and follow-up."
    ],
    "frame": "Headed points with one line each → conclusion.",
-   "mistakes": []
+   "mistakes": [],
+   "units": [
+    {
+     "block": 2,
+     "unit": 6,
+     "title": "Establishing a Consumer Organisation"
+    },
+    {
+     "block": 4,
+     "unit": 12,
+     "title": "Managing an Organisation"
+    }
+   ]
   },
   {
    "id": "govt",
    "name": "Government Initiatives: DoCA, Jago Grahak Jago & Welfare Fund",
-   "block": 4,
+   "block": 1,
    "kind": "theory",
    "summary": "The Department of Consumer Affairs and its tasks, Jago Grahak Jago, the Consumer Welfare Fund and its eligibility, CORE, Jagriti Shivir Yojana and consumer information centres.",
    "points": [
@@ -243,7 +306,20 @@
     "Consumer information centres give consumers direct information on products, rights and redressal."
    ],
    "frame": "Meaning → objectives or activities as headings → conclusion.",
-   "mistakes": []
+   "mistakes": [],
+   "units": [
+    {
+     "block": 1,
+     "unit": 3,
+     "title": "Role of the State and the Government",
+     "part": "3.3–3.4, 3.11"
+    },
+    {
+     "block": 1,
+     "unit": 4,
+     "title": "Government Initiatives"
+    }
+   ]
   },
   {
    "id": "cpa",
@@ -262,12 +338,26 @@
    "frame": "Meaning → headed points → conclusion.",
    "mistakes": [
     "Quoting only the old CPA 1986 names (District Forum) — use the 2019 Act's commissions."
+   ],
+   "units": [
+    {
+     "block": 1,
+     "unit": 3,
+     "title": "Role of the State and the Government",
+     "part": "3.5–3.9 Consumer protection machinery"
+    },
+    {
+     "block": 2,
+     "unit": 7,
+     "title": "Role of Voluntary Consumer Organisations (VCOs)",
+     "part": "7.6 Consumer Protection Councils"
+    }
    ]
   },
   {
    "id": "industry",
    "name": "Industry Associations: FICCI, CII, ASSOCHAM, PHDCCI",
-   "block": 6,
+   "block": 2,
    "kind": "theory",
    "summary": "FICCI, CII, ASSOCHAM and the PHD Chamber — status, functions and services, allied organisations, and their role in consumer grievance redressal; response from manufacturers and service providers.",
    "points": [
@@ -279,12 +369,19 @@
     "Response from manufacturers and service providers: companies join the NCH convergence programme, appoint grievance officers, run customer care, and settle complaints to protect their reputation."
    ],
    "frame": "Status → functions as headings → role for consumers → conclusion.",
-   "mistakes": []
+   "mistakes": [],
+   "units": [
+    {
+     "block": 2,
+     "unit": 5,
+     "title": "Role of Industry Bodies"
+    }
+   ]
   },
   {
    "id": "standards",
    "name": "Standards, BIS & Labelling",
-   "block": 7,
+   "block": 1,
    "kind": "theory",
    "summary": "The Bureau of Indian Standards — activities, making of Indian standards, the BIS Act 2016 — labelling, and sectors lacking quality-of-service benchmarks.",
    "points": [
@@ -295,7 +392,15 @@
     "Quality-of-service benchmarks are still weak in sectors such as healthcare, education, real estate and some transport services, making it hard for consumers to prove deficiency."
    ],
    "frame": "Meaning → activities or steps as headings → conclusion.",
-   "mistakes": []
+   "mistakes": [],
+   "units": [
+    {
+     "block": 1,
+     "unit": 3,
+     "title": "Role of the State and the Government",
+     "part": "3.10 Legal Metrology, 3.12 BIS"
+    }
+   ]
   }
  ],
  "questions": [
@@ -1859,5 +1964,6 @@
    "k": "th",
    "topic": "nch-gsk"
   }
- ]
+ ],
+ "notesSource": "Notes checked against and linked to the IGNOU CPI-102 study material."
 }
