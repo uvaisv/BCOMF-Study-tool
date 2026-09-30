@@ -1,4 +1,4 @@
-/* BCOMF Exam Prep — single-page app, no build step.
+/* BCom Buddy — single-page app, no build step.
  * Product rule (see CLAUDE.md): help students study, never add setup or extra work.
  * Every screen leads with something to study; tracking is one optional tap.
  * Topic priorities are computed from the past-paper questions in data/<CODE>.json,
@@ -30,6 +30,24 @@
       try { localStorage.setItem(key, JSON.stringify(value)); } catch (e) { /* storage unavailable */ }
     }
   };
+  /* ---------- viewer preferences (Settings) ---------- */
+  const APP_VERSION = "2.0";
+  const APP_RELEASED = "September 2026";
+  // Study styles change what a topic page shows; "standard" is the full notes as written.
+  const STYLES = [
+    ["standard", "Standard", "The full notes, as written"],
+    ["short", "Short", "Quick revision: top points, formulas and steps"],
+    ["detailed", "Detailed", "Everything, with diagram explanations and past questions on the page"],
+    ["visual", "Visual", "Diagrams and formulas first, points as numbered cards"],
+    ["example", "Example-oriented", "The standard notes plus worked examples"]
+  ];
+  const studyStyle = () => { const v = store.get("style", "standard"); return STYLES.some(([k]) => k === v) ? v : "standard"; };
+  function applyPrefs() {
+    document.documentElement.dataset.textsize = store.get("textsize", "m");
+    document.documentElement.dataset.density = store.get("density", "comfortable");
+  }
+  applyPrefs();
+
   const isDone = (code, id) => store.get(`done:${code}:${id}`, false) === true;
   const setDone = (code, id, v) => store.set(`done:${code}:${id}`, v);
 
@@ -162,11 +180,18 @@
   }
 
   // Diagrams from js/figures.js that a topic lists in "figures"; captions explain how to read them.
-  function figuresHtml(t) {
+  function figuresHtml(t, captions = true) {
     const figs = (t.figures || []).map((id) => window.FIGURES && window.FIGURES[id]).filter(Boolean);
     if (!figs.length) return "";
     return `<h2>${figs.length > 1 ? "Diagrams" : "Diagram"}</h2>${figs.map((f) => `
-      <figure class="card fig"><figcaption class="fig-title">${esc(f.title)}</figcaption>${f.draw()}<p class="fig-note">${esc(f.caption)}</p></figure>`).join("")}`;
+      <figure class="card fig"><figcaption class="fig-title">${esc(f.title)}</figcaption>${f.draw()}${captions ? `<p class="fig-note">${esc(f.caption)}</p>` : ""}</figure>`).join("")}`;
+  }
+
+  // Worked examples (shown in the Example-oriented style). A blank line separates paragraphs.
+  function examplesHtml(t) {
+    if (!t.examples || !t.examples.length) return `<h2>Examples</h2><p class="muted small">Examples for this topic are being added.</p>`;
+    return `<h2>${t.examples.length > 1 ? "Examples" : "Example"}</h2>${t.examples.map((e) => `
+      <section class="card example">${e.split(/\n+/).map((l) => `<p>${esc(l)}</p>`).join("")}</section>`).join("")}`;
   }
 
   /* ---------- views ---------- */
@@ -175,30 +200,12 @@
     let year = store.get("year", 1);
     let query = "";
 
-    // The welcome note shows on a viewer's first visit only (it can be brought back from Settings).
-    const welcome = !store.get("welcomed", false);
-    if (welcome) store.set("welcomed", true);
-
     app.innerHTML = `
-      ${welcome ? `<section class="hero welcome" aria-label="Welcome">
-        <h1>Know what to study first</h1>
-        <p>For IGNOU BCOMF exams. Pick your course and start — no sign-up, no setup.</p>
-        <ul class="offers">
-          <li><strong>Topics ranked</strong> by how often IGNOU asks them</li>
-          <li><strong>Short notes</strong> formulas and answer outlines</li>
-          <li><strong>Past papers</strong> in one tap</li>
-          <li><strong>A study plan</strong> for the hours you have left</li>
-        </ul>
-        <button class="btn welcome-go" type="button">Got it — pick a course</button>
-      </section>` : ""}
       <div class="tabs" role="tablist" aria-label="Year">
         ${[1, 2, 3].map((y) => `<button class="tab" role="tab" data-year="${y}" style="--tab-color:${YEAR_COLORS[y]}">Year ${y}</button>`).join("")}
       </div>
       <input id="q" class="search" type="search" placeholder="Search course code or name, e.g. 131" autocomplete="off" aria-label="Search courses">
       <div id="list" class="list"></div>`;
-
-    const hero = app.querySelector(".welcome");
-    if (hero) hero.querySelector(".welcome-go").addEventListener("click", () => hero.remove());
 
     const list = app.querySelector("#list");
     const render = () => {
@@ -327,37 +334,50 @@
     const order = [...analysis.mvp, ...analysis.topics.map((x) => x.id).filter((x) => !analysis.mvp.includes(x))];
     const next = analysis.topics.find((x) => x.id === order[order.indexOf(id) + 1]);
 
+    const style = studyStyle(), styleName = STYLES.find(([k]) => k === style)[1];
+    const short = style === "short", detailed = style === "detailed", visual = style === "visual";
+    const SHORT_N = 4;
+    const pointList = (list) => `<ul class="points">${list.map((p) => `<li>${esc(p)}</li>`).join("")}</ul>`;
+    const pointsHtml = visual
+      ? `<h2>Key points</h2><ol class="pt-cards">${t.points.map((p, i) => `<li><span class="pt-n" aria-hidden="true">${i + 1}</span><span>${esc(p)}</span></li>`).join("")}</ol>`
+      : `<h2>Key points</h2>
+      <section class="card" id="pts">${pointList(short ? t.points.slice(0, SHORT_N) : t.points)}${short && t.points.length > SHORT_N ? `<button type="button" class="more" id="morePts">Show all ${t.points.length} points</button>` : ""}</section>`;
+    const methodHtml = t.method ? (visual
+      ? `<h2>How to solve</h2><ol class="flow-steps">${t.method.map((p) => `<li>${esc(p)}</li>`).join("")}</ol>`
+      : `<h2>How to solve</h2>
+      <section class="card"><ol class="steps">${t.method.map((p) => `<li>${esc(p)}</li>`).join("")}</ol></section>`) : "";
+    const formulaHtml = t.formula && t.formula.length ? `<h2>Formulas</h2>
+      <section class="card">${t.formula.map((f) => `<div class="formula">${esc(f)}</div>`).join("")}</section>` : "";
+    const frameHtml = t.frame && !short ? `<h2>How to write the answer</h2>
+      <section class="card"><p class="flush">${esc(t.frame)}</p></section>` : "";
+    const mistakesHtml = t.mistakes && t.mistakes.length && !short ? `<h2>Common mistakes</h2>
+      <div class="callout warn"><ul class="points">${t.mistakes.map((m) => `<li>${esc(m)}</li>`).join("")}</ul></div>` : "";
+    const pastHtml = detailed && asked.length ? `<h2>Asked in past papers</h2>
+      <section class="card asked-card"><ul class="asked">${asked.slice(0, 5).map((q) => askedItem(code, q, mcq)).join("")}</ul></section>` : "";
+    const body = visual
+      ? [figuresHtml(t), formulaHtml, pointsHtml, methodHtml, frameHtml, mistakesHtml]
+      : [pointsHtml, style === "example" ? examplesHtml(t) : "", figuresHtml(t, !short), methodHtml, formulaHtml, frameHtml, mistakesHtml, pastHtml];
+
     app.innerHTML = `
       <a class="back" href="#/c/${code}">← ${esc(c.title)}</a>
       <h1>${esc(t.name)}</h1>
       <p class="head-meta">${badge(t.level)} <span class="muted small">${evidence(t, n, mcq)}</span></p>
+      <p class="style-chip">Study style: <strong>${styleName}</strong> · <a href="#/settings">Change</a></p>
       <p class="lead">${esc(t.summary)}</p>
       ${t.units && t.units.length ? `<p class="book-ref"><span class="book-ref-h">In your IGNOU book</span>${t.units.map((u) =>
         `<span>${u.block ? `Block ${u.block} · ` : ""}Unit ${u.unit} ${esc(u.title)}${u.part ? ` <span class="muted">(${esc(u.part)})</span>` : ""}</span>`).join("")}</p>` : ""}
 
-      <h2>Key points</h2>
-      <section class="card"><ul class="points">${t.points.map((p) => `<li>${esc(p)}</li>`).join("")}</ul></section>
-${figuresHtml(t)}
+${body.join("\n")}
 
-      ${t.method ? `<h2>How to solve</h2>
-      <section class="card"><ol class="steps">${t.method.map((p) => `<li>${esc(p)}</li>`).join("")}</ol></section>` : ""}
-
-      ${t.formula && t.formula.length ? `<h2>Formulas</h2>
-      <section class="card">${t.formula.map((f) => `<div class="formula">${esc(f)}</div>`).join("")}</section>` : ""}
-
-      ${t.frame ? `<h2>How to write the answer</h2>
-      <section class="card"><p class="flush">${esc(t.frame)}</p></section>` : ""}
-
-      ${t.mistakes && t.mistakes.length ? `<h2>Common mistakes</h2>
-      <div class="callout warn"><ul class="points">${t.mistakes.map((m) => `<li>${esc(m)}</li>`).join("")}</ul></div>` : ""}
-
-      ${asked.length ? `<a class="btn secondary see-all" href="#/c/${code}/t/${id}/asked">Asked in past papers (${asked.length}) <span aria-hidden="true">→</span></a>` : ""}
+      ${asked.length ? `<a class="btn secondary see-all" href="#/c/${code}/t/${id}/asked">${detailed ? "All past questions" : "Asked in past papers"} (${asked.length}) <span aria-hidden="true">→</span></a>` : ""}
 
       <div class="topic-foot">
         <button type="button" class="btn secondary" id="done" aria-pressed="${isDone(code, id)}">${isDone(code, id) ? "✓ Done" : "Mark as done"}</button>
         ${next ? `<a class="btn" href="#/c/${code}/t/${next.id}">Next: ${esc(next.name)} →</a>` : `<a class="btn" href="#/c/${code}">Back to course</a>`}
       </div>`;
 
+    const more = app.querySelector("#morePts");
+    if (more) more.addEventListener("click", () => { app.querySelector("#pts").innerHTML = pointList(t.points); });
     app.querySelector("#done").addEventListener("click", (e) => {
       const v = !isDone(code, id);
       setDone(code, id, v);
@@ -609,28 +629,93 @@ ${figuresHtml(t)}
       ${notes ? `<ul class="points small muted">${notes}</ul>` : ""}`;
   }
 
-  function viewSettings() {
-    const current = store.get("theme", null) || "system";
+  async function viewSettings() {
+    const { courses } = await load("data/courses.json");
+    const papers = courses.reduce((a, c) => a + (c.papers || 0), 0);
+    const seg = (name, key, def, opts) => `<div class="seg" role="radiogroup" aria-label="${name}">${opts.map(([v, l]) =>
+      `<button type="button" role="radio" class="seg-btn" data-key="${key}" data-val="${v}" aria-checked="${v === store.get(key, def)}">${l}</button>`).join("")}</div>`;
+    const theme = store.get("theme", null) || "system";
     app.innerHTML = `
       <h1>Settings</h1>
-      <h2>Theme</h2>
-      <div class="seg" role="group" aria-label="Theme">
-        ${[["light", "Light"], ["dark", "Dark"], ["system", "Same as device"]].map(([v, l]) =>
-          `<button type="button" class="seg-btn" data-theme="${v}" aria-pressed="${v === current}">${l}</button>`).join("")}
+
+      <h2>Study style</h2>
+      <p class="muted small">How topic pages show your notes. Change it any time.</p>
+      <div class="choices" role="radiogroup" aria-label="Study style">${STYLES.map(([v, l, d]) => `
+        <button type="button" role="radio" class="choice" data-style="${v}" aria-checked="${v === studyStyle()}">
+          <span class="choice-l">${l}${v === "standard" ? ` <span class="muted small">(default)</span>` : ""}</span>
+          <span class="choice-d">${d}</span></button>`).join("")}
       </div>
-      <h2>Welcome note</h2>
-      <p class="muted small">The short introduction shown on your first visit.</p>
-      <button type="button" class="btn" id="showWelcome">Show it again</button>
+
+      <h2>Text size</h2>
+      ${seg("Text size", "textsize", "m", [["s", "Small"], ["m", "Default"], ["l", "Large"], ["xl", "Extra large"]])}
+
+      <h2>Text density</h2>
+      ${seg("Text density", "density", "comfortable", [["comfortable", "Comfortable"], ["compact", "Compact"]])}
+
+      <h2>Theme</h2>
+      <div class="seg" role="radiogroup" aria-label="Theme">${[["light", "Light"], ["dark", "Dark"], ["system", "Same as device"]].map(([v, l]) =>
+        `<button type="button" role="radio" class="seg-btn" data-theme="${v}" aria-checked="${v === theme}">${l}</button>`).join("")}</div>
+
+      <h2>Welcome screen</h2>
+      <button type="button" class="btn secondary" id="showWelcome">Show the welcome screen</button>
+
+      <h2>About</h2>
+      <section class="card about">
+        <div class="about-head"><img src="icons/icon.svg" width="48" height="48" alt="">
+          <div><strong>BCom Buddy</strong><br><span class="muted small">Version ${APP_VERSION} · ${APP_RELEASED}</span></div></div>
+        <p class="small">Exam preparation for IGNOU BCOMF (B.Com) students: topics ranked from past papers, short notes checked against the study material, diagrams, past papers and a study plan.</p>
+        <p class="small muted flush">${courses.length} courses · ${papers} past papers · no sign-up; your settings and progress stay on this phone.</p>
+      </section>
+
       <h2>Disclaimer</h2>
-      <p class="note small">An independent study aid for IGNOU BCOMF students — not an official IGNOU product. Topic priorities are based on past papers and are guidance, not a guarantee of what will be asked.</p>`;
-    app.querySelectorAll(".seg-btn").forEach((b) => b.addEventListener("click", () => {
-      setTheme(b.dataset.theme === "system" ? null : b.dataset.theme);
-      app.querySelectorAll(".seg-btn").forEach((x) => x.setAttribute("aria-pressed", String(x === b)));
+      <p class="note small">Independent study aid, not affiliated with IGNOU. Topic priorities are guidance, not a guarantee.</p>`;
+
+    const pick = (sel, b) => app.querySelectorAll(sel).forEach((x) => x.setAttribute("aria-checked", String(x === b)));
+    app.querySelectorAll(".choice").forEach((b) => b.addEventListener("click", () => { store.set("style", b.dataset.style); pick(".choice", b); }));
+    app.querySelectorAll(".seg-btn[data-key]").forEach((b) => b.addEventListener("click", () => {
+      store.set(b.dataset.key, b.dataset.val); applyPrefs(); pick(`.seg-btn[data-key="${b.dataset.key}"]`, b);
     }));
-    app.querySelector("#showWelcome").addEventListener("click", () => {
-      store.set("welcomed", false);
-      location.hash = "#/";
-    });
+    app.querySelectorAll(".seg-btn[data-theme]").forEach((b) => b.addEventListener("click", () => {
+      setTheme(b.dataset.theme === "system" ? null : b.dataset.theme); pick(".seg-btn[data-theme]", b);
+    }));
+    app.querySelector("#showWelcome").addEventListener("click", showWelcome);
+  }
+
+  /* ---------- welcome screen (first open; again from Settings) ---------- */
+  function showWelcome() {
+    const el = document.createElement("div");
+    el.className = "splash";
+    el.setAttribute("role", "dialog"); el.setAttribute("aria-modal", "true"); el.setAttribute("aria-label", "Welcome to BCom Buddy");
+    el.tabIndex = 0;
+    el.innerHTML = `<div class="splash-in">
+      <svg class="sp-logo" viewBox="0 0 512 512" aria-hidden="true">
+        <rect class="sp-tile" width="512" height="512" rx="112"/>
+        <g transform="translate(0 -30)">
+          <path class="sp-page sp-l" d="M250 170c-34-22-84-30-138-24v176c54-6 104 2 138 24z"/>
+          <path class="sp-page sp-r" d="M262 170c34-22 84-30 138-24v176c-54-6-104 2-138 24z"/>
+          <path class="sp-smile" d="M176 392q80 52 160 0"/>
+        </g></svg>
+      <h1 class="sp-name">BCom Buddy</h1>
+      <p class="sp-tag">Know what to study first — for IGNOU BCOMF exams</p>
+      <ul class="sp-list">
+        <li>Topics ranked by how often they are asked</li>
+        <li>Short notes checked against your study material</li>
+        <li>Diagrams, formulas and answer outlines</li>
+        <li>Past papers and a study plan, one tap away</li>
+      </ul>
+      <p class="sp-tap">Tap anywhere to continue</p>
+    </div>`;
+    document.body.appendChild(el);
+    document.body.classList.add("no-scroll");
+    el.focus();
+    const close = () => {
+      store.set("welcomed", true);
+      el.classList.add("out");
+      document.body.classList.remove("no-scroll");
+      setTimeout(() => el.remove(), 320);
+    };
+    el.addEventListener("click", close);
+    el.addEventListener("keydown", (e) => { if (["Enter", " ", "Escape"].includes(e.key)) { e.preventDefault(); close(); } });
   }
 
   function viewNotFound() {
@@ -646,7 +731,7 @@ ${figuresHtml(t)}
     const parts = location.hash.replace(/^#\/?/, "").split("/").filter(Boolean).map(decodeURIComponent);
     try {
       if (!parts.length) await viewHome();
-      else if (parts[0] === "settings") viewSettings();
+      else if (parts[0] === "settings") await viewSettings();
       else if (parts[0] === "c" && parts[1]) {
         const code = parts[1];
         if (parts[2] === "t" && parts[3] && parts[4] === "asked") await viewAsked(code, parts[3]);
@@ -684,6 +769,7 @@ ${figuresHtml(t)}
 
   window.addEventListener("hashchange", route);
   route();
+  if (!store.get("welcomed", false)) showWelcome();
 
   // Makes the app installable as a home-screen app and keeps opened pages readable offline.
   if ("serviceWorker" in navigator) navigator.serviceWorker.register("sw.js").catch(() => {});

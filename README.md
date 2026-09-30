@@ -1,4 +1,4 @@
-# BCOMF Exam Prep
+# BCom Buddy
 
 An exam-preparation tool for IGNOU BCOMF (B.Com Honours) students. It uses previous-year question papers to show which topics matter most, what to study first, and a plan for the time a student has left.
 
@@ -8,8 +8,11 @@ An exam-preparation tool for IGNOU BCOMF (B.Com Honours) students. It uses previ
 
 Built around one rule (see `CLAUDE.md`): **help students study — never add setup or extra work.**
 
-- **Home**: a short welcome note on the first visit says what the app gives (ranked topics, short notes, past papers, a study plan); after that the course list comes first. Pick a year or search `131` / `financial`.
-- **Settings** (gear in the top bar): theme, show the welcome note again, and the disclaimer.
+- **Welcome screen**: on the first open only, an animated full-screen welcome says what the app gives (ranked topics, notes, diagrams, past papers, a plan); tap anywhere to continue. After that the course list comes first. Pick a year or search `131` / `financial`.
+- **Settings** (gear in the top bar):
+  - **Study style**: changes how every topic page shows the notes. **Standard** (default) is the full notes, unchanged. **Short** gives the top points (tap for all), formulas and steps. **Detailed** adds diagram explanations and the top past questions on the page. **Visual** puts diagrams and formulas first, with points as numbered cards and steps as a flow. **Example-oriented** is the standard notes plus worked examples.
+  - Text size, text density (comfortable or compact) and theme.
+  - Show the welcome screen again, About (version) and a short disclaimer.
 - **Installable**: on a phone, *Add to Home screen* / *Install app* gives an icon that opens full-screen without the browser's address bar. Pages already opened still load offline.
 - **Course page** opens straight on **Study these first** — the smallest set of topics that has carried enough marks to answer the paper (worked out per part when the paper is split into parts). Then the latest past papers (one tap to the PDF) and the other topics in priority order.
 - **Topic page**: where the topic is in the IGNOU study material (block and unit; unit only where the book has no blocks), key points, an exam-style **diagram** where the topic has one (all BECC-101 topics; product life cycle, break-even chart, stress–performance curve; time-series trend and components, correlation scatter plots, regression lines, cash flow statement, DuPont ratio tree; stock levels, EOQ, variance tree, Maslow's pyramid, communication process, control cycle, line and staff chart, channel levels, buying and selling processes, heads of income, data abstraction, supply chain flows, accounting process, SLM vs WDV), how to solve, formulas, how to write the answer, common mistakes, and an **Asked in past papers** button that opens every past question on it, most important first, on its own page. Tapping a question opens **just that question inside the app** — term, question number, printed marks and the part asked — with a button to download the full paper. **Next topic** keeps you moving; **Mark as done** is optional.

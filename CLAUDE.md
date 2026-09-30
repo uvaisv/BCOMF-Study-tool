@@ -1,4 +1,4 @@
-# BCOMF Exam Prep — project rules
+# BCom Buddy — project rules
 
 ## Product rule (from the product owner — applies to every change)
 
@@ -6,7 +6,7 @@ Students use this tool to study **efficiently and effectively**. The tool must h
 
 - **Help first, ask never (or last).** Every screen opens with something useful to study or read. Do not lead with questions, forms, scores or progress tracking.
 - **Zero setup.** No required settings, profiles, sign-up or configuration before a student gets value. If an input is needed (e.g. time left for a plan), offer sensible one-tap choices with a ready answer already shown.
-- **Explain the tool in one glance.** On first sight a student must understand what the app does and what it gives them (what to study first, notes, past papers, a plan) — in a few words, not a paragraph. This is the welcome note on the first visit; after that the course list comes first (it can be shown again from Settings).
+- **Explain the tool in one glance.** On first sight a student must understand what the app does and what it gives them (what to study first, notes, past papers, a plan) — in a few words, not a paragraph. This is the animated welcome screen on the first open (tap to continue); after that the course list comes first (it can be shown again from Settings). Settings (study style, text size, density, theme) are optional preferences; the defaults must always be the full, standard notes.
 - **Shortest path to studying.** Course → what to study first → notes, in as few taps as possible. Past papers are one tap away from every course page (students value this highly).
 - **Read in the app, download only on request.** A past question opens the paper inside the app at that question, highlighted — never a PDF download per tap. Downloads stay on the Past papers tab.
 - **Short lists.** Keep pages short: show only what matters most and put long lists one tap away (e.g. a topic's past questions open on their own page from one button).
