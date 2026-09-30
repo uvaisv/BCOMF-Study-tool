@@ -1,0 +1,1244 @@
+{
+ "code": "BCOC-138",
+ "title": "Cost Accounting",
+ "pattern": {
+  "time": "3 hours",
+  "marks": 100,
+  "questions": 8,
+  "attempt": 5,
+  "each": 20,
+  "summary": "Usually 8 questions, answer any 5, each 20 marks — a mix of theory and sums (stores ledger, process accounts, contract accounts, operating costs, overheads, reconciliation).",
+  "note": "The June 2023 to June 2024 papers had Section A (all compulsory, 40 marks) and Section B (any 3 of 5 sums, 20 marks each)."
+ },
+ "blocksOfficial": false,
+ "sessions": [
+  "2022-06",
+  "2023-06",
+  "2023-12",
+  "2024-06",
+  "2024-12",
+  "2025-06",
+  "2025-12",
+  "2026-06"
+ ],
+ "sessionNotes": {
+  "2023-06": "Section A (compulsory) + Section B (any 3). Scanned paper — text typed in by hand.",
+  "2023-12": "Section A (compulsory) + Section B (any 3).",
+  "2024-06": "Section A (compulsory) + Section B (any 3)."
+ },
+ "examTips": {
+  "choosing": [
+   "A stores ledger (FIFO or LIFO), process accounts and an operating cost sum come up in almost every paper — practise one of each.",
+   "Theory on purchasing, labour turnover and the objectives of cost accounting gives safe marks.",
+   "Pick sums you can finish; in costing, a correct format earns marks even with an arithmetic slip."
+  ],
+  "numerical": [
+   "Show working notes and units beside amounts.",
+   "Use the standard formats: stores ledger columns, process account in T-form, operating cost sheet.",
+   "State the basis you use for every apportionment."
+  ]
+ },
+ "blocks": [
+  {
+   "no": 1,
+   "title": "Introduction & Cost Concepts"
+  },
+  {
+   "no": 2,
+   "title": "Materials"
+  },
+  {
+   "no": 3,
+   "title": "Labour"
+  },
+  {
+   "no": 4,
+   "title": "Overheads"
+  },
+  {
+   "no": 5,
+   "title": "Process & Joint Costing"
+  },
+  {
+   "no": 6,
+   "title": "Contract & Operating Costing"
+  },
+  {
+   "no": 7,
+   "title": "Reconciliation"
+  }
+ ],
+ "topics": [
+  {
+   "id": "pricing",
+   "name": "Pricing of Material Issues (FIFO, LIFO)",
+   "block": 2,
+   "kind": "mixed",
+   "summary": "Stores ledger under FIFO and LIFO, other pricing methods, returns and shortages, material cost from a supplier's invoice, problems in pricing issues.",
+   "points": [
+    "FIFO: materials are issued at the price of the oldest lot in stock; closing stock is at the latest prices. In rising prices it shows lower cost and higher profit.",
+    "LIFO: issues at the price of the latest lot; closing stock at old prices; charges current prices to production. (Not allowed for financial statements under AS 2, but asked in cost accounts.)",
+    "Other methods: simple average, weighted average, standard price, replacement price.",
+    "Returns to supplier: taken out at their purchase price. Returns from production (materials received back): treated as a fresh receipt at the price they were issued, or reissued first.",
+    "Shortage found on verification: normal shortage is absorbed in the cost of good units; abnormal shortage is written off to costing profit and loss.",
+    "Material cost from an invoice: price less trade discount + freight, insurance, non-recoverable taxes and charges for returnable containers minus the credit expected for their return; cash discount is ignored (a financial item).",
+    "Problems in pricing issues: prices change between lots, a method has to be chosen, returns and shortages, many small lots, effect on stock value and profit."
+   ],
+   "mistakes": [
+    "Pricing an issue from one lot when it needs units from two lots — split it."
+   ],
+   "method": [
+    "Draw the stores ledger with receipt, issue and balance columns.",
+    "Enter the opening stock and each receipt as a separate lot with its rate.",
+    "For each issue, take units lot by lot — oldest first (FIFO) or latest first (LIFO) — and show each lot's quantity × rate.",
+    "Enter returns from production as a receipt at the original issue price; returns to supplier as an issue at purchase price.",
+    "Record shortages as an issue (normal) or separately (abnormal).",
+    "After every entry, show the balance lots and total value."
+   ],
+   "formula": [
+    "Value of issue = Σ (units taken from each lot × that lot's rate)"
+   ],
+   "frame": "Stores ledger with columns Receipts (qty, rate, amount) | Issues (qty, rate, amount) | Balance (qty, rate, amount)."
+  },
+  {
+   "id": "process",
+   "name": "Process Costing & Equivalent Production",
+   "block": 5,
+   "kind": "numerical",
+   "summary": "Process accounts, normal and abnormal loss and gain, scrap, and equivalent production statements.",
+   "points": [
+    "Process costing: used where production passes through continuous processes (chemicals, textiles, oil, food); the output of one process is the input of the next.",
+    "Process account: debit — units introduced, materials, labour, direct expenses, overheads; credit — normal loss at scrap value, abnormal loss, output transferred to the next process.",
+    "Normal loss: expected and unavoidable; its scrap value is credited; the cost is carried by good units. Abnormal loss: loss beyond normal, valued like good units and charged to costing profit and loss. Abnormal gain: actual loss below normal.",
+    "Equivalent production: work in progress expressed as completed units for each element (materials, labour, overheads) using its percentage of completion.",
+    "Three statements: equivalent production, cost per equivalent unit, and evaluation of output and work in progress."
+   ],
+   "mistakes": [
+    "Valuing abnormal loss at scrap value — it is valued at the cost per good unit."
+   ],
+   "method": [
+    "Normal loss units = input × normal loss %; its value = units × scrap rate.",
+    "Cost per unit = (total cost − scrap value of normal loss) ÷ (input units − normal loss units).",
+    "Abnormal loss units = normal output − actual output (abnormal gain if negative).",
+    "Value output and abnormal loss at the cost per unit; transfer output to the next process.",
+    "In the abnormal loss account, credit its scrap value and take the balance to costing P&L.",
+    "For WIP: statement of equivalent production → cost per equivalent unit → evaluation."
+   ],
+   "formula": [
+    "Cost per unit = (Total cost − Scrap value of normal loss) ÷ (Input − Normal loss units)",
+    "Equivalent units = Completed units + (WIP units × % complete)"
+   ],
+   "frame": "Working table for normal loss and cost per unit → Process I account → Process II account → Abnormal loss/gain account."
+  },
+  {
+   "id": "labour",
+   "name": "Labour Cost: Time Keeping, Wage Plans & Turnover",
+   "block": 3,
+   "kind": "mixed",
+   "summary": "Time keeping and time booking, idle time and overtime, labour turnover — causes, measurement and control — and wage plans (time rate, Halsey, Rowan, Taylor).",
+   "points": [
+    "Time keeping: recording attendance (arrival and departure) — attendance register, disc/token method, time-recording clock, biometric systems. It is the basis for paying wages.",
+    "Time booking: recording time spent on each job or process — job cards, daily or weekly time sheets. Purposes: charge labour cost to jobs, find idle time, check efficiency, overtime control.",
+    "Idle time: time paid for but not worked. Normal idle time (tea breaks, change of shift) is included in labour cost or overheads; abnormal idle time (power failure, strikes, machine breakdown) goes to costing profit and loss.",
+    "Overtime: work beyond normal hours; the premium is charged to the job if the customer asked for it, to overheads if normal, to costing P&L if abnormal.",
+    "Labour turnover: rate of change in the workforce. Causes — avoidable (low wages, poor conditions, bad relations, no promotion), unavoidable (retirement, death, illness, marriage, moving). Control — fair pay, good conditions, proper selection and training, promotion policy, grievance handling, exit interviews.",
+    "Wage plans: time rate; piece rate; Taylor's differential piece rate (a low rate below standard output, a high rate at or above it); Halsey premium plan (time wages + 50% of time saved × rate); Rowan plan (time wages + time saved ÷ time allowed × time taken × rate)."
+   ],
+   "mistakes": [],
+   "method": [
+    "Standard output for the period = standard per hour × hours worked.",
+    "Taylor: compare each worker's output with standard and apply the low or high piece rate.",
+    "Halsey/Rowan: find time allowed, time taken and time saved, then apply the bonus formula.",
+    "Labour turnover: separations ÷ average number of workers × 100 (or replacements, or flux method)."
+   ],
+   "formula": [
+    "Halsey earnings = Time taken × Rate + 50% × Time saved × Rate",
+    "Rowan earnings = Time taken × Rate + (Time saved ÷ Time allowed) × Time taken × Rate",
+    "Labour turnover (separation) = Separations ÷ Average workers × 100"
+   ],
+   "frame": "Meaning → methods or causes as headings → conclusion; for wage plans, show the calculation for each worker."
+  },
+  {
+   "id": "purchase",
+   "name": "Purchasing & Material Control",
+   "block": 2,
+   "kind": "theory",
+   "summary": "Steps in purchasing materials, purchase requisition and order, centralised and decentralised purchasing, and requirements and advantages of material control.",
+   "points": [
+    "Purchase procedure: purchase requisition from stores or department → finding suppliers (enquiries, quotations, tenders) → selecting the supplier → purchase order → follow-up → receiving and inspection (goods received note) → checking the invoice against order and GRN → passing for payment → records.",
+    "Purchase requisition: a request to the purchase department to buy materials — item, quantity, date needed, signed by an authorised person. Purchase order: the written order to the supplier — item, quantity, price, terms, delivery.",
+    "Centralised purchasing: one department buys for all. Advantages — bulk discounts, specialist buyers, uniform policy, better control; disadvantages — delays, higher overhead, may not suit local needs.",
+    "Decentralised purchasing: each unit buys for itself. Advantages — quick, flexible, local suppliers; disadvantages — no bulk discounts, duplication, weaker control.",
+    "Material control: making sure the right materials are available at the right time at minimum cost. Requirements: proper purchase procedure, receiving and inspection, good storage, issues against requisitions, perpetual inventory, stock levels, classification and codes, ABC analysis, internal checks.",
+    "Advantages: no stock-outs or overstocking, less waste and theft, lower investment in stock, accurate material costs."
+   ],
+   "mistakes": [],
+   "frame": "Steps as a flow chart or headings → advantages → conclusion."
+  },
+  {
+   "id": "contract",
+   "name": "Contract & Job Costing",
+   "block": 6,
+   "kind": "mixed",
+   "summary": "Contract accounts, notional profit, profit on incomplete contracts, work-in-progress, contractee's account, and job vs contract costing.",
+   "points": [
+    "Contract costing: used for large, long-duration work at a site (buildings, bridges); each contract is a cost unit. Job costing: for small, short jobs done to order in the factory (printing, repairs). Differences: size, duration, place, cost unit, payment in instalments against certificates.",
+    "Contract account — debit: materials, wages (including outstanding), direct expenses, plant (or depreciation), overheads; credit: materials returned and in hand, plant at site at closing value, work in progress (certified + uncertified).",
+    "Notional profit = value of work done (certified + uncertified) − cost of work done.",
+    "Profit on incomplete contracts: less than 25% complete — no profit; 25–50% — 1/3 × notional profit × cash received ÷ work certified; over 50% — 2/3 × notional profit × cash received ÷ work certified; nearly complete — estimated total profit × work certified ÷ contract price. The rest is a reserve. (AS 7 now uses the percentage-of-completion method.)",
+    "Work in progress in the Balance Sheet = work certified + uncertified work − profit reserve − cash received.",
+    "Contractee's account: debit contract account with work certified; credit cash received — the balance is due."
+   ],
+   "mistakes": [
+    "Taking the whole notional profit to P&L on an incomplete contract."
+   ],
+   "method": [
+    "Debit all costs; add outstanding wages; debit plant at cost (or charge depreciation).",
+    "Credit materials returned, materials and plant at site at year-end.",
+    "Credit work certified and uncertified work → balance is notional profit.",
+    "Find the stage of completion = work certified ÷ contract price.",
+    "Apply the fraction (nil, 1/3 or 2/3) × cash received ÷ work certified → profit to P&L; rest to reserve.",
+    "Show WIP in the Balance Sheet net of reserve and cash received."
+   ],
+   "formula": [
+    "Notional profit = (Work certified + Uncertified work) − Cost of work done",
+    "Profit to P&L (over 50%) = 2/3 × Notional profit × Cash received ÷ Work certified"
+   ],
+   "frame": "Contract account in T-form → working note for profit to P&L → WIP in the Balance Sheet."
+  },
+  {
+   "id": "operating",
+   "name": "Operating (Service) Costing",
+   "block": 6,
+   "kind": "numerical",
+   "summary": "Service costing for transport and similar services: cost units, operating cost sheet, cost per km, per passenger-km and per ton-km.",
+   "points": [
+    "Operating or service costing: used by transport, hospitals, hotels, power and water supply; the cost unit is a composite unit such as passenger-km, ton-km, bed-day or kilowatt-hour.",
+    "Operating cost sheet: standing (fixed) charges — salaries of staff, garage rent, insurance, taxes, depreciation, interest; maintenance charges — repairs, tyres, servicing; running charges — fuel and oil, drivers' wages (if paid per trip).",
+    "Passenger-km = distance × number of passengers carried, where passengers = seats × occupancy %; count both directions and all trips and days.",
+    "Ton-km = distance × load carried, including return loads."
+   ],
+   "mistakes": [
+    "Counting a round trip as one journey — a round trip is two journeys."
+   ],
+   "method": [
+    "List standing, maintenance and running charges for the period (convert annual figures to monthly).",
+    "Find total km = distance × 2 (round trip) × trips per day × days × number of vehicles.",
+    "Find passenger-km = total km × seats × occupancy % (or ton-km = km × load).",
+    "Cost per unit = total operating cost ÷ passenger-km (or ton-km or km).",
+    "If a fare is asked, add profit and taxes as instructed."
+   ],
+   "formula": [
+    "Passenger-km = Distance × Trips × Days × Vehicles × Seats × Occupancy %",
+    "Cost per passenger-km = Total operating cost ÷ Total passenger-km"
+   ],
+   "frame": "Operating cost sheet (standing, maintenance, running) → divide by total km, passenger-km or ton-km."
+  },
+  {
+   "id": "overheads",
+   "name": "Overheads: Classification, Apportionment & Absorption",
+   "block": 4,
+   "kind": "mixed",
+   "summary": "Concept and classification of overheads, principles and bases of apportionment, primary and secondary distribution, methods of absorption, and under- or over-absorption.",
+   "points": [
+    "Overheads: indirect material, indirect labour and indirect expenses — costs that cannot be traced to a single cost unit.",
+    "Classification: by function (factory, office and administration, selling, distribution), by behaviour (fixed, variable, semi-variable), by element, by controllability.",
+    "Principles of apportionment: service or use, survey, ability to pay, efficiency. Bases: rent and building costs — floor area; power — horsepower × machine hours; lighting — light points; depreciation and insurance of machines — machine value; canteen and welfare — number of workers; supervision — workers or labour hours.",
+    "Primary distribution: spread overheads over production and service departments. Secondary distribution: re-apportion service departments to production departments — direct, step ladder, repeated distribution or simultaneous equations.",
+    "Absorption: charging overheads to units — % of direct materials, of direct wages or of prime cost (prime cost method); labour hour rate; machine hour rate; rate per unit.",
+    "Under- or over-absorption: causes — wrong estimates, change in capacity used, seasonal effects, method changes, abnormal events. Disposal — supplementary rate, write off to costing P&L, or carry forward if due to a seasonal pattern."
+   ],
+   "mistakes": [
+    "Leaving service department totals unapportioned in the final summary."
+   ],
+   "method": [
+    "List each overhead with the basis of apportionment.",
+    "Apportion to all departments in the ratio of the basis (primary distribution).",
+    "Total each department.",
+    "Re-apportion service departments to production departments in the given ratios (secondary distribution).",
+    "Divide production department totals by hours or units to get absorption rates if asked."
+   ],
+   "formula": [
+    "Overhead absorption rate = Budgeted overheads ÷ Budgeted base (hours, units or % of prime cost)"
+   ],
+   "frame": "Overhead distribution summary: columns for each department; one row per overhead with its basis."
+  },
+  {
+   "id": "intro",
+   "name": "Cost Accounting: Meaning, Objectives & Installation",
+   "block": 1,
+   "kind": "theory",
+   "summary": "Meaning, need, objectives and advantages of cost accounting; cost vs financial accounting; limitations of financial accounting; role of the cost accountant; installing a costing system.",
+   "points": [
+    "Cost accounting: classifying, recording and allocating expenses to find the cost of products and services, and presenting the data to management for control and decisions.",
+    "Objectives: find the cost of each product, job or process; control and reduce costs; help fix selling prices; value inventory; give information for decisions; measure efficiency.",
+    "Advantages: shows profitable and unprofitable products, controls waste, fixes prices, supports budgeting and planning, helps tenders and quotations, compares performance.",
+    "Cost vs financial accounting: internal vs external users; product-wise vs overall results; includes estimates and standards vs only actual transactions; optional (mostly) vs compulsory; frequent reports vs annual.",
+    "Limitations of financial accounting: historical and overall results only, no product or department costs, no cost control or efficiency measure, no basis for pricing or quotations.",
+    "Role of the cost accountant: set up and run the costing system, collect and analyse costs, prepare cost reports and budgets, suggest cost reduction, advise on pricing and decisions, reconcile with financial accounts.",
+    "Installing a costing system — points to consider: nature and size of the business, products and processes, organisation, management's needs, a simple and economical system, the right method of costing, forms and records, cooperation of staff, reconciliation with financial accounts. Difficulties: staff resistance, lack of management support, cost of the system, shortage of trained staff — overcome by explaining its benefits, training and starting simply."
+   ],
+   "mistakes": [],
+   "frame": "Definition → objectives or points as headed list → conclusion."
+  },
+  {
+   "id": "reconciliation",
+   "name": "Reconciliation of Cost & Financial Accounts",
+   "block": 7,
+   "kind": "mixed",
+   "summary": "Why profit in cost accounts differs from financial accounts, the reconciliation statement, and integral accounting.",
+   "points": [
+    "Items only in financial accounts: interest and dividends received, profit or loss on sale of assets, rent received, discount on issue of shares, fines, donations, income tax, provisions and appropriations.",
+    "Items only in cost accounts: notional charges such as interest on capital or rent on owned premises.",
+    "Other causes: under- or over-absorption of overheads, different stock valuations, different depreciation methods, abnormal gains and losses treated differently.",
+    "Reconciliation statement: start from profit as per cost accounts; add items that make financial profit higher (over-absorbed overheads, incomes only in financial books, overvaluation of opening stock in cost books…); deduct items that make it lower; the result is profit as per financial accounts.",
+    "Integral (integrated) accounting: one set of books for both cost and financial records, so no reconciliation is needed; saves effort and gives quicker, consistent figures."
+   ],
+   "mistakes": [
+    "Getting the direction wrong — ask: does this item make financial profit higher or lower than cost profit?"
+   ],
+   "method": [
+    "Start from the profit in cost accounts (or financial accounts, as asked).",
+    "For each item, decide whether it makes financial profit higher or lower.",
+    "Add items that increase financial profit; deduct those that reduce it.",
+    "Under-absorbed overheads: deduct; over-absorbed: add (starting from cost profit).",
+    "Stock: closing stock valued higher in financial books → add; opening stock higher in financial books → deduct."
+   ],
+   "formula": [
+    "Profit as per financial accounts = Profit as per cost accounts + Additions − Deductions"
+   ],
+   "frame": "Reconciliation statement: Profit as per cost accounts → Add → Less → Profit as per financial accounts."
+  },
+  {
+   "id": "joint",
+   "name": "Joint Products & By-Products",
+   "block": 5,
+   "kind": "mixed",
+   "summary": "Joint products and by-products, split-off point, apportionment of joint costs, and accounting for by-products including the reverse cost method.",
+   "points": [
+    "Joint products: two or more products of similar importance from the same process (petrol, diesel and kerosene from crude oil). By-products: products of lower value produced incidentally (molasses from sugar).",
+    "Split-off point: the stage at which joint products become separately identifiable.",
+    "Apportioning joint costs: physical units, average unit cost, sales value at split-off, net realisable value, technical estimates.",
+    "By-products: sales value (less further costs) credited to the main product's process account; or the reverse cost method — sales value minus estimated profit, selling expenses and further processing cost gives the cost credited to the main product.",
+    "Treatment depends on value: if negligible, income is credited to costing P&L; if significant, it reduces the main product's cost."
+   ],
+   "mistakes": [],
+   "method": [
+    "Find joint cost up to split-off (materials + labour + overheads).",
+    "Reverse cost method: by-product sales − profit − selling costs − further processing = cost to credit.",
+    "Credit that amount to the main process account; cost per unit of main product = net cost ÷ output.",
+    "For joint products, apportion joint cost in the ratio asked (units or sales value)."
+   ],
+   "formula": [
+    "By-product cost (reverse method) = Sales value − Profit − Selling and distribution cost − Post-separation cost"
+   ],
+   "frame": "Process account for the main product crediting the by-product's value → cost per unit of the main product."
+  },
+  {
+   "id": "cost-concepts",
+   "name": "Cost Concepts, Classification, Methods & Cost Sheet",
+   "block": 1,
+   "kind": "mixed",
+   "summary": "Meaning and characteristics of cost, classification of costs, methods of costing and the industries using them, and the cost sheet.",
+   "points": [
+    "Classification: by element (materials, labour, expenses — direct and indirect); by function (production, administration, selling, distribution); by behaviour (fixed, variable, semi-variable); by controllability; by normality; by time (historical, predetermined); for decisions (sunk, opportunity, marginal, differential).",
+    "Methods of costing and industries: job (printing, repairs), contract (construction), batch (medicines, toys), process (chemicals, textiles, oil), operating or service (transport, hospitals, power), unit or output (mines, cement, bricks), multiple (cars, radios).",
+    "Cost sheet: direct materials + direct labour + direct expenses = prime cost; + factory overheads (± work in progress) = works cost; + office and administration overheads = cost of production; ± finished goods = cost of goods sold; + selling and distribution = cost of sales; + profit = sales."
+   ],
+   "mistakes": [],
+   "method": [
+    "Prime cost = direct materials consumed (opening stock + purchases − closing stock) + direct wages + direct expenses.",
+    "Add factory overheads; adjust opening and closing work in progress → works cost.",
+    "Add office and administration overheads → cost of production; adjust finished goods stock.",
+    "Add selling and distribution overheads → cost of sales; profit = sales − cost of sales.",
+    "Show per-unit figures beside totals when output is given."
+   ],
+   "formula": [
+    "Prime cost = Direct materials + Direct labour + Direct expenses",
+    "Works cost = Prime cost + Factory overheads + Opening WIP − Closing WIP",
+    "Cost of sales = Cost of production ± Finished goods + Selling and distribution overheads"
+   ],
+   "frame": "Pro forma cost sheet with headings and imaginary figures."
+  },
+  {
+   "id": "inventory",
+   "name": "Stock Levels, EOQ & Inventory Control",
+   "block": 2,
+   "kind": "mixed",
+   "summary": "Reorder, minimum, maximum and danger levels, economic order quantity, ABC analysis, inventory turnover and perpetual inventory.",
+   "points": [
+    "Stock levels keep enough stock to avoid stoppages without overstocking.",
+    "ABC analysis: A items — about 10% of items, 70% of value (tight control); B — 20% and 20%; C — 70% of items, 10% of value (simple control).",
+    "Inventory turnover ratio = materials consumed ÷ average stock; a high ratio means fast-moving stock; it identifies slow-moving and dead stock and helps cut investment.",
+    "Perpetual inventory: a continuous record of receipts, issues and balances in bin cards and the stores ledger, checked by continuous stock-taking — finds losses quickly and gives up-to-date stock figures."
+   ],
+   "mistakes": [],
+   "method": [
+    "Write the given usage and lead-time figures (minimum, normal, maximum).",
+    "Reorder level first, then minimum and maximum levels from it.",
+    "EOQ: A = annual usage, O = cost per order, C = carrying cost per unit per year (price × %)."
+   ],
+   "formula": [
+    "Reorder level = Maximum usage × Maximum reorder period",
+    "Minimum level = Reorder level − (Normal usage × Normal reorder period)",
+    "Maximum level = Reorder level + Reorder quantity − (Minimum usage × Minimum reorder period)",
+    "EOQ = √(2 × A × O ÷ C)",
+    "Inventory turnover ratio = Cost of materials consumed ÷ Average stock"
+   ]
+  },
+  {
+   "id": "machine-rate",
+   "name": "Machine Hour Rate",
+   "block": 4,
+   "kind": "numerical",
+   "summary": "Computing a machine hour rate from standing charges and machine expenses.",
+   "points": [
+    "Machine hour rate: the overhead cost of running a machine for one hour, used to absorb overheads where machines do most of the work.",
+    "Standing (fixed) charges: rent, lighting, supervisor's salary, insurance — shared by the machine's share of area or time; spread over the machine's working hours.",
+    "Machine expenses (variable): depreciation, power, repairs, consumables — worked out per hour directly.",
+    "Depreciation per hour = (cost + installation − scrap value) ÷ total working hours in the machine's life."
+   ],
+   "mistakes": [
+    "Charging all rent or the whole supervisor's salary to one machine — use its share."
+   ],
+   "method": [
+    "Find working hours per period (month or year).",
+    "Standing charges for the machine's share (area, time) for the period ÷ working hours = standing charges per hour.",
+    "Depreciation per hour = (cost + installation − scrap) ÷ life hours.",
+    "Power per hour = units per hour × rate per unit; repairs and consumables ÷ hours.",
+    "Machine hour rate = standing charges per hour + machine expenses per hour."
+   ],
+   "formula": [
+    "Machine hour rate = Standing charges per hour + Machine expenses per hour",
+    "Depreciation per hour = (Cost + Installation − Scrap value) ÷ Life in hours"
+   ],
+   "frame": "Table: standing charges per period → per hour; machine expenses per hour → total rate per hour."
+  }
+ ],
+ "questions": [
+  {
+   "s": "2022-06",
+   "q": "1",
+   "t": "Need for and advantages of cost accounting",
+   "m": 20,
+   "k": "th",
+   "topic": "intro"
+  },
+  {
+   "s": "2022-06",
+   "q": "2",
+   "t": "Characteristics and classification of cost",
+   "m": 20,
+   "k": "th",
+   "topic": "cost-concepts"
+  },
+  {
+   "s": "2022-06",
+   "q": "3",
+   "t": "Steps in purchasing in a manufacturing firm",
+   "m": 20,
+   "k": "th",
+   "topic": "purchase"
+  },
+  {
+   "s": "2022-06",
+   "q": "4(a)",
+   "t": "Reorder level",
+   "m": 10,
+   "k": "num",
+   "topic": "inventory"
+  },
+  {
+   "s": "2022-06",
+   "q": "4(b)",
+   "t": "Minimum stock level",
+   "m": 10,
+   "k": "num",
+   "topic": "inventory"
+  },
+  {
+   "s": "2022-06",
+   "q": "5",
+   "t": "Material cost per unit from a supplier's invoice",
+   "m": 20,
+   "k": "num",
+   "topic": "pricing"
+  },
+  {
+   "s": "2022-06",
+   "q": "6",
+   "t": "Time keeping and its methods",
+   "m": 20,
+   "k": "th",
+   "topic": "labour"
+  },
+  {
+   "s": "2022-06",
+   "q": "7",
+   "t": "Equivalent production, cost and evaluation statements",
+   "m": 20,
+   "k": "num",
+   "topic": "process"
+  },
+  {
+   "s": "2022-06",
+   "q": "8(a)",
+   "t": "Note: perpetual inventory system",
+   "m": 5.0,
+   "k": "th",
+   "topic": "inventory"
+  },
+  {
+   "s": "2022-06",
+   "q": "8(b)",
+   "t": "Note: idle time",
+   "m": 5.0,
+   "k": "th",
+   "topic": "labour"
+  },
+  {
+   "s": "2022-06",
+   "q": "8(c)",
+   "t": "Note: concept of overheads",
+   "m": 5.0,
+   "k": "th",
+   "topic": "overheads"
+  },
+  {
+   "s": "2022-06",
+   "q": "8(d)",
+   "t": "Note: integral accounting",
+   "m": 5.0,
+   "k": "th",
+   "topic": "reconciliation"
+  },
+  {
+   "s": "2023-06",
+   "q": "1",
+   "t": "Points to consider before installing a costing system",
+   "m": 10,
+   "k": "th",
+   "topic": "intro"
+  },
+  {
+   "s": "2023-06",
+   "q": "2",
+   "t": "Methods of costing and industries using them",
+   "m": 10,
+   "k": "th",
+   "topic": "cost-concepts"
+  },
+  {
+   "s": "2023-06",
+   "q": "3(a)",
+   "t": "Note: decentralised purchasing",
+   "m": 3.33,
+   "k": "th",
+   "topic": "purchase"
+  },
+  {
+   "s": "2023-06",
+   "q": "3(b)",
+   "t": "Note: Halsey premium plan",
+   "m": 3.33,
+   "k": "th",
+   "topic": "labour"
+  },
+  {
+   "s": "2023-06",
+   "q": "3(c)",
+   "t": "Note: apportionment of overheads",
+   "m": 3.33,
+   "k": "th",
+   "topic": "overheads"
+  },
+  {
+   "s": "2023-06",
+   "q": "3(d)",
+   "t": "Note: by-products",
+   "m": 3.33,
+   "k": "th",
+   "topic": "joint"
+  },
+  {
+   "s": "2023-06",
+   "q": "3(e)",
+   "t": "Note: service costing",
+   "m": 3.33,
+   "k": "th",
+   "topic": "operating"
+  },
+  {
+   "s": "2023-06",
+   "q": "3(f)",
+   "t": "Note: purchase requisition",
+   "m": 3.33,
+   "k": "th",
+   "topic": "purchase"
+  },
+  {
+   "s": "2023-06",
+   "q": "4",
+   "t": "Stores ledger by FIFO",
+   "m": 20,
+   "k": "num",
+   "topic": "pricing"
+  },
+  {
+   "s": "2023-06",
+   "q": "5",
+   "t": "Contract account; profit and work-in-progress",
+   "m": 20,
+   "k": "num",
+   "topic": "contract"
+  },
+  {
+   "s": "2023-06",
+   "q": "6",
+   "t": "Machine hour rate",
+   "m": 20,
+   "k": "num",
+   "topic": "machine-rate"
+  },
+  {
+   "s": "2023-06",
+   "q": "7",
+   "t": "Process accounts with abnormal loss",
+   "m": 20,
+   "k": "num",
+   "topic": "process"
+  },
+  {
+   "s": "2023-06",
+   "q": "8(a)",
+   "t": "Bus cost per passenger-km",
+   "m": 15,
+   "k": "num",
+   "topic": "operating"
+  },
+  {
+   "s": "2023-06",
+   "q": "8(b)",
+   "t": "Economic order quantity",
+   "m": 5,
+   "k": "num",
+   "topic": "inventory"
+  },
+  {
+   "s": "2023-12",
+   "q": "1",
+   "t": "Cost accounting vs financial accounting",
+   "m": 10,
+   "k": "th",
+   "topic": "intro"
+  },
+  {
+   "s": "2023-12",
+   "q": "2",
+   "t": "Classification of costs",
+   "m": 10,
+   "k": "th",
+   "topic": "cost-concepts"
+  },
+  {
+   "s": "2023-12",
+   "q": "3(a)",
+   "t": "Note: purchase order",
+   "m": 3.33,
+   "k": "th",
+   "topic": "purchase"
+  },
+  {
+   "s": "2023-12",
+   "q": "3(b)",
+   "t": "Note: FIFO method",
+   "m": 3.33,
+   "k": "th",
+   "topic": "pricing"
+  },
+  {
+   "s": "2023-12",
+   "q": "3(c)",
+   "t": "Note: overtime",
+   "m": 3.33,
+   "k": "th",
+   "topic": "labour"
+  },
+  {
+   "s": "2023-12",
+   "q": "3(d)",
+   "t": "Note: time wage system",
+   "m": 3.33,
+   "k": "th",
+   "topic": "labour"
+  },
+  {
+   "s": "2023-12",
+   "q": "3(e)",
+   "t": "Note: prime cost method",
+   "m": 3.33,
+   "k": "th",
+   "topic": "overheads"
+  },
+  {
+   "s": "2023-12",
+   "q": "3(f)",
+   "t": "Note: depreciation",
+   "m": 3.33,
+   "k": "th",
+   "topic": "machine-rate"
+  },
+  {
+   "s": "2023-12",
+   "q": "4",
+   "t": "Stores ledger by LIFO",
+   "m": 20,
+   "k": "num",
+   "topic": "pricing"
+  },
+  {
+   "s": "2023-12",
+   "q": "5",
+   "t": "Apportioning service department overheads",
+   "m": 20,
+   "k": "num",
+   "topic": "overheads"
+  },
+  {
+   "s": "2023-12",
+   "q": "6",
+   "t": "Machine hour rate",
+   "m": 20,
+   "k": "num",
+   "topic": "machine-rate"
+  },
+  {
+   "s": "2023-12",
+   "q": "7",
+   "t": "Truck operating cost per ton-km",
+   "m": 20,
+   "k": "num",
+   "topic": "operating"
+  },
+  {
+   "s": "2023-12",
+   "q": "8",
+   "t": "Process accounts with wastage",
+   "m": 20,
+   "k": "num",
+   "topic": "process"
+  },
+  {
+   "s": "2024-06",
+   "q": "1",
+   "t": "Cost accounting: definition and objects",
+   "m": 10,
+   "k": "th",
+   "topic": "intro"
+  },
+  {
+   "s": "2024-06",
+   "q": "2",
+   "t": "Methods of costing and industries using them",
+   "m": 10,
+   "k": "th",
+   "topic": "cost-concepts"
+  },
+  {
+   "s": "2024-06",
+   "q": "3(a)",
+   "t": "Note: LIFO method",
+   "m": 3.33,
+   "k": "th",
+   "topic": "pricing"
+  },
+  {
+   "s": "2024-06",
+   "q": "3(b)",
+   "t": "Note: idle time",
+   "m": 3.33,
+   "k": "th",
+   "topic": "labour"
+  },
+  {
+   "s": "2024-06",
+   "q": "3(c)",
+   "t": "Note: Halsey premium plan",
+   "m": 3.33,
+   "k": "th",
+   "topic": "labour"
+  },
+  {
+   "s": "2024-06",
+   "q": "3(d)",
+   "t": "Note: ABC analysis",
+   "m": 3.33,
+   "k": "th",
+   "topic": "inventory"
+  },
+  {
+   "s": "2024-06",
+   "q": "3(e)",
+   "t": "Note: purchase requisition",
+   "m": 3.33,
+   "k": "th",
+   "topic": "purchase"
+  },
+  {
+   "s": "2024-06",
+   "q": "3(f)",
+   "t": "Note: joint product",
+   "m": 3.33,
+   "k": "th",
+   "topic": "joint"
+  },
+  {
+   "s": "2024-06",
+   "q": "4",
+   "t": "Stores ledger by FIFO",
+   "m": 20,
+   "k": "num",
+   "topic": "pricing"
+  },
+  {
+   "s": "2024-06",
+   "q": "5",
+   "t": "Apportioning costs to departments",
+   "m": 20,
+   "k": "num",
+   "topic": "overheads"
+  },
+  {
+   "s": "2024-06",
+   "q": "6",
+   "t": "Machine hour rate",
+   "m": 20,
+   "k": "num",
+   "topic": "machine-rate"
+  },
+  {
+   "s": "2024-06",
+   "q": "7",
+   "t": "Bus operating cost and fare",
+   "m": 20,
+   "k": "num",
+   "topic": "operating"
+  },
+  {
+   "s": "2024-06",
+   "q": "8",
+   "t": "Process accounts for three processes",
+   "m": 20,
+   "k": "num",
+   "topic": "process"
+  },
+  {
+   "s": "2024-12",
+   "q": "1(a)",
+   "t": "Cost records in planning and control",
+   "m": 10,
+   "k": "th",
+   "topic": "intro"
+  },
+  {
+   "s": "2024-12",
+   "q": "1(b)",
+   "t": "Role of a cost accountant",
+   "m": 10,
+   "k": "th",
+   "topic": "intro"
+  },
+  {
+   "s": "2024-12",
+   "q": "2(a)",
+   "t": "Material control: requirements",
+   "m": 10,
+   "k": "th",
+   "topic": "purchase"
+  },
+  {
+   "s": "2024-12",
+   "q": "2(b)",
+   "t": "ABC technique of inventory control",
+   "m": 10,
+   "k": "th",
+   "topic": "inventory"
+  },
+  {
+   "s": "2024-12",
+   "q": "3",
+   "t": "LIFO and FIFO pricing of materials",
+   "m": 20,
+   "k": "th",
+   "topic": "pricing"
+  },
+  {
+   "s": "2024-12",
+   "q": "4",
+   "t": "Labour turnover: causes and measures",
+   "m": 20,
+   "k": "th",
+   "topic": "labour"
+  },
+  {
+   "s": "2024-12",
+   "q": "5(a)",
+   "t": "Principles and bases of apportioning overheads",
+   "m": 10,
+   "k": "th",
+   "topic": "overheads"
+  },
+  {
+   "s": "2024-12",
+   "q": "5(b)",
+   "t": "Vehicle cost per km",
+   "m": 10,
+   "k": "num",
+   "topic": "operating"
+  },
+  {
+   "s": "2024-12",
+   "q": "6",
+   "t": "Profit per unit and reconciliation with financial accounts",
+   "m": 20,
+   "k": "num",
+   "topic": "reconciliation"
+  },
+  {
+   "s": "2024-12",
+   "q": "7",
+   "t": "Joint and by-product: process accounts",
+   "m": 20,
+   "k": "num",
+   "topic": "joint"
+  },
+  {
+   "s": "2024-12",
+   "q": "8",
+   "t": "Contract account and contractee's account",
+   "m": 20,
+   "k": "num",
+   "topic": "contract"
+  },
+  {
+   "s": "2025-06",
+   "q": "1(a)",
+   "t": "Cost accounting: meaning and need",
+   "m": 10,
+   "k": "th",
+   "topic": "intro"
+  },
+  {
+   "s": "2025-06",
+   "q": "1(b)",
+   "t": "Pro forma cost sheet",
+   "m": 10,
+   "k": "th",
+   "topic": "cost-concepts"
+  },
+  {
+   "s": "2025-06",
+   "q": "2",
+   "t": "Procedure for purchasing raw materials",
+   "m": 20,
+   "k": "th",
+   "topic": "purchase"
+  },
+  {
+   "s": "2025-06",
+   "q": "3(a)",
+   "t": "Inventory turnover and its importance",
+   "m": 10,
+   "k": "th",
+   "topic": "inventory"
+  },
+  {
+   "s": "2025-06",
+   "q": "3(b)",
+   "t": "Problems in pricing material issues",
+   "m": 10,
+   "k": "th",
+   "topic": "pricing"
+  },
+  {
+   "s": "2025-06",
+   "q": "4(a)",
+   "t": "Time booking: purposes and methods",
+   "m": 10,
+   "k": "th",
+   "topic": "labour"
+  },
+  {
+   "s": "2025-06",
+   "q": "4(b)",
+   "t": "Classification of overheads",
+   "m": 10,
+   "k": "th",
+   "topic": "overheads"
+  },
+  {
+   "s": "2025-06",
+   "q": "5(a)",
+   "t": "Under- and over-absorption of overheads",
+   "m": 10,
+   "k": "th",
+   "topic": "overheads"
+  },
+  {
+   "s": "2025-06",
+   "q": "5(b)",
+   "t": "Bus cost per km and per passenger-km",
+   "m": 10,
+   "k": "num",
+   "topic": "operating"
+  },
+  {
+   "s": "2025-06",
+   "q": "6",
+   "t": "Contract account",
+   "m": 20,
+   "k": "num",
+   "topic": "contract"
+  },
+  {
+   "s": "2025-06",
+   "q": "7",
+   "t": "By-product: cost per ton of main product",
+   "m": 20,
+   "k": "num",
+   "topic": "joint"
+  },
+  {
+   "s": "2025-06",
+   "q": "8",
+   "t": "Reconciliation of cost and financial profit",
+   "m": 20,
+   "k": "num",
+   "topic": "reconciliation"
+  },
+  {
+   "s": "2025-12",
+   "q": "1(a)",
+   "t": "Limitations of financial accounting",
+   "m": 10,
+   "k": "th",
+   "topic": "intro"
+  },
+  {
+   "s": "2025-12",
+   "q": "1(b)",
+   "t": "Advantages of material control",
+   "m": 10,
+   "k": "th",
+   "topic": "purchase"
+  },
+  {
+   "s": "2025-12",
+   "q": "2",
+   "t": "Steps in purchasing materials",
+   "m": 20,
+   "k": "th",
+   "topic": "purchase"
+  },
+  {
+   "s": "2025-12",
+   "q": "3(a)",
+   "t": "Centralised purchasing: pros and cons",
+   "m": 10,
+   "k": "th",
+   "topic": "purchase"
+  },
+  {
+   "s": "2025-12",
+   "q": "3(b)",
+   "t": "Job costing vs contract costing",
+   "m": 10,
+   "k": "th",
+   "topic": "contract"
+  },
+  {
+   "s": "2025-12",
+   "q": "4",
+   "t": "Overhead distribution summary",
+   "m": 20,
+   "k": "num",
+   "topic": "overheads"
+  },
+  {
+   "s": "2025-12",
+   "q": "5",
+   "t": "Reconciliation statement",
+   "m": 20,
+   "k": "num",
+   "topic": "reconciliation"
+  },
+  {
+   "s": "2025-12",
+   "q": "6",
+   "t": "Stores ledger by FIFO with returns and shortage",
+   "m": 20,
+   "k": "num",
+   "topic": "pricing"
+  },
+  {
+   "s": "2025-12",
+   "q": "7(a)",
+   "t": "Contract account",
+   "m": 15,
+   "k": "num",
+   "topic": "contract"
+  },
+  {
+   "s": "2025-12",
+   "q": "7(b)",
+   "t": "Purpose of time booking",
+   "m": 5,
+   "k": "th",
+   "topic": "labour"
+  },
+  {
+   "s": "2025-12",
+   "q": "8(a)",
+   "t": "Note: abnormal loss",
+   "m": 5.0,
+   "k": "th",
+   "topic": "process"
+  },
+  {
+   "s": "2025-12",
+   "q": "8(b)",
+   "t": "Note: joint products",
+   "m": 5.0,
+   "k": "th",
+   "topic": "joint"
+  },
+  {
+   "s": "2025-12",
+   "q": "8(c)",
+   "t": "Note: service costing",
+   "m": 5.0,
+   "k": "th",
+   "topic": "operating"
+  },
+  {
+   "s": "2025-12",
+   "q": "8(d)",
+   "t": "Note: labour turnover",
+   "m": 5.0,
+   "k": "th",
+   "topic": "labour"
+  },
+  {
+   "s": "2026-06",
+   "q": "1(a)",
+   "t": "Objectives of cost accounting",
+   "m": 10,
+   "k": "th",
+   "topic": "intro"
+  },
+  {
+   "s": "2026-06",
+   "q": "1(b)",
+   "t": "Difficulties in installing a costing system",
+   "m": 10,
+   "k": "th",
+   "topic": "intro"
+  },
+  {
+   "s": "2026-06",
+   "q": "2",
+   "t": "Labour turnover: causes and control",
+   "m": 20,
+   "k": "th",
+   "topic": "labour"
+  },
+  {
+   "s": "2026-06",
+   "q": "3(a)",
+   "t": "Why cost and financial profits differ",
+   "m": 10,
+   "k": "th",
+   "topic": "reconciliation"
+  },
+  {
+   "s": "2026-06",
+   "q": "3(b)",
+   "t": "Decentralised purchasing: pros and cons",
+   "m": 10,
+   "k": "th",
+   "topic": "purchase"
+  },
+  {
+   "s": "2026-06",
+   "q": "4",
+   "t": "Stores ledger by LIFO",
+   "m": 20,
+   "k": "num",
+   "topic": "pricing"
+  },
+  {
+   "s": "2026-06",
+   "q": "5(a)",
+   "t": "Taylor's differential piece rate",
+   "m": 10,
+   "k": "num",
+   "topic": "labour"
+  },
+  {
+   "s": "2026-06",
+   "q": "5(b)",
+   "t": "Profit on uncompleted contracts",
+   "m": 10,
+   "k": "th",
+   "topic": "contract"
+  },
+  {
+   "s": "2026-06",
+   "q": "6",
+   "t": "Cost sheet",
+   "m": 20,
+   "k": "num",
+   "topic": "cost-concepts"
+  },
+  {
+   "s": "2026-06",
+   "q": "7",
+   "t": "Process accounts for three processes",
+   "m": 20,
+   "k": "num",
+   "topic": "process"
+  },
+  {
+   "s": "2026-06",
+   "q": "8(a)",
+   "t": "Note: machine hour rate",
+   "m": 5.0,
+   "k": "th",
+   "topic": "machine-rate"
+  },
+  {
+   "s": "2026-06",
+   "q": "8(b)",
+   "t": "Note: service costing",
+   "m": 5.0,
+   "k": "th",
+   "topic": "operating"
+  },
+  {
+   "s": "2026-06",
+   "q": "8(c)",
+   "t": "Note: joint products",
+   "m": 5.0,
+   "k": "th",
+   "topic": "joint"
+  },
+  {
+   "s": "2026-06",
+   "q": "8(d)",
+   "t": "Note: ABC analysis",
+   "m": 5.0,
+   "k": "th",
+   "topic": "inventory"
+  }
+ ]
+}
