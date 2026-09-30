@@ -1,0 +1,1863 @@
+{
+ "code": "CPI-102",
+ "title": "Redressal of Consumer Grievances: Role of Various Stakeholders",
+ "pattern": {
+  "time": "3 hours",
+  "marks": 100,
+  "questions": 16,
+  "attempt": 11,
+  "each": 10,
+  "parts": [
+   {
+    "id": "A",
+    "name": "Part A",
+    "attempt": 4,
+    "of": 5,
+    "each": 5
+   },
+   {
+    "id": "B",
+    "name": "Part B",
+    "attempt": 5,
+    "of": 7,
+    "each": 10
+   },
+   {
+    "id": "C",
+    "name": "Part C",
+    "attempt": 2,
+    "of": 4,
+    "each": 15
+   }
+  ],
+  "summary": "Three compulsory parts, all theory: Part A — 4 of 5 short notes (5 marks, about 150 words); Part B — 5 of 7 (10 marks, about 300 words); Part C — 2 of 4 (15 marks, about 500 words)."
+ },
+ "blocksOfficial": false,
+ "sessions": [
+  "2020-12",
+  "2021-06",
+  "2021-12",
+  "2022-06",
+  "2022-12",
+  "2023-06",
+  "2023-12",
+  "2024-06",
+  "2024-12",
+  "2025-06",
+  "2025-12",
+  "2026-06"
+ ],
+ "sessionNotes": {
+  "2020-12": "Held in February 2021."
+ },
+ "examTips": {
+  "choosing": [
+   "The same institutions come back every session: National Consumer Helpline, Grahak Suvidha Kendras, Lokpal and ombudsmen, ASCI and misleading ads, Consumer Welfare Fund, Consumers International and Consumer Interpol.",
+   "Mediation, conciliation and arbitration are asked every year — learn the differences in a table.",
+   "Match length to marks: about 150 words for Part A, 300 for Part B, 500 for Part C."
+  ]
+ },
+ "blocks": [
+  {
+   "no": 1,
+   "title": "Consumerism & Protection Machinery"
+  },
+  {
+   "no": 2,
+   "title": "Advertising & Media"
+  },
+  {
+   "no": 3,
+   "title": "Consumer Organisations"
+  },
+  {
+   "no": 4,
+   "title": "Government Initiatives"
+  },
+  {
+   "no": 5,
+   "title": "ADR & Advocacy"
+  },
+  {
+   "no": 6,
+   "title": "Ombudsman & Industry Bodies"
+  },
+  {
+   "no": 7,
+   "title": "International & Standards"
+  }
+ ],
+ "topics": [
+  {
+   "id": "advertising",
+   "name": "Advertising, Media & Misleading Advertisements",
+   "block": 2,
+   "kind": "theory",
+   "summary": "Objectives and impact of advertisements, misleading advertisements, laws governing advertising, ASCI and its code, and the role of media in society and consumer protection.",
+   "points": [
+    "Objectives of advertising: inform (new products, features, prices), persuade (build preference), remind (keep the brand in mind).",
+    "Positive impact: information and choice, lower prices through mass production, supports media, promotes competition. Negative impact: misleading claims, creates artificial wants and materialism, targets children, stereotypes, raises costs, harmful products glamorised.",
+    "Misleading advertisement (CPA 2019, Sec 2(28)): falsely describes a product or service, gives a false guarantee, conveys a representation amounting to an unfair trade practice, or deliberately hides important information.",
+    "Action under CPA 2019: the Central Consumer Protection Authority (CCPA) can order withdrawal or correction and impose penalties on manufacturers and endorsers (up to ₹10 lakh, ₹50 lakh for repeat offences; endorsers can be barred); false or misleading ads can also bring imprisonment. CCPA issued guidelines on misleading ads and endorsements (2022). The Department of Consumer Affairs also runs the GAMA portal for complaints.",
+    "Other laws: Drugs and Magic Remedies (Objectionable Advertisements) Act 1954, Cable Television Networks (Regulation) Act 1995 and its Advertising Code, Indecent Representation of Women (Prohibition) Act 1986, COTPA 2003 (tobacco), FSSAI advertising and claims regulations 2018, Emblems and Names Act 1950.",
+    "ASCI (Advertising Standards Council of India, 1985): the industry's self-regulatory body. Code: ads must be honest and truthful, not offensive to public decency, not promote harmful products or situations, and be fair in competition. Its Consumer Complaints Council decides complaints.",
+    "Media and society: media informs, educates, shapes opinion and acts as a watchdog; businesses use it to reach and persuade consumers; its enhanced role today comes from the spread of TV, internet and social media, and its power to expose unfair practices and raise consumer awareness."
+   ],
+   "frame": "Meaning → headed points (objectives, effects or laws) with Indian examples → conclusion.",
+   "mistakes": []
+  },
+  {
+   "id": "vco",
+   "name": "Voluntary Consumer Organisations & NGOs",
+   "block": 3,
+   "kind": "theory",
+   "summary": "Voluntary consumer organisations (VCOs) and NGOs — nature, characteristics, functions and activities, role under the Consumer Protection Act, selected organisations, management in NGOs, consumer clubs, and do's and don'ts for consumer activists.",
+   "points": [
+    "VCOs and NGOs: voluntary, non-profit, independent bodies formed by citizens to protect and promote consumer interests.",
+    "Characteristics of NGOs: voluntary membership, non-profit, independent of government, service-oriented, flexible and close to people, dependent on donations and grants.",
+    "Functions and activities: consumer education and awareness, complaint handling and legal help, filing cases on behalf of consumers, product testing and comparative reports, publications, representation on government bodies, advocacy for better laws.",
+    "Role under the Consumer Protection Act: a recognised consumer association can file complaints; VCOs sit on consumer protection councils and help consumers approach consumer commissions.",
+    "Selected organisations: Consumer Guidance Society of India (Mumbai, 1966 — the oldest), Consumer Education and Research Centre (CERC, Ahmedabad), CUTS International (Jaipur), VOICE (Delhi), Consumer Coordination Council (a national federation of VCOs; ran the CORE centre).",
+    "Management in NGOs: planning, finance, people and accountability are often weak because of small size, reliance on volunteers and irregular funds; good management needs clear goals, trained staff, transparent accounts and evaluation.",
+    "Consumer clubs: clubs in schools and colleges, supported by the Department of Consumer Affairs, to build awareness among students.",
+    "Do's for a consumer activist: know the law, collect facts and documents, act through proper channels, be fair and courteous, keep records. Don'ts: make false allegations, seek personal gain, use threats or violence, publicise unverified claims."
+   ],
+   "frame": "Meaning → functions or features as headings → one Indian organisation as example → conclusion.",
+   "mistakes": []
+  },
+  {
+   "id": "nch-gsk",
+   "name": "National Consumer Helpline & Grahak Suvidha Kendras",
+   "block": 4,
+   "kind": "theory",
+   "summary": "The National Consumer Helpline — role, functions and stages of resolving consumer issues — and Grahak Suvidha Kendras.",
+   "points": [
+    "National Consumer Helpline (NCH): run by the Department of Consumer Affairs; toll-free number 1915 (earlier 1800-11-4000), SMS, WhatsApp, the NCH app and the INGRAM portal; handles grievances before litigation.",
+    "Role and functions: advice and guidance to consumers, register grievances, forward them to companies under its convergence programme, follow up, help consumers approach consumer commissions (e-Daakhil portal) if unresolved, collect data on problem sectors.",
+    "Stages in resolving a consumer issue: grievance registered and docket number given → sent to the company (convergence partner) or authority → company responds within a set time → consumer informed → if unresolved, guidance on filing a complaint in the consumer commission → case closed with feedback.",
+    "Grahak Suvidha Kendras (consumer facilitation centres): set up by the Department of Consumer Affairs in states to give consumers face-to-face advice, help draft and file complaints, and guide them to the right forum — a one-stop help point, especially for those not online.",
+    "Importance: quick, free, pre-litigation settlement; reduces the load on consumer commissions; builds consumer confidence."
+   ],
+   "frame": "Meaning → functions → stages as a flow chart → conclusion.",
+   "mistakes": []
+  },
+  {
+   "id": "adr",
+   "name": "ADR: Mediation, Conciliation, Arbitration & Lok Adalats",
+   "block": 5,
+   "kind": "theory",
+   "summary": "Mediation (types, advantages, stages), conciliation, arbitration and the law on it, Lok Adalats, and how they differ.",
+   "points": [
+    "Mediation: a neutral mediator helps the parties reach their own settlement; the mediator does not impose a decision. Types: court-referred, private, community, online; consumer mediation cells exist under CPA 2019; the Mediation Act 2023 governs it.",
+    "Stages of mediation: opening statement by the mediator → joint session (each side explains) → separate sessions (caucus) → negotiation and options → settlement agreement → closure.",
+    "Advantages: quick, cheap, confidential, voluntary, preserves relationships, flexible solutions.",
+    "Conciliation (Arbitration and Conciliation Act 1996, Part III): the conciliator helps the parties and may propose terms of settlement; a signed settlement agreement is binding like an arbitral award. Suitable for commercial and civil disputes; not for criminal matters.",
+    "Conciliation vs mediation: a conciliator may suggest solutions, a mediator only facilitates; conciliation has a statutory settlement under the 1996 Act.",
+    "Arbitration: disputes decided by an arbitrator chosen by the parties (or appointed by the court, Sec 11); the award is binding and enforceable like a decree, with limited grounds to challenge.",
+    "Lok Adalats (Legal Services Authorities Act 1987): people's courts that settle disputes by compromise; no court fee, fee refunded if pending in court; the award is final with no appeal. Permanent Lok Adalats handle public utility services. Lok Adalat vs mediation: a Lok Adalat award is a decree of a civil court; mediation ends in a settlement agreement."
+   ],
+   "frame": "Meaning → stages or features as headings → comparison table where asked → conclusion.",
+   "mistakes": []
+  },
+  {
+   "id": "ombudsman",
+   "name": "Ombudsman, Lokpal & Sector Ombudsmen",
+   "block": 6,
+   "kind": "theory",
+   "summary": "The institution of Ombudsman, its characteristics and Indian perspective, Lokpal (role, structure, jurisdiction, rationale), and Banking, SEBI and Telecom ombudsmen.",
+   "points": [
+    "Ombudsman: an independent officer who investigates citizens' complaints against maladministration; began in Sweden (1809). Characteristics: independence and impartiality, easy and free access, informal procedure, power to investigate, recommends remedies, reports publicly.",
+    "Indian perspective: sector ombudsmen for banking, insurance, taxes and electricity, and the Lokpal and Lokayuktas for corruption.",
+    "Lokpal (Lokpal and Lokayuktas Act 2013): a chairperson and up to 8 members, half of them judicial. Jurisdiction covers the Prime Minister (with safeguards), ministers, MPs, central government officials of all groups, and bodies funded by government or receiving foreign contributions above a limit. It has inquiry and prosecution wings. The first Lokpal was appointed in 2019. Rationale: an independent body to tackle corruption and restore public trust.",
+    "Banking Ombudsman: now the RBI Integrated Ombudsman Scheme 2021 (banks, NBFCs, digital payments). Complain to the bank first; if there is no reply in 30 days or it is rejected, file online at cms.rbi.org.in within one year; no fee; grounds — any deficiency in service; award up to ₹20 lakh plus ₹1 lakh for harassment; appeal to the RBI appellate authority.",
+    "SEBI: the SEBI (Ombudsman) Regulations 2003 listed investor grievances such as non-receipt of refunds, allotment, dividend, interest or transfer. Investor complaints are now handled through SCORES and SEBI's online dispute resolution system.",
+    "Telecom: consumers first go to the service provider's complaint centre, then its appellate authority under TRAI's grievance regulations; disputes go to TDSAT."
+   ],
+   "frame": "Meaning → features or structure as headings → one sector example → conclusion.",
+   "mistakes": [
+    "Describing the old Banking Ombudsman Scheme 2006 only — mention the Integrated Ombudsman Scheme 2021."
+   ]
+  },
+  {
+   "id": "campaign",
+   "name": "Campaign & Advocacy Programmes",
+   "block": 5,
+   "kind": "theory",
+   "summary": "Meaning of campaign and advocacy, public and private advocacy, requisites, strategies, techniques (information and publicity), steps of an effective programme, and written protests.",
+   "points": [
+    "Campaign: an organised, time-bound effort to create awareness or change behaviour. Advocacy: persuading decision-makers to change laws, policies or practices.",
+    "Types of advocacy: public advocacy (open campaigns, media, rallies, petitions), private advocacy (meetings and representations to officials), self-advocacy, legal advocacy, media advocacy.",
+    "Requisites: clear goal, research and facts, target audience, credible message, allies and networks, resources, timing, evaluation.",
+    "Strategies and techniques: information and publicity (leaflets, press releases, social media), education, lobbying, coalitions, legal action, demonstrations and written protests.",
+    "Steps: identify the issue → research → set objectives → identify targets and allies → frame the message → choose methods → act → monitor and evaluate.",
+    "Written protests: letters, memoranda and petitions to companies or authorities — a peaceful, documented way to press consumer demands."
+   ],
+   "frame": "Meaning → types or steps as headings → a consumer example → conclusion.",
+   "mistakes": []
+  },
+  {
+   "id": "international",
+   "name": "Consumers International & Consumer Interpol",
+   "block": 7,
+   "kind": "theory",
+   "summary": "Consumers International — status, scope, objectives, activities, charter for consumer action and coordination — and Consumer Interpol's origin, growth and aims.",
+   "points": [
+    "Consumers International (CI): the world federation of consumer organisations, founded in 1960 as the International Organisation of Consumers Unions (IOCU), based in London; has consultative status with UN bodies.",
+    "Objectives and activities: campaigns on global consumer issues, World Consumer Rights Day (15 March), supporting member groups, research, advocacy with UN, WHO and other bodies; helped bring the UN Guidelines for Consumer Protection (1985).",
+    "Charter for consumer action: CI's statement of consumer rights and responsibilities that guides member groups' campaigns.",
+    "Coordination: works with UN agencies, governments, regional offices and member organisations (including Indian VCOs).",
+    "Consumer Interpol: a network set up by IOCU in 1981 to alert countries about hazardous products, drugs and technologies. Aims: exchange information quickly, warn consumers, stop dumping of banned products in developing countries, press for action."
+   ],
+   "frame": "Meaning → objectives or activities as headed points → relevance to Indian consumers → conclusion.",
+   "mistakes": []
+  },
+  {
+   "id": "organisation",
+   "name": "Setting Up & Running a Consumer Organisation",
+   "block": 3,
+   "kind": "theory",
+   "summary": "Basic requirements for a consumer organisation, objectives, membership and registration, managerial processes and the alternative view, dynamics and structure, making it viable, and guidelines for public meetings.",
+   "points": [
+    "Basic requirements: clear objectives, committed members, a written constitution, registration (Societies Registration Act 1860, a trust, or a Sec 8 company), leadership, funds, an office, staff or volunteers, records and accounts.",
+    "Objectives: protect consumer rights, educate and inform, help with complaints, represent consumers, test products, work with government.",
+    "Managerial processes: planning, organising, staffing, directing, coordinating and controlling. The alternative view stresses participation, flexibility, teamwork and networking rather than rigid hierarchy.",
+    "Dynamics and structurisation: as an organisation grows it needs clearer roles, committees and procedures without losing its voluntary spirit.",
+    "Making it viable and effective: diverse funding, trained volunteers, credibility through accurate work, networking with other groups, use of media, regular evaluation.",
+    "Guidelines for public meetings: clear purpose and agenda, permission where needed, suitable venue and time, publicity, expert speakers, orderly conduct, record and follow-up."
+   ],
+   "frame": "Headed points with one line each → conclusion.",
+   "mistakes": []
+  },
+  {
+   "id": "govt",
+   "name": "Government Initiatives: DoCA, Jago Grahak Jago & Welfare Fund",
+   "block": 4,
+   "kind": "theory",
+   "summary": "The Department of Consumer Affairs and its tasks, Jago Grahak Jago, the Consumer Welfare Fund and its eligibility, CORE, Jagriti Shivir Yojana and consumer information centres.",
+   "points": [
+    "Department of Consumer Affairs (DoCA), Government of India: consumer policy; administers the Consumer Protection Act, BIS Act and Legal Metrology Act; monitors prices of essential commodities; runs consumer awareness, the National Consumer Helpline and the Consumer Welfare Fund; acts against misleading ads through the CCPA and the GAMA portal.",
+    "Jago Grahak Jago ('Wake up, consumer'): DoCA's awareness campaign since 2005 on TV, radio, print and social media — themes such as checking MRP, ISI mark and hallmark, weights and measures, and consumer rights.",
+    "Consumer Welfare Fund: set up under the Central Excise and Salt Act 1944 (Sec 12C) from duties that cannot be refunded to manufacturers; used for consumer welfare — grants to VCOs, consumer clubs, research, product testing labs, awareness. Eligibility: VCOs registered for at least 3 years under the relevant law, working in consumer welfare with a good record, and other bodies as the rules allow.",
+    "CORE (Consumer Online Resource and Empowerment Centre): an online grievance and information centre run by the Consumer Coordination Council with government support.",
+    "Jagriti Shivir Yojana: awareness camps for consumers, especially in rural areas.",
+    "Consumer information centres give consumers direct information on products, rights and redressal."
+   ],
+   "frame": "Meaning → objectives or activities as headings → conclusion.",
+   "mistakes": []
+  },
+  {
+   "id": "cpa",
+   "name": "Consumerism, Consumer Rights & Consumer Protection Machinery",
+   "block": 1,
+   "kind": "theory",
+   "summary": "Consumerism, consumer rights and their expansion, consumer education and awareness, consumer protection councils, and jurisdiction of consumer commissions.",
+   "points": [
+    "Consumerism: the organised movement of consumers and others to protect consumer interests and make sellers accountable.",
+    "Consumer rights (CPA 2019, Sec 2(9)): safety; information; choice; to be heard; to seek redressal; consumer awareness (education). They grew from President Kennedy's four rights (1962) through the UN Guidelines (1985) and now include a healthy environment and basic needs.",
+    "Consumer education and awareness: knowing rights, reading labels, keeping bills, using redressal forums — the base of consumer protection.",
+    "Consumer Protection Councils (CPA 2019): Central (chaired by the Minister of Consumer Affairs), State and District councils — advisory bodies to promote and protect consumer rights.",
+    "Consumer commissions (CPA 2019): District, State and National Consumer Disputes Redressal Commissions. Pecuniary jurisdiction (from 2021): District up to ₹50 lakh; State ₹50 lakh–₹2 crore; National above ₹2 crore. Appeals: District → State → National → Supreme Court. Complaints can be filed online (e-Daakhil).",
+    "The Central Consumer Protection Authority (CCPA) acts on unfair trade practices, misleading ads and class actions."
+   ],
+   "frame": "Meaning → headed points → conclusion.",
+   "mistakes": [
+    "Quoting only the old CPA 1986 names (District Forum) — use the 2019 Act's commissions."
+   ]
+  },
+  {
+   "id": "industry",
+   "name": "Industry Associations: FICCI, CII, ASSOCHAM, PHDCCI",
+   "block": 6,
+   "kind": "theory",
+   "summary": "FICCI, CII, ASSOCHAM and the PHD Chamber — status, functions and services, allied organisations, and their role in consumer grievance redressal; response from manufacturers and service providers.",
+   "points": [
+    "FICCI (Federation of Indian Chambers of Commerce and Industry, 1927): the oldest apex business body — policy advocacy, industry voice to government, networking, research and events. Allied organisations include the FICCI Ladies Organisation (FLO) and sector councils.",
+    "CII (Confederation of Indian Industry): an industry-led, non-government body — policy input, competitiveness and quality programmes, CSR and skill development, consumer and quality initiatives.",
+    "ASSOCHAM (Associated Chambers of Commerce and Industry of India, 1920): policy advocacy, knowledge reports, events, member services.",
+    "PHD Chamber of Commerce and Industry (1905): represents industry, especially in north India; policy work, trade promotion, member services.",
+    "Role in consumer protection: promote ethical codes and self-regulation, set up consumer affairs cells, encourage members to handle complaints, support standards and quality.",
+    "Response from manufacturers and service providers: companies join the NCH convergence programme, appoint grievance officers, run customer care, and settle complaints to protect their reputation."
+   ],
+   "frame": "Status → functions as headings → role for consumers → conclusion.",
+   "mistakes": []
+  },
+  {
+   "id": "standards",
+   "name": "Standards, BIS & Labelling",
+   "block": 7,
+   "kind": "theory",
+   "summary": "The Bureau of Indian Standards — activities, making of Indian standards, the BIS Act 2016 — labelling, and sectors lacking quality-of-service benchmarks.",
+   "points": [
+    "Bureau of Indian Standards (BIS): the national standards body under the BIS Act 2016. Activities: formulating standards, product certification (ISI mark), hallmarking of gold and silver, laboratory testing, compulsory registration for electronics, management system certification, consumer awareness.",
+    "Making Indian standards: a proposal → sectional technical committee of experts, industry and consumers → draft widely circulated for comments → consensus → approval and publication; reviewed periodically; international standards are adopted where suitable.",
+    "BIS Act 2016 features: BIS as the national standards body; wider conformity assessment schemes; government can make certification compulsory for health, safety or environment; mandatory hallmarking; recall of non-conforming products; higher penalties.",
+    "Labelling: Legal Metrology (Packaged Commodities) Rules 2011 require name and address of the maker, net quantity, MRP, date of manufacture or packing, and customer care details; food labels also follow FSSAI rules.",
+    "Quality-of-service benchmarks are still weak in sectors such as healthcare, education, real estate and some transport services, making it hard for consumers to prove deficiency."
+   ],
+   "frame": "Meaning → activities or steps as headings → conclusion.",
+   "mistakes": []
+  }
+ ],
+ "questions": [
+  {
+   "s": "2020-12",
+   "q": "1",
+   "t": "Media and society",
+   "m": 5,
+   "k": "th",
+   "topic": "advertising"
+  },
+  {
+   "s": "2020-12",
+   "q": "2",
+   "t": "Jurisdiction of the State Commission",
+   "m": 5,
+   "k": "th",
+   "topic": "cpa"
+  },
+  {
+   "s": "2020-12",
+   "q": "3",
+   "t": "Characteristics of NGOs",
+   "m": 5,
+   "k": "th",
+   "topic": "vco"
+  },
+  {
+   "s": "2020-12",
+   "q": "4",
+   "t": "Need for an enhanced role of media",
+   "m": 5,
+   "k": "th",
+   "topic": "advertising"
+  },
+  {
+   "s": "2020-12",
+   "q": "5",
+   "t": "Objectives of a consumer protection unit",
+   "m": 5,
+   "k": "th",
+   "topic": "cpa"
+  },
+  {
+   "s": "2020-12",
+   "q": "6",
+   "t": "PHD Chamber of Commerce and Industry",
+   "m": 10,
+   "k": "th",
+   "topic": "industry"
+  },
+  {
+   "s": "2020-12",
+   "q": "7",
+   "t": "Basic requirements for an organisation",
+   "m": 10,
+   "k": "th",
+   "topic": "organisation"
+  },
+  {
+   "s": "2020-12",
+   "q": "8",
+   "t": "Objectives of Consumer Protection Councils",
+   "m": 10,
+   "k": "th",
+   "topic": "cpa"
+  },
+  {
+   "s": "2020-12",
+   "q": "9",
+   "t": "Sectors without quality-of-service benchmarks",
+   "m": 10,
+   "k": "th",
+   "topic": "standards"
+  },
+  {
+   "s": "2020-12",
+   "q": "10",
+   "t": "Filing a complaint with the Banking Ombudsman",
+   "m": 10,
+   "k": "th",
+   "topic": "ombudsman"
+  },
+  {
+   "s": "2020-12",
+   "q": "11",
+   "t": "Mediation and its stages",
+   "m": 10,
+   "k": "th",
+   "topic": "adr"
+  },
+  {
+   "s": "2020-12",
+   "q": "12",
+   "t": "Dynamics of an organisation and structurisation",
+   "m": 10,
+   "k": "th",
+   "topic": "organisation"
+  },
+  {
+   "s": "2020-12",
+   "q": "13",
+   "t": "Laws governing advertisements",
+   "m": 15,
+   "k": "th",
+   "topic": "advertising"
+  },
+  {
+   "s": "2020-12",
+   "q": "14",
+   "t": "National Consumer Helpline: role and functions",
+   "m": 15,
+   "k": "th",
+   "topic": "nch-gsk"
+  },
+  {
+   "s": "2020-12",
+   "q": "15",
+   "t": "Response from manufacturers and service providers",
+   "m": 15,
+   "k": "th",
+   "topic": "industry"
+  },
+  {
+   "s": "2020-12",
+   "q": "16",
+   "t": "Consumers International: role and structure",
+   "m": 15,
+   "k": "th",
+   "topic": "international"
+  },
+  {
+   "s": "2021-06",
+   "q": "1",
+   "t": "Impact of advertisements on consumers",
+   "m": 5,
+   "k": "th",
+   "topic": "advertising"
+  },
+  {
+   "s": "2021-06",
+   "q": "2",
+   "t": "Jurisdiction of the National Commission",
+   "m": 5,
+   "k": "th",
+   "topic": "cpa"
+  },
+  {
+   "s": "2021-06",
+   "q": "3",
+   "t": "Why NGOs lack management",
+   "m": 5,
+   "k": "th",
+   "topic": "vco"
+  },
+  {
+   "s": "2021-06",
+   "q": "4",
+   "t": "Objectives of advertisements",
+   "m": 5,
+   "k": "th",
+   "topic": "advertising"
+  },
+  {
+   "s": "2021-06",
+   "q": "5",
+   "t": "Tasks of the Department of Consumer Affairs",
+   "m": 5,
+   "k": "th",
+   "topic": "govt"
+  },
+  {
+   "s": "2021-06",
+   "q": "6",
+   "t": "FICCI: status and functions",
+   "m": 10,
+   "k": "th",
+   "topic": "industry"
+  },
+  {
+   "s": "2021-06",
+   "q": "7",
+   "t": "Do's and don'ts for a consumer activist",
+   "m": 10,
+   "k": "th",
+   "topic": "vco"
+  },
+  {
+   "s": "2021-06",
+   "q": "8",
+   "t": "Functions of VCOs/NGOs",
+   "m": 10,
+   "k": "th",
+   "topic": "vco"
+  },
+  {
+   "s": "2021-06",
+   "q": "9",
+   "t": "Stages of resolving issues at the National Consumer Helpline",
+   "m": 10,
+   "k": "th",
+   "topic": "nch-gsk"
+  },
+  {
+   "s": "2021-06",
+   "q": "10",
+   "t": "Lokpal: role, structure and jurisdiction",
+   "m": 10,
+   "k": "th",
+   "topic": "ombudsman"
+  },
+  {
+   "s": "2021-06",
+   "q": "11",
+   "t": "Conciliation: suitable disputes and the conciliator's role",
+   "m": 10,
+   "k": "th",
+   "topic": "adr"
+  },
+  {
+   "s": "2021-06",
+   "q": "12",
+   "t": "Alternative view of managerial processes",
+   "m": 10,
+   "k": "th",
+   "topic": "organisation"
+  },
+  {
+   "s": "2021-06",
+   "q": "13",
+   "t": "Objectives of ASCI",
+   "m": 15,
+   "k": "th",
+   "topic": "advertising"
+  },
+  {
+   "s": "2021-06",
+   "q": "14",
+   "t": "Jago Grahak Jago campaign",
+   "m": 15,
+   "k": "th",
+   "topic": "govt"
+  },
+  {
+   "s": "2021-06",
+   "q": "15",
+   "t": "Roles of the National Consumer Helpline",
+   "m": 15,
+   "k": "th",
+   "topic": "nch-gsk"
+  },
+  {
+   "s": "2021-06",
+   "q": "16",
+   "t": "Consumers International: status, scope and objectives",
+   "m": 15,
+   "k": "th",
+   "topic": "international"
+  },
+  {
+   "s": "2021-12",
+   "q": "1",
+   "t": "Media and the objectives of businessmen",
+   "m": 5,
+   "k": "th",
+   "topic": "advertising"
+  },
+  {
+   "s": "2021-12",
+   "q": "2",
+   "t": "Misleading advertisement",
+   "m": 5,
+   "k": "th",
+   "topic": "advertising"
+  },
+  {
+   "s": "2021-12",
+   "q": "3",
+   "t": "Written protests",
+   "m": 5,
+   "k": "th",
+   "topic": "campaign"
+  },
+  {
+   "s": "2021-12",
+   "q": "4",
+   "t": "Concept of consumerism",
+   "m": 5,
+   "k": "th",
+   "topic": "cpa"
+  },
+  {
+   "s": "2021-12",
+   "q": "5",
+   "t": "Right to consumer education",
+   "m": 5,
+   "k": "th",
+   "topic": "cpa"
+  },
+  {
+   "s": "2021-12",
+   "q": "6",
+   "t": "Consumer Interpol",
+   "m": 10,
+   "k": "th",
+   "topic": "international"
+  },
+  {
+   "s": "2021-12",
+   "q": "7",
+   "t": "Objectives of advertisements",
+   "m": 10,
+   "k": "th",
+   "topic": "advertising"
+  },
+  {
+   "s": "2021-12",
+   "q": "8",
+   "t": "Bureau of Indian Standards",
+   "m": 10,
+   "k": "th",
+   "topic": "standards"
+  },
+  {
+   "s": "2021-12",
+   "q": "9",
+   "t": "Confederation of Indian Industry",
+   "m": 10,
+   "k": "th",
+   "topic": "industry"
+  },
+  {
+   "s": "2021-12",
+   "q": "10",
+   "t": "Role of the Ombudsman in redressing grievances",
+   "m": 10,
+   "k": "th",
+   "topic": "ombudsman"
+  },
+  {
+   "s": "2021-12",
+   "q": "11",
+   "t": "Campaign and advocacy; types of advocacy",
+   "m": 10,
+   "k": "th",
+   "topic": "campaign"
+  },
+  {
+   "s": "2021-12",
+   "q": "12",
+   "t": "Consumer rights and their expansion",
+   "m": 10,
+   "k": "th",
+   "topic": "cpa"
+  },
+  {
+   "s": "2021-12",
+   "q": "13",
+   "t": "Consumer Welfare Fund and eligibility",
+   "m": 15,
+   "k": "th",
+   "topic": "govt"
+  },
+  {
+   "s": "2021-12",
+   "q": "14",
+   "t": "Objectives, membership and registration of an organisation",
+   "m": 15,
+   "k": "th",
+   "topic": "organisation"
+  },
+  {
+   "s": "2021-12",
+   "q": "15",
+   "t": "Nature of NGOs and management in NGOs",
+   "m": 15,
+   "k": "th",
+   "topic": "vco"
+  },
+  {
+   "s": "2021-12",
+   "q": "16",
+   "t": "Conciliation vs mediation",
+   "m": 15,
+   "k": "th",
+   "topic": "adr"
+  },
+  {
+   "s": "2022-06",
+   "q": "1",
+   "t": "Media and persuasion",
+   "m": 5,
+   "k": "th",
+   "topic": "advertising"
+  },
+  {
+   "s": "2022-06",
+   "q": "2",
+   "t": "Consumer Welfare Fund",
+   "m": 5,
+   "k": "th",
+   "topic": "govt"
+  },
+  {
+   "s": "2022-06",
+   "q": "3",
+   "t": "CORE centre",
+   "m": 5,
+   "k": "th",
+   "topic": "govt"
+  },
+  {
+   "s": "2022-06",
+   "q": "4",
+   "t": "FICCI",
+   "m": 5,
+   "k": "th",
+   "topic": "industry"
+  },
+  {
+   "s": "2022-06",
+   "q": "5",
+   "t": "Private advocacy",
+   "m": 5,
+   "k": "th",
+   "topic": "campaign"
+  },
+  {
+   "s": "2022-06",
+   "q": "6",
+   "t": "Concept of consumerism",
+   "m": 10,
+   "k": "th",
+   "topic": "cpa"
+  },
+  {
+   "s": "2022-06",
+   "q": "7",
+   "t": "Basic requirements for an organisation",
+   "m": 10,
+   "k": "th",
+   "topic": "organisation"
+  },
+  {
+   "s": "2022-06",
+   "q": "8",
+   "t": "Role of voluntary consumer organisations",
+   "m": 10,
+   "k": "th",
+   "topic": "vco"
+  },
+  {
+   "s": "2022-06",
+   "q": "9",
+   "t": "Negative effects of advertisements",
+   "m": 10,
+   "k": "th",
+   "topic": "advertising"
+  },
+  {
+   "s": "2022-06",
+   "q": "10",
+   "t": "National Consumer Helpline",
+   "m": 10,
+   "k": "th",
+   "topic": "nch-gsk"
+  },
+  {
+   "s": "2022-06",
+   "q": "11",
+   "t": "Consumer Coordination Council: vision and mission",
+   "m": 10,
+   "k": "th",
+   "topic": "vco"
+  },
+  {
+   "s": "2022-06",
+   "q": "12",
+   "t": "Consumers International",
+   "m": 10,
+   "k": "th",
+   "topic": "international"
+  },
+  {
+   "s": "2022-06",
+   "q": "13",
+   "t": "Grounds for a complaint to the Banking Ombudsman",
+   "m": 15,
+   "k": "th",
+   "topic": "ombudsman"
+  },
+  {
+   "s": "2022-06",
+   "q": "14",
+   "t": "Lokpal",
+   "m": 15,
+   "k": "th",
+   "topic": "ombudsman"
+  },
+  {
+   "s": "2022-06",
+   "q": "15",
+   "t": "Campaign and advocacy: requisites",
+   "m": 15,
+   "k": "th",
+   "topic": "campaign"
+  },
+  {
+   "s": "2022-06",
+   "q": "16",
+   "t": "Mediation and its stages",
+   "m": 15,
+   "k": "th",
+   "topic": "adr"
+  },
+  {
+   "s": "2022-12",
+   "q": "1",
+   "t": "Consumer awareness",
+   "m": 5,
+   "k": "th",
+   "topic": "cpa"
+  },
+  {
+   "s": "2022-12",
+   "q": "2",
+   "t": "Jagriti Shivir Yojana",
+   "m": 5,
+   "k": "th",
+   "topic": "govt"
+  },
+  {
+   "s": "2022-12",
+   "q": "3",
+   "t": "National Consumer Helpline",
+   "m": 5,
+   "k": "th",
+   "topic": "nch-gsk"
+  },
+  {
+   "s": "2022-12",
+   "q": "4",
+   "t": "Arbitration",
+   "m": 5,
+   "k": "th",
+   "topic": "adr"
+  },
+  {
+   "s": "2022-12",
+   "q": "5",
+   "t": "State Consumer Protection Council",
+   "m": 5,
+   "k": "th",
+   "topic": "cpa"
+  },
+  {
+   "s": "2022-12",
+   "q": "6",
+   "t": "Laws governing advertisement",
+   "m": 10,
+   "k": "th",
+   "topic": "advertising"
+  },
+  {
+   "s": "2022-12",
+   "q": "7",
+   "t": "ASSOCHAM: role and services",
+   "m": 10,
+   "k": "th",
+   "topic": "industry"
+  },
+  {
+   "s": "2022-12",
+   "q": "8",
+   "t": "Important consumer organisations",
+   "m": 10,
+   "k": "th",
+   "topic": "vco"
+  },
+  {
+   "s": "2022-12",
+   "q": "9",
+   "t": "Strategies for campaign and advocacy",
+   "m": 10,
+   "k": "th",
+   "topic": "campaign"
+  },
+  {
+   "s": "2022-12",
+   "q": "10",
+   "t": "Management in NGOs",
+   "m": 10,
+   "k": "th",
+   "topic": "vco"
+  },
+  {
+   "s": "2022-12",
+   "q": "11",
+   "t": "An effective Ombudsman's office",
+   "m": 10,
+   "k": "th",
+   "topic": "ombudsman"
+  },
+  {
+   "s": "2022-12",
+   "q": "12",
+   "t": "Lok Adalats: role and advantages",
+   "m": 10,
+   "k": "th",
+   "topic": "adr"
+  },
+  {
+   "s": "2022-12",
+   "q": "13",
+   "t": "Grahak Suvidha Kendras: role and importance",
+   "m": 15,
+   "k": "th",
+   "topic": "nch-gsk"
+  },
+  {
+   "s": "2022-12",
+   "q": "14",
+   "t": "Activities of consumer organisations",
+   "m": 15,
+   "k": "th",
+   "topic": "vco"
+  },
+  {
+   "s": "2022-12",
+   "q": "15",
+   "t": "Consumers International's activities and Indian consumers",
+   "m": 15,
+   "k": "th",
+   "topic": "international"
+  },
+  {
+   "s": "2022-12",
+   "q": "16",
+   "t": "Lokpal: role, structure and jurisdiction",
+   "m": 15,
+   "k": "th",
+   "topic": "ombudsman"
+  },
+  {
+   "s": "2023-06",
+   "q": "1",
+   "t": "Media awareness",
+   "m": 5,
+   "k": "th",
+   "topic": "advertising"
+  },
+  {
+   "s": "2023-06",
+   "q": "2",
+   "t": "Direct consumer information centre",
+   "m": 5,
+   "k": "th",
+   "topic": "govt"
+  },
+  {
+   "s": "2023-06",
+   "q": "3",
+   "t": "Grahak Suvidha Kendra",
+   "m": 5,
+   "k": "th",
+   "topic": "nch-gsk"
+  },
+  {
+   "s": "2023-06",
+   "q": "4",
+   "t": "Public advocacy",
+   "m": 5,
+   "k": "th",
+   "topic": "campaign"
+  },
+  {
+   "s": "2023-06",
+   "q": "5",
+   "t": "District Consumer Protection Council",
+   "m": 5,
+   "k": "th",
+   "topic": "cpa"
+  },
+  {
+   "s": "2023-06",
+   "q": "6",
+   "t": "ASCI Code: salient features",
+   "m": 10,
+   "k": "th",
+   "topic": "advertising"
+  },
+  {
+   "s": "2023-06",
+   "q": "7",
+   "t": "Functions of CII",
+   "m": 10,
+   "k": "th",
+   "topic": "industry"
+  },
+  {
+   "s": "2023-06",
+   "q": "8",
+   "t": "VCOs and the Consumer Protection Act",
+   "m": 10,
+   "k": "th",
+   "topic": "vco"
+  },
+  {
+   "s": "2023-06",
+   "q": "9",
+   "t": "Essentials of a campaign and advocacy programme",
+   "m": 10,
+   "k": "th",
+   "topic": "campaign"
+  },
+  {
+   "s": "2023-06",
+   "q": "10",
+   "t": "Alternative view of managerial processes",
+   "m": 10,
+   "k": "th",
+   "topic": "organisation"
+  },
+  {
+   "s": "2023-06",
+   "q": "11",
+   "t": "Importance of Lokpal",
+   "m": 10,
+   "k": "th",
+   "topic": "ombudsman"
+  },
+  {
+   "s": "2023-06",
+   "q": "12",
+   "t": "Mediation: types, advantages and stages",
+   "m": 10,
+   "k": "th",
+   "topic": "adr"
+  },
+  {
+   "s": "2023-06",
+   "q": "13",
+   "t": "Jago Grahak Jago campaign",
+   "m": 15,
+   "k": "th",
+   "topic": "govt"
+  },
+  {
+   "s": "2023-06",
+   "q": "14",
+   "t": "Making an organisation viable and effective",
+   "m": 15,
+   "k": "th",
+   "topic": "organisation"
+  },
+  {
+   "s": "2023-06",
+   "q": "15",
+   "t": "Consumer Interpol: origin and growth",
+   "m": 15,
+   "k": "th",
+   "topic": "international"
+  },
+  {
+   "s": "2023-06",
+   "q": "16",
+   "t": "Stages of resolving issues at the National Consumer Helpline",
+   "m": 15,
+   "k": "th",
+   "topic": "nch-gsk"
+  },
+  {
+   "s": "2023-12",
+   "q": "1",
+   "t": "Objectives of advertisement",
+   "m": 5,
+   "k": "th",
+   "topic": "advertising"
+  },
+  {
+   "s": "2023-12",
+   "q": "2",
+   "t": "Grahak Suvidha Kendras",
+   "m": 5,
+   "k": "th",
+   "topic": "nch-gsk"
+  },
+  {
+   "s": "2023-12",
+   "q": "3",
+   "t": "Voluntary consumer organisation",
+   "m": 5,
+   "k": "th",
+   "topic": "vco"
+  },
+  {
+   "s": "2023-12",
+   "q": "4",
+   "t": "Functions of the Ombudsman",
+   "m": 5,
+   "k": "th",
+   "topic": "ombudsman"
+  },
+  {
+   "s": "2023-12",
+   "q": "5",
+   "t": "Characteristics of NGOs",
+   "m": 5,
+   "k": "th",
+   "topic": "vco"
+  },
+  {
+   "s": "2023-12",
+   "q": "6",
+   "t": "Laws governing advertisement",
+   "m": 10,
+   "k": "th",
+   "topic": "advertising"
+  },
+  {
+   "s": "2023-12",
+   "q": "7",
+   "t": "Bureau of Indian Standards",
+   "m": 10,
+   "k": "th",
+   "topic": "standards"
+  },
+  {
+   "s": "2023-12",
+   "q": "8",
+   "t": "Functions of the National Consumer Helpline",
+   "m": 10,
+   "k": "th",
+   "topic": "nch-gsk"
+  },
+  {
+   "s": "2023-12",
+   "q": "9",
+   "t": "SEBI Ombudsman: grounds and procedure",
+   "m": 10,
+   "k": "th",
+   "topic": "ombudsman"
+  },
+  {
+   "s": "2023-12",
+   "q": "10",
+   "t": "Strategies for campaign and advocacy",
+   "m": 10,
+   "k": "th",
+   "topic": "campaign"
+  },
+  {
+   "s": "2023-12",
+   "q": "11",
+   "t": "Consumers International",
+   "m": 10,
+   "k": "th",
+   "topic": "international"
+  },
+  {
+   "s": "2023-12",
+   "q": "12",
+   "t": "Arbitration and the arbitrator",
+   "m": 10,
+   "k": "th",
+   "topic": "adr"
+  },
+  {
+   "s": "2023-12",
+   "q": "13(a)",
+   "t": "Note: Consumer Welfare Fund",
+   "m": 7.5,
+   "k": "th",
+   "topic": "govt"
+  },
+  {
+   "s": "2023-12",
+   "q": "13(b)",
+   "t": "Note: jurisdiction of consumer forums",
+   "m": 7.5,
+   "k": "th",
+   "topic": "cpa"
+  },
+  {
+   "s": "2023-12",
+   "q": "14(a)",
+   "t": "Note: functions of FICCI",
+   "m": 7.5,
+   "k": "th",
+   "topic": "industry"
+  },
+  {
+   "s": "2023-12",
+   "q": "14(b)",
+   "t": "Note: functions of CII",
+   "m": 7.5,
+   "k": "th",
+   "topic": "industry"
+  },
+  {
+   "s": "2023-12",
+   "q": "15",
+   "t": "Telecom ombudsman in India",
+   "m": 15,
+   "k": "th",
+   "topic": "ombudsman"
+  },
+  {
+   "s": "2023-12",
+   "q": "16",
+   "t": "Voluntary consumer organisations and consumerism",
+   "m": 15,
+   "k": "th",
+   "topic": "vco"
+  },
+  {
+   "s": "2024-06",
+   "q": "1",
+   "t": "Role of NGOs in consumer protection",
+   "m": 5,
+   "k": "th",
+   "topic": "vco"
+  },
+  {
+   "s": "2024-06",
+   "q": "2",
+   "t": "Misleading advertisement",
+   "m": 5,
+   "k": "th",
+   "topic": "advertising"
+  },
+  {
+   "s": "2024-06",
+   "q": "3",
+   "t": "Allied organisations of FICCI",
+   "m": 5,
+   "k": "th",
+   "topic": "industry"
+  },
+  {
+   "s": "2024-06",
+   "q": "4",
+   "t": "Basic requirements for an organisation",
+   "m": 5,
+   "k": "th",
+   "topic": "organisation"
+  },
+  {
+   "s": "2024-06",
+   "q": "5",
+   "t": "SEBI Ombudsman: powers and functions",
+   "m": 5,
+   "k": "th",
+   "topic": "ombudsman"
+  },
+  {
+   "s": "2024-06",
+   "q": "6",
+   "t": "Role of the National Consumer Helpline",
+   "m": 10,
+   "k": "th",
+   "topic": "nch-gsk"
+  },
+  {
+   "s": "2024-06",
+   "q": "7",
+   "t": "Conciliation vs mediation",
+   "m": 10,
+   "k": "th",
+   "topic": "adr"
+  },
+  {
+   "s": "2024-06",
+   "q": "8",
+   "t": "Campaign and advocacy; types of advocacy",
+   "m": 10,
+   "k": "th",
+   "topic": "campaign"
+  },
+  {
+   "s": "2024-06",
+   "q": "9",
+   "t": "Confederation of Indian Industry",
+   "m": 10,
+   "k": "th",
+   "topic": "industry"
+  },
+  {
+   "s": "2024-06",
+   "q": "10",
+   "t": "Consumer rights and their expansion",
+   "m": 10,
+   "k": "th",
+   "topic": "cpa"
+  },
+  {
+   "s": "2024-06",
+   "q": "11",
+   "t": "Consumer Interpol and its aims",
+   "m": 10,
+   "k": "th",
+   "topic": "international"
+  },
+  {
+   "s": "2024-06",
+   "q": "12",
+   "t": "Strategies for campaign and advocacy",
+   "m": 10,
+   "k": "th",
+   "topic": "campaign"
+  },
+  {
+   "s": "2024-06",
+   "q": "13",
+   "t": "Consumer Welfare Fund and eligibility",
+   "m": 15,
+   "k": "th",
+   "topic": "govt"
+  },
+  {
+   "s": "2024-06",
+   "q": "14",
+   "t": "Voluntary consumer organisations; selected examples",
+   "m": 15,
+   "k": "th",
+   "topic": "vco"
+  },
+  {
+   "s": "2024-06",
+   "q": "15",
+   "t": "Lok Adalats; Lok Adalat vs mediation",
+   "m": 15,
+   "k": "th",
+   "topic": "adr"
+  },
+  {
+   "s": "2024-06",
+   "q": "16(a)",
+   "t": "Note: impact of advertisements on consumers",
+   "m": 7.5,
+   "k": "th",
+   "topic": "advertising"
+  },
+  {
+   "s": "2024-06",
+   "q": "16(b)",
+   "t": "Note: need for media and its objectives",
+   "m": 7.5,
+   "k": "th",
+   "topic": "advertising"
+  },
+  {
+   "s": "2024-12",
+   "q": "1",
+   "t": "ASCI Code",
+   "m": 5,
+   "k": "th",
+   "topic": "advertising"
+  },
+  {
+   "s": "2024-12",
+   "q": "2",
+   "t": "Services of FICCI",
+   "m": 5,
+   "k": "th",
+   "topic": "industry"
+  },
+  {
+   "s": "2024-12",
+   "q": "3",
+   "t": "Meaning of arbitration",
+   "m": 5,
+   "k": "th",
+   "topic": "adr"
+  },
+  {
+   "s": "2024-12",
+   "q": "4",
+   "t": "Types of advocacy",
+   "m": 5,
+   "k": "th",
+   "topic": "campaign"
+  },
+  {
+   "s": "2024-12",
+   "q": "5",
+   "t": "Aims of Consumer Interpol",
+   "m": 5,
+   "k": "th",
+   "topic": "international"
+  },
+  {
+   "s": "2024-12",
+   "q": "6",
+   "t": "Department of Consumer Affairs in grievance redressal",
+   "m": 10,
+   "k": "th",
+   "topic": "govt"
+  },
+  {
+   "s": "2024-12",
+   "q": "7",
+   "t": "ASSOCHAM in consumer grievance redressal",
+   "m": 10,
+   "k": "th",
+   "topic": "industry"
+  },
+  {
+   "s": "2024-12",
+   "q": "8",
+   "t": "Do's and don'ts for a consumer activist",
+   "m": 10,
+   "k": "th",
+   "topic": "vco"
+  },
+  {
+   "s": "2024-12",
+   "q": "9",
+   "t": "Institution of Ombudsman: importance and position",
+   "m": 10,
+   "k": "th",
+   "topic": "ombudsman"
+  },
+  {
+   "s": "2024-12",
+   "q": "10",
+   "t": "Charter for consumer action (Consumers International)",
+   "m": 10,
+   "k": "th",
+   "topic": "international"
+  },
+  {
+   "s": "2024-12",
+   "q": "11",
+   "t": "Elements of the managerial process",
+   "m": 10,
+   "k": "th",
+   "topic": "organisation"
+  },
+  {
+   "s": "2024-12",
+   "q": "12",
+   "t": "Information and publicity in advocacy",
+   "m": 10,
+   "k": "th",
+   "topic": "campaign"
+  },
+  {
+   "s": "2024-12",
+   "q": "13",
+   "t": "Negative effects of advertisement",
+   "m": 15,
+   "k": "th",
+   "topic": "advertising"
+  },
+  {
+   "s": "2024-12",
+   "q": "14",
+   "t": "National Consumer Helpline: nature and functions",
+   "m": 15,
+   "k": "th",
+   "topic": "nch-gsk"
+  },
+  {
+   "s": "2024-12",
+   "q": "15",
+   "t": "Functions of voluntary consumer organisations",
+   "m": 15,
+   "k": "th",
+   "topic": "vco"
+  },
+  {
+   "s": "2024-12",
+   "q": "16",
+   "t": "Steps for an effective campaign and advocacy programme",
+   "m": 15,
+   "k": "th",
+   "topic": "campaign"
+  },
+  {
+   "s": "2025-06",
+   "q": "1",
+   "t": "Enhanced role of media",
+   "m": 5,
+   "k": "th",
+   "topic": "advertising"
+  },
+  {
+   "s": "2025-06",
+   "q": "2",
+   "t": "Structure of Lokpal",
+   "m": 5,
+   "k": "th",
+   "topic": "ombudsman"
+  },
+  {
+   "s": "2025-06",
+   "q": "3",
+   "t": "Consumer Guidance Society of India",
+   "m": 5,
+   "k": "th",
+   "topic": "vco"
+  },
+  {
+   "s": "2025-06",
+   "q": "4",
+   "t": "Law on arbitration",
+   "m": 5,
+   "k": "th",
+   "topic": "adr"
+  },
+  {
+   "s": "2025-06",
+   "q": "5",
+   "t": "Aims of Consumer Interpol",
+   "m": 5,
+   "k": "th",
+   "topic": "international"
+  },
+  {
+   "s": "2025-06",
+   "q": "6",
+   "t": "Bureau of Indian Standards: activities and importance",
+   "m": 10,
+   "k": "th",
+   "topic": "standards"
+  },
+  {
+   "s": "2025-06",
+   "q": "7",
+   "t": "Jago Grahak Jago campaign",
+   "m": 10,
+   "k": "th",
+   "topic": "govt"
+  },
+  {
+   "s": "2025-06",
+   "q": "8",
+   "t": "Guidelines for NGOs holding public meetings",
+   "m": 10,
+   "k": "th",
+   "topic": "organisation"
+  },
+  {
+   "s": "2025-06",
+   "q": "9",
+   "t": "Voluntary consumer organisations under the Consumer Protection Act",
+   "m": 10,
+   "k": "th",
+   "topic": "vco"
+  },
+  {
+   "s": "2025-06",
+   "q": "10",
+   "t": "Indian perspective of the Ombudsman",
+   "m": 10,
+   "k": "th",
+   "topic": "ombudsman"
+  },
+  {
+   "s": "2025-06",
+   "q": "11",
+   "t": "Mediation vs conciliation",
+   "m": 10,
+   "k": "th",
+   "topic": "adr"
+  },
+  {
+   "s": "2025-06",
+   "q": "12",
+   "t": "Techniques of campaign and advocacy",
+   "m": 10,
+   "k": "th",
+   "topic": "campaign"
+  },
+  {
+   "s": "2025-06",
+   "q": "13",
+   "t": "Misleading advertisement under the Consumer Protection Act",
+   "m": 15,
+   "k": "th",
+   "topic": "advertising"
+  },
+  {
+   "s": "2025-06",
+   "q": "14",
+   "t": "Functions of Grahak Suvidha Kendras",
+   "m": 15,
+   "k": "th",
+   "topic": "nch-gsk"
+  },
+  {
+   "s": "2025-06",
+   "q": "15",
+   "t": "Basic requirements for a consumer organisation",
+   "m": 15,
+   "k": "th",
+   "topic": "organisation"
+  },
+  {
+   "s": "2025-06",
+   "q": "16",
+   "t": "Activities and functions of Consumers International",
+   "m": 15,
+   "k": "th",
+   "topic": "international"
+  },
+  {
+   "s": "2025-12",
+   "q": "1",
+   "t": "Media and society",
+   "m": 5,
+   "k": "th",
+   "topic": "advertising"
+  },
+  {
+   "s": "2025-12",
+   "q": "2",
+   "t": "Labelling",
+   "m": 5,
+   "k": "th",
+   "topic": "standards"
+  },
+  {
+   "s": "2025-12",
+   "q": "3",
+   "t": "Consumer Welfare Fund",
+   "m": 5,
+   "k": "th",
+   "topic": "govt"
+  },
+  {
+   "s": "2025-12",
+   "q": "4",
+   "t": "Ombudsman",
+   "m": 5,
+   "k": "th",
+   "topic": "ombudsman"
+  },
+  {
+   "s": "2025-12",
+   "q": "5",
+   "t": "Arbitration",
+   "m": 5,
+   "k": "th",
+   "topic": "adr"
+  },
+  {
+   "s": "2025-12",
+   "q": "6",
+   "t": "Department of Consumer Affairs against misleading ads",
+   "m": 10,
+   "k": "th",
+   "topic": "advertising"
+  },
+  {
+   "s": "2025-12",
+   "q": "7",
+   "t": "Objectives of consumer organisations",
+   "m": 10,
+   "k": "th",
+   "topic": "vco"
+  },
+  {
+   "s": "2025-12",
+   "q": "8",
+   "t": "Lokpal against corruption",
+   "m": 10,
+   "k": "th",
+   "topic": "ombudsman"
+  },
+  {
+   "s": "2025-12",
+   "q": "9",
+   "t": "Conciliation vs mediation",
+   "m": 10,
+   "k": "th",
+   "topic": "adr"
+  },
+  {
+   "s": "2025-12",
+   "q": "10",
+   "t": "Information and publicity in campaigns",
+   "m": 10,
+   "k": "th",
+   "topic": "campaign"
+  },
+  {
+   "s": "2025-12",
+   "q": "11",
+   "t": "Consumer Coordination Council",
+   "m": 10,
+   "k": "th",
+   "topic": "vco"
+  },
+  {
+   "s": "2025-12",
+   "q": "12",
+   "t": "Aims of Consumer Interpol",
+   "m": 10,
+   "k": "th",
+   "topic": "international"
+  },
+  {
+   "s": "2025-12",
+   "q": "13",
+   "t": "Positive and negative impacts of advertisement",
+   "m": 15,
+   "k": "th",
+   "topic": "advertising"
+  },
+  {
+   "s": "2025-12",
+   "q": "14",
+   "t": "How Indian standards are made",
+   "m": 15,
+   "k": "th",
+   "topic": "standards"
+  },
+  {
+   "s": "2025-12",
+   "q": "15",
+   "t": "Functions and role of voluntary consumer organisations",
+   "m": 15,
+   "k": "th",
+   "topic": "vco"
+  },
+  {
+   "s": "2025-12",
+   "q": "16",
+   "t": "Grahak Suvidha Kendras and their role",
+   "m": 15,
+   "k": "th",
+   "topic": "nch-gsk"
+  },
+  {
+   "s": "2026-06",
+   "q": "1",
+   "t": "Consumer education",
+   "m": 5,
+   "k": "th",
+   "topic": "cpa"
+  },
+  {
+   "s": "2026-06",
+   "q": "2",
+   "t": "Consumer clubs",
+   "m": 5,
+   "k": "th",
+   "topic": "vco"
+  },
+  {
+   "s": "2026-06",
+   "q": "3",
+   "t": "Consumerism",
+   "m": 5,
+   "k": "th",
+   "topic": "cpa"
+  },
+  {
+   "s": "2026-06",
+   "q": "4",
+   "t": "Lok Adalat",
+   "m": 5,
+   "k": "th",
+   "topic": "adr"
+  },
+  {
+   "s": "2026-06",
+   "q": "5",
+   "t": "Consumer Interpol",
+   "m": 5,
+   "k": "th",
+   "topic": "international"
+  },
+  {
+   "s": "2026-06",
+   "q": "6",
+   "t": "Advertising Standards Council of India",
+   "m": 10,
+   "k": "th",
+   "topic": "advertising"
+  },
+  {
+   "s": "2026-06",
+   "q": "7",
+   "t": "Bureau of Indian Standards Act 2016",
+   "m": 10,
+   "k": "th",
+   "topic": "standards"
+  },
+  {
+   "s": "2026-06",
+   "q": "8",
+   "t": "Functions of FICCI",
+   "m": 10,
+   "k": "th",
+   "topic": "industry"
+  },
+  {
+   "s": "2026-06",
+   "q": "9",
+   "t": "Requirements of an efficient consumer organisation",
+   "m": 10,
+   "k": "th",
+   "topic": "organisation"
+  },
+  {
+   "s": "2026-06",
+   "q": "10",
+   "t": "Rationale for Lokpal",
+   "m": 10,
+   "k": "th",
+   "topic": "ombudsman"
+  },
+  {
+   "s": "2026-06",
+   "q": "11",
+   "t": "Conciliation as ADR",
+   "m": 10,
+   "k": "th",
+   "topic": "adr"
+  },
+  {
+   "s": "2026-06",
+   "q": "12",
+   "t": "Consumers International's coordination with other agencies",
+   "m": 10,
+   "k": "th",
+   "topic": "international"
+  },
+  {
+   "s": "2026-06",
+   "q": "13",
+   "t": "Consumer Welfare Fund",
+   "m": 15,
+   "k": "th",
+   "topic": "govt"
+  },
+  {
+   "s": "2026-06",
+   "q": "14",
+   "t": "Do's and don'ts for a consumer activist",
+   "m": 15,
+   "k": "th",
+   "topic": "vco"
+  },
+  {
+   "s": "2026-06",
+   "q": "15",
+   "t": "National Consumer Helpline: role and responsibilities",
+   "m": 15,
+   "k": "th",
+   "topic": "nch-gsk"
+  },
+  {
+   "s": "2026-06",
+   "q": "16",
+   "t": "Grahak Suvidha Kendras and their role",
+   "m": 15,
+   "k": "th",
+   "topic": "nch-gsk"
+  }
+ ]
+}
