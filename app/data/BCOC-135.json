@@ -1,0 +1,1537 @@
+{
+ "code": "BCOC-135",
+ "title": "Company Law",
+ "pattern": {
+  "time": "3 hours",
+  "marks": 100,
+  "questions": 9,
+  "attempt": 5,
+  "each": 20,
+  "summary": "9 questions, answer any 5, each carries 20 marks. All theory under the Companies Act, 2013. Q9 is always short notes (any two of four, or any four of six)."
+ },
+ "blocksOfficial": false,
+ "sessions": [
+  "2022-06",
+  "2022-12",
+  "2023-06",
+  "2023-12",
+  "2024-06",
+  "2024-12",
+  "2025-06",
+  "2025-12",
+  "2026-06"
+ ],
+ "sessionNotes": {},
+ "examTips": {
+  "choosing": [
+   "The company secretary, directors' liabilities, the Memorandum or Articles, and membership appear in almost every paper — often word for word.",
+   "The June 2025 and June 2026 papers were nearly identical, so recent papers are the best practice.",
+   "Quote the section of the Companies Act, 2013 and one case (Salomon, Turquand, Ashbury) — it lifts a law answer."
+  ]
+ },
+ "blocks": [
+  {
+   "no": 1,
+   "title": "Company, Types & Promotion"
+  },
+  {
+   "no": 2,
+   "title": "Memorandum & Articles"
+  },
+  {
+   "no": 3,
+   "title": "Prospectus & Share Capital"
+  },
+  {
+   "no": 4,
+   "title": "Membership & Transfer"
+  },
+  {
+   "no": 5,
+   "title": "Management: Directors & Secretary"
+  },
+  {
+   "no": 6,
+   "title": "Meetings"
+  },
+  {
+   "no": 7,
+   "title": "Accounts & Audit"
+  },
+  {
+   "no": 8,
+   "title": "Winding Up"
+  }
+ ],
+ "topics": [
+  {
+   "id": "secretary",
+   "name": "Company Secretary",
+   "block": 5,
+   "kind": "theory",
+   "summary": "Who a company secretary is, appointment and removal, position, duties, and statutory, contractual and criminal liabilities.",
+   "points": [
+    "Company secretary (Sec 2(24)): a member of the Institute of Company Secretaries of India appointed by the company to perform the functions of a secretary.",
+    "Appointment (Sec 203): a whole-time company secretary is key managerial personnel (KMP), compulsory for listed companies and public companies with paid-up capital of ₹10 crore or more. Appointed by a board resolution setting the terms; filed with the Registrar. Removal also by board resolution, following the terms of appointment.",
+    "Position: an officer and employee of the company, KMP, and an 'officer in default' for compliance failures; not an agent who can bind the company in contracts beyond authority.",
+    "Duties (Sec 205): report to the board on compliance with the Act and other laws; ensure secretarial standards are followed; advise directors on governance; convene board and general meetings, draft notices and minutes; maintain statutory registers; file returns and forms with the Registrar; secretarial audit support.",
+    "Statutory liabilities: penalties as officer in default for not filing returns, not keeping registers and minutes, false statements (Sec 448), fraud (Sec 447), failure to comply with provisions on meetings, share transfers and dividends.",
+    "Contractual liabilities: to the company for negligence, breach of the service contract, secret profits or misuse of position and confidential information.",
+    "Criminal liability: imprisonment and fine where offences such as fraud, falsification of books or false returns are proved."
+   ],
+   "frame": "Definition → appointment → duties or liabilities as headings with the section number → conclusion.",
+   "mistakes": [
+    "Mixing up the company secretary's duties (Sec 205) with the directors' duties (Sec 166)."
+   ]
+  },
+  {
+   "id": "directors",
+   "name": "Directors & Corporate Governance",
+   "block": 5,
+   "kind": "theory",
+   "summary": "Appointment, qualifications and disqualifications, legal position, duties and liabilities of directors, removal, managerial remuneration, audit committee, insider trading and whistle blowing.",
+   "points": [
+    "Director (Sec 2(34)): a person appointed to the board. Only an individual with a Director Identification Number (DIN) who has consented in writing can be appointed. Minimum: 3 in a public company, 2 in a private company, 1 in a one-person company; maximum 15 (more by special resolution); at least one resident director.",
+    "Disqualifications (Sec 164): unsound mind; undischarged insolvent; convicted and sentenced to 6 months or more (for 5 years after release; 7 years or more — never); disqualified by court order; calls unpaid for 6 months; convicted of a related-party offence; no DIN; director of a company that failed to file financial statements or annual returns for 3 years.",
+    "Legal position: agents of the company, trustees of its money and property, officers, and in some cases employees — best described as fiduciaries.",
+    "Duties (Sec 166): act according to the articles; act in good faith for members, employees, community and environment; use due care, skill and independent judgement; avoid conflict of interest; make no undue gain; not assign the office.",
+    "Liabilities — to the company: acts beyond powers, breach of duty, negligence, secret profits, misfeasance. To third parties: misstatement in prospectus, personal guarantees, acting beyond authority. Criminal: fraud (Sec 447), false statements (Sec 448), other offences under the Act.",
+    "Removal (Sec 169): ordinary resolution with special notice; the director must be given a hearing.",
+    "Managerial remuneration (Sec 197, public companies): total up to 11% of net profits; one managing or whole-time director up to 5%, all of them up to 10%; non-executive directors up to 1% (3% if there is no executive director). More needs a special resolution. Sitting fees (up to ₹1 lakh a meeting) and reimbursement of expenses are not counted.",
+    "Audit committee (Sec 177): in listed and certain public companies; at least 3 directors, majority independent, majority financially literate. Role: recommend auditors, review financial statements and audit, approve related-party transactions, run the vigil mechanism.",
+    "Insider trading: dealing in securities using unpublished price-sensitive information — illegal under SEBI (Prohibition of Insider Trading) Regulations, 2015 because it cheats other investors and destroys market confidence. Whistle blowing: a vigil mechanism (Sec 177(9)) lets directors and employees report genuine concerns without victimisation."
+   ],
+   "frame": "Definition → headings with section numbers → one case or example → conclusion.",
+   "mistakes": [
+    "Quoting the old 1956 Act section numbers — use the Companies Act, 2013."
+   ]
+  },
+  {
+   "id": "meetings",
+   "name": "Company Meetings & Resolutions",
+   "block": 6,
+   "kind": "theory",
+   "summary": "Kinds of meetings, AGM and EGM, requisites of a valid meeting, notice, quorum, chairman, proxy, board meetings, and ordinary and special resolutions.",
+   "points": [
+    "Kinds: shareholders' meetings (annual general meeting, extraordinary general meeting, class meetings), board and committee meetings, creditors' meetings.",
+    "AGM (Sec 96): every company except a one-person company; first AGM within 9 months of the end of the first financial year, later ones within 6 months of year-end and not more than 15 months apart; in business hours on a working day at the registered office or in the same city. Ordinary business: financial statements, dividend, directors retiring by rotation, auditors.",
+    "EGM (Sec 100): called by the board, or on requisition by members holding at least one-tenth of paid-up capital; if the board does not act within 21 days, the requisitionists may call it within 3 months; the Tribunal can also order one (Sec 98).",
+    "Valid meeting: called by proper authority, proper notice (21 clear days, shorter with consent — Sec 101) with an explanatory statement for special business (Sec 102), quorum, a chairman, agenda, resolutions passed properly, minutes kept.",
+    "Quorum (Sec 103): private company 2 members; public company 5, 15 or 30 members depending on whether it has up to 1,000, up to 5,000 or more members. No quorum within half an hour: the meeting is adjourned to the same day next week (or as the board decides); a requisitioned meeting is cancelled.",
+    "Chairman (Sec 104): elected by members present; conducts the meeting, keeps order, decides points of order, may have a casting vote under the articles.",
+    "Proxy (Sec 105): a person appointed by a member to attend and vote on a poll; cannot speak; one proxy for up to 50 members and 10% of capital; form lodged 48 hours before the meeting.",
+    "Resolutions: ordinary (simple majority); special (votes for at least three times votes against — Sec 114), e.g. altering memorandum or articles, changing name, reducing capital, buyback above 10%, sweat equity, voluntary winding up; special notice (Sec 115) for removing a director or auditor.",
+    "Board meetings (Sec 173): first within 30 days of incorporation, then at least 4 a year with no more than 120 days between them; 7 days' notice; quorum one-third or 2 directors, whichever is higher; video conferencing allowed."
+   ],
+   "frame": "Meaning → rules as headed points with section numbers → conclusion.",
+   "mistakes": []
+  },
+  {
+   "id": "shares",
+   "name": "Share Capital, Shares & Debentures",
+   "block": 3,
+   "kind": "theory",
+   "summary": "Types of shares, preference shares and their redemption, DVR shares, sweat equity, premium, rights and bonus issues, allotment, buyback, forfeiture, share vs debenture and stock, debentures.",
+   "points": [
+    "Share (Sec 2(84)): a share in the capital of a company. Types (Sec 43): equity shares — with voting rights, or with differential rights as to dividend or voting (DVR) — and preference shares.",
+    "Preference shares carry a preferential right to dividend and repayment of capital. Types: cumulative/non-cumulative, participating/non-participating, convertible/non-convertible, redeemable. Irredeemable preference shares cannot be issued; redemption within 20 years (30 for infrastructure).",
+    "Redemption (Sec 55): only fully paid shares; out of profits available for dividend (transferring an equal amount to a capital redemption reserve) or the proceeds of a fresh issue; premium on redemption from profits or securities premium.",
+    "Non-voting shares: a company cannot issue equity shares with no vote, but may issue DVR shares with lower voting rights under the rules; preference shares vote only on matters affecting them or when dividend is unpaid.",
+    "Sweat equity (Sec 54): shares issued to directors or employees at a discount or for know-how, intellectual property or value addition — needs a special resolution, a 3-year lock-in and is capped yearly.",
+    "Premium (Sec 52): excess over face value goes to a securities premium account; used for fully paid bonus shares, writing off preliminary and issue expenses, premium on redemption, buyback.",
+    "Rights issue (Sec 62): new shares offered to existing shareholders in proportion, for payment, renounceable. Bonus issue (Sec 63): free fully paid shares from reserves.",
+    "Allotment: acceptance of an application. General rules — by proper authority (the board), within reasonable time, communicated, absolute and unconditional. Statutory rules (Sec 39) — minimum subscription received within 30 days, application money at least 5% of face value, refund if not received, return of allotment filed; share certificates within 2 months (Sec 56).",
+    "Buyback (Sec 68): authorised by articles; special resolution (board resolution for up to 10%); up to 25% of paid-up capital and free reserves; from free reserves, securities premium or a different kind of issue; debt–equity ratio no more than 2:1 afterwards; fully paid shares; completed within a year; bought shares extinguished.",
+    "Forfeiture: cancelling shares for non-payment of calls, if the articles allow; 14 days' notice, board resolution; the member loses the shares and membership but stays liable for unpaid calls; the company may reissue them.",
+    "Share vs debenture: owner vs creditor; dividend (only from profits) vs fixed interest; voting vs no voting; repaid last vs first; debentures can be secured by a charge. Share vs stock: stock is consolidated fully paid shares, transferable in fractions, without distinctive numbers (Sec 61).",
+    "Debentures (Sec 2(30)): instruments acknowledging a debt; types — secured/unsecured, redeemable, convertible/non-convertible, registered/bearer; a debenture trustee is needed for a public issue."
+   ],
+   "frame": "Meaning → rules or types as headings with the section number → a table for any 'distinguish' part → conclusion.",
+   "mistakes": [
+    "Saying preference shares can be irredeemable — Sec 55 forbids it."
+   ]
+  },
+  {
+   "id": "moa",
+   "name": "Memorandum of Association & Ultra Vires",
+   "block": 2,
+   "kind": "theory",
+   "summary": "Meaning and purpose of the memorandum, its clauses, alteration of name and object clauses, binding effect, constructive notice and the doctrine of ultra vires.",
+   "points": [
+    "Memorandum of Association: the company's charter — defines its name, domicile, objects, liability and capital, and its relations with outsiders.",
+    "Clauses (Sec 4): name (ending 'Limited' or 'Private Limited'); registered office (the state); objects; liability; capital; association or subscription; nominee clause for a one-person company.",
+    "Name change (Sec 13): special resolution and Central Government (Registrar) approval, except when only 'Private' is added or deleted; new certificate of incorporation. Effects: the company stays the same legal person — rights, obligations and legal proceedings continue.",
+    "Object clause change: special resolution; if money raised by prospectus is unused, dissenting shareholders get an exit and the change is advertised; filed with the Registrar.",
+    "Binding effect (Sec 10): memorandum and articles bind the company and members as if signed by each member; they do not bind outsiders.",
+    "Constructive notice: the memorandum and articles are public documents, so outsiders are deemed to know their contents.",
+    "Doctrine of ultra vires: an act beyond the objects in the memorandum is void and cannot be ratified even by all members (Ashbury Railway Carriage v Riche, 1875). Consequences: the act is void; members can get an injunction; directors are personally liable; the company cannot sue or be sued on it. Example: a railway-carriage company financing a railway line."
+   ],
+   "frame": "Meaning → clauses as a numbered list → alteration or doctrine with a case → conclusion.",
+   "mistakes": []
+  },
+  {
+   "id": "nature",
+   "name": "Company: Meaning, Features & Corporate Veil",
+   "block": 1,
+   "kind": "theory",
+   "summary": "Meaning and characteristics of a company, the company as an artificial person, lifting the corporate veil, illegal associations and company vs LLP.",
+   "points": [
+    "Company (Sec 2(20)): a company incorporated under the Companies Act, 2013 or an earlier companies law.",
+    "Characteristics: incorporated association; separate legal entity (Salomon v Salomon, 1897); artificial person that acts through directors; perpetual succession; limited liability; transferable shares; separate property; can sue and be sued; common seal now optional.",
+    "Corporate veil: the separation between the company and its members. It is lifted — members are looked at — by statute (misstatement in prospectus, fraudulent conduct of business, carrying on business with fewer than the minimum members under Sec 3A) and by courts (fraud or sham to evade obligations — Gilford Motor v Horne; tax evasion; enemy character — Daimler v Continental Tyre; agency; public interest).",
+    "Illegal association (Sec 464): an association or partnership of more than the prescribed number (up to 100; now 50 by rules) formed for gain without registering as a company. Consequences: it cannot sue or make valid contracts, members are personally liable, and members are fined.",
+    "Company vs LLP: a company is governed by the Companies Act 2013, has shareholders and directors, and heavier compliance; a limited liability partnership is governed by the LLP Act 2008 and its LLP agreement, has partners and designated partners, and lighter compliance — both are separate legal entities with limited liability."
+   ],
+   "frame": "Definition → features as headings with a case → conclusion. For 'comment' questions, agree and explain with Salomon's case.",
+   "mistakes": []
+  },
+  {
+   "id": "aoa",
+   "name": "Articles of Association & Indoor Management",
+   "block": 2,
+   "kind": "theory",
+   "summary": "Meaning, purpose and contents of the articles, their alteration and its limits, and the doctrine of indoor management with its exceptions.",
+   "points": [
+    "Articles of Association (Sec 5): the internal rules for managing the company — the relationship between the company and its members and among members. Model articles are in Table F.",
+    "Contents: share capital and rights, calls, transfer and transmission, forfeiture, meetings and voting, directors' powers and appointment, dividends, accounts, borrowing, winding up; entrenchment provisions if any.",
+    "Alteration (Sec 14): by special resolution. Limits: must not conflict with the Act or memorandum; must be legal and for the company's benefit (bona fide); cannot increase a member's liability without written consent; conversion of a public into a private company needs Tribunal approval.",
+    "Doctrine of indoor management (Royal British Bank v Turquand, 1856): outsiders dealing in good faith may assume the company's internal procedures have been followed.",
+    "Exceptions: the outsider knew of the irregularity; negligence or suspicious circumstances; forgery (Ruben v Great Fingall); act clearly beyond the officer's authority; the outsider is an insider (e.g. a director).",
+    "Indoor management protects outsiders; constructive notice protects the company."
+   ],
+   "frame": "Meaning → purpose/contents → doctrine with the Turquand case → exceptions as a list → conclusion.",
+   "mistakes": []
+  },
+  {
+   "id": "types",
+   "name": "Types of Companies; Public vs Private",
+   "block": 1,
+   "kind": "theory",
+   "summary": "Types of companies by incorporation, liability, control and ownership; public vs private companies, privileges of a private company, conversion; one-person company; company limited by guarantee.",
+   "points": [
+    "By incorporation: chartered, statutory (special Act, e.g. LIC) and registered companies. By liability: limited by shares, limited by guarantee (members promise to contribute a set amount on winding up — used by clubs, charities), unlimited. By control: holding and subsidiary, associate. By ownership: government company (51% or more held by government), foreign company.",
+    "Private company (Sec 2(68)): restricts transfer of shares, up to 200 members (excluding employees), cannot invite the public to subscribe; minimum 2 members and 2 directors; name ends in 'Private Limited'.",
+    "Public company: not private; minimum 7 members and 3 directors; shares freely transferable; can raise money from the public by prospectus.",
+    "Privileges of a private company: fewer members and directors, no prospectus, quorum of 2, no ceiling on managerial remuneration (Sec 197), relaxed rules on loans to directors and related parties, no need for independent directors in most cases.",
+    "Converting private to public: special resolution altering articles to remove the restrictions; raise members to 7 and directors to 3; change the name; file with the Registrar; issue a prospectus if raising money from the public.",
+    "One-person company (Sec 2(62)): one member, a natural person resident in India, with a nominee; '(OPC)' in the name; lighter compliance."
+   ],
+   "frame": "Classify in a chart → explain each type in a line → table for public vs private → conclusion.",
+   "mistakes": []
+  },
+  {
+   "id": "accounts",
+   "name": "Accounts, Dividend & Audit",
+   "block": 7,
+   "kind": "theory",
+   "summary": "Books of account and records, financial statements, dividend and interim dividend, auditors — appointment, disqualifications, rights, audit report, and e-filing.",
+   "points": [
+    "Books of account (Sec 128): kept at the registered office on accrual basis by double entry, showing cash received and paid, sales and purchases, assets and liabilities, and cost records where required; preserved for 8 years; directors can inspect. Responsible: managing director, whole-time director, CFO or person charged by the board. Default: imprisonment up to 1 year and/or fine ₹50,000–₹5 lakh.",
+    "Financial statements (Sec 2(40)): balance sheet, profit and loss account, cash flow statement, statement of changes in equity, and notes.",
+    "Dividend (Sec 123): only out of current or past profits after depreciation (or government money); deposited in a separate bank account within 5 days and paid within 30 days of declaration; unpaid dividend moved to an Unpaid Dividend Account, and after 7 years to the Investor Education and Protection Fund. Interim dividend: declared by the board during the year out of profits.",
+    "Auditors (Sec 139): first auditor by the board within 30 days; later at the AGM for 5 years. Cannot be appointed (Sec 141): a body corporate other than an LLP, an officer or employee, a partner or employee of an officer, a person indebted to the company beyond limits, relatives holding securities, those with business relationships, anyone auditing more than 20 companies, anyone convicted of fraud (for 10 years).",
+    "Rights of an auditor: access to books and vouchers at all times, to call for information and explanations, to attend general meetings and be heard, to receive notices, to remuneration.",
+    "Audit report (Sec 143): whether the statements give a true and fair view; information and explanations obtained; proper books kept; agreement with books; compliance with accounting standards; adverse remarks; directors' disqualification; internal financial controls; pending litigation; transfers to IEPF; CARO matters.",
+    "E-filing: documents filed online on the MCA21 portal with digital signatures — e.g. AOC-4 (financial statements), MGT-7 (annual return), DIR-12, INC forms."
+   ],
+   "frame": "Headings with section numbers → one line each → conclusion.",
+   "mistakes": []
+  },
+  {
+   "id": "membership",
+   "name": "Membership of a Company",
+   "block": 4,
+   "kind": "theory",
+   "summary": "Who is a member, member vs shareholder, who can become a member, modes of becoming a member, rights of members and cessation of membership.",
+   "points": [
+    "Member (Sec 2(55)): subscribers to the memorandum; persons who agree in writing and are entered in the register of members; beneficial owners in a depository.",
+    "Member vs shareholder: usually the same, but a subscriber is a member before shares are allotted; a guarantee company without share capital has members but no shareholders; the holder of a share warrant (old law) was a shareholder but not a member.",
+    "Who can be a member: any person competent to contract; a minor only through a guardian and for fully paid shares; a company; a Hindu undivided family through its karta; trustees; foreign nationals subject to FEMA; a partnership firm only in the names of partners.",
+    "Modes: subscribing to the memorandum, application and allotment, transfer, transmission, holding out (estoppel), taking qualification shares, beneficial ownership in a depository.",
+    "Rights: vote; receive dividend; receive notices and attend meetings; inspect registers and minutes; get copies of financial statements; transfer shares; rights shares; apply to the Tribunal for oppression and mismanagement (Sec 241); share surplus on winding up.",
+    "Cessation: transfer, transmission on death or insolvency, forfeiture, surrender, buyback, rescission of allotment, winding up."
+   ],
+   "frame": "Definition → headed points → conclusion.",
+   "mistakes": []
+  },
+  {
+   "id": "transfer",
+   "name": "Transfer & Transmission of Shares",
+   "block": 4,
+   "kind": "theory",
+   "summary": "Procedure for transfer, refusal to register, transfer vs transmission, blank transfer and forged transfer.",
+   "points": [
+    "Transfer: a voluntary act by the holder. Procedure (Sec 56): execute the instrument of transfer (Form SH-4), stamp it, lodge it with the company within 60 days with the share certificate; the board approves and enters it in the register of members; new certificate within one month. Demat shares move through the depository.",
+    "Refusal (Sec 58): a private company may refuse under its articles; a public company only for sufficient cause; notice of refusal within 30 days; appeal to the Tribunal.",
+    "Transmission: by operation of law on death, insolvency or lunacy; no instrument or stamp duty; proof such as a succession certificate or probate. Transfer vs transmission: voluntary vs by law; instrument and stamp duty vs none; transferor's liability ends vs estate stays liable.",
+    "Blank transfer: a signed transfer form with the transferee's name left blank, handed over with the certificate, often as security for a loan. Evils: stamp duty and tax evasion, speculation, the company does not know its real owners.",
+    "Forged transfer: a nullity — the true owner stays a member and must be restored to the register; the company may claim compensation from the person who lodged it; a person who bought on a certificate issued on a forged transfer may claim damages from the company (estoppel)."
+   ],
+   "frame": "Meaning → procedure as steps → table for transfer vs transmission → conclusion.",
+   "mistakes": []
+  },
+  {
+   "id": "promoter",
+   "name": "Promoter, Formation & Pre-incorporation Contracts",
+   "block": 1,
+   "kind": "theory",
+   "summary": "Who a promoter is, functions, legal position, duties and liabilities; formation and incorporation of a company; pre-incorporation contracts.",
+   "points": [
+    "Promoter (Sec 2(69)): named as such in the prospectus or annual return, or who controls the company's affairs, or on whose directions the board acts. Professionals acting in a professional capacity are not promoters.",
+    "Functions: conceive the idea, investigate feasibility, assemble people and resources, choose name and directors, prepare memorandum and articles, register the company, arrange capital.",
+    "Legal position: neither agent nor trustee of the company (it does not yet exist), but in a fiduciary position.",
+    "Duties: no secret profit, disclose any interest, act in good faith, make full disclosure in the prospectus.",
+    "Liabilities: account for secret profits; compensation for misstatement in the prospectus (Sec 35) and criminal liability (Sec 34); personal liability on pre-incorporation contracts; fraud (Sec 447).",
+    "Formation and incorporation: promotion → name reservation and filing (SPICe+ form with memorandum, articles and declarations) → certificate of incorporation, which is conclusive evidence of registration (Sec 7) → declaration for commencement of business within 180 days (Sec 10A).",
+    "Pre-incorporation contracts: made before incorporation; the company cannot ratify them (Kelner v Baxter) and the promoter is personally liable. Under the Specific Relief Act, 1963 (Sec 15(h), 19(e)) they can be enforced by or against the company if made for its purposes and accepted by it after incorporation."
+   ],
+   "frame": "Definition → functions or duties as headings → legal position with a case → conclusion.",
+   "mistakes": []
+  },
+  {
+   "id": "prospectus",
+   "name": "Prospectus",
+   "block": 3,
+   "kind": "theory",
+   "summary": "Prospectus and when it is not required, deemed, shelf and red herring prospectus, misstatement, minimum subscription, book building and GDRs.",
+   "points": [
+    "Prospectus (Sec 2(70)): a document inviting the public to subscribe to a company's securities, with the details they need to decide.",
+    "Not required: rights issues to existing members, bonus issues, private placement (Sec 42), shares not offered to the public, issues to underwriters or in certain schemes.",
+    "Deemed prospectus (Sec 25): when a company allots securities to an issuing house with a view to their being offered to the public, the offer document is deemed a prospectus; this is presumed if the offer is made within 6 months of allotment or the company has not received the whole consideration.",
+    "Shelf prospectus (Sec 31): valid for one year for several issues, with an information memorandum for each. Red herring prospectus (Sec 32): issued before the price and quantity are fixed in book building.",
+    "Misstatement: civil liability to compensate investors (Sec 35) and criminal liability (Sec 34, punishable as fraud); defences include withdrawal of consent and reasonable belief in the statement.",
+    "Minimum subscription (Sec 39): the minimum amount stated must be received within 30 days, otherwise the money is refunded.",
+    "Book building: the price is discovered from bids within a price band; advantages — a fair market price, visible demand, lower cost and time.",
+    "Global depository receipts: receipts issued abroad representing shares of an Indian company, letting it raise foreign capital."
+   ],
+   "frame": "Definition → type or rule with the section number → conclusion.",
+   "mistakes": []
+  },
+  {
+   "id": "winding-up",
+   "name": "Winding Up, Dissolution & NCLAT",
+   "block": 8,
+   "kind": "theory",
+   "summary": "Winding up vs dissolution, winding up by the Tribunal and its procedure, compulsory winding up, and the National Company Law Appellate Tribunal.",
+   "points": [
+    "Winding up: ending a company's life by realising its assets, paying creditors and distributing any surplus to members. Dissolution: the final end — the company ceases to exist and its name is struck off.",
+    "Under the 2013 Act (as amended with the Insolvency and Bankruptcy Code, 2016): winding up by the Tribunal (Sec 271); voluntary liquidation and insolvency cases go under the IBC.",
+    "Grounds for winding up by the Tribunal (compulsory winding up): special resolution of the company; acts against sovereignty, security or public order; fraudulent or unlawful conduct; default in filing financial statements or returns for 5 years; just and equitable grounds.",
+    "Procedure: petition (Sec 272) → admission and provisional liquidator → statement of affairs → liquidator takes custody → assets realised and claims settled in order of priority → final report → dissolution order (Sec 302).",
+    "NCLAT (Sec 410): hears appeals against orders of the National Company Law Tribunal (NCLT), and against IBBI and CCI orders; appeal within 45 days; further appeal to the Supreme Court on a question of law within 60 days."
+   ],
+   "frame": "Meaning → table for winding up vs dissolution → grounds or procedure as steps → conclusion.",
+   "mistakes": []
+  }
+ ],
+ "questions": [
+  {
+   "s": "2022-06",
+   "q": "1(a)",
+   "t": "Main characteristics of a company",
+   "m": 10,
+   "k": "th",
+   "topic": "nature"
+  },
+  {
+   "s": "2022-06",
+   "q": "1(b)",
+   "t": "Illegal associations and their consequences",
+   "m": 10,
+   "k": "th",
+   "topic": "nature"
+  },
+  {
+   "s": "2022-06",
+   "q": "2",
+   "t": "Duties and liabilities of a promoter",
+   "m": 20,
+   "k": "th",
+   "topic": "promoter"
+  },
+  {
+   "s": "2022-06",
+   "q": "3(a)",
+   "t": "Meaning and purpose of Articles of Association",
+   "m": 6,
+   "k": "th",
+   "topic": "aoa"
+  },
+  {
+   "s": "2022-06",
+   "q": "3(b)",
+   "t": "Doctrine of indoor management and exceptions",
+   "m": 14,
+   "k": "th",
+   "topic": "aoa"
+  },
+  {
+   "s": "2022-06",
+   "q": "4",
+   "t": "Buyback of shares: sources and conditions",
+   "m": 20,
+   "k": "th",
+   "topic": "shares"
+  },
+  {
+   "s": "2022-06",
+   "q": "5",
+   "t": "Statutory and contractual liabilities of a company secretary",
+   "m": 20,
+   "k": "th",
+   "topic": "secretary"
+  },
+  {
+   "s": "2022-06",
+   "q": "6(a)",
+   "t": "Requisites of a valid meeting",
+   "m": 12,
+   "k": "th",
+   "topic": "meetings"
+  },
+  {
+   "s": "2022-06",
+   "q": "6(b)",
+   "t": "Special resolution and its purposes",
+   "m": 8,
+   "k": "th",
+   "topic": "meetings"
+  },
+  {
+   "s": "2022-06",
+   "q": "7",
+   "t": "Clauses of the Memorandum of Association",
+   "m": 20,
+   "k": "th",
+   "topic": "moa"
+  },
+  {
+   "s": "2022-06",
+   "q": "8(a)",
+   "t": "Share vs debenture",
+   "m": 10,
+   "k": "th",
+   "topic": "shares"
+  },
+  {
+   "s": "2022-06",
+   "q": "8(b)",
+   "t": "Share vs stock",
+   "m": 10,
+   "k": "th",
+   "topic": "shares"
+  },
+  {
+   "s": "2022-06",
+   "q": "9(a)",
+   "t": "Note: private company",
+   "m": 5.0,
+   "k": "th",
+   "topic": "types"
+  },
+  {
+   "s": "2022-06",
+   "q": "9(b)",
+   "t": "Note: proxy",
+   "m": 5.0,
+   "k": "th",
+   "topic": "meetings"
+  },
+  {
+   "s": "2022-06",
+   "q": "9(c)",
+   "t": "Note: compulsory winding up",
+   "m": 5.0,
+   "k": "th",
+   "topic": "winding-up"
+  },
+  {
+   "s": "2022-06",
+   "q": "9(d)",
+   "t": "Note: removal of a director",
+   "m": 5.0,
+   "k": "th",
+   "topic": "directors"
+  },
+  {
+   "s": "2022-12",
+   "q": "1(a)",
+   "t": "Main characteristics of a company",
+   "m": 10,
+   "k": "th",
+   "topic": "nature"
+  },
+  {
+   "s": "2022-12",
+   "q": "1(b)",
+   "t": "Company vs limited liability partnership",
+   "m": 10,
+   "k": "th",
+   "topic": "nature"
+  },
+  {
+   "s": "2022-12",
+   "q": "2",
+   "t": "Duties and liabilities of a promoter",
+   "m": 20,
+   "k": "th",
+   "topic": "promoter"
+  },
+  {
+   "s": "2022-12",
+   "q": "3",
+   "t": "Meaning and purpose of Articles of Association",
+   "m": 5,
+   "k": "th",
+   "topic": "aoa"
+  },
+  {
+   "s": "2022-12",
+   "q": "3",
+   "t": "Binding effect of Memorandum and Articles",
+   "m": 15,
+   "k": "th",
+   "topic": "moa"
+  },
+  {
+   "s": "2022-12",
+   "q": "4",
+   "t": "Transfer of shares: procedure and refusal",
+   "m": 20,
+   "k": "th",
+   "topic": "transfer"
+  },
+  {
+   "s": "2022-12",
+   "q": "5",
+   "t": "Directors: appointment, qualifications and disqualifications",
+   "m": 20,
+   "k": "th",
+   "topic": "directors"
+  },
+  {
+   "s": "2022-12",
+   "q": "6(a)",
+   "t": "Managerial remuneration",
+   "m": 10,
+   "k": "th",
+   "topic": "directors"
+  },
+  {
+   "s": "2022-12",
+   "q": "6(b)",
+   "t": "Provisions on payment of dividend",
+   "m": 10,
+   "k": "th",
+   "topic": "accounts"
+  },
+  {
+   "s": "2022-12",
+   "q": "7(a)",
+   "t": "Books of account: inspection and penalties",
+   "m": 12,
+   "k": "th",
+   "topic": "accounts"
+  },
+  {
+   "s": "2022-12",
+   "q": "7(b)",
+   "t": "Who cannot be appointed auditor",
+   "m": 8,
+   "k": "th",
+   "topic": "accounts"
+  },
+  {
+   "s": "2022-12",
+   "q": "8",
+   "t": "Winding up vs dissolution; procedure",
+   "m": 20,
+   "k": "th",
+   "topic": "winding-up"
+  },
+  {
+   "s": "2022-12",
+   "q": "9(a)",
+   "t": "Note: National Company Law Appellate Tribunal",
+   "m": 5.0,
+   "k": "th",
+   "topic": "winding-up"
+  },
+  {
+   "s": "2022-12",
+   "q": "9(b)",
+   "t": "Note: formation of a company",
+   "m": 5.0,
+   "k": "th",
+   "topic": "promoter"
+  },
+  {
+   "s": "2022-12",
+   "q": "9(c)",
+   "t": "Note: doctrine of indoor management",
+   "m": 5.0,
+   "k": "th",
+   "topic": "aoa"
+  },
+  {
+   "s": "2022-12",
+   "q": "9(d)",
+   "t": "Note: sweat equity shares",
+   "m": 5.0,
+   "k": "th",
+   "topic": "shares"
+  },
+  {
+   "s": "2023-06",
+   "q": "1",
+   "t": "Public vs private company; converting private to public",
+   "m": 20,
+   "k": "th",
+   "topic": "types"
+  },
+  {
+   "s": "2023-06",
+   "q": "2",
+   "t": "Memorandum of Association: meaning and clauses",
+   "m": 20,
+   "k": "th",
+   "topic": "moa"
+  },
+  {
+   "s": "2023-06",
+   "q": "3(a)",
+   "t": "Deemed prospectus",
+   "m": 10,
+   "k": "th",
+   "topic": "prospectus"
+  },
+  {
+   "s": "2023-06",
+   "q": "3(b)",
+   "t": "Shelf and red herring prospectus",
+   "m": 10,
+   "k": "th",
+   "topic": "prospectus"
+  },
+  {
+   "s": "2023-06",
+   "q": "4",
+   "t": "Debentures: meaning, features and types",
+   "m": 20,
+   "k": "th",
+   "topic": "shares"
+  },
+  {
+   "s": "2023-06",
+   "q": "5",
+   "t": "Allotment of shares: general and legal rules",
+   "m": 20,
+   "k": "th",
+   "topic": "shares"
+  },
+  {
+   "s": "2023-06",
+   "q": "6(a)",
+   "t": "Transfer vs transmission of shares",
+   "m": 10,
+   "k": "th",
+   "topic": "transfer"
+  },
+  {
+   "s": "2023-06",
+   "q": "6(b)",
+   "t": "Ways a person ceases to be a member",
+   "m": 10,
+   "k": "th",
+   "topic": "membership"
+  },
+  {
+   "s": "2023-06",
+   "q": "7",
+   "t": "Liabilities of directors",
+   "m": 20,
+   "k": "th",
+   "topic": "directors"
+  },
+  {
+   "s": "2023-06",
+   "q": "8(a)",
+   "t": "Types of resolutions and their purposes",
+   "m": 14,
+   "k": "th",
+   "topic": "meetings"
+  },
+  {
+   "s": "2023-06",
+   "q": "8(b)",
+   "t": "Notice of general meeting",
+   "m": 6,
+   "k": "th",
+   "topic": "meetings"
+  },
+  {
+   "s": "2023-06",
+   "q": "9(a)",
+   "t": "Note: winding up of a company",
+   "m": 5.0,
+   "k": "th",
+   "topic": "winding-up"
+  },
+  {
+   "s": "2023-06",
+   "q": "9(b)",
+   "t": "Note: interim dividend",
+   "m": 5.0,
+   "k": "th",
+   "topic": "accounts"
+  },
+  {
+   "s": "2023-06",
+   "q": "9(c)",
+   "t": "Note: position of a company secretary",
+   "m": 5.0,
+   "k": "th",
+   "topic": "secretary"
+  },
+  {
+   "s": "2023-06",
+   "q": "9(d)",
+   "t": "Note: doctrine of indoor management",
+   "m": 5.0,
+   "k": "th",
+   "topic": "aoa"
+  },
+  {
+   "s": "2023-12",
+   "q": "1(a)",
+   "t": "Public vs private company",
+   "m": 10,
+   "k": "th",
+   "topic": "types"
+  },
+  {
+   "s": "2023-12",
+   "q": "1(b)",
+   "t": "Privileges and exemptions of a private company",
+   "m": 10,
+   "k": "th",
+   "topic": "types"
+  },
+  {
+   "s": "2023-12",
+   "q": "2",
+   "t": "Name clause: alteration and its effects",
+   "m": 20,
+   "k": "th",
+   "topic": "moa"
+  },
+  {
+   "s": "2023-12",
+   "q": "3(a)",
+   "t": "Issue and redemption of preference shares",
+   "m": 10,
+   "k": "th",
+   "topic": "shares"
+  },
+  {
+   "s": "2023-12",
+   "q": "3(b)",
+   "t": "Shares at a premium and use of share premium",
+   "m": 10,
+   "k": "th",
+   "topic": "shares"
+  },
+  {
+   "s": "2023-12",
+   "q": "4(a)",
+   "t": "Blank transfer and its evils",
+   "m": 10,
+   "k": "th",
+   "topic": "transfer"
+  },
+  {
+   "s": "2023-12",
+   "q": "4(b)",
+   "t": "Forged transfer and its consequences",
+   "m": 10,
+   "k": "th",
+   "topic": "transfer"
+  },
+  {
+   "s": "2023-12",
+   "q": "5",
+   "t": "Directors: who can be appointed; liabilities",
+   "m": 20,
+   "k": "th",
+   "topic": "directors"
+  },
+  {
+   "s": "2023-12",
+   "q": "6",
+   "t": "Member vs shareholder; modes of becoming a member",
+   "m": 20,
+   "k": "th",
+   "topic": "membership"
+  },
+  {
+   "s": "2023-12",
+   "q": "7",
+   "t": "Duties and liabilities of a company secretary",
+   "m": 20,
+   "k": "th",
+   "topic": "secretary"
+  },
+  {
+   "s": "2023-12",
+   "q": "8(a)",
+   "t": "Extraordinary general meeting: how convened",
+   "m": 12,
+   "k": "th",
+   "topic": "meetings"
+  },
+  {
+   "s": "2023-12",
+   "q": "8(b)",
+   "t": "Quorum; no quorum",
+   "m": 8,
+   "k": "th",
+   "topic": "meetings"
+  },
+  {
+   "s": "2023-12",
+   "q": "9(a)",
+   "t": "Note: lifting the corporate veil",
+   "m": 5.0,
+   "k": "th",
+   "topic": "nature"
+  },
+  {
+   "s": "2023-12",
+   "q": "9(b)",
+   "t": "Note: promoter",
+   "m": 5.0,
+   "k": "th",
+   "topic": "promoter"
+  },
+  {
+   "s": "2023-12",
+   "q": "9(c)",
+   "t": "Note: National Company Law Appellate Tribunal",
+   "m": 5.0,
+   "k": "th",
+   "topic": "winding-up"
+  },
+  {
+   "s": "2023-12",
+   "q": "9(d)",
+   "t": "Note: global depository receipts",
+   "m": 5.0,
+   "k": "th",
+   "topic": "prospectus"
+  },
+  {
+   "s": "2024-06",
+   "q": "1(a)",
+   "t": "Company as an artificial person with perpetual succession",
+   "m": 10,
+   "k": "th",
+   "topic": "nature"
+  },
+  {
+   "s": "2024-06",
+   "q": "1(b)",
+   "t": "Illegal associations and their consequences",
+   "m": 10,
+   "k": "th",
+   "topic": "nature"
+  },
+  {
+   "s": "2024-06",
+   "q": "2",
+   "t": "Public and private company; privileges of a private company",
+   "m": 20,
+   "k": "th",
+   "topic": "types"
+  },
+  {
+   "s": "2024-06",
+   "q": "3",
+   "t": "Memorandum of Association: meaning and clauses",
+   "m": 20,
+   "k": "th",
+   "topic": "moa"
+  },
+  {
+   "s": "2024-06",
+   "q": "4(a)",
+   "t": "Sweat equity shares: conditions",
+   "m": 12,
+   "k": "th",
+   "topic": "shares"
+  },
+  {
+   "s": "2024-06",
+   "q": "4(b)",
+   "t": "Share vs debenture",
+   "m": 8,
+   "k": "th",
+   "topic": "shares"
+  },
+  {
+   "s": "2024-06",
+   "q": "5(a)",
+   "t": "Forged transfer and its consequences",
+   "m": 10,
+   "k": "th",
+   "topic": "transfer"
+  },
+  {
+   "s": "2024-06",
+   "q": "5(b)",
+   "t": "Book building and its advantages",
+   "m": 10,
+   "k": "th",
+   "topic": "prospectus"
+  },
+  {
+   "s": "2024-06",
+   "q": "6(a)",
+   "t": "Audit committee: role and structure",
+   "m": 8,
+   "k": "th",
+   "topic": "directors"
+  },
+  {
+   "s": "2024-06",
+   "q": "6(b)",
+   "t": "Duties of directors",
+   "m": 12,
+   "k": "th",
+   "topic": "directors"
+  },
+  {
+   "s": "2024-06",
+   "q": "7",
+   "t": "Company secretary: appointment and liabilities",
+   "m": 20,
+   "k": "th",
+   "topic": "secretary"
+  },
+  {
+   "s": "2024-06",
+   "q": "8(a)",
+   "t": "Types of resolutions and their purposes",
+   "m": 14,
+   "k": "th",
+   "topic": "meetings"
+  },
+  {
+   "s": "2024-06",
+   "q": "8(b)",
+   "t": "Chairman of a meeting",
+   "m": 6,
+   "k": "th",
+   "topic": "meetings"
+  },
+  {
+   "s": "2024-06",
+   "q": "9(a)",
+   "t": "Note: board meetings",
+   "m": 5.0,
+   "k": "th",
+   "topic": "meetings"
+  },
+  {
+   "s": "2024-06",
+   "q": "9(b)",
+   "t": "Note: winding up",
+   "m": 5.0,
+   "k": "th",
+   "topic": "winding-up"
+  },
+  {
+   "s": "2024-06",
+   "q": "9(c)",
+   "t": "Note: insider trading",
+   "m": 5.0,
+   "k": "th",
+   "topic": "directors"
+  },
+  {
+   "s": "2024-06",
+   "q": "9(d)",
+   "t": "Note: pre-incorporation contracts",
+   "m": 5.0,
+   "k": "th",
+   "topic": "promoter"
+  },
+  {
+   "s": "2024-12",
+   "q": "1",
+   "t": "Types of companies by incorporation, liability and control",
+   "m": 20,
+   "k": "th",
+   "topic": "types"
+  },
+  {
+   "s": "2024-12",
+   "q": "2",
+   "t": "Promoter: functions and legal position",
+   "m": 20,
+   "k": "th",
+   "topic": "promoter"
+  },
+  {
+   "s": "2024-12",
+   "q": "3",
+   "t": "Articles of Association and indoor management",
+   "m": 20,
+   "k": "th",
+   "topic": "aoa"
+  },
+  {
+   "s": "2024-12",
+   "q": "4(a)",
+   "t": "Types of preference shares",
+   "m": 10,
+   "k": "th",
+   "topic": "shares"
+  },
+  {
+   "s": "2024-12",
+   "q": "4(b)",
+   "t": "Rights shares vs bonus shares",
+   "m": 10,
+   "k": "th",
+   "topic": "shares"
+  },
+  {
+   "s": "2024-12",
+   "q": "5(a)",
+   "t": "Forfeiture of shares: procedure and effects",
+   "m": 12,
+   "k": "th",
+   "topic": "shares"
+  },
+  {
+   "s": "2024-12",
+   "q": "5(b)",
+   "t": "Buyback of shares and its sources",
+   "m": 8,
+   "k": "th",
+   "topic": "shares"
+  },
+  {
+   "s": "2024-12",
+   "q": "6",
+   "t": "Member: rights and cessation",
+   "m": 20,
+   "k": "th",
+   "topic": "membership"
+  },
+  {
+   "s": "2024-12",
+   "q": "7",
+   "t": "Directors: appointment and liabilities",
+   "m": 20,
+   "k": "th",
+   "topic": "directors"
+  },
+  {
+   "s": "2024-12",
+   "q": "8",
+   "t": "Annual general meeting: purpose and rules",
+   "m": 20,
+   "k": "th",
+   "topic": "meetings"
+  },
+  {
+   "s": "2024-12",
+   "q": "9(a)",
+   "t": "Note: doctrine of ultra vires",
+   "m": 5.0,
+   "k": "th",
+   "topic": "moa"
+  },
+  {
+   "s": "2024-12",
+   "q": "9(b)",
+   "t": "Note: National Company Law Appellate Tribunal",
+   "m": 5.0,
+   "k": "th",
+   "topic": "winding-up"
+  },
+  {
+   "s": "2024-12",
+   "q": "9(c)",
+   "t": "Note: misstatement in a prospectus",
+   "m": 5.0,
+   "k": "th",
+   "topic": "prospectus"
+  },
+  {
+   "s": "2024-12",
+   "q": "9(d)",
+   "t": "Note: whistle blowing",
+   "m": 5.0,
+   "k": "th",
+   "topic": "directors"
+  },
+  {
+   "s": "2025-06",
+   "q": "1(a)",
+   "t": "Corporate veil and when it is lifted",
+   "m": 10,
+   "k": "th",
+   "topic": "nature"
+  },
+  {
+   "s": "2025-06",
+   "q": "1(b)",
+   "t": "Doctrine of ultra vires with examples",
+   "m": 10,
+   "k": "th",
+   "topic": "moa"
+  },
+  {
+   "s": "2025-06",
+   "q": "2(a)",
+   "t": "When a prospectus is not required",
+   "m": 5,
+   "k": "th",
+   "topic": "prospectus"
+  },
+  {
+   "s": "2025-06",
+   "q": "2(b)",
+   "t": "Equity vs preference shares; redemption of preference shares",
+   "m": 15,
+   "k": "th",
+   "topic": "shares"
+  },
+  {
+   "s": "2025-06",
+   "q": "3(a)",
+   "t": "Liabilities of directors, including criminal",
+   "m": 15,
+   "k": "th",
+   "topic": "directors"
+  },
+  {
+   "s": "2025-06",
+   "q": "3(b)",
+   "t": "Types of resolution at an AGM",
+   "m": 5,
+   "k": "th",
+   "topic": "meetings"
+  },
+  {
+   "s": "2025-06",
+   "q": "4",
+   "t": "Contents of Articles; limits on altering them",
+   "m": 20,
+   "k": "th",
+   "topic": "aoa"
+  },
+  {
+   "s": "2025-06",
+   "q": "5(a)",
+   "t": "Provisions regarding dividend",
+   "m": 5,
+   "k": "th",
+   "topic": "accounts"
+  },
+  {
+   "s": "2025-06",
+   "q": "5(b)",
+   "t": "Allotment of shares: rules and procedure",
+   "m": 15,
+   "k": "th",
+   "topic": "shares"
+  },
+  {
+   "s": "2025-06",
+   "q": "6",
+   "t": "Member: who can become one; member vs shareholder",
+   "m": 20,
+   "k": "th",
+   "topic": "membership"
+  },
+  {
+   "s": "2025-06",
+   "q": "7(a)",
+   "t": "Company secretary: appointment and removal",
+   "m": 10,
+   "k": "th",
+   "topic": "secretary"
+  },
+  {
+   "s": "2025-06",
+   "q": "7(b)",
+   "t": "Duties of a company secretary",
+   "m": 10,
+   "k": "th",
+   "topic": "secretary"
+  },
+  {
+   "s": "2025-06",
+   "q": "8(a)",
+   "t": "Records in the books of account",
+   "m": 8,
+   "k": "th",
+   "topic": "accounts"
+  },
+  {
+   "s": "2025-06",
+   "q": "8(b)",
+   "t": "Contents of the auditor's report",
+   "m": 12,
+   "k": "th",
+   "topic": "accounts"
+  },
+  {
+   "s": "2025-06",
+   "q": "9(a)",
+   "t": "Note: doctrine of constructive notice",
+   "m": 3.33,
+   "k": "th",
+   "topic": "moa"
+  },
+  {
+   "s": "2025-06",
+   "q": "9(b)",
+   "t": "Note: winding up vs dissolution",
+   "m": 3.33,
+   "k": "th",
+   "topic": "winding-up"
+  },
+  {
+   "s": "2025-06",
+   "q": "9(c)",
+   "t": "Note: alteration of the object clause",
+   "m": 3.33,
+   "k": "th",
+   "topic": "moa"
+  },
+  {
+   "s": "2025-06",
+   "q": "9(d)",
+   "t": "Note: forfeiture of shares",
+   "m": 3.33,
+   "k": "th",
+   "topic": "shares"
+  },
+  {
+   "s": "2025-06",
+   "q": "9(e)",
+   "t": "Note: proxy",
+   "m": 3.33,
+   "k": "th",
+   "topic": "meetings"
+  },
+  {
+   "s": "2025-06",
+   "q": "9(f)",
+   "t": "Note: e-filing of documents",
+   "m": 3.33,
+   "k": "th",
+   "topic": "accounts"
+  },
+  {
+   "s": "2025-12",
+   "q": "1(a)",
+   "t": "Company limited by guarantee",
+   "m": 5,
+   "k": "th",
+   "topic": "types"
+  },
+  {
+   "s": "2025-12",
+   "q": "1(b)",
+   "t": "Privileges and exemptions of a private company",
+   "m": 15,
+   "k": "th",
+   "topic": "types"
+  },
+  {
+   "s": "2025-12",
+   "q": "2",
+   "t": "Memorandum of Association: meaning and clauses",
+   "m": 20,
+   "k": "th",
+   "topic": "moa"
+  },
+  {
+   "s": "2025-12",
+   "q": "3(a)",
+   "t": "Insider trading and why it is illegal",
+   "m": 8,
+   "k": "th",
+   "topic": "directors"
+  },
+  {
+   "s": "2025-12",
+   "q": "3(b)",
+   "t": "Limits on managerial remuneration",
+   "m": 12,
+   "k": "th",
+   "topic": "directors"
+  },
+  {
+   "s": "2025-12",
+   "q": "4",
+   "t": "Types of shares; DVR shares; non-voting shares",
+   "m": 20,
+   "k": "th",
+   "topic": "shares"
+  },
+  {
+   "s": "2025-12",
+   "q": "5",
+   "t": "Company as an artificial person with perpetual succession",
+   "m": 20,
+   "k": "th",
+   "topic": "nature"
+  },
+  {
+   "s": "2025-12",
+   "q": "6",
+   "t": "Types of shareholders' meetings",
+   "m": 20,
+   "k": "th",
+   "topic": "meetings"
+  },
+  {
+   "s": "2025-12",
+   "q": "7(a)",
+   "t": "Deemed prospectus",
+   "m": 10,
+   "k": "th",
+   "topic": "prospectus"
+  },
+  {
+   "s": "2025-12",
+   "q": "7(b)",
+   "t": "Liabilities of a company secretary",
+   "m": 10,
+   "k": "th",
+   "topic": "secretary"
+  },
+  {
+   "s": "2025-12",
+   "q": "8(a)",
+   "t": "What financial statements include",
+   "m": 5,
+   "k": "th",
+   "topic": "accounts"
+  },
+  {
+   "s": "2025-12",
+   "q": "8(b)",
+   "t": "Rights of an auditor",
+   "m": 5,
+   "k": "th",
+   "topic": "accounts"
+  },
+  {
+   "s": "2025-12",
+   "q": "8(c)",
+   "t": "Provisions relating to audit",
+   "m": 10,
+   "k": "th",
+   "topic": "accounts"
+  },
+  {
+   "s": "2025-12",
+   "q": "9(a)",
+   "t": "Note: member vs shareholder",
+   "m": 3.33,
+   "k": "th",
+   "topic": "membership"
+  },
+  {
+   "s": "2025-12",
+   "q": "9(b)",
+   "t": "Note: interim dividend",
+   "m": 3.33,
+   "k": "th",
+   "topic": "accounts"
+  },
+  {
+   "s": "2025-12",
+   "q": "9(c)",
+   "t": "Note: quorum",
+   "m": 3.33,
+   "k": "th",
+   "topic": "meetings"
+  },
+  {
+   "s": "2025-12",
+   "q": "9(d)",
+   "t": "Note: sweat equity shares",
+   "m": 3.33,
+   "k": "th",
+   "topic": "shares"
+  },
+  {
+   "s": "2025-12",
+   "q": "9(e)",
+   "t": "Note: minimum subscription",
+   "m": 3.33,
+   "k": "th",
+   "topic": "prospectus"
+  },
+  {
+   "s": "2025-12",
+   "q": "9(f)",
+   "t": "Note: incorporation of a company",
+   "m": 3.33,
+   "k": "th",
+   "topic": "promoter"
+  },
+  {
+   "s": "2026-06",
+   "q": "1(a)",
+   "t": "Corporate veil and how it is lifted",
+   "m": 10,
+   "k": "th",
+   "topic": "nature"
+  },
+  {
+   "s": "2026-06",
+   "q": "1(b)",
+   "t": "Doctrine of ultra vires with examples",
+   "m": 10,
+   "k": "th",
+   "topic": "moa"
+  },
+  {
+   "s": "2026-06",
+   "q": "2(a)",
+   "t": "When a prospectus is not required",
+   "m": 5,
+   "k": "th",
+   "topic": "prospectus"
+  },
+  {
+   "s": "2026-06",
+   "q": "2(b)",
+   "t": "Equity vs preference shares; redemption of preference shares",
+   "m": 15,
+   "k": "th",
+   "topic": "shares"
+  },
+  {
+   "s": "2026-06",
+   "q": "3(a)",
+   "t": "Liabilities of directors, including criminal",
+   "m": 15,
+   "k": "th",
+   "topic": "directors"
+  },
+  {
+   "s": "2026-06",
+   "q": "3(b)",
+   "t": "Legal position of directors",
+   "m": 5,
+   "k": "th",
+   "topic": "directors"
+  },
+  {
+   "s": "2026-06",
+   "q": "4",
+   "t": "Contents of Articles; limits on altering them",
+   "m": 20,
+   "k": "th",
+   "topic": "aoa"
+  },
+  {
+   "s": "2026-06",
+   "q": "5(a)",
+   "t": "Provisions regarding dividend",
+   "m": 5,
+   "k": "th",
+   "topic": "accounts"
+  },
+  {
+   "s": "2026-06",
+   "q": "5(b)",
+   "t": "Allotment of shares: rules and procedure",
+   "m": 15,
+   "k": "th",
+   "topic": "shares"
+  },
+  {
+   "s": "2026-06",
+   "q": "6",
+   "t": "Member: who can become one; member vs shareholder",
+   "m": 20,
+   "k": "th",
+   "topic": "membership"
+  },
+  {
+   "s": "2026-06",
+   "q": "7(a)",
+   "t": "Company secretary: appointment and removal",
+   "m": 10,
+   "k": "th",
+   "topic": "secretary"
+  },
+  {
+   "s": "2026-06",
+   "q": "7(b)",
+   "t": "Duties of a company secretary",
+   "m": 10,
+   "k": "th",
+   "topic": "secretary"
+  },
+  {
+   "s": "2026-06",
+   "q": "8(a)",
+   "t": "Records in the books of account",
+   "m": 8,
+   "k": "th",
+   "topic": "accounts"
+  },
+  {
+   "s": "2026-06",
+   "q": "8(b)",
+   "t": "Transfer of shares: procedure and refusal",
+   "m": 12,
+   "k": "th",
+   "topic": "transfer"
+  },
+  {
+   "s": "2026-06",
+   "q": "9(a)",
+   "t": "Note: one-person company",
+   "m": 5.0,
+   "k": "th",
+   "topic": "types"
+  },
+  {
+   "s": "2026-06",
+   "q": "9(b)",
+   "t": "Note: National Company Law Appellate Tribunal",
+   "m": 5.0,
+   "k": "th",
+   "topic": "winding-up"
+  },
+  {
+   "s": "2026-06",
+   "q": "9(c)",
+   "t": "Note: minimum subscription",
+   "m": 5.0,
+   "k": "th",
+   "topic": "prospectus"
+  },
+  {
+   "s": "2026-06",
+   "q": "9(d)",
+   "t": "Note: prospectus",
+   "m": 5.0,
+   "k": "th",
+   "topic": "prospectus"
+  }
+ ]
+}
