@@ -11,7 +11,7 @@
     "summary": "June 2026 paper: 8 questions, answer any 5, each 20 marks, all theory. Earlier papers had 5 compulsory questions, each with an 'either/or' choice.",
     "caution": "Only 4 papers exist so far (Dec 2024 – Jun 2026), so these priorities are less certain than for older courses. Because every question has had a choice, the list below is shorter than the paper — it is enough to answer, not the whole syllabus."
   },
-  "blocksOfficial": false,
+  "blocksOfficial": true,
   "sessions": ["2024-12", "2025-06", "2025-12", "2026-06"],
   "sessionNotes": {
     "2024-12": "Old pattern: 5 compulsory questions with either/or choice.",
@@ -25,11 +25,11 @@
     ]
   },
   "blocks": [
-    { "no": 1, "title": "Education & Values" },
-    { "no": 2, "title": "Indian Culture & Philosophy" },
-    { "no": 3, "title": "Morality, Conduct & Personality" },
-    { "no": 4, "title": "Interaction, Adjustment & Conflict" },
-    { "no": 5, "title": "Agencies of Value Development" }
+    { "no": 1, "title": "Conceptual Framework" },
+    { "no": 2, "title": "Changing Culture and Human Values" },
+    { "no": 3, "title": "Theoretical Foundations" },
+    { "no": 4, "title": "Social Dynamics and Value Development" },
+    { "no": 5, "title": "Social Linkages" }
   ],
   "topics": [
     {
@@ -39,30 +39,44 @@
       "kind": "theory",
       "summary": "Home as the first learning place, role of parents, family and community, socialisation, ways to build values at home.",
       "points": [
-        "Home is the first school: children learn language, habits, manners and values by imitating family members.",
-        "Role of parents: role models, set rules and routines, give love and security, encourage honesty and responsibility, discuss right and wrong, praise good behaviour.",
-        "Socialisation: the process by which a child learns the norms and values of society. Agencies: family (primary), peers, school, community, media, religion.",
-        "Community: festivals, neighbourhood, religious and social groups teach cooperation, respect and service.",
-        "Ways to inculcate values at home: storytelling, family rituals and festivals, shared chores, discussing news and dilemmas, consistent discipline, parents practising what they preach."
+        "Values are part of every culture; most of us learn them at home, at school and in the neighbourhood — from parents, teachers and religious leaders.",
+        "Values develop in three stages: imprint, modelling and socialisation.",
+        "Parents are the primary agents who pass on personal and social values; children copy the behaviour they see.",
+        "What builds morality at home: reasoning with the child (induction), nurture and support, setting limits, modelling moral behaviour, and open, democratic family discussion.",
+        "Role of parents: keep discipline with love, compassion and sympathy; understand the child's development and need for security; protect children from peer pressure; identify and cherish the family's values.",
+        "The neighbourhood and community also teach values through shared festivals, cooperation and service."
       ],
       "frame": "Meaning → role or ways as headed points with a home example → conclusion.",
-      "mistakes": []
+      "mistakes": [],
+      "units": [
+        { "block": 5, "unit": 1, "title": "Value Development through Social Institutions: Family and Neighbourhood" },
+        { "block": 5, "unit": 3, "title": "Role of Parents" }
+      ]
     },
     {
       "id": "morality",
       "name": "Morality & Theories of Conduct",
-      "block": 3,
+      "block": 1,
       "kind": "theory",
       "summary": "Facets of morality, the 'good' and self-realisation, rules and theories of conduct.",
       "points": [
-        "Morality: principles of right and wrong that guide behaviour.",
-        "Facets: personal (honesty, self-control), social (justice, respect for others), religious/spiritual, professional.",
-        "The 'Good': what is worth pursuing for its own sake; self-realisation: developing one's full potential — the highest good in Indian and idealist ethics.",
-        "Rules of conduct: customs, laws, social norms and conscience.",
-        "Theories of conduct: hedonism (pleasure is the good — egoistic and altruistic/utilitarian: greatest happiness of the greatest number), rigorism/duty (Kant — act from duty, treat people as ends), perfectionism/self-realisation, intuitionism (conscience knows right), Gita's nishkama karma (action without attachment to results)."
+        "Moral consciousness is the human sense of right and wrong and of caring for others.",
+        "Moral behaviour has a form (it must be rational and universalisable) and a content (the actual act). Moral instruction, training and indoctrination are not the same as moral education.",
+        "Criteria of moral judgement: the intention behind the act and free will — an act done without free will is neither moral nor immoral; an act done with good will is morally good whatever its result.",
+        "Three facets of morality in the book: caring (for others), judging (the situation — Piaget and Kohlberg stress rules and universal principles; Gilligan stresses care) and acting. Without all three, behaviour is not moral.",
+        "Theories of goodness: ethical naturalism (moral words can be put in non-moral terms, e.g. 'good' = what I approve), emotive theory (moral statements only express feelings), intrinsic vs instrumental good, hedonism (pleasure is the good), ethical pluralism (many things are good in themselves — knowledge, good will, loyalty) and self-realisation.",
+        "Theories of conduct: universalisability (Kant's categorical imperative), ethical egoism and rational self-interest, the general good theory (act utilitarianism), rule utilitarianism, and non-consequential duties (gratitude, fidelity, justice).",
+        "Reason and emotion work together in morality: instead of repressing children's emotions, teachers should educate them (love, care, empathy). Moral weakness is knowing what is right but not doing it."
       ],
       "frame": "Meaning → each theory with its main idea, a thinker and one example → criticism in one line → conclusion.",
-      "mistakes": []
+      "mistakes": [],
+      "units": [
+        { "block": 1, "unit": 2, "title": "Concept of Morality and Moral Education" },
+        { "block": 1, "unit": 3, "title": "Dimensions of Morality" },
+        { "block": 3, "unit": 1, "title": "Theories of Goodness" },
+        { "block": 3, "unit": 2, "title": "Theories of Conduct" },
+        { "block": 3, "unit": 3, "title": "Reason and Emotions in Human Conduct" }
+      ]
     },
     {
       "id": "adjustment",
@@ -71,15 +85,22 @@
       "kind": "theory",
       "summary": "Verbal and non-verbal interaction, adjustment and its push/pull factors, adjustment disorder, conflict.",
       "points": [
-        "Verbal interaction: spoken or written words. Non-verbal: gestures, facial expressions, posture, eye contact, tone, touch, space.",
-        "Adjustment: the process of balancing one's needs with the demands of the environment.",
-        "Push factors (drive a person out of a situation): stress, conflict, failure, rejection. Pull factors (attract towards a new situation): opportunities, acceptance, rewards.",
-        "Adjustment disorder: emotional or behavioural symptoms (anxiety, low mood, aggression) after a stressful change.",
-        "Helping maladjusted children: counselling, supportive family and teachers, a warm class climate, activities and sports, positive reinforcement, cooperation with parents.",
-        "Conflict: a clash of interests, values or needs. Reasons: differences in values and goals, competition for resources, poor communication, personality differences."
+        "Socialisation is how a person learns society's values and ways; its agents are family, peers, school and mass media. It can be value-loaded or value-less, planned or unplanned, positive or negative.",
+        "Interaction is of two kinds: verbal (through language, spoken or written) and non-verbal (gestures, expressions, posture, eye contact, tone) — non-verbal cues can support or contradict the words.",
+        "Conflict (disagreement or clash) leads to stress. Strategies: win–lose (one side forced to give in), lose–lose (compromise) and win–win (both satisfied — the creative, best outcome).",
+        "Adjustment is a continuous process (Ruth Strang) of changing to live in harmony with one's environment. Signs of good adjustment: responsibility, sense of security, integration, ego development, curiosity and spontaneity.",
+        "In the book, pull factors pull us away from adjusting — e.g. aggression and anger. Push factors are the good values that help us adjust — empathy, sympathy, humour, helping, guilt and obedience.",
+        "Adjustment disorder: an unhealthy emotional or behavioural reaction to a stressful change (moving house, parents' divorce, a loss), starting within three months and usually lasting under six months — anxiety, depression, conduct problems or isolation.",
+        "Helping maladjusted children: daily small talk, chances to play with peers, a kind 'buddy', discussing (not only punishing) misbehaviour, and reporting home problems where needed."
       ],
       "frame": "Meaning → causes or factors as headed points → remedies → conclusion.",
-      "mistakes": []
+      "mistakes": [],
+      "units": [
+        { "block": 4, "unit": 2, "title": "Social Interaction and Human Values" },
+        { "block": 4, "unit": 3, "title": "Values: Conflict and Resolution" },
+        { "block": 4, "unit": 4, "title": "Process of Human Adjustment" },
+        { "block": 4, "unit": 1, "title": "Process of Socialization" }
+      ]
     },
     {
       "id": "personality",
@@ -88,14 +109,17 @@
       "kind": "theory",
       "summary": "Characteristics of personality, character–personality patterns, personality disorders.",
       "points": [
-        "Personality: the unique, organised pattern of a person's thoughts, feelings and behaviour.",
-        "Characteristics: unique, dynamic, consistent, both inherited and acquired, social, goal-directed.",
-        "Character: the moral side of personality — honesty, responsibility, self-control.",
-        "Character–personality patterns: amoral, expedient, conforming, irrational-conscientious, rational-altruistic (Peck and Havighurst).",
-        "Personality disorders: paranoid, schizoid, antisocial, borderline, histrionic, narcissistic, avoidant, dependent, obsessive-compulsive (clusters A, B, C)."
+        "Personality is the whole pattern of a person's traits and behaviour; character is its moral or ethical side.",
+        "Early classifications: by body build (somatotype), by body chemistry, and the Ayurvedic temperaments (rakta, pitta, kapha, vayu). Modern psychologists use trait clusters.",
+        "Personality disorders are lasting, inflexible patterns (traced to adolescence) in thinking, emotion and relationships that cause distress. The book describes antisocial, borderline and narcissistic disorders.",
+        "Peck et al. (1962) — six vectors of character: moral stability, ego strength, super-ego strength, spontaneity, friendliness and the hostility–guilt complex.",
+        "Five character–personality patterns: amoral, expedient, conforming, irrational-conscientious and rational-altruistic (the most mature)."
       ],
       "frame": "Definition → characteristics or types as headed points → conclusion.",
-      "mistakes": []
+      "mistakes": [],
+      "units": [
+        { "block": 3, "unit": 4, "title": "Character and Personality" }
+      ]
     },
     {
       "id": "culture",
@@ -104,13 +128,22 @@
       "kind": "theory",
       "summary": "Values of Indian culture, schools of Indian philosophy, cultural pluralism and its challenges.",
       "points": [
-        "Values of Indian culture: tolerance, non-violence (ahimsa), truth, respect for elders, hospitality, family bonds, spirituality, unity in diversity, 'Vasudhaiva Kutumbakam'.",
-        "Schools of Indian philosophy: orthodox (accept the Vedas) — Nyaya, Vaisheshika, Samkhya, Yoga, Mimamsa, Vedanta; heterodox — Charvaka, Buddhism, Jainism.",
-        "Cultural pluralism: many cultures, religions and languages living together while keeping their identity (India's unity in diversity).",
-        "Challenges: communal tension, regionalism, linguistic conflict, stereotypes, inequality. Response: tolerance, dialogue, constitutional values, education."
+        "Indian culture is over 5,000 years old and has survived by absorbing and assimilating many influences; despite its diversity it has a 'fundamental unity'.",
+        "Values carried by Indian culture through family, religion, festivals, food and clothes, music, dance, art, language and national symbols: sharing, caring, tolerance, unity, loyalty, integrity and concern for others.",
+        "Four key concepts of Indian philosophy: dharma, karma, moksha and atman.",
+        "Classical schools: six āstika (orthodox) — Nyaya, Vaisheshika, Samkhya, Yoga, Mimamsa, Vedanta; nāstika (heterodox) — Buddhism, Jainism, Charvaka. Vedanta is still a 'living school'.",
+        "Later strands: the Bhakti movement (devotion over ritual), Sikhism (Guru Nanak), Sufism (direct experience of God through a pir), and modern thinkers such as Swami Vivekananda (Ramakrishna Mission, 1897).",
+        "Values from Indian philosophy: tolerance, forgiveness, devotion, scientific temper, non-violence, truth, humility and detachment.",
+        "Cultural pluralism: many cultures living together while keeping their identity. Its values: acceptance, compassion, equality, tolerance, appreciation and adjustment. Tagore, Gandhi, Nehru and Vivekananda championed it.",
+        "Challenge: globalisation tends to make cultures uniform; we must keep our culture and its diversity."
       ],
       "frame": "Meaning → headed points → Indian examples → conclusion.",
-      "mistakes": []
+      "mistakes": [],
+      "units": [
+        { "block": 2, "unit": 1, "title": "Indian Culture and Human Values" },
+        { "block": 2, "unit": 2, "title": "Values Enshrined in Indian Philosophy" },
+        { "block": 2, "unit": 3, "title": "Cultural Pluralism in Indian Society" }
+      ]
     },
     {
       "id": "value-edu",
@@ -119,14 +152,21 @@
       "kind": "theory",
       "summary": "Education and value education, need and importance, moral vs religious education, ways to develop values, malaise of society.",
       "points": [
-        "Value education: education that develops moral, social, cultural and spiritual values along with knowledge.",
-        "Need: moral decline, violence, corruption, consumerism, stress; to build character, responsible citizens and social harmony.",
-        "Moral education teaches right conduct based on reason and universal values; religious education teaches the beliefs and practices of a particular religion.",
-        "Ways to develop values: school curriculum, teacher as role model, stories and discussions, co-curricular activities, community service, celebrating festivals, value clarification.",
-        "Malaise of Indian society: corruption, communalism, casteism, gender discrimination, violence, consumerism, environmental neglect."
+        "Value education develops moral, social, cultural and spiritual values along with knowledge — education that is value-oriented, not just informative.",
+        "Malaise of Indian society in the book: the race for wealth, power and status at the cost of humanness; poverty, unemployment, broken families, violence against women, children and the aged, child neglect and malnutrition, alcoholism and drugs, corruption and crime.",
+        "There is a gap between the lofty ideals we preach and what we practise — a value crisis and a 'spiritual vacuum' to be filled with love, care, compassion and justice.",
+        "The book blames partly the education system and teachers: teaching has become just a livelihood. The National Policy on Education (1986) asked for value-oriented education.",
+        "The Delors Commission ('Education for the Twenty-first Century') made 'learning to live together' one of the pillars of education.",
+        "Teachers should set an example — simplicity, economy in using school resources, politeness and care for every child.",
+        "Ways to develop values in school: build them into every subject, stories and discussions, activities and case studies, and above all the teacher's own example.",
+        "Moral vs religious education: religious education is authoritarian (belief taught on authority); moral education is based on reason and helps the child think for themselves."
       ],
       "frame": "Meaning → need or methods as headed points → conclusion.",
-      "mistakes": []
+      "mistakes": [],
+      "units": [
+        { "block": 1, "unit": 1, "title": "Social Malaise and the Need for Value Education" },
+        { "block": 1, "unit": 2, "title": "Concept of Morality and Moral Education", "part": "Moral vs religious education" }
+      ]
     },
     {
       "id": "peers-media",
@@ -135,14 +175,20 @@
       "kind": "theory",
       "summary": "Value development through peers; role, functions, evolution and negative effects of media.",
       "points": [
-        "Peers: people of the same age group. They shape values through acceptance, imitation, cooperation and competition — positively (teamwork, sharing) or negatively (peer pressure).",
-        "Media: channels of mass communication — print, radio, TV, cinema, internet and social media.",
-        "Evolution: print → radio → television → internet → social media and mobile.",
-        "Functions: inform, educate, entertain, persuade, shape public opinion, transmit culture.",
-        "Negative effects: violence and obscenity, misinformation, addiction and screen time, consumerism, unrealistic body images, cyberbullying."
+        "A peer group is people of about the same age; as children grow, peers increasingly reduce the family's influence on their attitudes and behaviour.",
+        "Peers can build values (cooperation, sharing, teamwork) or harm them (peer pressure — smoking, drugs); schools can use peer learning to inculcate values.",
+        "Media means all the channels through which people express themselves to others — print, broadcast, digital, mass media.",
+        "Growth of media: from print to radio, cinema and television, and now the internet, mobile phones and social media.",
+        "Functions of media: information, education and entertainment.",
+        "Media is one of many influences on values but a very powerful one; it can spread violence, materialism and bad role models.",
+        "Answer: media literacy — the ability to access, analyse, evaluate and process media, so children use it consciously and think critically. Parents should know what children watch and do on social networks."
       ],
       "frame": "Meaning → role or effects as headed points → how parents and schools can guide → conclusion.",
-      "mistakes": []
+      "mistakes": [],
+      "units": [
+        { "block": 5, "unit": 2, "title": "School and Peer" },
+        { "block": 5, "unit": 4, "title": "Influence of Media on Value Development" }
+      ]
     },
     {
       "id": "democracy-sd",
@@ -151,13 +197,19 @@
       "kind": "theory",
       "summary": "Principles of democracy, democracy in education, sustainable development and the role of education.",
       "points": [
-        "Principles of democracy: liberty, equality, fraternity, justice, rule of law, respect for individual dignity.",
-        "Democracy in education: equal opportunity, student participation, freedom of expression, respect for differences, cooperative learning.",
-        "Sustainable development: meeting present needs without compromising future generations (Brundtland, 1987); economic, social and environmental pillars.",
-        "Education for sustainable development: awareness, responsible consumption, conservation habits, values of care for nature."
+        "Democracy is not just a form of government but a way of life, based on equality, justice (fairness) and freedom from restraints that limit growth.",
+        "Principles of democracy in the book: respect for individuality, confidence in human intelligence, and the right and responsibility to take part in decisions.",
+        "Democracy in education: equality means fairness or justice in the classroom; freedom means both 'freedom to' (what students may do) and 'freedom from' (restraints).",
+        "Sustainable development: development that meets present needs without harming the ability of future generations to meet theirs; it has economic, social and environmental pillars.",
+        "Unsustainable growth has degraded land, water and forests, wiped out species and pushed many people to the margins while a few benefit.",
+        "Education for sustainable development builds values, not just knowledge: knowing is not enough without the right attitude. The core value is respect — for others, future generations, diversity and the planet."
       ],
       "frame": "Meaning → principles or role as headed points → conclusion.",
-      "mistakes": []
+      "mistakes": [],
+      "units": [
+        { "block": 1, "unit": 4, "title": "Pillars of Democracy: Living in Peace and Harmony" },
+        { "block": 2, "unit": 4, "title": "Values for Sustainable Development" }
+      ]
     }
   ],
   "questions": [
@@ -201,5 +253,6 @@
     { "s": "2026-06", "q": "8(i)", "t": "Note (any two): religious vs moral education", "m": 6.67, "k": "th", "topic": "value-edu" },
     { "s": "2026-06", "q": "8(ii)", "t": "Note (any two): negative effects of media", "m": 6.67, "k": "th", "topic": "peers-media" },
     { "s": "2026-06", "q": "8(iii)", "t": "Note (any two): push factors of adjustment", "m": 6.66, "k": "th", "topic": "adjustment" }
-  ]
+  ],
+  "notesSource": "Notes written from the IGNOU BEDSV-101 study material."
 }
