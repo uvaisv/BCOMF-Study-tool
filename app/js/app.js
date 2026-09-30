@@ -302,7 +302,6 @@
     const n = course.sessions.length;
     const mcq = !!course.pattern.mcq;
     const asked = askedList(t);
-    const SHOW = 3;
     // Next topic in study order: the "study first" list, then the rest.
     const order = [...analysis.mvp, ...analysis.topics.map((x) => x.id).filter((x) => !analysis.mvp.includes(x))];
     const next = analysis.topics.find((x) => x.id === order[order.indexOf(id) + 1]);
@@ -328,10 +327,7 @@
       ${t.mistakes && t.mistakes.length ? `<h2>Common mistakes</h2>
       <div class="callout warn"><ul class="points">${t.mistakes.map((m) => `<li>${esc(m)}</li>`).join("")}</ul></div>` : ""}
 
-      <h2>Asked in past papers</h2>
-      <section class="card asked-card"><ul class="asked">${asked.slice(0, SHOW).map((q) => askedItem(code, q, mcq)).join("")}</ul>
-        ${asked.length > SHOW ? `<a class="see-all" href="#/c/${code}/t/${id}/asked">See all ${asked.length} questions <span aria-hidden="true">→</span></a>` : ""}
-      </section>
+      ${asked.length ? `<a class="btn secondary see-all" href="#/c/${code}/t/${id}/asked">Asked in past papers (${asked.length}) <span aria-hidden="true">→</span></a>` : ""}
 
       <div class="topic-foot">
         <button type="button" class="btn secondary" id="done" aria-pressed="${isDone(code, id)}">${isDone(code, id) ? "✓ Done" : "Mark as done"}</button>

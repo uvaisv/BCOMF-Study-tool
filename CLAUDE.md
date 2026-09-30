@@ -9,7 +9,7 @@ Students use this tool to study **efficiently and effectively**. The tool must h
 - **Explain the tool in one glance.** On first sight a student must understand what the app does and what it gives them (what to study first, notes, past papers, a plan) — in a few words, not a paragraph.
 - **Shortest path to studying.** Course → what to study first → notes, in as few taps as possible. Past papers are one tap away from every course page (students value this highly).
 - **Read in the app, download only on request.** A past question opens the paper inside the app at that question, highlighted — never a PDF download per tap. Downloads stay on the Past papers tab.
-- **Short lists.** Show the few items that matter most (e.g. the top 3 past questions) and put the rest one tap away (a "Show more" or a "See all" page).
+- **Short lists.** Keep pages short: show only what matters most and put long lists one tap away (e.g. a topic's past questions open on their own page from one button).
 - **Tracking is optional and silent.** At most a single tap (e.g. "Done") that never blocks or nags. No multi-step status selectors.
 - **Less on screen.** Cut anything that does not help a student decide what to study or understand a topic.
 
