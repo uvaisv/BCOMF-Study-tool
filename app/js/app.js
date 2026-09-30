@@ -151,11 +151,9 @@
     ? `href="${esc(PAPER_ROOT + p.file)}" download="${esc(`${code} ${sessionLabel(p.s)}.pdf`)}"`
     : `href="${esc(p.url)}"`;
 
-  // MCQ answers are our own (IGNOU publishes no answer key). Ones not confirmed say so.
+  // MCQ answers are our own (IGNOU publishes no answer key); only confirmed ones are included.
   const ANSWER_NOTE = "Our answers, not an official IGNOU key.";
-  const answerText = (i, opt, unsure) => unsure
-    ? `Probably (${i}) ${esc(opt)} <span class="ans-unsure">not confirmed — check your study material</span>`
-    : `(${i}) ${esc(opt)}`;
+  const answerText = (i, opt) => `(${i}) ${esc(opt)}`;
 
   function paperButtons(code, papers, limit) {
     const list = limit ? papers.slice(0, limit) : papers;
@@ -236,7 +234,7 @@
     const repeated = course.repeated || [];
     const repeatItem = (r) => `<li><span class="rep-q">${esc(r.t)}</span>
         <span class="rep-opts">${r.opts.map((o, i) => `<span>(${i + 1}) ${esc(o)}</span>`).join("")}</span>
-        ${r.a ? `<span class="rep-ans"><strong>Answer:</strong> ${answerText(r.a, r.opts[r.a - 1], r.unsure)}</span>` : ""}
+        ${r.a ? `<span class="rep-ans"><strong>Answer:</strong> ${answerText(r.a, r.opts[r.a - 1])}</span>` : ""}
         <span class="rep-meta">Asked ${r.sessions.length}× · ${r.sessions.map(sessionLabel).join(", ")}</span></li>`;
 
     app.innerHTML = `${courseHeader(c, course)}
@@ -417,7 +415,7 @@
       ${q ? `<section class="card qv">${body.html}</section>`
         : `<p class="muted">This question isn't available as text yet.</p>`}
       ${ans ? `<details class="qv-ans"><summary>Show answer</summary>
-        <p><strong>Answer:</strong> ${answerText(ans, q.o[ans - 1], (course.answersUnsure || []).includes(ansKey))}</p>
+        <p><strong>Answer:</strong> ${answerText(ans, q.o[ans - 1])}</p>
         <p class="small muted">${ANSWER_NOTE}</p></details>` : ""}
       ${pdf ? `<a class="btn secondary qv-pdf" ${paperHref(code, pdf)} target="_blank" rel="noopener">Download full paper (PDF)</a>` : ""}
       ${q && !exact ? `<p class="small muted">Text from the official paper; tables and formulas may look slightly different in print.</p>` : ""}`;

@@ -245,7 +245,6 @@ ul.points li:last-child, ol.steps li:last-child { margin-bottom: 0; }
 .rep-opts { display: flex; flex-wrap: wrap; gap: 4px 12px; font-size: .85rem; }
 .rep-meta { font-size: .75rem; color: var(--muted); }
 .rep-ans { font-size: .85rem; color: var(--accent); }
-.ans-unsure { display: block; font-size: .75rem; color: var(--muted); }
 .qv-ans { margin: 0 0 14px; padding: 4px 14px; border: 1px solid var(--border); border-radius: 12px; background: var(--surface); }
 .qv-ans summary { padding: 8px 0; }
 .qv-ans p { margin: 4px 0 8px; }
