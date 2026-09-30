@@ -9,7 +9,7 @@
     "each": 20,
     "summary": "8 questions, attempt any 5, each carries 20 marks. Mostly theory with many 'compare' and 'short notes' questions; a few questions on ratios, NPV/IRR and depreciation."
   },
-  "blocksOfficial": false,
+  "blocksOfficial": true,
   "sessions": ["2022-06", "2022-12", "2023-06", "2023-12", "2024-06", "2024-12", "2025-06", "2025-12", "2026-06"],
   "sessionNotes": {},
   "examTips": {
@@ -21,11 +21,11 @@
     "numerical": ["For ratios, write the formula, then an example with figures, then what a high or low value means.", "For NPV/IRR, show the Excel syntax: =NPV(rate, value1, …) + initial outlay, and =IRR(values)."]
   },
   "blocks": [
-    { "no": 1, "title": "Computer & Software Basics" },
-    { "no": 2, "title": "Networks, Internet & Security" },
-    { "no": 3, "title": "Office Tools (Word, PowerPoint, Excel)" },
-    { "no": 4, "title": "Data & Information Systems" },
-    { "no": 5, "title": "Business Applications" }
+    { "no": 1, "title": "Fundamentals of Computers" },
+    { "no": 2, "title": "Data Handling" },
+    { "no": 3, "title": "Word Processing" },
+    { "no": 4, "title": "PowerPoint Presentation and Multimedia" },
+    { "no": 5, "title": "Spreadsheets and Business Applications" }
   ],
   "topics": [
     {
@@ -35,20 +35,21 @@
       "kind": "theory",
       "summary": "CIA principles, authentication vs authorisation, 2FA and OTP, CAPTCHA, identity theft, firewall, GDPR vs DPD.",
       "points": [
-        "Cyber security: protecting systems, networks and data from attacks.",
-        "Principles (CIA triad): Confidentiality (only authorised access), Integrity (data not altered), Availability (accessible when needed); also authentication and non-repudiation.",
-        "Authentication verifies who you are (password, OTP, fingerprint); authorisation decides what you may access.",
-        "Two-factor authentication: two different factors (something you know + something you have/are), e.g. password + OTP. OTP: a one-time code sent by SMS/app, valid briefly.",
-        "Access control policy: rules for who can access what (role-based access, least privilege).",
-        "Penetration testing: authorised simulated attack to find weaknesses.",
-        "Firewall: hardware/software that filters traffic between a trusted and an untrusted network.",
-        "Identity theft: stealing personal data (Aadhaar, card details) to commit fraud.",
-        "CAPTCHA: test that tells humans from bots — text, image, audio, math, reCAPTCHA; protects forms and logins.",
-        "GDPR (EU, 2018) replaced DPD (1995): a regulation (binding directly) vs a directive; wider scope, consent rules, right to be forgotten, breach notification in 72 hours, heavy fines.",
-        "Public key encrypts, private key decrypts (asymmetric encryption); digital signatures use the private key."
+        "IT security protects confidentiality (only authorised access), integrity (data not altered) and availability (usable when needed).",
+        "The book's key principles: identification (user states who they are), authentication (identity checked against stored data) and authorisation (what the user may access).",
+        "Security actions for a business include a firewall, antivirus software, complex passwords, regular backup, penetration testing and limiting access to critical data.",
+        "Cryptography protects data; an electronic (digital) signature confirms who sent a message and that it is genuine.",
+        "Identity theft: stealing personal details (card, Aadhaar, passwords) to commit fraud.",
+        "CAPTCHA ('Completely Automated Public Turing test to tell Computers and Humans Apart', 2003) keeps bots out of forms and logins. Types: text, image, audio, mathematical, logic and gamification.",
+        "OTP (one-time password): a code valid for one login or transaction, sent to the registered mobile or made by a token; with the normal password it gives two-factor authentication.",
+        "GDPR replaced the EU Data Protection Directive (DPD, 95/46/EC). It widens 'personal data' (biometric, genetic, economic identity), gives the right to access data and to be forgotten, makes data processors as well as controllers responsible, and requires 'privacy by design' with stiff penalties."
       ],
       "frame": "Definition → principles with one example each → a comparison table where asked → conclusion.",
-      "mistakes": ["Mixing up authentication and authorisation."]
+      "mistakes": ["Mixing up authentication and authorisation."],
+      "units": [
+        { "block": 2, "unit": 6, "title": "IT Security Measures in Business" },
+        { "block": 2, "unit": 5, "title": "Business Information System", "part": "5.8 GDPR" }
+      ]
     },
     {
       "id": "software-os",
@@ -57,17 +58,20 @@
       "kind": "theory",
       "summary": "System vs application software, OS functions and types, language processors, utility programs, open source.",
       "points": [
-        "System software runs the computer (OS, drivers, utilities); application software does user tasks (Word, Tally).",
-        "Operating system: manages hardware and provides services to programs. Functions: process, memory, file, device and security management, user interface.",
-        "Types: batch, time-sharing, real-time, distributed, network, mobile (Android, iOS), desktop (Windows, Linux).",
-        "Android (open source, Linux-based, mobile) vs Windows (proprietary, desktop).",
-        "Language processors: compiler (translates whole program at once, faster execution), interpreter (line by line, easier debugging), assembler (assembly to machine code).",
-        "Utility programs: antivirus, disk cleanup, backup, compression, disk defragmenter.",
-        "Free and open-source software: source code available to use, modify and share (Linux, LibreOffice).",
-        "File management: organising and storing files; memory management: allocating RAM to processes."
+        "Software is of two types: system software runs the hardware (operating system, drivers, utilities); application software does user tasks (Word, Excel, Tally, SPSS, Photoshop).",
+        "Operating system: manages hardware and gives services to programs. Functions: process, memory, file, device and security management, and the user interface.",
+        "Types of OS: batch, time-sharing, real-time, distributed, network, desktop (Windows, Linux) and mobile (Android, iOS).",
+        "Windows is a proprietary graphical OS used on desktops and laptops; Android is an open-source, Linux-based mobile OS now also used on wearables, TVs and consoles.",
+        "Google Play Store is Android's digital store for downloading apps.",
+        "Language processors: compiler (translates the whole program at once), interpreter (line by line, easier to debug), assembler (assembly language to machine code).",
+        "Utility programs maintain the system: antivirus, disk clean-up, backup, compression, defragmenter.",
+        "Free and open-source software: the source code can be used, changed and shared (Linux, LibreOffice)."
       ],
       "frame": "Definition → functions or types as headed points → comparison table → examples.",
-      "mistakes": []
+      "mistakes": [],
+      "units": [
+        { "block": 1, "unit": 4, "title": "Basics of Computer Software" }
+      ]
     },
     {
       "id": "networks",
@@ -76,17 +80,23 @@
       "kind": "theory",
       "summary": "Network types, internet vs intranet vs extranet, WWW, URLs and domains, browsers, e-mail protocols, cloud computing.",
       "points": [
-        "Computer network: connected devices sharing data and resources.",
-        "Types by area: PAN (personal), LAN (building), MAN (city), WAN (country/world), HAN (home).",
-        "Internet (public, global), intranet (private, within an organisation), extranet (intranet opened to partners).",
-        "WWW is a service on the internet (web pages linked by hyperlinks); the internet is the network itself.",
-        "URL: web address — protocol://domain/path. Domain types: gTLD (.com, .org) and ccTLD (.in, .uk).",
-        "E-mail protocols: SMTP sends; POP3 downloads and usually deletes from server; IMAP syncs and keeps mail on the server.",
-        "Cloud computing: using storage and software over the internet (Google Drive, OneDrive); models IaaS, PaaS, SaaS.",
-        "Graphical browsers (Chrome) show images; non-graphical (Lynx) show text only."
+        "A computer network is a chain of nodes linked by communication channels that share data, programs and databases.",
+        "Types by area: PAN (one person, about 10 m), LAN (one building), MAN (a town, city or campus — several LANs), WAN (a country or continents; the internet is a public WAN) and HAN (a home).",
+        "Internet: a global network of networks working on common protocols. Intranet: a private network inside one organisation. Extranet: part of an intranet opened to partners.",
+        "Internet services: e-mail, World Wide Web, web services, FTP (file transfer), chat rooms, mailing lists and newsgroups.",
+        "The WWW is a service on the internet (linked web pages); the internet is the network itself. A web browser lets you view hypertext pages — graphical (Chrome) or non-graphical (text only).",
+        "E-mail protocols: SMTP sends mail; POP3 downloads mail to one device (usually removing it from the server); IMAP keeps mail on the server and syncs across devices.",
+        "URL: the address of a web page. A domain name (e.g. ignou.ac.in) is a memorable shortcut for an IP address; DNS translates names into IP addresses.",
+        "Top-level domains: gTLD (generic — .com, .org) and ccTLD (country code — .in, .uk).",
+        "Cloud computing: using remote internet servers to store, manage and process data instead of a local computer; providers charge by use (Google Drive)."
       ],
       "frame": "Definition → types in a table (range, example) → comparisons → conclusion.",
-      "mistakes": []
+      "mistakes": [],
+      "units": [
+        { "block": 2, "unit": 7, "title": "Internet Services and E-mail Configuration" },
+        { "block": 1, "unit": 2, "title": "Application of Computers", "part": "2.7 Computer networks" },
+        { "block": 1, "unit": 3, "title": "Web Applications", "part": "3.4 Cloud" }
+      ]
     },
     {
       "id": "word-ppt",
@@ -95,16 +105,23 @@
       "kind": "theory",
       "summary": "Mail merge, word processing features, equation editor, presentations and animation, Google Docs vs Word.",
       "points": [
-        "Mail merge: creates personalised letters, labels or envelopes from one main document and a data source.",
-        "Components: main document, data source (list of recipients), merge fields; steps: prepare document → connect data source → insert fields → preview → finish and merge.",
-        "Word processing: creating, editing, formatting and printing text documents; features include indenting, styles, tables, spell-check, bookmarks, track changes, equation editor.",
-        "Bookmark: a named location in a document you can jump to.",
-        "PowerPoint views: Normal, Slide Sorter, Reading, Slide Show; insert charts via Insert → Chart, diagrams via SmartArt.",
-        "Steps to prepare a presentation: purpose and audience → outline → design/theme → content and visuals → animation and transitions → rehearse.",
-        "Google Docs: free, online, real-time collaboration, auto-save, version history; Word is richer offline but collaboration needs OneDrive."
+        "Word processing: creating, editing, formatting, storing and printing documents; packages include MS Word, WordStar, WordPerfect and Google Docs.",
+        "MS Word 2010 tabs: File, Insert, Page Layout, References, Mailings, Review and View. Views: Print Layout, Full Screen Reading, Web Layout, Outline and Draft.",
+        "Editing and formatting: copy, undo/redo, find and replace, fonts, line spacing, borders and shading, bullets, indenting, margins, header and footer, tables, spell check, WordArt and SmartArt.",
+        "Mail merge (Mailings tab) makes many personalised copies: create the main document → create the data source → insert merge fields → merge.",
+        "Equation editor (Insert tab) inserts ready or custom equations; Track Changes (Review tab) records edits for review.",
+        "Referencing tools: footnote/endnote, index, table of contents, bookmark (named place to jump to), cross-reference, citation, placeholder and bibliography.",
+        "Google Docs is free, web-based and saves to the cloud so others can edit at once; Word files live on your computer unless shared.",
+        "PowerPoint: insert a slide from Home → New Slide, Ctrl+M, or right-click → New Slide; add graphs, diagrams, pictures, sound and video; save to external memory or the cloud."
       ],
       "frame": "Meaning → steps as a numbered list with menu paths → uses in business → conclusion.",
-      "mistakes": []
+      "mistakes": [],
+      "units": [
+        { "block": 3, "unit": 11, "title": "Advanced Tools Using Word Processing" },
+        { "block": 3, "unit": 9, "title": "Basics of Word Processing" },
+        { "block": 3, "unit": 10, "title": "Working with Word Processing" },
+        { "block": 4, "unit": 13, "title": "Working with PowerPoint" }
+      ]
     },
     {
       "id": "finance-excel",
@@ -113,71 +130,86 @@
       "kind": "mixed",
       "summary": "Ratio analysis, NPV and IRR (with Excel syntax), depreciation methods, loan and lease statements, payroll.",
       "points": [
-        "Ratio analysis: comparing figures from financial statements to judge liquidity, profitability and efficiency.",
-        "Current ratio = current assets ÷ current liabilities (ideal 2:1). Quick ratio = (current assets − inventory − prepaid) ÷ current liabilities (ideal 1:1).",
-        "Gross profit ratio = GP ÷ net sales × 100; net profit ratio = NP ÷ net sales × 100; operating cost ratio = (COGS + operating expenses) ÷ net sales × 100; inventory turnover = COGS ÷ average inventory.",
-        "Capital budgeting: evaluating long-term investment projects. Methods: payback, ARR, NPV, IRR, profitability index.",
-        "NPV = present value of inflows − initial outlay; accept if NPV > 0. IRR: discount rate at which NPV = 0; accept if IRR > cost of capital.",
-        "Excel: =NPV(rate, cash flows) + initial outlay (negative); =IRR(range including the outlay).",
-        "Depreciation: straight line (same amount each year) vs diminishing balance (fixed % on reducing balance); Excel =SLN(), =DB().",
-        "Loan statement: principal, interest, EMI schedule (=PMT()); lease statement: lease rentals for using an asset without owning it.",
-        "Payroll: calculation of salaries, allowances and deductions (PF, tax) for employees."
+        "Loan statement: prepared by the lender — loan amount, interest rate, period and instalments (Excel =PMT gives the EMI). Lease statement: the periodic payments by the lessee (tenant) to the lessor (owner).",
+        "Ratio analysis uses the trading account, profit and loss account and balance sheet to judge the firm's position.",
+        "Current ratio = current assets ÷ current liabilities (2:1 is the usual norm). Quick ratio = quick assets ÷ current liabilities (1:1).",
+        "Gross profit ratio = GP ÷ net sales × 100; net profit ratio = NP ÷ net sales × 100; inventory turnover = cost of goods sold ÷ average inventory.",
+        "Payroll statement: employee name, code, category, basic pay, allowances and perquisites, deductions, tax and net salary.",
+        "Capital budgeting evaluates long-term projects by their cash inflows and outflows. NPV = present value of inflows − outlay (accept if positive); IRR is the rate at which NPV = 0 (accept if above the cost of capital).",
+        "In Excel: =NPV(rate, later cash flows) + the initial outlay (entered as negative); =IRR(range including the outlay).",
+        "Depreciation: straight line (same amount each year, =SLN) and diminishing balance (fixed % of the reducing balance, =DB)."
       ],
       "formula": ["Current ratio = CA / CL", "NPV = Σ CFₜ/(1 + r)ᵗ − C₀", "=PMT(rate, nper, pv)"],
       "frame": "Definition → formula → small example → interpretation.",
-      "mistakes": ["Forgetting that Excel's NPV() does not include the year-0 outlay."]
+      "mistakes": ["Forgetting that Excel's NPV() does not include the year-0 outlay."],
+      "units": [
+        { "block": 5, "unit": 20, "title": "Creating Business Spreadsheets" }
+      ]
     },
     {
       "id": "epayment",
       "name": "E-payment, Plastic Money & Wallets",
-      "block": 5,
+      "block": 2,
       "kind": "theory",
       "summary": "E-payment methods, plastic money, NEFT vs RTGS, digital wallets, QR codes, B2B vs B2C.",
       "points": [
-        "E-payment: paying electronically instead of cash or cheque. Methods: debit/credit cards, net banking, UPI, e-wallets, NEFT, RTGS, IMPS, QR codes.",
-        "Plastic money: debit, credit, prepaid and smart cards; grew with banking reach, POS terminals, safety and convenience.",
-        "NEFT: batch-wise settlement, no minimum amount. RTGS: real-time, one by one, minimum ₹2 lakh — for large payments.",
-        "Digital wallet: stores money for quick payments (Paytm, PhonePe); success helped by demonetisation, UPI and smartphones.",
-        "QR code: a 2-D barcode storing encoded information (e.g. UPI ID) that a phone can scan and decode.",
-        "Precautions: never share OTP/PIN, use secure sites (https), check merchant details, enable alerts.",
-        "B2B: business sells to business (IndiaMART); B2C: business sells to consumers (Amazon)."
+        "Plastic money: credit, debit, smart, charge and stored-value cards, named after the plastic they are made of; money evolved from barter to coins, paper, cheques and cards.",
+        "E-payment: paying for goods and services electronically without cash or cheques.",
+        "Methods in the book: QR code (2-D barcode scanned to pay), UPI (virtual address, no account number needed), digital wallets, USSD (*99# on basic phones), MMID (7-digit mobile money ID), IMPS, AEPS (pay with Aadhaar), NFC, internet banking and cards.",
+        "E-wallet: a virtual wallet loaded with money from cards or bank for merchant payments and transfers.",
+        "Growth drivers: Digital India, demonetisation, cheap smartphones and data, better payment infrastructure and wallet promotions.",
+        "NEFT settles in batches; RTGS settles each payment in real time and is meant for large amounts (minimum ₹2 lakh).",
+        "Safety: never share OTP or PIN, use secure (https) sites, check merchant details, turn on alerts.",
+        "B2B e-commerce: business sells to business; B2C: business sells to consumers."
       ],
       "frame": "Meaning → methods as headed points → merits and precautions → conclusion.",
-      "mistakes": []
+      "mistakes": [],
+      "units": [
+        { "block": 2, "unit": 8, "title": "Plastic Money, E-Wallets and Online Pay" }
+      ]
     },
     {
       "id": "info-systems",
       "name": "Business Information Systems (MIS, DSS, ERP)",
-      "block": 4,
+      "block": 2,
       "kind": "theory",
       "summary": "Business and information systems, MIS vs DSS, ERP, data vs information, business ownership forms.",
       "points": [
-        "Data: raw facts; information: processed, meaningful data.",
-        "Business information system: people, hardware, software, data and procedures that support business operations and decisions.",
-        "Types: TPS (transactions), MIS (routine reports for middle managers), DSS (what-if analysis for semi-structured decisions), EIS (top management), ERP (integrates all departments on one database — SAP, Oracle).",
-        "MIS vs DSS: structured, periodic reports vs interactive, ad-hoc analysis.",
-        "Business by ownership: sole proprietorship (one owner, unlimited liability), partnership (2+ partners, agreement), company (separate legal entity), co-operative."
+        "Data are raw facts; information is data processed into a meaningful form for decisions.",
+        "A business information system supports effective decision-making; key aspects are the business plan, market analysis, sales and funding, organisation management and financial projections.",
+        "Information systems divide into operation support systems (e.g. transaction processing) and management support systems (MIS, DSS).",
+        "MIS: a computerised database that stores the firm's (mainly financial) information and gives regular reports — e.g. bank, railway and inventory management systems.",
+        "DSS: analyses data and presents it so users can make decisions; works on 'decide – act – review'. Types: communication-, data-, document-, knowledge- and model-driven.",
+        "MIS vs DSS: primary vs highest decision level; reports vs analysis of choices; operational efficiency vs effective decisions; large volume of transaction data vs smaller filtered data; summary reports vs decision analysis.",
+        "ERP: integrates information between customer, vendor and manufacturer over networks; it evolved from MRP and MRP II.",
+        "Forms of business by ownership: sole proprietorship, partnership, company, cooperative."
       ],
       "frame": "Definition → block diagram (inputs → processing → outputs, with feedback) → types → importance for business.",
-      "mistakes": []
+      "mistakes": [],
+      "units": [
+        { "block": 2, "unit": 5, "title": "Business Information System", "part": "5.2–5.3, 5.5–5.7" }
+      ]
     },
     {
       "id": "dbms",
       "name": "DBMS, RDBMS & Data Models",
-      "block": 4,
+      "block": 2,
       "kind": "theory",
       "summary": "File processing vs DBMS, DBMS vs RDBMS, data models, data abstraction and independence, database administrator.",
       "points": [
-        "File processing limits: redundancy, inconsistency, difficult access, isolation, integrity and security problems.",
-        "DBMS: software to store, retrieve and manage data centrally (MS Access, MySQL).",
-        "RDBMS stores data in related tables with keys and SQL (Oracle, MySQL); DBMS may store data as files without relations.",
-        "Data models: hierarchical (tree), network (graph), relational (tables), entity-relationship, object-oriented.",
-        "Data abstraction: three levels — physical (how stored), logical (what is stored), view (what a user sees).",
-        "Data independence: changing one level without affecting the next (physical and logical independence).",
-        "DBA: designs the schema, grants access, handles backup and recovery, tunes performance."
+        "A DBMS is a collection of logically related data plus the operations needed to access it. A database system = database + DBMS.",
+        "Functions: define the structure and data types, add, update, delete and read data, keep it consistent, stop unauthorised access and allow recovery.",
+        "Limitations of file processing systems that a DBMS overcomes: data redundancy and inconsistency, data isolation, difficult access, integrity problems, concurrency problems and weak security.",
+        "Data models: record-based (hierarchical, network, relational) and object-based (entity–relationship, object-oriented). The relational model is the most widely used.",
+        "RDBMS stores data in tables (relations): row = tuple, column = attribute, schema = overall design, instance = the data at a given moment.",
+        "Data abstraction has three levels: physical (how data is stored), logical (what data is stored and how it relates) and external or view (what each user sees). Data independence lets one level change without affecting the next.",
+        "Database administrator (DBA): has overall control — designs the schema, grants access, handles backup and recovery."
       ],
       "frame": "Definition → diagram of the three levels → comparison table → conclusion.",
-      "mistakes": []
+      "mistakes": [],
+      "units": [
+        { "block": 2, "unit": 5, "title": "Business Information System", "part": "5.4 DBMS" }
+      ]
     },
     {
       "id": "computer-basics",
@@ -186,65 +218,90 @@
       "kind": "theory",
       "summary": "What a computer is, generations, types (analog/digital/hybrid, micro to super), hardware components, applications.",
       "points": [
-        "Computer: a programmable electronic device that accepts data (input), processes it and gives results (output), and stores them.",
-        "Hardware: input devices, CPU (ALU, CU, registers), memory (RAM, ROM), storage, output devices. Software: system and application.",
-        "Generations: 1st vacuum tubes; 2nd transistors; 3rd integrated circuits; 4th microprocessors; 5th AI and parallel processing; 6th (emerging) quantum and nano computing.",
-        "By data: analog (continuous), digital (discrete), hybrid (both). By size: micro, mini, mainframe, super.",
-        "Mainframe: many users, large transaction processing (banks). Supercomputer: fastest, scientific calculations (weather).",
-        "Applications: business, banking, medicine (diagnosis, records, imaging), defence (simulation, communication), education."
+        "A computer is a programmable electronic device that does four things: accepts data (input), processes it, gives results (output) and stores them.",
+        "Hardware: input devices, CPU (ALU, control unit, registers), memory (RAM, ROM), storage and output devices. Software makes the hardware useful.",
+        "The book's six generations: 1st (1940–56) vacuum tubes and machine language; 2nd (1956–63) transistors; 3rd (1964–71) integrated circuits; 4th (1972–2010) microprocessors, networks and the internet; 5th (2010–20) parallel processing and AI; 6th (2020 on) nanotechnology.",
+        "Classification — by purpose: general or special purpose; by size and capacity: micro, mini, mainframe, super; by technology: analog (continuous data), digital (discrete) and hybrid (both).",
+        "Mainframes serve many users and huge transaction loads (banks); supercomputers are the fastest, used for scientific work such as weather forecasting.",
+        "Applications: business, education, banking, insurance, healthcare, defence, communication and personal use.",
+        "Advantages: speed, accuracy, multitasking, storage, data security. Disadvantages: fewer jobs, loss of privacy, viruses and cybercrime."
       ],
       "frame": "Definition with a block diagram (Input → CPU → Output, with memory) → classification table → applications.",
-      "mistakes": []
+      "mistakes": [],
+      "units": [
+        { "block": 1, "unit": 1, "title": "Introduction to Computer" },
+        { "block": 1, "unit": 2, "title": "Application of Computers" }
+      ]
     },
     {
       "id": "youtube-digital",
       "name": "YouTube, AdSense & Digitisation",
-      "block": 5,
+      "block": 4,
       "kind": "theory",
       "summary": "YouTube channels and revenue, Google AdSense, digitisation's impact on business, AI.",
       "points": [
-        "YouTube: video platform for marketing, training and brand building.",
-        "Create a channel: sign in with a Google account → Create a channel → name, logo, description → upload videos → customise.",
-        "Revenue: YouTube Partner Programme (1,000 subscribers and 4,000 watch hours) and AdSense for ads; challenging due to competition and eligibility rules.",
-        "Google AdSense: places ads on websites and YouTube and pays publishers per click or view. Advantages: free, easy, trusted advertisers. Limitations: strict policies, low earnings without traffic.",
-        "Digitisation: converting information and processes to digital form — faster service, lower cost, online markets, data-driven decisions.",
-        "Google Play Store: Android's app store."
+        "Multimedia combines text, images, sound, animation and video; animation creates the illusion of movement from still images, and PowerPoint has built-in animation tools.",
+        "YouTube is a video-sharing site. To upload: sign in → click Upload → choose the video and privacy setting → manage the upload.",
+        "Creating a channel: sign in with a Google account → create channel → add name, logo and description → upload and customise.",
+        "Google AdSense (2003) places ads on websites and YouTube and pays the owner for clicks or views; it is free and easy to join, but has strict policies and earns little without traffic.",
+        "YouTube pays creators through the YouTube Partner Programme, which has minimum subscriber and watch-time conditions.",
+        "Digitisation: converting information and processes to digital form — faster service, lower cost, online markets and data-based decisions.",
+        "AI now automates animation and rendering of visual effects."
       ],
       "frame": "Meaning → steps or advantages as headed points → examples → conclusion.",
-      "mistakes": []
+      "mistakes": [],
+      "units": [
+        { "block": 4, "unit": 14, "title": "Multimedia, Video-Making and YouTube" },
+        { "block": 2, "unit": 6, "title": "IT Security Measures in Business", "part": "6.9 Digitization" }
+      ]
     },
     {
       "id": "project-research",
       "name": "DPR, Research Proposal & Data Analysis",
-      "block": 5,
+      "block": 3,
       "kind": "theory",
       "summary": "Detailed project report, research proposal components, data collection, frequency distribution, correlation and regression.",
       "points": [
-        "DPR (detailed project report): the final plan used for funding and approval. Components: executive summary, promoters, market analysis, technical details, cost of project, means of finance, profitability, risks.",
-        "Research proposal: title, introduction, problem statement, objectives, literature review, hypothesis, methodology, time frame, budget, references.",
-        "Data collection: primary (survey, observation, interview) and secondary (published sources).",
-        "Frequency distribution table: shows how often each value or class occurs.",
-        "Correlation measures the strength of relationship; regression predicts one variable from another."
+        "A detailed project report (DPR) is the base document for investment, approval, planning and implementation of a project.",
+        "DPR structure in the book: title page; name, affiliation, date; acknowledgement; contents; abbreviations; executive summary; introduction; background; technical and financial analysis; recommended action plan; appendices.",
+        "Business presentations inform, educate, motivate and persuade; types: group, presentation aid, persuasive and informative.",
+        "A research proposal presentation covers title, abstract, literature review, objectives, research methodology, references and annexes.",
+        "Project presentation steps: analyse the audience → select the topic → define the objective → prepare the body → prepare the introduction and conclusion.",
+        "Excel's Data Analysis ToolPak gives frequency distribution, descriptive statistics (mean, median, mode, SD, range, variance), correlation, regression and hypothesis tests (t-tests, z-test).",
+        "Correlation measures the strength of a linear relationship between two variables; regression shows how the dependent variable relates to independent variables."
       ],
       "frame": "Meaning → components as a numbered list → conclusion.",
-      "mistakes": []
+      "mistakes": [],
+      "units": [
+        { "block": 3, "unit": 12, "title": "Creating Business Documentation", "part": "12.6 Detailed project report" },
+        { "block": 4, "unit": 15, "title": "Creating Business Presentation" },
+        { "block": 5, "unit": 19, "title": "Advanced Options in Spreadsheets", "part": "19.5–19.9" }
+      ]
     },
     {
       "id": "excel",
       "name": "MS Excel Features & Functions",
-      "block": 3,
+      "block": 5,
       "kind": "theory",
       "summary": "Charts, worksheets, relative vs absolute addressing, logical and financial functions, formulas vs functions.",
       "points": [
-        "Relative reference (A1) changes when copied; absolute ($A$1) stays fixed; mixed ($A1).",
-        "Formula: user-written expression (=A1+B1). Function: built-in formula (=SUM(A1:A10)). Array formula works on a range at once.",
-        "Logical functions: IF, AND, OR, NOT, IFERROR. Financial functions: PMT, FV, PV, NPV, IRR, SLN, DB.",
-        "Charts: select data → Insert → chart type; organise with chart titles, legends, axes, move to a new sheet.",
-        "Worksheets: insert, delete, rename, move, group (select several with Ctrl) and ungroup.",
-        "Cell comments/notes explain entries; Track Changes records edits in shared workbooks."
+        "A spreadsheet arranges data in rows and columns for organising and analysing, especially numbers. Excel screen: ribbon, quick access toolbar, title bar, formula bar, worksheet tabs.",
+        "Worksheets can be named, inserted, deleted, grouped, ungrouped, moved, hidden, linked and protected.",
+        "Addressing: relative (A1) changes when copied; absolute ($A$1) stays fixed; mixed ($A1 or A$1).",
+        "A formula is an expression of values, operators and cell references (=A1+B1). A function is a pre-defined formula: '=' + name + arguments (=SUM(A1:A10)).",
+        "Array formula (CSE — Ctrl+Shift+Enter) does many calculations on a range at once.",
+        "Function groups: statistical, financial, logical (IF, AND, OR), date and time, text (CONCATENATE), lookup (VLOOKUP, HLOOKUP) and math.",
+        "Charts make data readable; pivot tables and pivot charts summarise and cross-tabulate large data sets.",
+        "Sort and filter go together to prepare data; cell comments explain entries."
       ],
       "frame": "Meaning → syntax with an example formula → use in business → conclusion.",
-      "mistakes": []
+      "mistakes": [],
+      "units": [
+        { "block": 5, "unit": 16, "title": "Spreadsheets Concept" },
+        { "block": 5, "unit": 17, "title": "Formulas and Functions" },
+        { "block": 5, "unit": 18, "title": "Graphical Presentations of Data" },
+        { "block": 5, "unit": 19, "title": "Advanced Options in Spreadsheets", "part": "19.2–19.4" }
+      ]
     }
   ],
   "questions": [
@@ -380,5 +437,6 @@
     { "s": "2026-06", "q": "8(a)", "t": "Distinguish (any two): authentication vs authorisation", "m": 6.67, "k": "th", "topic": "security" },
     { "s": "2026-06", "q": "8(b)", "t": "Distinguish (any two): IMAP vs POP3", "m": 6.67, "k": "th", "topic": "networks" },
     { "s": "2026-06", "q": "8(c)", "t": "Distinguish (any two): public key vs private key", "m": 6.66, "k": "th", "topic": "security" }
-  ]
+  ],
+  "notesSource": "Notes written from the IGNOU BCOS-183 study material."
 }
