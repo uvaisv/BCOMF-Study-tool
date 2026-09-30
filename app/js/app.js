@@ -18,6 +18,7 @@
   const RECENT = 4;          // sessions counted as "recent"
   const SPARE = 1.2;         // the minimum set covers 1.2 × the marks a student must answer, for choice
   const HOURS_BY_KIND = { theory: 1, numerical: 1.5, mixed: 2 };
+  const PAPER_ROOT = "../";   // where question-papers/ sits, relative to this page
 
   /* ---------- storage (per-viewer convenience only) ---------- */
   const store = {
@@ -144,10 +145,16 @@
       : `${g.attempt} from ${g.name.split(/[:(]/)[0].trim()}`).join(" + ");
   }
 
-  function paperButtons(papers, limit) {
+  // A paper downloads from this site as "<CODE> <Mon YYYY>.pdf", so every term gets its own
+  // name (IGNOU names each term's file just "<CODE>.pdf").
+  const paperHref = (code, p) => p.file
+    ? `href="${esc(PAPER_ROOT + p.file)}" download="${esc(`${code} ${sessionLabel(p.s)}.pdf`)}"`
+    : `href="${esc(p.url)}"`;
+
+  function paperButtons(code, papers, limit) {
     const list = limit ? papers.slice(0, limit) : papers;
     return `<div class="papers">${list.map((p) =>
-      `<a class="paper" href="${esc(p.url)}" target="_blank" rel="noopener"><span class="paper-s">${sessionLabel(p.s)}</span><span class="paper-l">PDF ↗</span></a>`).join("")}</div>`;
+      `<a class="paper" ${paperHref(code, p)} target="_blank" rel="noopener"><span class="paper-s">${sessionLabel(p.s)}</span><span class="paper-l">PDF ↓</span></a>`).join("")}</div>`;
   }
 
   /* ---------- views ---------- */
@@ -210,7 +217,7 @@
     if (!course) {
       app.innerHTML = `${courseHeader(c)}
         <h2>Past papers</h2>
-        ${papers.length ? paperButtons(papers) : `<p class="muted">No past papers found for this course yet.</p>`}
+        ${papers.length ? paperButtons(code, papers) : `<p class="muted">No past papers found for this course yet.</p>`}
         <p class="muted small">Topic priorities and notes for this course are being prepared.</p>`;
       return;
     }
@@ -247,11 +254,45 @@
       </section>` : ""}
 
       <div class="section-head"><h2>Latest past papers</h2><a href="#/c/${code}/papers">All ${papers.length} →</a></div>
-      ${paperButtons(papers, 4)}
+      ${paperButtons(code, papers, 4)}
 
       ${others.length ? `<h2>Other topics</h2>
       <p class="muted small">In order of priority. Study these after the list above.</p>
       <div class="rows card">${others.map((t) => topicRow(code, t, n, mcq)).join("")}</div>` : ""}`;
+  }
+
+  // Past questions of a topic, most important first: identical questions grouped, ranked by
+  // the marks they have carried in all papers together, then by how recent they are.
+  function askedList(t) {
+    const byText = new Map();
+    [...t.qs].sort((a, b) => b.s.localeCompare(a.s)).forEach((q) => {
+      const k = q.t.toLowerCase().replace(/[^a-z0-9]/g, "");
+      if (!byText.has(k)) byText.set(k, { ...q, times: 0, carried: 0 });
+      const g = byText.get(k);
+      g.times += 1; g.carried += q.m;
+    });
+    return [...byText.values()].sort((a, b) => b.carried - a.carried || b.s.localeCompare(a.s));
+  }
+
+  // Each row opens the latest paper it was asked in, at that question.
+  const askedItem = (code, q, mcq) => `<li><a class="ask" href="#/c/${code}/paper/${q.s}/${encodeURIComponent(q.q)}">
+          <span class="ask-main"><span class="ask-q">${esc(q.t)}</span>
+            <span class="ask-meta">${q.times > 1 ? `Asked ${q.times}× · ` : ""}${sessionLabel(q.s)}${mcq ? "" : ` · ${marks(q.m)} marks`}</span></span>
+          <span class="chev" aria-hidden="true">›</span></a></li>`;
+
+  // All past questions of one topic, on their own page.
+  async function viewAsked(code, id) {
+    const { c, course, analysis } = await getCourse(code);
+    const t = analysis && analysis.topics.find((x) => x.id === id);
+    if (!t) return viewNotFound();
+    const mcq = !!course.pattern.mcq;
+    const asked = askedList(t);
+    const papers = new Set(t.qs.map((q) => q.s)).size;
+    app.innerHTML = `
+      <a class="back" href="#/c/${code}/t/${id}">← ${esc(t.name)}</a>
+      <h1>Asked in past papers</h1>
+      <p class="muted small">${asked.length} questions from ${papers} of ${course.sessions.length} papers · most important first · ${esc(c.code)}</p>
+      <section class="card asked-card"><ul class="asked">${asked.map((q) => askedItem(code, q, mcq)).join("")}</ul></section>`;
   }
 
   async function viewTopic(code, id) {
@@ -260,22 +301,8 @@
     if (!t) return viewNotFound();
     const n = course.sessions.length;
     const mcq = !!course.pattern.mcq;
-    // Past questions, most important first: identical questions grouped, ranked by the
-    // marks they have carried in all papers together, then by how recent they are.
-    const byText = new Map();
-    [...t.qs].sort((a, b) => b.s.localeCompare(a.s)).forEach((q) => {
-      const k = q.t.toLowerCase().replace(/[^a-z0-9]/g, "");
-      if (!byText.has(k)) byText.set(k, { ...q, times: 0, carried: 0 });
-      const g = byText.get(k);
-      g.times += 1; g.carried += q.m;
-    });
-    const asked = [...byText.values()].sort((a, b) => b.carried - a.carried || b.s.localeCompare(a.s));
+    const asked = askedList(t);
     const SHOW = 3;
-    // Each row opens the latest paper it was asked in, at that question.
-    const askedItem = (q) => `<li><a class="ask" href="#/c/${code}/paper/${q.s}/${encodeURIComponent(q.q)}">
-          <span class="ask-main"><span class="ask-q">${esc(q.t)}</span>
-            <span class="ask-meta">${q.times > 1 ? `Asked ${q.times}× · ` : ""}${sessionLabel(q.s)}${mcq ? "" : ` · ${marks(q.m)} marks`}</span></span>
-          <span class="chev" aria-hidden="true">›</span></a></li>`;
     // Next topic in study order: the "study first" list, then the rest.
     const order = [...analysis.mvp, ...analysis.topics.map((x) => x.id).filter((x) => !analysis.mvp.includes(x))];
     const next = analysis.topics.find((x) => x.id === order[order.indexOf(id) + 1]);
@@ -302,8 +329,8 @@
       <div class="callout warn"><ul class="points">${t.mistakes.map((m) => `<li>${esc(m)}</li>`).join("")}</ul></div>` : ""}
 
       <h2>Asked in past papers</h2>
-      <section class="card asked-card"><ul class="asked">${asked.slice(0, SHOW).map(askedItem).join("")}</ul>
-        ${asked.length > SHOW ? `<details><summary>Show ${asked.length - SHOW} more</summary><ul class="asked">${asked.slice(SHOW).map(askedItem).join("")}</ul></details>` : ""}
+      <section class="card asked-card"><ul class="asked">${asked.slice(0, SHOW).map((q) => askedItem(code, q, mcq)).join("")}</ul>
+        ${asked.length > SHOW ? `<a class="see-all" href="#/c/${code}/t/${id}/asked">See all ${asked.length} questions <span aria-hidden="true">→</span></a>` : ""}
       </section>
 
       <div class="topic-foot">
@@ -366,7 +393,7 @@
     const { c, course } = await getCourse(code);
     if (!course) return viewNotFound();
     const [papers, text] = await Promise.all([load("data/papers.json"), load(`data/text/${code}.json`).catch(() => null)]);
-    const pdf = ((papers[code] || []).find((p) => p.s === s) || {}).url;
+    const pdf = (papers[code] || []).find((p) => p.s === s);
     const paper = text && text.papers[s];
     const ref = parseRef(refText);
     const q = paper && paper.items.find((it) => it.n === ref.n);
@@ -384,7 +411,7 @@
       <p class="muted small head-meta">${esc(c.code)} · ${esc(c.title)}</p>
       ${q ? `<section class="card qv">${body.html}</section>`
         : `<p class="muted">This question isn't available as text yet.</p>`}
-      ${pdf ? `<a class="btn secondary qv-pdf" href="${esc(pdf)}" target="_blank" rel="noopener">Download full paper (PDF)</a>` : ""}
+      ${pdf ? `<a class="btn secondary qv-pdf" ${paperHref(code, pdf)} target="_blank" rel="noopener">Download full paper (PDF)</a>` : ""}
       ${q && !exact ? `<p class="small muted">Text from the official paper; tables and formulas may look slightly different in print.</p>` : ""}`;
     // Wide tables (trial balances) shrink to fit the screen rather than hide columns.
     app.querySelectorAll(".ptable").forEach((t) => {
@@ -552,8 +579,8 @@
     const papers = (await load("data/papers.json"))[code] || [];
     const notes = course ? Object.entries(course.sessionNotes || {}).map(([s, n]) => `<li><strong>${sessionLabel(s)}:</strong> ${esc(n)}</li>`).join("") : "";
     app.innerHTML = `${courseHeader(c, course)}${course ? courseTabs(code, "/papers") : ""}
-      <p class="muted small">Official papers from IGNOU's website. Try the latest two under exam conditions.</p>
-      ${paperButtons(papers)}
+      <p class="muted small">Official IGNOU papers, saved as course code and term. Try the latest two under exam conditions.</p>
+      ${paperButtons(code, papers)}
       ${notes ? `<ul class="points small muted">${notes}</ul>` : ""}`;
   }
 
@@ -572,7 +599,8 @@
       if (!parts.length) await viewHome();
       else if (parts[0] === "c" && parts[1]) {
         const code = parts[1];
-        if (parts[2] === "t" && parts[3]) await viewTopic(code, parts[3]);
+        if (parts[2] === "t" && parts[3] && parts[4] === "asked") await viewAsked(code, parts[3]);
+        else if (parts[2] === "t" && parts[3]) await viewTopic(code, parts[3]);
         else if (parts[2] === "paper" && parts[3]) await viewQuestion(code, parts[3], parts[4]);
         else if (parts[2] === "plan") await viewPlan(code);
         else if (parts[2] === "exam") await viewExam(code);

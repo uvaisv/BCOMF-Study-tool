@@ -271,10 +271,12 @@ details summary { cursor: pointer; color: var(--accent); font-weight: 600; paddi
 .slot-what a { text-decoration: none; }
 .slot-how { font-size: .85rem; color: var(--muted); }
 
-/* Past questions on a topic: the top few, the rest behind "Show more" */
+/* Past questions on a topic: the top few, then "See all" opens the full list */
 .asked { list-style: none; padding: 0; margin: 0; }
-.asked li + li, details .asked li:first-child { border-top: 1px solid var(--border); }
+.asked li + li { border-top: 1px solid var(--border); }
 .card.asked-card { padding-top: 4px; padding-bottom: 6px; }
+.see-all { display: flex; align-items: center; justify-content: center; gap: 6px; min-height: 48px; margin-top: 2px; border-top: 1px solid var(--border); color: var(--accent); font-weight: 600; text-decoration: none; }
+.see-all:hover { text-decoration: underline; }
 .ask { display: flex; align-items: center; gap: 10px; padding: 11px 0; text-decoration: none; color: inherit; }
 .ask-main { flex: 1; min-width: 0; display: grid; gap: 3px; }
 .ask-q { line-height: 1.35; }
