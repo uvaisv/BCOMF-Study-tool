@@ -8,7 +8,9 @@ An exam-preparation tool for IGNOU BCOMF (B.Com Honours) students. It uses previ
 
 Built around one rule (see `CLAUDE.md`): **help students study — never add setup or extra work.**
 
-- **Home** says in one glance what the app gives: ranked topics, short notes, past papers, a study plan. Pick a year or search `131` / `financial`.
+- **Home**: a short welcome note on the first visit says what the app gives (ranked topics, short notes, past papers, a study plan); after that the course list comes first. Pick a year or search `131` / `financial`.
+- **Settings** (gear in the top bar): theme, show the welcome note again, and the disclaimer.
+- **Installable**: on a phone, *Add to Home screen* / *Install app* gives an icon that opens full-screen without the browser's address bar. Pages already opened still load offline.
 - **Course page** opens straight on **Study these first** — the smallest set of topics that has carried enough marks to answer the paper (worked out per part when the paper is split into parts). Then the latest past papers (one tap to the PDF) and the other topics in priority order.
 - **Topic page**: where the topic is in the IGNOU study material (block and unit, where added), key points, how to solve, formulas, how to write the answer, common mistakes, and an **Asked in past papers** button that opens every past question on it, most important first, on its own page. Tapping a question opens **just that question inside the app** — term, question number, printed marks and the part asked — with a button to download the full paper. **Next topic** keeps you moving; **Mark as done** is optional.
 - **Plan**: one tap for the time left (3 hours, 6 hours, 2 days, 1 week) and the schedule is there — no settings.
@@ -33,6 +35,7 @@ To publish on Vercel, import the repo with Framework Preset **Other**, no build 
 ```
 app/
   index.html, css/, js/app.js
+  manifest.webmanifest, sw.js, icons/   home-screen app: name, icon, full-screen launch, offline cache
   data/courses.json       all courses (year, exam format, paper count)
   data/papers.json        past-paper links per course (built from question-papers/index.csv)
   data/<CODE>.json        topics, study notes, exam tips and every past question tagged to a topic

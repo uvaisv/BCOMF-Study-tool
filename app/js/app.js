@@ -675,4 +675,7 @@
 
   window.addEventListener("hashchange", route);
   route();
+
+  // Makes the app installable as a home-screen app and keeps opened pages readable offline.
+  if ("serviceWorker" in navigator) navigator.serviceWorker.register("sw.js").catch(() => {});
 })();
