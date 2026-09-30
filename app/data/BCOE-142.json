@@ -25,7 +25,7 @@
   ],
   "summary": "Section A: answer 2 of 3 (theory; Q3 is short notes, any 4 of 6). Section B: answer 3 of 5 or 6 — mostly sums on ratios, budgets, variances, CVP and marginal costing. Each question 20 marks."
  },
- "blocksOfficial": false,
+ "blocksOfficial": true,
  "sessions": [
   "2022-06",
   "2022-12",
@@ -57,38 +57,30 @@
  "blocks": [
   {
    "no": 1,
-   "title": "Management Accounting & Cost Management"
+   "title": "Management Accounting: Introduction and Basic Techniques"
   },
   {
    "no": 2,
-   "title": "Financial Statements & Ratios"
+   "title": "Budgeting and Budgetary Control"
   },
   {
    "no": 3,
-   "title": "Budgeting"
+   "title": "Standard Costing and Variance Analysis"
   },
   {
    "no": 4,
-   "title": "Standard Costing"
+   "title": "Marginal Costing and Cost Volume Profit Analysis"
   },
   {
    "no": 5,
-   "title": "Marginal Costing & CVP"
-  },
-  {
-   "no": 6,
-   "title": "Responsibility Accounting & Pricing"
-  },
-  {
-   "no": 7,
-   "title": "Contemporary Topics"
+   "title": "Decision Making"
   }
  ],
  "topics": [
   {
    "id": "standard",
    "name": "Standard Costing & Variance Analysis",
-   "block": 4,
+   "block": 3,
    "kind": "mixed",
    "summary": "Meaning, objectives, advantages and limitations of standard costing; standard costing vs budgeting and estimate costing; material and labour variances.",
    "points": [
@@ -97,7 +89,8 @@
     "Limitations: setting accurate standards is hard, standards date quickly, costly for small firms, may demotivate if too tight, not suited to job work.",
     "Standard costing vs budgeting: unit-level vs total; mainly production costs vs all functions; a technique of cost control vs a planning tool; variances analysed by cause vs totals compared.",
     "Estimate costing vs standard costing: estimates are guesses of what costs will be (for quotations), standards are what costs should be (for control), set scientifically.",
-    "Material variances: cost = price + usage; usage = mix + yield (or sub-usage). Labour variances: cost = rate + efficiency (+ idle time); efficiency = mix + sub-efficiency."
+    "Material variances: cost = price + usage; usage = mix + yield (or sub-usage). Labour variances: cost = rate + efficiency (+ idle time); efficiency = mix + sub-efficiency.",
+    "Overhead variances (Unit 12): variable overhead — expenditure and efficiency; fixed overhead — expenditure and volume (volume = capacity + efficiency, plus calendar). Sales variances: price and volume (volume = mix + quantity)."
    ],
    "mistakes": [
     "Forgetting to mark each variance favourable (F) or adverse (A).",
@@ -120,12 +113,34 @@
     "LRV = AH × (SR − AR)",
     "LEV = SR × (SH − AH)"
    ],
-   "frame": "Working table (SQ, SP, AQ, AP) → each variance with formula and F/A → check that parts add up to the total."
+   "frame": "Working table (SQ, SP, AQ, AP) → each variance with formula and F/A → check that parts add up to the total.",
+   "units": [
+    {
+     "block": 3,
+     "unit": 9,
+     "title": "Standard Costing: An Overview"
+    },
+    {
+     "block": 3,
+     "unit": 10,
+     "title": "Material Variances"
+    },
+    {
+     "block": 3,
+     "unit": 11,
+     "title": "Labour Variances"
+    },
+    {
+     "block": 3,
+     "unit": 12,
+     "title": "Overhead Variances"
+    }
+   ]
   },
   {
    "id": "cvp",
    "name": "Cost–Volume–Profit & Break-Even Analysis",
-   "block": 5,
+   "block": 4,
    "kind": "mixed",
    "summary": "Contribution, P/V ratio, break-even point, margin of safety, angle of incidence, sales for a target profit and the effect of changes in price and costs.",
    "points": [
@@ -153,12 +168,19 @@
     "Margin of safety = Actual sales − BEP sales = Profit ÷ P/V ratio",
     "Required sales = (Fixed cost + Desired profit) ÷ P/V ratio"
    ],
-   "frame": "Write the formula, substitute, answer with units (₹ or units) — one line per part."
+   "frame": "Write the formula, substitute, answer with units (₹ or units) — one line per part.",
+   "units": [
+    {
+     "block": 4,
+     "unit": 14,
+     "title": "Cost Volume Profit Analysis"
+    }
+   ]
   },
   {
    "id": "budgeting",
    "name": "Budgets & Budgetary Control",
-   "block": 3,
+   "block": 2,
    "kind": "mixed",
    "summary": "Budgeting and budgetary control, objectives, advantages and limitations, types of budgets, flexible budget, cash budget, master and sales budgets, zero-based and performance budgeting, control ratios.",
    "points": [
@@ -185,12 +207,34 @@
     "Activity ratio = Standard hours for actual output ÷ Budgeted hours × 100",
     "Efficiency ratio = Standard hours ÷ Actual hours × 100"
    ],
-   "frame": "Budget in columns for each activity level; state fixed, variable and semi-variable items separately."
+   "frame": "Budget in columns for each activity level; state fixed, variable and semi-variable items separately.",
+   "units": [
+    {
+     "block": 2,
+     "unit": 5,
+     "title": "Budgeting: An Overview"
+    },
+    {
+     "block": 2,
+     "unit": 6,
+     "title": "Preparation of Budgets"
+    },
+    {
+     "block": 2,
+     "unit": 7,
+     "title": "Approaches to Budgeting"
+    },
+    {
+     "block": 2,
+     "unit": 8,
+     "title": "Budgetary Control"
+    }
+   ]
   },
   {
    "id": "marginal",
    "name": "Marginal Costing & Decision Making",
-   "block": 5,
+   "block": 4,
    "kind": "mixed",
    "summary": "Marginal costing and its characteristics, absorption vs marginal income statements, and decisions — make or buy, sales mix, price cuts, special or export orders, differential costing.",
    "points": [
@@ -215,12 +259,24 @@
     "Contribution = Sales − Variable cost",
     "Profit = Contribution − Fixed cost"
    ],
-   "frame": "Marginal cost statement: Sales − Variable cost = Contribution − Fixed cost = Profit, for each option compared."
+   "frame": "Marginal cost statement: Sales − Variable cost = Contribution − Fixed cost = Profit, for each option compared.",
+   "units": [
+    {
+     "block": 4,
+     "unit": 13,
+     "title": "Marginal Costing"
+    },
+    {
+     "block": 5,
+     "unit": 15,
+     "title": "Relevant Costs for Decision Making"
+    }
+   ]
   },
   {
    "id": "financial-statements",
    "name": "Financial Statements & Their Analysis",
-   "block": 2,
+   "block": 1,
    "kind": "mixed",
    "summary": "Nature, usefulness and limitations of financial statements, tools of analysis, horizontal and vertical balance sheets, profit levels (GP to PAT, profit for equity), reserves and provisions, fund flow statement.",
    "points": [
@@ -241,7 +297,19 @@
     "PBIT = operating profit + non-operating income − non-operating expenses (excluding interest).",
     "PBT = PBIT − interest; PAT = PBT − tax; profit for equity = PAT − preference dividend."
    ],
-   "frame": "Meaning → headed points → conclusion; for profit levels, show a vertical statement."
+   "frame": "Meaning → headed points → conclusion; for profit levels, show a vertical statement.",
+   "units": [
+    {
+     "block": 1,
+     "unit": 3,
+     "title": "Understanding Financial Statements"
+    },
+    {
+     "block": 1,
+     "unit": 4,
+     "title": "Techniques of Financial Analysis"
+    }
+   ]
   },
   {
    "id": "mgmt-accounting",
@@ -259,7 +327,14 @@
     "Vs cost accounting: wider scope (all information) vs costs only; forward-looking vs mainly historical and current. Vs financial accounting: internal vs external users, no statutory format vs prescribed format, parts of the business vs whole."
    ],
    "mistakes": [],
-   "frame": "Definition → headed points → comparison table where asked → conclusion."
+   "frame": "Definition → headed points → comparison table where asked → conclusion.",
+   "units": [
+    {
+     "block": 1,
+     "unit": 1,
+     "title": "Management Accounting: An Introduction"
+    }
+   ]
   },
   {
    "id": "cost-management",
@@ -276,12 +351,19 @@
     "Cost management: using techniques across the business to manage costs — activity-based costing, target costing, kaizen, life-cycle costing, value-chain analysis, JIT, benchmarking."
    ],
    "mistakes": [],
-   "frame": "Definition → techniques as headings → comparison table → conclusion."
+   "frame": "Definition → techniques as headings → comparison table → conclusion.",
+   "units": [
+    {
+     "block": 1,
+     "unit": 2,
+     "title": "Cost Control, Cost Reduction and Cost Management"
+    }
+   ]
   },
   {
    "id": "ratios",
    "name": "Ratio Analysis",
-   "block": 2,
+   "block": 1,
    "kind": "mixed",
    "summary": "Liquidity, activity, solvency and profitability ratios, the DuPont model, working back figures from given ratios, and limitations of ratio analysis.",
    "points": [
@@ -310,12 +392,20 @@
     "Operating ratio = (Cost of goods sold + Operating expenses) ÷ Net sales × 100",
     "ROE (DuPont) = Net profit margin × Asset turnover × Equity multiplier"
    ],
-   "frame": "Formula → substitution → answer → one-line comment on what the ratio means."
+   "frame": "Formula → substitution → answer → one-line comment on what the ratio means.",
+   "units": [
+    {
+     "block": 1,
+     "unit": 4,
+     "title": "Techniques of Financial Analysis",
+     "part": "Ratio analysis"
+    }
+   ]
   },
   {
    "id": "responsibility",
    "name": "Responsibility Accounting & Performance",
-   "block": 6,
+   "block": 5,
    "kind": "mixed",
    "summary": "Responsibility accounting, cost, revenue, profit and investment centres, how the centre type affects budgeting and reporting, performance measurement, ROI and residual income.",
    "points": [
@@ -336,12 +426,19 @@
     "ROI = Profit ÷ Investment × 100",
     "Residual income = Profit − (Investment × Cost of capital)"
    ],
-   "frame": "Definition → types of centres (table) → importance → conclusion; for divisions, compute ROI and RI and rank them."
+   "frame": "Definition → types of centres (table) → importance → conclusion; for divisions, compute ROI and RI and rank them.",
+   "units": [
+    {
+     "block": 5,
+     "unit": 17,
+     "title": "Responsibility Accounting"
+    }
+   ]
   },
   {
    "id": "modern-costing",
    "name": "ABC, Target, Kaizen & Other Modern Costing",
-   "block": 7,
+   "block": 5,
    "kind": "theory",
    "summary": "Activity-based costing, drawbacks of traditional costing, target costing, kaizen costing, throughput costing and value-chain analysis.",
    "points": [
@@ -351,15 +448,29 @@
     "Target costing: target cost = target selling price − target profit. Steps: find market price → set required profit → compute target cost → design and value-engineer to reach it → keep costs there.",
     "Kaizen costing: continuous small cost reductions during the production stage; features — employee involvement, small steps, all levels; approaches — asset-based and product-based.",
     "Throughput costing: only direct materials treated as variable; throughput = sales − direct materials; focuses on bottlenecks.",
-    "Value-chain analysis (Porter): primary activities (inbound logistics, operations, outbound logistics, marketing and sales, service) and support activities — used to find cost savings and competitive advantage."
+    "Value-chain analysis (Porter): primary activities (inbound logistics, operations, outbound logistics, marketing and sales, service) and support activities — used to find cost savings and competitive advantage.",
+    "Also in the book: life-cycle costing (all costs of a product from design to withdrawal), backflush costing (costs assigned only at the end of production, suited to JIT) and strategic cost management."
    ],
    "mistakes": [],
-   "frame": "Definition → steps or features as headings → example → conclusion."
+   "frame": "Definition → steps or features as headings → example → conclusion.",
+   "units": [
+    {
+     "block": 5,
+     "unit": 18,
+     "title": "Contemporary Issues in Management Accounting-I",
+     "part": "18.8–18.9"
+    },
+    {
+     "block": 5,
+     "unit": 19,
+     "title": "Contemporary Issues in Management Accounting-II"
+    }
+   ]
   },
   {
    "id": "pricing",
    "name": "Pricing Decisions",
-   "block": 6,
+   "block": 5,
    "kind": "theory",
    "summary": "Internal and external factors influencing pricing decisions, methods of pricing, differentiated pricing and break-even pricing.",
    "points": [
@@ -370,12 +481,19 @@
     "Break-even pricing: setting the price at which revenue covers total cost at the expected volume."
    ],
    "mistakes": [],
-   "frame": "Headed points with an Indian example each → conclusion."
+   "frame": "Headed points with an Indian example each → conclusion.",
+   "units": [
+    {
+     "block": 5,
+     "unit": 16,
+     "title": "Pricing Decisions"
+    }
+   ]
   },
   {
    "id": "contemporary",
    "name": "HRA, Social & Environmental Accounting",
-   "block": 7,
+   "block": 5,
    "kind": "theory",
    "summary": "Human resource accounting, social accounting and social audit, environmental accounting and inflation accounting.",
    "points": [
@@ -383,10 +501,19 @@
     "HRA suits people-intensive industries — IT, consulting, banking, education, healthcare. In India, companies such as BHEL and Infosys have reported it; it is relevant but voluntary.",
     "Social accounting: measuring and reporting a firm's social costs and benefits. Social audit: steps — set objectives, identify stakeholders, collect data, assess performance, report, follow up; linked with CSR (Sec 135) and business responsibility reporting.",
     "Environmental accounting: recording environmental costs, liabilities and benefits (pollution control, waste, resource use).",
-    "Inflation accounting: adjusting accounts for changing prices — current purchasing power (CPP) and current cost accounting (CCA) methods."
+    "Inflation accounting: adjusting accounts for changing prices — current purchasing power (CPP) and current cost accounting (CCA) methods.",
+    "The book also covers international accounting and IT developments in accounting."
    ],
    "mistakes": [],
-   "frame": "Meaning → methods or steps → relevance to India → conclusion."
+   "frame": "Meaning → methods or steps → relevance to India → conclusion.",
+   "units": [
+    {
+     "block": 5,
+     "unit": 18,
+     "title": "Contemporary Issues in Management Accounting-I",
+     "part": "18.3–18.7"
+    }
+   ]
   }
  ],
  "questions": [
@@ -1670,5 +1797,6 @@
    "k": "num",
    "topic": "ratios"
   }
- ]
+ ],
+ "notesSource": "Notes checked against and linked to the IGNOU BCOE-142 study material."
 }
