@@ -338,6 +338,17 @@ details summary { cursor: pointer; color: var(--accent); font-weight: 600; paddi
 .fig .lbl { fill: var(--text); font-size: 11px; font-weight: 600; }
 .fig .lbl.sm { font-size: 10px; font-weight: 500; }
 .fig .tick, .fig .axl { fill: var(--muted); font-size: 10px; }
+.fig .lbl.b { font-weight: 700; }
+.fig .thin { stroke-width: 1.5; }
+.fig .pt1 { fill: var(--fig-1); stroke: var(--surface); stroke-width: 1.5; }
+.fig .pt2 { fill: var(--fig-2); stroke: var(--surface); stroke-width: 1.5; }
+.fig .bx { fill: var(--surface-2); stroke: var(--border); }
+.fig .bar1 { fill: var(--fig-1); }
+.fig .bar2 { fill: var(--fig-2); }
+.fig .bar3 { fill: var(--fig-3); }
+.fig .wf-tot { fill: var(--fig-1); }
+.fig .wf-up { fill: var(--fig-3); }
+.fig .wf-down { fill: var(--fig-2); }
 
 /* Settings */
 .seg { display: flex; flex-wrap: wrap; gap: 8px; }

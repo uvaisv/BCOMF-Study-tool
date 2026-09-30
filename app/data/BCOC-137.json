@@ -194,6 +194,10 @@
      "unit": 8,
      "title": "Cash Flow Statement"
     }
+   ],
+   "figures": [
+    "cash-flow",
+    "cash-from-operations"
    ]
   },
   {

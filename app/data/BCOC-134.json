@@ -260,7 +260,8 @@
       "mistakes": ["Using the actual year instead of the deviation X.", "Wrong X for the forecast year."],
       "units": [
         { "block": 6, "unit": 18, "title": "Time Series Analysis" }
-      ]
+      ],
+      "figures": ["ts-trend", "ts-components"]
     },
     {
       "id": "dispersion",
@@ -342,7 +343,8 @@
       "mistakes": ["Swapping bᵧₓ and bₓᵧ.", "Giving r a sign different from the coefficients."],
       "units": [
         { "block": 5, "unit": 16, "title": "Simple Linear Regression" }
-      ]
+      ],
+      "figures": ["regression-lines"]
     },
     {
       "id": "correlation",
@@ -365,7 +367,8 @@
       "mistakes": ["Ranking in opposite orders for the two series."],
       "units": [
         { "block": 5, "unit": 15, "title": "Simple Linear Correlation" }
-      ]
+      ],
+      "figures": ["correlation-types"]
     }
   ],
   "questions": [
