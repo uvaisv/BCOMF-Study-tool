@@ -1,0 +1,891 @@
+{
+ "code": "BPCS-186",
+ "title": "Managing Stress",
+ "pattern": {
+  "time": "2 hours",
+  "marks": 50,
+  "questions": 8,
+  "attempt": 5,
+  "each": 10,
+  "pick": "any 5 questions, at least 2 from each section",
+  "summary": "8 questions in two sections of four. Answer any 5, at least 2 from each section; each carries 10 marks (about 300 words). Some questions are two short notes of 5 marks.",
+  "note": "Section I covers stress, its models, proneness and effects; Section II covers coping and management techniques."
+ },
+ "blocksOfficial": false,
+ "sessions": [
+  "2022-06",
+  "2022-12",
+  "2023-06",
+  "2023-12",
+  "2024-06",
+  "2024-12",
+  "2025-06",
+  "2025-12",
+  "2026-06"
+ ],
+ "sessionNotes": {},
+ "examTips": {
+  "choosing": [
+   "Pick at least 2 from each section — plan 3 from the section you know better.",
+   "Models of stress (fight-or-flight, GAS, cognitive appraisal), stress proneness, effects of stress and coping styles come up in almost every paper.",
+   "Name the psychologist behind each idea (Selye, Lazarus, Ellis, Seligman) — it strengthens a short answer."
+  ]
+ },
+ "blocks": [
+  {
+   "no": 1,
+   "title": "Understanding Stress"
+  },
+  {
+   "no": 2,
+   "title": "Managing Stress"
+  }
+ ],
+ "topics": [
+  {
+   "id": "proneness",
+   "name": "Stress Proneness & Moderators",
+   "block": 1,
+   "kind": "theory",
+   "summary": "Factors that make a person prone to stress — Type A personality, perfectionism, hostility, learned helplessness and pessimism — and moderators of stress.",
+   "points": [
+    "Stress proneness: a tendency to experience stress more often or more intensely because of personality and thinking patterns.",
+    "Type A personality (Friedman and Rosenman): time urgency, impatience, competitiveness, hostility, doing many things at once; the hostility part is linked to heart disease. Type B is relaxed and less stress-prone.",
+    "Perfectionism: unrealistically high standards, fear of mistakes, harsh self-criticism — every small failure becomes a stressor.",
+    "Hostility: cynical mistrust and anger towards others; keeps the body in a state of arousal.",
+    "Learned helplessness (Seligman): after repeated events one cannot control, a person stops trying even when control is possible. Learned pessimism: explaining bad events as permanent, pervasive and personal.",
+    "Other factors: low self-esteem, external locus of control, negative thinking, poor coping skills.",
+    "Moderators — factors that reduce (or increase) the effect of stress: social support, hardiness (Kobasa: commitment, control, challenge), internal locus of control, self-efficacy, optimism, good coping resources, health and lifestyle."
+   ],
+   "frame": "Meaning → each factor with a one-line example → conclusion on managing it.",
+   "mistakes": []
+  },
+  {
+   "id": "stress-concept",
+   "name": "Stress: Concept, Types, Sources & Measurement",
+   "block": 1,
+   "kind": "theory",
+   "summary": "Meaning and nature of stress, types (eustress and distress, acute and chronic), sources, symptoms, and ways to measure stress.",
+   "points": [
+    "Stress (Hans Selye): the body's non-specific response to any demand made on it. A stressor is the demand; stress is the response.",
+    "Nature: individual (depends on how a person sees the demand), can be positive or negative, involves body, mind and behaviour.",
+    "Types: eustress (positive, motivating) and distress (harmful); acute, episodic acute and chronic stress; hypostress (too little challenge) and hyperstress (overload).",
+    "Sources: environmental (noise, pollution, crowding), social (relationships, life events), work or academic (workload, deadlines, role conflict, job insecurity), personal (expectations, personality), physical (illness, poor sleep), daily hassles, frustration and conflict.",
+    "Symptoms: physical (headache, fatigue, high BP), emotional (anxiety, irritability), cognitive (poor concentration, worry), behavioural (sleep and appetite changes, withdrawal, substance use).",
+    "Measurement: self-report scales — Holmes and Rahe Social Readjustment Rating Scale (life change units), Perceived Stress Scale; physiological measures — heart rate, blood pressure, cortisol, skin conductance; interviews and behavioural observation."
+   ],
+   "frame": "Definition → types or sources as headings with examples → conclusion.",
+   "mistakes": []
+  },
+  {
+   "id": "coping",
+   "name": "Coping with Stress",
+   "block": 2,
+   "kind": "theory",
+   "summary": "Definition, nature and goals of coping; coping styles — problem-focused and emotion-focused, approach and avoidance, adaptive and maladaptive.",
+   "points": [
+    "Coping (Lazarus and Folkman): constantly changing thoughts and actions to manage demands that a person sees as taxing or exceeding their resources.",
+    "Nature: a process, not a fixed trait; conscious and effortful; changes with the situation.",
+    "Goals: reduce harmful conditions, tolerate or adjust to negative events, keep a positive self-image, stay emotionally balanced, maintain relationships.",
+    "Problem-focused coping: act on the cause — plan, gather information, solve the problem, seek practical help. Best when the situation can be changed.",
+    "Emotion-focused coping: manage the feelings — reappraisal, acceptance, seeking emotional support, relaxation. Best when the situation cannot be changed.",
+    "Other styles: approach vs avoidance coping; adaptive (exercise, problem solving, seeking support, humour) vs maladaptive (denial, substance use, withdrawal, aggression)."
+   ],
+   "frame": "Definition → styles in a table (style, meaning, example) → conclusion.",
+   "mistakes": []
+  },
+  {
+   "id": "effects",
+   "name": "Effects of Stress: Health, Performance & Relationships",
+   "block": 1,
+   "kind": "theory",
+   "summary": "Effects of stress on physical and mental health, on performance and productivity, and on relationships.",
+   "points": [
+    "Health: heart disease and high blood pressure, weaker immunity, headaches, digestive problems, sleep disorders; anxiety, depression and burnout.",
+    "Performance (Yerkes–Dodson law): performance rises with arousal up to an optimum, then falls — moderate stress helps, too much hurts.",
+    "Productivity: high stress brings errors, accidents, absenteeism, low morale, turnover and poor decisions.",
+    "Relationships: irritability, conflict, poor communication, withdrawal, less time and patience for family and friends; stress spreads to others.",
+    "Managing the effects: early recognition, healthy lifestyle, coping skills, support at home and work."
+   ],
+   "frame": "Headings (health, performance, relationships) → the inverted-U curve → conclusion.",
+   "mistakes": []
+  },
+  {
+   "id": "models",
+   "name": "Models of Stress",
+   "block": 1,
+   "kind": "theory",
+   "summary": "Fight-or-flight response, General Adaptation Syndrome, the cognitive appraisal model and other models of stress.",
+   "points": [
+    "Fight-or-flight response (Walter Cannon): a threat activates the sympathetic nervous system and adrenaline — faster heart rate and breathing, energy released — preparing the body to fight or flee.",
+    "General Adaptation Syndrome (Hans Selye): three stages — alarm (body mobilises), resistance (body adapts, resources used), exhaustion (resources run out, illness follows).",
+    "Cognitive appraisal model (Lazarus and Folkman): stress depends on how a person appraises an event — primary appraisal (is it harmful, threatening or a challenge?) and secondary appraisal (can I cope?); reappraisal follows.",
+    "GAS vs cognitive appraisal: GAS is physiological and says all stressors produce the same response; the cognitive model is psychological and says the response depends on the person's interpretation.",
+    "Life events model (Holmes and Rahe): major life changes add up and raise the risk of illness. Person–environment fit: stress comes from a mismatch between a person's abilities and the demands of the setting."
+   ],
+   "frame": "Name the model and its author → stages or components as a diagram → one example → conclusion.",
+   "mistakes": []
+  },
+  {
+   "id": "techniques",
+   "name": "Stress Management Techniques: Relaxation, Meditation, Yoga",
+   "block": 2,
+   "kind": "theory",
+   "summary": "Relaxation techniques, meditation, yoga and asanas, mindfulness and biofeedback.",
+   "points": [
+    "Relaxation techniques: deep (diaphragmatic) breathing, progressive muscle relaxation (Jacobson — tense and relax muscle groups), autogenic training, guided imagery.",
+    "Meditation: training attention to calm the mind — concentrative (focus on breath, mantra), mindfulness, transcendental. Benefits: lower BP and heart rate, less anxiety, better focus.",
+    "Yoga: asanas (postures), pranayama (breath control) and dhyana (meditation) — improves flexibility, calms the nervous system.",
+    "Types of asanas: standing (Tadasana), sitting (Padmasana, Vajrasana), lying on the back (Shavasana), lying on the stomach (Bhujangasana), balancing and inverted poses.",
+    "Mindfulness: paying attention to the present moment without judging (Kabat-Zinn's mindfulness-based stress reduction).",
+    "Biofeedback: electronic monitoring of heart rate, muscle tension or skin temperature so a person learns to control these responses."
+   ],
+   "frame": "Meaning → steps or types → benefits → conclusion.",
+   "mistakes": []
+  },
+  {
+   "id": "time",
+   "name": "Time Management",
+   "block": 2,
+   "kind": "theory",
+   "summary": "Effective and systematic time management, the time management matrix, and techniques of time management.",
+   "points": [
+    "Time management: planning and controlling how time is spent on activities to work effectively and reduce stress.",
+    "Time management matrix (Covey, from Eisenhower): Quadrant I — urgent and important (do now); II — important, not urgent (plan; the key quadrant); III — urgent, not important (delegate); IV — neither (eliminate).",
+    "Techniques: set SMART goals; prioritise (ABC or matrix); to-do lists; plan and schedule (time blocking); avoid procrastination; delegate; the 80/20 (Pareto) rule; handle interruptions; learn to say no; review daily.",
+    "Benefits: less stress, higher productivity, better balance between work and life."
+   ],
+   "frame": "Meaning → matrix as a 2×2 diagram → techniques as headings → conclusion.",
+   "mistakes": []
+  },
+  {
+   "id": "cognitive",
+   "name": "Cognitive Restructuring (ABCDE) & Problem Solving",
+   "block": 2,
+   "kind": "theory",
+   "summary": "Cognitive restructuring and the ABCDE technique of REBT, and problem solving — steps and strategies.",
+   "points": [
+    "Cognitive restructuring: identifying and changing irrational or negative thoughts that cause stress.",
+    "ABCDE technique (Albert Ellis, REBT): A — activating event; B — belief about it; C — emotional and behavioural consequence; D — disputing the irrational belief; E — effective new belief and its effect.",
+    "Example: failing a test (A) → 'I am a failure' (B) → feeling hopeless and skipping classes (C) → 'one test does not define me; I can prepare better' (D) → feeling motivated and studying (E).",
+    "Problem solving steps: define the problem → gather information → generate alternatives → evaluate them → choose the best → implement → review the result.",
+    "Strategies: trial and error, algorithms, heuristics (rules of thumb), means–end analysis, working backwards, brainstorming."
+   ],
+   "frame": "Meaning → ABCDE as a table with an example → conclusion.",
+   "mistakes": []
+  },
+  {
+   "id": "interpersonal",
+   "name": "Interpersonal Skills: Communication, Self-awareness, EI",
+   "block": 2,
+   "kind": "theory",
+   "summary": "Effective communication, self-awareness, emotional intelligence and conflict resolution as interpersonal skills for managing stress.",
+   "points": [
+    "Effective communication: clear messages, active listening, feedback, appropriate non-verbal signals, empathy and assertiveness — reduces misunderstandings and conflict.",
+    "Self-awareness: knowing one's own emotions, strengths, weaknesses and values (Johari window) — the base for managing oneself and relationships.",
+    "Emotional intelligence (Goleman; Salovey and Mayer): self-awareness, self-regulation, motivation, empathy and social skills — helps handle pressure and people.",
+    "Conflict resolution: styles — competing, collaborating, compromising, avoiding, accommodating (Thomas–Kilmann); steps — understand the issue, listen to both sides, find common ground, agree a solution, follow up."
+   ],
+   "frame": "Meaning → components as headings with examples → conclusion.",
+   "mistakes": []
+  }
+ ],
+ "questions": [
+  {
+   "s": "2022-06",
+   "q": "1",
+   "t": "Stress and its sources",
+   "m": 10,
+   "k": "th",
+   "topic": "stress-concept"
+  },
+  {
+   "s": "2022-06",
+   "q": "2",
+   "t": "Fight-or-flight response and General Adaptation Syndrome",
+   "m": 10,
+   "k": "th",
+   "topic": "models"
+  },
+  {
+   "s": "2022-06",
+   "q": "3",
+   "t": "Type A personality",
+   "m": 5,
+   "k": "th",
+   "topic": "proneness"
+  },
+  {
+   "s": "2022-06",
+   "q": "3",
+   "t": "Moderators of stress",
+   "m": 5,
+   "k": "th",
+   "topic": "proneness"
+  },
+  {
+   "s": "2022-06",
+   "q": "4",
+   "t": "Effect of stress on performance and productivity",
+   "m": 10,
+   "k": "th",
+   "topic": "effects"
+  },
+  {
+   "s": "2022-06",
+   "q": "5",
+   "t": "Nature and goals of coping",
+   "m": 10,
+   "k": "th",
+   "topic": "coping"
+  },
+  {
+   "s": "2022-06",
+   "q": "6",
+   "t": "Relaxation techniques and meditation",
+   "m": 10,
+   "k": "th",
+   "topic": "techniques"
+  },
+  {
+   "s": "2022-06",
+   "q": "7",
+   "t": "Cognitive restructuring: ABCDE technique",
+   "m": 10,
+   "k": "th",
+   "topic": "cognitive"
+  },
+  {
+   "s": "2022-06",
+   "q": "8",
+   "t": "Problem solving: steps and strategies",
+   "m": 10,
+   "k": "th",
+   "topic": "cognitive"
+  },
+  {
+   "s": "2022-12",
+   "q": "1",
+   "t": "Concept and measurement of stress",
+   "m": 10,
+   "k": "th",
+   "topic": "stress-concept"
+  },
+  {
+   "s": "2022-12",
+   "q": "2",
+   "t": "Effect of stress on performance and productivity",
+   "m": 10,
+   "k": "th",
+   "topic": "effects"
+  },
+  {
+   "s": "2022-12",
+   "q": "3(a)",
+   "t": "Note: fight-or-flight response",
+   "m": 5,
+   "k": "th",
+   "topic": "models"
+  },
+  {
+   "s": "2022-12",
+   "q": "3(b)",
+   "t": "Note: moderators of stress",
+   "m": 5,
+   "k": "th",
+   "topic": "proneness"
+  },
+  {
+   "s": "2022-12",
+   "q": "4",
+   "t": "Coping: nature and goals",
+   "m": 10,
+   "k": "th",
+   "topic": "coping"
+  },
+  {
+   "s": "2022-12",
+   "q": "5(a)",
+   "t": "Note: emotion-focused and problem-focused coping",
+   "m": 5,
+   "k": "th",
+   "topic": "coping"
+  },
+  {
+   "s": "2022-12",
+   "q": "5(b)",
+   "t": "Note: Type A personality",
+   "m": 5,
+   "k": "th",
+   "topic": "proneness"
+  },
+  {
+   "s": "2022-12",
+   "q": "6",
+   "t": "Relaxation techniques",
+   "m": 10,
+   "k": "th",
+   "topic": "techniques"
+  },
+  {
+   "s": "2022-12",
+   "q": "7",
+   "t": "Cognitive restructuring with ABCDE and an example",
+   "m": 10,
+   "k": "th",
+   "topic": "cognitive"
+  },
+  {
+   "s": "2022-12",
+   "q": "8",
+   "t": "Effective communication and interpersonal skills",
+   "m": 10,
+   "k": "th",
+   "topic": "interpersonal"
+  },
+  {
+   "s": "2023-06",
+   "q": "1",
+   "t": "Concept and measurement of stress",
+   "m": 10,
+   "k": "th",
+   "topic": "stress-concept"
+  },
+  {
+   "s": "2023-06",
+   "q": "2",
+   "t": "Three models of stress",
+   "m": 10,
+   "k": "th",
+   "topic": "models"
+  },
+  {
+   "s": "2023-06",
+   "q": "3",
+   "t": "Perfectionism, hostility and learned helplessness",
+   "m": 10,
+   "k": "th",
+   "topic": "proneness"
+  },
+  {
+   "s": "2023-06",
+   "q": "4",
+   "t": "Styles of coping",
+   "m": 10,
+   "k": "th",
+   "topic": "coping"
+  },
+  {
+   "s": "2023-06",
+   "q": "5",
+   "t": "Effect of stress on health and relationships",
+   "m": 10,
+   "k": "th",
+   "topic": "effects"
+  },
+  {
+   "s": "2023-06",
+   "q": "6",
+   "t": "Meditation and yoga",
+   "m": 10,
+   "k": "th",
+   "topic": "techniques"
+  },
+  {
+   "s": "2023-06",
+   "q": "7",
+   "t": "Time management matrix",
+   "m": 10,
+   "k": "th",
+   "topic": "time"
+  },
+  {
+   "s": "2023-06",
+   "q": "8",
+   "t": "Effective communication and self-awareness",
+   "m": 10,
+   "k": "th",
+   "topic": "interpersonal"
+  },
+  {
+   "s": "2023-12",
+   "q": "1",
+   "t": "Sources of stress",
+   "m": 10,
+   "k": "th",
+   "topic": "stress-concept"
+  },
+  {
+   "s": "2023-12",
+   "q": "2",
+   "t": "Models of stress",
+   "m": 10,
+   "k": "th",
+   "topic": "models"
+  },
+  {
+   "s": "2023-12",
+   "q": "3(a)",
+   "t": "Note: types and symptoms of stress",
+   "m": 5,
+   "k": "th",
+   "topic": "stress-concept"
+  },
+  {
+   "s": "2023-12",
+   "q": "3(b)",
+   "t": "Note: learned helplessness / learned pessimism",
+   "m": 5,
+   "k": "th",
+   "topic": "proneness"
+  },
+  {
+   "s": "2023-12",
+   "q": "4",
+   "t": "Effect of stress on health",
+   "m": 10,
+   "k": "th",
+   "topic": "effects"
+  },
+  {
+   "s": "2023-12",
+   "q": "5",
+   "t": "Coping and coping styles",
+   "m": 10,
+   "k": "th",
+   "topic": "coping"
+  },
+  {
+   "s": "2023-12",
+   "q": "6",
+   "t": "Meditation",
+   "m": 10,
+   "k": "th",
+   "topic": "techniques"
+  },
+  {
+   "s": "2023-12",
+   "q": "7(a)",
+   "t": "Note: biofeedback",
+   "m": 5,
+   "k": "th",
+   "topic": "techniques"
+  },
+  {
+   "s": "2023-12",
+   "q": "7(b)",
+   "t": "Note: self-awareness",
+   "m": 5,
+   "k": "th",
+   "topic": "interpersonal"
+  },
+  {
+   "s": "2023-12",
+   "q": "8",
+   "t": "Time management matrix",
+   "m": 10,
+   "k": "th",
+   "topic": "time"
+  },
+  {
+   "s": "2024-06",
+   "q": "1",
+   "t": "Sources and measurement of stress",
+   "m": 10,
+   "k": "th",
+   "topic": "stress-concept"
+  },
+  {
+   "s": "2024-06",
+   "q": "2",
+   "t": "General Adaptation Syndrome vs cognitive appraisal model",
+   "m": 10,
+   "k": "th",
+   "topic": "models"
+  },
+  {
+   "s": "2024-06",
+   "q": "3(a)",
+   "t": "Note: perfectionism",
+   "m": 5,
+   "k": "th",
+   "topic": "proneness"
+  },
+  {
+   "s": "2024-06",
+   "q": "3(b)",
+   "t": "Note: Type A personality",
+   "m": 5,
+   "k": "th",
+   "topic": "proneness"
+  },
+  {
+   "s": "2024-06",
+   "q": "4",
+   "t": "Effect of stress on health, performance and productivity",
+   "m": 10,
+   "k": "th",
+   "topic": "effects"
+  },
+  {
+   "s": "2024-06",
+   "q": "5",
+   "t": "Coping styles",
+   "m": 10,
+   "k": "th",
+   "topic": "coping"
+  },
+  {
+   "s": "2024-06",
+   "q": "6",
+   "t": "Relaxation and meditation",
+   "m": 10,
+   "k": "th",
+   "topic": "techniques"
+  },
+  {
+   "s": "2024-06",
+   "q": "7",
+   "t": "Time management matrix and techniques",
+   "m": 10,
+   "k": "th",
+   "topic": "time"
+  },
+  {
+   "s": "2024-06",
+   "q": "8",
+   "t": "Problem solving: steps",
+   "m": 10,
+   "k": "th",
+   "topic": "cognitive"
+  },
+  {
+   "s": "2024-12",
+   "q": "1",
+   "t": "Concept, types and sources of stress",
+   "m": 10,
+   "k": "th",
+   "topic": "stress-concept"
+  },
+  {
+   "s": "2024-12",
+   "q": "2",
+   "t": "Three models of stress",
+   "m": 10,
+   "k": "th",
+   "topic": "models"
+  },
+  {
+   "s": "2024-12",
+   "q": "3(a)",
+   "t": "Note: effect of stress on health",
+   "m": 5,
+   "k": "th",
+   "topic": "effects"
+  },
+  {
+   "s": "2024-12",
+   "q": "3(b)",
+   "t": "Note: goals of coping",
+   "m": 5,
+   "k": "th",
+   "topic": "coping"
+  },
+  {
+   "s": "2024-12",
+   "q": "4",
+   "t": "Effect of stress on relationships",
+   "m": 5,
+   "k": "th",
+   "topic": "effects"
+  },
+  {
+   "s": "2024-12",
+   "q": "4",
+   "t": "Moderators of stress",
+   "m": 5,
+   "k": "th",
+   "topic": "proneness"
+  },
+  {
+   "s": "2024-12",
+   "q": "5(a)",
+   "t": "Note: emotion-focused coping",
+   "m": 5,
+   "k": "th",
+   "topic": "coping"
+  },
+  {
+   "s": "2024-12",
+   "q": "5(b)",
+   "t": "Note: types of asanas",
+   "m": 5,
+   "k": "th",
+   "topic": "techniques"
+  },
+  {
+   "s": "2024-12",
+   "q": "6",
+   "t": "ABCDE technique of REBT with an example",
+   "m": 10,
+   "k": "th",
+   "topic": "cognitive"
+  },
+  {
+   "s": "2024-12",
+   "q": "7",
+   "t": "Self-awareness and emotional intelligence",
+   "m": 10,
+   "k": "th",
+   "topic": "interpersonal"
+  },
+  {
+   "s": "2024-12",
+   "q": "8",
+   "t": "Time management matrix and techniques",
+   "m": 10,
+   "k": "th",
+   "topic": "time"
+  },
+  {
+   "s": "2025-06",
+   "q": "1",
+   "t": "Types of stress",
+   "m": 3,
+   "k": "th",
+   "topic": "stress-concept"
+  },
+  {
+   "s": "2025-06",
+   "q": "1",
+   "t": "Fight-or-flight response and General Adaptation Syndrome",
+   "m": 7,
+   "k": "th",
+   "topic": "models"
+  },
+  {
+   "s": "2025-06",
+   "q": "2",
+   "t": "Stress proneness and contributing factors",
+   "m": 10,
+   "k": "th",
+   "topic": "proneness"
+  },
+  {
+   "s": "2025-06",
+   "q": "3(a)",
+   "t": "Note: moderators of stress",
+   "m": 5,
+   "k": "th",
+   "topic": "proneness"
+  },
+  {
+   "s": "2025-06",
+   "q": "3(b)",
+   "t": "Note: cognitive appraisal model",
+   "m": 5,
+   "k": "th",
+   "topic": "models"
+  },
+  {
+   "s": "2025-06",
+   "q": "4",
+   "t": "Effect of stress on performance and productivity",
+   "m": 10,
+   "k": "th",
+   "topic": "effects"
+  },
+  {
+   "s": "2025-06",
+   "q": "5",
+   "t": "Adaptive and maladaptive coping",
+   "m": 10,
+   "k": "th",
+   "topic": "coping"
+  },
+  {
+   "s": "2025-06",
+   "q": "6",
+   "t": "Relaxation and mindfulness",
+   "m": 10,
+   "k": "th",
+   "topic": "techniques"
+  },
+  {
+   "s": "2025-06",
+   "q": "7",
+   "t": "Systematic time management and techniques",
+   "m": 10,
+   "k": "th",
+   "topic": "time"
+  },
+  {
+   "s": "2025-06",
+   "q": "8",
+   "t": "Problem solving: steps",
+   "m": 10,
+   "k": "th",
+   "topic": "cognitive"
+  },
+  {
+   "s": "2025-12",
+   "q": "1",
+   "t": "Types and measurement of stress",
+   "m": 10,
+   "k": "th",
+   "topic": "stress-concept"
+  },
+  {
+   "s": "2025-12",
+   "q": "2",
+   "t": "Stress proneness and contributing factors",
+   "m": 10,
+   "k": "th",
+   "topic": "proneness"
+  },
+  {
+   "s": "2025-12",
+   "q": "3(a)",
+   "t": "Note: learned helplessness / learned pessimism",
+   "m": 5,
+   "k": "th",
+   "topic": "proneness"
+  },
+  {
+   "s": "2025-12",
+   "q": "3(b)",
+   "t": "Note: moderators of stress",
+   "m": 5,
+   "k": "th",
+   "topic": "proneness"
+  },
+  {
+   "s": "2025-12",
+   "q": "4",
+   "t": "Effect of stress on relationships",
+   "m": 10,
+   "k": "th",
+   "topic": "effects"
+  },
+  {
+   "s": "2025-12",
+   "q": "5",
+   "t": "Nature of coping; emotion- and problem-focused coping",
+   "m": 10,
+   "k": "th",
+   "topic": "coping"
+  },
+  {
+   "s": "2025-12",
+   "q": "6(a)",
+   "t": "Note: meditation",
+   "m": 5,
+   "k": "th",
+   "topic": "techniques"
+  },
+  {
+   "s": "2025-12",
+   "q": "6(b)",
+   "t": "Note: biofeedback",
+   "m": 5,
+   "k": "th",
+   "topic": "techniques"
+  },
+  {
+   "s": "2025-12",
+   "q": "7",
+   "t": "Cognitive restructuring: ABCDE technique",
+   "m": 10,
+   "k": "th",
+   "topic": "cognitive"
+  },
+  {
+   "s": "2025-12",
+   "q": "8",
+   "t": "Emotional intelligence and conflict resolution",
+   "m": 10,
+   "k": "th",
+   "topic": "interpersonal"
+  },
+  {
+   "s": "2026-06",
+   "q": "1",
+   "t": "Concept and nature of stress",
+   "m": 10,
+   "k": "th",
+   "topic": "stress-concept"
+  },
+  {
+   "s": "2026-06",
+   "q": "2",
+   "t": "Fight-or-flight response and General Adaptation Syndrome",
+   "m": 10,
+   "k": "th",
+   "topic": "models"
+  },
+  {
+   "s": "2026-06",
+   "q": "3(a)",
+   "t": "Note: measurement of stress",
+   "m": 5,
+   "k": "th",
+   "topic": "stress-concept"
+  },
+  {
+   "s": "2026-06",
+   "q": "3(b)",
+   "t": "Note: Type A personality",
+   "m": 5,
+   "k": "th",
+   "topic": "proneness"
+  },
+  {
+   "s": "2026-06",
+   "q": "4",
+   "t": "Effect of stress on relationships",
+   "m": 10,
+   "k": "th",
+   "topic": "effects"
+  },
+  {
+   "s": "2026-06",
+   "q": "5",
+   "t": "Coping: emotion- and problem-focused",
+   "m": 10,
+   "k": "th",
+   "topic": "coping"
+  },
+  {
+   "s": "2026-06",
+   "q": "6",
+   "t": "Yoga for stress management",
+   "m": 10,
+   "k": "th",
+   "topic": "techniques"
+  },
+  {
+   "s": "2026-06",
+   "q": "7",
+   "t": "Techniques of time management",
+   "m": 10,
+   "k": "th",
+   "topic": "time"
+  },
+  {
+   "s": "2026-06",
+   "q": "8(a)",
+   "t": "Note: emotional intelligence",
+   "m": 5,
+   "k": "th",
+   "topic": "interpersonal"
+  },
+  {
+   "s": "2026-06",
+   "q": "8(b)",
+   "t": "Note: steps in problem solving",
+   "m": 5,
+   "k": "th",
+   "topic": "cognitive"
+  }
+ ]
+}
