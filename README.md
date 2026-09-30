@@ -24,7 +24,9 @@ It is a static site — no build step.
 python3 -m http.server --directory app 8000
 ```
 
-Then open http://localhost:8000. To publish, enable GitHub Pages on the `main` branch (root); the root `index.html` redirects to `app/`.
+Then open http://localhost:8000.
+
+To publish on Vercel, import the repo with Framework Preset **Other**, Root Directory **app** and no build command. Every push to `main` then updates the site. (Serving the repo root also works: the root `index.html` redirects to `app/`.)
 
 ## Layout
 
