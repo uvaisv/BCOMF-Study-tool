@@ -1,0 +1,1674 @@
+{
+ "code": "BCOE-142",
+ "title": "Management Accounting",
+ "pattern": {
+  "time": "3 hours",
+  "marks": 100,
+  "questions": 8,
+  "attempt": 5,
+  "each": 20,
+  "parts": [
+   {
+    "id": "A",
+    "name": "Section A",
+    "attempt": 2,
+    "of": 3,
+    "each": 20
+   },
+   {
+    "id": "B",
+    "name": "Section B",
+    "attempt": 3,
+    "of": 5,
+    "each": 20
+   }
+  ],
+  "summary": "Section A: answer 2 of 3 (theory; Q3 is short notes, any 4 of 6). Section B: answer 3 of 5 or 6 — mostly sums on ratios, budgets, variances, CVP and marginal costing. Each question 20 marks."
+ },
+ "blocksOfficial": false,
+ "sessions": [
+  "2022-06",
+  "2022-12",
+  "2023-06",
+  "2023-12",
+  "2024-06",
+  "2024-12",
+  "2025-06",
+  "2025-12",
+  "2026-06"
+ ],
+ "sessionNotes": {
+  "2023-12": "Section B had 6 questions.",
+  "2024-06": "Section B had 6 questions.",
+  "2026-06": "Section B had 6 questions."
+ },
+ "examTips": {
+  "choosing": [
+   "Section A: Q3 short notes is usually the easiest 20 marks — you choose 4 of 6.",
+   "Section B: budgets, variances and CVP sums appear in almost every paper; marginal-costing decisions (make or buy, sales mix) are frequent.",
+   "Many Section B questions are half theory, half sum — pick those if your numericals are weaker."
+  ],
+  "numerical": [
+   "Write each formula before substituting.",
+   "Mark every variance F or A and check that the parts add up to the total.",
+   "Show fixed and variable costs separately in budgets and marginal cost statements."
+  ]
+ },
+ "blocks": [
+  {
+   "no": 1,
+   "title": "Management Accounting & Cost Management"
+  },
+  {
+   "no": 2,
+   "title": "Financial Statements & Ratios"
+  },
+  {
+   "no": 3,
+   "title": "Budgeting"
+  },
+  {
+   "no": 4,
+   "title": "Standard Costing"
+  },
+  {
+   "no": 5,
+   "title": "Marginal Costing & CVP"
+  },
+  {
+   "no": 6,
+   "title": "Responsibility Accounting & Pricing"
+  },
+  {
+   "no": 7,
+   "title": "Contemporary Topics"
+  }
+ ],
+ "topics": [
+  {
+   "id": "standard",
+   "name": "Standard Costing & Variance Analysis",
+   "block": 4,
+   "kind": "mixed",
+   "summary": "Meaning, objectives, advantages and limitations of standard costing; standard costing vs budgeting and estimate costing; material and labour variances.",
+   "points": [
+    "Standard costing: setting predetermined costs for each element, comparing actual costs with them and analysing the differences (variances) for control.",
+    "Objectives and advantages: cost control, measuring efficiency, fixing responsibility, management by exception, pricing and budgeting help, cost consciousness, simpler stock valuation.",
+    "Limitations: setting accurate standards is hard, standards date quickly, costly for small firms, may demotivate if too tight, not suited to job work.",
+    "Standard costing vs budgeting: unit-level vs total; mainly production costs vs all functions; a technique of cost control vs a planning tool; variances analysed by cause vs totals compared.",
+    "Estimate costing vs standard costing: estimates are guesses of what costs will be (for quotations), standards are what costs should be (for control), set scientifically.",
+    "Material variances: cost = price + usage; usage = mix + yield (or sub-usage). Labour variances: cost = rate + efficiency (+ idle time); efficiency = mix + sub-efficiency."
+   ],
+   "mistakes": [
+    "Forgetting to mark each variance favourable (F) or adverse (A).",
+    "Using standard quantity for total input instead of standard quantity for actual output."
+   ],
+   "method": [
+    "Find standard quantity (or hours) for actual output: scale the standard to the actual output or yield.",
+    "Material cost variance = standard cost of actual output − actual cost.",
+    "Price variance = AQ × (SP − AP); usage variance = SP × (SQ − AQ).",
+    "Mix variance = SP × (revised standard quantity − AQ), where RSQ = actual total input in the standard ratio.",
+    "Yield variance = standard cost per unit of output × (actual yield − standard yield from actual input).",
+    "For labour, repeat with hours and rates; check rate + efficiency = cost variance."
+   ],
+   "formula": [
+    "MCV = (SQ × SP) − (AQ × AP)",
+    "MPV = AQ × (SP − AP)",
+    "MUV = SP × (SQ − AQ)",
+    "MMV = SP × (RSQ − AQ)",
+    "LCV = (SH × SR) − (AH × AR)",
+    "LRV = AH × (SR − AR)",
+    "LEV = SR × (SH − AH)"
+   ],
+   "frame": "Working table (SQ, SP, AQ, AP) → each variance with formula and F/A → check that parts add up to the total."
+  },
+  {
+   "id": "cvp",
+   "name": "Cost–Volume–Profit & Break-Even Analysis",
+   "block": 5,
+   "kind": "mixed",
+   "summary": "Contribution, P/V ratio, break-even point, margin of safety, angle of incidence, sales for a target profit and the effect of changes in price and costs.",
+   "points": [
+    "CVP analysis studies how costs, volume and profit are related — it answers questions like 'what sales are needed to break even or to earn ₹X profit?'.",
+    "Contribution = sales − variable cost; it covers fixed cost first, then gives profit.",
+    "P/V ratio = contribution ÷ sales; a higher ratio means profit grows faster with sales.",
+    "Break-even point: sales at which there is no profit or loss. Margin of safety: sales above break-even — a measure of safety.",
+    "Angle of incidence: the angle at which the sales line cuts the total cost line on a break-even chart; a large angle shows high profit potential.",
+    "Uses: pricing, planning profit, choosing products, make or buy, effect of cost changes. Assumptions: costs split into fixed and variable, constant price and efficiency, one product or constant mix."
+   ],
+   "mistakes": [
+    "Mixing P/V ratio as a percentage and as a decimal in the same calculation."
+   ],
+   "method": [
+    "Find contribution per unit (or total) and the P/V ratio.",
+    "If two years' figures are given: P/V ratio = change in profit ÷ change in sales; then fixed cost = contribution − profit.",
+    "BEP = fixed cost ÷ P/V ratio (₹) or ÷ contribution per unit (units).",
+    "Sales for target profit = (fixed cost + profit) ÷ P/V ratio.",
+    "For a change in price or cost, recompute contribution and P/V ratio, then the new BEP."
+   ],
+   "formula": [
+    "P/V ratio = Contribution ÷ Sales × 100 = Change in profit ÷ Change in sales × 100",
+    "BEP (₹) = Fixed cost ÷ P/V ratio",
+    "BEP (units) = Fixed cost ÷ Contribution per unit",
+    "Margin of safety = Actual sales − BEP sales = Profit ÷ P/V ratio",
+    "Required sales = (Fixed cost + Desired profit) ÷ P/V ratio"
+   ],
+   "frame": "Write the formula, substitute, answer with units (₹ or units) — one line per part."
+  },
+  {
+   "id": "budgeting",
+   "name": "Budgets & Budgetary Control",
+   "block": 3,
+   "kind": "mixed",
+   "summary": "Budgeting and budgetary control, objectives, advantages and limitations, types of budgets, flexible budget, cash budget, master and sales budgets, zero-based and performance budgeting, control ratios.",
+   "points": [
+    "Budget: a quantitative plan for a future period. Budgetary control: setting budgets, comparing actuals with them and acting on differences.",
+    "Objectives and advantages: planning, coordination, control, fixing responsibility, efficient use of resources, motivation. Limitations: based on estimates, rigid, costly, needs support of staff.",
+    "Types: by time (long-term, short-term), by function (sales, production, materials, labour, overhead, cash, capital expenditure), by flexibility (fixed, flexible); master budget combines all functional budgets.",
+    "Flexible budget: shows costs at different levels of activity by separating fixed, variable and semi-variable costs. Steps: decide activity levels, classify costs, compute each at every level, find the overhead rate.",
+    "Cash budget: estimates cash receipts and payments to find surpluses or shortages. Methods: receipts and payments (short term), adjusted profit and loss (start from profit, add non-cash items, adjust working capital and capital items — long term), balance sheet method.",
+    "Zero-based budgeting: every activity is justified from zero each year rather than adding to last year's budget — cuts waste, links spending to priorities.",
+    "Performance budgeting: budgets linked to programmes, activities and measurable outputs; process — define programmes, set targets and performance measures, allocate funds, review results.",
+    "Control ratios: capacity ratio = actual hours ÷ budgeted hours; activity ratio = standard hours for actual output ÷ budgeted hours; efficiency ratio = standard hours ÷ actual hours."
+   ],
+   "mistakes": [
+    "Keeping fixed costs per unit constant across levels — fixed cost in total is constant."
+   ],
+   "method": [
+    "Classify each cost as fixed, variable or semi-variable (split semi-variable into fixed and variable).",
+    "Variable cost at each level = rate per unit × units; fixed stays the same.",
+    "Total the costs at each level; divide by units or hours for the rate.",
+    "Cash budget: opening balance + receipts − payments = closing balance, month by month (with time lags for debtors and creditors)."
+   ],
+   "formula": [
+    "Capacity ratio = Actual hours ÷ Budgeted hours × 100",
+    "Activity ratio = Standard hours for actual output ÷ Budgeted hours × 100",
+    "Efficiency ratio = Standard hours ÷ Actual hours × 100"
+   ],
+   "frame": "Budget in columns for each activity level; state fixed, variable and semi-variable items separately."
+  },
+  {
+   "id": "marginal",
+   "name": "Marginal Costing & Decision Making",
+   "block": 5,
+   "kind": "mixed",
+   "summary": "Marginal costing and its characteristics, absorption vs marginal income statements, and decisions — make or buy, sales mix, price cuts, special or export orders, differential costing.",
+   "points": [
+    "Marginal costing: only variable costs are charged to products; fixed costs are treated as period costs and written off against contribution.",
+    "Characteristics: costs split into fixed and variable; stocks valued at variable cost; contribution used to judge products; profit = contribution − fixed cost.",
+    "Absorption vs marginal profits: the same when production equals sales (no change in stock); different when stock changes — absorption profit is higher when production exceeds sales, because some fixed overhead is carried forward in closing stock.",
+    "Make or buy: buy if the purchase price is below the variable (marginal) cost of making, considering spare capacity, quality and supply.",
+    "Sales mix: choose the mix that gives the highest total contribution (or contribution per unit of the limiting factor).",
+    "Price reduction or special/export order: accept if the price covers marginal cost and adds contribution, if capacity is spare and the home market is not harmed.",
+    "Differential costing: comparing the change in costs and revenues between alternatives — used for choosing between options."
+   ],
+   "mistakes": [
+    "Including fixed costs that do not change in make-or-buy comparisons."
+   ],
+   "method": [
+    "Separate variable and fixed costs.",
+    "For each option, compute contribution (or total cost of making vs buying).",
+    "Compare contributions (or the limiting factor contribution) and choose the higher one.",
+    "Absorption statement: include fixed overhead in product cost and value stock at full cost; marginal: stock at variable cost, fixed cost in full."
+   ],
+   "formula": [
+    "Contribution = Sales − Variable cost",
+    "Profit = Contribution − Fixed cost"
+   ],
+   "frame": "Marginal cost statement: Sales − Variable cost = Contribution − Fixed cost = Profit, for each option compared."
+  },
+  {
+   "id": "financial-statements",
+   "name": "Financial Statements & Their Analysis",
+   "block": 2,
+   "kind": "mixed",
+   "summary": "Nature, usefulness and limitations of financial statements, tools of analysis, horizontal and vertical balance sheets, profit levels (GP to PAT, profit for equity), reserves and provisions, fund flow statement.",
+   "points": [
+    "Financial statements: balance sheet, statement of profit and loss, cash flow statement and notes. Nature: recorded facts, accounting conventions and personal judgement.",
+    "Limitations: historical costs, ignore qualitative factors and inflation, interim not final, window dressing possible, one-year view.",
+    "Usefulness for decisions: judge profitability, liquidity and solvency; compare with past and with others; plan and control.",
+    "Tools of analysis: comparative statements, common-size statements, trend analysis (index numbers from a base year), ratio analysis, fund flow and cash flow statements.",
+    "Horizontal balance sheet: liabilities and assets side by side (T-form). Vertical: one below the other, as in Schedule III.",
+    "Profit levels: gross profit = net sales − cost of goods sold; operating profit = gross profit − operating expenses; PBIT = operating profit + non-operating income − non-operating expenses; PBT = PBIT − interest; PAT = PBT − tax; profit for equity = PAT − preference dividend.",
+    "Reserves are appropriations of profit (revenue, capital, general); provisions are charges against profit for known liabilities or losses. A secret reserve is hidden by undervaluing assets or overvaluing liabilities. Capital reserve comes from capital profits (e.g. premium, profit on reissue of forfeited shares).",
+    "Fund flow statement: shows sources and uses of working capital — useful for planning finance; limited because it ignores cash and is historical."
+   ],
+   "mistakes": [],
+   "method": [
+    "Net sales = gross sales − returns inwards.",
+    "Gross profit = net sales − cost of goods sold (direct costs).",
+    "Operating profit = GP − administrative, selling and distribution expenses.",
+    "PBIT = operating profit + non-operating income − non-operating expenses (excluding interest).",
+    "PBT = PBIT − interest; PAT = PBT − tax; profit for equity = PAT − preference dividend."
+   ],
+   "frame": "Meaning → headed points → conclusion; for profit levels, show a vertical statement."
+  },
+  {
+   "id": "mgmt-accounting",
+   "name": "Management Accounting: Meaning, Scope & Functions",
+   "block": 1,
+   "kind": "theory",
+   "summary": "Meaning, nature, scope, objectives, functions, techniques and role of management accounting, and how it differs from cost and financial accounting.",
+   "points": [
+    "Management accounting: presenting accounting information to help management plan, control and make decisions.",
+    "Nature: forward-looking, decision-oriented, selective, no fixed formats, uses cost and financial data and statistical tools.",
+    "Scope: financial accounting, cost accounting, budgeting and forecasting, cost control, reporting to management, tax planning, internal audit, statistical analysis.",
+    "Objectives and functions: planning, controlling, organising, coordinating, motivating, communicating, interpreting data, helping decisions.",
+    "Techniques: financial planning, analysis of financial statements, standard costing, marginal costing, budgetary control, decision accounting, responsibility accounting, MIS.",
+    "Role: supplies information, evaluates alternatives, helps fix prices and policies, measures performance.",
+    "Vs cost accounting: wider scope (all information) vs costs only; forward-looking vs mainly historical and current. Vs financial accounting: internal vs external users, no statutory format vs prescribed format, parts of the business vs whole."
+   ],
+   "mistakes": [],
+   "frame": "Definition → headed points → comparison table where asked → conclusion."
+  },
+  {
+   "id": "cost-management",
+   "name": "Cost Control, Cost Reduction & Cost Management",
+   "block": 1,
+   "kind": "theory",
+   "summary": "Cost control and its techniques and advantages, cost reduction and its advantages and limitations, their differences, and techniques of cost management.",
+   "points": [
+    "Cost control: keeping costs within set targets or standards — through budgetary control, standard costing, variance analysis, inventory control, quality control.",
+    "Advantages of cost control: higher profit, efficient use of resources, cost consciousness, better pricing, competitiveness.",
+    "Cost reduction: a real and permanent fall in unit cost without lowering quality — through value analysis, work study, standardisation and simplification, better design, automation, TQM.",
+    "Differences: cost control keeps to targets, cost reduction lowers the targets themselves; control is preventive and short-term, reduction is corrective and continuous; control accepts standards, reduction challenges them.",
+    "Limitations of cost reduction: can cut quality if careless, needs investment and staff cooperation, gains may be hard to measure.",
+    "Cost management: using techniques across the business to manage costs — activity-based costing, target costing, kaizen, life-cycle costing, value-chain analysis, JIT, benchmarking."
+   ],
+   "mistakes": [],
+   "frame": "Definition → techniques as headings → comparison table → conclusion."
+  },
+  {
+   "id": "ratios",
+   "name": "Ratio Analysis",
+   "block": 2,
+   "kind": "mixed",
+   "summary": "Liquidity, activity, solvency and profitability ratios, the DuPont model, working back figures from given ratios, and limitations of ratio analysis.",
+   "points": [
+    "Liquidity ratios: current ratio (ideal about 2:1), quick or acid-test ratio (ideal about 1:1).",
+    "Activity (turnover) ratios: inventory turnover, debtors turnover and average collection period, creditors turnover and average payment period, working capital turnover.",
+    "Solvency ratios: debt–equity, capital gearing, interest coverage.",
+    "Profitability ratios: gross and net profit ratios, operating ratio, return on capital employed.",
+    "DuPont model: return on equity = net profit margin × asset turnover × equity multiplier — shows what drives returns.",
+    "Limitations: based on historical and accounting figures, affected by window dressing and inflation, no standard ratio for all firms, ignores qualitative factors."
+   ],
+   "mistakes": [],
+   "method": [
+    "Write down all given ratios and figures.",
+    "Work back step by step (e.g. sales → gross profit → cost of goods sold → average stock from the stock turnover ratio).",
+    "Use opening/closing relations (closing stock = opening + ₹X) to split average stock.",
+    "Compute each asked ratio and comment."
+   ],
+   "formula": [
+    "Current ratio = Current assets ÷ Current liabilities",
+    "Quick ratio = (Current assets − Inventory − Prepaid expenses) ÷ Current liabilities",
+    "Inventory turnover = Cost of goods sold ÷ Average inventory",
+    "Average collection period = 365 ÷ Debtors turnover",
+    "Interest coverage = EBIT ÷ Interest",
+    "Debt–equity = Long-term debt ÷ Shareholders' funds",
+    "Capital gearing = (Preference capital + Long-term loans) ÷ Equity shareholders' funds",
+    "Operating ratio = (Cost of goods sold + Operating expenses) ÷ Net sales × 100",
+    "ROE (DuPont) = Net profit margin × Asset turnover × Equity multiplier"
+   ],
+   "frame": "Formula → substitution → answer → one-line comment on what the ratio means."
+  },
+  {
+   "id": "responsibility",
+   "name": "Responsibility Accounting & Performance",
+   "block": 6,
+   "kind": "mixed",
+   "summary": "Responsibility accounting, cost, revenue, profit and investment centres, how the centre type affects budgeting and reporting, performance measurement, ROI and residual income.",
+   "points": [
+    "Responsibility accounting: organising accounting around managers' responsibilities — each manager is judged on costs and revenues they control.",
+    "Centres: cost centre (responsible for costs), revenue centre (revenues), profit centre (both), investment centre (profit and capital invested).",
+    "Differs from conventional cost accounting: organised by people and responsibility, not products; only controllable items; used for performance evaluation rather than just product costing.",
+    "Choice of centre: decides what is budgeted and reported — cost budgets and variances for cost centres; sales targets for revenue centres; profit statements for profit centres; ROI and residual income for investment centres.",
+    "Performance measurement: budget vs actual, variances, ROI, residual income, EVA; it motivates managers and fixes accountability.",
+    "Residual income (RI) = profit − (investment × cost of capital). Unlike ROI, it encourages any project earning more than the cost of capital."
+   ],
+   "mistakes": [],
+   "method": [
+    "ROI = profit ÷ investment × 100 for each division.",
+    "Charge on capital = investment × cost of capital; RI = profit − charge.",
+    "Compare divisions on both measures and comment."
+   ],
+   "formula": [
+    "ROI = Profit ÷ Investment × 100",
+    "Residual income = Profit − (Investment × Cost of capital)"
+   ],
+   "frame": "Definition → types of centres (table) → importance → conclusion; for divisions, compute ROI and RI and rank them."
+  },
+  {
+   "id": "modern-costing",
+   "name": "ABC, Target, Kaizen & Other Modern Costing",
+   "block": 7,
+   "kind": "theory",
+   "summary": "Activity-based costing, drawbacks of traditional costing, target costing, kaizen costing, throughput costing and value-chain analysis.",
+   "points": [
+    "Activity-based costing (ABC): overheads are traced to activities and then to products using cost drivers. Steps: identify activities → build activity cost pools → choose cost drivers → compute driver rates → assign costs to products.",
+    "Advantages of ABC: more accurate product costs, better pricing and product-mix decisions, shows non-value-adding activities, suits many products and high overheads.",
+    "Drawbacks of traditional costing: one volume-based rate (labour or machine hours) distorts costs when products differ in complexity and batch size; ignores non-volume activities.",
+    "Target costing: target cost = target selling price − target profit. Steps: find market price → set required profit → compute target cost → design and value-engineer to reach it → keep costs there.",
+    "Kaizen costing: continuous small cost reductions during the production stage; features — employee involvement, small steps, all levels; approaches — asset-based and product-based.",
+    "Throughput costing: only direct materials treated as variable; throughput = sales − direct materials; focuses on bottlenecks.",
+    "Value-chain analysis (Porter): primary activities (inbound logistics, operations, outbound logistics, marketing and sales, service) and support activities — used to find cost savings and competitive advantage."
+   ],
+   "mistakes": [],
+   "frame": "Definition → steps or features as headings → example → conclusion."
+  },
+  {
+   "id": "pricing",
+   "name": "Pricing Decisions",
+   "block": 6,
+   "kind": "theory",
+   "summary": "Internal and external factors influencing pricing decisions, methods of pricing, differentiated pricing and break-even pricing.",
+   "points": [
+    "Internal factors: costs, company objectives, stage of product life cycle, marketing mix, product differentiation, organisation.",
+    "External factors: demand and elasticity, competition, customers and buyer behaviour, government regulation, economic conditions, suppliers, channel members.",
+    "Methods: cost-plus (full cost + markup), marginal-cost pricing, target-return pricing, going-rate pricing, penetration pricing, skimming, perceived-value pricing, sealed-bid pricing.",
+    "Differentiated pricing (price discrimination): different prices for customer groups, times, places or product forms.",
+    "Break-even pricing: setting the price at which revenue covers total cost at the expected volume."
+   ],
+   "mistakes": [],
+   "frame": "Headed points with an Indian example each → conclusion."
+  },
+  {
+   "id": "contemporary",
+   "name": "HRA, Social & Environmental Accounting",
+   "block": 7,
+   "kind": "theory",
+   "summary": "Human resource accounting, social accounting and social audit, environmental accounting and inflation accounting.",
+   "points": [
+    "Human resource accounting (HRA): measuring and reporting the value of people in an organisation. Methods: historical cost, replacement cost, opportunity cost, present value of future earnings (Lev and Schwartz).",
+    "HRA suits people-intensive industries — IT, consulting, banking, education, healthcare. In India, companies such as BHEL and Infosys have reported it; it is relevant but voluntary.",
+    "Social accounting: measuring and reporting a firm's social costs and benefits. Social audit: steps — set objectives, identify stakeholders, collect data, assess performance, report, follow up; linked with CSR (Sec 135) and business responsibility reporting.",
+    "Environmental accounting: recording environmental costs, liabilities and benefits (pollution control, waste, resource use).",
+    "Inflation accounting: adjusting accounts for changing prices — current purchasing power (CPP) and current cost accounting (CCA) methods."
+   ],
+   "mistakes": [],
+   "frame": "Meaning → methods or steps → relevance to India → conclusion."
+  }
+ ],
+ "questions": [
+  {
+   "s": "2022-06",
+   "q": "1(a)",
+   "t": "Budgeting: meaning and advantages",
+   "m": 10,
+   "k": "th",
+   "topic": "budgeting"
+  },
+  {
+   "s": "2022-06",
+   "q": "1(b)",
+   "t": "Process of performance budgeting",
+   "m": 10,
+   "k": "th",
+   "topic": "budgeting"
+  },
+  {
+   "s": "2022-06",
+   "q": "2",
+   "t": "External factors influencing pricing decisions",
+   "m": 20,
+   "k": "th",
+   "topic": "pricing"
+  },
+  {
+   "s": "2022-06",
+   "q": "3(a)",
+   "t": "Note: residual income",
+   "m": 3.33,
+   "k": "th",
+   "topic": "responsibility"
+  },
+  {
+   "s": "2022-06",
+   "q": "3(b)",
+   "t": "Note: throughput costing",
+   "m": 3.33,
+   "k": "th",
+   "topic": "modern-costing"
+  },
+  {
+   "s": "2022-06",
+   "q": "3(c)",
+   "t": "Note: human resource accounting",
+   "m": 3.33,
+   "k": "th",
+   "topic": "contemporary"
+  },
+  {
+   "s": "2022-06",
+   "q": "3(d)",
+   "t": "Note: management accounting",
+   "m": 3.33,
+   "k": "th",
+   "topic": "mgmt-accounting"
+  },
+  {
+   "s": "2022-06",
+   "q": "3(e)",
+   "t": "Note: provisions",
+   "m": 3.33,
+   "k": "th",
+   "topic": "financial-statements"
+  },
+  {
+   "s": "2022-06",
+   "q": "3(f)",
+   "t": "Note: cost reduction",
+   "m": 3.33,
+   "k": "th",
+   "topic": "cost-management"
+  },
+  {
+   "s": "2022-06",
+   "q": "4(a)",
+   "t": "Current ratio and quick ratio",
+   "m": 14,
+   "k": "num",
+   "topic": "ratios"
+  },
+  {
+   "s": "2022-06",
+   "q": "4(b)",
+   "t": "Limitations of ratio analysis",
+   "m": 6,
+   "k": "th",
+   "topic": "ratios"
+  },
+  {
+   "s": "2022-06",
+   "q": "5",
+   "t": "Flexible overhead budget at 70%, 80%, 90%",
+   "m": 20,
+   "k": "num",
+   "topic": "budgeting"
+  },
+  {
+   "s": "2022-06",
+   "q": "6(a)",
+   "t": "Material price and usage variances",
+   "m": 10,
+   "k": "num",
+   "topic": "standard"
+  },
+  {
+   "s": "2022-06",
+   "q": "6(b)",
+   "t": "Advantages of standard costing",
+   "m": 10,
+   "k": "th",
+   "topic": "standard"
+  },
+  {
+   "s": "2022-06",
+   "q": "7(a)",
+   "t": "Profit and new break-even point after a price cut",
+   "m": 15,
+   "k": "num",
+   "topic": "cvp"
+  },
+  {
+   "s": "2022-06",
+   "q": "7(b)",
+   "t": "Actual sales from break-even sales",
+   "m": 5,
+   "k": "num",
+   "topic": "cvp"
+  },
+  {
+   "s": "2022-06",
+   "q": "8(a)",
+   "t": "Effect of a price reduction on profit",
+   "m": 10,
+   "k": "num",
+   "topic": "marginal"
+  },
+  {
+   "s": "2022-06",
+   "q": "8(b)",
+   "t": "Steps in activity-based costing",
+   "m": 10,
+   "k": "th",
+   "topic": "modern-costing"
+  },
+  {
+   "s": "2022-12",
+   "q": "1",
+   "t": "Objectives and advantages of management accounting",
+   "m": 20,
+   "k": "th",
+   "topic": "mgmt-accounting"
+  },
+  {
+   "s": "2022-12",
+   "q": "2(a)",
+   "t": "Activity-based costing and its advantages",
+   "m": 10,
+   "k": "th",
+   "topic": "modern-costing"
+  },
+  {
+   "s": "2022-12",
+   "q": "2(b)",
+   "t": "Cost control vs cost reduction",
+   "m": 10,
+   "k": "th",
+   "topic": "cost-management"
+  },
+  {
+   "s": "2022-12",
+   "q": "3(a)",
+   "t": "Note: kaizen costing",
+   "m": 3.33,
+   "k": "th",
+   "topic": "modern-costing"
+  },
+  {
+   "s": "2022-12",
+   "q": "3(b)",
+   "t": "Note: marginal costing",
+   "m": 3.33,
+   "k": "th",
+   "topic": "marginal"
+  },
+  {
+   "s": "2022-12",
+   "q": "3(c)",
+   "t": "Note: secret reserve",
+   "m": 3.33,
+   "k": "th",
+   "topic": "financial-statements"
+  },
+  {
+   "s": "2022-12",
+   "q": "3(d)",
+   "t": "Note: zero-based budgeting",
+   "m": 3.33,
+   "k": "th",
+   "topic": "budgeting"
+  },
+  {
+   "s": "2022-12",
+   "q": "3(e)",
+   "t": "Note: labour rate variance",
+   "m": 3.33,
+   "k": "th",
+   "topic": "standard"
+  },
+  {
+   "s": "2022-12",
+   "q": "3(f)",
+   "t": "Note: activity-based costing",
+   "m": 3.33,
+   "k": "th",
+   "topic": "modern-costing"
+  },
+  {
+   "s": "2022-12",
+   "q": "4(a)",
+   "t": "Profit available to equity shareholders",
+   "m": 15,
+   "k": "num",
+   "topic": "financial-statements"
+  },
+  {
+   "s": "2022-12",
+   "q": "4(b)",
+   "t": "Inventory turnover ratio",
+   "m": 5,
+   "k": "th",
+   "topic": "ratios"
+  },
+  {
+   "s": "2022-12",
+   "q": "5",
+   "t": "Cash budget by the adjusted profit and loss method",
+   "m": 20,
+   "k": "num",
+   "topic": "budgeting"
+  },
+  {
+   "s": "2022-12",
+   "q": "6(a)",
+   "t": "Make or buy components",
+   "m": 10,
+   "k": "num",
+   "topic": "marginal"
+  },
+  {
+   "s": "2022-12",
+   "q": "6(b)",
+   "t": "Standard costing vs budgeting",
+   "m": 10,
+   "k": "th",
+   "topic": "standard"
+  },
+  {
+   "s": "2022-12",
+   "q": "7(a)",
+   "t": "CVP calculations",
+   "m": 15,
+   "k": "num",
+   "topic": "cvp"
+  },
+  {
+   "s": "2022-12",
+   "q": "7(b)",
+   "t": "Break-even point in units",
+   "m": 5,
+   "k": "num",
+   "topic": "cvp"
+  },
+  {
+   "s": "2022-12",
+   "q": "8(a)",
+   "t": "Sales volume for a target profit",
+   "m": 10,
+   "k": "num",
+   "topic": "cvp"
+  },
+  {
+   "s": "2022-12",
+   "q": "8(b)",
+   "t": "Liquidity ratios",
+   "m": 10,
+   "k": "th",
+   "topic": "ratios"
+  },
+  {
+   "s": "2023-06",
+   "q": "1",
+   "t": "Management accounting: meaning, techniques and roles",
+   "m": 20,
+   "k": "th",
+   "topic": "mgmt-accounting"
+  },
+  {
+   "s": "2023-06",
+   "q": "2(a)",
+   "t": "Reserves vs provisions",
+   "m": 10,
+   "k": "th",
+   "topic": "financial-statements"
+  },
+  {
+   "s": "2023-06",
+   "q": "2(b)",
+   "t": "Techniques of cost management",
+   "m": 10,
+   "k": "th",
+   "topic": "cost-management"
+  },
+  {
+   "s": "2023-06",
+   "q": "3(a)",
+   "t": "Note: trend analysis",
+   "m": 3.33,
+   "k": "th",
+   "topic": "financial-statements"
+  },
+  {
+   "s": "2023-06",
+   "q": "3(b)",
+   "t": "Note: performance budgeting",
+   "m": 3.33,
+   "k": "th",
+   "topic": "budgeting"
+  },
+  {
+   "s": "2023-06",
+   "q": "3(c)",
+   "t": "Note: direct material usage variance",
+   "m": 3.33,
+   "k": "th",
+   "topic": "standard"
+  },
+  {
+   "s": "2023-06",
+   "q": "3(d)",
+   "t": "Note: cost–volume–profit analysis",
+   "m": 3.33,
+   "k": "th",
+   "topic": "cvp"
+  },
+  {
+   "s": "2023-06",
+   "q": "3(e)",
+   "t": "Note: responsibility accounting",
+   "m": 3.33,
+   "k": "th",
+   "topic": "responsibility"
+  },
+  {
+   "s": "2023-06",
+   "q": "3(f)",
+   "t": "Note: environmental accounting",
+   "m": 3.33,
+   "k": "th",
+   "topic": "contemporary"
+  },
+  {
+   "s": "2023-06",
+   "q": "4(a)",
+   "t": "Shareholders' funds from given ratios",
+   "m": 15,
+   "k": "num",
+   "topic": "ratios"
+  },
+  {
+   "s": "2023-06",
+   "q": "4(b)",
+   "t": "Interest coverage ratio",
+   "m": 5,
+   "k": "th",
+   "topic": "ratios"
+  },
+  {
+   "s": "2023-06",
+   "q": "5",
+   "t": "Flexible budget for factory overheads",
+   "m": 20,
+   "k": "num",
+   "topic": "budgeting"
+  },
+  {
+   "s": "2023-06",
+   "q": "6(a)",
+   "t": "Labour variances including mix",
+   "m": 10,
+   "k": "num",
+   "topic": "standard"
+  },
+  {
+   "s": "2023-06",
+   "q": "6(b)",
+   "t": "Classification of material variances",
+   "m": 10,
+   "k": "th",
+   "topic": "standard"
+  },
+  {
+   "s": "2023-06",
+   "q": "7(a)",
+   "t": "Multi-product profitability",
+   "m": 15,
+   "k": "num",
+   "topic": "marginal"
+  },
+  {
+   "s": "2023-06",
+   "q": "7(b)",
+   "t": "Income statement under marginal costing",
+   "m": 5,
+   "k": "num",
+   "topic": "marginal"
+  },
+  {
+   "s": "2023-06",
+   "q": "8(a)",
+   "t": "Make or buy decision",
+   "m": 10,
+   "k": "num",
+   "topic": "marginal"
+  },
+  {
+   "s": "2023-06",
+   "q": "8(b)",
+   "t": "Factors influencing pricing decisions",
+   "m": 10,
+   "k": "th",
+   "topic": "pricing"
+  },
+  {
+   "s": "2023-12",
+   "q": "1(a)",
+   "t": "Techniques of cost control",
+   "m": 10,
+   "k": "th",
+   "topic": "cost-management"
+  },
+  {
+   "s": "2023-12",
+   "q": "1(b)",
+   "t": "Advantages of cost control",
+   "m": 10,
+   "k": "th",
+   "topic": "cost-management"
+  },
+  {
+   "s": "2023-12",
+   "q": "2",
+   "t": "Standard costing and its advantages",
+   "m": 20,
+   "k": "th",
+   "topic": "standard"
+  },
+  {
+   "s": "2023-12",
+   "q": "3(a)",
+   "t": "Note: current ratio",
+   "m": 3.33,
+   "k": "th",
+   "topic": "ratios"
+  },
+  {
+   "s": "2023-12",
+   "q": "3(b)",
+   "t": "Note: kaizen costing",
+   "m": 3.33,
+   "k": "th",
+   "topic": "modern-costing"
+  },
+  {
+   "s": "2023-12",
+   "q": "3(c)",
+   "t": "Note: activity-based costing",
+   "m": 3.33,
+   "k": "th",
+   "topic": "modern-costing"
+  },
+  {
+   "s": "2023-12",
+   "q": "3(d)",
+   "t": "Note: inflation accounting",
+   "m": 3.33,
+   "k": "th",
+   "topic": "contemporary"
+  },
+  {
+   "s": "2023-12",
+   "q": "3(e)",
+   "t": "Note: capital reserve",
+   "m": 3.33,
+   "k": "th",
+   "topic": "financial-statements"
+  },
+  {
+   "s": "2023-12",
+   "q": "3(f)",
+   "t": "Note: value-chain analysis",
+   "m": 3.33,
+   "k": "th",
+   "topic": "modern-costing"
+  },
+  {
+   "s": "2023-12",
+   "q": "4",
+   "t": "Sales and cost budget for next year",
+   "m": 20,
+   "k": "num",
+   "topic": "budgeting"
+  },
+  {
+   "s": "2023-12",
+   "q": "5",
+   "t": "Labour cost, rate, efficiency and mix variances",
+   "m": 20,
+   "k": "num",
+   "topic": "standard"
+  },
+  {
+   "s": "2023-12",
+   "q": "6",
+   "t": "Break-even point and changes in price and costs",
+   "m": 20,
+   "k": "num",
+   "topic": "cvp"
+  },
+  {
+   "s": "2023-12",
+   "q": "7",
+   "t": "Accepting a lower price / extra order decision",
+   "m": 20,
+   "k": "num",
+   "topic": "marginal"
+  },
+  {
+   "s": "2023-12",
+   "q": "8",
+   "t": "Internal and external factors in pricing",
+   "m": 20,
+   "k": "th",
+   "topic": "pricing"
+  },
+  {
+   "s": "2023-12",
+   "q": "9",
+   "t": "Human resource accounting: suitable industries and relevance in India",
+   "m": 20,
+   "k": "th",
+   "topic": "contemporary"
+  },
+  {
+   "s": "2024-06",
+   "q": "1",
+   "t": "Cost control vs cost reduction",
+   "m": 20,
+   "k": "th",
+   "topic": "cost-management"
+  },
+  {
+   "s": "2024-06",
+   "q": "2(a)",
+   "t": "Limitations of financial statements",
+   "m": 10,
+   "k": "th",
+   "topic": "financial-statements"
+  },
+  {
+   "s": "2024-06",
+   "q": "2(b)",
+   "t": "Advantages of activity-based costing",
+   "m": 10,
+   "k": "th",
+   "topic": "modern-costing"
+  },
+  {
+   "s": "2024-06",
+   "q": "3(a)",
+   "t": "Note: target costing",
+   "m": 3.33,
+   "k": "th",
+   "topic": "modern-costing"
+  },
+  {
+   "s": "2024-06",
+   "q": "3(b)",
+   "t": "Note: social accounting",
+   "m": 3.33,
+   "k": "th",
+   "topic": "contemporary"
+  },
+  {
+   "s": "2024-06",
+   "q": "3(c)",
+   "t": "Note: flexible budgeting",
+   "m": 3.33,
+   "k": "th",
+   "topic": "budgeting"
+  },
+  {
+   "s": "2024-06",
+   "q": "3(d)",
+   "t": "Note: break-even analysis",
+   "m": 3.33,
+   "k": "th",
+   "topic": "cvp"
+  },
+  {
+   "s": "2024-06",
+   "q": "3(e)",
+   "t": "Note: budgetary control",
+   "m": 3.33,
+   "k": "th",
+   "topic": "budgeting"
+  },
+  {
+   "s": "2024-06",
+   "q": "3(f)",
+   "t": "Note: secret reserve",
+   "m": 3.33,
+   "k": "th",
+   "topic": "financial-statements"
+  },
+  {
+   "s": "2024-06",
+   "q": "4",
+   "t": "Gross profit, operating cost, PBIT, PBT and PAT",
+   "m": 20,
+   "k": "num",
+   "topic": "financial-statements"
+  },
+  {
+   "s": "2024-06",
+   "q": "5",
+   "t": "Material variances",
+   "m": 20,
+   "k": "num",
+   "topic": "standard"
+  },
+  {
+   "s": "2024-06",
+   "q": "6",
+   "t": "Income statements: absorption vs marginal costing",
+   "m": 20,
+   "k": "num",
+   "topic": "marginal"
+  },
+  {
+   "s": "2024-06",
+   "q": "7",
+   "t": "Make or buy decision",
+   "m": 20,
+   "k": "num",
+   "topic": "marginal"
+  },
+  {
+   "s": "2024-06",
+   "q": "8",
+   "t": "Methods of pricing",
+   "m": 20,
+   "k": "th",
+   "topic": "pricing"
+  },
+  {
+   "s": "2024-06",
+   "q": "9",
+   "t": "Responsibility accounting vs conventional cost accounting",
+   "m": 20,
+   "k": "th",
+   "topic": "responsibility"
+  },
+  {
+   "s": "2024-12",
+   "q": "1",
+   "t": "Management vs cost accounting; functions",
+   "m": 20,
+   "k": "th",
+   "topic": "mgmt-accounting"
+  },
+  {
+   "s": "2024-12",
+   "q": "2(a)",
+   "t": "Cost reduction vs cost control",
+   "m": 10,
+   "k": "th",
+   "topic": "cost-management"
+  },
+  {
+   "s": "2024-12",
+   "q": "2(b)",
+   "t": "Profit available to equity shareholders",
+   "m": 10,
+   "k": "num",
+   "topic": "financial-statements"
+  },
+  {
+   "s": "2024-12",
+   "q": "3(a)",
+   "t": "Note: DuPont model",
+   "m": 3.33,
+   "k": "th",
+   "topic": "ratios"
+  },
+  {
+   "s": "2024-12",
+   "q": "3(b)",
+   "t": "Note: sales budget",
+   "m": 3.33,
+   "k": "th",
+   "topic": "budgeting"
+  },
+  {
+   "s": "2024-12",
+   "q": "3(c)",
+   "t": "Note: material price variance",
+   "m": 3.33,
+   "k": "th",
+   "topic": "standard"
+  },
+  {
+   "s": "2024-12",
+   "q": "3(d)",
+   "t": "Note: profit–volume ratio",
+   "m": 3.33,
+   "k": "th",
+   "topic": "cvp"
+  },
+  {
+   "s": "2024-12",
+   "q": "3(e)",
+   "t": "Note: inflation accounting",
+   "m": 3.33,
+   "k": "th",
+   "topic": "contemporary"
+  },
+  {
+   "s": "2024-12",
+   "q": "3(f)",
+   "t": "Note: social accounting",
+   "m": 3.33,
+   "k": "th",
+   "topic": "contemporary"
+  },
+  {
+   "s": "2024-12",
+   "q": "4(a)",
+   "t": "Gross profit, operating profit, PBIT, PBT and PAT",
+   "m": 15,
+   "k": "num",
+   "topic": "financial-statements"
+  },
+  {
+   "s": "2024-12",
+   "q": "4(b)",
+   "t": "Ratios from a balance sheet",
+   "m": 5,
+   "k": "num",
+   "topic": "ratios"
+  },
+  {
+   "s": "2024-12",
+   "q": "5(a)",
+   "t": "Types of budgets",
+   "m": 10,
+   "k": "th",
+   "topic": "budgeting"
+  },
+  {
+   "s": "2024-12",
+   "q": "5(b)",
+   "t": "Original vs revised budget profitability",
+   "m": 10,
+   "k": "num",
+   "topic": "budgeting"
+  },
+  {
+   "s": "2024-12",
+   "q": "6(a)",
+   "t": "Advantages and limitations of standard costing",
+   "m": 10,
+   "k": "th",
+   "topic": "standard"
+  },
+  {
+   "s": "2024-12",
+   "q": "6(b)",
+   "t": "Material variances including mix",
+   "m": 10,
+   "k": "num",
+   "topic": "standard"
+  },
+  {
+   "s": "2024-12",
+   "q": "7(a)",
+   "t": "Managerial uses of marginal costing",
+   "m": 10,
+   "k": "th",
+   "topic": "marginal"
+  },
+  {
+   "s": "2024-12",
+   "q": "7(b)",
+   "t": "Choosing the best sales mix",
+   "m": 10,
+   "k": "num",
+   "topic": "marginal"
+  },
+  {
+   "s": "2024-12",
+   "q": "8(a)",
+   "t": "Divisional performance: ROI and residual income",
+   "m": 10,
+   "k": "num",
+   "topic": "responsibility"
+  },
+  {
+   "s": "2024-12",
+   "q": "8(b)",
+   "t": "Kaizen costing: features and approaches",
+   "m": 10,
+   "k": "th",
+   "topic": "modern-costing"
+  },
+  {
+   "s": "2025-06",
+   "q": "1",
+   "t": "Management accounting: objectives and roles",
+   "m": 20,
+   "k": "th",
+   "topic": "mgmt-accounting"
+  },
+  {
+   "s": "2025-06",
+   "q": "2(a)",
+   "t": "Cost reduction: advantages and limitations",
+   "m": 10,
+   "k": "th",
+   "topic": "cost-management"
+  },
+  {
+   "s": "2025-06",
+   "q": "2(b)",
+   "t": "Cash budget: preparation and importance",
+   "m": 10,
+   "k": "th",
+   "topic": "budgeting"
+  },
+  {
+   "s": "2025-06",
+   "q": "3(a)",
+   "t": "Note: differentiated pricing",
+   "m": 3.33,
+   "k": "th",
+   "topic": "pricing"
+  },
+  {
+   "s": "2025-06",
+   "q": "3(b)",
+   "t": "Note: angle of incidence",
+   "m": 3.33,
+   "k": "th",
+   "topic": "cvp"
+  },
+  {
+   "s": "2025-06",
+   "q": "3(c)",
+   "t": "Note: human resource accounting",
+   "m": 3.33,
+   "k": "th",
+   "topic": "contemporary"
+  },
+  {
+   "s": "2025-06",
+   "q": "3(d)",
+   "t": "Note: master budget",
+   "m": 3.33,
+   "k": "th",
+   "topic": "budgeting"
+  },
+  {
+   "s": "2025-06",
+   "q": "3(e)",
+   "t": "Note: cost accounting",
+   "m": 3.33,
+   "k": "th",
+   "topic": "mgmt-accounting"
+  },
+  {
+   "s": "2025-06",
+   "q": "3(f)",
+   "t": "Note: capacity ratio",
+   "m": 3.33,
+   "k": "th",
+   "topic": "budgeting"
+  },
+  {
+   "s": "2025-06",
+   "q": "4(a)",
+   "t": "Financial statements and their use in decisions",
+   "m": 15,
+   "k": "th",
+   "topic": "financial-statements"
+  },
+  {
+   "s": "2025-06",
+   "q": "4(b)",
+   "t": "Capital gearing ratio and operating ratio",
+   "m": 5,
+   "k": "th",
+   "topic": "ratios"
+  },
+  {
+   "s": "2025-06",
+   "q": "5(a)",
+   "t": "Budgeting and budgetary control: objectives",
+   "m": 10,
+   "k": "th",
+   "topic": "budgeting"
+  },
+  {
+   "s": "2025-06",
+   "q": "5(b)",
+   "t": "P/V ratio, BEP and margin of safety from two years' data",
+   "m": 10,
+   "k": "num",
+   "topic": "cvp"
+  },
+  {
+   "s": "2025-06",
+   "q": "6(a)",
+   "t": "Standard costing and its objectives",
+   "m": 10,
+   "k": "th",
+   "topic": "standard"
+  },
+  {
+   "s": "2025-06",
+   "q": "6(b)",
+   "t": "Material variances with process loss",
+   "m": 10,
+   "k": "num",
+   "topic": "standard"
+  },
+  {
+   "s": "2025-06",
+   "q": "7(a)",
+   "t": "When absorption and marginal costing give the same profit",
+   "m": 10,
+   "k": "th",
+   "topic": "marginal"
+  },
+  {
+   "s": "2025-06",
+   "q": "7(b)",
+   "t": "Balance sheet: importance and limitations",
+   "m": 10,
+   "k": "th",
+   "topic": "financial-statements"
+  },
+  {
+   "s": "2025-06",
+   "q": "8(a)",
+   "t": "Responsibility centre type, budgeting and reporting",
+   "m": 10,
+   "k": "th",
+   "topic": "responsibility"
+  },
+  {
+   "s": "2025-06",
+   "q": "8(b)",
+   "t": "Steps in target costing",
+   "m": 10,
+   "k": "th",
+   "topic": "modern-costing"
+  },
+  {
+   "s": "2025-12",
+   "q": "1",
+   "t": "Management accounting: nature and scope; vs cost accounting",
+   "m": 20,
+   "k": "th",
+   "topic": "mgmt-accounting"
+  },
+  {
+   "s": "2025-12",
+   "q": "2(a)",
+   "t": "Cost management and its techniques",
+   "m": 10,
+   "k": "th",
+   "topic": "cost-management"
+  },
+  {
+   "s": "2025-12",
+   "q": "2(b)",
+   "t": "Cash budget by receipts and payments method",
+   "m": 10,
+   "k": "th",
+   "topic": "budgeting"
+  },
+  {
+   "s": "2025-12",
+   "q": "3(a)",
+   "t": "Note: break-even pricing",
+   "m": 3.33,
+   "k": "th",
+   "topic": "pricing"
+  },
+  {
+   "s": "2025-12",
+   "q": "3(b)",
+   "t": "Note: margin of safety",
+   "m": 3.33,
+   "k": "th",
+   "topic": "cvp"
+  },
+  {
+   "s": "2025-12",
+   "q": "3(c)",
+   "t": "Note: social audit",
+   "m": 3.33,
+   "k": "th",
+   "topic": "contemporary"
+  },
+  {
+   "s": "2025-12",
+   "q": "3(d)",
+   "t": "Note: overhead budget",
+   "m": 3.33,
+   "k": "th",
+   "topic": "budgeting"
+  },
+  {
+   "s": "2025-12",
+   "q": "3(e)",
+   "t": "Note: financial accounting",
+   "m": 3.33,
+   "k": "th",
+   "topic": "mgmt-accounting"
+  },
+  {
+   "s": "2025-12",
+   "q": "3(f)",
+   "t": "Note: activity ratio",
+   "m": 3.33,
+   "k": "th",
+   "topic": "ratios"
+  },
+  {
+   "s": "2025-12",
+   "q": "4(a)",
+   "t": "Nature and limitations of financial statements",
+   "m": 15,
+   "k": "th",
+   "topic": "financial-statements"
+  },
+  {
+   "s": "2025-12",
+   "q": "4(b)",
+   "t": "Debt–equity ratio and capital employed",
+   "m": 5,
+   "k": "th",
+   "topic": "ratios"
+  },
+  {
+   "s": "2025-12",
+   "q": "5(a)",
+   "t": "Budgeting: advantages and limitations",
+   "m": 10,
+   "k": "th",
+   "topic": "budgeting"
+  },
+  {
+   "s": "2025-12",
+   "q": "5(b)",
+   "t": "P/V ratio, BEP and profit at given sales",
+   "m": 10,
+   "k": "num",
+   "topic": "cvp"
+  },
+  {
+   "s": "2025-12",
+   "q": "6(a)",
+   "t": "Estimate costing vs standard costing",
+   "m": 10,
+   "k": "th",
+   "topic": "standard"
+  },
+  {
+   "s": "2025-12",
+   "q": "6(b)",
+   "t": "Material variances for a chemical mix",
+   "m": 10,
+   "k": "num",
+   "topic": "standard"
+  },
+  {
+   "s": "2025-12",
+   "q": "7(a)",
+   "t": "When absorption and marginal costing give different profits",
+   "m": 10,
+   "k": "th",
+   "topic": "marginal"
+  },
+  {
+   "s": "2025-12",
+   "q": "7(b)",
+   "t": "Horizontal vs vertical balance sheet",
+   "m": 10,
+   "k": "th",
+   "topic": "financial-statements"
+  },
+  {
+   "s": "2025-12",
+   "q": "8(a)",
+   "t": "Cost, revenue, profit and investment centres",
+   "m": 10,
+   "k": "th",
+   "topic": "responsibility"
+  },
+  {
+   "s": "2025-12",
+   "q": "8(b)",
+   "t": "Drawbacks of traditional costing",
+   "m": 10,
+   "k": "th",
+   "topic": "modern-costing"
+  },
+  {
+   "s": "2026-06",
+   "q": "1",
+   "t": "Cost control: techniques and significance",
+   "m": 20,
+   "k": "th",
+   "topic": "cost-management"
+  },
+  {
+   "s": "2026-06",
+   "q": "2(a)",
+   "t": "Marginal costing and its characteristics",
+   "m": 10,
+   "k": "th",
+   "topic": "marginal"
+  },
+  {
+   "s": "2026-06",
+   "q": "2(b)",
+   "t": "Zero-based budgeting and its advantages",
+   "m": 10,
+   "k": "th",
+   "topic": "budgeting"
+  },
+  {
+   "s": "2026-06",
+   "q": "3(a)",
+   "t": "Note: responsibility centre",
+   "m": 3.33,
+   "k": "th",
+   "topic": "responsibility"
+  },
+  {
+   "s": "2026-06",
+   "q": "3(b)",
+   "t": "Note: flexible budget",
+   "m": 3.33,
+   "k": "th",
+   "topic": "budgeting"
+  },
+  {
+   "s": "2026-06",
+   "q": "3(c)",
+   "t": "Note: break-even point",
+   "m": 3.33,
+   "k": "th",
+   "topic": "cvp"
+  },
+  {
+   "s": "2026-06",
+   "q": "3(d)",
+   "t": "Note: trend analysis",
+   "m": 3.33,
+   "k": "th",
+   "topic": "financial-statements"
+  },
+  {
+   "s": "2026-06",
+   "q": "3(e)",
+   "t": "Note: cost sheet",
+   "m": 3.33,
+   "k": "th",
+   "topic": "mgmt-accounting"
+  },
+  {
+   "s": "2026-06",
+   "q": "3(f)",
+   "t": "Note: variance analysis",
+   "m": 3.33,
+   "k": "th",
+   "topic": "standard"
+  },
+  {
+   "s": "2026-06",
+   "q": "4(a)",
+   "t": "Financial statements and tools for their analysis",
+   "m": 15,
+   "k": "th",
+   "topic": "financial-statements"
+  },
+  {
+   "s": "2026-06",
+   "q": "4(b)",
+   "t": "Uses and limitations of fund flow statements",
+   "m": 5,
+   "k": "th",
+   "topic": "financial-statements"
+  },
+  {
+   "s": "2026-06",
+   "q": "5",
+   "t": "P/V ratio, fixed cost, BEP and margin of safety",
+   "m": 20,
+   "k": "num",
+   "topic": "cvp"
+  },
+  {
+   "s": "2026-06",
+   "q": "6(a)",
+   "t": "Steps in preparing a flexible budget",
+   "m": 10,
+   "k": "th",
+   "topic": "budgeting"
+  },
+  {
+   "s": "2026-06",
+   "q": "6(b)",
+   "t": "Differential costing and its application",
+   "m": 10,
+   "k": "th",
+   "topic": "marginal"
+  },
+  {
+   "s": "2026-06",
+   "q": "7(a)",
+   "t": "Conducting a social audit",
+   "m": 10,
+   "k": "th",
+   "topic": "contemporary"
+  },
+  {
+   "s": "2026-06",
+   "q": "7(b)",
+   "t": "Performance measurement in responsibility accounting",
+   "m": 10,
+   "k": "th",
+   "topic": "responsibility"
+  },
+  {
+   "s": "2026-06",
+   "q": "8(a)",
+   "t": "CVP analysis in decision-making",
+   "m": 10,
+   "k": "th",
+   "topic": "cvp"
+  },
+  {
+   "s": "2026-06",
+   "q": "8(b)",
+   "t": "Marginal costing in make-or-buy decisions",
+   "m": 10,
+   "k": "th",
+   "topic": "marginal"
+  },
+  {
+   "s": "2026-06",
+   "q": "9",
+   "t": "Working capital and turnover figures from given ratios",
+   "m": 20,
+   "k": "num",
+   "topic": "ratios"
+  }
+ ]
+}
