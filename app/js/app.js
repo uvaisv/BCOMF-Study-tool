@@ -191,7 +191,7 @@
   function examplesHtml(t) {
     if (!t.examples || !t.examples.length) return `<h2>Examples</h2><p class="muted small">Examples for this topic are being added.</p>`;
     return `<h2>${t.examples.length > 1 ? "Examples" : "Example"}</h2>${t.examples.map((e) => `
-      <section class="card example">${e.split(/\n+/).map((l) => `<p>${esc(l)}</p>`).join("")}</section>`).join("")}`;
+      <section class="card example">${e.split(/\n+/).map((l, i) => i ? `<p>${esc(l)}</p>` : `<h3>${esc(l)}</h3>`).join("")}</section>`).join("")}`;
   }
 
   /* ---------- views ---------- */

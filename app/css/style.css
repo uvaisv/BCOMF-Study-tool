@@ -380,6 +380,7 @@ html[data-density="compact"] .list, html[data-density="compact"] .rows { gap: 6p
 .example { border-left: 4px solid var(--fig-3); }
 .example p { margin: 0 0 8px; }
 .example p:last-child { margin-bottom: 0; }
+.example h3 { font-size: 1rem; margin: 0 0 8px; color: var(--text); text-transform: none; letter-spacing: 0; }
 
 /* Settings */
 .choices { display: grid; gap: 8px; }
