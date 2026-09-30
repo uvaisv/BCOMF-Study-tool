@@ -111,6 +111,7 @@ a { color: var(--accent); }
   display: grid; place-items: center; width: 32px; height: 32px; border-radius: 9px;
   background: var(--accent); color: var(--surface); font-weight: 800;
 }
+.topbar-actions { display: flex; gap: 8px; }
 .icon-btn {
   display: grid; place-items: center;
   width: 40px; height: 40px; border-radius: 10px; border: 1px solid var(--border);
@@ -142,6 +143,7 @@ p { margin: 0 0 12px; }
 
 /* Home */
 .hero { padding: 4px 0 8px; }
+.welcome-go { margin-top: 12px; }
 .hero h1 { font-size: 1.6rem; }
 .hero > p { color: var(--muted); }
 .offers { list-style: none; padding: 0; margin: 0; display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
@@ -311,7 +313,13 @@ details summary { cursor: pointer; color: var(--accent); font-weight: 600; paddi
 .popts li { margin: 3px 0; }
 .pimg { display: block; width: 100%; max-width: 572px; height: auto; filter: var(--img-filter); mix-blend-mode: var(--img-blend); }
 
-.footer { padding-bottom: 28px; font-size: .8rem; color: var(--muted); }
+/* Settings */
+.seg { display: flex; flex-wrap: wrap; gap: 8px; }
+.seg-btn {
+  padding: 8px 14px; border-radius: 999px; border: 1px solid var(--border);
+  background: var(--surface); color: var(--text); font: inherit; font-weight: 600; cursor: pointer;
+}
+.seg-btn[aria-pressed="true"] { background: var(--accent); border-color: transparent; color: var(--surface); }
 
 @media (max-width: 420px) {
   h1 { font-size: 1.35rem; }

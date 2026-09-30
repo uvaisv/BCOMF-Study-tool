@@ -167,8 +167,12 @@
     let year = store.get("year", 1);
     let query = "";
 
+    // The welcome note shows on a viewer's first visit only (it can be brought back from Settings).
+    const welcome = !store.get("welcomed", false);
+    if (welcome) store.set("welcomed", true);
+
     app.innerHTML = `
-      <section class="hero">
+      ${welcome ? `<section class="hero welcome" aria-label="Welcome">
         <h1>Know what to study first</h1>
         <p>For IGNOU BCOMF exams. Pick your course and start — no sign-up, no setup.</p>
         <ul class="offers">
@@ -177,12 +181,16 @@
           <li><strong>Past papers</strong> in one tap</li>
           <li><strong>A study plan</strong> for the hours you have left</li>
         </ul>
-      </section>
+        <button class="btn welcome-go" type="button">Got it — pick a course</button>
+      </section>` : ""}
       <div class="tabs" role="tablist" aria-label="Year">
         ${[1, 2, 3].map((y) => `<button class="tab" role="tab" data-year="${y}" style="--tab-color:${YEAR_COLORS[y]}">Year ${y}</button>`).join("")}
       </div>
       <input id="q" class="search" type="search" placeholder="Search course code or name, e.g. 131" autocomplete="off" aria-label="Search courses">
       <div id="list" class="list"></div>`;
+
+    const hero = app.querySelector(".welcome");
+    if (hero) hero.querySelector(".welcome-go").addEventListener("click", () => hero.remove());
 
     const list = app.querySelector("#list");
     const render = () => {
@@ -592,6 +600,30 @@
       ${notes ? `<ul class="points small muted">${notes}</ul>` : ""}`;
   }
 
+  function viewSettings() {
+    const current = store.get("theme", null) || "system";
+    app.innerHTML = `
+      <h1>Settings</h1>
+      <h2>Theme</h2>
+      <div class="seg" role="group" aria-label="Theme">
+        ${[["light", "Light"], ["dark", "Dark"], ["system", "Same as device"]].map(([v, l]) =>
+          `<button type="button" class="seg-btn" data-theme="${v}" aria-pressed="${v === current}">${l}</button>`).join("")}
+      </div>
+      <h2>Welcome note</h2>
+      <p class="muted small">The short introduction shown on your first visit.</p>
+      <button type="button" class="btn" id="showWelcome">Show it again</button>
+      <h2>Disclaimer</h2>
+      <p class="note small">An independent study aid for IGNOU BCOMF students — not an official IGNOU product. Topic priorities are based on past papers and are guidance, not a guarantee of what will be asked.</p>`;
+    app.querySelectorAll(".seg-btn").forEach((b) => b.addEventListener("click", () => {
+      setTheme(b.dataset.theme === "system" ? null : b.dataset.theme);
+      app.querySelectorAll(".seg-btn").forEach((x) => x.setAttribute("aria-pressed", String(x === b)));
+    }));
+    app.querySelector("#showWelcome").addEventListener("click", () => {
+      store.set("welcomed", false);
+      location.hash = "#/";
+    });
+  }
+
   function viewNotFound() {
     app.innerHTML = `<h1>Page not found</h1><p><a href="#/">Go to all courses</a></p>`;
   }
@@ -605,6 +637,7 @@
     const parts = location.hash.replace(/^#\/?/, "").split("/").filter(Boolean).map(decodeURIComponent);
     try {
       if (!parts.length) await viewHome();
+      else if (parts[0] === "settings") viewSettings();
       else if (parts[0] === "c" && parts[1]) {
         const code = parts[1];
         if (parts[2] === "t" && parts[3] && parts[4] === "asked") await viewAsked(code, parts[3]);
@@ -625,15 +658,19 @@
 
   /* ---------- theme ---------- */
   const themeBtn = document.getElementById("themeToggle");
+  function setTheme(t) {   // "light", "dark" or null to follow the device
+    if (t) document.documentElement.dataset.theme = t;
+    else delete document.documentElement.dataset.theme;
+    store.set("theme", t);
+  }
   const savedTheme = store.get("theme", null);
   if (savedTheme) document.documentElement.dataset.theme = savedTheme;
   themeBtn.addEventListener("click", () => {
     const dark = document.documentElement.dataset.theme
       ? document.documentElement.dataset.theme === "dark"
       : matchMedia("(prefers-color-scheme: dark)").matches;
-    const next = dark ? "light" : "dark";
-    document.documentElement.dataset.theme = next;
-    store.set("theme", next);
+    setTheme(dark ? "light" : "dark");
+    if (location.hash.replace(/^#\/?/, "") === "settings") viewSettings();
   });
 
   window.addEventListener("hashchange", route);
