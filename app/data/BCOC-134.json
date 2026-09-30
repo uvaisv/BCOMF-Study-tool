@@ -23,12 +23,12 @@
     "2021-06": "No paper in IGNOU's archive."
   },
   "blocks": [
-    { "no": 1, "title": "Matrices & Determinants", "part": "A" },
-    { "no": 2, "title": "Functions & Calculus", "part": "A" },
-    { "no": 3, "title": "Mathematics of Finance", "part": "A" },
-    { "no": 4, "title": "Statistics, Averages & Dispersion", "part": "B" },
-    { "no": 5, "title": "Correlation & Regression", "part": "B" },
-    { "no": 6, "title": "Index Numbers & Time Series", "part": "B" }
+    { "no": 1, "title": "Matrices" },
+    { "no": 2, "title": "Differential Calculus" },
+    { "no": 3, "title": "Basic Mathematics of Finance" },
+    { "no": 4, "title": "Uni-variate Analysis" },
+    { "no": 5, "title": "Bi-variate Analysis" },
+    { "no": 6, "title": "Time-based Data Analysis" }
   ],
   "examTips": {
     "choosing": [
@@ -57,11 +57,15 @@
         "Standard results: d/dx(xⁿ) = n·xⁿ⁻¹; d/dx(constant) = 0; d/dx(eˣ) = eˣ; d/dx(log x) = 1/x; d/dx(aˣ) = aˣ·log a.",
         "Implicit functions (e.g. x² + y² = 25): differentiate both sides, collect dy/dx terms.",
         "Parametric (x = at², y = 2at): dy/dx = (dy/dt) ÷ (dx/dt).",
-        "Function of a function (y = u³, u = 3x + 9): chain rule dy/dx = dy/du × du/dx."
+        "Function of a function (y = u³, u = 3x + 9): chain rule dy/dx = dy/du × du/dx.",
+        "Differentiation by first principle: dy/dx = lim h→0 [f(x + h) − f(x)] / h."
       ],
       "method": ["Identify the form: sum, product, quotient, chain, implicit or parametric.", "Write the rule you are using as the first line.", "Differentiate each part, then simplify.", "For xˣ type: take log on both sides, then differentiate (logarithmic differentiation)."],
       "formula": ["Product: d(uv)/dx = u·dv/dx + v·du/dx", "Quotient: d(u/v)/dx = (v·du/dx − u·dv/dx) / v²", "Chain: dy/dx = dy/du × du/dx"],
-      "mistakes": ["Wrong sign order in the quotient rule (it is v·u′ − u·v′).", "Forgetting to multiply by du/dx in the chain rule."]
+      "mistakes": ["Wrong sign order in the quotient rule (it is v·u′ − u·v′).", "Forgetting to multiply by du/dx in the chain rule."],
+      "units": [
+        { "block": 2, "unit": 7, "title": "Concept of Differentiation" }
+      ]
     },
     {
       "id": "interest",
@@ -75,11 +79,17 @@
         "Nominal rate: stated annual rate. Effective rate: actual annual rate when interest compounds more than once a year.",
         "Present value: today's value of a future sum, found by discounting.",
         "Discount factor = 1 / (1 + r)ⁿ.",
-        "Equation of value: equates the values of two sets of payments at one date."
+        "Equation of value: equates the values of two sets of payments at one date.",
+        "Continuous compounding: A = Pe^(rt), used when interest is added over infinitely small periods.",
+        "Simple (bank) discount is interest deducted in advance as a percentage of the maturity amount: D = A × d × t. Present value at a discount rate: P = A(1 − d)ⁿ."
       ],
       "method": ["Write P, R, T (and n compounding periods per year).", "Half-yearly: rate ÷ 2, periods × 2. Monthly: rate ÷ 12, periods × 12.", "Different rates each year: A = P(1 + r₁)(1 + r₂)(1 + r₃).", "Doubling time: 2 = (1 + r)ⁿ → n = log 2 ÷ log(1 + r).", "CI = A − P."],
       "formula": ["SI = P × R × T / 100", "A = P(1 + r/100)ⁿ", "Effective rate = (1 + i/m)ᵐ − 1", "PV = A / (1 + r)ⁿ"],
-      "mistakes": ["Not adjusting the rate and periods for half-yearly or monthly compounding.", "Giving the amount when the question asks for compound interest."]
+      "mistakes": ["Not adjusting the rate and periods for half-yearly or monthly compounding.", "Giving the amount when the question asks for compound interest."],
+      "units": [
+        { "block": 3, "unit": 10, "title": "Interest Rates" },
+        { "block": 3, "unit": 11, "title": "Compounding and Discounting" }
+      ]
     },
     {
       "id": "maxima",
@@ -97,7 +107,11 @@
       ],
       "method": ["Find f′(x) and set it to 0; solve for x.", "Find f″(x) and check its sign at each x.", "Put each x back into f(x) to get the maximum or minimum value.", "For intervals: factor f′(x), mark the roots on a number line, test signs."],
       "formula": ["Ed = (dq/dp) × (p/q)", "TR = P × X, MR = d(TR)/dX"],
-      "mistakes": ["Stopping at f′(x) = 0 without the second-derivative test.", "Not stating the maximum or minimum value itself."]
+      "mistakes": ["Stopping at f′(x) = 0 without the second-derivative test.", "Not stating the maximum or minimum value itself."],
+      "units": [
+        { "block": 2, "unit": 8, "title": "Maxima and Minima of Functions" },
+        { "block": 2, "unit": 9, "title": "Application of Derivatives" }
+      ]
     },
     {
       "id": "functions",
@@ -106,10 +120,22 @@
       "part": "A",
       "kind": "mixed",
       "summary": "Cost, revenue, profit and demand functions, break-even, and composite/inverse functions (f∘g, g∘f).",
-      "points": ["Function: a rule giving exactly one output for each input.", "Types: linear (y = a + bx), quadratic, absolute value |x|, step function, exponential.", "Cost function C(x) = fixed cost + variable cost × x. Average cost = C(x)/x.", "Revenue function R(x) = price × x. Profit P(x) = R(x) − C(x).", "Demand function: quantity demanded as a function of price.", "Composite function: (f∘g)(x) = f(g(x)). Inverse function: reverses f, exists when f is one-to-one."],
+      "points": [
+        "Function: a rule giving exactly one output for each input.",
+        "Types: linear (y = a + bx), quadratic, absolute value |x|, step function, exponential.",
+        "Cost function C(x) = fixed cost + variable cost × x. Average cost = C(x)/x.",
+        "Revenue function R(x) = price × x. Profit P(x) = R(x) − C(x).",
+        "Demand function: quantity demanded as a function of price.",
+        "Composite function: (f∘g)(x) = f(g(x)). Inverse function: reverses f, exists when f is one-to-one.",
+        "Types in the book: algebraic, transcendental (exponential, logarithmic), inverse and composite functions; business functions include demand, supply, cost, revenue and profit."
+      ],
       "method": ["Break-even: set R(x) = C(x) and solve for x.", "f∘g: substitute g(x) wherever x appears in f.", "g∘f: substitute f(x) into g — usually a different answer."],
       "formula": ["BEP (units) = Fixed cost ÷ (Selling price − Variable cost per unit)"],
-      "mistakes": ["Mixing up the order in f∘g and g∘f."]
+      "mistakes": ["Mixing up the order in f∘g and g∘f."],
+      "units": [
+        { "block": 2, "unit": 5, "title": "Mathematical Functions" },
+        { "block": 2, "unit": 9, "title": "Application of Derivatives", "part": "9.2–9.6" }
+      ]
     },
     {
       "id": "linear-equations",
@@ -118,7 +144,13 @@
       "part": "A",
       "kind": "numerical",
       "summary": "Solve 2 or 3 equations by Cramer's rule or the matrix (inverse) method, or find an inverse.",
-      "points": ["A system AX = B has solution X = A⁻¹B when |A| ≠ 0.", "Inverse exists only for a square matrix with non-zero determinant.", "Properties: (A⁻¹)⁻¹ = A; (AB)⁻¹ = B⁻¹A⁻¹; (Aᵀ)⁻¹ = (A⁻¹)ᵀ; AA⁻¹ = A⁻¹A = I."],
+      "points": [
+        "A system AX = B has solution X = A⁻¹B when |A| ≠ 0.",
+        "Inverse exists only for a square matrix with non-zero determinant.",
+        "Properties: (A⁻¹)⁻¹ = A; (AB)⁻¹ = B⁻¹A⁻¹; (Aᵀ)⁻¹ = (A⁻¹)ᵀ; AA⁻¹ = A⁻¹A = I.",
+        "The book gives two routes to the inverse: determinant and adjoint, and elementary row operations ([A | I] → [I | A⁻¹]).",
+        "Rank: the maximum number of linearly independent rows (= columns); rank ≤ smaller of m and n. An n × n matrix has an inverse only if its rank is n."
+      ],
       "method": [
         "Cramer's rule: find D = |A|. Replace column 1 by constants → D₁; column 2 → D₂; column 3 → D₃.",
         "x = D₁/D, y = D₂/D, z = D₃/D.",
@@ -126,7 +158,11 @@
         "Check: substitute the answers back into one equation."
       ],
       "formula": ["A⁻¹ = adj(A) / |A|", "Cofactor Cᵢⱼ = (−1)ⁱ⁺ʲ × Minorᵢⱼ"],
-      "mistakes": ["Forgetting the sign pattern (+ − +) for cofactors.", "Not transposing the cofactor matrix to get the adjoint."]
+      "mistakes": ["Forgetting the sign pattern (+ − +) for cofactors.", "Not transposing the cofactor matrix to get the adjoint."],
+      "units": [
+        { "block": 1, "unit": 3, "title": "Inverse of Matrices" },
+        { "block": 1, "unit": 2, "title": "Determinants", "part": "2.5 Cramer's rule" }
+      ]
     },
     {
       "id": "matrices",
@@ -145,7 +181,11 @@
       ],
       "method": ["Construct aᵢⱼ matrix: substitute each i (row) and j (column) in the given rule.", "Bill/production problems: write quantities as one matrix, prices as another, multiply."],
       "formula": ["|A| (2×2) = ad − bc"],
-      "mistakes": ["Multiplying matrices element by element."]
+      "mistakes": ["Multiplying matrices element by element."],
+      "units": [
+        { "block": 1, "unit": 1, "title": "Introduction to Matrices" },
+        { "block": 1, "unit": 2, "title": "Determinants" }
+      ]
     },
     {
       "id": "input-output",
@@ -160,11 +200,15 @@
         "Technology (input) coefficient aᵢⱼ = input from sector i per unit output of sector j.",
         "Output needed: X = (I − A)⁻¹ D, where D is final demand.",
         "Hawkins–Simon conditions ensure the system is workable.",
-        "Uses: economic planning, forecasting sector output, finding the effect of demand changes."
+        "Uses: economic planning, forecasting sector output, finding the effect of demand changes.",
+        "Other matrix uses in the book: showing business data, finding market demand–supply equilibrium and solving a national income model."
       ],
       "frame": "Meaning and origin → assumptions → transaction table with a small 2-sector example → the formula X = (I − A)⁻¹D → uses and limitations.",
       "formula": ["X = (I − A)⁻¹ D"],
-      "mistakes": []
+      "mistakes": [],
+      "units": [
+        { "block": 1, "unit": 4, "title": "Application of Matrices in Business and Economics" }
+      ]
     },
     {
       "id": "limits",
@@ -176,7 +220,10 @@
       "points": ["lim x→a f(x) is the value f(x) approaches as x gets close to a.", "0/0 form: factorise and cancel, or rationalise, then substitute.", "Continuity at a: f(a) exists, the limit exists and equals f(a).", "Standard limits: lim (xⁿ − aⁿ)/(x − a) = n·aⁿ⁻¹; lim (eˣ − 1)/x = 1 as x → 0."],
       "method": ["Substitute first. If you get 0/0, factorise or rationalise, cancel, substitute again."],
       "formula": ["lim (xⁿ − aⁿ)/(x − a) = n·aⁿ⁻¹ as x → a"],
-      "mistakes": []
+      "mistakes": [],
+      "units": [
+        { "block": 2, "unit": 6, "title": "Limit and Continuity" }
+      ]
     },
     {
       "id": "index-numbers",
@@ -190,11 +237,15 @@
         "Types: price, quantity, value; simple and weighted (Laspeyres, Paasche, Fisher).",
         "Problems in construction: purpose, choice of base year, selection of items, price quotations, choice of average, weights, formula.",
         "Tests: unit test, time reversal test (P₀₁ × P₁₀ = 1), factor reversal test (P₀₁ × Q₀₁ = Σp₁q₁/Σp₀q₀), circular test.",
-        "Fisher's index satisfies both time reversal and factor reversal tests — hence 'ideal'."
+        "Fisher's index satisfies both time reversal and factor reversal tests — hence 'ideal'.",
+        "Consumer price (cost of living) index: measures change in prices of goods consumed by a particular group; weights come from a family budget survey. Used for dearness allowance, wage settlements, price and tax policy."
       ],
       "method": ["Make a table: p₀q₀, p₁q₀, p₀q₁, p₁q₁ for each item; total each column.", "Laspeyres = Σp₁q₀/Σp₀q₀ × 100; Paasche = Σp₁q₁/Σp₀q₁ × 100.", "Fisher = √(L × P).", "Expenditure given instead of quantity: q = expenditure ÷ price."],
       "formula": ["P₀₁ (Fisher) = √[(Σp₁q₀/Σp₀q₀) × (Σp₁q₁/Σp₀q₁)] × 100", "TRT: P₀₁ × P₁₀ = 1", "FRT: P₀₁ × Q₀₁ = Σp₁q₁ / Σp₀q₀"],
-      "mistakes": ["Multiplying by 100 before checking the reversal tests (tests use ratios without ×100)."]
+      "mistakes": ["Multiplying by 100 before checking the reversal tests (tests use ratios without ×100)."],
+      "units": [
+        { "block": 6, "unit": 17, "title": "Index Numbers" }
+      ]
     },
     {
       "id": "time-series",
@@ -206,7 +257,10 @@
       "points": ["Time series: data arranged in order of time.", "Components: secular trend, seasonal variation, cyclical variation, irregular variation.", "Models: additive Y = T + S + C + I; multiplicative Y = T × S × C × I.", "Trend methods: freehand, semi-averages, moving averages, least squares.", "Utility: understand past behaviour, forecast, compare, plan business activity.", "Preliminary adjustments: calendar days, population, price changes, comparability of data."],
       "method": ["Take X = year − middle year (odd number of years) so ΣX = 0.", "a = ΣY / n, b = ΣXY / ΣX².", "Trend Yc = a + bX for each year.", "Forecast: put the X of the required year into Yc = a + bX."],
       "formula": ["Yc = a + bX", "a = ΣY/n, b = ΣXY/ΣX² (when ΣX = 0)"],
-      "mistakes": ["Using the actual year instead of the deviation X.", "Wrong X for the forecast year."]
+      "mistakes": ["Using the actual year instead of the deviation X.", "Wrong X for the forecast year."],
+      "units": [
+        { "block": 6, "unit": 18, "title": "Time Series Analysis" }
+      ]
     },
     {
       "id": "dispersion",
@@ -219,11 +273,15 @@
         "Dispersion: how spread out values are around the average.",
         "Absolute measures (range, QD, MD, SD) are in original units; relative measures (coefficients, CV) are pure numbers for comparison.",
         "Coefficient of variation CV = SD/Mean × 100 — lower CV means more consistent.",
-        "Quartile deviation = (Q₃ − Q₁)/2."
+        "Quartile deviation = (Q₃ − Q₁)/2.",
+        "A good measure of dispersion is rigidly defined, easy to compute and understand, based on all observations, capable of algebraic treatment and not unduly affected by extreme values — standard deviation meets most of these."
       ],
       "method": ["Grouped SD (step deviation): d = (x − A)/i; SD = i × √[Σfd²/N − (Σfd/N)²].", "Quartiles: Q₁ at N/4 item, Q₃ at 3N/4 item, then L + (pos − cf)/f × i.", "Combined mean = (N₁x̄₁ + N₂x̄₂)/(N₁ + N₂); combined SD uses dᵢ = x̄ᵢ − x̄₁₂."],
       "formula": ["σ = √[Σf(x − x̄)²/N]", "σ₁₂ = √{[N₁(σ₁² + d₁²) + N₂(σ₂² + d₂²)] / (N₁ + N₂)}", "CV = σ/x̄ × 100"],
-      "mistakes": ["Forgetting to multiply by the class width i in step deviation.", "Using cumulative frequency of the quartile class instead of the class before it."]
+      "mistakes": ["Forgetting to multiply by the class width i in step deviation.", "Using cumulative frequency of the quartile class instead of the class before it."],
+      "units": [
+        { "block": 4, "unit": 14, "title": "Measures of Dispersion" }
+      ]
     },
     {
       "id": "stats-intro",
@@ -237,10 +295,14 @@
         "Functions: simplifies complex data, enables comparison, helps forecasting, tests hypotheses, helps policy making.",
         "Importance in business: market research, quality control, forecasting sales, financial analysis, auditing (sampling).",
         "Limitations: studies aggregates not individuals, only quantitative facts, results true on average only, can be misused.",
-        "Descriptive statistics summarise data; inferential statistics draw conclusions about a population from a sample."
+        "Descriptive statistics summarise data; inferential statistics draw conclusions about a population from a sample.",
+        "Distrust of statistics ('lies, damned lies and statistics') comes from manipulated or incomplete data presented to mislead, and from data that does not show its own quality — the fault lies with the user, not the science."
       ],
       "frame": "Definition (both senses) → 6–8 headed points → one business example each → conclusion.",
-      "mistakes": []
+      "mistakes": [],
+      "units": [
+        { "block": 4, "unit": 12, "title": "Introduction to Statistics" }
+      ]
     },
     {
       "id": "central-tendency",
@@ -253,11 +315,15 @@
         "Measures: arithmetic mean, median, mode, geometric mean, harmonic mean, weighted mean.",
         "Requisites of a good average: rigidly defined, easy to understand, based on all items, capable of algebraic treatment, least affected by sampling and extreme values.",
         "AM ≥ GM ≥ HM for positive values.",
-        "Empirical relation: Mode ≈ 3 Median − 2 Mean."
+        "Empirical relation: Mode ≈ 3 Median − 2 Mean.",
+        "Partition values: quartiles divide data into 4 parts, deciles into 10, percentiles into 100 — found like the median using the required position."
       ],
       "method": ["Mean (grouped): x̄ = A + (Σfd/N) × i.", "Median: find N/2 in the cf column → L + (N/2 − cf)/f × i.", "Mode: modal class (highest f) → L + (f₁ − f₀)/(2f₁ − f₀ − f₂) × i.", "'Less than' cumulative data: convert to class frequencies first."],
       "formula": ["Median = L + (N/2 − cf)/f × i", "Mode = L + (f₁ − f₀)/(2f₁ − f₀ − f₂) × i"],
-      "mistakes": ["Using the cf of the median class instead of the class before it."]
+      "mistakes": ["Using the cf of the median class instead of the class before it."],
+      "units": [
+        { "block": 4, "unit": 13, "title": "Measures of Central Tendency" }
+      ]
     },
     {
       "id": "regression",
@@ -273,7 +339,10 @@
       ],
       "method": ["Table: x, y, x², y², xy (or deviations from the means).", "bᵧₓ = [nΣxy − ΣxΣy]/[nΣx² − (Σx)²]; bₓᵧ = [nΣxy − ΣxΣy]/[nΣy² − (Σy)²].", "Y on X: y − ȳ = bᵧₓ(x − x̄). X on Y: x − x̄ = bₓᵧ(y − ȳ)."],
       "formula": ["y − ȳ = bᵧₓ(x − x̄)", "r = ±√(bᵧₓ · bₓᵧ)"],
-      "mistakes": ["Swapping bᵧₓ and bₓᵧ.", "Giving r a sign different from the coefficients."]
+      "mistakes": ["Swapping bᵧₓ and bₓᵧ.", "Giving r a sign different from the coefficients."],
+      "units": [
+        { "block": 5, "unit": 16, "title": "Simple Linear Regression" }
+      ]
     },
     {
       "id": "correlation",
@@ -293,7 +362,10 @@
         "Spearman: rank both series, D = R₁ − R₂, ρ = 1 − 6ΣD²/[n(n² − 1)]."
       ],
       "formula": ["r = Σdxdy / √(Σdx²·Σdy²)", "ρ = 1 − 6ΣD² / n(n² − 1)"],
-      "mistakes": ["Ranking in opposite orders for the two series."]
+      "mistakes": ["Ranking in opposite orders for the two series."],
+      "units": [
+        { "block": 5, "unit": 15, "title": "Simple Linear Correlation" }
+      ]
     }
   ],
   "questions": [
@@ -452,5 +524,7 @@
     { "s": "2026-06", "q": "8", "t": "Regression of y on x by least squares", "m": 20, "k": "num", "topic": "regression", "part": "B" },
     { "s": "2026-06", "q": "9(a)", "t": "Tests of consistency of index number formulae", "m": 10, "k": "th", "topic": "index-numbers", "part": "B" },
     { "s": "2026-06", "q": "9(b)", "t": "Components of a time series", "m": 10, "k": "th", "topic": "time-series", "part": "B" }
-  ]
+  ],
+  "blocksOfficial": true,
+  "notesSource": "Notes written from the IGNOU BCOC-134 study material."
 }
