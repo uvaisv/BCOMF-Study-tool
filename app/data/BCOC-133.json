@@ -9,7 +9,7 @@
     "each": 20,
     "summary": "9 or 10 questions, attempt any 5, each carries 20 marks. All theory; the last question is short notes with a choice. Quote the section of the Act and give a short illustration (A contracts with B …) in every answer."
   },
-  "blocksOfficial": false,
+  "blocksOfficial": true,
   "sessions": ["2020-12", "2021-12", "2022-06", "2022-12", "2023-06", "2023-12", "2024-06", "2024-12", "2025-06", "2025-12", "2026-06"],
   "sessionNotes": {
     "2020-12": "Held in February 2021 (COVID). 10 questions.",
@@ -25,17 +25,18 @@
     ]
   },
   "blocks": [
-    { "no": 1, "title": "Indian Contract Act: General Principles" },
-    { "no": 2, "title": "Special Contracts: Guarantee, Bailment, Agency" },
-    { "no": 3, "title": "Sale of Goods Act" },
-    { "no": 4, "title": "Partnership & LLP" },
-    { "no": 5, "title": "Negotiable Instruments Act" }
+    { "no": 1, "title": "General Law of Contract-I" },
+    { "no": 2, "title": "General Law of Contract-II" },
+    { "no": 3, "title": "Specific Contracts" },
+    { "no": 4, "title": "Partnership" },
+    { "no": 5, "title": "Sale of Goods" },
+    { "no": 6, "title": "Negotiable Instruments Act" }
   ],
   "topics": [
     {
       "id": "sale-goods",
       "name": "Sale of Goods Act",
-      "block": 3,
+      "block": 5,
       "kind": "theory",
       "summary": "Contract of sale, goods, conditions and warranties, caveat emptor, transfer of ownership, delivery, sale by non-owners, unpaid seller.",
       "points": [
@@ -47,15 +48,23 @@
         "Transfer of ownership: specific goods in deliverable state — at contract; unascertained goods — on appropriation; sale or return — on approval.",
         "Delivery: actual, symbolic or constructive; rules on place, time, expenses, short or excess delivery, instalments.",
         "Sale by non-owners: generally no better title (nemo dat), except mercantile agent, joint owner, voidable contract, seller/buyer in possession, estoppel.",
-        "Unpaid seller: not fully paid. Rights against goods: lien, stoppage in transit, resale. Against buyer: suit for price, damages. Lien is lost on delivery; stoppage in transit applies while goods are with a carrier and the buyer is insolvent."
+        "Unpaid seller: not fully paid. Rights against goods: lien, stoppage in transit, resale. Against buyer: suit for price, damages. Lien is lost on delivery; stoppage in transit applies while goods are with a carrier and the buyer is insolvent.",
+        "Sale vs hire-purchase: in a sale ownership passes at once or on the agreed date; in hire-purchase the hirer becomes owner only after the last instalment and may return the goods before that.",
+        "Destruction of goods: if specific goods perish without the seller's knowledge before the contract, the agreement is void (Sec 7); if they perish before risk passes, without fault of either party, an agreement to sell becomes void (Sec 8)."
       ],
       "frame": "Definition with section → rules/exceptions as headed points with an illustration → conclusion.",
-      "mistakes": ["Mixing up lien (goods still with seller) and stoppage in transit (goods with carrier)."]
+      "mistakes": ["Mixing up lien (goods still with seller) and stoppage in transit (goods with carrier)."],
+      "units": [
+        { "block": 5, "unit": 16, "title": "Nature of Contract of Sale" },
+        { "block": 5, "unit": 17, "title": "Conditions and Warranties" },
+        { "block": 5, "unit": 18, "title": "Transfer of Ownership and Delivery" },
+        { "block": 5, "unit": 19, "title": "Rights of an Unpaid Seller" }
+      ]
     },
     {
       "id": "negotiable",
       "name": "Negotiable Instruments",
-      "block": 5,
+      "block": 6,
       "kind": "theory",
       "summary": "Promissory note, bill of exchange, cheque, endorsement, crossing, holder in due course, presentment, lost/stolen/forged instruments.",
       "points": [
@@ -68,15 +77,24 @@
         "Negotiation (by delivery/endorsement, HDC gets good title, no notice) vs assignment (by written document, assignee gets transferor's title, notice needed).",
         "Lost or stolen instrument: the finder gets no title, but an HDC from the finder does; forged instrument: nobody gets title through a forged endorsement.",
         "A bank may refuse a cheque: insufficient funds, stale (over 3 months), post-dated, mutilated, signature mismatch, stop-payment order, account closed, insolvency or death of the customer.",
-        "Inchoate instrument: signed stamped paper left blank — holder may complete it. Hundi: indigenous negotiable instrument."
+        "Inchoate instrument: signed stamped paper left blank — holder may complete it. Hundi: indigenous negotiable instrument.",
+        "Maturity: three days of grace are added to notes and bills not payable on demand; if the due date is a public holiday, the instrument is due on the next business day (Secs 22–25).",
+        "Dishonour by non-acceptance: the drawee does not accept within 48 hours, gives a qualified acceptance, cannot be found, is incompetent, fictitious, dead or insolvent. Dishonour by non-payment: the party liable fails to pay when it is duly presented.",
+        "Discharge of a party (the instrument remains negotiable) vs discharge of the instrument (all rights end). Modes include cancellation, release, payment in due course and material alteration without consent."
       ],
       "frame": "Definition with section → essentials as headed points → comparison table (PN vs bill vs cheque) → conclusion.",
-      "mistakes": []
+      "mistakes": [],
+      "units": [
+        { "block": 6, "unit": 20, "title": "Negotiable Instruments and Its Parties" },
+        { "block": 6, "unit": 21, "title": "Promissory Note, Bills of Exchange and Cheque" },
+        { "block": 6, "unit": 22, "title": "Negotiation" },
+        { "block": 6, "unit": 23, "title": "Presentment and Discharge" }
+      ]
     },
     {
       "id": "discharge-remedies",
       "name": "Discharge, Breach, Remedies & Quasi Contracts",
-      "block": 1,
+      "block": 2,
       "kind": "theory",
       "summary": "Modes of discharge, supervening impossibility, breach and remedies (damages, specific performance, injunction, quantum meruit), quasi and contingent contracts.",
       "points": [
@@ -85,10 +103,16 @@
         "Breach: actual or anticipatory.",
         "Remedies: rescission, damages (ordinary, special, exemplary, nominal — Hadley v Baxendale remoteness rule), specific performance (where money is not adequate, e.g. unique property), injunction, quantum meruit (payment for work done).",
         "Quasi contracts (Secs 68–72): necessaries supplied to an incapable person, payment by an interested person, benefit of a non-gratuitous act, finder of goods, money paid by mistake or coercion.",
-        "Contingent contract (Sec 31): performance depends on an uncertain future event; enforceable only when the event happens."
+        "Contingent contract (Sec 31): performance depends on an uncertain future event; enforceable only when the event happens.",
+        "Performance: the promisor, their agent or legal representatives must perform; performance can be demanded by the promisee (or their representatives). Where time is of the essence, delay lets the other party avoid the contract."
       ],
       "frame": "Meaning → modes/remedies as headed points with a case or illustration → conclusion.",
-      "mistakes": []
+      "mistakes": [],
+      "units": [
+        { "block": 2, "unit": 7, "title": "Performance and Discharge" },
+        { "block": 2, "unit": 8, "title": "Remedies for Breach and Quasi Contracts" },
+        { "block": 2, "unit": 6, "title": "Void Agreements and Contingent Contracts", "part": "6.3 Contingent contracts" }
+      ]
     },
     {
       "id": "offer-acceptance",
@@ -107,7 +131,10 @@
         "Lapse: after the time fixed or reasonable time, death or insanity of offeror, rejection or counter-offer, failure of a condition."
       ],
       "frame": "Definition with section → rules as headed points each with an illustration → conclusion.",
-      "mistakes": []
+      "mistakes": [],
+      "units": [
+        { "block": 1, "unit": 2, "title": "Offer and Acceptance" }
+      ]
     },
     {
       "id": "contract-basics",
@@ -123,7 +150,10 @@
         "Void agreement: not enforceable from the start. Voidable contract: enforceable at the option of one party (e.g. consent by coercion). Illegal agreement: forbidden by law — void, and collateral agreements are also void."
       ],
       "frame": "Definition with section → essentials as headed points with illustrations → conclusion.",
-      "mistakes": []
+      "mistakes": [],
+      "units": [
+        { "block": 1, "unit": 1, "title": "Essentials of a Contract" }
+      ]
     },
     {
       "id": "partnership",
@@ -137,10 +167,18 @@
         "Registration (Sec 58–59): application to the Registrar with firm name, place, partners' names and addresses, date of joining, duration. Non-registration: firm cannot sue third parties or partners; partners cannot sue the firm — third parties can still sue the firm.",
         "Implied authority of a partner: acts in the usual course of business (buy and sell goods, receive payments, engage employees) — not to submit to arbitration, compromise claims, open a bank account in own name.",
         "Dissolution of partnership (change in relations; firm may continue) vs dissolution of firm (business ends). Modes: by agreement, compulsory, on contingencies, by notice, by court.",
-        "LLP (LLP Act 2008): body corporate with separate legal entity, perpetual succession, limited liability, minimum 2 partners, 2 designated partners. Differs from a partnership (liability, entity) and from a company (flexible internal management, no share capital)."
+        "LLP (LLP Act 2008): body corporate with separate legal entity, perpetual succession, limited liability, minimum 2 partners, 2 designated partners. Differs from a partnership (liability, entity) and from a company (flexible internal management, no share capital).",
+        "Partnership differs from co-ownership (no business or mutual agency needed) and from a joint Hindu family business (arises by birth, the karta manages, no agreement).",
+        "On dissolution, accounts are settled in order: losses (including capital deficiencies) are paid first out of profits, then capital, then partners personally; assets go to third-party debts, then partners' advances, then capital, and any surplus is shared in the profit ratio (Sec 48)."
       ],
       "frame": "Definition with section → essentials as headed points → comparison table → conclusion.",
-      "mistakes": []
+      "mistakes": [],
+      "units": [
+        { "block": 4, "unit": 12, "title": "Definition and Registration of Partnership" },
+        { "block": 4, "unit": 13, "title": "Rights, Duties and Liabilities of Partners" },
+        { "block": 4, "unit": 14, "title": "Dissolution of Partnership Firm" },
+        { "block": 4, "unit": 15, "title": "Limited Liability Partnership" }
+      ]
     },
     {
       "id": "free-consent",
@@ -154,15 +192,19 @@
         "Undue influence (Sec 16): a person in a position to dominate another's will uses it to get an unfair advantage (doctor–patient, guardian–ward). Pardanashin women get special protection.",
         "Coercion vs undue influence: physical threat vs mental pressure; any person vs a party in a relationship; criminal act vs not criminal.",
         "Fraud (Sec 17): false statement knowingly made, active concealment, a promise made without intention to perform — with intent to deceive and the other party actually deceived and suffering loss. Mere silence is not fraud unless there is a duty to speak or silence is itself deceptive.",
-        "Misrepresentation (Sec 18): false statement made innocently. Effect: contract voidable at the option of the aggrieved party; fraud also allows damages."
+        "Misrepresentation (Sec 18): false statement made innocently. Effect: contract voidable at the option of the aggrieved party; fraud also allows damages.",
+        "Mistake: of law or of fact. Mistake of Indian law is no excuse — the contract stays valid (Sec 21); mistake of foreign law is treated as a mistake of fact. A bilateral mistake of an essential fact makes the agreement void (Sec 20); a unilateral mistake generally does not (Sec 22)."
       ],
       "frame": "Definition with section → elements as headed points → illustration → effect on the contract.",
-      "mistakes": []
+      "mistakes": [],
+      "units": [
+        { "block": 1, "unit": 4, "title": "Free Consent" }
+      ]
     },
     {
       "id": "agency",
       "name": "Agency",
-      "block": 2,
+      "block": 3,
       "kind": "theory",
       "summary": "Agent and principal, creation of agency (incl. ratification), irrevocable agency, rights and duties of agent, sub-agent, termination.",
       "points": [
@@ -176,12 +218,15 @@
         "Termination: by act of parties (revocation, renunciation), by operation of law (completion, expiry, death, insanity, insolvency, destruction of subject matter)."
       ],
       "frame": "Definition with section → headed points with illustrations → conclusion.",
-      "mistakes": []
+      "mistakes": [],
+      "units": [
+        { "block": 3, "unit": 11, "title": "Contract of Agency" }
+      ]
     },
     {
       "id": "bailment-pledge",
       "name": "Bailment, Pledge & Finder of Goods",
-      "block": 2,
+      "block": 3,
       "kind": "theory",
       "summary": "Bailment and its kinds, rights and duties of bailee, lien, finder of goods, pledge and pledge by non-owners.",
       "points": [
@@ -193,12 +238,15 @@
         "Pledge (Sec 172): bailment of goods as security for a debt. Pledge by non-owners is valid in some cases: mercantile agent, person with a voidable title, seller or buyer in possession, co-owner in possession."
       ],
       "frame": "Definition with section → essentials → rights and duties in two lists → conclusion.",
-      "mistakes": []
+      "mistakes": [],
+      "units": [
+        { "block": 3, "unit": 10, "title": "Bailment and Pledge" }
+      ]
     },
     {
       "id": "guarantee",
       "name": "Indemnity & Guarantee",
-      "block": 2,
+      "block": 3,
       "kind": "theory",
       "summary": "Contract of indemnity vs guarantee, surety's rights against the debtor, creditor and co-sureties, continuing guarantee, discharge of surety.",
       "points": [
@@ -209,12 +257,15 @@
         "Surety discharged by: variance in terms without consent, release or discharge of the principal debtor, creditor compounding or giving time, creditor's act impairing surety's remedy, loss of security, revocation."
       ],
       "frame": "Definitions → comparison table (indemnity vs guarantee) → rights under three headings → conclusion.",
-      "mistakes": []
+      "mistakes": [],
+      "units": [
+        { "block": 3, "unit": 9, "title": "Indemnity and Guarantee" }
+      ]
     },
     {
       "id": "consideration",
       "name": "Consideration & Privity",
-      "block": 1,
+      "block": 2,
       "kind": "theory",
       "summary": "Consideration and its legal rules, 'no consideration no contract' and its exceptions, stranger to a contract.",
       "points": [
@@ -224,7 +275,10 @@
         "Privity: a stranger to a contract cannot sue (Tweddle v Atkinson) — exceptions: trust or charge, marriage settlements, acknowledgement or estoppel, assignment, covenants running with land, agency."
       ],
       "frame": "Definition with section → rules as headed points with illustrations → exceptions → conclusion.",
-      "mistakes": []
+      "mistakes": [],
+      "units": [
+        { "block": 2, "unit": 5, "title": "Consideration and Legality of Object", "part": "5.2–5.6" }
+      ]
     },
     {
       "id": "capacity",
@@ -241,12 +295,15 @@
         "Pardanashin woman: undue influence is presumed; the other party must prove she understood the contract."
       ],
       "frame": "Definition with section → rules as headed points with a case name → conclusion.",
-      "mistakes": []
+      "mistakes": [],
+      "units": [
+        { "block": 1, "unit": 3, "title": "Capacity of Parties" }
+      ]
     },
     {
       "id": "void-agreements",
       "name": "Void Agreements & Public Policy",
-      "block": 1,
+      "block": 2,
       "kind": "theory",
       "summary": "Agreements in restraint of trade, opposed to public policy, unlawful object or consideration, wagering agreements.",
       "points": [
@@ -256,7 +313,11 @@
         "Wagering agreement (Sec 30): promise to pay on an uncertain event with no other interest — void; collateral transactions are valid (except in Maharashtra and Gujarat). Not wagers: insurance, lotteries under licence, prize competitions of skill."
       ],
       "frame": "Rule with section → exceptions with illustrations → conclusion.",
-      "mistakes": []
+      "mistakes": [],
+      "units": [
+        { "block": 2, "unit": 5, "title": "Consideration and Legality of Object", "part": "5.7–5.8" },
+        { "block": 2, "unit": 6, "title": "Void Agreements and Contingent Contracts", "part": "6.2 Void agreements" }
+      ]
     }
   ],
   "questions": [
@@ -428,5 +489,6 @@
     { "s": "2026-06", "q": "9(c)", "t": "Note (any two): guarantee vs indemnity", "m": 4, "k": "th", "topic": "guarantee" },
     { "s": "2026-06", "q": "9(d)", "t": "Note (any two): performance of reciprocal promises", "m": 4, "k": "th", "topic": "discharge-remedies" },
     { "s": "2026-06", "q": "9(e)", "t": "Note (any two): dissolution of partnership", "m": 4, "k": "th", "topic": "partnership" }
-  ]
+  ],
+  "notesSource": "Notes written from the IGNOU BCOC-133 study material."
 }
