@@ -45,6 +45,10 @@
       "mistakes": [],
       "units": [
         { "block": 4, "unit": 11, "title": "Report and Documents in Sales" }
+      ],
+      "examples": [
+        "Example: a day's call report\nDate, territory, shops visited (8), orders booked (5 shops, ₹42,000), competing brands seen on display, a complaint about late delivery at one shop, and the plan for tomorrow. The manager uses these reports to check effort, spot problems and plan stock.",
+        "Example: cash memo\nA customer buys two shirts for cash. The shop gives a cash memo showing its serial number and date, the shop's name and address, the items, rate, discount, GST and total in words and figures, signed by the seller. It serves as proof of purchase for an exchange or a warranty claim."
       ]
     },
     {
@@ -69,6 +73,10 @@
       "units": [
         { "block": 3, "unit": 9, "title": "Sales Presentation and Demonstration" },
         { "block": 3, "unit": 8, "title": "Sales Process", "part": "Handling objections" }
+      ],
+      "examples": [
+        "Example: AIDA in a mixer-grinder demonstration\nAttention: grinds ice in 10 seconds in front of the customer. Interest: explains the three jars and the motor's warranty. Desire: lets the customer try making chutney. Conviction: shows reviews and the ISI mark. Action: 'I can deliver it today with a festival discount.'",
+        "Example: handling objections\n'Your price is higher than the online price.' — Yes-but: 'Yes, it is ₹300 more, but you get free installation and a local service centre.'\nBoomerang: 'I'm too busy to learn a new software.' — 'That's exactly why it helps: it saves you two hours a day.'\nCounterbalance: 'It is heavier than others.' — 'It is, because of the copper motor, which lasts twice as long.'"
       ]
     },
     {
@@ -91,7 +99,11 @@
         { "block": 2, "unit": 7, "title": "Sales Force Motivation" },
         { "block": 1, "unit": 4, "title": "Sales Force Management", "part": "4.7–4.8" }
       ],
-      "figures": ["maslow"]
+      "figures": ["maslow"],
+      "examples": [
+        "Example: comparing compensation plans\nA salesperson sells ₹8 lakh in a month.\nStraight salary: ₹20,000 whatever the sales — secure, but little push to sell more.\nStraight commission at 3%: ₹24,000 this month — strong push, but in a bad month earnings may fall close to nil.\nCombination: ₹15,000 salary + 2% commission on sales above ₹5 lakh = 15,000 + 6,000 = ₹21,000 — security plus incentive, which is why it is the most common plan.",
+        "Example: Maslow for a sales team\nFair pay and travel allowance (physiological), health insurance and job security (safety), team outings (social), 'Salesperson of the Month' award (esteem), and a chance to open a new territory (self-actualisation)."
+      ]
     },
     {
       "id": "buying-motives",
@@ -112,6 +124,9 @@
       "mistakes": [],
       "units": [
         { "block": 2, "unit": 5, "title": "Buying Motives" }
+      ],
+      "examples": [
+        "Example: rational and emotional motives in one purchase\nA family buys a car. Rational product motives: safety (airbags), economy (mileage) and durability. Emotional product motives: prestige (a well-known brand) and emulation (the neighbour has one). Patronage motive: they buy from a dealer they trust because of good after-sales service and easy finance.\nA good salesperson finds the dominant motive — here safety, for the parents — and builds the presentation around it."
       ]
     },
     {
@@ -131,7 +146,10 @@
       "units": [
         { "block": 2, "unit": 6, "title": "Buyer Behaviour" }
       ],
-      "figures": ["buying-process"]
+      "figures": ["buying-process"],
+      "examples": [
+        "Example: buyer vs consumer, and influences\nA mother buys a school bag for her 8-year-old: she is the buyer, the child is the consumer, and the child's classmates (a reference group) influence which design is wanted. The mother's budget (personal) and her perception of which brand lasts longer (psychological) decide the final choice. A salesperson must satisfy both the child and the mother."
+      ]
     },
     {
       "id": "sales-process",
@@ -153,7 +171,10 @@
       "units": [
         { "block": 3, "unit": 8, "title": "Sales Process" }
       ],
-      "figures": ["selling-process"]
+      "figures": ["selling-process"],
+      "examples": [
+        "Example: the seven steps in insurance selling\nProspecting: an agent gets names of newly married couples from existing clients (endless chain) and qualifies them — they need cover, can pay and decide themselves.\nPre-approach: learns about their jobs and family plans.\nApproach: a reference approach — 'Your friend Ravi suggested I meet you.'\nPresentation: shows how a term plan protects the family, with figures.\nObjections: 'Premium is too high' → shows the cost per day.\nClosing: 'Shall we start the policy from this month?'\nFollow-up: helps with medical tests and sends a reminder before each premium."
+      ]
     },
     {
       "id": "salesmanship",
@@ -175,6 +196,10 @@
       "units": [
         { "block": 1, "unit": 2, "title": "Salesmanship" },
         { "block": 4, "unit": 14, "title": "Career Opportunities in Personal Selling" }
+      ],
+      "examples": [
+        "Example: creative salesmanship\nA water-purifier salesperson meets a family who buy bottled water and never thought of a purifier. By showing them a TDS test of their tap water and working out that the purifier pays for itself in a year compared with bottled water, the salesperson creates a want the family did not feel before.",
+        "Example: types of salesmen\nA person selling a manufacturer's cement to dealers → manufacturer's salesman. One who explains a new medicine to doctors without taking orders → missionary salesman. An assistant at a clothes shop counter → retailer's indoor salesman. A car showroom executive → specialty salesman."
       ]
     },
     {
@@ -198,6 +223,9 @@
       "units": [
         { "block": 1, "unit": 3, "title": "Sales Management" },
         { "block": 1, "unit": 4, "title": "Sales Force Management" }
+      ],
+      "examples": [
+        "Example: the sales management process at a paint company\nPlanning: forecast next year's sales at ₹50 crore and split targets by region. Organising: divide the country into territories with an area manager for each. Staffing: recruit and select 30 new sales representatives. Training: product knowledge, colour consultation and handling objections. Leading: monthly meetings and incentives. Controlling: compare each territory's sales with its target and act on shortfalls."
       ]
     },
     {
@@ -221,6 +249,10 @@
       "units": [
         { "block": 1, "unit": 1, "title": "Introduction to Personal Selling" },
         { "block": 1, "unit": 3, "title": "Sales Management", "part": "3.7 Selling vs marketing" }
+      ],
+      "examples": [
+        "Example: when personal selling is the right tool\nA company making hospital ventilators sells to a few large hospitals. The product is costly and technical, and doctors have questions. A trained salesperson visits, demonstrates the machine, answers doubts on the spot, adjusts the offer (training, service contract) and follows up after installation. TV advertising would be wasteful here; two-way, face-to-face selling fits.",
+        "Example: order-taker vs order-getter\nA salesperson who visits grocery shops every week to take repeat orders for biscuits is an order-taker. A salesperson who persuades a college to buy a new learning-management software it had never considered is a creative salesperson (order-getter)."
       ]
     },
     {
@@ -240,6 +272,9 @@
       "mistakes": [],
       "units": [
         { "block": 3, "unit": 10, "title": "Concluding" }
+      ],
+      "examples": [
+        "Example: buying signals and closing techniques\nThe customer asks, 'Does it come in blue, and how soon can you deliver?' — buying signals.\nChoice close: 'Would you like the blue one or the grey one?' Assumptive close: 'I'll schedule delivery for Saturday.' Summary close: 'So you get the larger capacity, the 5-year warranty and free installation.' Special-deal close: 'The exchange offer ends today.'\nAfter the sale, a follow-up call a week later reassures the buyer and opens the door to referrals."
       ]
     },
     {
@@ -260,6 +295,9 @@
       "mistakes": [],
       "units": [
         { "block": 4, "unit": 12, "title": "Ethics in Selling" }
+      ],
+      "examples": [
+        "Example: ethical or not?\nTelling a customer that a phone is waterproof when it is only splash-resistant → misrepresentation (unethical, and may be illegal). Saying 'our best phone ever!' → puffery, mild, but claims should not be misleading. Offering a purchase officer a gift to win a large order → a bribe. Selling a customer's phone number to another company → invasion of privacy.\nA firm prevents such behaviour through a code of conduct, training, and targets that do not push staff to cut corners."
       ]
     }
   ],

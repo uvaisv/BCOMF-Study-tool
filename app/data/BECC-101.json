@@ -64,7 +64,11 @@
         { "block": 3, "unit": 6, "title": "Production with One Variable Input" },
         { "block": 3, "unit": 7, "title": "Production with Two and More Variable Inputs" }
       ],
-      "figures": ["production"]
+      "figures": ["production"],
+      "examples": [
+        "Example: the three stages from a table\nWorkers (L) 1 to 7 on a fixed plot give total product 10, 24, 36, 44, 48, 48, 45.\nMP: 10, 14, 12, 8, 4, 0, −3. AP: 10, 12, 12, 11, 9.6, 8, 6.4.\nStage I (AP rising) runs up to 3 workers, where AP peaks at 12. Stage II (AP and MP falling, MP positive) runs from 3 to 6 workers; TP is maximum (48) where MP = 0. Stage III (MP negative) starts after 6 workers. A rational farmer employs between 3 and 6 workers.",
+        "Example: returns to scale and least-cost choice\nQ = 10L^0.5 K^0.5: exponents add to 1 → constant returns — doubling L and K doubles output. Q = L^0.6 K^0.6: they add to 1.2 → increasing returns.\nLeast cost: MPL = 20, MPK = 30, wage ₹10, rent ₹20 → MPL/w = 2 but MPK/r = 1.5. The last rupee buys more output through labour, so the firm should use more labour and less capital until the ratios are equal."
+      ]
     },
     {
       "id": "price-effect",
@@ -85,7 +89,10 @@
       "units": [
         { "block": 2, "unit": 5, "title": "Consumer Behaviour: Ordinal Approach", "part": "5.9–5.10" }
       ],
-      "figures": ["price-effect"]
+      "figures": ["price-effect"],
+      "examples": [
+        "Example: splitting a price effect\nThe price of tea falls from ₹20 to ₹10 a cup and a consumer's purchases rise from 4 to 7 cups a week (price effect +3).\nTake away just enough income to put them back on their old indifference curve (Hicks): they would buy 6 cups → substitution effect +2. The remaining +1 is the income effect → tea is a normal good.\nIf instead the income effect were −1 (total +1), tea would be inferior; if it were −3 (total −1, buying less at a lower price), it would be a Giffen good."
+      ]
     },
     {
       "id": "demand-supply",
@@ -114,7 +121,11 @@
         { "block": 1, "unit": 3, "title": "Demand and Supply in Practice" },
         { "block": 1, "unit": 2, "title": "Demand and Supply Analysis", "part": "2.2–2.8" }
       ],
-      "figures": ["demand-supply"]
+      "figures": ["demand-supply"],
+      "examples": [
+        "Example: equilibrium, surplus and a tax\nQd = 100 − 2P and Qs = −20 + 2P. Setting 100 − 2P = −20 + 2P gives P* = ₹30 and Q* = 40.\nConsumer surplus = ½ × (50 − 30) × 40 = 400; producer surplus = ½ × (30 − 10) × 40 = 400.\nA ₹4 tax per unit on sellers: new supply Qs = −28 + 2P → P = ₹32, Q = 36. Buyers pay ₹2 more and sellers get ₹2 less (₹28) — shared equally because the two curves are equally steep. Tax revenue = 4 × 36 = 144; deadweight loss = ½ × 4 × 4 = 8.",
+        "Example: a price ceiling\nWith the same curves, a ceiling of ₹25 makes Qd = 50 but Qs = 30 → a shortage of 20 units, leading to queues, rationing or black markets."
+      ]
     },
     {
       "id": "monopolistic-oligopoly",
@@ -138,7 +149,11 @@
         { "block": 4, "unit": 11, "title": "Monopolistic Competition: Price and Output Decisions" },
         { "block": 4, "unit": 12, "title": "Oligopoly: Price and Output Decisions" }
       ],
-      "figures": ["kinked"]
+      "figures": ["kinked"],
+      "examples": [
+        "Example: Cournot vs Stackelberg vs monopoly\nMarket demand P = 100 − Q; each firm's marginal cost ₹10.\nCournot: each firm makes (100 − 10)/3 = 30; total 60; price ₹40.\nStackelberg: the leader makes 90/2 = 45, the follower 90/4 = 22.5; total 67.5; price ₹32.50 — the leader gains by moving first.\nIf the two formed a cartel and acted as one monopolist: total 45, price ₹55. Under perfect competition: price ₹10, output 90.",
+        "Example: prisoner's dilemma in a cartel\nTwo cement firms agree to restrict output and each earn ₹10 crore. If one secretly produces more while the other keeps to the deal, the cheat earns ₹14 crore and the other ₹4 crore. Whatever the other does, cheating pays more, so both cheat and each earns ₹6 crore — worse for both than sticking to the deal. This is why cartels tend to break down."
+      ]
     },
     {
       "id": "perfect-competition",
@@ -161,7 +176,10 @@
       "units": [
         { "block": 4, "unit": 9, "title": "Perfect Competition: Firm and Industry Equilibrium" }
       ],
-      "figures": ["perfect-competition"]
+      "figures": ["perfect-competition"],
+      "examples": [
+        "Example: a price-taking firm\nTC = 100 + 10q + q², so MC = 10 + 2q. The market price is ₹50.\nSet P = MC: 50 = 10 + 2q → q = 20. TR = 1,000; TC = 100 + 200 + 400 = 700 → profit ₹300.\nATC = 100/q + 10 + q is lowest at q = 10, where it is ₹30. At P = ₹30 the firm earns only normal profit (break-even). AVC = 10 + q is at least ₹10, so the firm shuts down if the price falls below ₹10."
+      ]
     },
     {
       "id": "factor-markets",
@@ -188,7 +206,11 @@
         { "block": 5, "unit": 14, "title": "Labour Market" },
         { "block": 5, "unit": 15, "title": "Land Market" }
       ],
-      "figures": ["min-wage"]
+      "figures": ["min-wage"],
+      "examples": [
+        "Example: wage and a minimum wage\nLd = 100 − 2W and Ls = 20 + 2W → equilibrium wage ₹20, employment 60.\nA minimum wage of ₹25: firms hire only 50 (Ld), while 70 want work (Ls) → 20 unemployed.\nMarginal productivity: if the 5th worker adds 4 units, each sold at ₹50, their MRP is ₹200; at a wage of ₹200 the firm hires up to the 5th worker.",
+        "Example: economic rent\nA popular singer earns ₹10 lakh a year; their best alternative, teaching music, pays ₹3 lakh (transfer earnings). Economic rent = 10 − 3 = ₹7 lakh — the surplus above what keeps them in this job."
+      ]
     },
     {
       "id": "welfare-failure",
@@ -212,7 +234,11 @@
         { "block": 6, "unit": 16, "title": "Welfare: Allocative Efficiency under Perfect Competition" },
         { "block": 6, "unit": 17, "title": "Efficiency of the Market Mechanism: Market Failure and the Role of the State" }
       ],
-      "figures": ["externality"]
+      "figures": ["externality"],
+      "examples": [
+        "Example: pollution and a Pigouvian tax\nDemand for a chemical: P = 100 − Q. A factory's private marginal cost is ₹40 a unit, but each unit causes ₹10 of pollution damage, so MSC = ₹50.\nThe market produces where P = MPC: Q = 60. The social optimum is where P = MSC: Q = 50. The extra 10 units create a deadweight loss of ½ × 10 × 10 = ₹50.\nA tax of ₹10 a unit (equal to the external cost) makes the factory produce 50.",
+        "Example: asymmetric information\nAdverse selection: in a used-car market, sellers know which cars are 'lemons' but buyers do not, so buyers offer an average price; owners of good cars withdraw, and mostly lemons are left.\nMoral hazard: after buying full theft insurance, a person stops locking their bike carefully."
+      ]
     },
     {
       "id": "costs",
@@ -233,7 +259,11 @@
       "units": [
         { "block": 3, "unit": 8, "title": "The Cost of Production" }
       ],
-      "figures": ["costs"]
+      "figures": ["costs"],
+      "examples": [
+        "Example: short-run cost table\nFixed cost ₹100; variable cost for output 1 to 5: 40, 70, 90, 120, 170.\nTC: 140, 170, 190, 220, 270. MC: 40, 30, 20, 30, 50.\nAVC: 40, 35, 30, 30, 34 — lowest (30) at 3–4 units, where MC also equals 30.\nATC: 140, 85, 63.3, 55, 54 — still falling because MC (50) is below ATC.\nAFC: 100, 50, 33.3, 25, 20 — falls continuously.",
+        "Example: accounting vs economic profit\nA shop's revenue is ₹10 lakh and its explicit costs are ₹6 lakh → accounting profit ₹4 lakh. The owner could earn ₹3 lakh in a job and ₹50,000 interest on the capital invested (implicit costs) → economic profit only ₹50,000."
+      ]
     },
     {
       "id": "elasticity",
@@ -256,7 +286,11 @@
       "units": [
         { "block": 1, "unit": 2, "title": "Demand and Supply Analysis", "part": "2.9–2.12" }
       ],
-      "figures": ["elasticity"]
+      "figures": ["elasticity"],
+      "examples": [
+        "Example: point and arc elasticity\nQ = 100 − 2P at P = ₹20: Q = 60, so e = 2 × 20/60 = 0.67 (inelastic).\nArc: price rises from ₹10 to ₹12 and quantity falls from 100 to 80. e = (20/90) ÷ (2/11) = 1.22 (elastic). Check with total spending: 10 × 100 = ₹1,000 falls to 12 × 80 = ₹960 when the price rises — spending falls, so demand is elastic.\nAt P = ₹20 with e = 2, MR = 20 × (1 − 1/2) = ₹10.",
+        "Example: income and cross elasticity\nIncome rises 10%: restaurant meals rise 20% (income elasticity 2 → luxury); rice rises 3% (0.3 → necessity); coarse grain falls 5% (−0.5 → inferior).\nTea's price rises 10% and coffee demand rises 5% → cross elasticity +0.5 (substitutes). Petrol's price rises and demand for cars falls → negative (complements)."
+      ]
     },
     {
       "id": "utility",
@@ -278,7 +312,10 @@
       "units": [
         { "block": 2, "unit": 4, "title": "Consumer Behaviour: Cardinal Approach" }
       ],
-      "figures": ["utility"]
+      "figures": ["utility"],
+      "examples": [
+        "Example: how many mangoes, and the consumer surplus\nMU of successive mangoes (in ₹): 20, 16, 12, 8, 4. Price ₹10 each.\nBuy while MU ≥ price → 3 mangoes (the 4th is worth only ₹8).\nConsumer surplus = what they would pay (20 + 16 + 12 = 48) − what they pay (3 × 10 = 30) = ₹18.\nIf the price falls to ₹8, they buy 4 — this is how the downward-sloping demand curve follows from diminishing marginal utility."
+      ]
     },
     {
       "id": "monopoly",
@@ -301,7 +338,11 @@
       "units": [
         { "block": 4, "unit": 10, "title": "Monopoly: Price and Output Decisions" }
       ],
-      "figures": ["monopoly"]
+      "figures": ["monopoly"],
+      "examples": [
+        "Example: monopoly vs competition\nDemand P = 100 − Q; MC = ₹20 (constant).\nMonopoly: MR = 100 − 2Q = 20 → Q = 40, P = ₹60, profit (60 − 20) × 40 = ₹1,600.\nPerfect competition would give P = MC = ₹20 and Q = 80.\nDeadweight loss of monopoly = ½ × (60 − 20) × (80 − 40) = ₹800.",
+        "Example: third-degree price discrimination\nMC ₹10. In market A demand elasticity is 2; in market B it is 4. Using MR = P(1 − 1/e) = MC: P_A = 10 ÷ 0.5 = ₹20; P_B = 10 ÷ 0.75 = ₹13.33. The higher price is charged where demand is less elastic — like higher fares for business travellers."
+      ]
     },
     {
       "id": "indifference",
@@ -323,7 +364,10 @@
       "units": [
         { "block": 2, "unit": 5, "title": "Consumer Behaviour: Ordinal Approach", "part": "5.2–5.8" }
       ],
-      "figures": ["indifference"]
+      "figures": ["indifference"],
+      "examples": [
+        "Example: consumer equilibrium\nIncome ₹100; Px = ₹10, Py = ₹5. Budget line: 10X + 5Y = 100 (at most 10 X or 20 Y); slope −2.\nWith U = XY, MRS = Y/X. Equilibrium where MRS = Px/Py → Y/X = 2 → Y = 2X. Then 10X + 10X = 100 → X = 5, Y = 10.\nIf Px falls to ₹5: Y/X = 1 → X = 10, Y = 10. Joining such points gives the price consumption curve, from which the demand curve for X follows (price 10 → 5 units; price 5 → 10 units)."
+      ]
     },
     {
       "id": "ppc-basics",
@@ -345,7 +389,10 @@
       "units": [
         { "block": 1, "unit": 1, "title": "Introduction to Economics and Economy" }
       ],
-      "figures": ["ppc"]
+      "figures": ["ppc"],
+      "examples": [
+        "Example: a PPC schedule and increasing opportunity cost\nButter 0, 1, 2, 3, 4, 5 with guns 15, 14, 12, 9, 5, 0.\nEach extra unit of butter costs 1, 2, 3, 4, then 5 guns — rising opportunity cost, so the PPC is concave to the origin.\nProducing 2 butter and 8 guns is inside the curve (it could make 12 guns) → unemployment or waste. 4 butter and 9 guns is outside → unattainable with present resources; better technology would shift the curve out."
+      ]
     }
   ],
   "questions": [
