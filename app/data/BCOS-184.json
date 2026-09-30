@@ -9,7 +9,7 @@
   "each": 20,
   "summary": "8–10 questions, attempt any 5, each carries 20 marks. All theory, with many 'distinguish between', 'comment on' and 'short notes' questions (4–5 parts of 4–5 marks). Use Indian examples: UPI, Flipkart, Digital India, GeM."
  },
- "blocksOfficial": false,
+ "blocksOfficial": true,
  "sessions": [
   "2022-06",
   "2022-12",
@@ -35,30 +35,30 @@
  "blocks": [
   {
    "no": 1,
-   "title": "E-Commerce Concepts & Models"
+   "title": "Basics of E-Commerce"
   },
   {
    "no": 2,
-   "title": "Web, Hosting & Software"
+   "title": "E-Payment Systems"
   },
   {
    "no": 3,
-   "title": "E-Payments & FinTech"
+   "title": "Website Development and Hosting"
   },
   {
    "no": 4,
-   "title": "E-Governance & E-Services"
+   "title": "Cyber Security and IT Act"
   },
   {
    "no": 5,
-   "title": "Cyber Security & Cyber Law"
+   "title": "Online Portal and Application"
   }
  ],
  "topics": [
   {
    "id": "cyber-law",
    "name": "IT Act, Cyber Crime & Cyber Forensics",
-   "block": 5,
+   "block": 4,
    "kind": "theory",
    "summary": "IT Act 2000 and the 2008 amendment, offences and punishments, penalties and adjudication, Appellate Tribunal, cyber crimes, cyber forensics, cyber terrorism.",
    "points": [
@@ -72,12 +72,25 @@
    "frame": "Meaning → sections as headed points (section number + offence + punishment) → conclusion.",
    "mistakes": [
     "Mixing up IT Act 2000 and 2008 — list what the amendment added."
+   ],
+   "units": [
+    {
+     "block": 4,
+     "unit": 12,
+     "title": "IT Act 2000"
+    },
+    {
+     "block": 4,
+     "unit": 11,
+     "title": "Cyber Security Measures",
+     "part": "11.5 Cyber forensics"
+    }
    ]
   },
   {
    "id": "epayments",
    "name": "E-Payments & E-Banking",
-   "block": 3,
+   "block": 2,
    "kind": "theory",
    "summary": "Types of electronic payment, EFT/NEFT/RTGS/IMPS/UPI, payment gateways, e-wallets, e-banking, online fund transfer, e-payment vs traditional payment.",
    "points": [
@@ -88,15 +101,29 @@
     "Online fund transfer requirements: bank account with net/mobile banking, beneficiary details (name, account number, IFSC), registered mobile for OTP, internet access; tools: net banking, mobile app, UPI app.",
     "E-banking: banking over the internet — 24×7, lower costs, convenience; risks: fraud, phishing.",
     "E-payment vs traditional payment: instant, trackable, no cash handling vs cash/cheque, slower; limits — cyber risk and need for connectivity vs theft, forgery.",
-    "Credit card (bank credit, pay later) vs e-wallet (prepaid balance stored in an app)."
+    "Credit card (bank credit, pay later) vs e-wallet (prepaid balance stored in an app).",
+    "Other banking technology in the book: Automated Clearing House (bulk, recurring payments such as salaries and EMIs) and ATMs, POS terminals and mobile banking."
    ],
    "frame": "Meaning → types as headed points → comparison table (NEFT/RTGS/IMPS/UPI) → conclusion.",
-   "mistakes": []
+   "mistakes": [],
+   "units": [
+    {
+     "block": 2,
+     "unit": 5,
+     "title": "E-Payments"
+    },
+    {
+     "block": 2,
+     "unit": 6,
+     "title": "E-Banking",
+     "part": "6.2–6.5, 6.7"
+    }
+   ]
   },
   {
    "id": "web-hosting",
    "name": "Websites, Hosting & Web Servers",
-   "block": 2,
+   "block": 3,
    "kind": "theory",
    "summary": "Website types and development, web hosting and its types, web server vs application server, HTTP vs HTTPS, Internet vs WWW.",
    "points": [
@@ -105,15 +132,28 @@
     "Web hosting: storing a website on a server connected to the internet. Types: shared, VPS, dedicated, cloud, managed WordPress, reseller, colocation.",
     "Web server: serves static content over HTTP (Apache, Nginx). Application server: runs business logic and dynamic content (Tomcat, JBoss).",
     "HTTP: unencrypted, port 80. HTTPS: encrypted with SSL/TLS, port 443, needed for payments.",
-    "Internet: the global network of networks. WWW: a service on the internet — linked web pages accessed by browsers. Evolution: Web 1.0 (read-only), Web 2.0 (interactive, social), Web 3.0 (semantic, decentralised)."
+    "Internet: the global network of networks. WWW: a service on the internet — linked web pages accessed by browsers. Evolution: Web 1.0 (read-only), Web 2.0 (interactive, social), Web 3.0 (semantic, decentralised).",
+    "A mail server stores and delivers e-mail; web server hardware ranges from a single machine to server farms and cloud instances, chosen by traffic, storage and uptime needs."
    ],
    "frame": "Meaning → types or steps as headed points → comparison table → conclusion.",
-   "mistakes": []
+   "mistakes": [],
+   "units": [
+    {
+     "block": 3,
+     "unit": 7,
+     "title": "Website Development"
+    },
+    {
+     "block": 3,
+     "unit": 9,
+     "title": "Web Server Hardware and Software"
+    }
+   ]
   },
   {
    "id": "eservices",
    "name": "E-Tailing & E-Services",
-   "block": 4,
+   "block": 5,
    "kind": "theory",
    "summary": "E-tailing and its models, 7 Cs of e-retail mix, e-services, e-publishing, online entertainment, e-learning and SWAYAM, OTT.",
    "points": [
@@ -126,7 +166,19 @@
     "E-learning: learning over the internet. SWAYAM: Government of India's free MOOC platform with credit transfer."
    ],
    "frame": "Meaning → models or advantages as headed points with examples → conclusion.",
-   "mistakes": []
+   "mistakes": [],
+   "units": [
+    {
+     "block": 5,
+     "unit": 13,
+     "title": "E-Tailing"
+    },
+    {
+     "block": 5,
+     "unit": 14,
+     "title": "E-Services"
+    }
+   ]
   },
   {
    "id": "ecom-models",
@@ -145,12 +197,25 @@
     "How players work: Flipkart/Amazon (marketplace + logistics), BigBasket (online grocery with warehouses), Zomato (restaurant aggregator and delivery), BookMyShow (ticketing), FirstCry (baby products, online + stores), eBay (C2C auctions)."
    ],
    "frame": "Meaning → models with one Indian example each (a table) → merits and limits → conclusion.",
-   "mistakes": []
+   "mistakes": [],
+   "units": [
+    {
+     "block": 1,
+     "unit": 2,
+     "title": "E-Commerce Business Models"
+    },
+    {
+     "block": 1,
+     "unit": 3,
+     "title": "Technology used in E-Commerce",
+     "part": "3.4 App vs web-based business"
+    }
+   ]
   },
   {
    "id": "cyber-security",
    "name": "Cyber Security & Threats",
-   "block": 5,
+   "block": 4,
    "kind": "theory",
    "summary": "Cyber security and its types and trends, threats and malware, spoofing, sniffing, phishing, internet vulnerabilities, cyber-physical systems.",
    "points": [
@@ -164,12 +229,24 @@
     "Impact on e-commerce: builds trust, protects payments and customer data, avoids losses and legal liability."
    ],
    "frame": "Meaning → types or threats as headed points with examples → prevention → conclusion.",
-   "mistakes": []
+   "mistakes": [],
+   "units": [
+    {
+     "block": 4,
+     "unit": 10,
+     "title": "Cyber Security"
+    },
+    {
+     "block": 4,
+     "unit": 11,
+     "title": "Cyber Security Measures"
+    }
+   ]
   },
   {
    "id": "egov",
    "name": "E-Governance & Digital India",
-   "block": 4,
+   "block": 1,
    "kind": "theory",
    "summary": "E-governance vs e-government, Gartner's four-phase model, India's e-governance journey, Digital India and its nine pillars, e-NAM, GeM, MyGov.",
    "points": [
@@ -181,12 +258,19 @@
     "E-commerce (business transactions for profit) vs e-governance (government services for citizens)."
    ],
    "frame": "Meaning → phases or pillars as a numbered list → examples → conclusion.",
-   "mistakes": []
+   "mistakes": [],
+   "units": [
+    {
+     "block": 1,
+     "unit": 4,
+     "title": "Electronic Governance"
+    }
+   ]
   },
   {
    "id": "software-apps",
    "name": "Operating Systems, SDLC & Apps",
-   "block": 2,
+   "block": 3,
    "kind": "theory",
    "summary": "Operating systems (Windows vs Linux), software platforms, SDLC for e-commerce, app development, app stores, mobile frameworks.",
    "points": [
@@ -199,7 +283,31 @@
     "E-commerce software for SMEs: ready-made storefronts, payment and inventory integration (Shopify, Dukaan)."
    ],
    "frame": "Meaning → steps as a flow chart or comparison table → examples → conclusion.",
-   "mistakes": []
+   "mistakes": [],
+   "units": [
+    {
+     "block": 3,
+     "unit": 8,
+     "title": "Electronic Commerce Software"
+    },
+    {
+     "block": 5,
+     "unit": 15,
+     "title": "App Based Commerce"
+    },
+    {
+     "block": 1,
+     "unit": 3,
+     "title": "Technology used in E-Commerce",
+     "part": "3.6 SDLC"
+    },
+    {
+     "block": 3,
+     "unit": 9,
+     "title": "Web Server Hardware and Software",
+     "part": "9.5 Operating system"
+    }
+   ]
   },
   {
    "id": "ecom-concepts",
@@ -216,12 +324,25 @@
     "Emerging technologies: AI (recommendations, chatbots), IoT (smart devices ordering automatically), AR/VR, blockchain, big data."
    ],
    "frame": "Meaning → headed points (advantages vs disadvantages table) → conclusion.",
-   "mistakes": []
+   "mistakes": [],
+   "units": [
+    {
+     "block": 1,
+     "unit": 1,
+     "title": "Introduction to E-commerce"
+    },
+    {
+     "block": 1,
+     "unit": 3,
+     "title": "Technology used in E-Commerce",
+     "part": "3.2–3.3"
+    }
+   ]
   },
   {
    "id": "encryption",
    "name": "Encryption & Digital Signatures",
-   "block": 5,
+   "block": 4,
    "kind": "theory",
    "summary": "Encryption, symmetric vs asymmetric, digital signature, electronic signature, digital signature certificates.",
    "points": [
@@ -232,12 +353,26 @@
     "Digital Signature Certificate (DSC): issued by a Certifying Authority under the IT Act; classes by level of verification; used for e-filing, MCA and GST filings, e-tenders."
    ],
    "frame": "Meaning → process diagram (sender signs with private key → receiver verifies with public key) → comparison table → conclusion.",
-   "mistakes": []
+   "mistakes": [],
+   "units": [
+    {
+     "block": 4,
+     "unit": 12,
+     "title": "IT Act 2000",
+     "part": "12.5 Digital signature & encryption"
+    },
+    {
+     "block": 4,
+     "unit": 11,
+     "title": "Cyber Security Measures",
+     "part": "11.7 Securing network transactions"
+    }
+   ]
   },
   {
    "id": "fintech",
    "name": "FinTech, DLT & Digital Currencies",
-   "block": 3,
+   "block": 5,
    "kind": "theory",
    "summary": "FinTech and its technologies, distributed ledger technology, digital vs virtual vs crypto currencies.",
    "points": [
@@ -247,7 +382,21 @@
     "Digital currency: any money in electronic form (includes central bank digital currency — the e-Rupee). Virtual currency: digital value issued by private developers, used in a specific community (game tokens). Cryptocurrency: decentralised virtual currency secured by cryptography (Bitcoin)."
    ],
    "frame": "Meaning → headed points → comparison table → conclusion.",
-   "mistakes": []
+   "mistakes": [],
+   "units": [
+    {
+     "block": 5,
+     "unit": 14,
+     "title": "E-Services",
+     "part": "14.4 FinTech"
+    },
+    {
+     "block": 2,
+     "unit": 6,
+     "title": "E-Banking",
+     "part": "6.6 Virtual currency"
+    }
+   ]
   }
  ],
  "questions": [
@@ -1635,5 +1784,6 @@
    "k": "th",
    "topic": "eservices"
   }
- ]
+ ],
+ "notesSource": "Notes written from the IGNOU BCOS-184 study material."
 }
