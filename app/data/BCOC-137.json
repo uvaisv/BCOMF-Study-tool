@@ -97,7 +97,17 @@
     "Profit before tax = Total income − Total expenses",
     "Surplus c/f = Opening surplus + Profit after tax − Transfers to reserves − Dividends paid"
    ],
-   "frame": "Show working notes for each adjustment, then the Statement of Profit and Loss, then the Balance Sheet with note references."
+   "frame": "Show working notes for each adjustment, then the Statement of Profit and Loss, then the Balance Sheet with note references.",
+   "units": [
+    {
+     "unit": 6,
+     "title": "Final Accounts-I"
+    },
+    {
+     "unit": 7,
+     "title": "Final Accounts-II"
+    }
+   ]
   },
   {
    "id": "valuation",
@@ -134,7 +144,17 @@
     "Intrinsic value per share = (Assets − Liabilities − Preference capital) ÷ Number of equity shares",
     "Yield value per share = (Expected rate of return ÷ Normal rate of return) × Paid-up value per share"
    ],
-   "frame": "Working notes → adjusted profits → average → super profit or value → final answer with the method named."
+   "frame": "Working notes → adjusted profits → average → super profit or value → final answer with the method named.",
+   "units": [
+    {
+     "unit": 11,
+     "title": "Valuation of Goodwill"
+    },
+    {
+     "unit": 12,
+     "title": "Valuation of Shares"
+    }
+   ]
   },
   {
    "id": "cash-flow",
@@ -168,7 +188,13 @@
     "Cash from operations = Net profit before tax + Non-cash expenses − Non-operating income ± Working capital changes − Tax paid",
     "Net increase in cash = Operating + Investing + Financing cash flows"
    ],
-   "frame": "Three sections with headings; working notes for asset accounts; reconcile opening + net change = closing cash."
+   "frame": "Three sections with headings; working notes for asset accounts; reconcile opening + net change = closing cash.",
+   "units": [
+    {
+     "unit": 8,
+     "title": "Cash Flow Statement"
+    }
+   ]
   },
   {
    "id": "npa",
@@ -185,7 +211,13 @@
     "Recovery mechanisms: Lok Adalats (small loans), Debt Recovery Tribunals (1993 Act), SARFAESI Act 2002 (banks take possession of security without court; asset reconstruction companies), Insolvency and Bankruptcy Code 2016, one-time settlements and restructuring."
    ],
    "mistakes": [],
-   "frame": "Definition → classification → reasons or mechanisms as headed points → conclusion with an Indian example."
+   "frame": "Definition → classification → reasons or mechanisms as headed points → conclusion with an Indian example.",
+   "units": [
+    {
+     "unit": 19,
+     "title": "Non-Performing Assets"
+    }
+   ]
   },
   {
    "id": "banks",
@@ -200,10 +232,25 @@
     "Balance Sheet (Form A, Third Schedule, Banking Regulation Act 1949) — capital, reserves and surplus, deposits, borrowings, other liabilities and provisions; cash and balances with RBI, balances with banks and money at call, investments, advances, fixed assets, other assets. Contingent liabilities and bills for collection are shown below the total. Profit and Loss (Form B) — interest earned, other income; interest expended, operating expenses, provisions and contingencies.",
     "Treatment of items: rebate on bills discounted (unexpired discount) — a liability, deducted from discount income; bills for collection — shown only as a footnote; interest on doubtful debts — credited to interest suspense, not income; advances — shown net of provisions and classified; unclaimed dividend and provision for tax — other liabilities; borrowing from other banks — borrowings.",
     "Teller system: one teller receives and pays cash at a counter for small transactions — faster service, fewer queues; suits retail banking. Slip system: entries posted directly from pay-in slips and cheques to ledgers, then summarised — quick posting and fewer errors.",
-    "NBFC: a company that lends, invests, leases or hires out but cannot accept demand deposits or issue cheques; regulated by RBI. Forms: asset finance, loan, investment, infrastructure finance, microfinance, housing finance; deposit-taking and non-deposit-taking."
+    "NBFC: a company that lends, invests, leases or hires out but cannot accept demand deposits or issue cheques; regulated by RBI. Forms: asset finance, loan, investment, infrastructure finance, microfinance, housing finance; deposit-taking and non-deposit-taking.",
+    "Residuary non-banking company: an NBFC whose main business is taking deposits under any scheme (not investment, asset-finance or loan business); RBI makes it keep depositors' money in highly liquid, secure instruments."
    ],
    "mistakes": [],
-   "frame": "Headed points; for 'treatment' questions give each item's place in Form A or B in one line."
+   "frame": "Headed points; for 'treatment' questions give each item's place in Form A or B in one line.",
+   "units": [
+    {
+     "unit": 16,
+     "title": "Banking and Non-Banking Companies: Basic Concepts"
+    },
+    {
+     "unit": 17,
+     "title": "Accounts of Banking Companies: Accounting Treatment"
+    },
+    {
+     "unit": 18,
+     "title": "Commercial Bank"
+    }
+   ]
   },
   {
    "id": "holding",
@@ -235,7 +282,17 @@
     "Cost of control = Cost of investment − (Share of paid-up capital + Share of capital profits)",
     "Minority interest = Minority % × (Share capital + All reserves and profits)"
    ],
-   "frame": "Working notes: analysis of profits → minority interest → cost of control → consolidated reserves → consolidated Balance Sheet."
+   "frame": "Working notes: analysis of profits → minority interest → cost of control → consolidated reserves → consolidated Balance Sheet.",
+   "units": [
+    {
+     "unit": 9,
+     "title": "Accounts of Holding Companies-I"
+    },
+    {
+     "unit": 10,
+     "title": "Accounts of Holding Companies-II"
+    }
+   ]
   },
   {
    "id": "buyback-redemption",
@@ -267,7 +324,17 @@
     "Transfer to CRR = Nominal value of shares redeemed (or bought back) − Proceeds (face value) of fresh issue",
     "Fresh issue needed = Nominal value to be redeemed − Divisible profits available"
    ],
-   "frame": "Journal entries in order with narrations; show the CRR working."
+   "frame": "Journal entries in order with narrations; show the CRR working.",
+   "units": [
+    {
+     "unit": 3,
+     "title": "Buy Back of Shares"
+    },
+    {
+     "unit": 4,
+     "title": "Redemption of Preference Shares"
+    }
+   ]
   },
   {
    "id": "share-issue",
@@ -297,7 +364,13 @@
    "formula": [
     "Capital reserve = Amount forfeited on reissued shares − Discount on reissue"
    ],
-   "frame": "Journal entries with narrations → the share capital note in the Balance Sheet."
+   "frame": "Journal entries with narrations → the share capital note in the Balance Sheet.",
+   "units": [
+    {
+     "unit": 2,
+     "title": "Accounting for Share Capital"
+    }
+   ]
   },
   {
    "id": "amalgamation",
@@ -315,7 +388,17 @@
     "Ind AS 103 applies to companies following Ind AS; AS 14 to others."
    ],
    "mistakes": [],
-   "frame": "Definition → table of merger vs purchase → methods with a short example → conclusion."
+   "frame": "Definition → table of merger vs purchase → methods with a short example → conclusion.",
+   "units": [
+    {
+     "unit": 13,
+     "title": "Amalgamation of Companies: Basic Concepts"
+    },
+    {
+     "unit": 14,
+     "title": "Amalgamation of Companies: Accounting Treatment"
+    }
+   ]
   },
   {
    "id": "reconstruction",
@@ -333,7 +416,13 @@
     "Role of stakeholders: shareholders vote and bear the loss; creditors and debenture-holders agree to sacrifices; the Tribunal protects creditors; the board drafts and implements the scheme."
    ],
    "mistakes": [],
-   "frame": "Meaning → steps or provisions as a list → the reconstruction account → a revised Balance Sheet heading list → conclusion."
+   "frame": "Meaning → steps or provisions as a list → the reconstruction account → a revised Balance Sheet heading list → conclusion.",
+   "units": [
+    {
+     "unit": 15,
+     "title": "Internal Reconstruction"
+    }
+   ]
   },
   {
    "id": "debentures",
@@ -361,7 +450,13 @@
    "formula": [
     "Loss on issue = Discount on issue + Premium payable on redemption"
    ],
-   "frame": "Journal entries with narrations; separate the entries for each case."
+   "frame": "Journal entries with narrations; separate the entries for each case.",
+   "units": [
+    {
+     "unit": 5,
+     "title": "Issues and Redemption of Debentures"
+    }
+   ]
   },
   {
    "id": "company-basics",
@@ -377,7 +472,13 @@
     "Company accounts: books and financial statements kept under Sec 128–129 and Schedule III following accounting standards. Importance: true and fair view for shareholders, basis for dividend and tax, investor and lender decisions, control by management, legal compliance and audit."
    ],
    "mistakes": [],
-   "frame": "Headed points with one line each → conclusion."
+   "frame": "Headed points with one line each → conclusion.",
+   "units": [
+    {
+     "unit": 1,
+     "title": "General Introductions"
+    }
+   ]
   }
  ],
  "questions": [
@@ -1309,5 +1410,6 @@
    "k": "th",
    "topic": "banks"
   }
- ]
+ ],
+ "notesSource": "Notes written from the IGNOU BCOC-137 study material."
 }
