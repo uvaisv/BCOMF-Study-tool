@@ -75,7 +75,18 @@
     "Core competencies: what the NGO does best (e.g. community mobilisation). Capacity building: strengthening people, systems and resources so the NGO can grow and sustain its work."
    ],
    "frame": "Meaning → headed points with an NGO example → conclusion.",
-   "mistakes": []
+   "mistakes": [],
+   "units": [
+    {
+     "unit": 6,
+     "title": "SWOT Analysis"
+    },
+    {
+     "unit": 7,
+     "title": "Process of Management",
+     "part": "7.6 Core competency and capacity building"
+    }
+   ]
   },
   {
    "id": "communication",
@@ -91,10 +102,23 @@
     "Two-way communication and feedback: feedback confirms understanding and builds trust with communities and donors. Barriers to giving and receiving feedback: fear, defensiveness, status differences, poor listening, timing.",
     "Group communication: discussion within a group for shared decisions — used in self-help groups and community meetings. Face-to-face communication: most personal and persuasive.",
     "Barriers: physical (noise, distance), language and semantic, psychological (attitudes, prejudice), social and cultural (caste, class, gender, age), organisational. Social sets like caste, class, gender and age shape who speaks, who is heard and how messages are received.",
-    "Overcoming barriers: local language, simple messages, visual aids, trust-building, active listening, involving community leaders."
+    "Overcoming barriers: local language, simple messages, visual aids, trust-building, active listening, involving community leaders.",
+    "Models of communication grew from Aristotle's 'art of persuasion' (speaker-focused) to two-way models where each person is both source and receiver.",
+    "Personal space (proxemics): intimate, personal, social (about 4–12 feet — official discussions) and public distance (beyond 12 feet — lectures, meetings).",
+    "Listening barriers in the book: second-guessing the speaker, stereotyping, the halo effect (judging a person by one good trait), and not listening because of status or gender."
    ],
    "frame": "Meaning → components or barriers as headings → an NGO field example → conclusion.",
-   "mistakes": []
+   "mistakes": [],
+   "units": [
+    {
+     "unit": 8,
+     "title": "Importance and Scope of Communication Skills"
+    },
+    {
+     "unit": 9,
+     "title": "Interpersonal and Group Communication"
+    }
+   ]
   },
   {
    "id": "strategy",
@@ -112,7 +136,13 @@
     "Social values (justice, equality, service) guide strategy and policy in NGOs and keep them close to the communities they serve."
    ],
    "frame": "Meaning → elements as a numbered list → an NGO example → conclusion.",
-   "mistakes": []
+   "mistakes": [],
+   "units": [
+    {
+     "unit": 5,
+     "title": "Elements of Strategy"
+    }
+   ]
   },
   {
    "id": "environment",
@@ -130,7 +160,13 @@
     "Technology advances, for example in agriculture (drip irrigation, mobile advisories, improved seeds), open new areas of NGO work."
    ],
    "frame": "Meaning → framework (PESTLE or matrix) as a diagram or table → an example → conclusion.",
-   "mistakes": []
+   "mistakes": [],
+   "units": [
+    {
+     "unit": 2,
+     "title": "NGO Environment"
+    }
+   ]
   },
   {
    "id": "management",
@@ -149,7 +185,18 @@
     "Teams and the group life cycle (Tuckman): forming, storming, norming, performing, adjourning — teams bring skills together for projects."
    ],
    "frame": "Meaning → headed points → an NGO example → conclusion.",
-   "mistakes": []
+   "mistakes": [],
+   "units": [
+    {
+     "unit": 4,
+     "title": "Problem Identification",
+     "part": "4.5–4.10"
+    },
+    {
+     "unit": 7,
+     "title": "Process of Management"
+    }
+   ]
   },
   {
    "id": "media",
@@ -164,7 +211,13 @@
     "IT in the office: accounting and donor databases, email, document management, video meetings. IT in the field: mobile data collection, GIS mapping, digital training material, monitoring dashboards."
    ],
    "frame": "Headed points with one NGO example each → conclusion.",
-   "mistakes": []
+   "mistakes": [],
+   "units": [
+    {
+     "unit": 10,
+     "title": "IT and Web Application"
+    }
+   ]
   },
   {
    "id": "poverty",
@@ -178,10 +231,18 @@
     "Exploitation: the poor are exploited through low wages, debt bondage, land grabbing and middlemen — which keeps them poor.",
     "Vulnerability: exposure to shocks (illness, disaster, job loss) and inability to cope. Exploitation is done to people by others; vulnerability is their exposure to risk.",
     "Development indicators: per-capita income, Human Development Index, literacy, life expectancy, infant mortality, poverty ratio, gender indices.",
-    "The UN tackles poverty through the Sustainable Development Goals (Goal 1: end poverty), UNDP programmes and agencies like ILO, UNICEF and WFP."
+    "The UN tackles poverty through the Sustainable Development Goals (Goal 1: end poverty), UNDP programmes and agencies like ILO, UNICEF and WFP.",
+    "Poverty is also powerlessness: the poor have little control over material, human, intellectual and financial resources. The World Bank's study for the World Development Report 2000/01 (60,000 poor people in 60 countries) found their defining experience was limited choice and no voice.",
+    "The book traces NGO thinking from aid to development, and from dependency to sustainability — helping communities stand on their own."
    ],
    "frame": "Meaning → relation explained with headed points → an Indian example → conclusion.",
-   "mistakes": []
+   "mistakes": [],
+   "units": [
+    {
+     "unit": 3,
+     "title": "Issues in NGO Management"
+    }
+   ]
   },
   {
    "id": "ngo-issues",
@@ -198,7 +259,14 @@
     "Tackling challenges: diversify funding, build capacity, adopt good governance and transparency, network and partner."
    ],
    "frame": "Headed points with brief examples → conclusion with solutions.",
-   "mistakes": []
+   "mistakes": [],
+   "units": [
+    {
+     "unit": 4,
+     "title": "Problem Identification",
+     "part": "4.2–4.4, 4.9"
+    }
+   ]
   },
   {
    "id": "reports",
@@ -213,7 +281,13 @@
     "Guidelines: clear purpose, accurate facts, logical structure with headings, simple language, objectivity, tables and charts where useful, brevity, correct references."
    ],
    "frame": "Meaning → stages as a numbered list → an NGO report example → conclusion.",
-   "mistakes": []
+   "mistakes": [],
+   "units": [
+    {
+     "unit": 11,
+     "title": "Reporting"
+    }
+   ]
   },
   {
    "id": "ngo-concept",
@@ -229,7 +303,13 @@
     "Role of donors: provide funds and expertise, set reporting standards; risk of donor-driven agendas."
    ],
    "frame": "Definition → types or roles as headings with Indian examples (e.g. SEWA, Pratham) → conclusion.",
-   "mistakes": []
+   "mistakes": [],
+   "units": [
+    {
+     "unit": 1,
+     "title": "Concepts and Functions of NGOs"
+    }
+   ]
   }
  ],
  "questions": [
@@ -1081,5 +1161,6 @@
    "k": "th",
    "topic": "management"
   }
- ]
+ ],
+ "notesSource": "Notes checked against and linked to the IGNOU BMS-1 study material."
 }
