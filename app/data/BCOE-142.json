@@ -138,6 +138,11 @@
    ],
    "figures": [
     "variance-tree"
+   ],
+   "examples": [
+    "Example: material variances\nStandard: 2 kg per unit at ₹10 a kg. Actual output 1,000 units, using 2,100 kg bought at ₹9.50.\nStandard quantity for actual output = 2,000 kg; standard cost ₹20,000; actual cost ₹19,950.\nMCV = 20,000 − 19,950 = ₹50 (F).\nMPV = 2,100 × (10 − 9.50) = ₹1,050 (F).\nMUV = 10 × (2,000 − 2,100) = ₹1,000 (A).\nCheck: 1,050 F − 1,000 A = 50 F ✓. Buying cheaper saved money, but more material was wasted.",
+    "Example: labour variances\nStandard: 3 hours per unit at ₹20 an hour. For 1,000 units, 2,900 hours are worked at ₹21.\nStandard hours = 3,000; standard cost ₹60,000; actual cost ₹60,900 → LCV ₹900 (A).\nLRV = 2,900 × (20 − 21) = ₹2,900 (A). LEV = 20 × (3,000 − 2,900) = ₹2,000 (F).\nCheck: 2,900 A − 2,000 F = 900 A ✓. Workers were paid more but worked faster.",
+    "Example: material mix variance\nStandard mix: A 60% at ₹10, B 40% at ₹15. Actual input 200 kg: A 110 kg, B 90 kg.\nRevised standard quantity (200 kg in the standard ratio): A 120, B 80.\nMMV = 10 × (120 − 110) + 15 × (80 − 90) = 100 − 150 = ₹50 (A) — more of the costlier material B was used."
    ]
   },
   {
@@ -181,6 +186,10 @@
    ],
    "figures": [
     "break-even"
+   ],
+   "examples": [
+    "Example: P/V ratio, break-even and margin of safety\nSales ₹10,00,000; variable cost ₹6,00,000; fixed cost ₹3,00,000.\nContribution ₹4,00,000; P/V ratio 40%; profit ₹1,00,000.\nBEP = 3,00,000 ÷ 40% = ₹7,50,000. Margin of safety = 10,00,000 − 7,50,000 = ₹2,50,000 (check: profit ÷ P/V = 1,00,000 ÷ 40%).\nSales needed for a profit of ₹2,00,000 = (3,00,000 + 2,00,000) ÷ 40% = ₹12,50,000.",
+    "Example: two years' figures given\nYear 1: sales ₹8,00,000, profit ₹50,000. Year 2: sales ₹10,00,000, profit ₹1,00,000.\nP/V ratio = change in profit ÷ change in sales = 50,000 ÷ 2,00,000 = 25%.\nFixed cost = contribution − profit = 25% × 8,00,000 − 50,000 = ₹1,50,000. BEP = 1,50,000 ÷ 25% = ₹6,00,000."
    ]
   },
   {
@@ -235,6 +244,10 @@
      "unit": 8,
      "title": "Budgetary Control"
     }
+   ],
+   "examples": [
+    "Example: flexible budget\nCapacity 10,000 units. Variable cost ₹20 a unit; semi-variable ₹20,000 fixed + ₹3 a unit; fixed ₹1,00,000.\nAt 60% (6,000 units): 1,20,000 + 38,000 + 1,00,000 = ₹2,58,000 → ₹43 a unit.\nAt 80% (8,000 units): 1,60,000 + 44,000 + 1,00,000 = ₹3,04,000 → ₹38 a unit.\nAt 100% (10,000 units): 2,00,000 + 50,000 + 1,00,000 = ₹3,50,000 → ₹35 a unit — unit cost falls as fixed costs are spread.",
+    "Example: a month of a cash budget, and control ratios\nOpening cash ₹20,000 + cash sales 30,000 + collection of last month's credit sales 50,000 − paid to creditors 40,000 − wages 15,000 − rent 5,000 − machine 30,000 = closing ₹10,000.\nControl ratios: budgeted hours 10,000; actual hours 9,000; standard hours for actual output 9,900.\nCapacity = 9,000/10,000 = 90%; activity = 9,900/10,000 = 99%; efficiency = 9,900/9,000 = 110%. (Activity = capacity × efficiency: 0.9 × 1.1 = 0.99.)"
    ]
   },
   {
@@ -277,6 +290,10 @@
      "unit": 15,
      "title": "Relevant Costs for Decision Making"
     }
+   ],
+   "examples": [
+    "Example: make or buy\nMaking a component costs: materials ₹20, labour ₹15, variable overhead ₹5, share of fixed overhead ₹10 = ₹50. A supplier offers it at ₹45.\nThe fixed overhead continues either way, so compare the variable cost ₹40 with ₹45 → make it; buying would lose ₹5 a unit. (If the spare capacity could earn more elsewhere, that must also be counted.)",
+    "Example: limiting factor, and absorption vs marginal profit\nMachine hours are scarce. Product A: contribution ₹60, 3 hours → ₹20 an hour. Product B: contribution ₹40, 1 hour → ₹40 an hour. Make B first.\nProduction 10,000 units, sales 8,000; fixed overhead ₹1,00,000 (₹10 a unit). Under absorption costing, closing stock of 2,000 units carries ₹20,000 of fixed overhead forward, so absorption profit is ₹20,000 higher than marginal-costing profit this year."
    ]
   },
   {
@@ -315,6 +332,10 @@
      "unit": 4,
      "title": "Techniques of Financial Analysis"
     }
+   ],
+   "examples": [
+    "Example: levels of profit\nSales 12,00,000 − returns 20,000 = net sales ₹11,80,000. Cost of goods sold 7,00,000 → gross profit ₹4,80,000 (40.7% of net sales).\nLess administration 1,00,000 and selling 80,000 → operating profit ₹3,00,000.\nAdd dividend received 20,000, less loss on sale of an asset 10,000 → PBIT ₹3,10,000.\nLess interest 60,000 → PBT ₹2,50,000; tax at 25% → PAT ₹1,87,500; less preference dividend 20,000 → profit for equity shareholders ₹1,67,500.",
+    "Example: trend analysis\nSales: 2022 ₹10 lakh, 2023 ₹12 lakh, 2024 ₹15 lakh. With 2022 as base (100), the trend percentages are 100, 120 and 150 — sales grew 50% in two years."
    ]
   },
   {
@@ -340,6 +361,9 @@
      "unit": 1,
      "title": "Management Accounting: An Introduction"
     }
+   ],
+   "examples": [
+    "Example: management accounting at work\nA factory manager asks whether to run a second shift. The management accountant estimates the extra wages, power and supervision (differential costs), the contribution from extra sales, the cash needed each month (cash budget), and the break-even volume for the shift, then recommends starting it for the peak season only.\nNone of this appears in the published financial statements — it is forward-looking information prepared for one decision."
    ]
   },
   {
@@ -364,6 +388,9 @@
      "unit": 2,
      "title": "Cost Control, Cost Reduction and Cost Management"
     }
+   ],
+   "examples": [
+    "Example: cost control vs cost reduction\nCost control: the canteen's budget is ₹50,000 a month; the manager checks each month's spending against it and acts on overspending.\nCost reduction: value analysis shows that a metal bracket can be replaced by a plastic one doing the same job ₹5 cheaper. At 1,00,000 units a year this cuts cost by ₹5,00,000 permanently, and the standard itself is lowered."
    ]
   },
   {
@@ -409,6 +436,10 @@
    ],
    "figures": [
     "dupont"
+   ],
+   "examples": [
+    "Example: liquidity ratios\nCurrent assets ₹4,00,000 (including stock ₹1,50,000 and prepaid expenses ₹10,000); current liabilities ₹2,00,000.\nCurrent ratio = 4,00,000 ÷ 2,00,000 = 2 : 1. Quick ratio = (4,00,000 − 1,60,000) ÷ 2,00,000 = 1.2 : 1 — both are comfortable.",
+    "Example: working backwards from ratios\nSales ₹12,00,000; gross profit 25% → cost of goods sold ₹9,00,000. Stock turnover 6 times → average stock = 9,00,000 ÷ 6 = ₹1,50,000. If closing stock is ₹20,000 more than opening: opening ₹1,40,000, closing ₹1,60,000.\nDebtors turnover 6 times → average collection period = 365 ÷ 6 ≈ 61 days.\nDuPont: net profit margin 10% × asset turnover 2 × equity multiplier 1.5 → ROE = 30%."
    ]
   },
   {
@@ -442,6 +473,9 @@
      "unit": 17,
      "title": "Responsibility Accounting"
     }
+   ],
+   "examples": [
+    "Example: ROI vs residual income\nDivision X: profit ₹3,00,000, investment ₹15,00,000 → ROI 20%. Division Y: profit ₹1,50,000, investment ₹5,00,000 → ROI 30%. Cost of capital 15%.\nRI: X = 3,00,000 − 2,25,000 = ₹75,000; Y = 1,50,000 − 75,000 = ₹75,000.\nY is offered a project: investment ₹2,00,000, profit ₹50,000 (25%). It would cut Y's ROI to 2,00,000 ÷ 7,00,000 = 28.6%, so a manager judged on ROI may reject it. But it adds 50,000 − 30,000 = ₹20,000 to RI, and it is good for the company because 25% is above the 15% cost of capital."
    ]
   },
   {
@@ -474,6 +508,10 @@
      "unit": 19,
      "title": "Contemporary Issues in Management Accounting-II"
     }
+   ],
+   "examples": [
+    "Example: ABC corrects a distorted cost\nSet-up costs of ₹1,20,000 are shared by products A and B. A needs 10 set-ups and 8,000 labour hours; B needs 50 set-ups and 2,000 labour hours.\nTraditional (labour hours): A ₹96,000, B ₹24,000.\nABC (driver = set-ups, ₹2,000 each): A ₹20,000, B ₹1,00,000.\nB, made in many small batches, was being undercosted; ABC shows its true cost.",
+    "Example: target costing\nCustomers will pay ₹500 for a mixer-grinder; the company wants 20% profit on price (₹100), so the target cost is ₹400. The present design costs ₹450, so engineers must remove ₹50 — for example a simpler jar lid and a standard motor — before launch."
    ]
   },
   {
@@ -497,6 +535,10 @@
      "unit": 16,
      "title": "Pricing Decisions"
     }
+   ],
+   "examples": [
+    "Example: cost-plus vs marginal-cost pricing\nCost-plus: full cost of a table ₹800 + 25% markup → price ₹1,000.\nMarginal-cost pricing: a hotel's variable cost per room-night is ₹1,200 and its normal rate ₹4,000. In the off-season it offers rooms to a tour group at ₹2,000. Each room still adds ₹800 of contribution towards fixed costs, which would otherwise earn nothing.",
+    "Example: differentiated pricing\nA cinema charges less for weekday morning shows and gives student discounts; a railway charges different fares for sleeper and AC classes on the same train — different prices for times, groups and product forms."
    ]
   },
   {
@@ -522,6 +564,10 @@
      "title": "Contemporary Issues in Management Accounting-I",
      "part": "18.3–18.7"
     }
+   ],
+   "examples": [
+    "Example: valuing an employee (Lev and Schwartz)\nAn employee will earn ₹6 lakh a year for the 3 years left before retirement; discount rate 10%.\nValue = 6 × (1/1.1 + 1/1.1² + 1/1.1³) = 6 × 2.4869 = ₹14.92 lakh — the present value of future earnings used as the value of this human asset.",
+    "Example: inflation and environmental accounting\nA machine bought for ₹10 lakh when the price index was 100 is shown at ₹10 lakh at cost; with the index now at 150, current purchasing power accounting restates it at ₹15 lakh, so depreciation and profit are not overstated in real terms.\nA factory that spends on effluent treatment and pays a pollution fine records both separately as environmental costs, so management can see the cost of its environmental impact."
    ]
   }
  ],
