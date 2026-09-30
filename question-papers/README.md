@@ -49,9 +49,9 @@ Year-<n>/<COURSE-CODE>/<COURSE-CODE>_<YYYY-MM>.pdf
 
 ## Notes
 
-- **BECS-144 (Data Analysis)** – no paper found in any session.
+- **BECS-144 (Data Analysis)** – the alternative to BMS-1; no paper found in any session.
 - **December 2020** exams were held in February 2021 (COVID); those papers are dated February 2021 but filed as `2020-12`.
 - **June 2021** – no B.Com papers in IGNOU's archive for most courses.
-- **BCOC-138_2023-06.pdf** is a scanned image and needs OCR before text analysis.
-- **Exam format:** only BEVAE-181 is MCQ-based (2 hours, 50 marks). BPCS-186 and BMS-1 are written, 2 hours, 50 marks. All other courses are written, 3 hours, 100 marks.
+- **BCOC-138_2023-06.pdf** is a scanned image with no text layer; the app's text for it was typed in by hand from the scan.
+- **Exam format:** only BEVAE-181 is MCQ-based (2 hours, 50 marks). BEGAE-182, BPAS-184, BPCS-186 and BMS-1 are written, 2 hours, 50 marks. All other courses are written, 3 hours, 100 marks.
 - The course list is from search results, not yet checked against the official BCOMF programme guide; some Year 2 courses may be missing.

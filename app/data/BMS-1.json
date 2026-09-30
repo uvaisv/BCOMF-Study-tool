@@ -1,0 +1,1085 @@
+{
+ "code": "BMS-1",
+ "title": "Introduction to NGO Management",
+ "pattern": {
+  "time": "2 hours",
+  "marks": 50,
+  "questions": 8,
+  "attempt": 5,
+  "each": 10,
+  "summary": "8 questions (7 in the latest papers), answer any 5, each carries 10 marks. All theory; some questions are two short notes of 5 marks. The paper is printed as BMS-001."
+ },
+ "blocksOfficial": false,
+ "sessions": [
+  "2020-12",
+  "2021-06",
+  "2021-12",
+  "2022-06",
+  "2022-12",
+  "2023-06",
+  "2023-12",
+  "2024-06",
+  "2024-12",
+  "2025-06",
+  "2025-12",
+  "2026-06"
+ ],
+ "sessionNotes": {
+  "2025-12": "7 questions.",
+  "2026-06": "7 questions."
+ },
+ "examTips": {
+  "choosing": [
+   "Strengths-and-weaknesses assessment, communication, environmental analysis (PESTLE) and strategic planning come up almost every time.",
+   "Use NGO examples (SEWA, Pratham, CRY, Goonj) — examiners look for application.",
+   "Answer in about 300 words: definition, 5–6 headed points, a one-line example, conclusion."
+  ]
+ },
+ "blocks": [
+  {
+   "no": 1,
+   "title": "NGOs & Their Challenges"
+  },
+  {
+   "no": 2,
+   "title": "Environment & Development"
+  },
+  {
+   "no": 3,
+   "title": "Organisational Analysis & Strategy"
+  },
+  {
+   "no": 4,
+   "title": "Managing NGOs"
+  },
+  {
+   "no": 5,
+   "title": "Communication & Reports"
+  }
+ ],
+ "topics": [
+  {
+   "id": "strengths",
+   "name": "Assessing Strengths & Weaknesses of an NGO",
+   "block": 3,
+   "kind": "theory",
+   "summary": "Formats, criteria and checklists for assessing an NGO's strengths and weaknesses, critical success factors, efficiency measures, organisational audit, impact analysis, core competencies and capacity building.",
+   "points": [
+    "Strengths and weaknesses are internal factors; they are assessed in functional areas — programmes and operations, finance, human resources, marketing and fund-raising, governance and management.",
+    "Two dimensions of evaluation: effectiveness (is the NGO achieving its mission and outcomes?) and efficiency (are resources used well?).",
+    "Formats and criteria: functional checklists, comparison with past performance, comparison with similar NGOs (benchmarking), stakeholder feedback, critical success factors.",
+    "Checklist examples: finance — diversity and stability of funds, cost control, audited accounts; HR — skills, turnover, training, volunteer base; marketing — donor base, visibility, communication; operations — coverage, quality, timeliness.",
+    "Critical success factors: the few areas an NGO must do well to succeed (e.g. community trust, funding, skilled staff). Efficiency measures: cost per beneficiary, admin cost ratio, output per worker.",
+    "Organisational audit: a systematic review of the NGO's structure, systems, finances and performance against its mission.",
+    "Impact analysis: measuring the change the NGO's work brings to beneficiaries — shows donors results, improves programmes, builds credibility.",
+    "Core competencies: what the NGO does best (e.g. community mobilisation). Capacity building: strengthening people, systems and resources so the NGO can grow and sustain its work."
+   ],
+   "frame": "Meaning → headed points with an NGO example → conclusion.",
+   "mistakes": []
+  },
+  {
+   "id": "communication",
+   "name": "Communication in NGOs",
+   "block": 5,
+   "kind": "theory",
+   "summary": "Principles and process of communication, human communication components, verbal and non-verbal communication, group and face-to-face communication, feedback, barriers, and social factors affecting communication.",
+   "points": [
+    "Human communication: sender, message, encoding, channel, receiver, decoding, feedback, noise and context.",
+    "Principles (7 Cs): clear, concise, concrete, correct, coherent, complete, courteous; also know the audience, use the right channel, seek feedback.",
+    "Verbal communication: spoken or written words — face-to-face, meetings, phone, letters, reports. Effective verbal messages are clear, simple, relevant, well-timed and suited to the audience.",
+    "Non-verbal communication: gestures, facial expressions, eye contact, posture, tone, dress and space — vital for NGO workers in communities where literacy is low.",
+    "Two-way communication and feedback: feedback confirms understanding and builds trust with communities and donors. Barriers to giving and receiving feedback: fear, defensiveness, status differences, poor listening, timing.",
+    "Group communication: discussion within a group for shared decisions — used in self-help groups and community meetings. Face-to-face communication: most personal and persuasive.",
+    "Barriers: physical (noise, distance), language and semantic, psychological (attitudes, prejudice), social and cultural (caste, class, gender, age), organisational. Social sets like caste, class, gender and age shape who speaks, who is heard and how messages are received.",
+    "Overcoming barriers: local language, simple messages, visual aids, trust-building, active listening, involving community leaders."
+   ],
+   "frame": "Meaning → components or barriers as headings → an NGO field example → conclusion.",
+   "mistakes": []
+  },
+  {
+   "id": "strategy",
+   "name": "Strategic Planning, Vision & Mission",
+   "block": 3,
+   "kind": "theory",
+   "summary": "Elements of a strategic plan, strategic framework, implementation, vision and mission statements, core values, organisational culture and social values in strategy.",
+   "points": [
+    "Strategic planning: deciding where the NGO wants to be in the long term and how to get there.",
+    "Elements of a strategic plan: vision, mission, core values, environmental analysis (SWOT), strategic goals, objectives, strategies and programmes, resources and budget, implementation plan, monitoring and evaluation.",
+    "Strategic framework process: review mission → analyse environment and organisation → set strategic directions → choose strategies → plan actions → implement → monitor and revise.",
+    "Implementing a new plan effectively: leadership commitment, clear responsibilities, action plans and budgets, communication to staff and stakeholders, capacity building, regular review.",
+    "Vision: the long-term dream of what the NGO wants to see (e.g. 'a world without poverty'). Mission: what the NGO does, for whom and how. Good statements are short, clear, inspiring and realistic.",
+    "Core values and culture: shared beliefs (integrity, participation, equity) shape how people in the NGO behave — its organisational culture.",
+    "Social values (justice, equality, service) guide strategy and policy in NGOs and keep them close to the communities they serve."
+   ],
+   "frame": "Meaning → elements as a numbered list → an NGO example → conclusion.",
+   "mistakes": []
+  },
+  {
+   "id": "environment",
+   "name": "Environmental Analysis for NGOs",
+   "block": 2,
+   "kind": "theory",
+   "summary": "Mega and micro environment, general environment indicators, PEST/PESTLE analysis, opportunities and threats, frameworks and matrices, social change and technology.",
+   "points": [
+    "Environment: the external forces affecting an NGO. Mega (macro) environment — broad national and global forces; micro environment — immediate stakeholders (beneficiaries, donors, government agencies, other NGOs, local community).",
+    "General environment indicators: population, literacy (including women's literacy), income and poverty levels, health indicators, employment, infrastructure, political stability, technology.",
+    "PESTLE: Political, Economic, Social, Technological, Legal and Environmental factors (PEST without the last two) — helps an NGO spot opportunities and threats.",
+    "Opportunities (favourable trends, e.g. new CSR funds) and threats (unfavourable trends, e.g. stricter foreign funding rules).",
+    "Frameworks: the opportunity matrix (attractiveness × probability of success) and the threat matrix (seriousness × probability of occurrence) rank opportunities and threats; SWOT combines them with strengths and weaknesses.",
+    "Social change with strategic implications: literacy, urbanisation, changing family structures, gender roles, technology use — each changes the needs NGOs serve.",
+    "Technology advances, for example in agriculture (drip irrigation, mobile advisories, improved seeds), open new areas of NGO work."
+   ],
+   "frame": "Meaning → framework (PESTLE or matrix) as a diagram or table → an example → conclusion.",
+   "mistakes": []
+  },
+  {
+   "id": "management",
+   "name": "Managing NGOs: Leadership, Governance & Teams",
+   "block": 4,
+   "kind": "theory",
+   "summary": "Role of management in NGOs, leadership with values, commitment, coordinating and controlling, delegation, power and control, good governance, organisational development, teams and the group life cycle.",
+   "points": [
+    "Role of management: turning the mission into results — planning, organising, staffing, leading, coordinating and controlling, and being accountable to donors and communities.",
+    "Leadership with values: NGO leaders must model integrity, service and participation; value-based leadership builds trust and commitment.",
+    "Coordinating and controlling: coordination aligns people and activities (through meetings, plans, committees, communication); control checks progress against plans and corrects deviations.",
+    "Delegation: giving authority and responsibility to others. Tips — choose the right person, define the task and results, give authority and resources, trust but monitor, give feedback.",
+    "Power vs control: power is the ability to influence others; control is the process of checking and regulating activities.",
+    "Good governance: a clear board role, transparency, accountability, legal compliance, participation and ethical conduct — needed for donor trust and sustainability.",
+    "Organisational development: planned change to improve how the NGO works — structure, systems and culture.",
+    "Teams and the group life cycle (Tuckman): forming, storming, norming, performing, adjourning — teams bring skills together for projects."
+   ],
+   "frame": "Meaning → headed points → an NGO example → conclusion.",
+   "mistakes": []
+  },
+  {
+   "id": "media",
+   "name": "Media & Technology for NGOs",
+   "block": 5,
+   "kind": "theory",
+   "summary": "Use of mobile phones, radio, social media and information technology by NGOs in communication, education and field work.",
+   "points": [
+    "Mobile phones: SMS and voice alerts, WhatsApp groups, apps for data collection, mobile banking for beneficiaries, health and farm advisories — cheap and far-reaching.",
+    "Radio: community radio reaches rural and non-literate audiences in local languages; used for education, awareness and dialogue.",
+    "Social media: builds visibility, mobilises volunteers and donors, runs campaigns and crowdfunding; risks — misinformation, privacy.",
+    "IT in the office: accounting and donor databases, email, document management, video meetings. IT in the field: mobile data collection, GIS mapping, digital training material, monitoring dashboards."
+   ],
+   "frame": "Headed points with one NGO example each → conclusion.",
+   "mistakes": []
+  },
+  {
+   "id": "poverty",
+   "name": "Poverty, Development & Exploitation",
+   "block": 2,
+   "kind": "theory",
+   "summary": "The relationship between poverty and development, exploitation and vulnerability, development indicators, and the UN's approach to poverty.",
+   "points": [
+    "Poverty: lack of income and of access to basic needs, services and opportunities. The idea has moved from income alone to multidimensional poverty (health, education, living standards) and capabilities.",
+    "Poverty and development: development means improved well-being for all; poverty persists when growth is unequal. NGOs link the two by reaching the poor directly.",
+    "Exploitation: the poor are exploited through low wages, debt bondage, land grabbing and middlemen — which keeps them poor.",
+    "Vulnerability: exposure to shocks (illness, disaster, job loss) and inability to cope. Exploitation is done to people by others; vulnerability is their exposure to risk.",
+    "Development indicators: per-capita income, Human Development Index, literacy, life expectancy, infant mortality, poverty ratio, gender indices.",
+    "The UN tackles poverty through the Sustainable Development Goals (Goal 1: end poverty), UNDP programmes and agencies like ILO, UNICEF and WFP."
+   ],
+   "frame": "Meaning → relation explained with headed points → an Indian example → conclusion.",
+   "mistakes": []
+  },
+  {
+   "id": "ngo-issues",
+   "name": "Issues, Challenges & Voluntary Effort",
+   "block": 1,
+   "kind": "theory",
+   "summary": "Problems and issues NGOs face, ethical challenges, issues in decision-making, sustainability, and promoting and strengthening voluntary effort.",
+   "points": [
+    "Problems and challenges: dependence on donors and irregular funds, lack of trained staff and high turnover, weak management and governance, poor accountability, government regulation (FCRA), duplication of effort, limited reach.",
+    "Ethical challenges: misuse of funds, donor-driven agendas, conflict of interest, lack of transparency, exploiting beneficiaries' stories.",
+    "Issues in decision-making: whose needs come first, donor vs community priorities, limited information, participation of stakeholders, long-term vs short-term goals.",
+    "Sustainability: the NGO's ability to continue its work — financial (diverse income), organisational (systems, people) and programme sustainability (community ownership).",
+    "Promoting and strengthening voluntary effort: government support and a clear legal framework, training, networking among NGOs, CSR partnerships, recognising volunteers; in health — community health workers, awareness camps, partnerships with hospitals.",
+    "Tackling challenges: diversify funding, build capacity, adopt good governance and transparency, network and partner."
+   ],
+   "frame": "Headed points with brief examples → conclusion with solutions.",
+   "mistakes": []
+  },
+  {
+   "id": "reports",
+   "name": "Report Writing",
+   "block": 5,
+   "kind": "theory",
+   "summary": "Stages of preparing a report, long and short reports, and guidelines for preparing reports.",
+   "points": [
+    "Stages: define the purpose and readers → collect information → organise and analyse → outline → write the draft → revise and edit → present.",
+    "Long report: formal, detailed, for complex matters — title page, contents, executive summary, introduction, methods, findings, conclusions, recommendations, appendices.",
+    "Short report: brief and often in letter or memo form — progress, field visit or event reports.",
+    "Guidelines: clear purpose, accurate facts, logical structure with headings, simple language, objectivity, tables and charts where useful, brevity, correct references."
+   ],
+   "frame": "Meaning → stages as a numbered list → an NGO report example → conclusion.",
+   "mistakes": []
+  },
+  {
+   "id": "ngo-concept",
+   "name": "NGOs: Concept, Types & Role",
+   "block": 1,
+   "kind": "theory",
+   "summary": "Meaning of NGO and why 'non-government', types of NGOs, how NGOs work, NGOs as change agents, and the role of donors.",
+   "points": [
+    "NGO: a voluntary, non-profit organisation formed by citizens, independent of government, working for social welfare or development. 'Non-government' stresses independence from the state even if it receives government grants.",
+    "Types: by orientation — charitable, service, participatory, empowerment; by level — community-based, city-wide, national, international; by function — operational and advocacy NGOs.",
+    "How NGOs work: identify needs → plan projects → mobilise funds and communities → implement → monitor and report → evaluate.",
+    "NGOs as change agents: raise awareness, reach the unreached, test new models, influence policy, build community capacity, respond quickly in crises (e.g. relief during the pandemic).",
+    "Role of donors: provide funds and expertise, set reporting standards; risk of donor-driven agendas."
+   ],
+   "frame": "Definition → types or roles as headings with Indian examples (e.g. SEWA, Pratham) → conclusion.",
+   "mistakes": []
+  }
+ ],
+ "questions": [
+  {
+   "s": "2020-12",
+   "q": "1",
+   "t": "NGO: meaning and 'non-government'",
+   "m": 10,
+   "k": "th",
+   "topic": "ngo-concept"
+  },
+  {
+   "s": "2020-12",
+   "q": "2(a)",
+   "t": "Opportunity and threat matrix",
+   "m": 5,
+   "k": "th",
+   "topic": "environment"
+  },
+  {
+   "s": "2020-12",
+   "q": "2(b)",
+   "t": "Opportunity matrix",
+   "m": 5,
+   "k": "th",
+   "topic": "environment"
+  },
+  {
+   "s": "2020-12",
+   "q": "3",
+   "t": "Women's literacy, social environment and NGOs",
+   "m": 10,
+   "k": "th",
+   "topic": "environment"
+  },
+  {
+   "s": "2020-12",
+   "q": "4",
+   "t": "Problems of NGOs",
+   "m": 10,
+   "k": "th",
+   "topic": "ngo-issues"
+  },
+  {
+   "s": "2020-12",
+   "q": "5",
+   "t": "Elements of a strategic plan",
+   "m": 10,
+   "k": "th",
+   "topic": "strategy"
+  },
+  {
+   "s": "2020-12",
+   "q": "6",
+   "t": "Core competency and capacity building",
+   "m": 10,
+   "k": "th",
+   "topic": "strengths"
+  },
+  {
+   "s": "2020-12",
+   "q": "7",
+   "t": "Principles of communication",
+   "m": 10,
+   "k": "th",
+   "topic": "communication"
+  },
+  {
+   "s": "2020-12",
+   "q": "8",
+   "t": "Mobile phones as a communication tool",
+   "m": 10,
+   "k": "th",
+   "topic": "media"
+  },
+  {
+   "s": "2021-06",
+   "q": "1(a)",
+   "t": "Role of donors for NGOs",
+   "m": 5,
+   "k": "th",
+   "topic": "ngo-concept"
+  },
+  {
+   "s": "2021-06",
+   "q": "1(b)",
+   "t": "Commitment in NGOs",
+   "m": 5,
+   "k": "th",
+   "topic": "management"
+  },
+  {
+   "s": "2021-06",
+   "q": "2",
+   "t": "Indicators for environmental analysis",
+   "m": 10,
+   "k": "th",
+   "topic": "environment"
+  },
+  {
+   "s": "2021-06",
+   "q": "3",
+   "t": "Poverty and development",
+   "m": 10,
+   "k": "th",
+   "topic": "poverty"
+  },
+  {
+   "s": "2021-06",
+   "q": "4(a)",
+   "t": "Note: ethical challenges in NGOs",
+   "m": 5,
+   "k": "th",
+   "topic": "ngo-issues"
+  },
+  {
+   "s": "2021-06",
+   "q": "4(b)",
+   "t": "Note: leadership in NGOs",
+   "m": 5,
+   "k": "th",
+   "topic": "management"
+  },
+  {
+   "s": "2021-06",
+   "q": "5",
+   "t": "Formats to analyse strengths and weaknesses",
+   "m": 10,
+   "k": "th",
+   "topic": "strengths"
+  },
+  {
+   "s": "2021-06",
+   "q": "6",
+   "t": "Coordinating and controlling",
+   "m": 10,
+   "k": "th",
+   "topic": "management"
+  },
+  {
+   "s": "2021-06",
+   "q": "7",
+   "t": "Feedback in two-way communication",
+   "m": 10,
+   "k": "th",
+   "topic": "communication"
+  },
+  {
+   "s": "2021-06",
+   "q": "8",
+   "t": "Stages of a report",
+   "m": 10,
+   "k": "th",
+   "topic": "reports"
+  },
+  {
+   "s": "2021-12",
+   "q": "1",
+   "t": "Mega vs micro environment",
+   "m": 10,
+   "k": "th",
+   "topic": "environment"
+  },
+  {
+   "s": "2021-12",
+   "q": "2",
+   "t": "How NGOs work",
+   "m": 10,
+   "k": "th",
+   "topic": "ngo-concept"
+  },
+  {
+   "s": "2021-12",
+   "q": "3",
+   "t": "Poverty and development",
+   "m": 10,
+   "k": "th",
+   "topic": "poverty"
+  },
+  {
+   "s": "2021-12",
+   "q": "4",
+   "t": "Development indicators",
+   "m": 10,
+   "k": "th",
+   "topic": "poverty"
+  },
+  {
+   "s": "2021-12",
+   "q": "5",
+   "t": "Strengthening voluntary effort",
+   "m": 10,
+   "k": "th",
+   "topic": "ngo-issues"
+  },
+  {
+   "s": "2021-12",
+   "q": "6",
+   "t": "Elements of strategic planning",
+   "m": 10,
+   "k": "th",
+   "topic": "strategy"
+  },
+  {
+   "s": "2021-12",
+   "q": "7",
+   "t": "Group communication",
+   "m": 10,
+   "k": "th",
+   "topic": "communication"
+  },
+  {
+   "s": "2021-12",
+   "q": "8",
+   "t": "Mobile as a tool for education",
+   "m": 10,
+   "k": "th",
+   "topic": "media"
+  },
+  {
+   "s": "2022-06",
+   "q": "1",
+   "t": "NGO: concept and types",
+   "m": 10,
+   "k": "th",
+   "topic": "ngo-concept"
+  },
+  {
+   "s": "2022-06",
+   "q": "2",
+   "t": "Poverty and exploitation",
+   "m": 10,
+   "k": "th",
+   "topic": "poverty"
+  },
+  {
+   "s": "2022-06",
+   "q": "3",
+   "t": "Impact analysis",
+   "m": 10,
+   "k": "th",
+   "topic": "strengths"
+  },
+  {
+   "s": "2022-06",
+   "q": "4",
+   "t": "NGOs as change agents",
+   "m": 10,
+   "k": "th",
+   "topic": "ngo-concept"
+  },
+  {
+   "s": "2022-06",
+   "q": "5",
+   "t": "Leadership with values",
+   "m": 10,
+   "k": "th",
+   "topic": "management"
+  },
+  {
+   "s": "2022-06",
+   "q": "6",
+   "t": "Organisational development",
+   "m": 10,
+   "k": "th",
+   "topic": "management"
+  },
+  {
+   "s": "2022-06",
+   "q": "7",
+   "t": "Vision and mission statements of NGOs",
+   "m": 10,
+   "k": "th",
+   "topic": "strategy"
+  },
+  {
+   "s": "2022-06",
+   "q": "8",
+   "t": "Guidelines for preparing reports",
+   "m": 10,
+   "k": "th",
+   "topic": "reports"
+  },
+  {
+   "s": "2022-12",
+   "q": "1",
+   "t": "Types of NGOs",
+   "m": 10,
+   "k": "th",
+   "topic": "ngo-concept"
+  },
+  {
+   "s": "2022-12",
+   "q": "2",
+   "t": "Elements of a strategic plan",
+   "m": 10,
+   "k": "th",
+   "topic": "strategy"
+  },
+  {
+   "s": "2022-12",
+   "q": "3",
+   "t": "Poverty and vulnerability",
+   "m": 10,
+   "k": "th",
+   "topic": "poverty"
+  },
+  {
+   "s": "2022-12",
+   "q": "4(a)",
+   "t": "Note: mission statement",
+   "m": 5,
+   "k": "th",
+   "topic": "strategy"
+  },
+  {
+   "s": "2022-12",
+   "q": "4(b)",
+   "t": "Note: vision statement",
+   "m": 5,
+   "k": "th",
+   "topic": "strategy"
+  },
+  {
+   "s": "2022-12",
+   "q": "5",
+   "t": "Barriers to communication",
+   "m": 10,
+   "k": "th",
+   "topic": "communication"
+  },
+  {
+   "s": "2022-12",
+   "q": "6",
+   "t": "Mobiles as a mode of communication",
+   "m": 10,
+   "k": "th",
+   "topic": "media"
+  },
+  {
+   "s": "2022-12",
+   "q": "7",
+   "t": "Verbal communication",
+   "m": 10,
+   "k": "th",
+   "topic": "communication"
+  },
+  {
+   "s": "2022-12",
+   "q": "8",
+   "t": "Stages of a long report",
+   "m": 10,
+   "k": "th",
+   "topic": "reports"
+  },
+  {
+   "s": "2023-06",
+   "q": "1(a)",
+   "t": "Major issues NGOs face",
+   "m": 5,
+   "k": "th",
+   "topic": "ngo-issues"
+  },
+  {
+   "s": "2023-06",
+   "q": "1(b)",
+   "t": "Issues in decision-making",
+   "m": 5,
+   "k": "th",
+   "topic": "ngo-issues"
+  },
+  {
+   "s": "2023-06",
+   "q": "2",
+   "t": "PESTLE framework",
+   "m": 10,
+   "k": "th",
+   "topic": "environment"
+  },
+  {
+   "s": "2023-06",
+   "q": "3",
+   "t": "Good governance in NGOs",
+   "m": 10,
+   "k": "th",
+   "topic": "management"
+  },
+  {
+   "s": "2023-06",
+   "q": "4(a)",
+   "t": "Note: organisational audit",
+   "m": 5,
+   "k": "th",
+   "topic": "strengths"
+  },
+  {
+   "s": "2023-06",
+   "q": "4(b)",
+   "t": "Note: capacity building",
+   "m": 5,
+   "k": "th",
+   "topic": "strengths"
+  },
+  {
+   "s": "2023-06",
+   "q": "5",
+   "t": "Checklist: finance and HR strengths and weaknesses",
+   "m": 10,
+   "k": "th",
+   "topic": "strengths"
+  },
+  {
+   "s": "2023-06",
+   "q": "6",
+   "t": "Radio as a mode of communication",
+   "m": 10,
+   "k": "th",
+   "topic": "media"
+  },
+  {
+   "s": "2023-06",
+   "q": "7",
+   "t": "Non-verbal communication",
+   "m": 10,
+   "k": "th",
+   "topic": "communication"
+  },
+  {
+   "s": "2023-06",
+   "q": "8",
+   "t": "Short report",
+   "m": 10,
+   "k": "th",
+   "topic": "reports"
+  },
+  {
+   "s": "2023-12",
+   "q": "1",
+   "t": "Frameworks for threats and opportunities",
+   "m": 10,
+   "k": "th",
+   "topic": "environment"
+  },
+  {
+   "s": "2023-12",
+   "q": "2",
+   "t": "NGOs as proactive change agents",
+   "m": 10,
+   "k": "th",
+   "topic": "ngo-concept"
+  },
+  {
+   "s": "2023-12",
+   "q": "3",
+   "t": "Criteria for strengths and weaknesses",
+   "m": 10,
+   "k": "th",
+   "topic": "strengths"
+  },
+  {
+   "s": "2023-12",
+   "q": "4",
+   "t": "Delegation and its tips",
+   "m": 10,
+   "k": "th",
+   "topic": "management"
+  },
+  {
+   "s": "2023-12",
+   "q": "5",
+   "t": "Implementing a new strategic plan",
+   "m": 10,
+   "k": "th",
+   "topic": "strategy"
+  },
+  {
+   "s": "2023-12",
+   "q": "6",
+   "t": "Human communication and its components",
+   "m": 10,
+   "k": "th",
+   "topic": "communication"
+  },
+  {
+   "s": "2023-12",
+   "q": "7",
+   "t": "Power vs control",
+   "m": 10,
+   "k": "th",
+   "topic": "management"
+  },
+  {
+   "s": "2023-12",
+   "q": "8",
+   "t": "Barriers to giving and receiving feedback",
+   "m": 10,
+   "k": "th",
+   "topic": "communication"
+  },
+  {
+   "s": "2024-06",
+   "q": "1",
+   "t": "PESTLE framework",
+   "m": 10,
+   "k": "th",
+   "topic": "environment"
+  },
+  {
+   "s": "2024-06",
+   "q": "2",
+   "t": "Issues in decision-making",
+   "m": 10,
+   "k": "th",
+   "topic": "ngo-issues"
+  },
+  {
+   "s": "2024-06",
+   "q": "3",
+   "t": "Good governance in NGOs",
+   "m": 10,
+   "k": "th",
+   "topic": "management"
+  },
+  {
+   "s": "2024-06",
+   "q": "4(a)",
+   "t": "Note: elements of a strategic plan",
+   "m": 5,
+   "k": "th",
+   "topic": "strategy"
+  },
+  {
+   "s": "2024-06",
+   "q": "4(b)",
+   "t": "Note: organisational audit",
+   "m": 5,
+   "k": "th",
+   "topic": "strengths"
+  },
+  {
+   "s": "2024-06",
+   "q": "5",
+   "t": "Checklist: marketing, finance and operations",
+   "m": 10,
+   "k": "th",
+   "topic": "strengths"
+  },
+  {
+   "s": "2024-06",
+   "q": "6",
+   "t": "Long report",
+   "m": 10,
+   "k": "th",
+   "topic": "reports"
+  },
+  {
+   "s": "2024-06",
+   "q": "7",
+   "t": "Core competencies and capacity building",
+   "m": 10,
+   "k": "th",
+   "topic": "strengths"
+  },
+  {
+   "s": "2024-06",
+   "q": "8",
+   "t": "Verbal communication: types and effective messages",
+   "m": 10,
+   "k": "th",
+   "topic": "communication"
+  },
+  {
+   "s": "2024-12",
+   "q": "1(a)",
+   "t": "Environmental opportunities and threats",
+   "m": 5,
+   "k": "th",
+   "topic": "environment"
+  },
+  {
+   "s": "2024-12",
+   "q": "1(b)",
+   "t": "Social changes with strategic implications",
+   "m": 5,
+   "k": "th",
+   "topic": "environment"
+  },
+  {
+   "s": "2024-12",
+   "q": "2",
+   "t": "Sustainability of NGOs",
+   "m": 10,
+   "k": "th",
+   "topic": "ngo-issues"
+  },
+  {
+   "s": "2024-12",
+   "q": "3",
+   "t": "Role of management in NGOs",
+   "m": 10,
+   "k": "th",
+   "topic": "management"
+  },
+  {
+   "s": "2024-12",
+   "q": "4",
+   "t": "Core values and organisational culture",
+   "m": 10,
+   "k": "th",
+   "topic": "strategy"
+  },
+  {
+   "s": "2024-12",
+   "q": "5(a)",
+   "t": "Note: critical success factors",
+   "m": 5,
+   "k": "th",
+   "topic": "strengths"
+  },
+  {
+   "s": "2024-12",
+   "q": "5(b)",
+   "t": "Note: efficiency measures",
+   "m": 5,
+   "k": "th",
+   "topic": "strengths"
+  },
+  {
+   "s": "2024-12",
+   "q": "6",
+   "t": "Elements for judging strengths and weaknesses",
+   "m": 10,
+   "k": "th",
+   "topic": "strengths"
+  },
+  {
+   "s": "2024-12",
+   "q": "7",
+   "t": "Caste, class, gender and communication",
+   "m": 10,
+   "k": "th",
+   "topic": "communication"
+  },
+  {
+   "s": "2024-12",
+   "q": "8(a)",
+   "t": "IT in the office",
+   "m": 5,
+   "k": "th",
+   "topic": "media"
+  },
+  {
+   "s": "2024-12",
+   "q": "8(b)",
+   "t": "IT in the field",
+   "m": 5,
+   "k": "th",
+   "topic": "media"
+  },
+  {
+   "s": "2025-06",
+   "q": "1",
+   "t": "Technology advances in agriculture",
+   "m": 10,
+   "k": "th",
+   "topic": "environment"
+  },
+  {
+   "s": "2025-06",
+   "q": "2",
+   "t": "How the UN tackles poverty and exploitation",
+   "m": 10,
+   "k": "th",
+   "topic": "poverty"
+  },
+  {
+   "s": "2025-06",
+   "q": "3",
+   "t": "Strengthening voluntary effort",
+   "m": 10,
+   "k": "th",
+   "topic": "ngo-issues"
+  },
+  {
+   "s": "2025-06",
+   "q": "4",
+   "t": "Reviewing NGO mission statements",
+   "m": 10,
+   "k": "th",
+   "topic": "strategy"
+  },
+  {
+   "s": "2025-06",
+   "q": "5",
+   "t": "Two dimensions of strengths and weaknesses",
+   "m": 10,
+   "k": "th",
+   "topic": "strengths"
+  },
+  {
+   "s": "2025-06",
+   "q": "6(a)",
+   "t": "Note: face-to-face communication",
+   "m": 5,
+   "k": "th",
+   "topic": "communication"
+  },
+  {
+   "s": "2025-06",
+   "q": "6(b)",
+   "t": "Note: radio and education",
+   "m": 5,
+   "k": "th",
+   "topic": "media"
+  },
+  {
+   "s": "2025-06",
+   "q": "7",
+   "t": "Group life cycle in NGOs",
+   "m": 10,
+   "k": "th",
+   "topic": "management"
+  },
+  {
+   "s": "2025-06",
+   "q": "8",
+   "t": "Mobile technology in NGOs",
+   "m": 10,
+   "k": "th",
+   "topic": "media"
+  },
+  {
+   "s": "2025-12",
+   "q": "1",
+   "t": "Types of NGOs and their activities",
+   "m": 10,
+   "k": "th",
+   "topic": "ngo-concept"
+  },
+  {
+   "s": "2025-12",
+   "q": "2",
+   "t": "PEST framework",
+   "m": 10,
+   "k": "th",
+   "topic": "environment"
+  },
+  {
+   "s": "2025-12",
+   "q": "3",
+   "t": "Measuring strengths and weaknesses",
+   "m": 10,
+   "k": "th",
+   "topic": "strengths"
+  },
+  {
+   "s": "2025-12",
+   "q": "4",
+   "t": "Verbal vs non-verbal cues",
+   "m": 10,
+   "k": "th",
+   "topic": "communication"
+  },
+  {
+   "s": "2025-12",
+   "q": "5",
+   "t": "Social media and NGOs",
+   "m": 10,
+   "k": "th",
+   "topic": "media"
+  },
+  {
+   "s": "2025-12",
+   "q": "6",
+   "t": "Strategic framework process",
+   "m": 10,
+   "k": "th",
+   "topic": "strategy"
+  },
+  {
+   "s": "2025-12",
+   "q": "7",
+   "t": "Stages of report preparation",
+   "m": 10,
+   "k": "th",
+   "topic": "reports"
+  },
+  {
+   "s": "2026-06",
+   "q": "1",
+   "t": "Challenges for NGOs and tackling them",
+   "m": 10,
+   "k": "th",
+   "topic": "ngo-issues"
+  },
+  {
+   "s": "2026-06",
+   "q": "2",
+   "t": "Social values in strategy and policy",
+   "m": 10,
+   "k": "th",
+   "topic": "strategy"
+  },
+  {
+   "s": "2026-06",
+   "q": "3",
+   "t": "Promoting voluntary effort in health",
+   "m": 10,
+   "k": "th",
+   "topic": "ngo-issues"
+  },
+  {
+   "s": "2026-06",
+   "q": "4",
+   "t": "Exploitation vs vulnerability",
+   "m": 10,
+   "k": "th",
+   "topic": "poverty"
+  },
+  {
+   "s": "2026-06",
+   "q": "5(a)",
+   "t": "Note: barriers to communication",
+   "m": 5,
+   "k": "th",
+   "topic": "communication"
+  },
+  {
+   "s": "2026-06",
+   "q": "5(b)",
+   "t": "Note: face-to-face communication",
+   "m": 5,
+   "k": "th",
+   "topic": "communication"
+  },
+  {
+   "s": "2026-06",
+   "q": "6",
+   "t": "Radio in education",
+   "m": 10,
+   "k": "th",
+   "topic": "media"
+  },
+  {
+   "s": "2026-06",
+   "q": "7",
+   "t": "Role of teams in NGOs",
+   "m": 10,
+   "k": "th",
+   "topic": "management"
+  }
+ ]
+}

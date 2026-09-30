@@ -26,7 +26,7 @@
     { "code": "BPCS-186", "title": "Managing Stress", "year": 3, "type": "theory", "exam": { "time": "2 hours", "marks": 50, "format": "Written" }, "papers": 9, "ready": true },
     { "code": "BCOC-138", "title": "Cost Accounting", "year": 3, "type": "mixed", "exam": { "time": "3 hours", "marks": 100, "format": "Written" }, "papers": 8, "ready": true },
     { "code": "BCOE-142", "title": "Management Accounting", "year": 3, "type": "mixed", "exam": { "time": "3 hours", "marks": 100, "format": "Written" }, "papers": 9, "ready": true },
-    { "code": "BMS-1", "title": "Introduction to NGO Management", "year": 3, "type": "theory", "exam": { "time": "2 hours", "marks": 50, "format": "Written" }, "papers": 12 },
+    { "code": "BMS-1", "title": "Introduction to NGO Management", "year": 3, "type": "theory", "exam": { "time": "2 hours", "marks": 50, "format": "Written" }, "papers": 12, "ready": true },
     { "code": "BECS-144", "title": "Data Analysis", "year": 3, "type": "mixed", "exam": null, "papers": 0 }
   ]
 }
