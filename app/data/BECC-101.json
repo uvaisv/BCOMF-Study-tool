@@ -14,7 +14,7 @@
     ],
     "summary": "Section A: answer 2 of 4 (20 marks each). Section B: answer 4 of 6 (12 marks each). Section C: answer both (6 marks each). The same paper is set for BA Economics Honours. Diagrams are expected in most answers."
   },
-  "blocksOfficial": false,
+  "blocksOfficial": true,
   "sessions": ["2020-12", "2021-12", "2022-06", "2022-12", "2023-06", "2023-12", "2024-06", "2024-12", "2025-06", "2025-12", "2026-06"],
   "sessionNotes": {
     "2020-12": "Held in February 2021 (COVID).",
@@ -33,12 +33,12 @@
     ]
   },
   "blocks": [
-    { "no": 1, "title": "Basics, Demand & Supply" },
-    { "no": 2, "title": "Consumer Theory" },
-    { "no": 3, "title": "Production & Costs" },
-    { "no": 4, "title": "Market Structures" },
-    { "no": 5, "title": "Factor Markets" },
-    { "no": 6, "title": "Welfare & Market Failure" }
+    { "no": 1, "title": "Introduction" },
+    { "no": 2, "title": "Theory of Consumer Behaviour" },
+    { "no": 3, "title": "Production and Costs" },
+    { "no": 4, "title": "Market Structure" },
+    { "no": 5, "title": "Factor Market" },
+    { "no": 6, "title": "Welfare, Market Failure and the Role of Government" }
   ],
   "topics": [
     {
@@ -55,10 +55,15 @@
         "Least-cost combination: tangency of isoquant and isocost line — MPL/MPK = w/r (MPL/w = MPK/r).",
         "Expansion path: line joining tangency points as outlay rises; a straight line from the origin for a homogeneous production function.",
         "Returns to scale (long run, all inputs change): increasing, constant, decreasing — seen from isoquant spacing. For Q = AL^a K^b: a + b > 1 IRS, = 1 CRS, < 1 DRS.",
-        "Economies of scale: internal (technical, managerial, marketing, financial) and external (industry growth); diseconomies raise LAC."
+        "Economies of scale: internal (technical, managerial, marketing, financial) and external (industry growth); diseconomies raise LAC.",
+        "A production function shows the maximum output from given inputs with given technology; the short run has at least one fixed input, the long run none."
       ],
       "frame": "Statement → labelled diagram → explanation of each stage or case → conclusion.",
-      "mistakes": ["Confusing returns to a factor (short run) with returns to scale (long run).", "Drawing isoquants that cross."]
+      "mistakes": ["Confusing returns to a factor (short run) with returns to scale (long run).", "Drawing isoquants that cross."],
+      "units": [
+        { "block": 3, "unit": 6, "title": "Production with One Variable Input" },
+        { "block": 3, "unit": 7, "title": "Production with Two and More Variable Inputs" }
+      ]
     },
     {
       "id": "price-effect",
@@ -75,7 +80,10 @@
         "Demand curve derived from the price consumption curve (money income constant) or with compensated income (real income constant — Hicksian demand)."
       ],
       "frame": "Define the three effects → diagram with budget lines and ICs, label points and arrows → explain each move → one-line conclusion for the good type.",
-      "mistakes": ["Drawing the compensated budget line not parallel to the new one."]
+      "mistakes": ["Drawing the compensated budget line not parallel to the new one."],
+      "units": [
+        { "block": 2, "unit": 5, "title": "Consumer Behaviour: Ordinal Approach", "part": "5.9–5.10" }
+      ]
     },
     {
       "id": "demand-supply",
@@ -89,7 +97,9 @@
         "Change in price of a substitute moves demand the same way; of a complement, the opposite way.",
         "Price ceiling below equilibrium → shortage; price floor above equilibrium → surplus.",
         "Tax incidence: the more inelastic side bears more of the tax. Perfectly elastic demand → sellers bear it all; perfectly elastic supply → buyers bear it all.",
-        "Deadweight loss: the lost surplus from trades that no longer happen after a tax."
+        "Deadweight loss: the lost surplus from trades that no longer happen after a tax.",
+        "Change in quantity demanded (movement along the curve) comes from the good's own price; change in demand (shift of the curve) comes from income, tastes, prices of related goods and expectations. The same applies to supply.",
+        "A tax on land (fixed supply) falls wholly on landowners — the rent paid by users does not change."
       ],
       "method": [
         "Set Qd = Qs and solve for P*.",
@@ -97,7 +107,11 @@
         "Consumer surplus = ½ × (max price − P*) × Q*; producer surplus = ½ × (P* − min price) × Q* for straight lines."
       ],
       "formula": ["a − bP = c + dP → P* = (a − c)/(b + d)"],
-      "mistakes": ["Forgetting to draw the diagram with the equilibrium marked."]
+      "mistakes": ["Forgetting to draw the diagram with the equilibrium marked."],
+      "units": [
+        { "block": 1, "unit": 3, "title": "Demand and Supply in Practice" },
+        { "block": 1, "unit": 2, "title": "Demand and Supply Analysis", "part": "2.2–2.8" }
+      ]
     },
     {
       "id": "monopolistic-oligopoly",
@@ -110,11 +124,17 @@
         "Kinked demand curve (Sweezy): rivals match price cuts but not rises → kink at current price, gap in MR → price rigidity. Limitation: does not explain how the price was set.",
         "Cournot: each firm chooses quantity taking rival's output as given; equilibrium where reaction curves cross.",
         "Stackelberg: leader moves first knowing the follower's reaction — first-mover advantage.",
-        "Prisoner's dilemma: each player's dominant strategy leads to a worse joint outcome (e.g. cartel cheating)."
+        "Prisoner's dilemma: each player's dominant strategy leads to a worse joint outcome (e.g. cartel cheating).",
+        "Oligopoly: a few interdependent firms. Firms may behave non-cooperatively (Cournot, Stackelberg) or cooperate.",
+        "Cartel: firms agree jointly on output and price to act like a monopolist (e.g. OPEC); each member is tempted to cheat by producing more, which makes cartels unstable."
       ],
       "method": ["Cournot (linear demand P = a − bQ, equal cost c): each firm q = (a − c)/(3b).", "Stackelberg: leader q₁ = (a − c)/(2b); follower q₂ = (a − c)/(4b)."],
       "formula": ["Cournot: q = (a − c)/3b each", "Stackelberg: q₁ = (a − c)/2b, q₂ = (a − c)/4b"],
-      "mistakes": ["Drawing the kinked MR without the vertical gap."]
+      "mistakes": ["Drawing the kinked MR without the vertical gap."],
+      "units": [
+        { "block": 4, "unit": 11, "title": "Monopolistic Competition: Price and Output Decisions" },
+        { "block": 4, "unit": 12, "title": "Oligopoly: Price and Output Decisions" }
+      ]
     },
     {
       "id": "perfect-competition",
@@ -128,11 +148,15 @@
         "Short run: firm may earn profit or loss; it continues if P ≥ AVC. Shutdown point: P = minimum AVC.",
         "Supply curve of the firm = rising part of MC above minimum AVC.",
         "Long run: P = MR = MC = minimum LAC — normal profit, optimal capacity, productive and allocative efficiency (P = MC).",
-        "A firm operating at a loss may stay open in the short run if it covers variable costs and part of fixed costs."
+        "A firm operating at a loss may stay open in the short run if it covers variable costs and part of fixed costs.",
+        "Break-even point: P = minimum ATC (normal profit only). Market supply is the horizontal sum of the firms' supply curves."
       ],
       "method": ["Profit maximisation: set P = MC, solve for q, check MC is rising; profit = TR − TC."],
       "formula": ["Equilibrium: P = MC", "Shutdown: P < min AVC"],
-      "mistakes": []
+      "mistakes": [],
+      "units": [
+        { "block": 4, "unit": 9, "title": "Perfect Competition: Firm and Industry Equilibrium" }
+      ]
     },
     {
       "id": "factor-markets",
@@ -146,11 +170,19 @@
         "Wage differences: skill and training, risk, non-monetary benefits, trade unions, discrimination, immobility.",
         "Ricardian rent: payment for the original, indestructible powers of the soil; arises from differences in fertility and scarcity.",
         "Modern theory: economic rent = earnings above transfer earnings, for any factor.",
-        "Quasi-rent (Marshall): short-run surplus earned by machines and other factors fixed in the short run."
+        "Quasi-rent (Marshall): short-run surplus earned by machines and other factors fixed in the short run.",
+        "Marginal productivity theory: a factor's reward is set by its marginal product; firms hire a factor until its marginal revenue product (MRP) equals its price. Under perfect competition MRP = VMP = MP × price of output.",
+        "Demand for a factor is derived demand — it comes from the demand for the goods it helps to make.",
+        "Labour unions bargain for higher wages; a union wage above equilibrium works like a minimum wage — higher pay for those employed but fewer jobs."
       ],
       "method": ["Equilibrium wage: set Ld = Ls. With a minimum wage W̄: employment = Ld(W̄)."],
       "formula": ["Economic rent = actual earnings − transfer earnings"],
-      "mistakes": []
+      "mistakes": [],
+      "units": [
+        { "block": 5, "unit": 13, "title": "Factor Market and Pricing Decisions" },
+        { "block": 5, "unit": 14, "title": "Labour Market" },
+        { "block": 5, "unit": 15, "title": "Land Market" }
+      ]
     },
     {
       "id": "welfare-failure",
@@ -164,10 +196,16 @@
         "Sources of market failure: market power, externalities, public goods, incomplete/asymmetric information.",
         "Externality: a cost or benefit to third parties. Remedies: Pigouvian tax (negative) or subsidy (positive), regulation, tradable permits, Coase bargaining.",
         "Public goods: non-rival and non-excludable (e.g. street lights) → free-rider problem. Merit goods: under-consumed if left to the market (e.g. education).",
-        "Asymmetric information: adverse selection (before the deal — Akerlof's 'lemons') and moral hazard (after the deal — insured drivers taking more risk)."
+        "Asymmetric information: adverse selection (before the deal — Akerlof's 'lemons') and moral hazard (after the deal — insured drivers taking more risk).",
+        "With an externality, marginal social cost = marginal private cost + marginal external cost (MSC = MPC + MEC); the market over-produces goods with external costs.",
+        "Government remedies in the book: Pigouvian taxes and subsidies, direct regulation (price ceilings on stents and essential medicines, safety standards, pollution permits, advertising bans) and private bargaining."
       ],
       "frame": "Definition → causes or types as headed points → diagram (MSC vs MPC for externality) → remedy → example.",
-      "mistakes": []
+      "mistakes": [],
+      "units": [
+        { "block": 6, "unit": 16, "title": "Welfare: Allocative Efficiency under Perfect Competition" },
+        { "block": 6, "unit": 17, "title": "Efficiency of the Market Mechanism: Market Failure and the Role of the State" }
+      ]
     },
     {
       "id": "costs",
@@ -180,10 +218,14 @@
         "LAC is the envelope of SAC curves — tangent to each, U-shaped due to economies then diseconomies of scale.",
         "LMC cuts LAC at its minimum; at each output, LMC equals the SMC of the plant tangent there.",
         "Fixed costs do not affect the profit-maximising output (MC = MR) but do affect total profit.",
-        "Accounting profit = revenue − explicit costs; economic profit = revenue − explicit − implicit (opportunity) costs."
+        "Accounting profit = revenue − explicit costs; economic profit = revenue − explicit − implicit (opportunity) costs.",
+        "Costs can be explicit (paid out) or implicit (opportunity cost of own resources); private cost vs social cost matters when there are externalities."
       ],
       "frame": "Statement → diagram with SAC curves and LAC envelope (or LMC/SMC) → explanation → conclusion.",
-      "mistakes": ["Drawing LAC through the minimum of every SAC (it touches only the minimum of the optimal plant)."]
+      "mistakes": ["Drawing LAC through the minimum of every SAC (it touches only the minimum of the optimal plant)."],
+      "units": [
+        { "block": 3, "unit": 8, "title": "The Cost of Production" }
+      ]
     },
     {
       "id": "elasticity",
@@ -197,11 +239,15 @@
         "Income elasticity: > 1 luxury, 0–1 necessity, < 0 inferior; 0 means demand does not respond to income.",
         "Cross elasticity: positive for substitutes, negative for complements.",
         "Point elasticity on a straight-line demand curve = lower segment ÷ upper segment.",
-        "Elasticity of supply depends on time, spare capacity, ease of storing, and factor mobility."
+        "Elasticity of supply depends on time, spare capacity, ease of storing, and factor mobility.",
+        "The book measures price elasticity by the point (percentage) method, the total expenditure (outlay) method and the geometric method. Total expenditure method: if spending rises when price falls, e > 1; unchanged, e = 1; falls, e < 1."
       ],
       "method": ["Point: e = (dQ/dP) × (P/Q).", "Midpoint (arc): e = [(Q₂ − Q₁)/((Q₂ + Q₁)/2)] ÷ [(P₂ − P₁)/((P₂ + P₁)/2)].", "From total revenue R(Q): MR = dR/dQ, then use MR = P(1 − 1/e)."],
       "formula": ["MR = P (1 − 1/e)", "e = (dQ/dP)·(P/Q)"],
-      "mistakes": ["Dropping the minus sign without saying you use absolute values."]
+      "mistakes": ["Dropping the minus sign without saying you use absolute values."],
+      "units": [
+        { "block": 1, "unit": 2, "title": "Demand and Supply Analysis", "part": "2.9–2.12" }
+      ]
     },
     {
       "id": "utility",
@@ -219,7 +265,10 @@
       ],
       "method": ["From total utility, find MU for each unit; buy up to the unit where MU ≥ price."],
       "formula": ["Equilibrium: MUx/Px = MUy/Py"],
-      "mistakes": []
+      "mistakes": [],
+      "units": [
+        { "block": 2, "unit": 4, "title": "Consumer Behaviour: Cardinal Approach" }
+      ]
     },
     {
       "id": "monopoly",
@@ -234,10 +283,14 @@
         "Deadweight loss: output lower and price higher than under perfect competition.",
         "Price discrimination: 1st degree (each unit at maximum price), 2nd degree (by quantity blocks), 3rd degree (different markets; higher price where demand is less elastic).",
         "Public monopoly: marginal-cost pricing (efficient but may cause loss) vs average-cost pricing (no loss, less efficient).",
-        "Mark-up pricing: price = AVC + percentage mark-up."
+        "Mark-up pricing: price = AVC + percentage mark-up.",
+        "Compared with perfect competition, monopoly gives a higher price, lower output and P > MC — hence allocative inefficiency and a deadweight loss."
       ],
       "frame": "Definition → diagram (AR, MR, MC, AC with the profit area) → explanation → comparison with perfect competition.",
-      "mistakes": []
+      "mistakes": [],
+      "units": [
+        { "block": 4, "unit": 10, "title": "Monopoly: Price and Output Decisions" }
+      ]
     },
     {
       "id": "indifference",
@@ -251,10 +304,14 @@
         "Equilibrium: tangency, MRSxy = Px/Py, and the IC must be convex — otherwise tangency is not optimal.",
         "Corner solution: only one good bought (e.g. concave ICs or perfect substitutes).",
         "Price consumption curve (PCC) traces equilibria as price changes → demand curve. Income consumption curve (ICC) as income changes → Engel curve.",
-        "Perfect substitutes → straight-line ICs; perfect complements → L-shaped ICs."
+        "Perfect substitutes → straight-line ICs; perfect complements → L-shaped ICs.",
+        "The ordinal approach only ranks bundles (first, second…) instead of measuring utility; the indifference map shows the consumer's whole scale of preferences."
       ],
       "frame": "Assumptions → diagram → conditions for equilibrium → conclusion.",
-      "mistakes": []
+      "mistakes": [],
+      "units": [
+        { "block": 2, "unit": 5, "title": "Consumer Behaviour: Ordinal Approach", "part": "5.2–5.8" }
+      ]
     },
     {
       "id": "ppc-basics",
@@ -268,10 +325,14 @@
         "Point inside = unemployment or inefficiency; on the curve = efficient; outside = unattainable.",
         "Shifts outward with more resources or better technology; unemployment does not shift it — the economy moves inside.",
         "Central problems: what, how and for whom to produce, plus efficiency and growth.",
-        "Micro vs macro: individual units vs the whole economy. Positive (what is) vs normative (what ought to be). Static vs dynamic analysis. Stock (at a point) vs flow (over time)."
+        "Micro vs macro: individual units vs the whole economy. Positive (what is) vs normative (what ought to be). Static vs dynamic analysis. Stock (at a point) vs flow (over time).",
+        "Scarcity: wants are unlimited but resources are limited and have alternative uses — so every society must choose, and every choice has an opportunity cost."
       ],
       "frame": "Definition → PPC diagram with points labelled → explanation → conclusion.",
-      "mistakes": []
+      "mistakes": [],
+      "units": [
+        { "block": 1, "unit": 1, "title": "Introduction to Economics and Economy" }
+      ]
     }
   ],
   "questions": [
@@ -474,5 +535,6 @@
     { "s": "2026-06", "q": "10(ii)", "t": "Note: kinked demand curve", "m": 6, "k": "th", "topic": "monopolistic-oligopoly", "part": "B" },
     { "s": "2026-06", "q": "11", "t": "Modern vs Marshallian theory of rent", "m": 6, "k": "th", "topic": "factor-markets", "part": "C" },
     { "s": "2026-06", "q": "12", "t": "The lemons problem", "m": 6, "k": "th", "topic": "welfare-failure", "part": "C" }
-  ]
+  ],
+  "notesSource": "Notes written from the IGNOU BECC-101 study material."
 }
