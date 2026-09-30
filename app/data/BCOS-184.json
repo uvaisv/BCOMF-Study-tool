@@ -85,6 +85,10 @@
      "title": "Cyber Security Measures",
      "part": "11.5 Cyber forensics"
     }
+   ],
+   "examples": [
+    "Examples: which section applies?\nSomeone logs in to a colleague's e-mail with a stolen password and sends messages in their name → identity theft (Sec 66C).\nA caller pretends to be a bank officer and tricks a customer into sharing an OTP → cheating by personation using a computer resource (Sec 66D).\nA sacked employee deletes the company's source code → tampering with source code (Sec 65) and a computer-related offence (Sec 66).\nA company leaks customers' card data through careless security → it must compensate them (Sec 43A).",
+    "Example: cyber forensics in a fraud case\nPolice seize the suspect's laptop and phone. Investigators make an exact copy (image) of the disk and record its hash value, so they can prove the evidence was not changed. They analyse the copy — deleted chats, browser history, transaction logs — and present a report the court can rely on."
    ]
   },
   {
@@ -118,6 +122,10 @@
      "title": "E-Banking",
      "part": "6.2–6.5, 6.7"
     }
+   ],
+   "examples": [
+    "Example: what happens when you click 'Pay'\nOn a shopping site the customer clicks Pay and is taken to the payment gateway's page (hosted gateway). They enter card details; the gateway sends them to the card network and the issuing bank, which asks for an OTP. Once the bank authorises the payment, the gateway tells the merchant, and the order is confirmed. Money reaches the merchant's account later, at settlement.",
+    "Example: picking the transfer method\nRent of ₹15,000 at midnight → IMPS or UPI (instant, 24×7). ₹10 lakh to a supplier → RTGS (₹2 lakh minimum, settled one by one in real time). Monthly salaries of 500 staff → a bulk file through NEFT or ACH. UPI works with just a VPA such as name@bank, with no account number or IFSC needed."
    ]
   },
   {
@@ -148,6 +156,9 @@
      "unit": 9,
      "title": "Web Server Hardware and Software"
     }
+   ],
+   "examples": [
+    "Example: from a small site to an online store\nA dental clinic starts with a static site — timings, services, map — on cheap shared hosting.\nA furniture shop wants online orders: it needs a dynamic site with a product database and cart, on cloud hosting that can handle festival traffic. Its application server runs the order logic, the web server sends pages to browsers, and HTTPS (padlock, port 443) protects customers' payment details."
    ]
   },
   {
@@ -178,6 +189,10 @@
      "unit": 14,
      "title": "E-Services"
     }
+   ],
+   "examples": [
+    "Example: the 7 Cs for an online bookstore\nContext: clean layout and quick search. Content: book details, sample chapters, prices. Community: reader reviews and ratings. Customisation: 'recommended for you' based on past buys. Communication: order and delivery messages, offers by e-mail. Connection: links from author pages and blogs. Commerce: cart, several payment options, order tracking and easy returns.",
+    "Example: e-services in daily life\nBooking a train ticket online, attending a free SWAYAM course for credit, reading a newspaper's e-edition, and watching a film on an OTT platform are all services delivered over the internet — no counter, no queue, available 24×7."
    ]
   },
   {
@@ -210,6 +225,10 @@
      "title": "Technology used in E-Commerce",
      "part": "3.4 App vs web-based business"
     }
+   ],
+   "examples": [
+    "Examples: classify the model\nA factory buying packaging from sellers on IndiaMART → B2B. A student selling an old cycle on OLX → C2C. A government office buying laptops on GeM → B2G. An earphone brand selling on its own website → D2C. A freelance designer quoting a price to a company for a logo → C2B.\nRevenue models: a free video site earns from advertising; a streaming service from subscriptions; a marketplace from commission on each sale.",
+    "Example: drop shipping and private labels\nA seller lists phone covers online but keeps no stock; when an order comes in, the supplier ships directly to the buyer and the seller keeps the margin — drop shipping.\nA supermarket sells rice made for it under its own brand → private label. A generic power bank sold by many sellers, each under their own brand → white label."
    ]
   },
   {
@@ -241,6 +260,10 @@
      "unit": 11,
      "title": "Cyber Security Measures"
     }
+   ],
+   "examples": [
+    "Example: a ransomware attack\nA hospital employee opens an e-mail attachment that looks like an invoice. Ransomware encrypts patient records and demands payment. Defences that would have helped: user education (don't open unknown attachments), endpoint security (antivirus), regular offline backups (disaster recovery), and patched software.",
+    "Examples: spoofing, sniffing, phishing\nSpoofing: an e-mail appears to come from the CEO's address, asking accounts to transfer money. Sniffing: someone on the same public café Wi-Fi captures unencrypted login data. Phishing: a fake 'refund' page collects card details."
    ]
   },
   {
@@ -265,6 +288,10 @@
      "unit": 4,
      "title": "Electronic Governance"
     }
+   ],
+   "examples": [
+    "Example: Gartner's four phases for paying property tax\nPhase 1 (information): the municipality's website lists tax rates and due dates.\nPhase 2 (interaction): citizens download the form and e-mail queries.\nPhase 3 (transaction): citizens log in, see their bill and pay online, and get a receipt.\nPhase 4 (transformation): one login links property tax, water bill and building permits, and receipts are saved automatically in DigiLocker.",
+    "Examples: e-governance platforms\nA farmer sells produce to a buyer in another state through e-NAM. A government department buys office chairs through GeM. Citizens comment on a draft policy on MyGov."
    ]
   },
   {
@@ -307,6 +334,9 @@
      "title": "Web Server Hardware and Software",
      "part": "9.5 Operating system"
     }
+   ],
+   "examples": [
+    "Example: SDLC for a grocery-delivery app\nPlanning: goals, budget and timeline. Requirement analysis: customers need search, cart, payment and tracking; the store needs stock and order screens. Design: screens (UI/UX), database and architecture. Development: front end in a cross-platform framework (Flutter), back end on a cloud server. Testing: bugs, payments, load. Deployment: publish on Google Play and the App Store. Maintenance: fixes and new features from user feedback."
    ]
   },
   {
@@ -337,6 +367,9 @@
      "title": "Technology used in E-Commerce",
      "part": "3.2–3.3"
     }
+   ],
+   "examples": [
+    "Example: a spice shop goes online\nA family spice shop in Kerala sells only to walk-in customers from 9 to 8. It opens a web store and lists on a marketplace. Now it sells 24×7 across India and abroad, takes UPI and card payments, and sees which products sell best.\nNew problems follow: customers cannot smell the spices before buying, deliveries can be late, and returns and online fraud must be handled."
    ]
   },
   {
@@ -367,6 +400,10 @@
      "title": "Cyber Security Measures",
      "part": "11.7 Securing network transactions"
     }
+   ],
+   "examples": [
+    "Example: public-key encryption and a digital signature\nAnu wants to send Ravi a confidential file. She encrypts it with Ravi's public key; only Ravi's private key can decrypt it.\nTo prove the file is from her and unchanged, Anu signs it: a hash of the file is encrypted with her private key. Ravi verifies it with Anu's public key. If even one character was altered, the hash will not match — authenticity, integrity and non-repudiation.",
+    "Example: symmetric encryption and DSCs\nA password-protected ZIP file uses one shared key — fast, but the password must reach the receiver safely.\nA company director uses a Digital Signature Certificate from a Certifying Authority to sign the company's annual filings on the MCA portal."
    ]
   },
   {
@@ -396,6 +433,10 @@
      "title": "E-Banking",
      "part": "6.6 Virtual currency"
     }
+   ],
+   "examples": [
+    "Example: three kinds of 'digital money'\nThe RBI's e-Rupee is digital currency issued by the central bank, with the same value as cash. Gold coins earned inside a mobile game are virtual currency — usable only in that game. Bitcoin is a cryptocurrency — decentralised, with no issuer, and secured by cryptography on a blockchain.",
+    "Example: FinTech in daily life\nA shopkeeper gets a small loan approved in minutes by an app that uses AI to study their UPI sales (big data and machine learning). An investor buys shares on a discount-broker app. Banks use a shared ledger (DLT) for trade documents, so each party sees the same record and fraud is harder."
    ]
   }
  ],

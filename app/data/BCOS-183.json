@@ -49,6 +49,10 @@
       "units": [
         { "block": 2, "unit": 6, "title": "IT Security Measures in Business" },
         { "block": 2, "unit": 5, "title": "Business Information System", "part": "5.8 GDPR" }
+      ],
+      "examples": [
+        "Example: identification, authentication and authorisation at a bank website\nA customer types their customer ID (identification), enters the password and then an OTP sent to their registered mobile (authentication — two factors: something they know and something they have). Once inside, they can see only their own accounts and transfer up to their set limit (authorisation).",
+        "Example: identity theft by phishing\nAn SMS says 'Your KYC will expire — update now' with a link to a fake bank page. The victim enters card details and the OTP, and money is withdrawn. Safeguards: never share OTPs or PINs, check the website address, and use the bank's own app."
       ]
     },
     {
@@ -71,6 +75,10 @@
       "mistakes": [],
       "units": [
         { "block": 1, "unit": 4, "title": "Basics of Computer Software" }
+      ],
+      "examples": [
+        "Examples: which kind of software?\nWindows 11 and Android → system software (operating systems). A printer driver and an antivirus → system software (driver and utility). Tally, MS Excel and Photoshop → application software. LibreOffice and Linux → free and open-source software.",
+        "Example: compiler vs interpreter\nA C program is compiled — the whole program is translated into machine code first, and errors are reported together. A Python program is interpreted — run line by line, stopping at the first error, which makes debugging easier."
       ]
     },
     {
@@ -96,6 +104,10 @@
         { "block": 2, "unit": 7, "title": "Internet Services and E-mail Configuration" },
         { "block": 1, "unit": 2, "title": "Application of Computers", "part": "2.7 Computer networks" },
         { "block": 1, "unit": 3, "title": "Web Applications", "part": "3.4 Cloud" }
+      ],
+      "examples": [
+        "Examples: which network?\nPhone connected to a smartwatch by Bluetooth → PAN. Computers in one office connected to a shared printer → LAN. A college's buildings across a city connected together → MAN. A bank linking its branches across India → WAN. The staff-only portal of a company → intranet; opening part of it to suppliers → extranet.",
+        "Example: reading a URL and choosing an e-mail protocol\nIn https://www.example.com/courses/index.html — 'https' is the protocol, 'www.example.com' the domain name (.com is a generic top-level domain), and '/courses/index.html' the path to the page. DNS turns the domain name into the server's IP address.\nSomeone who reads mail on a phone and a laptop should use IMAP, so both show the same mailbox. With POP3, mail downloaded to one device may disappear from the other."
       ]
     },
     {
@@ -121,6 +133,10 @@
         { "block": 3, "unit": 9, "title": "Basics of Word Processing" },
         { "block": 3, "unit": 10, "title": "Working with Word Processing" },
         { "block": 4, "unit": 13, "title": "Working with PowerPoint" }
+      ],
+      "examples": [
+        "Example: mail merge for 200 invitation letters\nWrite the main letter once in Word. Create the data source — an Excel sheet with Name, Address and City for 200 guests. Insert merge fields («Name», «Address») in the letter from the Mailings tab. Finish and merge to get 200 personalised letters, printed or e-mailed.",
+        "Example: a project report in Word\nUse Heading styles for chapters and insert an automatic table of contents (References tab). Add footnotes for sources and a bibliography from the citations. Turn on Track Changes so the guide's corrections show up for you to accept or reject."
       ]
     },
     {
@@ -144,6 +160,10 @@
       "mistakes": ["Forgetting that Excel's NPV() does not include the year-0 outlay."],
       "units": [
         { "block": 5, "unit": 20, "title": "Creating Business Spreadsheets" }
+      ],
+      "examples": [
+        "Example: EMI with PMT\nA loan of ₹1,00,000 at 10% a year, repaid monthly over 12 months:\n=PMT(10%/12, 12, -100000) gives an EMI of ₹8,791.59.",
+        "Example: NPV and IRR in Excel\nOutlay ₹1,00,000 in B1 (entered as −100000); inflows of ₹45,000 in B2:B4 for 3 years; cost of capital 10%.\n=NPV(10%, B2:B4) + B1 = 1,11,908 − 1,00,000 = ₹11,908 → positive, so accept.\n=IRR(B1:B4) ≈ 16.6%, above the 10% cost of capital.\nDepreciation of a ₹1,00,000 asset, scrap ₹10,000, life 5 years: =SLN(100000, 10000, 5) = ₹18,000 a year."
       ]
     },
     {
@@ -166,6 +186,10 @@
       "mistakes": [],
       "units": [
         { "block": 2, "unit": 8, "title": "Plastic Money, E-Wallets and Online Pay" }
+      ],
+      "examples": [
+        "Example: choosing a payment method\nPaying a vegetable seller ₹60 → scan their QR code with a UPI app.\nSending ₹20,000 to a relative at night → IMPS or UPI, which work 24×7 and credit at once.\nPaying a supplier ₹5 lakh → RTGS (for ₹2 lakh and above; settled individually in real time).\nA farmer with a basic phone and no internet → dial *99# (USSD) to transfer money.",
+        "Example: B2B vs B2C\nA textile mill ordering dyes from a chemical company's online portal → B2B. A student buying earphones on a shopping app → B2C."
       ]
     },
     {
@@ -188,6 +212,9 @@
       "mistakes": [],
       "units": [
         { "block": 2, "unit": 5, "title": "Business Information System", "part": "5.2–5.3, 5.5–5.7" }
+      ],
+      "examples": [
+        "Example: information systems in a supermarket chain\nEvery bill at the counter is recorded — a transaction processing (operation support) system.\nThe MIS turns these into a weekly report: sales by store and product, and stock below the reorder level.\nThe DSS lets the manager ask 'what if we give 10% off on biscuits next month?' and see the likely effect on sales and profit.\nERP links it all — sales, purchase, warehouse, suppliers and accounts — so a sale at one store updates stock and triggers a purchase order automatically."
       ]
     },
     {
@@ -210,7 +237,11 @@
       "units": [
         { "block": 2, "unit": 5, "title": "Business Information System", "part": "5.4 DBMS" }
       ],
-      "figures": ["data-abstraction"]
+      "figures": ["data-abstraction"],
+      "examples": [
+        "Example: a relational table\nTable STUDENT (the schema): Enrolment_No, Name, Course, City. Each row, such as (2301, Anu, BCom, Kochi), is a tuple; each column is an attribute. The rows stored today are the instance — they change as students join and leave; the schema does not.",
+        "Example: why a DBMS beats separate files\nThe fees office and the exam office each keep a file with the student's address. When a student moves, one file is updated and the other is not — redundancy leads to inconsistency. In a DBMS the address is stored once and both offices see the same data, with access controlled by the DBA.\nData independence: moving the database to a faster disk (physical level) does not change the tables users see."
+      ]
     },
     {
       "id": "computer-basics",
@@ -232,6 +263,10 @@
       "units": [
         { "block": 1, "unit": 1, "title": "Introduction to Computer" },
         { "block": 1, "unit": 2, "title": "Application of Computers" }
+      ],
+      "examples": [
+        "Examples: classify the computer\nA desktop in an office → general-purpose microcomputer. An ATM or a washing-machine controller → special-purpose. A bank's central system handling lakhs of transactions → mainframe. Weather forecasting → supercomputer. A hospital ICU machine that measures a patient's temperature and pulse (continuous) and shows them as numbers (digital) → hybrid.",
+        "Example: input, process, output, storage\nIn a billing counter: barcodes scanned (input) → prices looked up and totalled by the CPU (processing) → bill printed (output) → sale saved in the database (storage)."
       ]
     },
     {
@@ -254,6 +289,9 @@
       "units": [
         { "block": 4, "unit": 14, "title": "Multimedia, Video-Making and YouTube" },
         { "block": 2, "unit": 6, "title": "IT Security Measures in Business", "part": "6.9 Digitization" }
+      ],
+      "examples": [
+        "Example: a teacher starts a YouTube channel\nShe signs in with a Google account, creates the channel 'Easy Accounts', adds a logo and description, and uploads short lessons, choosing 'Public' as the privacy setting.\nOnce the channel meets the YouTube Partner Programme conditions on subscribers and watch time, ads (through AdSense) can be shown on her videos and she earns a share of the ad revenue."
       ]
     },
     {
@@ -277,6 +315,10 @@
         { "block": 3, "unit": 12, "title": "Creating Business Documentation", "part": "12.6 Detailed project report" },
         { "block": 4, "unit": 15, "title": "Creating Business Presentation" },
         { "block": 5, "unit": 19, "title": "Advanced Options in Spreadsheets", "part": "19.5–19.9" }
+      ],
+      "examples": [
+        "Example: a DPR for a small bakery unit\nExecutive summary (the project in one page) → introduction and background (demand for bakery products in the town) → technical analysis (site, ovens, capacity, staff) → financial analysis (project cost ₹25 lakh, funding, projected sales and profit, break-even, loan repayment) → recommended action plan with a timeline → appendices (quotations, licences).",
+        "Example: Excel Data Analysis ToolPak\nMarks of 60 students in column A → Data → Data Analysis → Descriptive Statistics gives the mean, median, mode, standard deviation and range in one table. Choosing Correlation with study hours in column B shows how strongly hours and marks move together."
       ]
     },
     {
@@ -302,6 +344,10 @@
         { "block": 5, "unit": 17, "title": "Formulas and Functions" },
         { "block": 5, "unit": 18, "title": "Graphical Presentations of Data" },
         { "block": 5, "unit": 19, "title": "Advanced Options in Spreadsheets", "part": "19.2–19.4" }
+      ],
+      "examples": [
+        "Example: relative and absolute references\nSales are in A3:A10 and the commission rate is in B1. In B3 type =A3*$B$1 and copy it down: A3 changes to A4, A5… (relative), but $B$1 stays fixed (absolute).",
+        "Example: useful functions\n=SUM(C2:C31) totals a column. =IF(C2>=40,\"Pass\",\"Fail\") marks each student. =VLOOKUP(102, A2:C50, 3, FALSE) finds item code 102 in the first column and returns its price from the third column. A pivot table then summarises sales by region and month in a few clicks."
       ]
     }
   ],
