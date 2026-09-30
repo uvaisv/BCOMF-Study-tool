@@ -9,7 +9,7 @@
   "each": 20,
   "summary": "9 questions, answer any 5, each carries 20 marks. All theory under the Companies Act, 2013. Q9 is always short notes (any two of four, or any four of six)."
  },
- "blocksOfficial": false,
+ "blocksOfficial": true,
  "sessions": [
   "2022-06",
   "2022-12",
@@ -32,42 +32,30 @@
  "blocks": [
   {
    "no": 1,
-   "title": "Company, Types & Promotion"
+   "title": "Company and its Formation"
   },
   {
    "no": 2,
-   "title": "Memorandum & Articles"
+   "title": "Principal Documents"
   },
   {
    "no": 3,
-   "title": "Prospectus & Share Capital"
+   "title": "Share Capital and Membership"
   },
   {
    "no": 4,
-   "title": "Membership & Transfer"
+   "title": "Company Management"
   },
   {
    "no": 5,
-   "title": "Management: Directors & Secretary"
-  },
-  {
-   "no": 6,
-   "title": "Meetings"
-  },
-  {
-   "no": 7,
-   "title": "Accounts & Audit"
-  },
-  {
-   "no": 8,
-   "title": "Winding Up"
+   "title": "Dividend, Accounts, Audit and Winding Up"
   }
  ],
  "topics": [
   {
    "id": "secretary",
    "name": "Company Secretary",
-   "block": 5,
+   "block": 4,
    "kind": "theory",
    "summary": "Who a company secretary is, appointment and removal, position, duties, and statutory, contractual and criminal liabilities.",
    "points": [
@@ -82,12 +70,19 @@
    "frame": "Definition → appointment → duties or liabilities as headings with the section number → conclusion.",
    "mistakes": [
     "Mixing up the company secretary's duties (Sec 205) with the directors' duties (Sec 166)."
+   ],
+   "units": [
+    {
+     "block": 4,
+     "unit": 15,
+     "title": "Company Secretary"
+    }
    ]
   },
   {
    "id": "directors",
    "name": "Directors & Corporate Governance",
-   "block": 5,
+   "block": 4,
    "kind": "theory",
    "summary": "Appointment, qualifications and disqualifications, legal position, duties and liabilities of directors, removal, managerial remuneration, audit committee, insider trading and whistle blowing.",
    "points": [
@@ -104,12 +99,24 @@
    "frame": "Definition → headings with section numbers → one case or example → conclusion.",
    "mistakes": [
     "Quoting the old 1956 Act section numbers — use the Companies Act, 2013."
+   ],
+   "units": [
+    {
+     "block": 4,
+     "unit": 13,
+     "title": "Directors"
+    },
+    {
+     "block": 4,
+     "unit": 14,
+     "title": "Managerial Remuneration"
+    }
    ]
   },
   {
    "id": "meetings",
    "name": "Company Meetings & Resolutions",
-   "block": 6,
+   "block": 4,
    "kind": "theory",
    "summary": "Kinds of meetings, AGM and EGM, requisites of a valid meeting, notice, quorum, chairman, proxy, board meetings, and ordinary and special resolutions.",
    "points": [
@@ -124,7 +131,14 @@
     "Board meetings (Sec 173): first within 30 days of incorporation, then at least 4 a year with no more than 120 days between them; 7 days' notice; quorum one-third or 2 directors, whichever is higher; video conferencing allowed."
    ],
    "frame": "Meaning → rules as headed points with section numbers → conclusion.",
-   "mistakes": []
+   "mistakes": [],
+   "units": [
+    {
+     "block": 4,
+     "unit": 16,
+     "title": "Meetings of Shareholders and Board"
+    }
+   ]
   },
   {
    "id": "shares",
@@ -149,6 +163,18 @@
    "frame": "Meaning → rules or types as headings with the section number → a table for any 'distinguish' part → conclusion.",
    "mistakes": [
     "Saying preference shares can be irredeemable — Sec 55 forbids it."
+   ],
+   "units": [
+    {
+     "block": 3,
+     "unit": 9,
+     "title": "Share and Loan Capital"
+    },
+    {
+     "block": 3,
+     "unit": 10,
+     "title": "Issue and Allotment of Shares"
+    }
    ]
   },
   {
@@ -167,7 +193,14 @@
     "Doctrine of ultra vires: an act beyond the objects in the memorandum is void and cannot be ratified even by all members (Ashbury Railway Carriage v Riche, 1875). Consequences: the act is void; members can get an injunction; directors are personally liable; the company cannot sue or be sued on it. Example: a railway-carriage company financing a railway line."
    ],
    "frame": "Meaning → clauses as a numbered list → alteration or doctrine with a case → conclusion.",
-   "mistakes": []
+   "mistakes": [],
+   "units": [
+    {
+     "block": 2,
+     "unit": 6,
+     "title": "Memorandum of Association"
+    }
+   ]
   },
   {
    "id": "nature",
@@ -183,7 +216,14 @@
     "Company vs LLP: a company is governed by the Companies Act 2013, has shareholders and directors, and heavier compliance; a limited liability partnership is governed by the LLP Act 2008 and its LLP agreement, has partners and designated partners, and lighter compliance — both are separate legal entities with limited liability."
    ],
    "frame": "Definition → features as headings with a case → conclusion. For 'comment' questions, agree and explain with Salomon's case.",
-   "mistakes": []
+   "mistakes": [],
+   "units": [
+    {
+     "block": 1,
+     "unit": 1,
+     "title": "Nature and Types of Companies"
+    }
+   ]
   },
   {
    "id": "aoa",
@@ -200,7 +240,14 @@
     "Indoor management protects outsiders; constructive notice protects the company."
    ],
    "frame": "Meaning → purpose/contents → doctrine with the Turquand case → exceptions as a list → conclusion.",
-   "mistakes": []
+   "mistakes": [],
+   "units": [
+    {
+     "block": 2,
+     "unit": 7,
+     "title": "Articles of Association"
+    }
+   ]
   },
   {
    "id": "types",
@@ -217,12 +264,25 @@
     "One-person company (Sec 2(62)): one member, a natural person resident in India, with a nominee; '(OPC)' in the name; lighter compliance."
    ],
    "frame": "Classify in a chart → explain each type in a line → table for public vs private → conclusion.",
-   "mistakes": []
+   "mistakes": [],
+   "units": [
+    {
+     "block": 1,
+     "unit": 2,
+     "title": "Public and Private Companies"
+    },
+    {
+     "block": 1,
+     "unit": 1,
+     "title": "Nature and Types of Companies",
+     "part": "1.9–1.11 Kinds of companies"
+    }
+   ]
   },
   {
    "id": "accounts",
    "name": "Accounts, Dividend & Audit",
-   "block": 7,
+   "block": 5,
    "kind": "theory",
    "summary": "Books of account and records, financial statements, dividend and interim dividend, auditors — appointment, disqualifications, rights, audit report, and e-filing.",
    "points": [
@@ -235,12 +295,29 @@
     "E-filing: documents filed online on the MCA21 portal with digital signatures — e.g. AOC-4 (financial statements), MGT-7 (annual return), DIR-12, INC forms."
    ],
    "frame": "Headings with section numbers → one line each → conclusion.",
-   "mistakes": []
+   "mistakes": [],
+   "units": [
+    {
+     "block": 5,
+     "unit": 17,
+     "title": "Dividend"
+    },
+    {
+     "block": 5,
+     "unit": 18,
+     "title": "Accounts"
+    },
+    {
+     "block": 5,
+     "unit": 19,
+     "title": "Audit"
+    }
+   ]
   },
   {
    "id": "membership",
    "name": "Membership of a Company",
-   "block": 4,
+   "block": 3,
    "kind": "theory",
    "summary": "Who is a member, member vs shareholder, who can become a member, modes of becoming a member, rights of members and cessation of membership.",
    "points": [
@@ -252,12 +329,19 @@
     "Cessation: transfer, transmission on death or insolvency, forfeiture, surrender, buyback, rescission of allotment, winding up."
    ],
    "frame": "Definition → headed points → conclusion.",
-   "mistakes": []
+   "mistakes": [],
+   "units": [
+    {
+     "block": 3,
+     "unit": 12,
+     "title": "Membership of a Company"
+    }
+   ]
   },
   {
    "id": "transfer",
    "name": "Transfer & Transmission of Shares",
-   "block": 4,
+   "block": 3,
    "kind": "theory",
    "summary": "Procedure for transfer, refusal to register, transfer vs transmission, blank transfer and forged transfer.",
    "points": [
@@ -268,7 +352,14 @@
     "Forged transfer: a nullity — the true owner stays a member and must be restored to the register; the company may claim compensation from the person who lodged it; a person who bought on a certificate issued on a forged transfer may claim damages from the company (estoppel)."
    ],
    "frame": "Meaning → procedure as steps → table for transfer vs transmission → conclusion.",
-   "mistakes": []
+   "mistakes": [],
+   "units": [
+    {
+     "block": 3,
+     "unit": 11,
+     "title": "Transfer and Transmission of Shares"
+    }
+   ]
   },
   {
    "id": "promoter",
@@ -286,12 +377,24 @@
     "Pre-incorporation contracts: made before incorporation; the company cannot ratify them (Kelner v Baxter) and the promoter is personally liable. Under the Specific Relief Act, 1963 (Sec 15(h), 19(e)) they can be enforced by or against the company if made for its purposes and accepted by it after incorporation."
    ],
    "frame": "Definition → functions or duties as headings → legal position with a case → conclusion.",
-   "mistakes": []
+   "mistakes": [],
+   "units": [
+    {
+     "block": 1,
+     "unit": 3,
+     "title": "Promoter"
+    },
+    {
+     "block": 1,
+     "unit": 4,
+     "title": "Formation of a Company"
+    }
+   ]
   },
   {
    "id": "prospectus",
    "name": "Prospectus",
-   "block": 3,
+   "block": 2,
    "kind": "theory",
    "summary": "Prospectus and when it is not required, deemed, shelf and red herring prospectus, misstatement, minimum subscription, book building and GDRs.",
    "points": [
@@ -305,12 +408,19 @@
     "Global depository receipts: receipts issued abroad representing shares of an Indian company, letting it raise foreign capital."
    ],
    "frame": "Definition → type or rule with the section number → conclusion.",
-   "mistakes": []
+   "mistakes": [],
+   "units": [
+    {
+     "block": 2,
+     "unit": 8,
+     "title": "Prospectus"
+    }
+   ]
   },
   {
    "id": "winding-up",
    "name": "Winding Up, Dissolution & NCLAT",
-   "block": 8,
+   "block": 5,
    "kind": "theory",
    "summary": "Winding up vs dissolution, winding up by the Tribunal and its procedure, compulsory winding up, and the National Company Law Appellate Tribunal.",
    "points": [
@@ -321,7 +431,19 @@
     "NCLAT (Sec 410): hears appeals against orders of the National Company Law Tribunal (NCLT), and against IBBI and CCI orders; appeal within 45 days; further appeal to the Supreme Court on a question of law within 60 days."
    ],
    "frame": "Meaning → table for winding up vs dissolution → grounds or procedure as steps → conclusion.",
-   "mistakes": []
+   "mistakes": [],
+   "units": [
+    {
+     "block": 5,
+     "unit": 20,
+     "title": "Winding Up"
+    },
+    {
+     "block": 1,
+     "unit": 5,
+     "title": "Authorities under Companies Act, 2013"
+    }
+   ]
   }
  ],
  "questions": [
@@ -1533,5 +1655,6 @@
    "k": "th",
    "topic": "prospectus"
   }
- ]
+ ],
+ "notesSource": "Notes written from the IGNOU BCOC-135 study material."
 }
