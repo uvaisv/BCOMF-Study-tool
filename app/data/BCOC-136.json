@@ -10,7 +10,7 @@
     "summary": "8 questions, attempt any 5, each carries 20 marks. About half are computations (salary, house property, capital gains, other sources, total income); the rest are provisions and short notes.",
     "caution": "Tax rates, limits and rules change every year and these papers use older assessment years. The notes give the method; for exact limits use the figures in your IGNOU course material or those given in the question."
   },
-  "blocksOfficial": false,
+  "blocksOfficial": true,
   "sessions": ["2022-06", "2022-12", "2023-06", "2023-12", "2024-06", "2024-12", "2025-06", "2025-12", "2026-06"],
   "sessionNotes": {},
   "examTips": {
@@ -27,11 +27,11 @@
     ]
   },
   "blocks": [
-    { "no": 1, "title": "Basic Concepts & Residential Status" },
-    { "no": 2, "title": "Income from Salary" },
-    { "no": 3, "title": "House Property & Business" },
-    { "no": 4, "title": "Capital Gains & Other Sources" },
-    { "no": 5, "title": "Total Income, Deductions & Procedure" }
+    { "no": 1, "title": "Fundamentals" },
+    { "no": 2, "title": "Salaries" },
+    { "no": 3, "title": "Income from House Property & Profits and Gains of Business or Profession" },
+    { "no": 4, "title": "Income from Capital Gains & Other Sources" },
+    { "no": 5, "title": "Computation of Total Income and Tax Liability" }
   ],
   "topics": [
     {
@@ -60,6 +60,11 @@
       "mistakes": [
         "Using basic pay only for HRA 'salary' — add DA that forms part of retirement benefits and commission on turnover.",
         "Not rounding service years (over 6 months = full year) for covered gratuity."
+      ],
+      "units": [
+        { "block": 2, "unit": 5, "title": "Salaries-I" },
+        { "block": 2, "unit": 6, "title": "Salaries-II" },
+        { "block": 2, "unit": 7, "title": "Salaries-III" }
       ]
     },
     {
@@ -82,7 +87,12 @@
         "Agricultural income from land: sale proceeds − cultivation expenses (seeds, fertiliser, labour, depreciation, electricity)."
       ],
       "formula": ["Total income = GTI − Chapter VI-A deductions"],
-      "mistakes": []
+      "mistakes": [],
+      "units": [
+        { "block": 1, "unit": 1, "title": "Basic Concepts-I" },
+        { "block": 1, "unit": 2, "title": "Basic Concepts-II" },
+        { "block": 1, "unit": 4, "title": "Exempted Incomes" }
+      ]
     },
     {
       "id": "capital-gains",
@@ -106,7 +116,10 @@
         "Capital gain = net consideration − indexed cost; then subtract exemption (amount invested + CGAS deposit, up to the gain)."
       ],
       "formula": ["Indexed cost = Cost × CII(transfer) / CII(acquisition)"],
-      "mistakes": ["Indexing a short-term asset.", "Forgetting the CGAS deposit when computing the exemption."]
+      "mistakes": ["Indexing a short-term asset.", "Forgetting the CGAS deposit when computing the exemption."],
+      "units": [
+        { "block": 4, "unit": 12, "title": "Capital Gains" }
+      ]
     },
     {
       "id": "house-property",
@@ -124,7 +137,10 @@
       ],
       "method": ["Expected rent = max(municipal value, fair rent), capped at standard rent.", "GAV = max(expected rent, actual rent).", "NAV = GAV − municipal tax paid by owner.", "Income = NAV − 30% − interest on loan."],
       "formula": ["NAV = GAV − municipal tax", "Income = NAV − 30% of NAV − interest u/s 24(b)"],
-      "mistakes": ["Deducting municipal tax paid by the tenant."]
+      "mistakes": ["Deducting municipal tax paid by the tenant."],
+      "units": [
+        { "block": 3, "unit": 8, "title": "Income from House Property" }
+      ]
     },
     {
       "id": "deductions-total",
@@ -143,7 +159,11 @@
       ],
       "method": ["Head-wise schedule: Salary, House Property, PGBP, Capital Gains, Other Sources → GTI.", "Less Chapter VI-A deductions (show each with its section) → total income."],
       "formula": ["Total income = Σ heads − deductions"],
-      "mistakes": ["Allowing 80C against capital gains or lottery income."]
+      "mistakes": ["Allowing 80C against capital gains or lottery income."],
+      "units": [
+        { "block": 5, "unit": 15, "title": "Deductions from Gross Total Income" },
+        { "block": 5, "unit": 16, "title": "Assessment of Individuals" }
+      ]
     },
     {
       "id": "residential-status",
@@ -162,7 +182,10 @@
         "Count days of stay in the PY and preceding years; apply the basic conditions, then the additional conditions."
       ],
       "formula": [],
-      "mistakes": ["Counting the day of departure and arrival wrongly — both days count as days in India."]
+      "mistakes": ["Counting the day of departure and arrival wrongly — both days count as days in India."],
+      "units": [
+        { "block": 1, "unit": 3, "title": "Residential Status and Tax Liability" }
+      ]
     },
     {
       "id": "other-sources",
@@ -182,12 +205,15 @@
         "List each receipt: taxable/exempt with section → deduct allowed expenses → income from other sources."
       ],
       "formula": ["Gross winning = Net received ÷ 0.70"],
-      "mistakes": ["Allowing expenses on lottery tickets against winnings."]
+      "mistakes": ["Allowing expenses on lottery tickets against winnings."],
+      "units": [
+        { "block": 4, "unit": 13, "title": "Income from Other Sources" }
+      ]
     },
     {
       "id": "clubbing-setoff",
       "name": "Clubbing of Income & Set-off of Losses",
-      "block": 5,
+      "block": 4,
       "kind": "theory",
       "summary": "When another person's income is clubbed; set-off and carry forward of business, capital, speculative and lottery losses.",
       "points": [
@@ -200,7 +226,10 @@
         "House property loss: inter-head set-off limited; carried forward 8 years."
       ],
       "frame": "Meaning → each rule as a headed point with the section and a one-line example → conclusion.",
-      "mistakes": []
+      "mistakes": [],
+      "units": [
+        { "block": 4, "unit": 14, "title": "Aggregation of Incomes (Clubbing) and Set-off of Losses" }
+      ]
     },
     {
       "id": "procedure",
@@ -215,10 +244,17 @@
         "PAN (Sec 139A): 10-character alphanumeric number; required for filing returns and many financial transactions.",
         "Best judgement assessment (Sec 144): when the assessee fails to file a return or comply with notices, the AO assesses to the best of judgement.",
         "Income tax authorities: CBDT, Principal Chief Commissioners/Chief Commissioners, Commissioners (incl. Appeals), Joint/Additional Commissioners, Deputy/Assistant Commissioners, Income Tax Officers, Tax Recovery Officers, Inspectors.",
-        "Marginal relief: surcharge limited so that extra tax does not exceed the extra income above the threshold."
+        "Marginal relief: surcharge limited so that extra tax does not exceed the extra income above the threshold.",
+        "Types of assessment in the book: self-assessment, regular assessment (Sec 143(3)), best judgement assessment (Sec 144), re-assessment of escaped income (Sec 147) and protective assessment. Advance tax is paid in instalments by due dates (Sec 211).",
+        "Leading Supreme Court cases in the book include Bharat V. Patel (2018) — money from redeeming stock appreciation rights before the 1999 amendment was a capital receipt, not a salary perquisite."
       ],
       "frame": "Meaning → steps or provisions as headed points → conclusion.",
-      "mistakes": []
+      "mistakes": [],
+      "units": [
+        { "block": 5, "unit": 18, "title": "Filing of Return and Tax Authorities" },
+        { "block": 5, "unit": 19, "title": "Online Filing of Returns" },
+        { "block": 5, "unit": 20, "title": "Leading Cases Decided by Supreme Court" }
+      ]
     },
     {
       "id": "business",
@@ -232,10 +268,17 @@
         "Sec 43B: certain expenses allowed only when actually paid (by the return due date) — taxes and duties, employer's PF/ESI contribution, bonus, commission, interest to banks/financial institutions, leave encashment.",
         "Sec 37(1) general deduction: expenditure wholly and exclusively for business, not capital, not personal — e.g. advertisement, repairs, staff welfare, legal expenses.",
         "Not allowed: income tax, personal expenses, penalties for breaking the law, capital expenditure, cash payments above the limit (Sec 40A(3)), interest/salary to partners beyond Sec 40(b) limits.",
-        "Sec 44AD presumptive taxation: eligible small businesses declare profit at 8% of turnover (6% for digital receipts), no books needed."
+        "Sec 44AD presumptive taxation: eligible small businesses declare profit at 8% of turnover (6% for digital receipts), no books needed.",
+        "Deemed profits (Sec 41): a loss, expense or liability allowed earlier that is later recovered or remitted is taxed as business income in the year of recovery, even if the business has closed.",
+        "The book also covers compulsory books of account (Sec 44AA), tax audit (Sec 44AB) and presumptive (estimated) income schemes."
       ],
       "frame": "Section → rules as headed points with examples → conclusion.",
-      "mistakes": []
+      "mistakes": [],
+      "units": [
+        { "block": 3, "unit": 9, "title": "Profits and Gains of Business or Profession-I" },
+        { "block": 3, "unit": 10, "title": "Profits and Gains of Business or Profession-II" },
+        { "block": 3, "unit": 11, "title": "Profits and Gains of Business or Profession-III" }
+      ]
     },
     {
       "id": "partnership-firms",
@@ -251,7 +294,10 @@
         "Partner's share of profit from the firm is exempt (Sec 10(2A)); interest and remuneration are taxed as business income in the partner's hands."
       ],
       "frame": "Meaning → conditions/provisions as headed points → conclusion.",
-      "mistakes": []
+      "mistakes": [],
+      "units": [
+        { "block": 5, "unit": 17, "title": "Assessment of Firms" }
+      ]
     }
   ],
   "questions": [
@@ -387,5 +433,6 @@
     { "s": "2026-06", "q": "8(c)", "t": "Note (any four): advance against salary", "m": 3.34, "k": "th", "topic": "salary" },
     { "s": "2026-06", "q": "8(d,e)", "t": "Notes (any four): capital and revenue incomes; casual income", "m": 6.67, "k": "th", "topic": "basics" },
     { "s": "2026-06", "q": "8(f)", "t": "Note (any four): tax authorities", "m": 3.33, "k": "th", "topic": "procedure" }
-  ]
+  ],
+  "notesSource": "Notes written from the IGNOU BCOC-136 study material."
 }
