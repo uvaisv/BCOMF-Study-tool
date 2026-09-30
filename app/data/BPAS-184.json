@@ -11,7 +11,7 @@
   "summary": "8 questions in two sections of four. Answer any 5, at least 2 from each section; each carries 10 marks (about 300 words). Some questions are two short notes of 5 marks each.",
   "note": "Section I is usually concepts, the logistics cycle, supply chains, procurement and material handling; Section II is information systems, green logistics, customers and transport."
  },
- "blocksOfficial": false,
+ "blocksOfficial": true,
  "sessions": [
   "2022-06",
   "2022-12",
@@ -34,30 +34,22 @@
  "blocks": [
   {
    "no": 1,
-   "title": "Logistics & Supply Chains"
+   "title": "Introduction to Logistics Management"
   },
   {
    "no": 2,
-   "title": "Procurement, Inventory & Material Handling"
+   "title": "Logistics Management: Components"
   },
   {
    "no": 3,
-   "title": "Transport, Warehousing & Information"
-  },
-  {
-   "no": 4,
-   "title": "Green Logistics"
-  },
-  {
-   "no": 5,
-   "title": "Customers"
+   "title": "Logistics Management: Emerging Trends"
   }
  ],
  "topics": [
   {
    "id": "lis",
    "name": "Logistics Information System",
-   "block": 3,
+   "block": 2,
    "kind": "theory",
    "summary": "What a logistics information system is, its components and requirements, its role, information flows, internal and external information, information processing and technology applications.",
    "points": [
@@ -68,17 +60,30 @@
     "Information flows: planning and coordination flows (strategic objectives, capacity limits, logistics requirements, forecasts, procurement and production plans) and operational flows (order management, order processing, distribution, inventory, transport and shipping, procurement). Features: two-way, continuous, integrated across partners, increasingly real-time.",
     "Internal information: sales and orders, stock levels, production schedules, costs, staff and capacity. External information: customer orders and feedback, supplier lead times and prices, carrier and shipment status, market demand, government rules.",
     "Information processing: capturing, checking, storing, analysing and communicating data. It integrates all areas of logistics because one order triggers stock allocation, picking, transport, billing and after-sales records.",
-    "Technology applications: barcodes and RFID, EDI, GPS and GIS vehicle tracking, ERP, WMS and TMS software, cloud platforms, IoT sensors for cold chains, analytics and AI for demand forecasting and route planning, drones and robotics in warehouses, blockchain for traceability. In India: FASTag, e-way bill, Unified Logistics Interface Platform (ULIP)."
+    "Technology applications: barcodes and RFID, EDI, GPS and GIS vehicle tracking, ERP, WMS and TMS software, cloud platforms, IoT sensors for cold chains, analytics and AI for demand forecasting and route planning, drones and robotics in warehouses, blockchain for traceability. In India: FASTag, e-way bill, Unified Logistics Interface Platform (ULIP).",
+    "The book names three flows in logistics: product flow (goods from supplier to customer, plus returns), information flow (orders and delivery status) and finance flow (payment schedules, credit terms, title). Information links all the others."
    ],
    "frame": "Meaning → components or features as headings → role with examples (a courier's tracking system) → conclusion.",
    "mistakes": [
     "Listing technologies without saying what each does for logistics."
+   ],
+   "units": [
+    {
+     "block": 2,
+     "unit": 9,
+     "title": "Logistics Information System"
+    },
+    {
+     "block": 2,
+     "unit": 8,
+     "title": "Information Monitoring"
+    }
    ]
   },
   {
    "id": "green",
    "name": "Green Logistics & the Environment",
-   "block": 4,
+   "block": 3,
    "kind": "theory",
    "summary": "Green logistics: meaning, strategies and protocols, challenges, environmental impacts of logistics, regulatory issues, pollution and environmental management systems.",
    "points": [
@@ -91,7 +96,14 @@
     "Environmental management system (EMS): a framework (ISO 14001) to manage environmental effects — environmental policy, planning, implementation, checking and corrective action, management review (plan–do–check–act)."
    ],
    "frame": "Meaning → headed points (strategies or challenges) with one example each → conclusion on balancing economy and environment.",
-   "mistakes": []
+   "mistakes": [],
+   "units": [
+    {
+     "block": 3,
+     "unit": 11,
+     "title": "Green Logistics"
+    }
+   ]
   },
   {
    "id": "concept",
@@ -110,12 +122,30 @@
     "Challenges to effective logistics management: high costs, poor infrastructure, fragmented service providers, shortage of skilled staff, slow technology adoption, complex rules, fuel price swings, poor visibility and pressure to be sustainable."
    ],
    "frame": "Meaning with definition → types or objectives as headings → importance → conclusion.",
-   "mistakes": []
+   "mistakes": [],
+   "units": [
+    {
+     "block": 1,
+     "unit": 1,
+     "title": "Logistics: Concept, Principles and Forms"
+    },
+    {
+     "block": 1,
+     "unit": 2,
+     "title": "Logistics Management: Conceptual Framework, Scope and Importance"
+    },
+    {
+     "block": 3,
+     "unit": 13,
+     "title": "Effective Logistics Management: Challenges",
+     "part": "13.2 Challenges"
+    }
+   ]
   },
   {
    "id": "customer",
    "name": "Customer Service, Satisfaction & Success",
-   "block": 5,
+   "block": 3,
    "kind": "theory",
    "summary": "Customer service in logistics, customer satisfaction and expectations, customer focus, customer success and customer management.",
    "points": [
@@ -127,7 +157,20 @@
     "Customer management: segmenting customers, managing relationships (CRM), handling complaints quickly, keeping loyal customers."
    ],
    "frame": "Meaning → elements or ways as headed points → example (an e-commerce delivery promise) → conclusion.",
-   "mistakes": []
+   "mistakes": [],
+   "units": [
+    {
+     "block": 3,
+     "unit": 10,
+     "title": "Customer Satisfaction"
+    },
+    {
+     "block": 3,
+     "unit": 13,
+     "title": "Effective Logistics Management: Challenges",
+     "part": "13.4 Customer management"
+    }
+   ]
   },
   {
    "id": "cycle",
@@ -145,6 +188,13 @@
    "frame": "Draw the cycle as a circle with LMIS in the middle → explain each activity in two lines → show two links between activities → conclusion.",
    "mistakes": [
     "Explaining the activities one by one without showing how they connect — the question asks why they are interrelated."
+   ],
+   "units": [
+    {
+     "block": 1,
+     "unit": 4,
+     "title": "Logistics Management Cycle"
+    }
    ]
   },
   {
@@ -159,10 +209,18 @@
     "Procurement process and cycle: identify the need → write specifications → find and shortlist suppliers → invite quotations or tenders → evaluate and negotiate → place the purchase order or contract → follow up → receive and inspect → approve the invoice and pay → keep records and rate suppliers.",
     "Inventory control — conceptual framework: stock is held as a buffer against uncertain demand and supply, but it ties up money and space. Balance three costs: ordering, carrying and stock-out. Key decisions: how much to order (EOQ = √(2DS/H)), when to order (reorder level = lead-time demand + safety stock) and how much safety stock to keep.",
     "Techniques: ABC (by value), VED — Vital, Essential, Desirable (by how critical the item is; used for spare parts and medicines), FSN (fast, slow, non-moving), HML (high, medium, low price), SDE (scarce, difficult, easy to obtain), EOQ, JIT, minimum–maximum levels, the two-bin system and perpetual inventory.",
-    "Automation: e-procurement portals, barcodes and RFID, ERP inventory modules with automatic reorder, vendor-managed inventory."
+    "Automation: e-procurement portals, barcodes and RFID, ERP inventory modules with automatic reorder, vendor-managed inventory.",
+    "Inventory control techniques described in the book: ABC analysis, economic order quantity, materials requirements planning (MRP) and VED analysis."
    ],
    "frame": "Meaning → steps as a flow chart or methods as headings → one technique explained with an example → conclusion.",
-   "mistakes": []
+   "mistakes": [],
+   "units": [
+    {
+     "block": 2,
+     "unit": 5,
+     "title": "Procurement of Material and Inventory Control"
+    }
+   ]
   },
   {
    "id": "handling",
@@ -179,7 +237,14 @@
     "Packaging protects goods, makes handling easier, identifies the product and promotes it. Disposing of packaging waste: reduce, reuse, recycle, recover energy, compost, and use landfill only as a last resort; producers carry responsibility under extended producer responsibility (EPR) rules."
    ],
    "frame": "Meaning → significance → types of equipment as headings with an example each → conclusion.",
-   "mistakes": []
+   "mistakes": [],
+   "units": [
+    {
+     "block": 2,
+     "unit": 6,
+     "title": "Material Handling and Packaging"
+    }
+   ]
   },
   {
    "id": "scm",
@@ -195,12 +260,25 @@
     "Business process planning: mapping how work flows (for example order to delivery), removing delays and waste, setting standards and redesigning processes (business process reengineering)."
    ],
    "frame": "Meaning → challenges or tools as headed points with an example → conclusion.",
-   "mistakes": []
+   "mistakes": [],
+   "units": [
+    {
+     "block": 1,
+     "unit": 3,
+     "title": "Logistics and Supply Chain Management: Inter-relationship"
+    },
+    {
+     "block": 3,
+     "unit": 13,
+     "title": "Effective Logistics Management: Challenges",
+     "part": "13.5–13.6"
+    }
+   ]
   },
   {
    "id": "transport",
    "name": "Transportation & Warehousing",
-   "block": 3,
+   "block": 2,
    "kind": "theory",
    "summary": "Modes of transportation, types and functions of warehouses, and documents used in transportation and warehousing.",
    "points": [
@@ -212,7 +290,20 @@
     "Warehouse documents: warehouse receipt, goods received note (GRN), stock or bin card, material issue slip, delivery order, dock receipt."
    ],
    "frame": "Meaning → modes or types as a table (mode, advantage, limitation) → conclusion.",
-   "mistakes": []
+   "mistakes": [],
+   "units": [
+    {
+     "block": 2,
+     "unit": 7,
+     "title": "Transportation, Warehousing and Storage"
+    },
+    {
+     "block": 3,
+     "unit": 13,
+     "title": "Effective Logistics Management: Challenges",
+     "part": "13.3 Efficient transportation"
+    }
+   ]
   },
   {
    "id": "outsourcing",
@@ -224,10 +315,20 @@
     "Logistics outsourcing: contracting logistics work (transport, warehousing, freight forwarding, or the whole function) to a third-party (3PL) or fourth-party (4PL) provider.",
     "Reasons: focus on core business, lower cost, specialist expertise and technology, flexibility to scale, wider network.",
     "Issues: loss of control, dependence on the provider, data confidentiality, service quality, hidden costs, cultural fit, contract terms, measuring performance, and the risk during transition.",
-    "Making it effective: clear objectives and scope, careful choice of provider, service-level agreements with KPIs, shared information systems, a good working relationship and regular reviews."
+    "Making it effective: clear objectives and scope, careful choice of provider, service-level agreements with KPIs, shared information systems, a good working relationship and regular reviews.",
+    "Contract lifecycle management: contract initiation → negotiation → execution → start → operation → renewal, with each stage's activities owned and monitored.",
+    "Types in the book: contract logistics (specialist firms running some or all logistics), open-book contracts (the buyer pays the actual costs plus an agreed margin, with costs open to scrutiny), and outsourcing trends such as BPO and OEM arrangements.",
+    "The book's eight issues for successful outsourcing: define the reasons, outsource a whole business process rather than a single function, recognise buyer and seller roles, write down the operations in detail, set KPIs and accountability, be aware of the risks, plan the change, and actively manage the outsourced operation."
    ],
    "frame": "Meaning → issues as headed points → how to manage them → conclusion.",
-   "mistakes": []
+   "mistakes": [],
+   "units": [
+    {
+     "block": 3,
+     "unit": 12,
+     "title": "Outsourcing Logistics Management: Issues"
+    }
+   ]
   }
  ],
  "questions": [
@@ -903,5 +1004,6 @@
    "k": "th",
    "topic": "customer"
   }
- ]
+ ],
+ "notesSource": "Notes written from the IGNOU BPAS-184 study material."
 }
