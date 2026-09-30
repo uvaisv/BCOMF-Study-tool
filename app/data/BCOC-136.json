@@ -65,6 +65,10 @@
         { "block": 2, "unit": 5, "title": "Salaries-I" },
         { "block": 2, "unit": 6, "title": "Salaries-II" },
         { "block": 2, "unit": 7, "title": "Salaries-III" }
+      ],
+      "examples": [
+        "Example: HRA exemption (Mumbai)\nBasic ₹30,000 a month and DA ₹10,000 (part of retirement benefits), so salary for HRA = ₹4,80,000 a year. HRA received ₹1,80,000; rent paid ₹2,16,000.\nExempt = least of: actual HRA ₹1,80,000; rent − 10% of salary = 2,16,000 − 48,000 = ₹1,68,000; 50% of salary (metro) = ₹2,40,000 → ₹1,68,000.\nTaxable HRA = 1,80,000 − 1,68,000 = ₹12,000.",
+        "Example: gratuity and commuted pension on retirement\nAn employee covered by the Gratuity Act retires after 20 years 7 months; last month's salary (basic + DA) ₹50,000; gratuity received ₹8,00,000 (well below the statutory limit).\nService counts as 21 years (over 6 months rounds up). Exempt = least of 8,00,000 and 15/26 × 50,000 × 21 = ₹6,05,769 → taxable ₹1,94,231.\nThe same (non-government) employee commutes half the pension for ₹3,00,000, so the full commuted value is ₹6,00,000. With gratuity received, ⅓ of that, ₹2,00,000, is exempt → ₹1,00,000 taxable."
       ]
     },
     {
@@ -92,6 +96,10 @@
         { "block": 1, "unit": 1, "title": "Basic Concepts-I" },
         { "block": 1, "unit": 2, "title": "Basic Concepts-II" },
         { "block": 1, "unit": 4, "title": "Exempted Incomes" }
+      ],
+      "examples": [
+        "Example: previous year and assessment year\nIncome earned from 1 April 2024 to 31 March 2025 (the previous year) is assessed and taxed in assessment year 2025-26. A person leaving India for good in the middle of the year can instead be taxed in the same year.",
+        "Example: partly agricultural income and casual income\nA company grows and manufactures tea and earns ₹10 lakh. 40% (₹4 lakh) is business income and taxed; 60% (₹6 lakh) is agricultural income and exempt.\nA person wins ₹1,00,000 in a TV game show. It is casual income, taxed at a flat 30% with no expenses deducted and no basic exemption."
       ]
     },
     {
@@ -119,6 +127,10 @@
       "mistakes": ["Indexing a short-term asset.", "Forgetting the CGAS deposit when computing the exemption."],
       "units": [
         { "block": 4, "unit": 12, "title": "Capital Gains" }
+      ],
+      "examples": [
+        "Example: LTCG on a house, with Section 54 (rules as in the course material)\nA house was bought in 2012-13 for ₹20 lakh (CII 200) and sold in 2023-24 (CII 348) for ₹60 lakh; brokerage ₹1 lakh.\nNet consideration = ₹59 lakh. Indexed cost = 20 × 348/200 = ₹34.8 lakh. LTCG = 59 − 34.8 = ₹24.2 lakh.\nThe seller buys a new house for ₹15 lakh and deposits ₹5 lakh in the Capital Gains Account Scheme before the return due date. Exemption u/s 54 = ₹20 lakh → taxable LTCG = ₹4.2 lakh.\nNote: for transfers from 23 July 2024 the law removed indexation for most assets (land and buildings bought before that date by resident individuals and HUFs keep a choice).",
+        "Example: proportionate exemption under Section 54F\nUnlisted shares sold: LTCG ₹10 lakh, net consideration ₹40 lakh. The seller invests ₹30 lakh in a residential house.\nExempt = 10 × 30/40 = ₹7.5 lakh; taxable LTCG = ₹2.5 lakh. Had all ₹40 lakh been invested, the whole gain would be exempt."
       ]
     },
     {
@@ -140,6 +152,10 @@
       "mistakes": ["Deducting municipal tax paid by the tenant."],
       "units": [
         { "block": 3, "unit": 8, "title": "Income from House Property" }
+      ],
+      "examples": [
+        "Example: income from a let-out house\nMunicipal value ₹1,20,000; fair rent ₹1,50,000; standard rent ₹1,40,000; actual rent ₹11,000 a month (₹1,32,000). Municipal tax paid by the owner ₹10,000; interest on a housing loan ₹50,000.\nExpected rent = higher of municipal value and fair rent (₹1,50,000), capped at standard rent → ₹1,40,000.\nGAV = higher of expected rent and actual rent = ₹1,40,000. NAV = 1,40,000 − 10,000 = ₹1,30,000.\nLess 30% standard deduction ₹39,000 and interest ₹50,000 → income from house property = ₹41,000.",
+        "Example: pre-construction interest\nInterest of ₹1,00,000 was paid on the loan before the house was completed. It is allowed in five equal instalments of ₹20,000, from the year construction is completed, on top of that year's own interest."
       ]
     },
     {
@@ -164,7 +180,11 @@
         { "block": 5, "unit": 15, "title": "Deductions from Gross Total Income" },
         { "block": 5, "unit": 16, "title": "Assessment of Individuals" }
       ],
-      "figures": ["total-income"]
+      "figures": ["total-income"],
+      "examples": [
+        "Example: from heads of income to total income (old tax regime)\nSalary (after deductions u/s 16) ₹8,00,000 + house property ₹41,000 + bank interest ₹20,000 = GTI ₹8,61,000.\nChapter VI-A deductions: 80C — PPF ₹1,00,000 + LIC premium ₹30,000 = ₹1,30,000 (within the ₹1.5 lakh limit); 80D — health insurance ₹20,000 paid by cheque; 80G — ₹5,000 to the PM National Relief Fund (100%, no limit).\nTotal deductions ₹1,55,000 → total income = ₹7,06,000.",
+        "Example: deductions do not reduce special-rate income\nA person's GTI is ₹3,00,000, of which ₹2,00,000 is a lottery winning. 80C investments of ₹1,50,000 can be set only against the other ₹1,00,000. So total income is ₹2,00,000 (the lottery), taxed at 30%."
+      ]
     },
     {
       "id": "residential-status",
@@ -186,6 +206,10 @@
       "mistakes": ["Counting the day of departure and arrival wrongly — both days count as days in India."],
       "units": [
         { "block": 1, "unit": 3, "title": "Residential Status and Tax Liability" }
+      ],
+      "examples": [
+        "Example: is a foreign visitor resident?\nA foreign citizen stays in India for 70 days in 2024-25, and 390 days in the four years before. They fail the 182-day test, but satisfy 60 days in the year plus 365 days in the four preceding years → resident.\nThey were non-resident in 9 of the 10 preceding years → resident but not ordinarily resident (RNOR).",
+        "Example: what income is taxed in India?\nSalary earned in India ₹5 lakh; rent from a London flat received in London ₹2 lakh; profit of a Dubai business controlled from India ₹3 lakh.\nROR: all three = ₹10 lakh. RNOR: Indian income ₹5 lakh + foreign business controlled from India ₹3 lakh = ₹8 lakh. Non-resident: only Indian income = ₹5 lakh."
       ]
     },
     {
@@ -209,6 +233,10 @@
       "mistakes": ["Allowing expenses on lottery tickets against winnings."],
       "units": [
         { "block": 4, "unit": 13, "title": "Income from Other Sources" }
+      ],
+      "examples": [
+        "Example: grossing up a lottery win\nA person receives ₹70,000 from a lottery after TDS. Gross winning = 70,000 ÷ 0.70 = ₹1,00,000, taxed at 30% (₹30,000), against which the TDS of ₹30,000 is given credit. No expense or loss can be set against it.",
+        "Example: dividend and letting of machinery with a building\nDividend ₹50,000; interest paid on a loan taken to buy those shares ₹15,000. The interest deduction is capped at 20% of the dividend (₹10,000) → taxable dividend ₹40,000.\nA factory building is let along with its machinery for ₹2,00,000 (inseparable letting); repairs ₹20,000 and depreciation ₹30,000 → income from other sources ₹1,50,000."
       ]
     },
     {
@@ -230,6 +258,10 @@
       "mistakes": [],
       "units": [
         { "block": 4, "unit": 14, "title": "Aggregation of Incomes (Clubbing) and Set-off of Losses" }
+      ],
+      "examples": [
+        "Example: clubbing\nMr A gifts ₹5 lakh to his wife, who puts it in a fixed deposit and earns ₹40,000 interest → clubbed with Mr A's income.\nTheir minor child earns ₹10,000 interest on a deposit made by the parents → ₹1,500 is exempt and ₹8,500 is clubbed with the parent whose income is higher. If the child had earned it by their own skill (say, as a child actor), it would not be clubbed.",
+        "Example: set-off and carry forward\nSalary ₹6,00,000; income from house property ₹1,00,000; STCG ₹50,000; non-speculative business loss ₹3,00,000; long-term capital loss ₹40,000.\nThe business loss cannot be set off against salary, so it is set off against house property ₹1,00,000 and STCG ₹50,000; the remaining ₹1,50,000 is carried forward 8 years against business income only.\nThe long-term capital loss cannot be set off against STCG; it is carried forward 8 years, to be set off only against LTCG."
       ]
     },
     {
@@ -255,6 +287,10 @@
         { "block": 5, "unit": 18, "title": "Filing of Return and Tax Authorities" },
         { "block": 5, "unit": 19, "title": "Online Filing of Returns" },
         { "block": 5, "unit": 20, "title": "Leading Cases Decided by Supreme Court" }
+      ],
+      "examples": [
+        "Example: filing late\nA salaried person with one house and bank interest (total income ₹7 lakh) should use ITR-1. They file after the due date: they pay a late fee u/s 234F (₹5,000; ₹1,000 if total income does not exceed ₹5 lakh) and interest u/s 234A on unpaid tax, and file a belated return u/s 139(4).",
+        "Example: marginal relief on surcharge (old-regime slabs, before cess)\nIncome ₹50.1 lakh — just ₹10,000 above the ₹50 lakh surcharge threshold. Tax on ₹50 lakh = ₹13,12,500. Tax on ₹50.1 lakh = ₹13,15,500, plus 10% surcharge = ₹14,47,050.\nMarginal relief caps the tax at 13,12,500 + 10,000 = ₹13,22,500, so the relief is ₹1,24,550 — the extra tax cannot exceed the extra ₹10,000 of income."
       ]
     },
     {
@@ -279,6 +315,11 @@
         { "block": 3, "unit": 9, "title": "Profits and Gains of Business or Profession-I" },
         { "block": 3, "unit": 10, "title": "Profits and Gains of Business or Profession-II" },
         { "block": 3, "unit": 11, "title": "Profits and Gains of Business or Profession-III" }
+      ],
+      "examples": [
+        "Example: depreciation on a block of assets\nPlant and machinery block (15%): opening WDV ₹10,00,000. A new machine costing ₹4,00,000 is bought in October and used for fewer than 180 days in the year.\nDepreciation = 15% × 10,00,000 + 7.5% (half rate) × 4,00,000 = 1,50,000 + 30,000 = ₹1,80,000.",
+        "Example: presumptive income u/s 44AD\nTurnover ₹1.5 crore: ₹90 lakh received by bank or digital means, ₹60 lakh in cash.\nPresumed profit = 6% × 90 lakh + 8% × 60 lakh = 5.4 + 4.8 = ₹10.2 lakh. No detailed books of account need to be kept.",
+        "Example: Section 43B\nBonus for the year is paid to staff after the year ends but before the return due date → allowed in the same year. If it is paid after the return due date, it is allowed only in the year it is actually paid."
       ]
     },
     {
@@ -298,6 +339,9 @@
       "mistakes": [],
       "units": [
         { "block": 5, "unit": 17, "title": "Assessment of Firms" }
+      ],
+      "examples": [
+        "Example: interest to a partner under Section 40(b)\nThe deed allows 15% interest on capital; a partner's capital is ₹5,00,000, so the firm pays ₹75,000.\nThe firm may deduct only 12% = ₹60,000; ₹15,000 is disallowed and added back to the firm's income.\nIn the partner's hands, the ₹60,000 allowed to the firm is taxed as business income, while their share of the firm's profit is exempt u/s 10(2A)."
       ]
     }
   ],

@@ -77,6 +77,9 @@
      "unit": 15,
      "title": "Company Secretary"
     }
+   ],
+   "examples": [
+    "Example: must the company appoint one, and who is liable?\nA public company has paid-up capital of ₹12 crore. Because this is ₹10 crore or more, it must appoint a whole-time company secretary as key managerial personnel, by a board resolution.\nThe company fails to file its annual return with the Registrar. The company secretary, as an officer in default, can be penalised along with the company. If the secretary had also knowingly signed a false return, Section 448 (false statement) would apply as well."
    ]
   },
   {
@@ -111,6 +114,10 @@
      "unit": 14,
      "title": "Managerial Remuneration"
     }
+   ],
+   "examples": [
+    "Example: managerial remuneration limits (Section 197)\nA public company's net profit is ₹10 crore.\nTotal managerial remuneration: up to 11% = ₹1.1 crore.\nOne managing director: up to 5% = ₹50 lakh. All managing and whole-time directors together: up to 10% = ₹1 crore.\nNon-executive directors: up to 1% = ₹10 lakh (3% if there is no executive director). Sitting fees are outside these limits. Paying more needs a special resolution.",
+    "Example: disqualification\nA director is convicted and sentenced to one year's imprisonment. They cannot be appointed a director for 5 years after release. Had the sentence been 7 years or more, they could never be appointed."
    ]
   },
   {
@@ -121,7 +128,7 @@
    "summary": "Kinds of meetings, AGM and EGM, requisites of a valid meeting, notice, quorum, chairman, proxy, board meetings, and ordinary and special resolutions.",
    "points": [
     "Kinds: shareholders' meetings (annual general meeting, extraordinary general meeting, class meetings), board and committee meetings, creditors' meetings.",
-    "AGM (Sec 96): every company except a one-person company; first AGM within 9 months of the end of the first financial year, later ones within 6 months of year-end and not more than 15 months apart; in business hours on a working day at the registered office or in the same city. Ordinary business: financial statements, dividend, directors retiring by rotation, auditors.",
+    "AGM (Sec 96): every company except a one-person company; first AGM within 9 months of the end of the first financial year, later ones within 6 months of year-end and not more than 15 months apart; in business hours (9 a.m. to 6 p.m.) on any day that is not a national holiday, at the registered office or elsewhere in the same city. Ordinary business: financial statements, dividend, directors retiring by rotation, auditors.",
     "EGM (Sec 100): called by the board, or on requisition by members holding at least one-tenth of paid-up capital; if the board does not act within 21 days, the requisitionists may call it within 3 months; the Tribunal can also order one (Sec 98).",
     "Valid meeting: called by proper authority, proper notice (21 clear days, shorter with consent — Sec 101) with an explanatory statement for special business (Sec 102), quorum, a chairman, agenda, resolutions passed properly, minutes kept.",
     "Quorum (Sec 103): private company 2 members; public company 5, 15 or 30 members depending on whether it has up to 1,000, up to 5,000 or more members. No quorum within half an hour: the meeting is adjourned to the same day next week (or as the board decides); a requisitioned meeting is cancelled.",
@@ -138,6 +145,10 @@
      "unit": 16,
      "title": "Meetings of Shareholders and Board"
     }
+   ],
+   "examples": [
+    "Example: has the special resolution passed?\nAt a general meeting, 300 votes are cast for a resolution to change the company's name and 100 against. For a special resolution, votes for must be at least three times the votes against: 300 ≥ 3 × 100, so it passes.\nWith 290 for and 100 against it would fail — though 290 would easily pass an ordinary resolution (simple majority).",
+    "Example: AGM timing and quorum\nA company's financial year ends on 31 March 2025, so its AGM must be held by 30 September 2025 (within 6 months), and within 15 months of the previous AGM. It must be held between 9 a.m. and 6 p.m. on a day that is not a national holiday.\nIt is a public company with 3,000 members, so the quorum is 15 members present in person. If there is no quorum within half an hour, the meeting stands adjourned to the same day next week."
    ]
   },
   {
@@ -175,6 +186,10 @@
      "unit": 10,
      "title": "Issue and Allotment of Shares"
     }
+   ],
+   "examples": [
+    "Example: how much can be bought back?\nPaid-up capital ₹10 crore; free reserves ₹30 crore; total ₹40 crore.\nWith a special resolution: up to 25% = ₹10 crore. With only a board resolution: up to 10% = ₹4 crore.\nAfter the buyback, debt may not exceed twice the capital and free reserves (2 : 1), and the bought-back shares must be extinguished.",
+    "Example: premium, rights and bonus\nA company issues 1,00,000 shares of ₹10 at ₹15: ₹10 lakh goes to share capital and ₹5 lakh to the securities premium account, which it may later use to issue fully paid bonus shares.\nRights issue '1 for 4': a member holding 400 shares may buy 100 new shares at the offer price, or renounce the right to someone else. A bonus issue would give the same member free shares from reserves."
    ]
   },
   {
@@ -200,6 +215,10 @@
      "unit": 6,
      "title": "Memorandum of Association"
     }
+   ],
+   "examples": [
+    "Example: ultra vires (Ashbury Railway Carriage v Riche, 1875)\nA company's objects were to make and sell railway carriages and related business. Its directors agreed to finance the building of a railway line in Belgium. The House of Lords held the contract ultra vires and void — outside the objects — and even a later approval by all the shareholders could not make it valid.",
+    "Example: changing the name\n'Sunrise Textiles Limited' wants to become 'Sunrise Fabrics Limited'. It passes a special resolution and gets the Registrar's approval (for the Central Government), and a fresh certificate of incorporation is issued. Its contracts, loans and pending court cases continue unaffected — it is still the same company."
    ]
   },
   {
@@ -223,6 +242,10 @@
      "unit": 1,
      "title": "Nature and Types of Companies"
     }
+   ],
+   "examples": [
+    "Example: separate legal entity (Salomon v Salomon, 1897)\nMr Salomon sold his boot business to a company in which he held almost all the shares, and was also given secured debentures. When the company failed, the unsecured creditors said the company was really Salomon. The House of Lords held the company was a separate person; Salomon, as a secured creditor, was paid before them.",
+    "Example: lifting the corporate veil (Gilford Motor v Horne)\nA former managing director had promised not to solicit his old employer's customers. He set up a company, in his wife's name, to do exactly that. The court treated the company as a sham to evade his promise and granted an injunction against both him and the company."
    ]
   },
   {
@@ -247,6 +270,10 @@
      "unit": 7,
      "title": "Articles of Association"
     }
+   ],
+   "examples": [
+    "Example: indoor management (Royal British Bank v Turquand, 1856)\nA company's articles let the directors borrow on bonds if a general meeting passed a resolution allowing it. The directors issued a bond to the bank without such a resolution. The company was still bound: the bank could assume that this internal step had been completed.",
+    "Example: an exception — forgery (Ruben v Great Fingall)\nA company secretary forged directors' signatures on a share certificate and gave it as security for a loan. The company was not bound: the doctrine of indoor management does not cover forgery, because a forged document is a nullity."
    ]
   },
   {
@@ -277,6 +304,10 @@
      "title": "Nature and Types of Companies",
      "part": "1.9–1.11 Kinds of companies"
     }
+   ],
+   "examples": [
+    "Examples: classify the company\nLIC, created by its own Act of Parliament → statutory company. A sports club whose members promise ₹1,000 each if it is wound up → company limited by guarantee. A Ltd holds 60% of the voting power of B Ltd → B is A's subsidiary. A company in which the government holds 51% of the paid-up capital → government company.",
+    "Example: private company to public company\nA family-owned private company with 5 members and 2 directors wants to raise money from the public. It passes a special resolution to remove the restrictions in its articles, increases its members to at least 7 and directors to at least 3, drops 'Private' from its name, and files with the Registrar before issuing a prospectus."
    ]
   },
   {
@@ -312,6 +343,10 @@
      "unit": 19,
      "title": "Audit"
     }
+   ],
+   "examples": [
+    "Example: paying a declared dividend\nThe AGM declares a dividend on 10 September. The money must be put into a separate bank account within 5 days (by 15 September) and paid to shareholders within 30 days (by 10 October).\nDividend still unpaid after that goes to an Unpaid Dividend Account, and whatever stays unclaimed there for 7 years goes to the Investor Education and Protection Fund.",
+    "Example: who cannot be appointed auditor?\nA chartered accountant who is an employee of the company, a partner of one of its officers, or who already audits 20 companies cannot be appointed. Nor can an audit firm organised as a body corporate other than an LLP."
    ]
   },
   {
@@ -336,6 +371,10 @@
      "unit": 12,
      "title": "Membership of a Company"
     }
+   ],
+   "examples": [
+    "Examples: how people become members\nA signs the memorandum when the company is formed → a member from registration, even before shares are allotted.\nB buys shares on the stock exchange → becomes a member when shown as the beneficial owner in the depository's records.\nC inherits shares on her father's death → becomes a member by transmission.\nA minor can hold only fully paid shares, through a guardian.",
+    "Example: using a member's rights\nMinority shareholders find the majority transferring company property to themselves at low prices. They can apply to the Tribunal for relief against oppression and mismanagement (Section 241)."
    ]
   },
   {
@@ -359,6 +398,10 @@
      "unit": 11,
      "title": "Transfer and Transmission of Shares"
     }
+   ],
+   "examples": [
+    "Example: transfer vs transmission\nTransfer: Ravi sells 500 physical shares to Anu. They sign and stamp the transfer form (SH-4), and it is lodged with the company within 60 days with the share certificate. The board registers it and issues a new certificate within a month.\nTransmission: Ravi dies and his son produces the succession certificate. The shares pass to the son by operation of law — no transfer form and no stamp duty.",
+    "Example: a forged transfer\nX's signature is forged on a transfer of his shares to Y, and the company registers Y. The transfer is a nullity: X must be restored to the register. If Y had sold to Z on a certificate the company issued, Z may claim damages from the company, which in turn can recover from whoever lodged the forged transfer."
    ]
   },
   {
@@ -389,6 +432,10 @@
      "unit": 4,
      "title": "Formation of a Company"
     }
+   ],
+   "examples": [
+    "Example: pre-incorporation contract (Kelner v Baxter)\nPromoters bought wine 'on behalf of' a hotel company that was still being formed. The company was later formed, 'ratified' the purchase, used the wine and then failed. The promoters were held personally liable: a company cannot ratify a contract made before it existed.",
+    "Example: secret profit\nA promoter buys land for ₹50 lakh and, without disclosing it, sells it to the new company for ₹80 lakh. They must account to the company for the ₹30 lakh secret profit, or the company may rescind the purchase."
    ]
   },
   {
@@ -415,6 +462,10 @@
      "unit": 8,
      "title": "Prospectus"
     }
+   ],
+   "examples": [
+    "Example: minimum subscription\nA company's prospectus states a minimum subscription of ₹90 lakh for a ₹1 crore issue. Thirty days after the issue opens it has received only ₹80 lakh. It cannot allot any shares and must refund the application money.",
+    "Example: deemed prospectus and book building\nA company allots its whole issue to an issuing house, which offers the shares to the public two months later. That offer document is deemed to be the company's prospectus, with the same liability for misstatements.\nBook building: the price band is ₹100–₹110; after bids come in, the price is fixed at ₹108, where demand covers the issue."
    ]
   },
   {
@@ -443,6 +494,9 @@
      "unit": 5,
      "title": "Authorities under Companies Act, 2013"
     }
+   ],
+   "examples": [
+    "Example: winding up by the Tribunal, and appeals\nA company has filed no financial statements or annual returns for five consecutive years. The Registrar petitions the Tribunal (NCLT), which orders winding up and appoints a liquidator to take custody of the assets, realise them and pay creditors in order of priority.\nA party aggrieved by the NCLT's order may appeal to the NCLAT within 45 days, and then to the Supreme Court on a question of law within 60 days of the NCLAT's order."
    ]
   }
  ],
