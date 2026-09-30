@@ -63,7 +63,8 @@
       "units": [
         { "block": 3, "unit": 6, "title": "Production with One Variable Input" },
         { "block": 3, "unit": 7, "title": "Production with Two and More Variable Inputs" }
-      ]
+      ],
+      "figures": ["production"]
     },
     {
       "id": "price-effect",
@@ -83,7 +84,8 @@
       "mistakes": ["Drawing the compensated budget line not parallel to the new one."],
       "units": [
         { "block": 2, "unit": 5, "title": "Consumer Behaviour: Ordinal Approach", "part": "5.9–5.10" }
-      ]
+      ],
+      "figures": ["price-effect"]
     },
     {
       "id": "demand-supply",
@@ -111,7 +113,8 @@
       "units": [
         { "block": 1, "unit": 3, "title": "Demand and Supply in Practice" },
         { "block": 1, "unit": 2, "title": "Demand and Supply Analysis", "part": "2.2–2.8" }
-      ]
+      ],
+      "figures": ["demand-supply"]
     },
     {
       "id": "monopolistic-oligopoly",
@@ -134,7 +137,8 @@
       "units": [
         { "block": 4, "unit": 11, "title": "Monopolistic Competition: Price and Output Decisions" },
         { "block": 4, "unit": 12, "title": "Oligopoly: Price and Output Decisions" }
-      ]
+      ],
+      "figures": ["kinked"]
     },
     {
       "id": "perfect-competition",
@@ -156,7 +160,8 @@
       "mistakes": [],
       "units": [
         { "block": 4, "unit": 9, "title": "Perfect Competition: Firm and Industry Equilibrium" }
-      ]
+      ],
+      "figures": ["perfect-competition"]
     },
     {
       "id": "factor-markets",
@@ -182,7 +187,8 @@
         { "block": 5, "unit": 13, "title": "Factor Market and Pricing Decisions" },
         { "block": 5, "unit": 14, "title": "Labour Market" },
         { "block": 5, "unit": 15, "title": "Land Market" }
-      ]
+      ],
+      "figures": ["min-wage"]
     },
     {
       "id": "welfare-failure",
@@ -205,7 +211,8 @@
       "units": [
         { "block": 6, "unit": 16, "title": "Welfare: Allocative Efficiency under Perfect Competition" },
         { "block": 6, "unit": 17, "title": "Efficiency of the Market Mechanism: Market Failure and the Role of the State" }
-      ]
+      ],
+      "figures": ["externality"]
     },
     {
       "id": "costs",
@@ -225,7 +232,8 @@
       "mistakes": ["Drawing LAC through the minimum of every SAC (it touches only the minimum of the optimal plant)."],
       "units": [
         { "block": 3, "unit": 8, "title": "The Cost of Production" }
-      ]
+      ],
+      "figures": ["costs"]
     },
     {
       "id": "elasticity",
@@ -247,7 +255,8 @@
       "mistakes": ["Dropping the minus sign without saying you use absolute values."],
       "units": [
         { "block": 1, "unit": 2, "title": "Demand and Supply Analysis", "part": "2.9–2.12" }
-      ]
+      ],
+      "figures": ["elasticity"]
     },
     {
       "id": "utility",
@@ -268,7 +277,8 @@
       "mistakes": [],
       "units": [
         { "block": 2, "unit": 4, "title": "Consumer Behaviour: Cardinal Approach" }
-      ]
+      ],
+      "figures": ["utility"]
     },
     {
       "id": "monopoly",
@@ -290,7 +300,8 @@
       "mistakes": [],
       "units": [
         { "block": 4, "unit": 10, "title": "Monopoly: Price and Output Decisions" }
-      ]
+      ],
+      "figures": ["monopoly"]
     },
     {
       "id": "indifference",
@@ -311,7 +322,8 @@
       "mistakes": [],
       "units": [
         { "block": 2, "unit": 5, "title": "Consumer Behaviour: Ordinal Approach", "part": "5.2–5.8" }
-      ]
+      ],
+      "figures": ["indifference"]
     },
     {
       "id": "ppc-basics",
@@ -332,7 +344,8 @@
       "mistakes": [],
       "units": [
         { "block": 1, "unit": 1, "title": "Introduction to Economics and Economy" }
-      ]
+      ],
+      "figures": ["ppc"]
     }
   ],
   "questions": [

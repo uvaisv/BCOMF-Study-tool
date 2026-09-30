@@ -23,6 +23,9 @@
   --radius: 14px;
   --img-filter: none;
   --img-blend: multiply;
+  --fig-1: #2a78d6;   /* diagram curves: validated as a set for colour-blind separation */
+  --fig-2: #eb6834;
+  --fig-3: #1baf7a;
   color-scheme: light;
 }
 
@@ -51,6 +54,9 @@
     --shadow: none;
     --img-filter: invert(1) hue-rotate(180deg) brightness(.9);
     --img-blend: screen;
+    --fig-1: #3987e5;
+    --fig-2: #d95926;
+    --fig-3: #199e70;
     color-scheme: dark;
   }
 }
@@ -79,6 +85,9 @@
   --shadow: none;
   --img-filter: invert(1) hue-rotate(180deg) brightness(.9);
   --img-blend: screen;
+  --fig-1: #3987e5;
+  --fig-2: #d95926;
+  --fig-3: #199e70;
   color-scheme: dark;
 }
 
@@ -309,6 +318,26 @@ details summary { cursor: pointer; color: var(--accent); font-weight: 600; paddi
 .popts li::before { content: "(" counter(opt) ") "; display: inline-block; width: 2em; text-indent: 0; }
 .popts li { margin: 3px 0; }
 .pimg { display: block; width: 100%; max-width: 572px; height: auto; filter: var(--img-filter); mix-blend-mode: var(--img-blend); }
+
+/* Diagrams (js/figures.js) */
+.fig { margin: 0 0 12px; }
+.fig-title { font-weight: 700; margin-bottom: 8px; }
+.fig svg { display: block; width: 100%; max-width: 460px; height: auto; margin: 0 auto; font-family: inherit; }
+.fig-note { margin: 10px 0 0; font-size: .9rem; color: var(--muted); }
+.fig .ax { fill: none; stroke: var(--muted); stroke-width: 1.25; }
+.fig .guide { fill: none; stroke: var(--muted); stroke-width: 1; stroke-dasharray: 3 3; }
+.fig .brk { fill: none; stroke: var(--text); stroke-width: 1; }
+.fig .c1, .fig .c2, .fig .c3, .fig .c4 { fill: none; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+.fig .c1 { stroke: var(--fig-1); }
+.fig .c2 { stroke: var(--fig-2); }
+.fig .c3 { stroke: var(--fig-3); }
+.fig .c4 { stroke: var(--muted); stroke-dasharray: 6 4; }
+.fig .a1 { fill: var(--fig-1); opacity: .16; }
+.fig .a2 { fill: var(--fig-2); opacity: .2; }
+.fig .dot { fill: var(--text); stroke: var(--surface); stroke-width: 2; }
+.fig .lbl { fill: var(--text); font-size: 11px; font-weight: 600; }
+.fig .lbl.sm { font-size: 10px; font-weight: 500; }
+.fig .tick, .fig .axl { fill: var(--muted); font-size: 10px; }
 
 /* Settings */
 .seg { display: flex; flex-wrap: wrap; gap: 8px; }

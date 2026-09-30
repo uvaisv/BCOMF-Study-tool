@@ -161,6 +161,14 @@
       `<a class="paper" ${paperHref(code, p)} target="_blank" rel="noopener"><span class="paper-s">${sessionLabel(p.s)}</span><span class="paper-l">PDF ↓</span></a>`).join("")}</div>`;
   }
 
+  // Diagrams from js/figures.js that a topic lists in "figures"; captions explain how to read them.
+  function figuresHtml(t) {
+    const figs = (t.figures || []).map((id) => window.FIGURES && window.FIGURES[id]).filter(Boolean);
+    if (!figs.length) return "";
+    return `<h2>${figs.length > 1 ? "Diagrams" : "Diagram"}</h2>${figs.map((f) => `
+      <figure class="card fig"><figcaption class="fig-title">${esc(f.title)}</figcaption>${f.draw()}<p class="fig-note">${esc(f.caption)}</p></figure>`).join("")}`;
+  }
+
   /* ---------- views ---------- */
   async function viewHome() {
     const { courses } = await load("data/courses.json");
@@ -329,6 +337,7 @@
 
       <h2>Key points</h2>
       <section class="card"><ul class="points">${t.points.map((p) => `<li>${esc(p)}</li>`).join("")}</ul></section>
+${figuresHtml(t)}
 
       ${t.method ? `<h2>How to solve</h2>
       <section class="card"><ol class="steps">${t.method.map((p) => `<li>${esc(p)}</li>`).join("")}</ol></section>` : ""}

@@ -12,7 +12,7 @@ Built around one rule (see `CLAUDE.md`): **help students study — never add set
 - **Settings** (gear in the top bar): theme, show the welcome note again, and the disclaimer.
 - **Installable**: on a phone, *Add to Home screen* / *Install app* gives an icon that opens full-screen without the browser's address bar. Pages already opened still load offline.
 - **Course page** opens straight on **Study these first** — the smallest set of topics that has carried enough marks to answer the paper (worked out per part when the paper is split into parts). Then the latest past papers (one tap to the PDF) and the other topics in priority order.
-- **Topic page**: where the topic is in the IGNOU study material (block and unit; unit only where the book has no blocks), key points, how to solve, formulas, how to write the answer, common mistakes, and an **Asked in past papers** button that opens every past question on it, most important first, on its own page. Tapping a question opens **just that question inside the app** — term, question number, printed marks and the part asked — with a button to download the full paper. **Next topic** keeps you moving; **Mark as done** is optional.
+- **Topic page**: where the topic is in the IGNOU study material (block and unit; unit only where the book has no blocks), key points, an exam-style **diagram** where the topic has one (all BECC-101 topics; product life cycle, break-even chart, stress–performance curve), how to solve, formulas, how to write the answer, common mistakes, and an **Asked in past papers** button that opens every past question on it, most important first, on its own page. Tapping a question opens **just that question inside the app** — term, question number, printed marks and the part asked — with a button to download the full paper. **Next topic** keeps you moving; **Mark as done** is optional.
 - **Plan**: one tap for the time left (3 hours, 6 hours, 2 days, 1 week) and the schedule is there — no settings.
 - **Exam tips** and **Past papers** tabs.
 
@@ -35,6 +35,7 @@ To publish on Vercel, import the repo with Framework Preset **Other**, no build 
 ```
 app/
   index.html, css/, js/app.js
+  js/figures.js           topic diagrams, drawn as SVG from equations; a topic lists them in "figures"
   manifest.webmanifest, sw.js, icons/   home-screen app: name, icon, full-screen launch, offline cache
   data/courses.json       all courses (year, exam format, paper count)
   data/papers.json        past-paper links per course (built from question-papers/index.csv)

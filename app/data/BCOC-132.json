@@ -97,7 +97,8 @@
       "mistakes": ["Skipping the PLC graph."],
       "units": [
         { "block": 5, "unit": 18, "title": "Marketing Management" }
-      ]
+      ],
+      "figures": ["plc"]
     },
     {
       "id": "leadership",
