@@ -98,7 +98,13 @@
    "formula": [
     "Value of issue = Σ (units taken from each lot × that lot's rate)"
    ],
-   "frame": "Stores ledger with columns Receipts (qty, rate, amount) | Issues (qty, rate, amount) | Balance (qty, rate, amount)."
+   "frame": "Stores ledger with columns Receipts (qty, rate, amount) | Issues (qty, rate, amount) | Balance (qty, rate, amount).",
+   "units": [
+    {
+     "unit": 5,
+     "title": "Pricing the Issue of Materials"
+    }
+   ]
   },
   {
    "id": "process",
@@ -128,7 +134,17 @@
     "Cost per unit = (Total cost − Scrap value of normal loss) ÷ (Input − Normal loss units)",
     "Equivalent units = Completed units + (WIP units × % complete)"
    ],
-   "frame": "Working table for normal loss and cost per unit → Process I account → Process II account → Abnormal loss/gain account."
+   "frame": "Working table for normal loss and cost per unit → Process I account → Process II account → Abnormal loss/gain account.",
+   "units": [
+    {
+     "unit": 15,
+     "title": "Process Costing"
+    },
+    {
+     "unit": 17,
+     "title": "Valuation of Work-in-Progress"
+    }
+   ]
   },
   {
    "id": "labour",
@@ -156,7 +172,17 @@
     "Rowan earnings = Time taken × Rate + (Time saved ÷ Time allowed) × Time taken × Rate",
     "Labour turnover (separation) = Separations ÷ Average workers × 100"
    ],
-   "frame": "Meaning → methods or causes as headings → conclusion; for wage plans, show the calculation for each worker."
+   "frame": "Meaning → methods or causes as headings → conclusion; for wage plans, show the calculation for each worker.",
+   "units": [
+    {
+     "unit": 6,
+     "title": "Labour: Basic Concepts"
+    },
+    {
+     "unit": 7,
+     "title": "Accounting for Labour"
+    }
+   ]
   },
   {
    "id": "purchase",
@@ -173,7 +199,13 @@
     "Advantages: no stock-outs or overstocking, less waste and theft, lower investment in stock, accurate material costs."
    ],
    "mistakes": [],
-   "frame": "Steps as a flow chart or headings → advantages → conclusion."
+   "frame": "Steps as a flow chart or headings → advantages → conclusion.",
+   "units": [
+    {
+     "unit": 3,
+     "title": "Procurement, Storage and Issue"
+    }
+   ]
   },
   {
    "id": "contract",
@@ -204,7 +236,17 @@
     "Notional profit = (Work certified + Uncertified work) − Cost of work done",
     "Profit to P&L (over 50%) = 2/3 × Notional profit × Cash received ÷ Work certified"
    ],
-   "frame": "Contract account in T-form → working note for profit to P&L → WIP in the Balance Sheet."
+   "frame": "Contract account in T-form → working note for profit to P&L → WIP in the Balance Sheet.",
+   "units": [
+    {
+     "unit": 13,
+     "title": "Job Costing"
+    },
+    {
+     "unit": 14,
+     "title": "Contract Costing"
+    }
+   ]
   },
   {
    "id": "operating",
@@ -232,7 +274,13 @@
     "Passenger-km = Distance × Trips × Days × Vehicles × Seats × Occupancy %",
     "Cost per passenger-km = Total operating cost ÷ Total passenger-km"
    ],
-   "frame": "Operating cost sheet (standing, maintenance, running) → divide by total km, passenger-km or ton-km."
+   "frame": "Operating cost sheet (standing, maintenance, running) → divide by total km, passenger-km or ton-km.",
+   "units": [
+    {
+     "unit": 18,
+     "title": "Service Costing"
+    }
+   ]
   },
   {
    "id": "overheads",
@@ -246,7 +294,8 @@
     "Principles of apportionment: service or use, survey, ability to pay, efficiency. Bases: rent and building costs — floor area; power — horsepower × machine hours; lighting — light points; depreciation and insurance of machines — machine value; canteen and welfare — number of workers; supervision — workers or labour hours.",
     "Primary distribution: spread overheads over production and service departments. Secondary distribution: re-apportion service departments to production departments — direct, step ladder, repeated distribution or simultaneous equations.",
     "Absorption: charging overheads to units — % of direct materials, of direct wages or of prime cost (prime cost method); labour hour rate; machine hour rate; rate per unit.",
-    "Under- or over-absorption: causes — wrong estimates, change in capacity used, seasonal effects, method changes, abnormal events. Disposal — supplementary rate, write off to costing P&L, or carry forward if due to a seasonal pattern."
+    "Under- or over-absorption: causes — wrong estimates, change in capacity used, seasonal effects, method changes, abnormal events. Disposal — supplementary rate, write off to costing P&L, or carry forward if due to a seasonal pattern.",
+    "Activity-based costing (ABC): instead of one volume-based rate, costs are traced to the activities that cause them (set-ups, inspections, orders) and charged to products by how much of each activity they use — more accurate where many overheads do not vary with volume."
    ],
    "mistakes": [
     "Leaving service department totals unapportioned in the final summary."
@@ -261,7 +310,21 @@
    "formula": [
     "Overhead absorption rate = Budgeted overheads ÷ Budgeted base (hours, units or % of prime cost)"
    ],
-   "frame": "Overhead distribution summary: columns for each department; one row per overhead with its basis."
+   "frame": "Overhead distribution summary: columns for each department; one row per overhead with its basis.",
+   "units": [
+    {
+     "unit": 8,
+     "title": "Classification and Distribution of Overheads"
+    },
+    {
+     "unit": 9,
+     "title": "Absorption of Factory Overheads"
+    },
+    {
+     "unit": 11,
+     "title": "Treatment of Other Overheads and Activity Based Cost Allocation"
+    }
+   ]
   },
   {
    "id": "intro",
@@ -279,7 +342,13 @@
     "Installing a costing system — points to consider: nature and size of the business, products and processes, organisation, management's needs, a simple and economical system, the right method of costing, forms and records, cooperation of staff, reconciliation with financial accounts. Difficulties: staff resistance, lack of management support, cost of the system, shortage of trained staff — overcome by explaining its benefits, training and starting simply."
    ],
    "mistakes": [],
-   "frame": "Definition → objectives or points as headed list → conclusion."
+   "frame": "Definition → objectives or points as headed list → conclusion.",
+   "units": [
+    {
+     "unit": 1,
+     "title": "Nature and Scope of Cost Accounting"
+    }
+   ]
   },
   {
    "id": "reconciliation",
@@ -307,7 +376,13 @@
    "formula": [
     "Profit as per financial accounts = Profit as per cost accounts + Additions − Deductions"
    ],
-   "frame": "Reconciliation statement: Profit as per cost accounts → Add → Less → Profit as per financial accounts."
+   "frame": "Reconciliation statement: Profit as per cost accounts → Add → Less → Profit as per financial accounts.",
+   "units": [
+    {
+     "unit": 19,
+     "title": "Reconciliation of Cost and Financial Accounts"
+    }
+   ]
   },
   {
    "id": "joint",
@@ -332,7 +407,13 @@
    "formula": [
     "By-product cost (reverse method) = Sales value − Profit − Selling and distribution cost − Post-separation cost"
    ],
-   "frame": "Process account for the main product crediting the by-product's value → cost per unit of the main product."
+   "frame": "Process account for the main product crediting the by-product's value → cost per unit of the main product.",
+   "units": [
+    {
+     "unit": 16,
+     "title": "Joint Products and By-Products"
+    }
+   ]
   },
   {
    "id": "cost-concepts",
@@ -343,7 +424,8 @@
    "points": [
     "Classification: by element (materials, labour, expenses — direct and indirect); by function (production, administration, selling, distribution); by behaviour (fixed, variable, semi-variable); by controllability; by normality; by time (historical, predetermined); for decisions (sunk, opportunity, marginal, differential).",
     "Methods of costing and industries: job (printing, repairs), contract (construction), batch (medicines, toys), process (chemicals, textiles, oil), operating or service (transport, hospitals, power), unit or output (mines, cement, bricks), multiple (cars, radios).",
-    "Cost sheet: direct materials + direct labour + direct expenses = prime cost; + factory overheads (± work in progress) = works cost; + office and administration overheads = cost of production; ± finished goods = cost of goods sold; + selling and distribution = cost of sales; + profit = sales."
+    "Cost sheet: direct materials + direct labour + direct expenses = prime cost; + factory overheads (± work in progress) = works cost; + office and administration overheads = cost of production; ± finished goods = cost of goods sold; + selling and distribution = cost of sales; + profit = sales.",
+    "Unit (output) costing suits a single product made in uniform units (bricks, cement); a cost sheet and a statement of quotation or tender are prepared from it."
    ],
    "mistakes": [],
    "method": [
@@ -358,7 +440,17 @@
     "Works cost = Prime cost + Factory overheads + Opening WIP − Closing WIP",
     "Cost of sales = Cost of production ± Finished goods + Selling and distribution overheads"
    ],
-   "frame": "Pro forma cost sheet with headings and imaginary figures."
+   "frame": "Pro forma cost sheet with headings and imaginary figures.",
+   "units": [
+    {
+     "unit": 2,
+     "title": "Cost Concepts and its Ascertainment"
+    },
+    {
+     "unit": 12,
+     "title": "Unit Costing"
+    }
+   ]
   },
   {
    "id": "inventory",
@@ -384,6 +476,12 @@
     "Maximum level = Reorder level + Reorder quantity − (Minimum usage × Minimum reorder period)",
     "EOQ = √(2 × A × O ÷ C)",
     "Inventory turnover ratio = Cost of materials consumed ÷ Average stock"
+   ],
+   "units": [
+    {
+     "unit": 4,
+     "title": "Inventory Control"
+    }
    ]
   },
   {
@@ -412,7 +510,13 @@
     "Machine hour rate = Standing charges per hour + Machine expenses per hour",
     "Depreciation per hour = (Cost + Installation − Scrap value) ÷ Life in hours"
    ],
-   "frame": "Table: standing charges per period → per hour; machine expenses per hour → total rate per hour."
+   "frame": "Table: standing charges per period → per hour; machine expenses per hour → total rate per hour.",
+   "units": [
+    {
+     "unit": 10,
+     "title": "Machine Hour Rate"
+    }
+   ]
   }
  ],
  "questions": [
@@ -1240,5 +1344,6 @@
    "k": "th",
    "topic": "inventory"
   }
- ]
+ ],
+ "notesSource": "Notes checked against and linked to the IGNOU BCOC-138 study material."
 }
