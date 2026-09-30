@@ -104,6 +104,9 @@
      "unit": 5,
      "title": "Pricing the Issue of Materials"
     }
+   ],
+   "examples": [
+    "Example: FIFO and LIFO on the same receipts and issues\nOpening stock 100 units @ ₹10. Received 200 @ ₹12. Issued 250. Received 100 @ ₹13. Issued 120.\nFIFO: first issue = 100 × 10 + 150 × 12 = ₹2,800; second issue = 50 × 12 + 70 × 13 = ₹1,510; closing stock 30 × 13 = ₹390.\nLIFO: first issue = 200 × 12 + 50 × 10 = ₹2,900; second issue = 100 × 13 + 20 × 10 = ₹1,500; closing stock 30 × 10 = ₹300.\nCheck: goods available ₹4,700 = 4,310 + 390 (FIFO) = 4,400 + 300 (LIFO). With rising prices, LIFO charges more to production and values closing stock lower."
    ]
   },
   {
@@ -144,6 +147,10 @@
      "unit": 17,
      "title": "Valuation of Work-in-Progress"
     }
+   ],
+   "examples": [
+    "Example: normal and abnormal loss\n1,000 units introduced at ₹20 (₹20,000); labour ₹15,000; overheads ₹10,500 → total ₹45,500. Normal loss 10% (100 units), sold as scrap at ₹5 = ₹500. Actual output 880 units.\nCost per unit = (45,500 − 500) ÷ (1,000 − 100) = ₹50.\nAbnormal loss = normal output 900 − actual 880 = 20 units × 50 = ₹1,000. Output transferred = 880 × 50 = ₹44,000.\nProcess account credits: 500 + 1,000 + 44,000 = ₹45,500 ✓.\nAbnormal loss account: debit 1,000; credit scrap 20 × 5 = 100; the balance ₹900 goes to costing profit and loss.",
+    "Example: equivalent production\n1,000 units started; 800 completed; 200 in progress — 100% complete for materials, 50% for labour and overheads. Costs: materials ₹10,000, labour ₹4,500, overheads ₹2,700.\nEquivalent units: materials 1,000; labour 800 + 100 = 900; overheads 900.\nCost per equivalent unit: materials ₹10, labour ₹5, overheads ₹3 → ₹18.\nCompleted units 800 × 18 = ₹14,400. Work in progress = 200 × 10 + 100 × 5 + 100 × 3 = ₹2,800. Total ₹17,200 ✓."
    ]
   },
   {
@@ -182,6 +189,10 @@
      "unit": 7,
      "title": "Accounting for Labour"
     }
+   ],
+   "examples": [
+    "Example: Halsey vs Rowan\nTime allowed 10 hours; time taken 8 hours; rate ₹50 an hour; time saved 2 hours.\nHalsey: 8 × 50 + 50% × 2 × 50 = 400 + 50 = ₹450.\nRowan: 8 × 50 + (2 ÷ 10) × 8 × 50 = 400 + 80 = ₹480.\nFor small time savings Rowan pays more; if the worker saved more than half the time allowed, Halsey would pay more.",
+    "Example: Taylor's differential piece rate and labour turnover\nStandard 20 units an hour (160 in an 8-hour day); normal piece rate ₹5; low rate 80% (₹4), high rate 120% (₹6).\nWorker A makes 150 units (below standard) → 150 × 4 = ₹600. Worker B makes 170 (above standard) → 170 × 6 = ₹1,020.\nLabour turnover: 30 workers left in the year; workers at the start 480 and at the end 520 → average 500 → 30 ÷ 500 × 100 = 6%."
    ]
   },
   {
@@ -205,6 +216,10 @@
      "unit": 3,
      "title": "Procurement, Storage and Issue"
     }
+   ],
+   "examples": [
+    "Example: buying steel sheets, step by step\nThe storekeeper sees stock at the reorder level and sends a purchase requisition. The purchase department invites quotations from three suppliers, compares price, quality and delivery, and places a purchase order with the best one.\nWhen the sheets arrive, stores inspect them and prepare a goods received note. The accounts department checks the supplier's invoice against the order and the note before passing it for payment.",
+    "Example: centralised or decentralised?\nA company with five factories buys all its steel centrally and gets a bulk discount of 4%. But one factory needing an urgent spare part waits a week for head office — so small urgent items are left to local purchase."
    ]
   },
   {
@@ -246,6 +261,9 @@
      "unit": 14,
      "title": "Contract Costing"
     }
+   ],
+   "examples": [
+    "Example: profit on an incomplete contract\nContract price ₹20,00,000. Costs to date: materials 5,00,000; wages 3,00,000 + outstanding 20,000; plant 2,00,000 (value at year-end 1,50,000, so depreciation 50,000); overheads 80,000; materials at site 50,000.\nCost of work done = 5,00,000 + 3,20,000 + 50,000 + 80,000 − 50,000 = ₹9,00,000.\nWork certified 12,00,000 + uncertified 1,00,000 = 13,00,000 → notional profit ₹4,00,000.\nCompletion = 12 ÷ 20 = 60% (over half) → profit to P&L = 2/3 × 4,00,000 × 10,80,000/12,00,000 = ₹2,40,000; reserve ₹1,60,000.\nWork in progress in the Balance Sheet = 13,00,000 − 1,60,000 − 10,80,000 cash received = ₹60,000."
    ]
   },
   {
@@ -280,6 +298,9 @@
      "unit": 18,
      "title": "Service Costing"
     }
+   ],
+   "examples": [
+    "Example: cost per passenger-km of a bus\nA 50-seat bus runs a 20 km route, 4 round trips a day, 25 days a month, 80% full.\nKm per month = 20 × 2 × 4 × 25 = 4,000. Passenger-km = 4,000 × 50 × 80% = 1,60,000.\nMonthly costs: standing charges (salaries, insurance, tax, depreciation, garage) ₹60,000; maintenance ₹12,000; diesel 4,000 km ÷ 5 km per litre × ₹90 = ₹72,000; oil and lubricants ₹16,000 → ₹1,60,000.\nCost per passenger-km = 1,60,000 ÷ 1,60,000 = ₹1.00. For profit of 20% on takings, the fare = 1.00 ÷ 0.80 = ₹1.25 per passenger-km."
    ]
   },
   {
@@ -324,6 +345,9 @@
      "unit": 11,
      "title": "Treatment of Other Overheads and Activity Based Cost Allocation"
     }
+   ],
+   "examples": [
+    "Example: apportionment and absorption\nRent ₹12,000 is apportioned on floor area — P1 2,000 sq ft, P2 1,500, service department S 500 → ₹6,000, ₹4,500, ₹1,500.\nAfter primary distribution: P1 ₹30,000, P2 ₹20,000, S ₹10,000. S serves P1 and P2 in the ratio 60 : 40 → P1 ₹36,000, P2 ₹24,000.\nAbsorption: P1 is machine-based with 3,000 machine hours → ₹12 an hour; P2 is labour-based with 4,000 labour hours → ₹6 an hour.\nIn the year P1's actual overhead is ₹38,000 and it works 3,200 hours, absorbing 3,200 × 12 = ₹38,400 → over-absorbed by ₹400."
    ]
   },
   {
@@ -348,6 +372,9 @@
      "unit": 1,
      "title": "Nature and Scope of Cost Accounting"
     }
+   ],
+   "examples": [
+    "Example: what cost accounts reveal\nA firm makes three products and its financial accounts show an overall profit of ₹2 lakh. Its cost accounts show products A and B earning ₹2.5 lakh while product C loses ₹50,000, largely from wasted material. Management can now correct C's process, raise its price or drop it — decisions the overall profit figure could never support."
    ]
   },
   {
@@ -382,6 +409,9 @@
      "unit": 19,
      "title": "Reconciliation of Cost and Financial Accounts"
     }
+   ],
+   "examples": [
+    "Example: reconciliation statement\nProfit as per cost accounts ₹1,50,000.\nDeduct: factory overheads under-absorbed ₹5,000; income tax (only in financial books) ₹20,000; closing stock valued ₹4,000 lower in financial books.\nAdd: administration overheads over-absorbed ₹3,000; dividend received ₹10,000; notional interest on capital charged only in cost accounts ₹8,000.\nProfit as per financial accounts = 1,50,000 − 29,000 + 21,000 = ₹1,42,000."
    ]
   },
   {
@@ -413,6 +443,10 @@
      "unit": 16,
      "title": "Joint Products and By-Products"
     }
+   ],
+   "examples": [
+    "Example: joint products — the basis changes the answer\nA joint process costing ₹1,20,000 yields 2,000 units of A (worth ₹60 each at split-off, ₹1,20,000) and 1,000 units of B (worth ₹120 each, ₹1,20,000).\nPhysical units basis (2 : 1): A ₹80,000, B ₹40,000.\nSales value basis (1 : 1): A ₹60,000, B ₹60,000.",
+    "Example: by-product by the reverse cost method\nBy-product sales ₹20,000; expected profit 20% of sales ₹4,000; selling costs ₹2,000; processing after split-off ₹3,000.\nCost credited to the main process = 20,000 − 4,000 − 2,000 − 3,000 = ₹11,000.\nIf the joint cost is ₹1,00,000 and the main product output is 5,000 units, its cost = (1,00,000 − 11,000) ÷ 5,000 = ₹17.80 a unit."
    ]
   },
   {
@@ -450,6 +484,10 @@
      "unit": 12,
      "title": "Unit Costing"
     }
+   ],
+   "examples": [
+    "Example: cost sheet\nMaterials: opening 10,000 + purchases 60,000 − closing 15,000 = 55,000; direct wages 30,000; direct expenses 5,000 → prime cost ₹90,000.\nFactory overheads 20,000 + opening WIP 6,000 − closing WIP 8,000 → works cost ₹1,08,000.\nOffice and administration 12,000 → cost of production ₹1,20,000 (10,000 units → ₹12 each).\nOpening finished goods 10,000 − closing 14,000 → cost of goods sold ₹1,16,000.\nSelling and distribution 9,000 → cost of sales ₹1,25,000. Sales ₹1,50,000 → profit ₹25,000.",
+    "Examples: classify the cost\nFactory rent → fixed, indirect (factory overhead). Raw cotton in a textile mill → variable, direct material. Telephone bill with a fixed rental plus call charges → semi-variable. Money already spent on a machine that is now useless → sunk cost, ignored in decisions."
    ]
   },
   {
@@ -486,6 +524,10 @@
    "figures": [
     "stock-levels",
     "eoq"
+   ],
+   "examples": [
+    "Example: stock levels\nUsage per week: minimum 100, normal 150, maximum 200 units. Reorder period 4 to 6 weeks (normal 5). Reorder quantity 1,000.\nReorder level = 200 × 6 = 1,200 units.\nMinimum level = 1,200 − 150 × 5 = 450 units.\nMaximum level = 1,200 + 1,000 − 100 × 4 = 1,800 units.",
+    "Example: EOQ\nAnnual usage 12,500 units; cost per order ₹160; price ₹40 and carrying cost 10% → ₹4 per unit a year.\nEOQ = √(2 × 12,500 × 160 ÷ 4) = √10,00,000 = 1,000 units, so 12.5 orders a year.\nCheck: ordering cost 12.5 × 160 = ₹2,000 and carrying cost (1,000 ÷ 2) × 4 = ₹2,000 — equal at the EOQ."
    ]
   },
   {
@@ -520,6 +562,9 @@
      "unit": 10,
      "title": "Machine Hour Rate"
     }
+   ],
+   "examples": [
+    "Example: machine hour rate\nMachine cost ₹5,00,000 + installation ₹20,000; scrap ₹20,000; life 10,000 hours → depreciation ₹50 an hour.\nPower: 10 units an hour × ₹8 = ₹80 an hour. Repairs ₹24,000 a year over 2,000 working hours → ₹12 an hour.\nStanding charges for the machine's share: rent ₹15,000 + supervisor ₹40,000 + lighting ₹5,000 = ₹60,000 a year ÷ 2,000 hours = ₹30 an hour.\nMachine hour rate = 30 + 50 + 80 + 12 = ₹172."
    ]
   }
  ],

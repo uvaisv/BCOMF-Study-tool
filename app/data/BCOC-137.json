@@ -107,6 +107,10 @@
      "unit": 7,
      "title": "Final Accounts-II"
     }
+   ],
+   "examples": [
+    "Example: Statement of Profit and Loss to surplus\nRevenue from operations ₹10,00,000; other income ₹20,000 → total income ₹10,20,000.\nExpenses: materials consumed 4,00,000, employee benefits 2,00,000, finance costs 50,000, depreciation 70,000, other expenses 80,000 → ₹8,00,000.\nProfit before tax ₹2,20,000; tax at 30% ₹66,000 → profit for the year ₹1,54,000.\nSurplus: opening 40,000 + 1,54,000 − transfer to general reserve 20,000 − interim dividend 50,000 = ₹1,24,000, shown under Reserves and Surplus.",
+    "Example: where does each item go in the Schedule III Balance Sheet?\n10% debentures repayable in 5 years → non-current liabilities, long-term borrowings. Trade creditors → current liabilities, trade payables. Provision for tax → current liabilities, short-term provisions. Goodwill → non-current assets, intangible assets. Stock → current assets, inventories. Calls in arrears → deducted from subscribed capital in the share capital note."
    ]
   },
   {
@@ -154,6 +158,10 @@
      "unit": 12,
      "title": "Valuation of Shares"
     }
+   ],
+   "examples": [
+    "Example: goodwill by four methods\nProfits for three years: ₹1,00,000; ₹1,20,000 (after an abnormal fire loss of ₹20,000, so ₹1,40,000 adjusted); ₹1,50,000. Average maintainable profit = 3,90,000 ÷ 3 = ₹1,30,000. Capital employed ₹10,00,000; normal return 10%.\nAverage profit, 3 years' purchase: 1,30,000 × 3 = ₹3,90,000.\nSuper profit: normal profit ₹1,00,000, super profit ₹30,000 × 3 = ₹90,000.\nCapitalisation: 1,30,000 × 100/10 − 10,00,000 = ₹3,00,000.\nAnnuity (5 years at 10%, factor 3.7908): 30,000 × 3.7908 = ₹1,13,724.",
+    "Example: value of an equity share\nAssets at agreed values ₹25,00,000; outside liabilities ₹5,00,000; preference capital ₹4,00,000; 1,00,000 equity shares of ₹10.\nIntrinsic value = (25,00,000 − 5,00,000 − 4,00,000) ÷ 1,00,000 = ₹16.\nYield value: expected rate 15%, normal rate 12% → 15/12 × 10 = ₹12.50.\nFair value = (16 + 12.50) ÷ 2 = ₹14.25."
    ]
   },
   {
@@ -198,6 +206,9 @@
    "figures": [
     "cash-flow",
     "cash-from-operations"
+   ],
+   "examples": [
+    "Example: cash flow statement (indirect method)\nOperating: net profit before tax 1,00,000 + depreciation 20,000 + loss on sale of machinery 5,000 − profit on sale of investments 3,000 = 1,22,000. Debtors up 15,000 (−), stock down 8,000 (+), creditors up 6,000 (+), outstanding expenses down 2,000 (−) → 1,19,000. Tax paid 25,000 → net cash from operating activities ₹94,000.\nInvesting: machinery bought −80,000, machinery sold +15,000, investments sold +23,000 → −₹42,000.\nFinancing: shares issued +50,000, loan repaid −30,000, dividend paid −20,000 → nil.\nNet increase in cash = ₹52,000; opening cash 18,000 → closing cash ₹70,000."
    ]
   },
   {
@@ -221,6 +232,10 @@
      "unit": 19,
      "title": "Non-Performing Assets"
     }
+   ],
+   "examples": [
+    "Example: when does a loan become an NPA?\nA term-loan instalment due on 31 March is not paid. Once it has stayed overdue for more than 90 days — by the end of June — the account is an NPA.\nFor its first 12 months as an NPA it is sub-standard. After that it becomes doubtful. If the bank or an auditor finds it uncollectable, it is a loss asset, provided for in full.",
+    "Example: income recognition on an NPA\nThe bank had debited ₹1,00,000 of interest to the borrower's account, but none has been received. Because the account is an NPA, this interest is not taken to income; it is reversed or kept in an interest suspense account. It is taken to income only when actually received."
    ]
   },
   {
@@ -254,6 +269,10 @@
      "unit": 18,
      "title": "Commercial Bank"
     }
+   ],
+   "examples": [
+    "Example: rebate on bills discounted\nOn 1 March a bank discounts a ₹1,00,000 bill due on 30 April, at 12% a year. On 31 March, 30 days of the discount relate to the next year.\nRebate = 1,00,000 × 12% × 30/365 = ₹986. This is deducted from discount income and shown as a liability (other liabilities) in the balance sheet.\nBills sent for collection (₹5 lakh) are not the bank's assets or liabilities, so they appear only as a note below the balance sheet.",
+    "Example: where items go in a bank's balance sheet\nSavings and fixed deposits → deposits. Money borrowed from another bank → borrowings. Cash kept with the RBI for CRR → cash and balances with RBI. Government securities held for SLR → investments. Loans → advances, net of provisions. Unclaimed dividend and provision for tax → other liabilities and provisions."
    ]
   },
   {
@@ -296,6 +315,9 @@
      "unit": 10,
      "title": "Accounts of Holding Companies-II"
     }
+   ],
+   "examples": [
+    "Example: cost of control and minority interest\nH Ltd buys 80% of S Ltd's ₹1,00,000 share capital for ₹1,50,000. At that date S has a general reserve of ₹40,000 and P&L of ₹20,000 (pre-acquisition = capital profits ₹60,000). Since then S has earned ₹30,000 (post-acquisition = revenue profit).\nMinority interest = 20% × (1,00,000 + 60,000 + 30,000) = ₹38,000.\nCost of control = 1,50,000 − (80,000 + 80% × 60,000) = 1,50,000 − 1,28,000 = ₹22,000 goodwill.\nH's consolidated reserves include 80% × 30,000 = ₹24,000 of S's post-acquisition profit."
    ]
   },
   {
@@ -338,6 +360,10 @@
      "unit": 4,
      "title": "Redemption of Preference Shares"
     }
+   ],
+   "examples": [
+    "Example: redeeming preference shares\n10,000 8% preference shares of ₹100 are redeemed at a 10% premium (payable ₹11,00,000). Profit and loss balance available ₹6,00,000; securities premium ₹1,00,000.\nPremium on redemption ₹1,00,000 → charged to securities premium.\nFresh issue needed = nominal value 10,00,000 − divisible profits 6,00,000 = ₹4,00,000 (40,000 equity shares of ₹10 at par).\nTransfer to capital redemption reserve = 10,00,000 − 4,00,000 = ₹6,00,000 from the profit and loss balance.",
+    "Example: buyback out of free reserves\nA company buys back 1,00,000 of its ₹10 shares at ₹15 (₹15,00,000) out of free reserves and securities premium. The nominal value of ₹10,00,000 is transferred to the capital redemption reserve (Section 69); the ₹5,00,000 premium is charged to securities premium; the shares are extinguished."
    ]
   },
   {
@@ -374,6 +400,9 @@
      "unit": 2,
      "title": "Accounting for Share Capital"
     }
+   ],
+   "examples": [
+    "Example: pro-rata allotment, forfeiture and reissue\nShares of ₹10: ₹3 on application, ₹4 on allotment, ₹3 on call. Allotment is pro-rata. A holder applied for 300 shares and got 200.\nExcess application money 100 × ₹3 = ₹300 is adjusted against allotment (due 200 × 4 = ₹800), so they pay ₹500. They fail to pay the call.\nForfeiture: Share Capital Dr 2,000 (200 × ₹10) To Call A/c 600 To Share Forfeited A/c 1,400 (the ₹600 application + ₹800 allotment already received).\nReissue at ₹8 fully paid: Bank Dr 1,600, Share Forfeited Dr 400 To Share Capital 2,000.\nBalance ₹1,000 on Share Forfeited → capital reserve."
    ]
   },
   {
@@ -402,6 +431,10 @@
      "unit": 14,
      "title": "Amalgamation of Companies: Accounting Treatment"
     }
+   ],
+   "examples": [
+    "Example: purchase consideration and the purchase method\nThe transferee takes over assets at agreed values of ₹12,00,000 and liabilities of ₹3,00,000. Net assets method: purchase consideration = ₹9,00,000, paid as 80,000 equity shares of ₹10 issued at ₹11 (₹8,80,000) plus ₹20,000 in cash.\nUnder the purchase method, if the fair value of the net assets taken over is ₹8,50,000, the extra ₹50,000 paid is goodwill; had it been ₹9,50,000, the ₹50,000 surplus would go to capital reserve.",
+    "Example: merger or purchase?\nIf all assets and liabilities are taken over, holders of 90% or more of the shares get equity shares of the transferee, the business continues and book values are kept → amalgamation in the nature of merger (pooling of interests). If the transferee pays mostly in cash, it fails a condition → purchase."
    ]
   },
   {
@@ -426,6 +459,9 @@
      "unit": 15,
      "title": "Internal Reconstruction"
     }
+   ],
+   "examples": [
+    "Example: internal reconstruction\n10,000 equity shares of ₹100 are reduced to ₹40 each (reduction ₹6,00,000); debenture holders give up ₹50,000. Capital Reduction A/c is credited ₹6,50,000.\nIt is used to write off the debit balance of profit and loss ₹4,00,000, goodwill ₹1,00,000, preliminary expenses ₹20,000 and ₹80,000 overvaluation of plant — ₹6,00,000 in all.\nThe remaining ₹50,000 goes to capital reserve. Because capital is reduced, a special resolution and the Tribunal's confirmation are needed (Section 66)."
    ]
   },
   {
@@ -460,6 +496,10 @@
      "unit": 5,
      "title": "Issues and Redemption of Debentures"
     }
+   ],
+   "examples": [
+    "Example: issue at a discount, redeemable at a premium\n1,000 debentures of ₹100 are issued at 5% discount, redeemable at 10% premium.\nBank A/c Dr 95,000\nLoss on Issue of Debentures A/c Dr 15,000 (discount 5,000 + premium payable 10,000)\nTo Debentures A/c 1,00,000\nTo Premium on Redemption of Debentures A/c 10,000.\nThe loss on issue is written off over the life of the debentures.",
+    "Example: debentures issued to a vendor\nMachinery worth ₹1,90,000 is bought and paid for by issuing ₹100 debentures at a 5% discount. Number issued = 1,90,000 ÷ 95 = 2,000 debentures.\nMachinery A/c Dr 1,90,000 To Vendor 1,90,000; then Vendor A/c Dr 1,90,000 and Discount on Issue A/c Dr 10,000 To Debentures A/c 2,00,000."
    ]
   },
   {
@@ -482,6 +522,9 @@
      "unit": 1,
      "title": "General Introductions"
     }
+   ],
+   "examples": [
+    "Example: forming a private company\nThree friends form 'Green Leaf Organics Private Limited'. They reserve the name and file SPICe+ with the memorandum and articles, the professional's declaration, their identity proofs and consent to act as directors, and proof of the registered office.\nThe Registrar issues the certificate of incorporation — from that date the company is a separate legal person. Within 180 days it files its declaration for commencement of business before it starts business or borrows."
    ]
   }
  ],
