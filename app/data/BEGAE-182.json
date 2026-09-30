@@ -16,7 +16,7 @@
   "summary": "All 4 questions are compulsory. Q1: answer 4 of 6 short questions (5 marks each, about 100 words). Q2–Q4: 10 marks each — usually a letter, a group discussion, and a presentation, dialogue or essay — often with an OR choice.",
   "caution": "Every question has a choice, so this list is shorter than the syllabus — it is enough to answer the paper, not everything."
  },
- "blocksOfficial": false,
+ "blocksOfficial": true,
  "sessions": [
   "2020-12",
   "2021-12",
@@ -43,15 +43,15 @@
  "blocks": [
   {
    "no": 1,
-   "title": "Communication, Conversation & Meetings"
+   "title": "Understanding Communication"
   },
   {
    "no": 2,
-   "title": "Reading & Vocabulary"
+   "title": "Listening and Speaking in Informal and Formal Contexts"
   },
   {
    "no": 3,
-   "title": "Writing Tasks & Presentations"
+   "title": "Reading and Writing Skills"
   }
  ],
  "topics": [
@@ -73,12 +73,19 @@
    "frame": "Write the full layout even in the exam — marks are given for format, content and language.",
    "mistakes": [
     "Mixing 'Yours faithfully' and 'Yours sincerely', or leaving out the subject line."
+   ],
+   "units": [
+    {
+     "block": 3,
+     "unit": 4,
+     "title": "The Language of Formal Letters"
+    }
    ]
   },
   {
    "id": "group-discussion",
    "name": "Group Discussion",
-   "block": 3,
+   "block": 2,
    "kind": "theory",
    "summary": "Writing out a group discussion among five students, and the essentials and rules of a good group discussion.",
    "points": [
@@ -91,12 +98,20 @@
    "frame": "Speaker names + opening → points for and against in turns → summary. Aim for 15–20 turns.",
    "mistakes": [
     "Writing an essay with names in front — a GD needs people responding to each other."
+   ],
+   "units": [
+    {
+     "block": 2,
+     "unit": 3,
+     "title": "Group Discussions and Meetings",
+     "part": "Group discussions"
+    }
    ]
   },
   {
    "id": "presentation",
    "name": "Presentations & Visual Aids",
-   "block": 3,
+   "block": 2,
    "kind": "theory",
    "summary": "Structuring a presentation, making a five-minute presentation on a topic, visual aids and their functions, symbols and graphs, and essentials of presentation skills.",
    "points": [
@@ -108,7 +123,14 @@
     "Essentials of presentation skills: know your audience; practise; clear voice and good pace; eye contact and open posture; manage time; handle questions calmly."
    ],
    "frame": "Title → introduction → three headed points → conclusion; mention one visual aid you would use for each point.",
-   "mistakes": []
+   "mistakes": [],
+   "units": [
+    {
+     "block": 2,
+     "unit": 4,
+     "title": "Presentation Skills: Essentials of Presentation Skills"
+    }
+   ]
   },
   {
    "id": "writing",
@@ -124,7 +146,14 @@
     "Common essay topics: education and online learning, technology, climate change, globalisation, tourism, careers for young Indians."
    ],
    "frame": "Plan for 2 minutes: list your points, then write in paragraphs with linking words.",
-   "mistakes": []
+   "mistakes": [],
+   "units": [
+    {
+     "block": 3,
+     "unit": 3,
+     "title": "The Writing Skill: Some Basic Guidelines"
+    }
+   ]
   },
   {
    "id": "communication",
@@ -134,19 +163,33 @@
    "summary": "Elements and process of communication, its functions, characteristics of good communication, style, and barriers to communication and how to overcome them.",
    "points": [
     "Elements: sender, message, encoding, channel, receiver, decoding, feedback, noise and context.",
-    "Functions: to inform, instruct, persuade, express feelings and build relationships. Halliday's macro-functions of language: ideational (conveying ideas and experience), interpersonal (building relationships) and textual (organising the message).",
+    "Functions: to inform, instruct, warn, persuade, express feelings and build relationships — the hearer works out the meaning from the context.",
+    "The book's seven macro functions of communication: emotive (feelings — 'Oh no!'), directive (affect others' behaviour — 'Close the door, please'), phatic (open or check the channel — 'Can you hear me?'), poetic (the form itself matters), referential (carry information), metalinguistic (talk about the language itself) and contextual (set up a context — 'Right! Let's start the meeting').",
+    "Barriers in the book: code (no shared language), vocabulary (e.g. stock-market jargon), concepts, background knowledge and shared assumptions, pronunciation, stress and accent, culture-specific meanings, physical environment (noise, distance) and affective factors (anxiety, attitudes).",
+    "Globalisation: new communication technology has made the world a 'global village' (McLuhan); each revolution in communication has brought social change.",
     "Good communication — the 7 Cs: clear, concise, concrete, correct, coherent, complete, courteous.",
-    "Barriers, in three broad groups: physical or environmental (noise, distance, faulty equipment); linguistic or semantic (jargon, ambiguous words, different languages, poor vocabulary); socio-psychological (attitudes, emotions, prejudice, status, perception, cultural differences).",
     "Overcoming barriers: simple, precise language; the right channel; checking understanding through feedback; active listening; empathy and respect for other cultures.",
     "Style: formal or informal register chosen to fit the purpose, audience and situation."
    ],
    "frame": "Meaning → elements or barriers as headings with one example each → how to overcome → conclusion.",
-   "mistakes": []
+   "mistakes": [],
+   "units": [
+    {
+     "block": 1,
+     "unit": 1,
+     "title": "The Process of Communication"
+    },
+    {
+     "block": 1,
+     "unit": 2,
+     "title": "The Globalization of Communication: A Global Village"
+    }
+   ]
   },
   {
    "id": "reading",
    "name": "Reading Skills & Comprehension",
-   "block": 2,
+   "block": 3,
    "kind": "theory",
    "summary": "Levels of reading comprehension, literal, interpretive and critical reading, reading as a cognitive skill, schemata, faulty reading habits, silent reading and subvocalising.",
    "points": [
@@ -158,12 +201,19 @@
     "Silent reading is faster and better for understanding; reading aloud helps pronunciation and sharing a text."
    ],
    "frame": "Meaning → levels or habits as headings with a short example → conclusion.",
-   "mistakes": []
+   "mistakes": [],
+   "units": [
+    {
+     "block": 3,
+     "unit": 1,
+     "title": "The Reading Skill"
+    }
+   ]
   },
   {
    "id": "vocabulary",
    "name": "Words: Homophones, Word Formation & Idioms",
-   "block": 2,
+   "block": 3,
    "kind": "theory",
    "summary": "Homonyms, homophones and homographs; word formation by affixation, compounding and word shift; jargon, acronyms, idioms and ambiguity.",
    "points": [
@@ -176,7 +226,14 @@
     "Ambiguity: a sentence with two meanings, from a word (lexical) or from its structure ('I saw the man with the telescope')."
    ],
    "frame": "Definition → two or three examples of each → conclusion.",
-   "mistakes": []
+   "mistakes": [],
+   "units": [
+    {
+     "block": 3,
+     "unit": 2,
+     "title": "Vocabulary Development"
+    }
+   ]
   },
   {
    "id": "nonverbal",
@@ -192,12 +249,19 @@
     "Stress: the extra force on a syllable or word (PHOtograph, phoTOgraphy; stressing a word changes the sense). Intonation: the rise and fall of the voice (a rising tone for yes/no questions, falling for statements)."
    ],
    "frame": "Meaning → types or advantages as headings with an example → conclusion.",
-   "mistakes": []
+   "mistakes": [],
+   "units": [
+    {
+     "block": 1,
+     "unit": 3,
+     "title": "Verbal and Non-Verbal Communication"
+    }
+   ]
   },
   {
    "id": "conversation",
    "name": "Conversation, Speech Events & Discourse",
-   "block": 1,
+   "block": 2,
    "kind": "theory",
    "summary": "Characteristics and conventions of conversation, how it differs from other speech events, introducing oneself, and forms of discourse.",
    "points": [
@@ -205,15 +269,28 @@
     "Conventions: openings and greetings, taking turns, adjacency pairs (question–answer, greeting–greeting), politeness, closings.",
     "Speech events: lectures, interviews, meetings, debates, telephone calls, speeches, conversations. A conversation differs because it is unplanned, equal between speakers and has no set purpose, time or order.",
     "Introducing yourself: greeting, name, where you are from or your role, one or two personal details, a question back to the other person.",
-    "Forms of discourse: narration (tells events), description (paints a picture), exposition (explains) and argumentation (persuades). Argumentative discourse gives a claim, reasons and evidence, and answers the counter-argument."
+    "Forms of discourse: narration (tells events), description (paints a picture), exposition (explains) and argumentation (persuades). Argumentative discourse gives a claim, reasons and evidence, and answers the counter-argument.",
+    "Informal interpersonal functions in the book: greeting, introducing, inviting, small talk; making enquiries mixes formal and informal questions."
    ],
    "frame": "Meaning → features as headings → a short example exchange → conclusion.",
-   "mistakes": []
+   "mistakes": [],
+   "units": [
+    {
+     "block": 2,
+     "unit": 1,
+     "title": "Informal Interpersonal Functions"
+    },
+    {
+     "block": 2,
+     "unit": 2,
+     "title": "Making Enquiries/Asking Questions"
+    }
+   ]
   },
   {
    "id": "meetings",
    "name": "Meetings",
-   "block": 1,
+   "block": 2,
    "kind": "theory",
    "summary": "Meeting etiquette, language and tone, preparing for and taking part in meetings, making a meeting successful, and ending it well.",
    "points": [
@@ -224,7 +301,15 @@
     "Ending a meeting: summarise the decisions, confirm who does what by when, fix the next meeting, thank everyone."
    ],
    "frame": "Headed points with one line each → conclusion.",
-   "mistakes": []
+   "mistakes": [],
+   "units": [
+    {
+     "block": 2,
+     "unit": 3,
+     "title": "Group Discussions and Meetings",
+     "part": "Meetings"
+    }
+   ]
   }
  ],
  "questions": [
@@ -1164,5 +1249,6 @@
    "k": "th",
    "topic": "writing"
   }
- ]
+ ],
+ "notesSource": "Notes written from the IGNOU BEGAE-182 study material."
 }
