@@ -1144,5 +1144,47 @@
 "url": "https://webservices.ignou.ac.in/pre-question/Question%20Paper%20June%202022/CBCS/BAG-BCOMG-BSCG/BPAS-184.pdf",
 "file": "question-papers/Year-2/BPAS-184/BPAS-184_2022-06.pdf"
 }
+],
+"BECS-184": [
+{
+"s": "2026-06",
+"url": "https://www.ignou.ac.in/viewFile/ldd/qpjune2026/BECS-184.pdf",
+"file": "question-papers/Year-3/BECS-184/BECS-184_2026-06.pdf"
+},
+{
+"s": "2025-12",
+"url": "https://www.ignou.ac.in/viewFile/ldd/qpdec2025/BECS-184.pdf",
+"file": "question-papers/Year-3/BECS-184/BECS-184_2025-12.pdf"
+},
+{
+"s": "2025-06",
+"url": "https://www.ignou.ac.in/viewFile/ldd/qpjune2025/BECS-184.pdf",
+"file": "question-papers/Year-3/BECS-184/BECS-184_2025-06.pdf"
+},
+{
+"s": "2024-12",
+"url": "https://www.ignou.ac.in/viewFile/ldd/downloads/BECS-184.pdf",
+"file": "question-papers/Year-3/BECS-184/BECS-184_2024-12.pdf"
+},
+{
+"s": "2024-06",
+"url": "https://webservices.ignou.ac.in/pre-question/Question%20Paper%20June%202024/CBCS/BAG-BCOMG-BSCG/BECS-184.pdf",
+"file": "question-papers/Year-3/BECS-184/BECS-184_2024-06.pdf"
+},
+{
+"s": "2023-12",
+"url": "https://webservices.ignou.ac.in/pre-question/Question%20Paper%20December%202023/CBCS/BAG-BCOMG-BSCG/BECS-184.pdf",
+"file": "question-papers/Year-3/BECS-184/BECS-184_2023-12.pdf"
+},
+{
+"s": "2023-06",
+"url": "https://webservices.ignou.ac.in/pre-question/Question%20Paper%20June%202023/CBCS/BAG-BCOMG-BSCG/BECS-184.pdf",
+"file": "question-papers/Year-3/BECS-184/BECS-184_2023-06.pdf"
+},
+{
+"s": "2022-12",
+"url": "https://webservices.ignou.ac.in/pre-question/Question%20Paper%20December%202022/CBCS/BAG-BCOMG-BSCG/becs-184.pdf",
+"file": "question-papers/Year-3/BECS-184/BECS-184_2022-12.pdf"
+}
 ]
 }

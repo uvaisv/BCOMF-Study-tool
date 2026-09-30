@@ -2,7 +2,7 @@
 
 Official IGNOU term-end examination papers for the BCOMF (B.Com Honours) courses, used as the evidence base for topic-priority and trend analysis.
 
-- **220 papers**, 23 courses, December 2020 – June 2026
+- **228 papers**, 24 courses, December 2020 – June 2026
 - Downloaded from IGNOU's official sites (`webservices.ignou.ac.in` and `www.ignou.ac.in`); each paper's source link is in `index.csv`
 - Every PDF was checked against its course code and exam session
 
@@ -46,10 +46,11 @@ Year-<n>/<COURSE-CODE>/<COURSE-CODE>_<YYYY-MM>.pdf
 | BPCS-186 | Managing Stress | 9 | 2022-06 – 2026-06 |
 | BMS-1 | Introduction to NGO Management (paper code BMS-001) | 12 | 2020-12 – 2026-06 |
 | CPI-102 | Redressal of Consumer Grievances: Role of Various Stakeholders | 12 | 2020-12 – 2026-06 |
+| BECS-184 | Data Analysis | 8 | 2022-12 – 2026-06 |
 
 ## Notes
 
-- **BECS-144 (Data Analysis)** – the alternative to BMS-1; no paper found in any session.
+- **BECS-184 (Data Analysis)** – taken instead of the internship in semester VI (some programme lists print the code as BECS-144; the papers and study material are BECS-184). Its papers are shared with B.A./B.Com./B.Sc. General.
 - **December 2020** exams were held in February 2021 (COVID); those papers are dated February 2021 but filed as `2020-12`.
 - **June 2021** – no B.Com papers in IGNOU's archive for most courses.
 - **BCOC-138_2023-06.pdf** is a scanned image with no text layer; the app's text for it was typed in by hand from the scan.

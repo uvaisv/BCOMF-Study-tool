@@ -14,7 +14,7 @@ Built around one rule (see `CLAUDE.md`): **help students study — never add set
 - **Plan**: one tap for the time left (3 hours, 6 hours, 2 days, 1 week) and the schedule is there — no settings.
 - **Exam tips** and **Past papers** tabs.
 
-Courses with full analysis: all 8 Year 1 courses (BCOC-131, BCOC-132, BECC-101, BRL-101, BCOS-183, BCOS-186, BEVAE-181, BEDSV-101), all 8 Year 2 courses (BCOC-133, BCOC-134, BCOC-136, BCOE-141, BCOS-184, BCOS-185, BEGAE-182, BPAS-184), and 7 of the 8 Year 3 courses (BCOC-135, BCOC-137, BCOC-138, BCOE-142, CPI-102, BPCS-186, BMS-1). BECS-144 Data Analysis, the alternative to BMS-1, has no past papers yet, so it cannot be analysed. BEVAE-181 is an MCQ paper: its 550 past questions are tagged by topic, and questions repeated across papers are listed on the course page. Most MCQs have an answer (`answers` in `BEVAE-181.json`, shown behind **Show answer** on the question and inline in the repeated list). IGNOU publishes no answer key, so these are our own answers, labelled as such. Only confirmed answers are included; questions whose answer depends on IGNOU's own wording (87 of them) have no answer until they are checked against the study material. Other courses show their past papers until their analysis is added.
+Courses with full analysis: all 8 Year 1 courses (BCOC-131, BCOC-132, BECC-101, BRL-101, BCOS-183, BCOS-186, BEVAE-181, BEDSV-101), all 8 Year 2 courses (BCOC-133, BCOC-134, BCOC-136, BCOE-141, BCOS-184, BCOS-185, BEGAE-182, BPAS-184), and 7 of the 8 Year 3 courses (BCOC-135, BCOC-137, BCOC-138, BCOE-142, CPI-102, BPCS-186, BMS-1). BECS-184 Data Analysis (taken instead of the internship) shows its 8 past papers; its analysis is not added yet. BEVAE-181 is an MCQ paper: its 550 past questions are tagged by topic, and questions repeated across papers are listed on the course page. Most MCQs have an answer (`answers` in `BEVAE-181.json`, shown behind **Show answer** on the question and inline in the repeated list). IGNOU publishes no answer key, so these are our own answers, labelled as such. Answers that depend on IGNOU's own wording were checked against the IGNOU BEVAE-181 study material; 11 questions it does not settle (or that are misprinted) have no answer. Other courses show their past papers until their analysis is added.
 
 ## Run it
 
@@ -38,7 +38,7 @@ app/
   data/<CODE>.json        topics, study notes, exam tips and every past question tagged to a topic
   data/text/<CODE>.json   each paper's English questions as text, for the in-app paper view
   qimg/<CODE>/            question images for papers whose maths does not survive as text (BCOC-134)
-question-papers/          220 official papers + index.csv (see its README)
+question-papers/          228 official papers + index.csv (see its README)
 ```
 
 ## How priorities are calculated
