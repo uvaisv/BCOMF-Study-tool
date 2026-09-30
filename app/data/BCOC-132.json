@@ -51,6 +51,9 @@
       "mistakes": ["Listing process steps without one line of explanation each."],
       "units": [
         { "block": 3, "unit": 9, "title": "Planning and Decision Making", "part": "9.2–9.9" }
+      ],
+      "examples": [
+        "Example: a bakery plans for Diwali\nObjective: sell 2,000 sweet boxes in the festival week. Looking at last year's sales and this year's orders, the owner compares alternatives (hire temporary staff or run a second shift), chooses the second shift, and makes a short-range plan: buy ingredients by a set date, fix the shift roster, book delivery vans.\nStanding plan: a policy of 'no credit sales above ₹5,000'. Single-use plan: the budget for this one festival week."
       ]
     },
     {
@@ -77,7 +80,10 @@
         { "block": 3, "unit": 10, "title": "Organising" },
         { "block": 3, "unit": 11, "title": "Departmentation and Forms of Authority Relationships" }
       ],
-      "figures": ["line-staff"]
+      "figures": ["line-staff"],
+      "examples": [
+        "Example: a growing garment firm organises itself\nActivities are grouped into departments — purchase, production, sales, accounts (functional departmentation). Each department head reports to the general manager (chain of command) and each worker reports to one supervisor (unity of command).\nWhen the firm starts selling in three states it adds regional sales managers for North, South and West — territorial departmentation within the sales department.\nA line-and-staff touch: a legal adviser advises the general manager but gives no orders to the workers."
+      ]
     },
     {
       "id": "marketing",
@@ -99,7 +105,11 @@
       "units": [
         { "block": 5, "unit": 18, "title": "Marketing Management" }
       ],
-      "figures": ["plc"]
+      "figures": ["plc"],
+      "examples": [
+        "Example: a new ready-to-cook millet mix through its life cycle\nIntroduction: few buyers, heavy promotion and free samples, low or no profit.\nGrowth: sales rise fast, competitors enter, more shops stock it.\nMaturity: sales level off; the firm offers new flavours and price packs to defend its share.\nDecline: tastes change and sales fall; the firm cuts costs or withdraws the product.",
+        "Example: selling concept vs marketing concept\nSelling concept: a firm has unsold stock of heavy steel cupboards and pushes them through discounts and aggressive salesmen.\nMarketing concept: the firm first finds that young renters want light, foldable cupboards, designs one, prices it for them and sells it online — satisfying the need at a profit."
+      ]
     },
     {
       "id": "leadership",
@@ -119,6 +129,9 @@
       "mistakes": [],
       "units": [
         { "block": 4, "unit": 16, "title": "Leadership" }
+      ],
+      "examples": [
+        "Example: three styles, one decision\nA factory must change its shift timings.\nAutocratic: the manager announces the new timings and expects compliance — quick, but workers resent it.\nDemocratic: the manager discusses options with worker representatives and they agree on a timing — slower, but morale and acceptance are higher.\nLaissez-faire: the manager tells workers to sort it out themselves — confusion if the group cannot agree."
       ]
     },
     {
@@ -141,7 +154,10 @@
       "units": [
         { "block": 4, "unit": 15, "title": "Motivation" }
       ],
-      "figures": ["maslow"]
+      "figures": ["maslow"],
+      "examples": [
+        "Example: Maslow and Herzberg at a call centre\nPay on time and a safe office meet physiological and security needs — they are hygiene factors: without them staff are dissatisfied, but more of them does not motivate much.\nA 'best agent of the month' award (esteem) and a chance to lead a small team (self-fulfilment, job enrichment) are motivators.\nJob enlargement would be simply giving an agent more calls of the same kind; job enrichment gives them the authority to settle complaints themselves."
+      ]
     },
     {
       "id": "entrepreneurship",
@@ -162,6 +178,9 @@
       "mistakes": [],
       "units": [
         { "block": 1, "unit": 2, "title": "Technological Innovation and Skill Development" }
+      ],
+      "examples": [
+        "Example: from idea to start-up\nCreativity: a student notices farmers selling vegetables cheaply because they spoil. Invention: a low-cost solar cold box. Innovation: turning it into a product farmers rent per day, so they can sell later at a better price.\nThe founder registers under Startup India, joins a college incubator for space and mentoring, and trains local technicians through a skill-development scheme."
       ]
     },
     {
@@ -184,6 +203,9 @@
       "mistakes": [],
       "units": [
         { "block": 1, "unit": 3, "title": "Social Responsibility and Ethics" }
+      ],
+      "examples": [
+        "Example: does the CSR rule apply, and how much?\nA company's net profit for the last three years is ₹9 crore, ₹12 crore and ₹15 crore. Net profit above ₹5 crore brings it under Section 135.\nAverage net profit = (9 + 12 + 15) ÷ 3 = ₹12 crore; minimum CSR spend = 2% × 12 = ₹0.24 crore (₹24 lakh).\nFunding a village school's library counts; a donation to a political party, or spending on its own employees' routine welfare as part of normal business, does not."
       ]
     },
     {
@@ -205,6 +227,9 @@
       "mistakes": [],
       "units": [
         { "block": 1, "unit": 4, "title": "Emerging Opportunities in Business" }
+      ],
+      "examples": [
+        "Example: one small shop, many trends\nA handloom shop sells on its own website and on an app (e-commerce, m-commerce), accepts payment through e-wallets and UPI, and sends push notifications about new arrivals.\nIt outsources delivery to a courier company and its bookkeeping to an accountant's firm. Later it lets a trader in another city open a shop under its name and design (franchising), in return for a fee."
       ]
     },
     {
@@ -228,6 +253,9 @@
       "mistakes": [],
       "units": [
         { "block": 1, "unit": 1, "title": "Introduction to Business" }
+      ],
+      "examples": [
+        "Examples: classify the activity\nA doctor running a clinic → profession. A nurse working in a hospital for a salary → employment. A shopkeeper selling groceries → business (trade). A farm growing flower seedlings to sell → genetic industry. A mother cooking for her family → non-economic activity.\nAids to trade in one sale: a Kerala spice trader's goods travel by truck (transport), wait in a warehouse (warehousing), are insured (insurance), paid for through a bank (banking) and promoted online (advertising)."
       ]
     },
     {
@@ -252,6 +280,10 @@
       "units": [
         { "block": 2, "unit": 5, "title": "Forms of Business Organisation-I", "part": "5.4" },
         { "block": 2, "unit": 7, "title": "Public Enterprises" }
+      ],
+      "examples": [
+        "Example: private or public company?\nFive family members form 'Kumar Foods Private Limited' — allowed, since a private company needs at least 2 members (up to 200) and restricts transfer of shares.\nTo raise money from the public for a big factory it later becomes a public company: it needs at least 7 members and its shares can be freely transferred on a stock exchange.\nIf the government holds 51% or more of the paid-up capital of a company, it is a government company.",
+        "Example: limited liability\nA shareholder holds 1,000 shares of ₹10, fully paid. If the company fails with large debts, the shareholder loses at most ₹10,000 — the amount invested; creditors cannot claim personal property."
       ]
     },
     {
@@ -271,6 +303,9 @@
       "mistakes": [],
       "units": [
         { "block": 3, "unit": 9, "title": "Planning and Decision Making", "part": "9.10 Decision making" }
+      ],
+      "examples": [
+        "Example: a shop's sales are falling\nProblem: sales down 20% since a supermarket opened nearby.\nAlternatives: cut prices, start home delivery, or stock specialty local products.\nEvaluate: price cuts hurt margin; delivery needs a boy and a bike (low cost); specialty products need new suppliers.\nSelect: start home delivery through phone orders. Implement it, then follow up by checking sales after two months."
       ]
     },
     {
@@ -290,6 +325,9 @@
       "mistakes": [],
       "units": [
         { "block": 2, "unit": 5, "title": "Forms of Business Organisation-I", "part": "5.5" }
+      ],
+      "examples": [
+        "Example: a milk producers' cooperative\nSmall dairy farmers in a village each have two or three cows and are exploited by middlemen. They form a cooperative society, each buying a share. Every member has one vote whatever their shareholding (democratic control).\nThe society collects milk, tests it, sells it to a dairy and pays members fairly — service, not profit, is the aim. Anyone in the village who keeps cows may join (open membership)."
       ]
     },
     {
@@ -311,6 +349,9 @@
       "mistakes": [],
       "units": [
         { "block": 2, "unit": 5, "title": "Forms of Business Organisation-I", "part": "5.2–5.3" }
+      ],
+      "examples": [
+        "Example: sole trader to partnership\nRavi runs a mobile repair shop alone — full control and secrecy, but if the shop owes ₹2 lakh and its assets are only ₹50,000, Ravi's personal savings can be taken (unlimited liability).\nTo open a second shop he takes Meena as a partner who brings ₹3 lakh, and Arun as a sleeping partner who only invests. Their deed fixes capital, profit-sharing ratio, interest on capital and what happens if one retires. Each partner can bind the firm (mutual agency)."
       ]
     },
     {
@@ -332,6 +373,9 @@
       "mistakes": [],
       "units": [
         { "block": 3, "unit": 12, "title": "Delegation of Authority and Decentralisation" }
+      ],
+      "examples": [
+        "Example: a principal delegates\nThe principal of a college entrusts the annual sports day to a senior teacher (responsibility), lets them spend up to ₹50,000 and pick volunteers (authority), and asks for a report afterwards (accountability).\nThe principal remains finally accountable to the management — authority can be delegated, ultimate responsibility cannot. When such delegation happens in every department systematically, the college becomes decentralised."
       ]
     },
     {
@@ -354,7 +398,10 @@
       "units": [
         { "block": 4, "unit": 14, "title": "Communication and Coordination" }
       ],
-      "figures": ["comm-process"]
+      "figures": ["comm-process"],
+      "examples": [
+        "Example: the communication process and its channels\nA sales manager writes an email (encoding) telling salespeople a price change (message) through the company mail (medium). Salespeople read and interpret it (decoding) and reply with questions (feedback).\nDownward: the manager's instruction. Upward: a salesperson's report. Horizontal: the sales and production managers sort out a delivery date. Grapevine: a rumour about bonuses spreads over tea.\nA barrier: technical jargon the new salespeople don't understand."
+      ]
     },
     {
       "id": "control",
@@ -376,7 +423,10 @@
       "units": [
         { "block": 3, "unit": 13, "title": "Control" }
       ],
-      "figures": ["control-cycle"]
+      "figures": ["control-cycle"],
+      "examples": [
+        "Example: control in a biscuit factory\nStandard: 10,000 packets per shift with at most 1% rejects.\nMeasure: today's shift made 9,200 packets with 3% rejects.\nCompare and find causes: a worn-out oven belt caused the stoppage and uneven baking.\nCorrect: replace the belt and schedule preventive maintenance (a forward-looking step so it does not happen again)."
+      ]
     },
     {
       "id": "finance",
@@ -396,6 +446,9 @@
       "mistakes": [],
       "units": [
         { "block": 5, "unit": 19, "title": "Financial Management" }
+      ],
+      "examples": [
+        "Example: choosing sources of finance\nA company needs ₹10 crore for a new plant. It raises ₹6 crore through equity shares (permanent capital, no fixed charge) and ₹4 crore through debentures at 9% (fixed interest, but cheaper and no loss of control). Its delivery trucks are taken on lease instead of being bought.\nThe new shares are sold through an IPO in the primary market; afterwards investors trade them on the stock exchange — the secondary market, regulated by SEBI."
       ]
     },
     {
@@ -419,6 +472,9 @@
       "units": [
         { "block": 5, "unit": 20, "title": "Human Resource Management" },
         { "block": 4, "unit": 17, "title": "Team Building" }
+      ],
+      "examples": [
+        "Example: HR in a new hospital wing\nHR planning: the wing needs 40 nurses in six months; 10 can be moved from other wards, so 30 must be hired. Job analysis lists the tasks and skills each nursing post needs.\nOperative functions follow: recruit and select (procurement), train (development), fix pay (compensation), look after welfare and safety (maintenance).\nThe new team goes through forming and storming (role clashes) before norming and performing."
       ]
     },
     {
@@ -438,6 +494,9 @@
       "mistakes": [],
       "units": [
         { "block": 2, "unit": 6, "title": "Forms of Business Organisation-II" }
+      ],
+      "examples": [
+        "Example: matching the form to the business\nA tea stall → sole proprietorship (small, easy to start). Three friends starting a CA firm → partnership (skills pooled, moderate capital). A family firm making auto parts for car makers → private company (medium size, limited liability). A steel plant needing ₹500 crore from thousands of investors → public company. Weavers who want to escape middlemen → cooperative society."
       ]
     },
     {
@@ -458,6 +517,9 @@
       "mistakes": [],
       "units": [
         { "block": 2, "unit": 8, "title": "International Business: Multinational Corporation" }
+      ],
+      "examples": [
+        "Example: how an MNC works and where it clashes\nA car maker headquartered abroad sets up a subsidiary in India, sells cars here and exports parts to its other plants — decisions on models and technology come from head office (central control).\nBenefits to India: jobs, technology, tax revenue and exports. Issues: it may buy parts from its own foreign units at high prices (transfer pricing) to show lower profit in India, and keep top posts and key technology at home."
       ]
     }
   ],

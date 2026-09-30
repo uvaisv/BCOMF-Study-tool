@@ -59,6 +59,11 @@
         { "block": 5, "unit": 17, "title": "Conditions and Warranties" },
         { "block": 5, "unit": 18, "title": "Transfer of Ownership and Delivery" },
         { "block": 5, "unit": 19, "title": "Rights of an Unpaid Seller" }
+      ],
+      "examples": [
+        "Example: condition or warranty?\nA buyer tells a dealer he needs a pump that can lift water to a second-floor tank, and relies on the dealer's choice. The pump cannot do it → breach of the implied condition of fitness for purpose: he may reject it and get his money back.\nThe dealer promised a free cover with the pump but did not send it → breach of warranty: the buyer keeps the pump and claims only damages.",
+        "Example: rights of an unpaid seller\nA seller in Kochi sells 100 bags of rice on credit to a buyer in Chennai and sends them by rail.\nWhile the goods are still with the railway, the buyer becomes insolvent → the seller can stop the goods in transit and take them back.\nHad the goods still been in the seller's godown and unpaid for, the seller could keep them (lien). If the buyer does not pay after notice, or the goods are perishable, the seller may resell them and claim any loss.",
+        "Example: risk follows ownership\nA buyer picks out a specific sofa in a showroom and agrees the price; it is ready for delivery and is to be collected next week. Ownership passes at once when the contract is made. If the showroom burns down that night without the seller's fault, the loss falls on the buyer, who still owes the price — unless they agreed otherwise."
       ]
     },
     {
@@ -78,7 +83,7 @@
         "Lost or stolen instrument: the finder gets no title, but an HDC from the finder does; forged instrument: nobody gets title through a forged endorsement.",
         "A bank may refuse a cheque: insufficient funds, stale (over 3 months), post-dated, mutilated, signature mismatch, stop-payment order, account closed, insolvency or death of the customer.",
         "Inchoate instrument: signed stamped paper left blank — holder may complete it. Hundi: indigenous negotiable instrument.",
-        "Maturity: three days of grace are added to notes and bills not payable on demand; if the due date is a public holiday, the instrument is due on the next business day (Secs 22–25).",
+        "Maturity: three days of grace are added to notes and bills not payable on demand. If the due date is a public holiday, the Act (Sec 25) makes the instrument due on the next preceding business day — the study material says 'next business day', but the Act's wording is 'preceding' (Secs 22–25).",
         "Dishonour by non-acceptance: the drawee does not accept within 48 hours, gives a qualified acceptance, cannot be found, is incompetent, fictitious, dead or insolvent. Dishonour by non-payment: the party liable fails to pay when it is duly presented.",
         "Discharge of a party (the instrument remains negotiable) vs discharge of the instrument (all rights end). Modes include cancellation, release, payment in due course and material alteration without consent."
       ],
@@ -89,6 +94,11 @@
         { "block": 6, "unit": 21, "title": "Promissory Note, Bills of Exchange and Cheque" },
         { "block": 6, "unit": 22, "title": "Negotiation" },
         { "block": 6, "unit": 23, "title": "Presentment and Discharge" }
+      ],
+      "examples": [
+        "Example: working out the date of maturity\nA bill payable 30 days after sight is presented for sight on 1 March. Counting 30 days, excluding the day of presentment, gives 31 March; adding three days of grace makes it due on 3 April.\nIf the due date is a public holiday, Section 25 makes it due on the next preceding business day.",
+        "Example: who gets title?\nA thief steals a bearer cheque and passes it for value to C, who takes it in good faith before maturity. C is a holder in due course and gets a good title — the owner cannot recover the amount from C.\nIf the cheque were payable to order and the thief forged the payee's endorsement, nobody would get a title through the forged signature.",
+        "Example: crossings\nA cheque with two parallel lines is crossed generally — paid only through a bank, not over the counter. Two lines with 'State Bank of India' written between them is a special crossing, paid only through that bank. 'Account payee' means the collecting bank must credit the money only to the payee's account."
       ]
     },
     {
@@ -112,6 +122,11 @@
         { "block": 2, "unit": 7, "title": "Performance and Discharge" },
         { "block": 2, "unit": 8, "title": "Remedies for Breach and Quasi Contracts" },
         { "block": 2, "unit": 6, "title": "Void Agreements and Contingent Contracts", "part": "6.3 Contingent contracts" }
+      ],
+      "examples": [
+        "Example: remoteness of damage (Hadley v Baxendale)\nA mill's broken crankshaft was sent through a carrier to be copied, but delivery was delayed and the mill stayed shut longer. The mill owners claimed their lost profits. The carrier had not been told the mill would stand idle without the shaft, so that loss was too remote: damages cover only losses arising naturally from the breach, or losses both parties knew of when contracting.",
+        "Example: supervening impossibility\nA singer agrees to perform in a hall on a set date; the hall is destroyed by fire before then. Performance has become impossible, so the contract is void (Section 56) and neither side is liable.\nBut if costs rise sharply because of a transport strike, the contract is not discharged — mere difficulty or hardship is not impossibility.",
+        "Example: quasi contract\nA trader delivers goods to the wrong shop by mistake and the shopkeeper uses them, knowing they were not a gift. There was no contract, but the shopkeeper must pay for them — benefit of a non-gratuitous act (Section 70)."
       ]
     },
     {
@@ -134,6 +149,11 @@
       "mistakes": [],
       "units": [
         { "block": 1, "unit": 2, "title": "Offer and Acceptance" }
+      ],
+      "examples": [
+        "Example: general offer (Carlill v Carbolic Smoke Ball Co.)\nA company advertised a reward to anyone who used its smoke ball as directed and still caught influenza. Mrs Carlill did so and fell ill. She could claim: a general offer to the public is accepted by anyone who performs its conditions, without telling the offeror first.",
+        "Example: acceptance by post\nA in Delhi posts an offer on 1 June; it reaches B in Kochi on 3 June — the offer is complete then. B posts an acceptance on 4 June; it reaches A on 6 June.\nThe acceptance is complete against A on 4 June (when posted) and against B on 6 June (when it reaches A). A may revoke the offer before 4 June; B may revoke the acceptance before 6 June, by a quicker means such as a phone call.",
+        "Example: counter-offer ends the offer\nA offers to sell land for ₹10 lakh. B replies, 'I will pay ₹9.5 lakh.' A refuses. B then says, 'All right, I accept ₹10 lakh.' There is no contract — the counter-offer rejected the original offer, which is no longer open to accept."
       ]
     },
     {
@@ -153,6 +173,10 @@
       "mistakes": [],
       "units": [
         { "block": 1, "unit": 1, "title": "Essentials of a Contract" }
+      ],
+      "examples": [
+        "Example: agreement vs contract\nFriends agree to meet for dinner and one does not turn up — an agreement, but not a contract, because there was no intention to create legal relations.\nA agrees to sell his used car to B for ₹3 lakh, both freely, both adults — a contract, enforceable by law.",
+        "Example: void, voidable and illegal\nAn agreement with a 15-year-old to buy his cycle → void from the start.\nA contract signed because of a threat → voidable: the threatened party may cancel it or keep it.\nAn agreement to smuggle gold → illegal; a loan given knowingly to finance the smuggling is also void."
       ]
     },
     {
@@ -178,6 +202,10 @@
         { "block": 4, "unit": 13, "title": "Rights, Duties and Liabilities of Partners" },
         { "block": 4, "unit": 14, "title": "Dissolution of Partnership Firm" },
         { "block": 4, "unit": 15, "title": "Limited Liability Partnership" }
+      ],
+      "examples": [
+        "Example: implied authority\nA, B and C run a textile firm. A buys cloth on credit for the firm in the usual way → the firm is bound, even if B and C did not know.\nA signs an agreement referring a firm dispute to arbitration, or opens a bank account in his own name for the firm → outside implied authority; the firm is not bound unless the others agree or usage allows it.",
+        "Example: settling accounts on dissolution (Section 48)\nAssets realise ₹5,00,000. Outside creditors ₹3,00,000; a loan from partner A ₹50,000; capitals A ₹1,00,000 and B ₹1,00,000; profits shared equally.\nPay creditors 3,00,000 → left 2,00,000. Repay A's loan 50,000 → left 1,50,000. Capitals total 2,00,000, so the loss is 50,000, borne 25,000 each.\nA and B each get 1,00,000 − 25,000 = ₹75,000. Check: 3,00,000 + 50,000 + 75,000 + 75,000 = 5,00,000."
       ]
     },
     {
@@ -199,6 +227,11 @@
       "mistakes": [],
       "units": [
         { "block": 1, "unit": 4, "title": "Free Consent" }
+      ],
+      "examples": [
+        "Example: coercion\nA widow's relatives would not let her husband's body be taken for cremation until she adopted a boy they chose (Ranganayakamma v Alwar Setti). The adoption was set aside — her consent was caused by coercion, so it was voidable at her option.",
+        "Example: fraud, misrepresentation or silence?\nA seller knows his horse is unsound and says it is sound → fraud: the buyer may rescind and claim damages.\nA seller honestly but wrongly believes his car's engine was rebuilt and says so → misrepresentation: the buyer may rescind, but gets no damages for fraud.\nA seller says nothing about a defect the buyer never asked about → not fraud, unless there was a duty to speak (for example a relation of trust between them).",
+        "Example: mistake\nA agrees to buy B's horse; unknown to both, it had died the day before. Both were mistaken about a fact essential to the agreement, so it is void (Section 20)."
       ]
     },
     {
@@ -221,6 +254,11 @@
       "mistakes": [],
       "units": [
         { "block": 3, "unit": 11, "title": "Contract of Agency" }
+      ],
+      "examples": [
+        "Example: ratification\nWithout authority, B buys a lorry-load of sugar for A. A later learns all the facts and accepts the deal. The purchase binds A as if B had authority from the start. A cannot accept the sugar and reject the payment terms — the whole act must be ratified.",
+        "Example: sub-agent or substituted agent?\nA tells his agent B to sell his estate by auction and to employ an auctioneer. B names C as auctioneer. C is a substituted agent — responsible directly to A — because B was authorised to appoint him. Had B hired a helper on his own, the helper would be a sub-agent, and B would answer to A for the helper's work.",
+        "Example: agency that cannot be revoked\nA owes B money and authorises B to sell A's land and repay himself from the price. The agency is coupled with B's interest, so A cannot revoke it, and it does not end on A's death."
       ]
     },
     {
@@ -241,6 +279,11 @@
       "mistakes": [],
       "units": [
         { "block": 3, "unit": 10, "title": "Bailment and Pledge" }
+      ],
+      "examples": [
+        "Example: bailment and lien\nYou give cloth to a tailor to stitch a suit — a bailment for the benefit of both. The tailor must take reasonable care of it and return the stitched suit. If you do not pay the stitching charges, the tailor may keep the suit until you pay — a particular lien on the goods on which labour was spent.",
+        "Example: finder of goods\nA finds a gold chain in a bus, advertises it and spends ₹500 on the advertisement. A must take care of it like a bailee and may keep it until the owner pays that expense. A may sell it only if the owner cannot be found with reasonable care or refuses to pay, and the chain is in danger of perishing or losing most of its value, or the lawful charges reach two-thirds of its value.",
+        "Example: pledge\nA farmer pawns gold ornaments with a bank for a ₹50,000 loan. This is a pledge — a bailment as security for a debt. If the loan is not repaid, the bank may sue on the debt and keep the gold as security, or sell it after reasonable notice."
       ]
     },
     {
@@ -260,6 +303,11 @@
       "mistakes": [],
       "units": [
         { "block": 3, "unit": 9, "title": "Indemnity and Guarantee" }
+      ],
+      "examples": [
+        "Example: indemnity or guarantee?\nA says to a shopkeeper, 'Give B goods on credit; if B does not pay, I will.' Three parties, and A's liability arises only on B's default → a guarantee; A is the surety.\nA asks B to file a suit on A's behalf and promises to make good any costs B suffers → an indemnity: two parties, and A is primarily liable.",
+        "Example: rights and discharge of a surety\nA bank lends ₹90,000 to D; three friends are co-sureties. D defaults and one surety pays the whole amount. He can recover ₹30,000 from each of the other two (equal shares), and claim the full ₹90,000 from D, taking over any security the bank held (subrogation).\nIf the bank had given D extra time to repay without the sureties' consent, the sureties would have been discharged (Section 135).",
+        "Example: continuing guarantee\nA guarantees payment for groceries a shop supplies to B every month, up to ₹20,000. It covers a series of transactions, so it is a continuing guarantee. A can end it for future supplies by notice to the shop."
       ]
     },
     {
@@ -278,6 +326,11 @@
       "mistakes": [],
       "units": [
         { "block": 2, "unit": 5, "title": "Consideration and Legality of Object", "part": "5.2–5.6" }
+      ],
+      "examples": [
+        "Example: consideration from a third person (Chinnaya v Ramayya)\nAn old woman gifted her property to her daughter, on condition that the daughter pay a yearly sum to the old woman's brother; the daughter promised him so. She later refused to pay. The brother could sue: consideration moved from the old woman, and in India consideration may come from 'any other person'.",
+        "Example: inadequate consideration, and the exceptions\nA freely agrees to sell a horse worth ₹10,000 for ₹1,000 → a valid contract; inadequacy alone does not make it void, but it may be evidence that consent was not free.\nA signs a written promise to pay a time-barred debt of ₹20,000 → valid without fresh consideration (Section 25(3)).",
+        "Example: privity (Tweddle v Atkinson)\nThe fathers of a bride and groom agreed with each other to pay the groom a sum; the groom sued when one of them did not pay. He failed — he was not a party to the contract."
       ]
     },
     {
@@ -298,6 +351,11 @@
       "mistakes": [],
       "units": [
         { "block": 1, "unit": 3, "title": "Capacity of Parties" }
+      ],
+      "examples": [
+        "Example: minor's agreement (Mohori Bibee v Dharmodas Ghose)\nA minor mortgaged his house to a moneylender for a loan. The Privy Council held the mortgage void from the start, and the lender could not even get back the money he had advanced.",
+        "Example: necessaries\nA 17-year-old college student buys textbooks worth ₹3,000 on credit. The bookseller can recover the price from the student's property, but the student is not personally liable. A gold watch bought on credit would not be a necessary for a student.",
+        "Example: sound mind\nA patient in a mental hospital who is at intervals of sound mind may make a contract during those lucid intervals. A sane person who is delirious with fever, or drunk, cannot make a contract while unable to understand it."
       ]
     },
     {
@@ -317,6 +375,10 @@
       "units": [
         { "block": 2, "unit": 5, "title": "Consideration and Legality of Object", "part": "5.7–5.8" },
         { "block": 2, "unit": 6, "title": "Void Agreements and Contingent Contracts", "part": "6.2 Void agreements" }
+      ],
+      "examples": [
+        "Example: restraint of trade\nThe seller of a bakery in Kochi, along with its goodwill, agrees not to run a bakery in Kochi for five years → valid (exception for the sale of goodwill, within reasonable local limits).\nAn employee agrees never to work for any competitor after leaving the job → void: a restraint after employment is not protected.",
+        "Example: wager and unlawful object\nA and B agree that A pays B ₹1,000 if India wins a match and B pays A if it loses → a wagering agreement, void; neither can sue. Life insurance is not a wager, because the insured has an insurable interest.\nA promises B ₹50,000 to get him a government job by bribing an official → void, because the object is unlawful."
       ]
     }
   ],

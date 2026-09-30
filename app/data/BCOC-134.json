@@ -65,6 +65,10 @@
       "mistakes": ["Wrong sign order in the quotient rule (it is v·u′ − u·v′).", "Forgetting to multiply by du/dx in the chain rule."],
       "units": [
         { "block": 2, "unit": 7, "title": "Concept of Differentiation" }
+      ],
+      "examples": [
+        "Example: product, quotient and chain rules\nProduct: y = (x² + 1)(3x − 2) → dy/dx = (x² + 1)·3 + (3x − 2)·2x = 9x² − 4x + 3.\nQuotient: y = (2x + 1)/(x − 3) → dy/dx = [(x − 3)·2 − (2x + 1)·1]/(x − 3)² = −7/(x − 3)².\nChain: y = (3x + 9)³ → put u = 3x + 9: dy/dx = 3u² × 3 = 9(3x + 9)².",
+        "Example: implicit, parametric and logarithmic\nImplicit: x² + y² = 25 → 2x + 2y·dy/dx = 0 → dy/dx = −x/y; at (3, 4) the slope is −3/4.\nParametric: x = at², y = 2at → dx/dt = 2at, dy/dt = 2a → dy/dx = 2a/2at = 1/t.\nLogarithmic: y = xˣ → log y = x·log x → (1/y)·dy/dx = log x + 1 → dy/dx = xˣ(1 + log x)."
       ]
     },
     {
@@ -89,6 +93,10 @@
       "units": [
         { "block": 3, "unit": 10, "title": "Interest Rates" },
         { "block": 3, "unit": 11, "title": "Compounding and Discounting" }
+      ],
+      "examples": [
+        "Example: simple vs compound, ₹10,000 at 10% for 2 years\nSI = 10,000 × 10 × 2 / 100 = ₹2,000.\nCompounded yearly: A = 10,000 × (1.10)² = ₹12,100 → CI = ₹2,100.\nCompounded half-yearly: rate 5% for 4 periods → A = 10,000 × (1.05)⁴ = ₹12,155.06 → CI = ₹2,155.06. More frequent compounding gives more interest.",
+        "Example: effective rate, present value and doubling time\nEffective rate of 12% compounded monthly = (1 + 0.12/12)¹² − 1 = (1.01)¹² − 1 = 12.68%.\nPresent value of ₹50,000 due in 3 years at 8% = 50,000 ÷ (1.08)³ = ₹39,691.61.\nDoubling at 8% a year: 2 = (1.08)ⁿ → n = log 2 ÷ log 1.08 ≈ 9 years."
       ]
     },
     {
@@ -111,6 +119,10 @@
       "units": [
         { "block": 2, "unit": 8, "title": "Maxima and Minima of Functions" },
         { "block": 2, "unit": 9, "title": "Application of Derivatives" }
+      ],
+      "examples": [
+        "Example: profit-maximising output\nTR = 50x − x² and TC = x² + 10x + 100.\nMR = d(TR)/dx = 50 − 2x; MC = d(TC)/dx = 2x + 10. MR = MC → 50 − 2x = 2x + 10 → x = 10.\nProfit P = TR − TC = −2x² + 40x − 100; P″ = −4 < 0, so x = 10 gives a maximum.\nMaximum profit = −200 + 400 − 100 = ₹100.",
+        "Example: price elasticity from a demand function\nq = 100 − 2p. At p = 20, q = 60 and dq/dp = −2.\nEd = (dq/dp) × (p/q) = −2 × 20/60 = −0.67. |Ed| < 1, so demand is inelastic at this price: raising the price a little would raise total revenue."
       ]
     },
     {
@@ -135,6 +147,10 @@
       "units": [
         { "block": 2, "unit": 5, "title": "Mathematical Functions" },
         { "block": 2, "unit": 9, "title": "Application of Derivatives", "part": "9.2–9.6" }
+      ],
+      "examples": [
+        "Example: cost, revenue, profit and break-even\nFixed cost ₹60,000; variable cost ₹30 per unit; selling price ₹50.\nC(x) = 60,000 + 30x; R(x) = 50x; P(x) = R − C = 20x − 60,000.\nBreak-even: 50x = 60,000 + 30x → x = 3,000 units (= 60,000 ÷ (50 − 30)).\nAt 5,000 units: profit = ₹40,000; average cost = (60,000 + 1,50,000) ÷ 5,000 = ₹42 per unit.",
+        "Example: composite functions\nf(x) = 2x + 1, g(x) = x².\nf∘g(x) = f(x²) = 2x² + 1; g∘f(x) = (2x + 1)² = 4x² + 4x + 1.\nAt x = 2: f∘g = 9 but g∘f = 25 — the order matters."
       ]
     },
     {
@@ -162,6 +178,9 @@
       "units": [
         { "block": 1, "unit": 3, "title": "Inverse of Matrices" },
         { "block": 1, "unit": 2, "title": "Determinants", "part": "2.5 Cramer's rule" }
+      ],
+      "examples": [
+        "Example: Cramer's rule\nSolve x + y + z = 6, 2x − y + z = 3, x + 2y − z = 2.\nD = |1 1 1; 2 −1 1; 1 2 −1| = 1(1 − 2) − 1(−2 − 1) + 1(4 + 1) = 7.\nReplace column 1 with (6, 3, 2): D₁ = 7; column 2: D₂ = 14; column 3: D₃ = 21.\nx = 7/7 = 1, y = 14/7 = 2, z = 21/7 = 3.\nCheck in equation 3: 1 + 4 − 3 = 2 ✓."
       ]
     },
     {
@@ -185,6 +204,10 @@
       "units": [
         { "block": 1, "unit": 1, "title": "Introduction to Matrices" },
         { "block": 1, "unit": 2, "title": "Determinants" }
+      ],
+      "examples": [
+        "Example: a bill with matrix multiplication\nCustomer A buys 2 pens, 3 notebooks and 1 file; customer B buys 1 pen, 5 notebooks and 2 files. Prices: pen ₹10, notebook ₹40, file ₹25.\nQuantity matrix (2 × 3) × price matrix (3 × 1) = bill matrix (2 × 1):\nA: 2×10 + 3×40 + 1×25 = ₹165. B: 1×10 + 5×40 + 2×25 = ₹260.\nThe product works because the quantity matrix has 3 columns and the price matrix 3 rows.",
+        "Example: a 2 × 2 determinant and a property\n|3 2; 1 4| = 3×4 − 2×1 = 10. Swap the two rows: |1 4; 3 2| = 2 − 12 = −10 — the sign changes."
       ]
     },
     {
@@ -208,6 +231,9 @@
       "mistakes": [],
       "units": [
         { "block": 1, "unit": 4, "title": "Application of Matrices in Business and Economics" }
+      ],
+      "examples": [
+        "Example: two-industry Leontief model\nTechnology matrix A = [0.2 0.3; 0.4 0.1] (column j = inputs per ₹1 of output of industry j). Final demand D = (120, 60).\nI − A = [0.8 −0.3; −0.4 0.9]; |I − A| = 0.72 − 0.12 = 0.6.\n(I − A)⁻¹ = (1/0.6) × [0.9 0.3; 0.4 0.8].\nX = (I − A)⁻¹ D → X₁ = (0.9×120 + 0.3×60)/0.6 = 210; X₂ = (0.4×120 + 0.8×60)/0.6 = 160.\nCheck: industry 1 output = 0.2×210 + 0.3×160 + 120 = 210 ✓. Hawkins–Simon holds: 0.8 and 0.9 are positive and |I − A| > 0."
       ]
     },
     {
@@ -223,6 +249,10 @@
       "mistakes": [],
       "units": [
         { "block": 2, "unit": 6, "title": "Limit and Continuity" }
+      ],
+      "examples": [
+        "Example: 0/0 forms\nlim x→3 (x² − 9)/(x − 3) = lim (x − 3)(x + 3)/(x − 3) = 3 + 3 = 6.\nlim x→2 (x⁵ − 32)/(x − 2) = 5 × 2⁴ = 80, using lim (xⁿ − aⁿ)/(x − a) = n·aⁿ⁻¹.\nRationalise: lim x→0 (√(1 + x) − 1)/x = lim x/[x(√(1 + x) + 1)] = 1/2.",
+        "Example: finding k for continuity\nf(x) = (x² − 4)/(x − 2) for x ≠ 2, and f(2) = k. The limit as x → 2 is 2 + 2 = 4, so f is continuous at 2 only if k = 4."
       ]
     },
     {
@@ -245,6 +275,9 @@
       "mistakes": ["Multiplying by 100 before checking the reversal tests (tests use ratios without ×100)."],
       "units": [
         { "block": 6, "unit": 17, "title": "Index Numbers" }
+      ],
+      "examples": [
+        "Example: Laspeyres, Paasche and Fisher\nItem A: p₀ 10, q₀ 5, p₁ 12, q₁ 6. Item B: p₀ 8, q₀ 10, p₁ 10, q₁ 8. Item C: p₀ 5, q₀ 4, p₁ 6, q₁ 5.\nΣp₀q₀ = 50 + 80 + 20 = 150; Σp₁q₀ = 60 + 100 + 24 = 184; Σp₀q₁ = 60 + 64 + 25 = 149; Σp₁q₁ = 72 + 80 + 30 = 182.\nLaspeyres = 184/150 × 100 = 122.67. Paasche = 182/149 × 100 = 122.15.\nFisher = √(122.67 × 122.15) = 122.41 — prices rose about 22.4%.\nTime reversal: P₀₁ × P₁₀ = √(184/150 × 182/149) × √(149/182 × 150/184) = 1 ✓."
       ]
     },
     {
@@ -261,7 +294,10 @@
       "units": [
         { "block": 6, "unit": 18, "title": "Time Series Analysis" }
       ],
-      "figures": ["ts-trend", "ts-components"]
+      "figures": ["ts-trend", "ts-components"],
+      "examples": [
+        "Example: trend by least squares\nSales (₹ lakh), 2020–2024: 40, 44, 50, 52, 59. Take X = year − 2022, so X = −2, −1, 0, 1, 2 and ΣX = 0.\nΣY = 245, ΣXY = −80 − 44 + 0 + 52 + 118 = 46, ΣX² = 10.\na = 245/5 = 49; b = 46/10 = 4.6 → Yc = 49 + 4.6X.\nTrend values: 39.8, 44.4, 49.0, 53.6, 58.2.\nForecast for 2026 (X = 4): 49 + 18.4 = ₹67.4 lakh."
+      ]
     },
     {
       "id": "dispersion",
@@ -282,6 +318,10 @@
       "mistakes": ["Forgetting to multiply by the class width i in step deviation.", "Using cumulative frequency of the quartile class instead of the class before it."],
       "units": [
         { "block": 4, "unit": 14, "title": "Measures of Dispersion" }
+      ],
+      "examples": [
+        "Example: standard deviation\nData: 2, 4, 4, 4, 5, 5, 7, 9. Mean = 40/8 = 5.\nSquared deviations: 9, 1, 1, 1, 0, 0, 4, 16 → total 32. σ = √(32/8) = √4 = 2.",
+        "Example: which batsman is more consistent?\nA: mean 50 runs, σ = 10 → CV = 10/50 × 100 = 20%. B: mean 40 runs, σ = 6 → CV = 6/40 × 100 = 15%.\nA scores more on average, but B has the lower CV, so B is more consistent.\nQuartile deviation: if Q₁ = 20 and Q₃ = 40, QD = (40 − 20)/2 = 10 and its coefficient = (40 − 20)/(40 + 20) = 0.33."
       ]
     },
     {
@@ -303,6 +343,10 @@
       "mistakes": [],
       "units": [
         { "block": 4, "unit": 12, "title": "Introduction to Statistics" }
+      ],
+      "examples": [
+        "Example: an average that misleads\nNine households in a lane earn ₹10,000 a month and one earns ₹1,00,000. The mean income is ₹19,000, yet nine families earn about half that. The statistic is correct, but used alone it misleads — statistics describe aggregates, not individuals.",
+        "Example: descriptive vs inferential\nA company surveys 500 of its 50,000 customers. 'Average rating 4.1 out of 5 in the sample' is descriptive. 'About 80% of all our customers are satisfied, give or take 3%' is inferential — a conclusion about the whole population from a sample."
       ]
     },
     {
@@ -324,6 +368,9 @@
       "mistakes": ["Using the cf of the median class instead of the class before it."],
       "units": [
         { "block": 4, "unit": 13, "title": "Measures of Central Tendency" }
+      ],
+      "examples": [
+        "Example: mean, median and mode of grouped data\nClasses 0–10, 10–20, 20–30, 30–40, 40–50 with frequencies 5, 8, 12, 10, 5 (N = 40).\nMean = Σfm/N = (25 + 120 + 300 + 350 + 225)/40 = 1,020/40 = 25.5.\nMedian: N/2 = 20; cumulative frequencies 5, 13, 25 → median class 20–30. Median = 20 + (20 − 13)/12 × 10 = 25.83.\nMode: modal class 20–30 (f₁ 12, f₀ 8, f₂ 10). Mode = 20 + (12 − 8)/(24 − 8 − 10) × 10 = 26.67."
       ]
     },
     {
@@ -344,7 +391,10 @@
       "units": [
         { "block": 5, "unit": 16, "title": "Simple Linear Regression" }
       ],
-      "figures": ["regression-lines"]
+      "figures": ["regression-lines"],
+      "examples": [
+        "Example: both regression lines\nx: 1, 2, 3, 4, 5; y: 2, 4, 5, 4, 5. Means x̄ = 3, ȳ = 4.\nDeviations dx: −2, −1, 0, 1, 2; dy: −2, 0, 1, 0, 1. Σdxdy = 6, Σdx² = 10, Σdy² = 6.\nbᵧₓ = 6/10 = 0.6 → Y on X: y − 4 = 0.6(x − 3), i.e. y = 0.6x + 2.2.\nbₓᵧ = 6/6 = 1 → X on Y: x − 3 = 1(y − 4), i.e. x = y − 1.\nr = √(0.6 × 1) = 0.77. Estimate y when x = 6: 0.6 × 6 + 2.2 = 5.8."
+      ]
     },
     {
       "id": "correlation",
@@ -368,7 +418,11 @@
       "units": [
         { "block": 5, "unit": 15, "title": "Simple Linear Correlation" }
       ],
-      "figures": ["correlation-types"]
+      "figures": ["correlation-types"],
+      "examples": [
+        "Example: Karl Pearson's r\nUsing the same data (x: 1–5; y: 2, 4, 5, 4, 5): Σdxdy = 6, Σdx² = 10, Σdy² = 6.\nr = 6 ÷ √(10 × 6) = 6 ÷ 7.75 = 0.77 — a fairly high positive correlation.",
+        "Example: Spearman's rank correlation\nTwo judges rank five contestants: judge 1 gives 1, 2, 3, 4, 5; judge 2 gives 2, 1, 4, 3, 5.\nD = −1, 1, −1, 1, 0 → ΣD² = 4.\nρ = 1 − 6 × 4 / [5 × (25 − 1)] = 1 − 24/120 = 0.8 — the judges largely agree."
+      ]
     }
   ],
   "questions": [
