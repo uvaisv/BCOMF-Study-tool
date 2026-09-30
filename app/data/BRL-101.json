@@ -73,7 +73,8 @@
       "mistakes": [],
       "units": [
         { "unit": 2, "title": "Retail Consumer" }
-      ]
+      ],
+      "figures": ["buying-process"]
     },
     {
       "id": "store",

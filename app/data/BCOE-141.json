@@ -128,6 +128,9 @@
      "unit": 13,
      "title": "Physical Distribution"
     }
+   ],
+   "figures": [
+    "channel-levels"
    ]
   },
   {
@@ -291,6 +294,9 @@
      "unit": 4,
      "title": "Consumer Behaviour"
     }
+   ],
+   "figures": [
+    "buying-process"
    ]
   },
   {

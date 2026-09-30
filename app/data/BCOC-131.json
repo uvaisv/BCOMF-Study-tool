@@ -217,7 +217,8 @@
       "mistakes": ["Not charging depreciation for the part year before sale.", "Leaving out installation charges from cost."],
       "units": [
         { "block": 3, "unit": 8, "title": "Depreciation" }
-      ]
+      ],
+      "figures": ["depreciation-methods"]
     },
     {
       "id": "concepts",
@@ -262,7 +263,8 @@
       "units": [
         { "block": 1, "unit": 2, "title": "Accounting Process and Rules" },
         { "block": 1, "unit": 3, "title": "Accounting Principles", "part": "3.4 Systems of book-keeping" }
-      ]
+      ],
+      "figures": ["accounting-process"]
     },
     {
       "id": "basics",

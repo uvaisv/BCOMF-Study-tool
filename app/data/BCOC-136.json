@@ -163,7 +163,8 @@
       "units": [
         { "block": 5, "unit": 15, "title": "Deductions from Gross Total Income" },
         { "block": 5, "unit": 16, "title": "Assessment of Individuals" }
-      ]
+      ],
+      "figures": ["total-income"]
     },
     {
       "id": "residential-status",

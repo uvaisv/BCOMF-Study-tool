@@ -135,6 +135,9 @@
      "unit": 12,
      "title": "Overhead Variances"
     }
+   ],
+   "figures": [
+    "variance-tree"
    ]
   },
   {

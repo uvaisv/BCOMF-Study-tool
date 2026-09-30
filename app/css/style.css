@@ -339,6 +339,7 @@ details summary { cursor: pointer; color: var(--accent); font-weight: 600; paddi
 .fig .lbl.sm { font-size: 10px; font-weight: 500; }
 .fig .tick, .fig .axl { fill: var(--muted); font-size: 10px; }
 .fig .lbl.b { font-weight: 700; }
+.fig .lbl.xs { font-size: 9.5px; font-weight: 600; }
 .fig .thin { stroke-width: 1.5; }
 .fig .pt1 { fill: var(--fig-1); stroke: var(--surface); stroke-width: 1.5; }
 .fig .pt2 { fill: var(--fig-2); stroke: var(--surface); stroke-width: 1.5; }
@@ -349,6 +350,17 @@ details summary { cursor: pointer; color: var(--accent); font-weight: 600; paddi
 .fig .wf-tot { fill: var(--fig-1); }
 .fig .wf-up { fill: var(--fig-3); }
 .fig .wf-down { fill: var(--fig-2); }
+.fig .arr { fill: none; stroke: var(--muted); stroke-width: 1.5; }
+.fig .arr-h { fill: var(--muted); }
+.fig .arr-n { stroke: var(--fig-2); stroke-width: 1.5; stroke-dasharray: 3 2; }
+.fig .arr-n-h { fill: var(--fig-2); }
+.fig .arr-1, .fig .arr-2, .fig .arr-3 { stroke-width: 2; }
+.fig .arr-1 { stroke: var(--fig-1); } .fig .arr-1-h { fill: var(--fig-1); }
+.fig .arr-2 { stroke: var(--fig-2); } .fig .arr-2-h { fill: var(--fig-2); }
+.fig .arr-3 { stroke: var(--fig-3); } .fig .arr-3-h { fill: var(--fig-3); }
+.fig .stf { fill: none; stroke: var(--muted); stroke-width: 1.5; stroke-dasharray: 5 4; }
+.fig .pyr { fill: var(--accent-soft); stroke: var(--surface); stroke-width: 2; }
+.fig .pyr-top { fill: var(--accent); opacity: .35; stroke: var(--surface); stroke-width: 2; }
 
 /* Settings */
 .seg { display: flex; flex-wrap: wrap; gap: 8px; }

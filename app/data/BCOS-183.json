@@ -209,7 +209,8 @@
       "mistakes": [],
       "units": [
         { "block": 2, "unit": 5, "title": "Business Information System", "part": "5.4 DBMS" }
-      ]
+      ],
+      "figures": ["data-abstraction"]
     },
     {
       "id": "computer-basics",

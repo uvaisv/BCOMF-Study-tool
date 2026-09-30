@@ -482,6 +482,10 @@
      "unit": 4,
      "title": "Inventory Control"
     }
+   ],
+   "figures": [
+    "stock-levels",
+    "eoq"
    ]
   },
   {

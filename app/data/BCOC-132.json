@@ -76,7 +76,8 @@
       "units": [
         { "block": 3, "unit": 10, "title": "Organising" },
         { "block": 3, "unit": 11, "title": "Departmentation and Forms of Authority Relationships" }
-      ]
+      ],
+      "figures": ["line-staff"]
     },
     {
       "id": "marketing",
@@ -139,7 +140,8 @@
       "mistakes": ["Drawing Maslow's pyramid in the wrong order."],
       "units": [
         { "block": 4, "unit": 15, "title": "Motivation" }
-      ]
+      ],
+      "figures": ["maslow"]
     },
     {
       "id": "entrepreneurship",
@@ -351,7 +353,8 @@
       "mistakes": [],
       "units": [
         { "block": 4, "unit": 14, "title": "Communication and Coordination" }
-      ]
+      ],
+      "figures": ["comm-process"]
     },
     {
       "id": "control",
@@ -372,7 +375,8 @@
       "mistakes": [],
       "units": [
         { "block": 3, "unit": 13, "title": "Control" }
-      ]
+      ],
+      "figures": ["control-cycle"]
     },
     {
       "id": "finance",

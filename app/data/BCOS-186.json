@@ -90,7 +90,8 @@
       "units": [
         { "block": 2, "unit": 7, "title": "Sales Force Motivation" },
         { "block": 1, "unit": 4, "title": "Sales Force Management", "part": "4.7–4.8" }
-      ]
+      ],
+      "figures": ["maslow"]
     },
     {
       "id": "buying-motives",
@@ -129,7 +130,8 @@
       "mistakes": [],
       "units": [
         { "block": 2, "unit": 6, "title": "Buyer Behaviour" }
-      ]
+      ],
+      "figures": ["buying-process"]
     },
     {
       "id": "sales-process",
@@ -150,7 +152,8 @@
       "mistakes": [],
       "units": [
         { "block": 3, "unit": 8, "title": "Sales Process" }
-      ]
+      ],
+      "figures": ["selling-process"]
     },
     {
       "id": "salesmanship",

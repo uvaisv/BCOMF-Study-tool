@@ -74,15 +74,21 @@
     },
     pt(x, y, cls = "pt1") { return this.add(`<circle class="${cls}" cx="${this.X(x).toFixed(1)}" cy="${this.Y(y).toFixed(1)}" r="3.5"/>`); },
     // Pixel-space pieces for flow and tree diagrams.
-    box(x, y, w, h, lines, bar, bold = 1) {
+    box(x, y, w, h, lines, bar, bold = 1, xs = false) {
       this.add(`<rect class="bx" x="${x}" y="${y}" width="${w}" height="${h}" rx="8"/>`);
       if (bar) this.add(`<rect class="${bar}" x="${x}" y="${y}" width="5" height="${h}" rx="2"/>`);
       const lh = 13, y0 = y + h / 2 - ((lines.length - 1) * lh) / 2 + 4, cx = x + w / 2;
-      lines.forEach((t, i) => this.add(`<text class="${i < bold ? "lbl" : "lbl sm"}" x="${cx}" y="${y0 + i * lh}" text-anchor="middle">${t}</text>`));
+      lines.forEach((t, i) => this.add(`<text class="${xs ? "lbl xs" : i < bold ? "lbl" : "lbl sm"}" x="${cx}" y="${y0 + i * lh}" text-anchor="middle">${t}</text>`));
       return this;
     },
     ptext(x, y, s, cls = "lbl", anchor = "middle") { return this.add(`<text class="${cls}" x="${x}" y="${y}" text-anchor="${anchor}">${s}</text>`); },
     pline(x1, y1, x2, y2, cls = "ax") { return this.add(`<path class="${cls}" d="M${x1} ${y1}L${x2} ${y2}"/>`); },
+    // Arrow in pixel space with a small head at (x2, y2).
+    arrow(x1, y1, x2, y2, cls = "arr") {
+      const a = Math.atan2(y2 - y1, x2 - x1), h = 6;
+      const p1 = [x2 - h * Math.cos(a - 0.45), y2 - h * Math.sin(a - 0.45)], p2 = [x2 - h * Math.cos(a + 0.45), y2 - h * Math.sin(a + 0.45)];
+      return this.add(`<path class="${cls}" d="M${x1.toFixed(1)} ${y1.toFixed(1)}L${x2.toFixed(1)} ${y2.toFixed(1)}"/><polygon class="${cls}-h" points="${x2.toFixed(1)},${y2.toFixed(1)} ${p1[0].toFixed(1)},${p1[1].toFixed(1)} ${p2[0].toFixed(1)},${p2[1].toFixed(1)}"/>`);
+    },
     svg() {
       return `<svg viewBox="0 0 ${W} ${this.h}" role="img" aria-label="${this.aria}">${this.parts.join("")}</svg>`;
     }
@@ -506,6 +512,259 @@
         if (i < 2) g.ptext(x + 103, 136, "×", "lbl");
       });
       g.ptext(160, 222, "ROE = margin × turnover × multiplier", "lbl sm");
+      return g.svg();
+    }
+  };
+
+  /* ---------- flows, cycles and charts ---------- */
+
+  // A vertical chain of steps: [[title, detail], …], optionally with a loop back from the last to the first.
+  function vflow(aria, steps, loop) {
+    const bh = 40, gap = 16, x = 44, w = 250, h = 8 + steps.length * (bh + gap) - gap + 8;
+    const g = new Fig(h, aria);
+    steps.forEach(([t, d], i) => {
+      const y = 8 + i * (bh + gap);
+      g.box(x, y, w, bh, d ? [t, d] : [t], i === 0 || i === steps.length - 1 ? "bar1" : null);
+      if (i < steps.length - 1) g.arrow(x + w / 2, y + bh, x + w / 2, y + bh + gap - 1);
+    });
+    if (loop) {
+      const yl = 8 + (steps.length - 1) * (bh + gap) + bh / 2, yf = 8 + bh / 2;
+      g.add(`<path class="arr" d="M${x} ${yl}H${x - 22}V${yf}"/>`).arrow(x - 22, yf, x - 1, yf);
+      g.add(`<text class="tick" transform="translate(${x - 28} ${(yl + yf) / 2}) rotate(-90)" text-anchor="middle">${loop}</text>`);
+    }
+    return g;
+  }
+
+  F["stock-levels"] = {
+    title: "Stock levels (example)",
+    caption: "Example: usage 50–150 units a week (normal 100), lead time 2–6 weeks (normal 4), reorder quantity 800. Reorder level = 150 × 6 = 900; minimum level = 900 − 100 × 4 = 500; maximum level = 900 + 800 − 50 × 2 = 1,600; danger level (1-week emergency supply) = 100 × 1 = 100. Stock falls with use; an order is placed when it reaches the reorder level and arrives after the lead time, just as stock reaches the minimum.",
+    draw() {
+      const g = new Fig(250, "Saw-tooth stock chart with maximum, reorder, minimum and danger levels").panel(24, 0, 1800, 20, 206).axes("Weeks", "Units");
+      const lv = [[1600, "Maximum 1,600"], [900, "Reorder 900"], [500, "Minimum 500"], [100, "Danger 100"]];
+      lv.forEach(([v, n]) => { g.line(0, v, 23.5, v, "c4").text(23.5, v, n, { dy: -4, anchor: "end", cls: "tick" }); });
+      let d = `M${g.X(0)} ${g.Y(1300)}`;
+      [0, 8].forEach((t0) => { d += `L${g.X(t0 + 8)} ${g.Y(500)}L${g.X(t0 + 8)} ${g.Y(1300)}`; });
+      g.add(`<path class="c1" d="${d}"/>`);
+      [4, 12].forEach((t) => g.dot(t, 900));
+      g.text(4, 900, "order placed", { dx: -2, dy: 16, anchor: "end", cls: "lbl sm" });
+      g.text(8, 1300, "delivery", { dx: 6, dy: -6, cls: "lbl sm" });
+      g.bracket(4, 8, 250, "lead time", true);
+      return g.svg();
+    }
+  };
+
+  F["eoq"] = {
+    title: "Economic order quantity (example)",
+    caption: "Example: annual usage A = 1,200 units, cost per order O = ₹100, carrying cost C = ₹6 per unit a year. Ordering cost (A ÷ Q × O) falls as each order gets bigger; carrying cost (Q ÷ 2 × C) rises. Total cost is lowest where the two are equal: EOQ = √(2AO ÷ C) = √(2 × 1,200 × 100 ÷ 6) = 200 units, at a total cost of ₹1,200.",
+    draw() {
+      const A = 1200, O = 100, C = 6, q = Math.sqrt((2 * A * O) / C);
+      const oc = (x) => (A / x) * O, cc = (x) => (x / 2) * C;
+      const g = new Fig(250, "Ordering, carrying and total cost with the economic order quantity").panel(520, 0, 3000, 14, 206).axes("Order size (units)", "Cost (₹)");
+      g.curve(oc, 45, 500, "c2").text(500, oc(500), "Ordering cost", { dx: -2, dy: -6, anchor: "end", cls: "lbl sm" });
+      g.curve(cc, 0, 500, "c3").text(440, cc(440), "Carrying cost", { dx: 2, dy: 16, anchor: "end", cls: "lbl sm" });
+      g.curve((x) => oc(x) + cc(x), 70, 500, "c1").text(500, oc(500) + cc(500), "Total cost", { dx: -2, dy: -6, anchor: "end", cls: "lbl sm" });
+      g.guide(q, oc(q) + cc(q), "EOQ 200", "1,200").dot(q, oc(q) + cc(q)).dot(q, oc(q));
+      return g.svg();
+    }
+  };
+
+  F["variance-tree"] = {
+    title: "Material and labour variances",
+    caption: "Each total variance splits into parts that add back to it, so you can check your answer: cost variance = price (or rate) variance + usage (or efficiency) variance. Usage splits further into mix and yield; for labour, idle time is shown separately. Standard more than actual is favourable (F); actual more than standard is adverse (A).",
+    draw() {
+      const g = new Fig(330, "Tree of material and labour cost variances");
+      const tree = (y, bar, root, a, b, b1, b2, extra) => {
+        g.box(80, y, 160, 30, [root], bar);
+        const kids = extra ? [a, b, extra] : [a, b], kw = extra ? 96 : 124, xs = extra ? [4, 112, 220] : [14, 144];
+        g.pline(160, y + 30, 160, y + 42).pline(xs[0] + kw / 2, y + 42, xs[kids.length - 1] + kw / 2, y + 42);
+        kids.forEach((k, i) => { g.pline(xs[i] + kw / 2, y + 42, xs[i] + kw / 2, y + 52); g.box(xs[i], y + 52, kw, 28, [k]); });
+        const bx = xs[1] + kw / 2;
+        g.pline(bx, y + 80, bx, y + 90).pline(bx - 58, y + 90, bx + 58, y + 90);
+        g.pline(bx - 58, y + 90, bx - 58, y + 98).pline(bx + 58, y + 90, bx + 58, y + 98);
+        g.box(bx - 108, y + 98, 100, 26, [b1], null, 0).box(bx + 8, y + 98, 100, 26, [b2], null, 0);
+      };
+      tree(4, "bar1", "Material cost variance", "Price variance", "Usage variance", "Mix", "Yield (sub-usage)");
+      tree(170, "bar2", "Labour cost variance", "Rate", "Efficiency", "Mix", "Sub-efficiency", "Idle time");
+      return g.svg();
+    }
+  };
+
+  F["maslow"] = {
+    title: "Maslow's hierarchy of needs",
+    caption: "Needs arise in order from the bottom: physiological, safety, social, esteem and self-actualisation. A need that is satisfied no longer motivates, so the next level up becomes the motivator. Managers use pay and security for the lower needs, and recognition, responsibility and growth for the higher ones.",
+    draw() {
+      const g = new Fig(236, "Pyramid of five levels of needs");
+      const lv = [["Self-actualisation", "growth, challenging work"], ["Esteem", "recognition, status, awards"], ["Social", "belonging, teamwork"], ["Safety", "job security, insurance"], ["Physiological", "food, shelter, basic pay"]];
+      const top = 10, lh = 42, base = 150, apex = 76;
+      lv.forEach(([n, e], i) => {
+        const y0 = top + i * lh, y1 = y0 + lh - 3, w0 = (base * (i * lh)) / (lv.length * lh), w1 = (base * ((i + 1) * lh - 3)) / (lv.length * lh);
+        g.add(`<polygon class="${i === 0 ? "pyr-top" : "pyr"}" points="${apex - w0 / 2},${y0} ${apex + w0 / 2},${y0} ${apex + w1 / 2},${y1} ${apex - w1 / 2},${y1}"/>`);
+        g.ptext(apex, y1 - 12, String(5 - i), "lbl");
+        g.ptext(162, y0 + 18, n, "lbl", "start").ptext(162, y0 + 32, e, "tick", "start");
+      });
+      return g.svg();
+    }
+  };
+
+  F["comm-process"] = {
+    title: "The communication process",
+    caption: "The sender encodes an idea into a message (words, signs, symbols) and sends it through a channel or medium; the receiver decodes it; feedback tells the sender whether it was understood — without feedback communication is incomplete. Noise is anything that disturbs the message at any stage, such as physical noise, unclear language or emotions.",
+    draw() {
+      const g = new Fig(170, "Sender, encoding, channel, decoding, receiver with feedback and noise");
+      const names = ["Sender", "Encoding", "Channel", "Decoding", "Receiver"], w = 56, gap = 8;
+      names.forEach((n, i) => {
+        const x = 4 + i * (w + gap);
+        g.box(x, 54, w, 34, [n], null, 1, true);
+        if (i < 4) g.arrow(x + w, 71, x + w + gap - 1, 71);
+      });
+      g.ptext(4 + 1.5 * (w + gap) + w / 2 - 32, 46, "message", "tick");
+      const xs = 4 + w / 2, xr = 4 + 4 * (w + gap) + w / 2;
+      g.add(`<path class="arr" d="M${xr} 88V122H${xs}"/>`).arrow(xs, 122, xs, 89);
+      g.ptext(160, 138, "Feedback", "lbl sm");
+      const xc = 4 + 2 * (w + gap) + w / 2;
+      g.ptext(xc, 18, "Noise", "lbl sm").arrow(xc - 16, 24, xc - 8, 52, "arr-n").arrow(xc + 16, 24, xc + 8, 52, "arr-n");
+      return g.svg();
+    }
+  };
+
+  F["control-cycle"] = {
+    title: "The control process",
+    caption: "Control is a continuous cycle: set standards (from plans), measure actual performance, compare it with the standards and find the causes of any deviation, then take corrective action — which feeds back into the next round of planning and standards.",
+    draw() {
+      const g = new Fig(212, "Four-step control cycle");
+      const bx = [[10, 14, "1. Set standards"], [170, 14, "2. Measure performance"], [170, 138, "3. Compare, find causes"], [10, 138, "4. Correct deviations"]];
+      bx.forEach(([x, y, t], i) => g.box(x, y, 140, 58, t.split(/(?<=\.) /), i === 0 ? "bar1" : null, 1));
+      g.arrow(150, 43, 169, 43).arrow(240, 72, 240, 137).arrow(170, 167, 151, 167).arrow(80, 138, 80, 73);
+      return g.svg();
+    }
+  };
+
+  F["line-staff"] = {
+    title: "Line and staff organisation",
+    caption: "Line authority (solid lines) runs straight down from the top: each person takes orders from one superior. Staff specialists (dashed, e.g. a legal adviser or HR expert) advise the line managers but cannot give them orders. It suits large firms; the risk is conflict between line and staff.",
+    draw() {
+      const g = new Fig(258, "Organisation chart with line managers and a staff adviser");
+      g.box(90, 8, 140, 32, ["Managing Director"], "bar1");
+      g.box(232, 56, 84, 32, ["Staff", "legal adviser"]);
+      g.add(`<path class="stf" d="M160 48H274V56"/>`);
+      g.pline(160, 40, 160, 104).pline(76, 104, 244, 104).pline(76, 104, 76, 116).pline(244, 104, 244, 116);
+      g.box(16, 116, 120, 32, ["Production Manager"]).box(184, 116, 120, 32, ["Sales Manager"]);
+      [[76, "Foreman"], [244, "Sales Supervisor"]].forEach(([cx, t]) => {
+        g.pline(cx, 148, cx, 164).box(cx - 60, 164, 120, 30, [t]).pline(cx, 194, cx, 208).box(cx - 50, 208, 100, 28, ["Workers"]);
+      });
+      g.pline(8, 252, 30, 252).ptext(34, 255, "line", "tick", "start").add(`<path class="stf" d="M78 252H100"/>`).ptext(104, 255, "staff (advice)", "tick", "start");
+      return g.svg();
+    }
+  };
+
+  F["channel-levels"] = {
+    title: "Channel levels",
+    caption: "A channel's level is the number of middlemen between the producer and the consumer. Zero-level is direct selling (company websites, Amway); one-level uses a retailer; two-level adds a wholesaler (common for groceries); three-level adds an agent. More levels mean wider reach but less control and higher cost to the consumer.",
+    draw() {
+      const rows = [["Zero-level (direct)", ["Producer", "Consumer"]], ["One-level", ["Producer", "Retailer", "Consumer"]],
+        ["Two-level", ["Producer", "Wholesaler", "Retailer", "Consumer"]], ["Three-level", ["Producer", "Agent", "Wholesaler", "Retailer", "Consumer"]]];
+      const g = new Fig(4 + rows.length * 62, "Zero, one, two and three level distribution channels");
+      rows.forEach(([name, chain], r) => {
+        const y = 6 + r * 62, w = 58, gap = 6;
+        g.ptext(4, y + 10, name, "lbl sm", "start");
+        chain.forEach((c, i) => {
+          const x = 4 + (i === chain.length - 1 ? 4 : i) * (w + gap);
+          g.box(x, y + 18, w, 28, [c], null, 1, true);
+          if (i < chain.length - 1) { const nx = 4 + (i + 1 === chain.length - 1 ? 4 : i + 1) * (w + gap); g.arrow(x + w, y + 32, nx - 1, y + 32); }
+        });
+      });
+      return g.svg();
+    }
+  };
+
+  F["buying-process"] = {
+    title: "The buying decision process",
+    caption: "A buyer moves through five stages. Post-purchase feelings (satisfaction, or doubt called cognitive dissonance) decide whether they buy again and what they tell others — so the process loops back to the next need. Marketers act at every stage: reminders at need recognition, information and reviews at search, comparisons and demos at evaluation, offers at purchase, and follow-up after it.",
+    draw() {
+      return vflow("Five stages of the buying decision", [["Need recognition", "a problem or want is felt"], ["Information search", "friends, ads, reviews, stores"], ["Evaluation of alternatives", "compare brands, price, features"], ["Purchase decision", "where, when, how to pay"], ["Post-purchase behaviour", "satisfaction or dissonance"]], "repeat purchase").svg();
+    }
+  };
+
+  F["selling-process"] = {
+    title: "The seven-step selling process",
+    caption: "The salesperson finds and qualifies prospects (need, authority, ability to pay, eligibility), learns about them before meeting (pre-approach), makes a good first impression, presents and demonstrates the product, answers objections, closes the sale, and follows up — which builds the relationship and brings repeat sales and referrals.",
+    draw() {
+      return vflow("Seven steps of personal selling", [["Prospecting and qualifying", "find buyers with need, authority, money"], ["Pre-approach", "learn about the prospect"], ["Approach", "first impression, open the talk"], ["Presentation and demonstration", "show benefits, AIDA"], ["Handling objections", "yes-but, boomerang, denial"], ["Closing", "watch for buying signals"], ["Follow-up", "delivery, service, referrals"]], "referrals and repeat sales").svg();
+    }
+  };
+
+  F["total-income"] = {
+    title: "From the five heads to total income",
+    caption: "Compute income under each of the five heads, club other persons' income where the law requires and set off losses — the sum is gross total income (GTI). Subtract Chapter VI-A deductions such as 80C, 80D and 80G to get total income, then apply the tax rates (special rates for items like casual income, on which no deductions are allowed).",
+    draw() {
+      const g = new Fig(300, "Five heads of income adding to gross total income, less deductions, equals total income");
+      const heads = [["Salaries"], ["House", "property"], ["Business,", "profession"], ["Capital", "gains"], ["Other", "sources"]], w = 56, gap = 8;
+      heads.forEach((h, i) => { const x = 4 + i * (w + gap); g.box(x, 8, w, 40, h, null, 2, true); g.pline(x + w / 2, 48, x + w / 2, 62); });
+      g.pline(4 + w / 2, 62, 4 + 4 * (w + gap) + w / 2, 62).arrow(160, 62, 160, 79);
+      g.box(40, 80, 240, 40, ["Gross total income", "after clubbing and set-off of losses"], "bar1");
+      g.arrow(160, 120, 160, 139);
+      g.box(40, 140, 240, 40, ["− Deductions (Chapter VI-A)", "80C, 80D, 80G, 80GGC …"]);
+      g.arrow(160, 180, 160, 199);
+      g.box(40, 200, 240, 36, ["= Total income"], "bar1");
+      g.arrow(160, 236, 160, 255);
+      g.box(40, 256, 240, 36, ["Tax at the applicable rates"]);
+      return g.svg();
+    }
+  };
+
+  F["data-abstraction"] = {
+    title: "Three levels of data abstraction",
+    caption: "Users see only their own views (external level). The logical level describes what data is stored and how it is related (tables, keys). The physical level describes how it is actually stored on disk. Because the levels are separate, one can change without breaking the level above: that is logical and physical data independence.",
+    draw() {
+      const g = new Fig(222, "View, logical and physical levels of a database");
+      g.ptext(160, 12, "View (external) level: what each user sees", "tick");
+      ["View 1", "View 2", "View 3"].forEach((v, i) => { g.box(40 + i * 82, 20, 74, 30, [v]); g.pline(77 + i * 82, 50, 160, 88); });
+      g.ptext(300, 74, "logical data", "tick", "end").ptext(300, 86, "independence", "tick", "end");
+      g.box(40, 94, 238, 40, ["Logical level", "what data, tables and relations"], "bar1");
+      g.pline(160, 134, 160, 176);
+      g.ptext(300, 152, "physical data", "tick", "end").ptext(300, 164, "independence", "tick", "end");
+      g.box(40, 176, 238, 40, ["Physical level", "how data is stored on disk"], "bar2");
+      return g.svg();
+    }
+  };
+
+  F["supply-chain"] = {
+    title: "Flows in a supply chain",
+    caption: "Goods move from the supplier to the customer (with returns coming back). Information — orders, forecasts, delivery status — moves in both directions. Money moves back from the customer to the supplier. Supply chain management coordinates all three so the whole chain works as one.",
+    draw() {
+      const g = new Fig(170, "Supplier to customer chain with product, information and money flows");
+      const names = ["Supplier", "Maker", "Distributor", "Retailer", "Customer"], w = 56, gap = 8;
+      names.forEach((n, i) => g.box(4 + i * (w + gap), 14, w, 32, [n], null, 1, true));
+      const x0 = 18, x1 = 302;
+      g.arrow(x0, 72, x1, 72, "arr-1").ptext(160, 66, "Products →", "lbl sm");
+      g.arrow(x0, 102, x1, 102, "arr-2").arrow(x1, 108, x0, 108, "arr-2").ptext(160, 96, "Information (orders, status) ↔", "lbl sm");
+      g.arrow(x1, 138, x0, 138, "arr-3").ptext(160, 132, "← Money (payments)", "lbl sm");
+      return g.svg();
+    }
+  };
+
+  F["accounting-process"] = {
+    title: "The accounting process",
+    caption: "Every transaction is supported by a voucher, recorded first in the journal (or a subsidiary book) by double entry, posted to ledger accounts and balanced. A trial balance checks the arithmetic, final accounts (trading and P&L account, balance sheet) are prepared from it, and the results are analysed and reported to users.",
+    draw() {
+      return vflow("Steps from transaction to financial statements", [["Transaction and voucher", "source document"], ["Journal / subsidiary books", "book of original entry"], ["Ledger", "posting and balancing"], ["Trial balance", "arithmetical check"], ["Final accounts", "trading, P&L account, balance sheet"], ["Analysis and reporting", "ratios, decisions"]]).svg();
+    }
+  };
+
+  F["depreciation-methods"] = {
+    title: "Book value under SLM and WDV (example)",
+    caption: "Example: a machine costing ₹1,00,000 with a 5-year life. Straight line method: the same charge every year (₹18,000, leaving a scrap value of ₹10,000), so book value falls in a straight line. Written down value method at 30%: the charge is a fixed percentage of the reducing balance — large in early years, smaller later — so the book value curve flattens and never reaches zero.",
+    draw() {
+      const g = new Fig(240, "Book value over five years under straight line and written down value methods").panel(5.4, 0, 110, 14, 206).axes("", "Book value (₹ '000)", false);
+      [0, 1, 2, 3, 4, 5].forEach((t) => g.add(`<text class="tick" x="${g.X(t)}" y="${g.base() + 12}" text-anchor="middle">${t ? `Yr ${t}` : "0"}</text>`));
+      [25, 50, 75, 100].forEach((v) => g.add(`<text class="tick" x="${g.l - 4}" y="${g.Y(v) + 4}" text-anchor="end">${v}</text>`));
+      const slm = (t) => 100 - 18 * t, wdv = [0, 1, 2, 3, 4, 5].map((t) => 100 * Math.pow(0.7, t));
+      g.curve(slm, 0, 5, "c1").text(2.5, slm(2.5), "SLM", { dx: 6, dy: -6, cls: "lbl sm" });
+      let d = ""; wdv.forEach((v, t) => { d += `${t ? "L" : "M"}${g.X(t).toFixed(1)} ${g.Y(v).toFixed(1)}`; });
+      g.add(`<path class="c2" d="${d}"/>`);
+      wdv.forEach((v, t) => g.pt(t, v, "pt2"));
+      [0, 1, 2, 3, 4, 5].forEach((t) => g.pt(t, slm(t)));
+      g.text(2.5, 100 * Math.pow(0.7, 2.5), "WDV 30%", { dx: -4, dy: 16, anchor: "end", cls: "lbl sm" });
       return g.svg();
     }
   };
