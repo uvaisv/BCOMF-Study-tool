@@ -275,6 +275,10 @@ details summary { cursor: pointer; color: var(--accent); font-weight: 600; paddi
 .slot-what a { text-decoration: none; }
 .slot-how { font-size: .85rem; color: var(--muted); }
 
+/* Where a topic is in the IGNOU study material */
+.book-ref { display: grid; gap: 2px; margin: 0 0 18px; padding: 10px 12px; border-left: 3px solid var(--accent); background: var(--surface); border-radius: 0 10px 10px 0; font-size: .85rem; }
+.book-ref-h { font-size: .75rem; font-weight: 700; text-transform: uppercase; letter-spacing: .04em; color: var(--accent); }
+
 /* Past questions on a topic: one button on the topic page opens the full list */
 .asked { list-style: none; padding: 0; margin: 0; }
 .asked li + li { border-top: 1px solid var(--border); }

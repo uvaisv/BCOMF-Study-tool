@@ -10,7 +10,7 @@ Built around one rule (see `CLAUDE.md`): **help students study — never add set
 
 - **Home** says in one glance what the app gives: ranked topics, short notes, past papers, a study plan. Pick a year or search `131` / `financial`.
 - **Course page** opens straight on **Study these first** — the smallest set of topics that has carried enough marks to answer the paper (worked out per part when the paper is split into parts). Then the latest past papers (one tap to the PDF) and the other topics in priority order.
-- **Topic page**: key points, how to solve, formulas, how to write the answer, common mistakes, and an **Asked in past papers** button that opens every past question on it, most important first, on its own page. Tapping a question opens **just that question inside the app** — term, question number, printed marks and the part asked — with a button to download the full paper. **Next topic** keeps you moving; **Mark as done** is optional.
+- **Topic page**: where the topic is in the IGNOU study material (block and unit, where added), key points, how to solve, formulas, how to write the answer, common mistakes, and an **Asked in past papers** button that opens every past question on it, most important first, on its own page. Tapping a question opens **just that question inside the app** — term, question number, printed marks and the part asked — with a button to download the full paper. **Next topic** keeps you moving; **Mark as done** is optional.
 - **Plan**: one tap for the time left (3 hours, 6 hours, 2 days, 1 week) and the schedule is there — no settings.
 - **Exam tips** and **Past papers** tabs.
 

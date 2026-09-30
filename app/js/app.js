@@ -316,6 +316,8 @@
       <h1>${esc(t.name)}</h1>
       <p class="head-meta">${badge(t.level)} <span class="muted small">${evidence(t, n, mcq)}</span></p>
       <p class="lead">${esc(t.summary)}</p>
+      ${t.units && t.units.length ? `<p class="book-ref"><span class="book-ref-h">In your IGNOU book</span>${t.units.map((u) =>
+        `<span>Block ${u.block} · Unit ${u.unit} ${esc(u.title)}${u.part ? ` <span class="muted">(${esc(u.part)})</span>` : ""}</span>`).join("")}</p>` : ""}
 
       <h2>Key points</h2>
       <section class="card"><ul class="points">${t.points.map((p) => `<li>${esc(p)}</li>`).join("")}</ul></section>

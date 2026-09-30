@@ -11,7 +11,7 @@
   "spare": 0.7,
   "summary": "50 multiple-choice questions, 1 mark each, all compulsory, marked on an OMR sheet. About 2 minutes per question."
  },
- "blocksOfficial": false,
+ "blocksOfficial": true,
  "sessions": [
   "2020-12",
   "2021-12",
@@ -43,7 +43,7 @@
  "blocks": [
   {
    "no": 1,
-   "title": "Environment & Ecosystems"
+   "title": "An Introduction to Environment and Environmental Studies"
   },
   {
    "no": 2,
@@ -51,202 +51,345 @@
   },
   {
    "no": 3,
-   "title": "Biodiversity"
+   "title": "Environmental Issues and Concerns"
   },
   {
    "no": 4,
-   "title": "Pollution & Waste"
-  },
-  {
-   "no": 5,
-   "title": "Global Issues & Disasters"
-  },
-  {
-   "no": 6,
-   "title": "Laws, Society & Health"
+   "title": "Protecting Our Environment: Policies and Practices"
   }
  ],
  "topics": [
   {
    "id": "global-issues",
    "name": "Global Issues: Climate, Ozone, Acid Rain & Disasters",
-   "block": 5,
+   "block": 3,
    "kind": "theory",
-   "summary": "Greenhouse gases, climate change, ozone depletion, acid rain, international conventions and natural disasters.",
+   "summary": "The greenhouse effect and climate change with the treaties and India's action plan, ozone depletion, acid rain, and natural disasters.",
    "points": [
-    "Greenhouse gases: carbon dioxide, methane, nitrous oxide, CFCs and water vapour. Sulphur dioxide is not a greenhouse gas.",
-    "Ozone layer is in the stratosphere; CFCs deplete it. Ultraviolet radiation causes skin cancer and cataract.",
-    "Normal rain is slightly acidic (pH about 5.6); acid rain has pH below 5.6 — caused by SO₂ and NOₓ.",
-    "Vienna Convention (1985) and Montreal Protocol (1987): ozone layer. UNFCCC (1992, Rio): climate. Kyoto Protocol (1997), Paris Agreement (2015).",
-    "IPCC (Intergovernmental Panel on Climate Change) was set up in 1988.",
-    "Basel Convention: transboundary movement of hazardous wastes. Ramsar (1971): wetlands. CITES: trade in endangered species.",
-    "Disasters: earthquakes, floods, cyclones, droughts, landslides, tsunamis. Asia is the region most prone to natural calamities. Seismic Zone V (highest risk) includes the North-East, Kachchh and parts of the Himalaya."
+    "Greenhouse gases (carbon dioxide, methane, ozone, CFCs, water vapour) trap outgoing infrared heat and keep the earth at about +15°C instead of −18°C. Water vapour causes about two-thirds of the effect and CO₂ about a quarter; nitrogen, oxygen and argon do not absorb infrared. Sulphur dioxide is not a greenhouse gas.",
+    "Of incoming solar radiation, about a third is reflected, about 20% is absorbed by atmospheric gases and the rest by the surface.",
+    "Global warming effects: sea-level rise (warming water expands and ice melts), more floods and droughts, farm and forest losses, and more malaria, dengue and yellow fever.",
+    "Climate treaties: the IPCC was set up in 1988 by WMO and UNEP; UNFCCC was adopted at Rio in 1992 and came into force in 1994; the Kyoto Protocol (1997) required developed countries to cut greenhouse gases 5.2% below 1990 levels; the Paris Agreement (COP21, 2015) aims to keep warming well below 2°C.",
+    "India's National Action Plan on Climate Change (2008) has 8 missions: solar, enhanced energy efficiency, sustainable habitat, water, sustaining the Himalayan ecosystem, Green India, sustainable agriculture, and strategic knowledge for climate change.",
+    "The ozone layer lies in the stratosphere (15–50 km), is measured in Dobson units and absorbs about 99% of UV. UVA is least energetic and not absorbed; most UVB is absorbed (2–3% reaches us) and causes skin cancer and cataract; UVC is absorbed by oxygen and ozone.",
+    "CFCs (used in sprays, deodorants, paints, refrigeration) are stable, rise to the stratosphere, and are broken by UV, releasing chlorine that destroys ozone. The Vienna Convention (1985) led to the Montreal Protocol (16 September 1987) — 16 September is Ozone Day.",
+    "Acid rain comes from sulphur and nitrogen oxides (not CFCs). Unpolluted rain has a pH of about 5.7; precipitation below 5.7 counts as acid deposition. It harms crops, forests, aquatic life and buildings, and causes heart and lung problems.",
+    "Disaster types: atmospheric (heat waves, cyclones — which form over tropical seas warmer than about 27°C), geological (earthquakes, landslides, avalanches), hydrological (floods, drought) and biological (pest invasions). Asia is the region most prone to natural calamities.",
+    "Tsunamis are seismic sea waves; the Indian coast's most devastating one was in 2004, and mangroves are a natural defence. Zone V is India's most severe seismic zone (very high damage risk); the Rann of Kachchh is in a high zone."
    ],
    "mistakes": [
     "Confusing the Montreal Protocol (ozone) with the Kyoto Protocol (greenhouse gases)."
+   ],
+   "units": [
+    {
+     "block": 3,
+     "unit": 11,
+     "title": "Global Environmental Issues"
+    },
+    {
+     "block": 4,
+     "unit": 13,
+     "title": "Human Communities and Environment",
+     "part": "13.4–13.5 Natural disasters"
+    }
    ]
   },
   {
    "id": "biodiversity",
    "name": "Biodiversity & Its Conservation",
-   "block": 3,
+   "block": 2,
    "kind": "theory",
-   "summary": "Levels and values of biodiversity, India as a megadiverse country, biogeographic zones, threats, invasive species, in-situ and ex-situ conservation.",
+   "summary": "Levels and values of biodiversity, India's biogeographic zones and hotspots, threats to biodiversity, and in-situ and ex-situ conservation.",
    "points": [
-    "Levels: genetic, species and ecosystem diversity.",
-    "Values: direct use (consumptive, productive), indirect use (ecosystem services such as pollination, watershed protection), non-use (option, bequest, existence).",
-    "India is one of the 17 megadiverse countries, with about 2.4% of the world's land and 7–8% of recorded species; it has 4 of the world's biodiversity hotspots (Himalaya, Indo-Burma, Western Ghats–Sri Lanka, Sundaland/Nicobar).",
-    "India has 10 biogeographic zones; the Deccan Peninsula is the largest; the Trans-Himalaya zone is in Ladakh.",
-    "Tropical rain forests hold more than half of the world's plant species.",
-    "Threats: habitat loss, invasive species, pollution, over-exploitation, climate change. Invasive species in India: Parthenium (congress weed — causes skin allergy), water hyacinth, Lantana, Prosopis (mesquite).",
-    "In-situ conservation: national parks, wildlife sanctuaries, biosphere reserves (core, buffer, transition zones). UNESCO's MAB = Man and the Biosphere programme.",
-    "Ex-situ conservation: zoos, botanical gardens, seed and gene banks (genetic insurance), tissue culture, artificial insemination."
+    "'Biological diversity' was coined by Thomas Lovejoy (1980) and 'biodiversity' by E.O. Wilson. Levels: genetic diversity (the 'fundamental currency of diversity', e.g. varieties of mango or rice), species diversity (the most visible) and ecosystem diversity.",
+    "About 12.5 million species are estimated and 1.7 million described. In sheer numbers, insects and micro-organisms are the most abundant; insects are the largest described group (about 960,000 species).",
+    "India's 10 biogeographic zones: Trans-Himalaya (e.g. Ladakh), Himalaya, Indian Desert, Semi-arid, Western Ghats, Deccan Peninsula (the largest), Gangetic Plain, North-East, Islands and Coasts.",
+    "Zone facts: the Thar's wildlife is known for extraordinary adaptations (desert fox, desert cat, Houbara bustard); the Western Ghats hold about two-thirds of India's endemic plants (lion-tailed macaque, Nilgiri tahr, Malabar grey hornbill, spiny dormouse); the rhinoceros is found only in the Brahmaputra valley.",
+    "Hotspots: areas extremely rich in species, with high endemism and under constant threat (Myers, 1988). There are 34 worldwide; 4 are in India and its neighbours. Tropical rain forests and coral reefs hold the most species.",
+    "India is mega-diverse: 4 hotspots, 26 endemism centres, 2 realms, 3 biomes, 10 biogeographic zones, about 33% of recorded flora endemic, and one of 12 centres of origin of cultivated plants.",
+    "Values: direct use (food, timber); indirect use (non-consumptive, aesthetic, cultural and religious, ethical); non-use (option, bequest, existence).",
+    "Threats: habitat loss (the greatest), invasive species, over-hunting, pollution and climate change. Fragile habitats: coral reefs, oceanic islands, mountain tops and habitat islands.",
+    "Examples: the passenger pigeon was wiped out by selective destruction for food; rinderpest from cattle held back the Great Indian Rhinoceros; DDT and other chlorinated pesticides cut bird numbers such as the bald eagle; commercial hunting targets tiger, snow leopard and cheetah skins, elephant ivory, rhino horn and whales.",
+    "Invasive species: water hyacinth (harms fish and rice), Parthenium or Congress weed (skin allergies), Prosopis juliflora or mesquite (semi-arid areas), golden apple snail. Climate change is likely to worsen the problem.",
+    "In-situ conservation: national parks, sanctuaries, biosphere reserves, wetlands, tiger and elephant reserves. Ex-situ: zoos, botanical gardens, seed banks ('genetic insurance'), tissue culture, captive breeding, artificial insemination (elephants, cheetahs, black-footed ferret) and fostering (whooping crane, peregrine falcon).",
+    "Biosphere reserves come from UNESCO's MAB (Man and the Biosphere) programme; each has a core, a buffer (regulated use such as grazing and farming, no hunting) and a transition zone. India's first was Nilgiri. Mangroves act as a natural bulwark against sea erosion; Chilika and Bharatpur were India's first Ramsar wetlands."
    ],
-   "mistakes": []
+   "mistakes": [],
+   "units": [
+    {
+     "block": 2,
+     "unit": 6,
+     "title": "Biodiversity: Values and Services"
+    },
+    {
+     "block": 3,
+     "unit": 8,
+     "title": "Biodiversity: Threats and Conservation"
+    }
+   ]
   },
   {
    "id": "pollution",
    "name": "Pollution & Waste Management",
-   "block": 4,
+   "block": 3,
    "kind": "theory",
-   "summary": "Air, water, noise and soil pollution, pollution standards and tests, solid and hazardous waste management.",
+   "summary": "Types of pollutants, air, water, soil and noise pollution with their standards and tests, and how hazardous and solid waste is minimised, treated and disposed of.",
    "points": [
-    "Primary pollutants are emitted directly (SO₂, CO, NOₓ, hydrocarbons, particulates); secondary pollutants form in the air (ozone, PAN, smog, sulphuric and nitric acid).",
-    "Natural pollutants: pollen, volcanic gases, dust, decaying organic matter.",
-    "Point sources (chimneys, discharge pipes) vs non-point sources (run-off from farms and cities).",
-    "RSPM/PM10 standard in India: 60 µg/m³ (annual average).",
-    "Taj Trapezium Zone around Agra protects the Taj Mahal from air pollution (Mathura refinery, foundries, brick kilns, glass factories).",
-    "Water quality: BOD and COD (organic pollution), TDS = total dissolved solids, MPN test detects coliform bacteria such as E. coli.",
-    "Eutrophication: nutrient overload causes algal blooms. Biomagnification: toxins (DDT, mercury) increase up the food chain.",
-    "Noise is measured in decibels, dB(A).",
-    "Sludge gas (biogas) is mostly methane.",
-    "Waste hierarchy: reduce, reuse, recycle, recover, dispose. Landfill is disposal, not a waste-minimisation method. Treatment: physical (sedimentation, filtration), chemical, biological (composting, activated sludge).",
-    "Disasters: Minamata (mercury), Itai-itai (cadmium), Bhopal gas tragedy 1984 (methyl isocyanate)."
+    "Primary pollutants are emitted directly (sulphur dioxide, nitrogen oxides, carbon monoxide, carbon dioxide, hydrocarbons, particulates); secondary pollutants form in the air (ozone, PAN, nitric acid, sulphuric acid, sulphur trioxide, smog). Smog is not a natural pollutant; pollen and volcanic gases are.",
+    "Point sources discharge at one place (chimneys, pipes); non-point sources are spread out (runoff from farms). Biodegradable pollutants (paper) break down; persistent ones (pesticides, heavy metals, plastics, rubber) do not.",
+    "Bioaccumulation is a pollutant entering and building up in an organism; biomagnification is its concentration rising from one link of the food chain to the next.",
+    "Air: particles smaller than 10 µm (PM10) are respirable suspended particulate matter (RSPM), with a standard of 60 µg per cubic metre; PM2.5 goes deep into the lungs. Radon (from building materials) and formaldehyde are indoor pollutants.",
+    "Water pollutants are biological (pathogens), chemical (inorganic, organic and radioactive substances) or physical (suspended and settled solids, heat). Phosphates and nitrates cause eutrophication; sewage uses up oxygen in water.",
+    "Water tests: MPN detects coliforms such as E. coli; BOD is the oxygen bacteria use to break down organic matter (high BOD means low dissolved oxygen); TDS is total dissolved solids.",
+    "Noise is measured in decibels; dB(A) accounts for both pressure and pitch. The prescribed night-time limit for residential areas is 45 dB(A). The Bhopal gas tragedy released methyl isocyanate.",
+    "Hazardous waste strategy: minimise → recycle → treat → dispose. Minimisation methods: process modification, waste concentration, waste segregation (recycling is a separate step).",
+    "Treatment — physical: phase separation (lagooning, tank storage, sludge drying beds); chemical: oxidation, reduction, neutralisation, heavy-metal precipitation, oil–water separation; sludge processing (biological): conditioning, digestion, composting, thickening or dewatering, solidification.",
+    "Disposal — landfill (sanitary landfills are lined with clay or plastic); incineration, used where land is short and excellent for minimising and detoxifying waste but very costly if the heat is not reused (hospital waste is incinerated); dumping at sea; underground disposal, the option for radioactive nuclear waste."
    ],
-   "mistakes": []
+   "mistakes": [
+    "Lagooning is a physical treatment (phase separation); conditioning is part of sludge processing — past papers test this both ways."
+   ],
+   "units": [
+    {
+     "block": 3,
+     "unit": 9,
+     "title": "Environmental Pollution and Hazards"
+    },
+    {
+     "block": 3,
+     "unit": 10,
+     "title": "Waste Management"
+    }
+   ]
   },
   {
    "id": "resources",
    "name": "Natural Resources: Water, Land & Energy",
    "block": 2,
    "kind": "theory",
-   "summary": "Water on earth and its cycle, soils and erosion, forests, minerals, conventional and non-conventional energy.",
+   "summary": "Water and its cycle, soils and land conservation, forests and deforestation, and conventional and non-conventional energy.",
    "points": [
-    "About 97.5% of the earth's water is salt water and 2.5% fresh; most fresh water is frozen — less than 1% is readily accessible.",
-    "Sublimation: ice changes directly to vapour. Transpiration: water loss as vapour from plants.",
-    "Aquifer: a water-bearing layer of rock or soil that stores groundwater.",
-    "Black (regur) soil is found in the Deccan and Malwa plateau. Ravines form by gully erosion from running water.",
-    "Resources: renewable (forests, wildlife, water) vs non-renewable (minerals, fossil fuels).",
-    "Conventional energy: coal, petroleum, natural gas, (large) hydro, atomic. Non-conventional: solar, wind, geothermal, tidal, biomass.",
-    "China is the world's largest coal producer. Bombay High is India's largest oil-producing field.",
-    "A biomass gasifier converts solid fuel into gaseous fuel. Hydrogen is the best fuel for a fuel cell.",
-    "Joint Forest Management began in West Bengal (Arabari)."
+    "Oceans hold 97% of the earth's water; less than 3% is fresh. Of fresh water about 80% is frozen and about 20% liquid (mostly groundwater). Only about 1% of all water is readily usable; agriculture takes about 70% of what is used.",
+    "Water cycle terms: runoff is the main source of water for lakes and rivers; sublimation is ice turning straight into vapour; transpiration is water vapour lost from plants. An aquifer is a layer of rock that water percolates into and is held in.",
+    "Traditional water systems: johads, kuls (channels carrying glacier water to villages in Spiti, Himachal Pradesh) and bamboo drip irrigation (North-East). Sprinkler irrigation is modern. Too much irrigation causes waterlogging, salinity or alkalinity and lower yields.",
+    "Floods are the most common calamity; Bangladesh and India together account for over two-thirds of flood deaths. Economic impacts of drought: loss of crops, dairy, livestock and fish.",
+    "Soils as the IGNOU book describes them: red — potatoes, bananas, pineapples, rubber; black (Deccan and Malwa plateaux) — cotton, sugarcane, groundnut, soyabean; desert — low organic matter and fertility; Himalayan — low fertility; alluvial — Indo-Gangetic plains.",
+    "Soil care: gypsum treats alkaline soil; manure improves soil cohesion, water retention and structure (not salinity). Erosion is controlled by plant cover, drainage, check dams, stone walls along coasts and tree barriers; ravines (e.g. Chambal) come from gully erosion. Finer particles in sewage settle with alum and caustic soda.",
+    "Forest functions: economic (timber, food, medicines, products used as insecticides and pesticides), ecological (moderating climate as a carbon sink, protecting biodiversity, checking erosion, landslides, cyclones and floods, cleaning air, protecting watersheds) and socio-cultural. India needs 33% of its area under forest.",
+    "Four major causes of deforestation: population explosion, forest fires, grazing and pest attacks. Crown fires occur in dense forests. NTFPs are items like medicinal herbs, edible flowers, leaves and fruits (timber and firewood are separate).",
+    "Joint Forest Management began informally in 1972 in Midnapore, West Bengal. The Forest Rights Act, 2006 gives rights to tribal and other forest dwellers.",
+    "Energy sources — conventional: coal, oil, natural gas, hydropower, atomic energy; non-conventional: solar, wind, biomass, geothermal, fuel cells (best fuel: hydrogen), co-generation, wave and tidal.",
+    "India's energy: coal meets over half of energy needs and 63% of commercial energy; natural gas about 7%; biomass is the most used in rural India. China is the largest coal producer; Bombay High produces the most oil; the first wave energy plant was at Vizhinjam, Kerala; geothermal potential is in the North-West Himalaya.",
+    "Sludge gas, like biogas, is mostly methane; a biomass gasifier turns solid fuel into gas; photovoltaic cells turn sunlight into electricity. With development, growth in per-capita energy demand slows in the industrial sector but keeps rising in transport, residential and commercial sectors."
    ],
-   "mistakes": []
+   "mistakes": [
+    "IGNOU's book lists rubber under red soil — laterite soil is not described in it."
+   ],
+   "units": [
+    {
+     "block": 2,
+     "unit": 4,
+     "title": "Land and Water Resources"
+    },
+    {
+     "block": 2,
+     "unit": 5,
+     "title": "Forest Resources"
+    },
+    {
+     "block": 2,
+     "unit": 7,
+     "title": "Energy Resources"
+    }
+   ]
   },
   {
    "id": "ecosystem",
    "name": "Ecosystem Structure, Energy Flow & Cycles",
    "block": 1,
    "kind": "theory",
-   "summary": "Producers, consumers and decomposers, trophic levels and food chains, energy flow, biogeochemical cycles, succession.",
+   "summary": "What an ecosystem is, its living and non-living parts, trophic levels and food chains, energy flow, nutrient cycles and ecological succession.",
    "points": [
-    "Producers (autotrophs) make food; consumers are herbivores (primary), carnivores (secondary, tertiary); decomposers are saprophytes (saprotrophs).",
-    "Chemosynthetic bacteria are autotrophs.",
-    "Food chains: grazing and detritus. Only about 10% of energy passes to the next trophic level (Lindeman's 10% law); the pyramid of energy is always upright.",
-    "Biogeochemical cycles: gaseous (nitrogen, carbon, oxygen) and sedimentary (phosphorus, sulphur). The atmosphere is the main nitrogen reservoir; sediments hold most sulphur.",
-    "Ecological succession: pioneer community → intermediate (seral) stages → climax community.",
-    "Niche: an organism's role; habitat: where it lives; ecotone: transition zone between two ecosystems.",
-    "Estuaries are transition zones of very high productivity."
+    "An ecosystem is the basic functional unit of nature: organisms interacting with each other and with their physical surroundings. It has no fixed size or boundary and regulates itself through feedback. The term was coined by Tansley.",
+    "Biosphere: the zone of land (lithosphere), water (hydrosphere) and air (atmosphere) where life exists — from about 11,000 m below the ocean surface to about 9,000 m above mean sea level. Life is abundant from about 200 m below sea level to about 6,000 m above.",
+    "Abiotic components: light, temperature, rainfall, water, nutrients. Biotic: producers (autotrophs), consumers (heterotrophs or phagotrophs) and decomposers (saprotrophs or reducers — mainly bacteria and fungi). Chemosynthetic bacteria are autotrophs.",
+    "Trophic levels: I producers → II herbivores (primary consumers) → III carnivores (secondary) → IV tertiary consumers → V top carnivores (quaternary). Tigers, lions and vultures are top carnivores; humans, as omnivores, sit at several levels.",
+    "Food chains: grazing (starts with green plants), detritus (starts with dead, decaying organic matter) and parasitic (e.g. goat → nematodes → bacteria). Linked food chains form a food web.",
+    "Energy flows one way through an ecosystem and is lost as heat at each level, so ecosystems are open systems that need a constant input of solar energy. The sun also drives the water cycle.",
+    "Nutrient cycles are gaseous (reservoir: atmosphere or hydrosphere — water, carbon, nitrogen) or sedimentary (reservoir: earth's crust — phosphorus, calcium). The sulphur cycle is mostly sedimentary with a short gaseous phase; its large reservoir is soil and sediments. Nitrogen's main reservoir is the atmosphere.",
+    "Ecological succession: lichens form the pioneer community on bare rock, followed by mosses, grasses, shrubs and trees. Each intermediate stage is a sere (seral stage); the final, stable stage is the climax community.",
+    "Primary succession starts on an area that never had life; secondary succession follows the destruction of an existing community."
    ],
-   "mistakes": []
+   "mistakes": [],
+   "units": [
+    {
+     "block": 1,
+     "unit": 2,
+     "title": "Ecosystems"
+    }
+   ]
   },
   {
    "id": "major-ecosystems",
    "name": "Forest, Grassland, Desert & Aquatic Ecosystems",
    "block": 1,
    "kind": "theory",
-   "summary": "Types of forests and their features, desert adaptations, lentic and lotic waters, aquatic organisms, wetlands and seas.",
+   "summary": "The main forest types and their plants and animals, grasslands, deserts and their adaptations, and freshwater, marine and estuarine ecosystems.",
    "points": [
-    "Coniferous (boreal) forests: spruce, fir, pine; soil is acidic and poor in minerals.",
-    "Temperate deciduous forests shed leaves in winter; tropical rain forests have the highest diversity.",
-    "Desert animals conserve water — some excrete very concentrated urine.",
-    "Lentic (standing) waters: lakes, ponds, wetlands, reservoirs. Lotic (flowing) waters: rivers and streams.",
-    "Aquatic life: plankton (drifting), nekton (swimming), neuston (air–water surface), benthos (bottom), periphyton (attached to surfaces).",
-    "Average salinity of sea water is about 35 parts per thousand (3.5%).",
-    "Wetlands: Chilika (Odisha), Harike (Punjab), Sambhar (Rajasthan), Loktak (Manipur), Sundarbans (West Bengal)."
+    "Coniferous (boreal, taiga) forest: spruce, fir and pine; cold, long winters; soil acidic and poor in minerals; the lowest productivity of any ecosystem.",
+    "Temperate deciduous forest: broad-leaved trees that shed leaves in winter; trees 40–50 m tall with thin, broad leaves — maple, beech, oak, hickory; rainfall 75–150 cm.",
+    "Temperate evergreen forest (Mediterranean-type climate): low evergreen trees such as hemlock, yew and maple; shrubs up to 3–4 m. Temperate rain forest: the coldest rainforest, where fog can matter more than rain.",
+    "Tropical rain forest: near the equator, over 200 cm rain a year, the most diverse forest — under 7% of the land but over 50% of known species (about 62% of known plants). Animals include chameleons, agamids, geckos, ant-eaters, giant flying squirrels and sloths.",
+    "Tropical seasonal (monsoon) forest: teak and bamboo, as in central India. Subtropical rain forest: epiphytes, vines and strangler fig.",
+    "Grasslands get about 25–75 cm of rain; in Indian grasslands biomass peaks around September–October. Deserts get under 25 cm.",
+    "Desert adaptations: some nocturnal rodents pass very concentrated urine and never need to drink. In the Thar, the lizards Calotes and Uromastyx prey on the desert locust, and the main predatory birds are vultures (e.g. white-rumped vulture, Gyps bengalensis).",
+    "Freshwater ecosystems are lentic (standing — lakes, ponds, impoundments, wetlands) or lotic (flowing — rivers, streams). Rivers are open (heterotrophic) systems; lakes are closed.",
+    "Aquatic organisms: plankton drift; neuston live unattached at the air–water surface; periphyton are attached to stems and leaves of rooted plants; nekton swim; benthos live on the bottom.",
+    "Ocean zones: littoral (shore — the most variable in temperature, light, salinity and moisture), neritic (shallow coastal — rich in species and highly productive), pelagic (open sea, 90% of the ocean surface), benthic (floor). Sea water averages about 3.5% salt.",
+    "Estuary: the transition zone between river and sea, with unique ecological features and biotic communities. Estuaries are brackish, the most productive ecosystems and nurseries for fish (e.g. Kerala coast, Sundarbans). Brackish ecosystems include estuaries, salt marshes and mangroves."
    ],
-   "mistakes": []
+   "mistakes": [
+    "Hemlock, yew and maple are listed under temperate evergreen forest; maple, beech and oak under temperate deciduous."
+   ],
+   "units": [
+    {
+     "block": 1,
+     "unit": 3,
+     "title": "Major Ecosystems"
+    }
+   ]
   },
   {
    "id": "env-basics",
    "name": "Environment, Population & Sustainable Development",
    "block": 1,
    "kind": "theory",
-   "summary": "Components of the environment, human–environment ideas (determinism, possibilism), population growth, carrying capacity, SDGs.",
+   "summary": "What the environment is, its three types, how thinkers see the human–environment link, sustainable development and the SDGs, and human population growth.",
    "points": [
-    "Environment: all biotic (living) and abiotic (non-living) surroundings.",
-    "Components: lithosphere (land), hydrosphere (water), atmosphere (air), biosphere (life), cryosphere (ice).",
-    "Natural environment (forests, lakes) vs human-modified (crop fields, plantations) vs human-made (cities, industries).",
-    "Determinism (nature controls humans): Friedrich Ratzel; popularised by Ellen Churchill Semple and Ellsworth Huntington.",
-    "Possibilism (humans choose among nature's possibilities): associated with Vidal de la Blache; the term was coined by Lucien Febvre.",
-    "Demographic transition: movement from high birth and death rates (growing population) to low rates (stable population).",
-    "Carrying capacity: the maximum population an environment can support.",
-    "Sustainable Development Goals: 17 goals adopted by the UN in 2015 for 2030 (e.g. climate action, quality education, gender equality, good health and well-being)."
+    "Environment: the sum total of living (biotic) and non-living (abiotic) components, influences and events around an organism.",
+    "Three types in the IGNOU book — natural: oceans, rivers, lakes, forests, grasslands, deserts; human-modified: orchards, plantations, sanctuaries, parks; human-made: cities, towns, industries, crop fields, dams, artificial lakes.",
+    "Determinism (nature controls humans): developed by Friedrich Ratzel and expanded by Ellsworth Huntington. Possibilism (humans choose among what nature allows): the term was coined by Lucien Febvre.",
+    "Sustainable development: meeting today's needs without harming the ability of future generations to meet theirs — defined by the Brundtland Commission (WCED, chaired by Gro Harlem Brundtland) in 'Our Common Future'. Herman Daly called the term an 'oxymoron'.",
+    "Transitions a sustainable society needs include a demographic transition (growing → stable population), a resource transition and a technological transition (pollution-intensive → environment-friendly production).",
+    "Priority areas for sustainable development: slow population growth; reduce poverty, inequality and Third World debt; make agriculture sustainable; protect forests and habitats; use water and energy sustainably; reduce waste. 'Zero pollution' is not one of them.",
+    "SDGs: 17 goals for 2016–2030 — e.g. no poverty, zero hunger, good health and well-being, quality education, gender equality, clean water and sanitation, affordable and clean energy, climate action, life below water, life on land. Past-paper distractors that are not SDGs: tourism, clean air, life on air, quality health care, social equity.",
+    "Population history: about 5 million people at the dawn of agriculture (about 8000 BC); growth up to about 1800 AD came with agriculture; in the 14th century the bubonic plague killed more than half the population of Europe and Asia.",
+    "Projected world population: 8.6 billion (mid-2030s), 9.8 billion (mid-2050s) and 11.2 billion by 2100.",
+    "Carrying capacity: biophysical = the maximum population the planet's resources can support at a given level of technology; social = the sustainable number within a society's patterns of consumption and trade, always lower. It varies with resource availability, culture and level of economic development."
    ],
-   "mistakes": []
+   "mistakes": [
+    "Crop fields and dams are human-made in the IGNOU book, not human-modified; orchards, plantations and sanctuaries are human-modified."
+   ],
+   "units": [
+    {
+     "block": 1,
+     "unit": 1,
+     "title": "Our Environment"
+    },
+    {
+     "block": 4,
+     "unit": 13,
+     "title": "Human Communities and Environment",
+     "part": "13.2 Human population growth"
+    },
+    {
+     "block": 2,
+     "unit": 7,
+     "title": "Energy Resources",
+     "part": "7.3 Carrying capacity"
+    }
+   ]
   },
   {
    "id": "laws-policy",
    "name": "Environmental Laws, Institutions & Constitution",
-   "block": 6,
+   "block": 4,
    "kind": "theory",
-   "summary": "Indian environmental Acts with years, constitutional provisions, NGT, NBA, ENVIS, ministries.",
+   "summary": "The Constitution's environment clauses, Indian environmental Acts with their years, the NGT and NBA, international conventions and ENVIS.",
    "points": [
-    "Wildlife (Protection) Act 1972; Water Act 1974; Forest (Conservation) Act 1980; Air (Prevention and Control of Pollution) Act 1981 — amended in 1987 to include noise; Environment (Protection) Act 1986; Biological Diversity Act 2002; Forest Rights Act 2006 (tribal and forest dwellers); National Green Tribunal Act 2010.",
-    "42nd Amendment (1976) added Article 48A (the State shall protect and improve the environment) and Article 51A(g) (citizens' duty to protect nature).",
-    "National Biodiversity Authority (NBA), Chennai, was set up under the Biological Diversity Act.",
-    "National Green Tribunal: principal bench in New Delhi; zonal benches in Bhopal, Pune, Kolkata and Chennai; decides environmental cases quickly.",
-    "ENVIS: Environmental Information System, a network of centres under the Ministry of Environment.",
-    "The Ministry of Environment and Forests was created in 1985; renamed MoEFCC in 2014.",
-    "Central Pollution Control Board (CPCB) was set up in 1974 under the Water Act."
+    "The 42nd Amendment (1976), made after the 1972 Stockholm conference, added Article 48A (the State shall protect and improve the environment and safeguard forests and wildlife) and Article 51A(g) (a fundamental duty of every citizen).",
+    "The Department of Environment began in 1980, became the Ministry of Environment and Forests in 1985, and was renamed the Ministry of Environment, Forest and Climate Change in 2014.",
+    "Acts: Indian Forest Act 1927; Wild Life (Protection) Act 1972 (Schedules I–V); Water Act 1974 (amended 1988); Water Cess Act 1977; Forest (Conservation) Act 1980; Air Act 1981; Environment (Protection) Act 1986 — the 'umbrella' law passed after Bhopal.",
+    "The 1987 amendment of the Air Act strengthened enforcement, introduced stiffer penalties and citizen suits, and brought in noise pollution.",
+    "The Biodiversity Bill (introduced 2000, passed 2002) set up the National Biodiversity Authority (NBA), which has the powers of a civil court and deals with access by foreigners.",
+    "The National Green Tribunal (NGT Act 2010, set up October 2010) exists for the effective and speedy disposal of environmental cases, aiming to decide them within 6 months. Principal bench: New Delhi; zonal benches: Bhopal, Pune, Kolkata, Chennai.",
+    "Species projects: Hangul (1970), Lion (1972), Tiger (1973), Crocodile (1974), Brown-antlered deer (1981), Elephant (1991–92). There is no camel project.",
+    "International milestones: Stockholm 1972 (gave rise to UNEP); CITES 1973; Vienna 1985 (ozone); Montreal Protocol 1987; Basel 1989 (movement of hazardous waste across borders); Rio Earth Summit 1992 (Agenda 21, UNFCCC, CBD); Kyoto 1997; Rotterdam 1998 (hazardous chemicals); Stockholm 2001 (persistent organic pollutants); Johannesburg 2002 (Rio+10); Ramsar 1971 (wetlands).",
+    "ENVIS is the environmental information system of the Environment Ministry, with its main centre in Delhi. Centres include CPCB (pollution control), ITRC Lucknow (toxic chemicals), TERI (renewable energy and environment), NIOH Ahmedabad (occupational health) and CTS, IISc Bengaluru (Western Ghats ecology). TIFR and AIIMS are not ENVIS centres.",
+    "Laws are hard to enforce because of a lack of expertise, shortage of funds and a lack of seriousness among implementing authorities."
    ],
    "mistakes": [
     "Mixing up Act years — make a one-line list and revise it on exam day."
+   ],
+   "units": [
+    {
+     "block": 4,
+     "unit": 12,
+     "title": "Environmental Legislation"
+    },
+    {
+     "block": 4,
+     "unit": 14,
+     "title": "Environmental Ethics",
+     "part": "14.9 ENVIS"
+    }
    ]
   },
   {
    "id": "society-ethics",
    "name": "Environmental Movements, Ethics & Justice",
-   "block": 6,
+   "block": 4,
    "kind": "theory",
-   "summary": "Chipko, Appiko, Silent Valley and other movements; views of nature; environmental ethics and justice.",
+   "summary": "The three views of nature, attitudes towards nature, why we need environmental ethics, equity, justice and racism, and India's environmental movements.",
    "points": [
-    "Chipko (Uttarakhand, 1973): Chandi Prasad Bhatt, Sunderlal Bahuguna, Gaura Devi.",
-    "Appiko (Karnataka, 1983): Panduranga Hegde. Bishnoi sacrifice (1730): Amrita Devi.",
-    "Silent Valley (Kerala): the valley of the Kunthipuzha river; the movement stopped a hydro project.",
-    "Narmada Bachao Andolan: Medha Patkar, Baba Amte.",
-    "Views of nature: Indian/Eastern (nature as mother, to be respected), Western (dominion over nature); ecofeminism arose as an alternative to patriarchal domination of nature.",
-    "Anthropocentrism (humans matter most) vs biocentrism (all living beings have value) vs ecocentrism (whole ecosystems have value).",
-    "Environmental justice: no group should bear an unfair share of environmental harm; holding meetings in remote places or using only English material excludes people (procedural injustice).",
-    "Stewardship: a sense of responsibility for caring for nature."
+    "Three views of nature: Western (European and North American) — nature is alien and hostile, to be conquered; Sinaitic (Chinese, Korean, Japanese) — nature is beautiful and humans are part of it; Indian (Hindu, Buddhist and Jain) — nature is a mother and a goddess who cannot be tamed.",
+    "Attitudes: anthropocentrism puts far greater value on humans than on anything else; stewardship is a strong sense of responsibility for a particular part of nature — strong in tribal, pastoral and traditional farming communities, weak in urban ones.",
+    "Ecofeminism was proposed as an alternative to patriarchal systems of domination. Biocentrism holds that all living organisms have values and rights whether or not they are useful; ecocentrism extends rights to ecosystems and non-living parts of nature. Aldo Leopold wrote the essay 'The Land Ethic'.",
+    "A new set of environmental ethics is needed because of new effects on nature, new knowledge about nature and expanding moral concerns.",
+    "Environmental equity has three categories: procedural (unfair procedures — packing boards with business interests, holding hearings in remote places, English-only material for non-English speakers); geographical (communities hosting waste sites get fewer benefits than those producing the waste); social (decisions that mirror power and racial bias, e.g. against certain ethnic groups).",
+    "Environmental justice means equal protection under environmental laws for everyone regardless of race, ethnicity or income; environmental racism is the placing of hazards on disadvantaged communities.",
+    "Religions teach us to be trustees or stewards of the environment, not its masters. Environmental education and organised collective action (student groups, campaigns) change attitudes.",
+    "Movements and cases: Chipko (Chandi Prasad Bhatt), Silent Valley (the valley of the Kunthi river, Kerala), Narmada Bachao Andolan, and the Taj Trapezium case (Agra's brick kilns, the Mathura refinery and Firozabad's glass factories)."
    ],
-   "mistakes": []
+   "mistakes": [],
+   "units": [
+    {
+     "block": 4,
+     "unit": 14,
+     "title": "Environmental Ethics"
+    },
+    {
+     "block": 4,
+     "unit": 13,
+     "title": "Human Communities and Environment",
+     "part": "13.7 People's movements"
+    }
+   ]
   },
   {
    "id": "health",
    "name": "Environment & Human Health",
-   "block": 6,
+   "block": 4,
    "kind": "theory",
-   "summary": "WHO definition of health, aetiology and epidemiology, genetic and behavioural influences on disease.",
+   "summary": "Health and public health, the genetic, behavioural and environmental influences on health, and the vocabulary of disease.",
    "points": [
-    "WHO: health is a state of complete physical, mental and social well-being, not merely the absence of disease or infirmity.",
-    "Aetiology: the study of the cause (origin) of disease. Epidemiology: the study of how diseases spread in populations.",
-    "Genetic diseases: haemophilia, sickle-cell anaemia, thalassaemia, Down's syndrome (mongolism).",
-    "Behavioural influences: smoking, tobacco chewing, alcoholism, diet, lack of exercise.",
-    "Malaria is infectious (a parasite spread by mosquitoes), not genetic."
+    "WHO defines health as complete physical, mental and social well-being, not merely the absence of disease.",
+    "Environmental health is the part of public health concerned with all external conditions that affect health. Public health as a discipline began in Europe after 1842 ('the great sanitary awakening') and is now called community health: the patient represents the community.",
+    "Aetiology is the study of the cause or origin of disease; the host is the organism a parasite enters and the pathogen is the parasite that causes disease.",
+    "Health depends on genetic, behavioural and environmental influences.",
+    "Hereditary (genetic) diseases: phenylketonuria, haemophilia, mongolism (Down's syndrome), sickle-cell anaemia, thalassaemia. Allergies, diabetes, hypertension and schizophrenia are not entirely genetic — they come from genes interacting with the environment. Malaria is infectious, not genetic.",
+    "Behavioural influences: smoking, alcoholism, drugs, chewing tobacco and irregular eating.",
+    "Environmental influences — physical: radiation, noise, vibration, humidity; chemical: poisons and toxins; biological: microbes, animals, allergens; sociological: overcrowding, isolation, neglect; psychological: stress, anxiety, depression, boredom."
    ],
-   "mistakes": []
+   "mistakes": [],
+   "units": [
+    {
+     "block": 4,
+     "unit": 13,
+     "title": "Human Communities and Environment",
+     "part": "13.3 Human health and welfare"
+    }
+   ]
   }
  ],
  "repeated": [
@@ -6046,5 +6189,6 @@
   "2026-06/48": 4,
   "2026-06/49": 2,
   "2026-06/50": 3
- }
+ },
+ "notesSource": "Notes written from the IGNOU BEVAE-181 study material (Blocks 1–4)."
 }
