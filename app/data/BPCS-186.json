@@ -11,7 +11,7 @@
   "summary": "8 questions in two sections of four. Answer any 5, at least 2 from each section; each carries 10 marks (about 300 words). Some questions are two short notes of 5 marks.",
   "note": "Section I covers stress, its models, proneness and effects; Section II covers coping and management techniques."
  },
- "blocksOfficial": false,
+ "blocksOfficial": true,
  "sessions": [
   "2022-06",
   "2022-12",
@@ -34,11 +34,11 @@
  "blocks": [
   {
    "no": 1,
-   "title": "Understanding Stress"
+   "title": "Introduction to Stress"
   },
   {
    "no": 2,
-   "title": "Managing Stress"
+   "title": "Stress Management"
   }
  ],
  "topics": [
@@ -58,7 +58,14 @@
     "Moderators — factors that reduce (or increase) the effect of stress: social support, hardiness (Kobasa: commitment, control, challenge), internal locus of control, self-efficacy, optimism, good coping resources, health and lifestyle."
    ],
    "frame": "Meaning → each factor with a one-line example → conclusion on managing it.",
-   "mistakes": []
+   "mistakes": [],
+   "units": [
+    {
+     "block": 1,
+     "unit": 3,
+     "title": "Factors Contributing to Stress Proneness"
+    }
+   ]
   },
   {
    "id": "stress-concept",
@@ -72,10 +79,18 @@
     "Types: eustress (positive, motivating) and distress (harmful); acute, episodic acute and chronic stress; hypostress (too little challenge) and hyperstress (overload).",
     "Sources: environmental (noise, pollution, crowding), social (relationships, life events), work or academic (workload, deadlines, role conflict, job insecurity), personal (expectations, personality), physical (illness, poor sleep), daily hassles, frustration and conflict.",
     "Symptoms: physical (headache, fatigue, high BP), emotional (anxiety, irritability), cognitive (poor concentration, worry), behavioural (sleep and appetite changes, withdrawal, substance use).",
-    "Measurement: self-report scales — Holmes and Rahe Social Readjustment Rating Scale (life change units), Perceived Stress Scale; physiological measures — heart rate, blood pressure, cortisol, skin conductance; interviews and behavioural observation."
+    "Measurement: self-report scales — Holmes and Rahe Social Readjustment Rating Scale (life change units), Perceived Stress Scale; physiological measures — heart rate, blood pressure, cortisol, skin conductance; interviews and behavioural observation.",
+    "The book's measures: physiological (blood pressure, pulse and breathing rate, polygraph; stress hormones such as epinephrine, norepinephrine and cortisol) — useful but costly, and the changes may have other causes — and psychological tests (standardised questionnaires and scales)."
    ],
    "frame": "Definition → types or sources as headings with examples → conclusion.",
-   "mistakes": []
+   "mistakes": [],
+   "units": [
+    {
+     "block": 1,
+     "unit": 1,
+     "title": "Stress: An Introduction"
+    }
+   ]
   },
   {
    "id": "coping",
@@ -92,7 +107,14 @@
     "Other styles: approach vs avoidance coping; adaptive (exercise, problem solving, seeking support, humour) vs maladaptive (denial, substance use, withdrawal, aggression)."
    ],
    "frame": "Definition → styles in a table (style, meaning, example) → conclusion.",
-   "mistakes": []
+   "mistakes": [],
+   "units": [
+    {
+     "block": 2,
+     "unit": 5,
+     "title": "Coping with Stress"
+    }
+   ]
   },
   {
    "id": "effects",
@@ -108,7 +130,14 @@
     "Managing the effects: early recognition, healthy lifestyle, coping skills, support at home and work."
    ],
    "frame": "Headings (health, performance, relationships) → the inverted-U curve → conclusion.",
-   "mistakes": []
+   "mistakes": [],
+   "units": [
+    {
+     "block": 1,
+     "unit": 4,
+     "title": "Effects of Stress"
+    }
+   ]
   },
   {
    "id": "models",
@@ -124,7 +153,14 @@
     "Life events model (Holmes and Rahe): major life changes add up and raise the risk of illness. Person–environment fit: stress comes from a mismatch between a person's abilities and the demands of the setting."
    ],
    "frame": "Name the model and its author → stages or components as a diagram → one example → conclusion.",
-   "mistakes": []
+   "mistakes": [],
+   "units": [
+    {
+     "block": 1,
+     "unit": 2,
+     "title": "Models of Stress"
+    }
+   ]
   },
   {
    "id": "techniques",
@@ -138,10 +174,18 @@
     "Yoga: asanas (postures), pranayama (breath control) and dhyana (meditation) — improves flexibility, calms the nervous system.",
     "Types of asanas: standing (Tadasana), sitting (Padmasana, Vajrasana), lying on the back (Shavasana), lying on the stomach (Bhujangasana), balancing and inverted poses.",
     "Mindfulness: paying attention to the present moment without judging (Kabat-Zinn's mindfulness-based stress reduction).",
-    "Biofeedback: electronic monitoring of heart rate, muscle tension or skin temperature so a person learns to control these responses."
+    "Biofeedback: electronic monitoring of heart rate, muscle tension or skin temperature so a person learns to control these responses.",
+    "Asanas described in the book: Padmasana (lotus), Sukhasana (easy cross-legged), Siddhasana, Vajrasana and Trikonasana."
    ],
    "frame": "Meaning → steps or types → benefits → conclusion.",
-   "mistakes": []
+   "mistakes": [],
+   "units": [
+    {
+     "block": 2,
+     "unit": 6,
+     "title": "Stress Management Techniques-I"
+    }
+   ]
   },
   {
    "id": "time",
@@ -153,10 +197,19 @@
     "Time management: planning and controlling how time is spent on activities to work effectively and reduce stress.",
     "Time management matrix (Covey, from Eisenhower): Quadrant I — urgent and important (do now); II — important, not urgent (plan; the key quadrant); III — urgent, not important (delegate); IV — neither (eliminate).",
     "Techniques: set SMART goals; prioritise (ABC or matrix); to-do lists; plan and schedule (time blocking); avoid procrastination; delegate; the 80/20 (Pareto) rule; handle interruptions; learn to say no; review daily.",
-    "Benefits: less stress, higher productivity, better balance between work and life."
+    "Benefits: less stress, higher productivity, better balance between work and life.",
+    "The book's worked method: list all tasks, mark each A (must do), B (should do) or C (could do), then number them within each group (A1, A2…) and work in that order."
    ],
    "frame": "Meaning → matrix as a 2×2 diagram → techniques as headings → conclusion.",
-   "mistakes": []
+   "mistakes": [],
+   "units": [
+    {
+     "block": 2,
+     "unit": 7,
+     "title": "Stress Management Techniques-II",
+     "part": "7.3 Time management"
+    }
+   ]
   },
   {
    "id": "cognitive",
@@ -172,7 +225,21 @@
     "Strategies: trial and error, algorithms, heuristics (rules of thumb), means–end analysis, working backwards, brainstorming."
    ],
    "frame": "Meaning → ABCDE as a table with an example → conclusion.",
-   "mistakes": []
+   "mistakes": [],
+   "units": [
+    {
+     "block": 2,
+     "unit": 7,
+     "title": "Stress Management Techniques-II",
+     "part": "7.2 Cognitive restructuring"
+    },
+    {
+     "block": 2,
+     "unit": 8,
+     "title": "Stress Management Techniques-III",
+     "part": "8.3 Problem solving"
+    }
+   ]
   },
   {
    "id": "interpersonal",
@@ -184,10 +251,19 @@
     "Effective communication: clear messages, active listening, feedback, appropriate non-verbal signals, empathy and assertiveness — reduces misunderstandings and conflict.",
     "Self-awareness: knowing one's own emotions, strengths, weaknesses and values (Johari window) — the base for managing oneself and relationships.",
     "Emotional intelligence (Goleman; Salovey and Mayer): self-awareness, self-regulation, motivation, empathy and social skills — helps handle pressure and people.",
-    "Conflict resolution: styles — competing, collaborating, compromising, avoiding, accommodating (Thomas–Kilmann); steps — understand the issue, listen to both sides, find common ground, agree a solution, follow up."
+    "Conflict resolution: styles — competing, collaborating, compromising, avoiding, accommodating (Thomas–Kilmann); steps — understand the issue, listen to both sides, find common ground, agree a solution, follow up.",
+    "The book's conflict-resolution strategies: avoiding (withdraw), competing (assertive, not cooperative — win–lose), accommodating (cooperative, not assertive — lose–win), collaborating (both — win–win) and compromising."
    ],
    "frame": "Meaning → components as headings with examples → conclusion.",
-   "mistakes": []
+   "mistakes": [],
+   "units": [
+    {
+     "block": 2,
+     "unit": 8,
+     "title": "Stress Management Techniques-III",
+     "part": "8.2 Interpersonal skills"
+    }
+   ]
   }
  ],
  "questions": [
@@ -887,5 +963,6 @@
    "k": "th",
    "topic": "cognitive"
   }
- ]
+ ],
+ "notesSource": "Notes checked against and linked to the IGNOU BPCS-186 study material."
 }
