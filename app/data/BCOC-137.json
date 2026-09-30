@@ -1,0 +1,1313 @@
+{
+ "code": "BCOC-137",
+ "title": "Corporate Accounting",
+ "pattern": {
+  "time": "3 hours",
+  "marks": 100,
+  "questions": 9,
+  "attempt": 5,
+  "each": 20,
+  "summary": "9 questions, answer any 5, each carries 20 marks. About a third are numerical (share issue and forfeiture, redemption, final accounts, cash flow, consolidation, valuation); the rest are theory, including banking and NPAs."
+ },
+ "blocksOfficial": false,
+ "sessions": [
+  "2022-06",
+  "2022-12",
+  "2023-06",
+  "2023-12",
+  "2024-06",
+  "2024-12",
+  "2025-06",
+  "2025-12",
+  "2026-06"
+ ],
+ "sessionNotes": {},
+ "examTips": {
+  "choosing": [
+   "NPAs, holding companies, cash flow and valuation of goodwill or shares appear in almost every paper — as theory or a sum.",
+   "Theory questions on banking and NPAs are safe marks if numericals are not your strength.",
+   "Pick a numerical only if you can finish it; a half-done sum earns little."
+  ],
+  "numerical": [
+   "Show working notes separately and refer to them in the final statement.",
+   "Use the Schedule III vertical format for company accounts.",
+   "Write narrations for journal entries."
+  ]
+ },
+ "blocks": [
+  {
+   "no": 1,
+   "title": "Issue of Shares & Company Basics"
+  },
+  {
+   "no": 2,
+   "title": "Final Accounts & Cash Flow"
+  },
+  {
+   "no": 3,
+   "title": "Redemption, Buyback & Debentures"
+  },
+  {
+   "no": 4,
+   "title": "Amalgamation & Reconstruction"
+  },
+  {
+   "no": 5,
+   "title": "Valuation"
+  },
+  {
+   "no": 6,
+   "title": "Holding Companies"
+  },
+  {
+   "no": 7,
+   "title": "Banking Companies"
+  }
+ ],
+ "topics": [
+  {
+   "id": "final-accounts",
+   "name": "Final Accounts of Companies (Schedule III)",
+   "block": 2,
+   "kind": "mixed",
+   "summary": "Preparing the Statement of Profit and Loss and Balance Sheet of a company under Schedule III of the Companies Act, 2013; form and content; provisions for tax and dividend.",
+   "points": [
+    "Sec 129: financial statements must give a true and fair view, follow notified accounting standards and be in the form of Schedule III.",
+    "Balance Sheet — Equity and Liabilities: shareholders' funds (share capital; reserves and surplus); share application money pending allotment; non-current liabilities (long-term borrowings, deferred tax liabilities, long-term provisions); current liabilities (short-term borrowings, trade payables, other current liabilities, short-term provisions).",
+    "Balance Sheet — Assets: non-current assets (property, plant and equipment; intangible assets; capital work-in-progress; non-current investments; deferred tax assets; long-term loans and advances); current assets (current investments, inventories, trade receivables, cash and cash equivalents, short-term loans and advances, other current assets).",
+    "Statement of Profit and Loss: revenue from operations + other income = total income; expenses — cost of materials consumed, purchases of stock-in-trade, changes in inventories, employee benefits, finance costs, depreciation and amortisation, other expenses; profit before tax; tax expense (current and deferred); profit for the year; earnings per share.",
+    "Notes to accounts carry the details (share capital, reserves, borrowings, fixed assets schedule).",
+    "Adjustments usually asked: closing stock, depreciation, outstanding and prepaid expenses, provision for doubtful debts, provision for tax, transfer to general reserve, managerial remuneration, writing off preliminary expenses and goodwill.",
+    "Dividend: since the revised AS 4 (2016), proposed final dividend is not provided in the accounts — it is disclosed in the notes. Dividend distribution tax was abolished from April 2020. Older exam questions still say 'provide for proposed dividend and CDT' — follow the question's instruction.",
+    "Terms: provision for tax (estimated tax liability, a current liability); interim dividend (paid by the board during the year, from surplus); final dividend (declared at the AGM); general reserve (profits set aside, not for any specific purpose)."
+   ],
+   "mistakes": [
+    "Showing items in the old horizontal format — use the vertical Schedule III format.",
+    "Forgetting to carry adjustments to both statements."
+   ],
+   "method": [
+    "Read every adjustment and mark where it goes (P&L, Balance Sheet, or both).",
+    "Prepare working notes: depreciation, closing stock, outstanding/prepaid items, provision for doubtful debts, tax.",
+    "Draw up the Statement of Profit and Loss in Schedule III order and find profit after tax.",
+    "Take profit to Reserves and Surplus (surplus in P&L), less transfers to reserves and interim dividend.",
+    "Prepare the Balance Sheet under the Schedule III headings, with notes for share capital and reserves.",
+    "Check that the Balance Sheet totals agree."
+   ],
+   "formula": [
+    "Profit before tax = Total income − Total expenses",
+    "Surplus c/f = Opening surplus + Profit after tax − Transfers to reserves − Dividends paid"
+   ],
+   "frame": "Show working notes for each adjustment, then the Statement of Profit and Loss, then the Balance Sheet with note references."
+  },
+  {
+   "id": "valuation",
+   "name": "Valuation of Goodwill & Shares",
+   "block": 5,
+   "kind": "mixed",
+   "summary": "Meaning, features and need for valuing goodwill; factors; average profit, super profit, capitalisation and annuity methods; valuation of shares — net assets, yield and earning capacity methods; minority and majority holdings.",
+   "points": [
+    "Goodwill: the value of a firm's reputation and ability to earn more than a normal return; an intangible asset; valued when a business is sold, on amalgamation, admission or retirement of partners, conversion into a company.",
+    "Factors affecting goodwill: profitability and its trend, location, quality of management, market share and competition, nature of business, brand and customer loyalty, special contracts or licences.",
+    "Methods: average profit (average maintainable profit × years' purchase); super profit (super profit × years' purchase); capitalisation (of average profit, or of super profit); annuity (present value of super profits).",
+    "Adjust past profits for non-recurring items, abnormal losses (e.g. fire), expected expenses (insurance) and a fair remuneration to the proprietor; exclude income from non-trading investments.",
+    "Valuation of shares is needed for: amalgamation or absorption, buying a controlling interest, unquoted shares, loans against shares, buyback, conversion of shares, tax and ESOP valuation.",
+    "Net assets (intrinsic) method: value of assets less all liabilities and preference capital, divided by the number of equity shares — suited to a controlling (majority) holding.",
+    "Yield method: based on expected dividend or earnings compared with the normal rate of return — suited to small (minority) holdings, which cannot control the company's assets.",
+    "Fair value = average of intrinsic value and yield value."
+   ],
+   "mistakes": [
+    "Not adjusting past profits for abnormal items before averaging."
+   ],
+   "method": [
+    "Adjust each year's profit for abnormal or non-recurring items and the proprietor's remuneration.",
+    "Find the average (or weighted average) maintainable profit.",
+    "For super profit: compute normal profit = capital employed × normal rate; super profit = average profit − normal profit.",
+    "Apply the method asked: × years' purchase, capitalise, or × annuity factor.",
+    "For shares: net assets ÷ number of equity shares; or yield = expected rate ÷ normal rate × paid-up value per share."
+   ],
+   "formula": [
+    "Goodwill (average profit) = Average profit × Number of years' purchase",
+    "Normal profit = Capital employed × Normal rate of return ÷ 100",
+    "Super profit = Average profit − Normal profit; Goodwill = Super profit × Years' purchase",
+    "Capitalisation: Goodwill = (Average profit × 100 ÷ Normal rate) − Capital employed",
+    "Annuity: Goodwill = Super profit × Present value of annuity of ₹1",
+    "Intrinsic value per share = (Assets − Liabilities − Preference capital) ÷ Number of equity shares",
+    "Yield value per share = (Expected rate of return ÷ Normal rate of return) × Paid-up value per share"
+   ],
+   "frame": "Working notes → adjusted profits → average → super profit or value → final answer with the method named."
+  },
+  {
+   "id": "cash-flow",
+   "name": "Cash Flow Statement (AS 3)",
+   "block": 2,
+   "kind": "mixed",
+   "summary": "Cash flow statement under AS 3: cash and cash equivalents, operating, investing and financing activities, direct and indirect methods, uses, and comparison with fund flow and income statements.",
+   "points": [
+    "Cash and cash equivalents: cash in hand, demand deposits with banks, and short-term highly liquid investments maturing within 3 months.",
+    "Operating activities: main revenue-producing activities (cash from customers, paid to suppliers and employees, taxes). Investing: buying and selling long-term assets and investments, interest and dividend received. Financing: issue and redemption of shares and debentures, borrowings, interest and dividend paid.",
+    "Indirect method: start from net profit before tax, add back non-cash and non-operating items (depreciation, amortisation, loss on sale of assets), deduct non-operating gains, adjust for changes in working capital, deduct tax paid.",
+    "Direct method: cash receipts from customers minus cash paid to suppliers, employees and for expenses, minus tax paid.",
+    "Uses: shows ability to generate cash, liquidity and solvency, helps plan financing, explains why profit differs from cash, allows comparison between firms.",
+    "Cash flow vs fund flow: cash vs working capital; a cash flow statement is required by AS 3; it is more useful for short-term planning.",
+    "Cash flow vs income statement: cash basis vs accrual basis; shows actual cash movement rather than profit."
+   ],
+   "mistakes": [
+    "Treating interest paid as operating for a non-financial company — it goes under financing.",
+    "Missing the add-back of depreciation in the indirect method."
+   ],
+   "method": [
+    "Find net profit before tax (reconstruct from the change in P&L balance, adding back dividend and transfers).",
+    "Add non-cash and non-operating items; subtract non-operating gains.",
+    "Adjust for changes in current assets (increase −, decrease +) and current liabilities (increase +, decrease −).",
+    "Subtract tax paid → net cash from operating activities.",
+    "Use ledger accounts for fixed assets and investments to find purchases and sales → investing activities.",
+    "Shares, debentures, loans, interest and dividend paid → financing activities.",
+    "Net change + opening cash and cash equivalents = closing balance."
+   ],
+   "formula": [
+    "Cash from operations = Net profit before tax + Non-cash expenses − Non-operating income ± Working capital changes − Tax paid",
+    "Net increase in cash = Operating + Investing + Financing cash flows"
+   ],
+   "frame": "Three sections with headings; working notes for asset accounts; reconcile opening + net change = closing cash."
+  },
+  {
+   "id": "npa",
+   "name": "Non-Performing Assets (NPAs)",
+   "block": 7,
+   "kind": "theory",
+   "summary": "Meaning of NPAs, classification and provisioning, reasons for growing NPAs, their consequences, income recognition, and recovery mechanisms in India.",
+   "points": [
+    "NPA: a loan or advance where interest or principal remains overdue for more than 90 days (term loans); an overdraft or cash credit that is 'out of order' for 90 days; bills overdue for 90 days; for agriculture, overdue for two crop seasons (short duration) or one (long duration).",
+    "Classification: standard assets; sub-standard (NPA for up to 12 months); doubtful (sub-standard for 12 months); loss assets (identified as uncollectable). Provisions rise with each class — loss assets 100%.",
+    "Income recognition: interest on NPAs is not recognised on accrual — only when actually received; interest charged earlier but unrealised is reversed or kept in an interest suspense account.",
+    "Reasons for growing NPAs: poor credit appraisal and monitoring, economic slowdown, wilful default and diversion of funds, industrial sickness, over-optimistic lending in boom times, directed and political lending, delays in legal recovery, natural calamities.",
+    "Consequences of high NPAs: lower profits (no interest, higher provisions), erosion of capital, less credit for others, higher lending rates, liquidity problems, loss of depositor and investor confidence, need for government recapitalisation.",
+    "Recovery mechanisms: Lok Adalats (small loans), Debt Recovery Tribunals (1993 Act), SARFAESI Act 2002 (banks take possession of security without court; asset reconstruction companies), Insolvency and Bankruptcy Code 2016, one-time settlements and restructuring."
+   ],
+   "mistakes": [],
+   "frame": "Definition → classification → reasons or mechanisms as headed points → conclusion with an Indian example."
+  },
+  {
+   "id": "banks",
+   "name": "Bank Accounts, Commercial Banks & NBFCs",
+   "block": 7,
+   "kind": "theory",
+   "summary": "Structure and functions of commercial banks, investment norms, the bank balance sheet, treatment of special items in bank accounts, deposits, teller and slip systems, and non-banking financial companies.",
+   "points": [
+    "Structure: Reserve Bank of India at the top; scheduled commercial banks — public sector, private sector, foreign, regional rural banks, small finance banks, payments banks; cooperative banks; non-scheduled banks.",
+    "Primary functions: accepting deposits (current, savings, fixed, recurring) and lending (loans, cash credit, overdraft, discounting bills). Secondary: agency services (collecting cheques, paying bills, acting as trustee) and utility services (lockers, remittances, letters of credit, guarantees, cards, ATMs).",
+    "Investment norms: cash reserve ratio with the RBI and statutory liquidity ratio in approved securities; investments classified and valued under RBI norms (held to maturity at cost; available for sale and trading at market value).",
+    "Balance Sheet (Form A, Third Schedule, Banking Regulation Act 1949) — capital, reserves and surplus, deposits, borrowings, other liabilities and provisions; cash and balances with RBI, balances with banks and money at call, investments, advances, fixed assets, other assets. Contingent liabilities and bills for collection are shown below the total. Profit and Loss (Form B) — interest earned, other income; interest expended, operating expenses, provisions and contingencies.",
+    "Treatment of items: rebate on bills discounted (unexpired discount) — a liability, deducted from discount income; bills for collection — shown only as a footnote; interest on doubtful debts — credited to interest suspense, not income; advances — shown net of provisions and classified; unclaimed dividend and provision for tax — other liabilities; borrowing from other banks — borrowings.",
+    "Teller system: one teller receives and pays cash at a counter for small transactions — faster service, fewer queues; suits retail banking. Slip system: entries posted directly from pay-in slips and cheques to ledgers, then summarised — quick posting and fewer errors.",
+    "NBFC: a company that lends, invests, leases or hires out but cannot accept demand deposits or issue cheques; regulated by RBI. Forms: asset finance, loan, investment, infrastructure finance, microfinance, housing finance; deposit-taking and non-deposit-taking."
+   ],
+   "mistakes": [],
+   "frame": "Headed points; for 'treatment' questions give each item's place in Form A or B in one line."
+  },
+  {
+   "id": "holding",
+   "name": "Holding Companies & Consolidation",
+   "block": 6,
+   "kind": "mixed",
+   "summary": "Holding and subsidiary companies, their types, advantages and disadvantages, and preparing a consolidated balance sheet — cost of control, minority interest, pre- and post-acquisition profits.",
+   "points": [
+    "Holding company (Sec 2(46), 2(87)): controls the composition of another company's board or holds more than half of its total voting power (alone or with its subsidiaries). The other company is its subsidiary; wholly owned when it holds all shares.",
+    "Advantages: control with less investment, separate liability of each company, tax and management flexibility, easier expansion. Disadvantages: possible manipulation of accounts and transfer prices, concentration of economic power, minority shareholders may be exploited, complex structure.",
+    "Consolidation (AS 21; Ind AS 110 for Ind AS companies): combine the holding and subsidiary balance sheets line by line, eliminating the investment and inter-company items.",
+    "Cost of control (goodwill) = cost of investment − holding's share of the subsidiary's share capital and pre-acquisition profits; if negative it is a capital reserve.",
+    "Minority interest = minority's share of share capital + its share of all reserves and profits (pre- and post-acquisition) + share of revaluation.",
+    "Pre-acquisition profits are capital profits (go to cost of control); the holding's share of post-acquisition profits goes to consolidated reserves.",
+    "Other adjustments: revaluation of subsidiary's assets (capital), mutual debts and bills, unrealised profit on inter-company stock, bonus shares, preference shares and debentures held, contingent liabilities (note only)."
+   ],
+   "mistakes": [
+    "Treating all of the subsidiary's profits as revenue — split them at the date of acquisition."
+   ],
+   "method": [
+    "Find the holding's and minority's share of the subsidiary's shares.",
+    "Analyse the subsidiary's reserves and profit into pre-acquisition (capital) and post-acquisition (revenue); include revaluation profit or loss as capital.",
+    "Minority interest = minority share of capital + all reserves.",
+    "Cost of control = investment − holding's share of capital and capital profits.",
+    "Consolidated reserves = holding's reserves + its share of the subsidiary's revenue profits − unrealised profit.",
+    "Add assets and liabilities line by line, cancelling inter-company debts; prepare the consolidated Balance Sheet."
+   ],
+   "formula": [
+    "Cost of control = Cost of investment − (Share of paid-up capital + Share of capital profits)",
+    "Minority interest = Minority % × (Share capital + All reserves and profits)"
+   ],
+   "frame": "Working notes: analysis of profits → minority interest → cost of control → consolidated reserves → consolidated Balance Sheet."
+  },
+  {
+   "id": "buyback-redemption",
+   "name": "Buyback & Redemption of Preference Shares",
+   "block": 3,
+   "kind": "mixed",
+   "summary": "Redemption of preference shares — conditions, methods and journal entries, capital redemption reserve and bonus issue; buyback of shares — motives, conditions, SEBI rules and journal entries.",
+   "points": [
+    "Redemption of preference shares (Sec 55): only fully paid shares; out of profits available for dividend or proceeds of a fresh issue made for the purpose; premium on redemption from profits or securities premium; an amount equal to the nominal value redeemed out of profits goes to the capital redemption reserve (CRR); CRR can be used to issue fully paid bonus shares.",
+    "Methods: out of fresh issue of shares, out of profits, or a combination; also partly paid shares must be made fully paid first.",
+    "Buyback motives: return surplus cash, raise earnings per share and share price, defend against takeover, increase promoters' holding, signal undervaluation, adjust capital structure.",
+    "Buyback conditions (Sec 68): authorised by articles; special resolution (board resolution up to 10%); up to 25% of paid-up capital and free reserves; debt–equity ratio not above 2:1 afterwards; fully paid shares; completed within one year; no further issue for 6 months (except bonus); shares extinguished within 7 days.",
+    "Sources: free reserves, securities premium, proceeds of an issue of a different kind of securities. When bought out of free reserves, the nominal value is transferred to CRR (Sec 69).",
+    "SEBI (Buy-back of Securities) Regulations, 2018: methods — tender offer, open market (stock exchange or book building); public announcement, escrow account, no buyback from promoters in open market, 12-month gap between buybacks."
+   ],
+   "mistakes": [
+    "Transferring the whole redemption amount to CRR — only the part not covered by a fresh issue."
+   ],
+   "method": [
+    "Find the amount payable (nominal value + premium).",
+    "Decide the fresh issue needed: nominal value to be redeemed − profits available (if the question asks).",
+    "Record the fresh issue (application, allotment).",
+    "Transfer premium on redemption to securities premium or profit and loss.",
+    "Transfer to CRR = nominal value redeemed − face value of fresh issue.",
+    "Record amount due to preference (or equity) shareholders and payment.",
+    "If asked, issue bonus shares out of CRR."
+   ],
+   "formula": [
+    "Transfer to CRR = Nominal value of shares redeemed (or bought back) − Proceeds (face value) of fresh issue",
+    "Fresh issue needed = Nominal value to be redeemed − Divisible profits available"
+   ],
+   "frame": "Journal entries in order with narrations; show the CRR working."
+  },
+  {
+   "id": "share-issue",
+   "name": "Issue, Forfeiture & Reissue of Shares",
+   "block": 1,
+   "kind": "mixed",
+   "summary": "Stages of issue of shares and journal entries, pro-rata allotment, calls in arrears, forfeiture and reissue, kinds of shares, allotment rules and book building.",
+   "points": [
+    "Stages: application → allotment → calls (first, second, final); each stage has an 'amount due' entry and a 'receipt' entry.",
+    "Pro-rata allotment: excess application money is adjusted against allotment (and calls, if the articles allow) and the rest refunded.",
+    "Forfeiture: Share Capital Dr (called-up value) To Share Forfeited (amount received) To unpaid allotment/calls. Reissue: Bank Dr, Share Forfeited Dr (discount) To Share Capital; the discount cannot exceed the amount forfeited. The balance on forfeited shares reissued goes to capital reserve.",
+    "Kinds of shares (Sec 43): equity (with voting rights, or with differential rights) and preference shares.",
+    "Valid allotment: by proper authority (board), within reasonable time, communicated, absolute, after minimum subscription is received (Sec 39), against an application.",
+    "Book building: price discovered from investors' bids within a price band; steps — appoint book-running lead manager, file red herring prospectus, bidding period, record demand, fix cut-off price, allot and refund."
+   ],
+   "mistakes": [
+    "Transferring the whole forfeited amount to capital reserve when only some shares are reissued."
+   ],
+   "method": [
+    "Make a table of shares applied, allotted and rejected; compute excess money per category.",
+    "Pass entries for application money received and its transfer (to capital, allotment and refund).",
+    "Allotment due and received (less excess application money adjusted); calls due and received.",
+    "For defaulters, compute unpaid amounts on each stage.",
+    "Forfeiture entry at called-up value; reissue entry; capital reserve for the gain on shares reissued.",
+    "Prepare the Balance Sheet share capital note (subscribed and fully paid, forfeited shares)."
+   ],
+   "formula": [
+    "Capital reserve = Amount forfeited on reissued shares − Discount on reissue"
+   ],
+   "frame": "Journal entries with narrations → the share capital note in the Balance Sheet."
+  },
+  {
+   "id": "amalgamation",
+   "name": "Amalgamation & External Reconstruction (AS 14)",
+   "block": 4,
+   "kind": "theory",
+   "summary": "Amalgamation in the nature of merger and purchase, pooling of interests and purchase methods, purchase consideration and its methods, external reconstruction.",
+   "points": [
+    "Amalgamation: two or more companies combine — either one absorbs the other, or a new company takes over both. External reconstruction: a new company is formed to take over an existing (usually weak) company.",
+    "Nature of merger (AS 14): all assets and liabilities taken over; holders of at least 90% of shares become shareholders of the transferee; consideration in equity shares (cash only for fractions); business continued; book values kept.",
+    "Nature of purchase: any amalgamation that fails one of those conditions.",
+    "Pooling of interests method (merger): assets, liabilities and reserves recorded at book values; difference between consideration and share capital adjusted in reserves.",
+    "Purchase method: assets and liabilities at fair values; only statutory reserves preserved (through an amalgamation adjustment account); excess of consideration over net assets is goodwill, shortfall is capital reserve.",
+    "Purchase consideration: amount paid to the transferor's shareholders in shares, securities or cash. Methods: lump sum, net payment (adding up payments), net assets (assets taken over at agreed values − liabilities taken over), intrinsic value (share exchange ratio).",
+    "Ind AS 103 applies to companies following Ind AS; AS 14 to others."
+   ],
+   "mistakes": [],
+   "frame": "Definition → table of merger vs purchase → methods with a short example → conclusion."
+  },
+  {
+   "id": "reconstruction",
+   "name": "Internal Reconstruction & Capital Reduction",
+   "block": 4,
+   "kind": "theory",
+   "summary": "Internal reconstruction, alteration and reduction of share capital, the capital reduction (reconstruction) account, steps and approvals, and treatment of special items.",
+   "points": [
+    "Internal reconstruction: reorganising a company's capital without winding it up — reducing capital to write off accumulated losses and fictitious or overvalued assets, with sacrifices by shareholders and creditors.",
+    "Alteration of share capital (Sec 61): increase, consolidate, sub-divide, convert shares into stock, cancel unissued shares — by ordinary resolution if the articles allow; no Tribunal approval.",
+    "Reduction of share capital (Sec 66): special resolution + confirmation by the Tribunal; creditors can object; order registered with the Registrar.",
+    "Steps: prepare the scheme; board approval; special resolution; Tribunal application and notice to creditors, Central Government and SEBI; confirmation; registration; accounting entries.",
+    "Capital reduction (reconstruction) account: credited with the reduction in capital and sacrifices by creditors; debited with accumulated losses, fictitious assets and fall in asset values; any surplus goes to capital reserve.",
+    "Special items: arrears of preference dividend are not a liability — if the scheme pays part, it is charged to the reconstruction account; surrender of shares — shares surrendered by shareholders are reissued to creditors, the rest cancelled through the reconstruction account.",
+    "Role of stakeholders: shareholders vote and bear the loss; creditors and debenture-holders agree to sacrifices; the Tribunal protects creditors; the board drafts and implements the scheme."
+   ],
+   "mistakes": [],
+   "frame": "Meaning → steps or provisions as a list → the reconstruction account → a revised Balance Sheet heading list → conclusion."
+  },
+  {
+   "id": "debentures",
+   "name": "Issue & Redemption of Debentures",
+   "block": 3,
+   "kind": "mixed",
+   "summary": "Meaning and types of debentures, issue at par, premium and discount and redeemable at par or premium, issue as purchase consideration, and methods of redemption.",
+   "points": [
+    "Debenture (Sec 2(30)): an instrument acknowledging a debt of the company, usually carrying fixed interest and secured by a charge.",
+    "Types: secured/unsecured, redeemable/irredeemable, convertible/non-convertible, registered/bearer, first/second.",
+    "Issue entries: Bank Dr; Discount on issue Dr; Loss on issue of debentures Dr (for premium payable on redemption) To Debentures To Securities premium To Premium on redemption of debentures.",
+    "Issued for purchase of assets: Assets Dr To Vendor; Vendor Dr To Debentures (and securities premium or with discount).",
+    "Redemption methods: lump sum at maturity; instalments (by drawing lots); purchase in the open market and cancellation; conversion into shares; sinking fund.",
+    "Debenture redemption reserve and investment of a part of debentures maturing in the year are required for some companies under the Companies (Share Capital and Debentures) Rules."
+   ],
+   "mistakes": [
+    "Forgetting to record the premium payable on redemption as a liability at the time of issue."
+   ],
+   "method": [
+    "Write the face value, issue price and redemption value for each case.",
+    "Discount or premium on issue = face value − issue price.",
+    "Premium on redemption payable = redemption value − face value; record it at issue (debit loss on issue).",
+    "Pass the application/allotment (or vendor) entry for each case."
+   ],
+   "formula": [
+    "Loss on issue = Discount on issue + Premium payable on redemption"
+   ],
+   "frame": "Journal entries with narrations; separate the entries for each case."
+  },
+  {
+   "id": "company-basics",
+   "name": "Company & Company Accounts: Basics",
+   "block": 1,
+   "kind": "theory",
+   "summary": "Features of a company, formation and documents for incorporation, the Memorandum of Association, and the concept and importance of company accounts.",
+   "points": [
+    "Features: separate legal entity, perpetual succession, limited liability, transferable shares, common seal (optional), artificial person, separation of ownership and management.",
+    "Formation steps: promotion → name reservation → filing incorporation documents (SPICe+ with memorandum and articles) → certificate of incorporation → commencement of business declaration.",
+    "Documents for incorporation: memorandum and articles, declaration of compliance by a professional, affidavits and identity proofs of subscribers and first directors, directors' consent, proof of registered office, name approval.",
+    "Memorandum of Association: the charter — name, registered office, objects, liability, capital and subscription clauses.",
+    "Company accounts: books and financial statements kept under Sec 128–129 and Schedule III following accounting standards. Importance: true and fair view for shareholders, basis for dividend and tax, investor and lender decisions, control by management, legal compliance and audit."
+   ],
+   "mistakes": [],
+   "frame": "Headed points with one line each → conclusion."
+  }
+ ],
+ "questions": [
+  {
+   "s": "2022-06",
+   "q": "1",
+   "t": "Issue, forfeiture and reissue of shares; Balance Sheet",
+   "m": 20,
+   "k": "num",
+   "topic": "share-issue"
+  },
+  {
+   "s": "2022-06",
+   "q": "2(a)",
+   "t": "Motives of buyback of shares",
+   "m": 10,
+   "k": "th",
+   "topic": "buyback-redemption"
+  },
+  {
+   "s": "2022-06",
+   "q": "2(b)",
+   "t": "Features of a company",
+   "m": 10,
+   "k": "th",
+   "topic": "company-basics"
+  },
+  {
+   "s": "2022-06",
+   "q": "3(a)",
+   "t": "Format of the Profit and Loss statement of a company",
+   "m": 10,
+   "k": "th",
+   "topic": "final-accounts"
+  },
+  {
+   "s": "2022-06",
+   "q": "3(b)",
+   "t": "Fund flow vs cash flow statement",
+   "m": 10,
+   "k": "th",
+   "topic": "cash-flow"
+  },
+  {
+   "s": "2022-06",
+   "q": "4(a)",
+   "t": "Note: internal reconstruction",
+   "m": 10,
+   "k": "th",
+   "topic": "reconstruction"
+  },
+  {
+   "s": "2022-06",
+   "q": "4(b)",
+   "t": "Note: Balance Sheet under pooling of interests",
+   "m": 10,
+   "k": "th",
+   "topic": "amalgamation"
+  },
+  {
+   "s": "2022-06",
+   "q": "5",
+   "t": "Valuation of goodwill: meaning, features and need",
+   "m": 20,
+   "k": "th",
+   "topic": "valuation"
+  },
+  {
+   "s": "2022-06",
+   "q": "6(a)",
+   "t": "Holding companies and their types",
+   "m": 10,
+   "k": "th",
+   "topic": "holding"
+  },
+  {
+   "s": "2022-06",
+   "q": "6(b)",
+   "t": "Balance Sheet structure of non-banking companies",
+   "m": 10,
+   "k": "th",
+   "topic": "final-accounts"
+  },
+  {
+   "s": "2022-06",
+   "q": "7",
+   "t": "NPAs and reasons for their growth",
+   "m": 20,
+   "k": "th",
+   "topic": "npa"
+  },
+  {
+   "s": "2022-06",
+   "q": "8(a)",
+   "t": "Note: structure of Indian commercial banks",
+   "m": 10,
+   "k": "th",
+   "topic": "banks"
+  },
+  {
+   "s": "2022-06",
+   "q": "8(b)",
+   "t": "Note: investment norms for commercial banks",
+   "m": 10,
+   "k": "th",
+   "topic": "banks"
+  },
+  {
+   "s": "2022-06",
+   "q": "9",
+   "t": "Steps in preparing a bank's Balance Sheet",
+   "m": 20,
+   "k": "th",
+   "topic": "banks"
+  },
+  {
+   "s": "2022-12",
+   "q": "1(a)",
+   "t": "Documents filed for incorporation of a company",
+   "m": 10,
+   "k": "th",
+   "topic": "company-basics"
+  },
+  {
+   "s": "2022-12",
+   "q": "1(b)",
+   "t": "Stages of issue of shares with journal entries",
+   "m": 10,
+   "k": "num",
+   "topic": "share-issue"
+  },
+  {
+   "s": "2022-12",
+   "q": "2",
+   "t": "Redemption of preference shares: entries and Balance Sheet",
+   "m": 20,
+   "k": "num",
+   "topic": "buyback-redemption"
+  },
+  {
+   "s": "2022-12",
+   "q": "3(a)",
+   "t": "Note: provision for tax",
+   "m": 5,
+   "k": "th",
+   "topic": "final-accounts"
+  },
+  {
+   "s": "2022-12",
+   "q": "3(b)",
+   "t": "Note: final dividend",
+   "m": 5,
+   "k": "th",
+   "topic": "final-accounts"
+  },
+  {
+   "s": "2022-12",
+   "q": "3(c)",
+   "t": "Note: interim dividend",
+   "m": 5,
+   "k": "th",
+   "topic": "final-accounts"
+  },
+  {
+   "s": "2022-12",
+   "q": "3(d)",
+   "t": "Note: general reserve",
+   "m": 5,
+   "k": "th",
+   "topic": "final-accounts"
+  },
+  {
+   "s": "2022-12",
+   "q": "4(a)",
+   "t": "Cash and cash equivalents",
+   "m": 5,
+   "k": "th",
+   "topic": "cash-flow"
+  },
+  {
+   "s": "2022-12",
+   "q": "4(b)",
+   "t": "Cash flow statement by the indirect method",
+   "m": 15,
+   "k": "num",
+   "topic": "cash-flow"
+  },
+  {
+   "s": "2022-12",
+   "q": "5(a)",
+   "t": "Consolidation of financial statements",
+   "m": 8,
+   "k": "th",
+   "topic": "holding"
+  },
+  {
+   "s": "2022-12",
+   "q": "5(b)",
+   "t": "Cost of control and minority interest (AS 21)",
+   "m": 12,
+   "k": "th",
+   "topic": "holding"
+  },
+  {
+   "s": "2022-12",
+   "q": "6",
+   "t": "Goodwill by super profit, capitalisation and annuity methods",
+   "m": 20,
+   "k": "num",
+   "topic": "valuation"
+  },
+  {
+   "s": "2022-12",
+   "q": "7(a)",
+   "t": "Methods of calculating purchase consideration (AS 14)",
+   "m": 10,
+   "k": "th",
+   "topic": "amalgamation"
+  },
+  {
+   "s": "2022-12",
+   "q": "7(b)",
+   "t": "Amalgamation: merger vs purchase",
+   "m": 10,
+   "k": "th",
+   "topic": "amalgamation"
+  },
+  {
+   "s": "2022-12",
+   "q": "8",
+   "t": "Reconstruction account and the post-reconstruction Balance Sheet",
+   "m": 20,
+   "k": "th",
+   "topic": "reconstruction"
+  },
+  {
+   "s": "2022-12",
+   "q": "9(a)",
+   "t": "NPAs and reasons for their growth",
+   "m": 10,
+   "k": "th",
+   "topic": "npa"
+  },
+  {
+   "s": "2022-12",
+   "q": "9(b)",
+   "t": "Methods of valuation of goodwill",
+   "m": 10,
+   "k": "th",
+   "topic": "valuation"
+  },
+  {
+   "s": "2023-06",
+   "q": "1(a)",
+   "t": "Requisites of a valid allotment of shares",
+   "m": 10,
+   "k": "th",
+   "topic": "share-issue"
+  },
+  {
+   "s": "2023-06",
+   "q": "1(b)",
+   "t": "Conditions for redeeming preference shares",
+   "m": 10,
+   "k": "th",
+   "topic": "buyback-redemption"
+  },
+  {
+   "s": "2023-06",
+   "q": "2",
+   "t": "Journal entries: debentures issued for assets",
+   "m": 20,
+   "k": "num",
+   "topic": "debentures"
+  },
+  {
+   "s": "2023-06",
+   "q": "3",
+   "t": "Cash flow statement under AS 3",
+   "m": 20,
+   "k": "th",
+   "topic": "cash-flow"
+  },
+  {
+   "s": "2023-06",
+   "q": "4",
+   "t": "Final accounts from a trial balance",
+   "m": 20,
+   "k": "num",
+   "topic": "final-accounts"
+  },
+  {
+   "s": "2023-06",
+   "q": "5",
+   "t": "Consolidation: treatment of items (cost of control, minority interest, etc.)",
+   "m": 20,
+   "k": "th",
+   "topic": "holding"
+  },
+  {
+   "s": "2023-06",
+   "q": "6",
+   "t": "Valuation of shares: concept and when needed",
+   "m": 20,
+   "k": "th",
+   "topic": "valuation"
+  },
+  {
+   "s": "2023-06",
+   "q": "7(a)",
+   "t": "Alteration of share capital",
+   "m": 10,
+   "k": "th",
+   "topic": "reconstruction"
+  },
+  {
+   "s": "2023-06",
+   "q": "7(b)",
+   "t": "Methods of accounting for amalgamation",
+   "m": 10,
+   "k": "th",
+   "topic": "amalgamation"
+  },
+  {
+   "s": "2023-06",
+   "q": "8(a)",
+   "t": "Buyback of shares: motives and conditions",
+   "m": 10,
+   "k": "th",
+   "topic": "buyback-redemption"
+  },
+  {
+   "s": "2023-06",
+   "q": "8(b)",
+   "t": "Functions of commercial banks",
+   "m": 10,
+   "k": "th",
+   "topic": "banks"
+  },
+  {
+   "s": "2023-06",
+   "q": "9(a)",
+   "t": "Mechanisms for recovering NPAs",
+   "m": 10,
+   "k": "th",
+   "topic": "npa"
+  },
+  {
+   "s": "2023-06",
+   "q": "9(b)",
+   "t": "Treatment of items in a bank's final accounts",
+   "m": 10,
+   "k": "th",
+   "topic": "banks"
+  },
+  {
+   "s": "2023-12",
+   "q": "1",
+   "t": "Issue with pro-rata allotment, forfeiture and reissue; Balance Sheet",
+   "m": 20,
+   "k": "num",
+   "topic": "share-issue"
+  },
+  {
+   "s": "2023-12",
+   "q": "2",
+   "t": "Methods of redemption of debentures",
+   "m": 20,
+   "k": "th",
+   "topic": "debentures"
+  },
+  {
+   "s": "2023-12",
+   "q": "3",
+   "t": "Balance Sheet format under Schedule III",
+   "m": 20,
+   "k": "th",
+   "topic": "final-accounts"
+  },
+  {
+   "s": "2023-12",
+   "q": "4",
+   "t": "Cash flow statement vs income statement",
+   "m": 20,
+   "k": "th",
+   "topic": "cash-flow"
+  },
+  {
+   "s": "2023-12",
+   "q": "5",
+   "t": "Holding company: advantages and disadvantages",
+   "m": 20,
+   "k": "th",
+   "topic": "holding"
+  },
+  {
+   "s": "2023-12",
+   "q": "6",
+   "t": "Methods of valuation of shares; earning capacity method",
+   "m": 20,
+   "k": "th",
+   "topic": "valuation"
+  },
+  {
+   "s": "2023-12",
+   "q": "7(i)",
+   "t": "Note: external reconstruction",
+   "m": 6,
+   "k": "th",
+   "topic": "amalgamation"
+  },
+  {
+   "s": "2023-12",
+   "q": "7(ii)",
+   "t": "Note: amalgamation in the nature of merger",
+   "m": 7,
+   "k": "th",
+   "topic": "amalgamation"
+  },
+  {
+   "s": "2023-12",
+   "q": "7(iii)",
+   "t": "Note: amalgamation in the nature of purchase",
+   "m": 7,
+   "k": "th",
+   "topic": "amalgamation"
+  },
+  {
+   "s": "2023-12",
+   "q": "8",
+   "t": "NPAs and income recognition on them",
+   "m": 20,
+   "k": "th",
+   "topic": "npa"
+  },
+  {
+   "s": "2023-12",
+   "q": "9",
+   "t": "Commercial banks: primary and secondary functions",
+   "m": 20,
+   "k": "th",
+   "topic": "banks"
+  },
+  {
+   "s": "2024-06",
+   "q": "1",
+   "t": "Issue with pro-rata allotment, forfeiture and reissue; Balance Sheet",
+   "m": 20,
+   "k": "num",
+   "topic": "share-issue"
+  },
+  {
+   "s": "2024-06",
+   "q": "2",
+   "t": "Buyback of shares and SEBI guidelines",
+   "m": 20,
+   "k": "th",
+   "topic": "buyback-redemption"
+  },
+  {
+   "s": "2024-06",
+   "q": "3",
+   "t": "Cash flow statement and its uses",
+   "m": 20,
+   "k": "th",
+   "topic": "cash-flow"
+  },
+  {
+   "s": "2024-06",
+   "q": "4",
+   "t": "Cost of control, pre- and post-acquisition profits, minority interest",
+   "m": 20,
+   "k": "th",
+   "topic": "holding"
+  },
+  {
+   "s": "2024-06",
+   "q": "5",
+   "t": "Factors affecting goodwill; methods of valuation",
+   "m": 20,
+   "k": "th",
+   "topic": "valuation"
+  },
+  {
+   "s": "2024-06",
+   "q": "6",
+   "t": "Purchase consideration (AS 14) and its methods",
+   "m": 20,
+   "k": "th",
+   "topic": "amalgamation"
+  },
+  {
+   "s": "2024-06",
+   "q": "7(a)",
+   "t": "Internal reconstruction",
+   "m": 10,
+   "k": "th",
+   "topic": "reconstruction"
+  },
+  {
+   "s": "2024-06",
+   "q": "7(b)",
+   "t": "Pooling of interests method",
+   "m": 10,
+   "k": "th",
+   "topic": "amalgamation"
+  },
+  {
+   "s": "2024-06",
+   "q": "8(a)",
+   "t": "Non-banking financial companies",
+   "m": 10,
+   "k": "th",
+   "topic": "banks"
+  },
+  {
+   "s": "2024-06",
+   "q": "8(b)",
+   "t": "Bank teller system",
+   "m": 10,
+   "k": "th",
+   "topic": "banks"
+  },
+  {
+   "s": "2024-06",
+   "q": "9(a)",
+   "t": "Functions of commercial banks",
+   "m": 10,
+   "k": "th",
+   "topic": "banks"
+  },
+  {
+   "s": "2024-06",
+   "q": "9(b)",
+   "t": "Non-performing assets in banks",
+   "m": 10,
+   "k": "th",
+   "topic": "npa"
+  },
+  {
+   "s": "2024-12",
+   "q": "1(a)",
+   "t": "Kinds of shares under the Companies Act, 2013",
+   "m": 10,
+   "k": "th",
+   "topic": "share-issue"
+  },
+  {
+   "s": "2024-12",
+   "q": "1(b)",
+   "t": "Debentures: definition and types",
+   "m": 10,
+   "k": "th",
+   "topic": "debentures"
+  },
+  {
+   "s": "2024-12",
+   "q": "2",
+   "t": "Journal entries for issue of shares",
+   "m": 20,
+   "k": "num",
+   "topic": "share-issue"
+  },
+  {
+   "s": "2024-12",
+   "q": "3",
+   "t": "Cash flow statement: specimen by indirect method",
+   "m": 20,
+   "k": "th",
+   "topic": "cash-flow"
+  },
+  {
+   "s": "2024-12",
+   "q": "4",
+   "t": "Final accounts from a trial balance",
+   "m": 20,
+   "k": "num",
+   "topic": "final-accounts"
+  },
+  {
+   "s": "2024-12",
+   "q": "5",
+   "t": "Holding company: meaning and requirements",
+   "m": 20,
+   "k": "th",
+   "topic": "holding"
+  },
+  {
+   "s": "2024-12",
+   "q": "6",
+   "t": "Goodwill on three years' purchase of average profit",
+   "m": 20,
+   "k": "num",
+   "topic": "valuation"
+  },
+  {
+   "s": "2024-12",
+   "q": "7(a)",
+   "t": "Amalgamation: merger vs purchase",
+   "m": 10,
+   "k": "th",
+   "topic": "amalgamation"
+  },
+  {
+   "s": "2024-12",
+   "q": "7(b)",
+   "t": "Purchase consideration and its methods",
+   "m": 10,
+   "k": "th",
+   "topic": "amalgamation"
+  },
+  {
+   "s": "2024-12",
+   "q": "8(a)",
+   "t": "Statutory provisions for reducing share capital",
+   "m": 10,
+   "k": "th",
+   "topic": "reconstruction"
+  },
+  {
+   "s": "2024-12",
+   "q": "8(b)",
+   "t": "Bank teller system: benefits and scope",
+   "m": 10,
+   "k": "th",
+   "topic": "banks"
+  },
+  {
+   "s": "2024-12",
+   "q": "9(a)",
+   "t": "Consequences of very high NPAs",
+   "m": 10,
+   "k": "th",
+   "topic": "npa"
+  },
+  {
+   "s": "2024-12",
+   "q": "9(b)",
+   "t": "Treatment of items in a bank's final accounts",
+   "m": 10,
+   "k": "th",
+   "topic": "banks"
+  },
+  {
+   "s": "2025-06",
+   "q": "1(a)",
+   "t": "Memorandum of Association and its contents",
+   "m": 10,
+   "k": "th",
+   "topic": "company-basics"
+  },
+  {
+   "s": "2025-06",
+   "q": "1(b)",
+   "t": "Methods of redeeming preference shares",
+   "m": 10,
+   "k": "th",
+   "topic": "buyback-redemption"
+  },
+  {
+   "s": "2025-06",
+   "q": "2",
+   "t": "Journal entries for buyback of shares",
+   "m": 20,
+   "k": "num",
+   "topic": "buyback-redemption"
+  },
+  {
+   "s": "2025-06",
+   "q": "3",
+   "t": "Form, content and preparation of company final accounts",
+   "m": 20,
+   "k": "th",
+   "topic": "final-accounts"
+  },
+  {
+   "s": "2025-06",
+   "q": "4",
+   "t": "Final accounts from ledger balances",
+   "m": 20,
+   "k": "num",
+   "topic": "final-accounts"
+  },
+  {
+   "s": "2025-06",
+   "q": "5",
+   "t": "Consolidated balance sheet: methods",
+   "m": 20,
+   "k": "th",
+   "topic": "holding"
+  },
+  {
+   "s": "2025-06",
+   "q": "6(a)",
+   "t": "Minority and majority holdings; preference shares",
+   "m": 10,
+   "k": "th",
+   "topic": "valuation"
+  },
+  {
+   "s": "2025-06",
+   "q": "6(b)",
+   "t": "Value of shares by the yield method",
+   "m": 10,
+   "k": "num",
+   "topic": "valuation"
+  },
+  {
+   "s": "2025-06",
+   "q": "7(a)",
+   "t": "Methods of accounting for amalgamation",
+   "m": 10,
+   "k": "th",
+   "topic": "amalgamation"
+  },
+  {
+   "s": "2025-06",
+   "q": "7(b)",
+   "t": "Treatment of items in capital reduction",
+   "m": 10,
+   "k": "th",
+   "topic": "reconstruction"
+  },
+  {
+   "s": "2025-06",
+   "q": "8(a)",
+   "t": "Steps in a scheme of capital reduction",
+   "m": 10,
+   "k": "th",
+   "topic": "reconstruction"
+  },
+  {
+   "s": "2025-06",
+   "q": "8(b)",
+   "t": "Non-banking financial companies and their forms",
+   "m": 10,
+   "k": "th",
+   "topic": "banks"
+  },
+  {
+   "s": "2025-06",
+   "q": "9(a)",
+   "t": "Modes of accepting deposits by banks",
+   "m": 10,
+   "k": "th",
+   "topic": "banks"
+  },
+  {
+   "s": "2025-06",
+   "q": "9(b)",
+   "t": "Treatment of items in a bank's final accounts",
+   "m": 10,
+   "k": "th",
+   "topic": "banks"
+  },
+  {
+   "s": "2025-12",
+   "q": "1(a)",
+   "t": "Concept and importance of company accounts",
+   "m": 10,
+   "k": "th",
+   "topic": "company-basics"
+  },
+  {
+   "s": "2025-12",
+   "q": "1(b)",
+   "t": "Motivations for share buyback",
+   "m": 10,
+   "k": "th",
+   "topic": "buyback-redemption"
+  },
+  {
+   "s": "2025-12",
+   "q": "2",
+   "t": "Redemption of preference shares and bonus issue: entries",
+   "m": 20,
+   "k": "num",
+   "topic": "buyback-redemption"
+  },
+  {
+   "s": "2025-12",
+   "q": "3",
+   "t": "Trading and Profit & Loss account: components and use",
+   "m": 20,
+   "k": "th",
+   "topic": "final-accounts"
+  },
+  {
+   "s": "2025-12",
+   "q": "4",
+   "t": "Cash flow by the direct method",
+   "m": 20,
+   "k": "num",
+   "topic": "cash-flow"
+  },
+  {
+   "s": "2025-12",
+   "q": "5",
+   "t": "Goodwill: importance and methods of valuation",
+   "m": 20,
+   "k": "th",
+   "topic": "valuation"
+  },
+  {
+   "s": "2025-12",
+   "q": "6",
+   "t": "Consolidated Balance Sheet",
+   "m": 20,
+   "k": "num",
+   "topic": "holding"
+  },
+  {
+   "s": "2025-12",
+   "q": "7",
+   "t": "Amalgamation: significance and types",
+   "m": 20,
+   "k": "th",
+   "topic": "amalgamation"
+  },
+  {
+   "s": "2025-12",
+   "q": "8",
+   "t": "NPAs: reasons and recovery mechanism",
+   "m": 20,
+   "k": "th",
+   "topic": "npa"
+  },
+  {
+   "s": "2025-12",
+   "q": "9(a)",
+   "t": "Balance Sheet structure of non-banking companies",
+   "m": 10,
+   "k": "th",
+   "topic": "final-accounts"
+  },
+  {
+   "s": "2025-12",
+   "q": "9(b)",
+   "t": "Structure of Indian commercial banks",
+   "m": 10,
+   "k": "th",
+   "topic": "banks"
+  },
+  {
+   "s": "2026-06",
+   "q": "1(a)",
+   "t": "Steps in forming a company",
+   "m": 10,
+   "k": "th",
+   "topic": "company-basics"
+  },
+  {
+   "s": "2026-06",
+   "q": "1(b)",
+   "t": "Book building and its steps",
+   "m": 10,
+   "k": "th",
+   "topic": "share-issue"
+  },
+  {
+   "s": "2026-06",
+   "q": "2",
+   "t": "Journal entries for issue of debentures",
+   "m": 20,
+   "k": "num",
+   "topic": "debentures"
+  },
+  {
+   "s": "2026-06",
+   "q": "3",
+   "t": "Company Balance Sheet: items and significance",
+   "m": 20,
+   "k": "th",
+   "topic": "final-accounts"
+  },
+  {
+   "s": "2026-06",
+   "q": "4",
+   "t": "Cash flow from operating activities",
+   "m": 20,
+   "k": "num",
+   "topic": "cash-flow"
+  },
+  {
+   "s": "2026-06",
+   "q": "5",
+   "t": "Holding company: accounting for investments in subsidiaries",
+   "m": 20,
+   "k": "th",
+   "topic": "holding"
+  },
+  {
+   "s": "2026-06",
+   "q": "6",
+   "t": "Value per share by the net assets method",
+   "m": 20,
+   "k": "num",
+   "topic": "valuation"
+  },
+  {
+   "s": "2026-06",
+   "q": "7",
+   "t": "Internal reconstruction: steps and stakeholders",
+   "m": 20,
+   "k": "th",
+   "topic": "reconstruction"
+  },
+  {
+   "s": "2026-06",
+   "q": "8",
+   "t": "NPAs and reasons for their growth",
+   "m": 20,
+   "k": "th",
+   "topic": "npa"
+  },
+  {
+   "s": "2026-06",
+   "q": "9(a)",
+   "t": "Accounting for financial instruments in banks",
+   "m": 10,
+   "k": "th",
+   "topic": "banks"
+  },
+  {
+   "s": "2026-06",
+   "q": "9(b)",
+   "t": "Slip system of bank book-keeping",
+   "m": 10,
+   "k": "th",
+   "topic": "banks"
+  }
+ ]
+}
