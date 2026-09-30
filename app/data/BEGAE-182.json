@@ -80,6 +80,10 @@
      "unit": 4,
      "title": "The Language of Formal Letters"
     }
+   ],
+   "examples": [
+    "Model: letter to the editor (short)\n12, Lake Road, Kochi 682011 · 5 March 2026\nThe Editor, The City Times, Kochi\nSubject: Broken streetlights on Lake Road\nSir/Madam,\nThrough your newspaper I wish to draw attention to the broken streetlights on Lake Road, which have been dark for three weeks.\nWomen, students returning from evening classes and elderly walkers feel unsafe, and two minor accidents have already happened. The potholes are invisible at night.\nI request the Corporation to repair the lights at once and to check them every month. I hope you will publish this letter.\nYours faithfully,\nAnu Joseph",
+    "Model: opening and closing of a job application\n'I wish to apply for the post of Accounts Assistant advertised in The Hindu on 2 March 2026.'\n… (qualifications, experience, why you suit the post) …\n'I have enclosed my résumé and would be glad to attend an interview at your convenience. Yours faithfully,' — use 'Yours sincerely' only when you began with the person's name ('Dear Ms Rao')."
    ]
   },
   {
@@ -106,6 +110,9 @@
      "title": "Group Discussions and Meetings",
      "part": "Group discussions"
     }
+   ],
+   "examples": [
+    "Model: a short group discussion — 'Should online classes replace classrooms?'\nA: I'd like to begin by defining the question: are online classes good enough to replace classroom teaching completely?\nB: I think they help working students — they can study at night and replay lectures.\nC: I see your point, but many students in villages still lack a steady internet connection.\nD: I agree with C, and I'd add that labs and group work need physical presence.\nB: That's true, but blended learning could give the best of both.\nE: To sum up, online classes widen access and save time, but they cannot fully replace classrooms; a blended model seems the most practical."
    ]
   },
   {
@@ -130,6 +137,10 @@
      "unit": 4,
      "title": "Presentation Skills: Essentials of Presentation Skills"
     }
+   ],
+   "examples": [
+    "Model: a five-minute presentation — 'Digital payments in India'\nSlide 1 (about 1 min): greeting; topic; 'I will cover growth, benefits and risks.'\nSlide 2 — Growth: UPI in shops and homes; payments by QR code; a simple bar chart of monthly transactions.\nSlide 3 — Benefits: speed, no need for change, a record of every payment.\nSlide 4 — Risks: fraud by OTP sharing; the digital divide for elderly users.\nSlide 5 (about 1 min): summary; take-away — 'Pay digitally, but never share your PIN or OTP'; thank the audience and invite questions.",
+    "Model: preparing for a job interview\nRead the company's website and recent news; revise your résumé; practise answers to 'Tell me about yourself' and 'Why this job?'; keep certificates in a folder; dress formally; reach 15 minutes early; send a short thank-you e-mail the same day."
    ]
   },
   {
@@ -153,6 +164,10 @@
      "unit": 3,
      "title": "The Writing Skill: Some Basic Guidelines"
     }
+   ],
+   "examples": [
+    "Model: a ten-turn dialogue — returning a faulty phone\nCustomer: Good morning. I bought this phone here last week, and it keeps switching off.\nAssistant: I'm sorry to hear that. May I see the bill, please?\nCustomer: Here it is.\nAssistant: Thank you. Did it fall or get wet?\nCustomer: No, it has been in its cover all the time.\nAssistant: Then it is covered by the warranty. Would you like a repair or a replacement?\nCustomer: I'd prefer a replacement, if possible.\nAssistant: Certainly. We have the same model in stock. I'll just transfer your data.\nCustomer: That's very kind of you. How long will it take?\nAssistant: About twenty minutes. Please have a seat.",
+    "Model: completing a paragraph\nGiven: 'Tourism brings money to a region, but…'\nContinuation: '…it also brings problems if it is not planned. On the one hand, hotels, guides and local crafts gain income. On the other hand, crowds, plastic waste and rising prices can harm the very places visitors come to see. Ultimately, tourism helps most when local people share its benefits and limits are set to protect the environment.'"
    ]
   },
   {
@@ -187,6 +202,10 @@
    ],
    "figures": [
     "comm-process"
+   ],
+   "examples": [
+    "Examples: the seven functions in single sentences\nEmotive: 'What a lovely surprise!' Directive: 'Please submit the report by Friday.' Phatic: 'Hello? Can you hear me?' Poetic: 'Rain, rain, go away.' Referential: 'The train leaves at 6.40.' Metalinguistic: 'What does \"liquidity\" mean?' Contextual: 'Right, let's start the meeting.'",
+    "Example: a barrier and how to remove it\nA bank officer tells a farmer, 'Your KYC is pending and your account will be frozen.' The farmer does not know 'KYC' (vocabulary barrier) and is anxious (affective barrier). Better: 'We need a copy of your Aadhaar and a photo so your account keeps working. Can you bring them this week?' — then check he has understood."
    ]
   },
   {
@@ -211,6 +230,9 @@
      "unit": 1,
      "title": "The Reading Skill"
     }
+   ],
+   "examples": [
+    "Example: four levels of comprehension\nText: 'The shop's shutters stayed down all week, and a \"To Let\" board appeared on Friday.'\nLiteral: the shop was closed all week and a 'To Let' board was put up.\nInterpretive: the shop has probably shut down for good.\nCritical: is the writer suggesting that small shops are struggling? Is one shop enough evidence?\nCreative: what could the owner have done differently — for example, selling online?"
    ]
   },
   {
@@ -236,6 +258,10 @@
      "unit": 2,
      "title": "Vocabulary Development"
     }
+   ],
+   "examples": [
+    "Examples: sound and spelling\nHomophones: 'They're putting their bags over there.' Homonym: 'We sat on the river bank before going to the bank.' Homograph: 'Lead pipes can lead to health problems.'\nWord formation: un + happy (prefix); care + ful (suffix); note + book (compound); 'Please e-mail me the file' (conversion — a noun used as a verb).\nAmbiguity: 'I saw the man with the telescope' — who had the telescope?",
+    "Examples: 'feet' idioms in context\nAfter a month in the new city she found her feet. On Sunday he just put his feet up. The company lost its biggest client but fell on its feet with a new contract. Our manager has both feet on the ground. After the surgery he was back on his feet in two weeks."
    ]
   },
   {
@@ -259,6 +285,10 @@
      "unit": 3,
      "title": "Verbal and Non-Verbal Communication"
     }
+   ],
+   "examples": [
+    "Example: words and body language\nIn an interview a candidate says, 'I'm very confident about this role,' while avoiding eye contact, slouching and speaking very softly. The non-verbal signals contradict the words, and the interviewer believes the body language. Sitting upright, meeting their eyes and speaking at a steady pace would support the message.",
+    "Examples: stress and intonation\nStress moves with the word: PHOtograph, phoTOgraphy, photoGRAphic.\nStress changes the sense: 'I didn't take the book' (someone else did) vs 'I didn't take the BOOK' (I took something else).\nIntonation: 'You're coming?' with a rising tone is a question; 'You're coming.' with a falling tone is a statement."
    ]
   },
   {
@@ -288,6 +318,10 @@
      "unit": 2,
      "title": "Making Enquiries/Asking Questions"
     }
+   ],
+   "examples": [
+    "Model: introducing yourself at a workshop\n'Hello, I'm Rahul Menon. I'm doing my B.Com from Thrissur and I work part-time at an accountant's office. I'm here to learn more about GST filing. And you — what brings you here?'",
+    "Example: adjacency pairs\nGreeting–greeting: 'Good morning.' — 'Good morning.' Question–answer: 'Is this seat free?' — 'Yes, please sit.' Offer–acceptance: 'Would you like some tea?' — 'I'd love some, thanks.' Each first part expects a matching second part, which keeps a conversation moving."
    ]
   },
   {
@@ -312,6 +346,9 @@
      "title": "Group Discussions and Meetings",
      "part": "Meetings"
     }
+   ],
+   "examples": [
+    "Model phrases for a meeting\nTo the chair: 'Madam Chair, may I add a point?'\nContributing with facts: 'Our sales fell 8% last quarter, mainly in the South.'\nDisagreeing politely: 'I see the logic, but I'm concerned about the cost. Could we look at a smaller trial first?'\nAsking for clarity: 'Could you explain what you mean by \"restructure\"?'\nClosing (chair): 'To sum up, we've agreed to run the trial in two stores. Priya will send the plan by Friday. We'll meet again on the 20th. Thank you, everyone.'"
    ]
   }
  ],
