@@ -48,7 +48,7 @@
     { name: "Muhammed Uvais V.", role: "Finance, AI & Automation", url: "https://uvaisv-portfolio.vercel.app/" }
   ];
   // "Send feedback" in Settings opens the student's mail app; hidden while this is empty.
-  const FEEDBACK_EMAIL = "bcombuddyinfo@gmail.com";
+  const FEEDBACK_EMAIL = "feedback.bcomradar@gmail.com";
   const studyStyle = () => { const v = store.get("style", "standard"); return STYLES.some(([k]) => k === v) ? v : "standard"; };
   function applyPrefs() {
     document.documentElement.dataset.textsize = store.get("textsize", "m");
