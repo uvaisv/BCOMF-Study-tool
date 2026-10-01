@@ -43,7 +43,10 @@
   ];
   // "Meet the creators" in Settings; the section is hidden while this list is empty.
   // Each entry: { name, role, url } — url is the person's portfolio, opened in a new tab.
-  const CREATORS = [];
+  const CREATORS = [
+    { name: "Abdul Shukkoor", role: "Finance, Accounting & AI", url: "https://abdul-shukkoor.vercel.app/" },
+    { name: "Muhammed Uvais V.", role: "Finance, AI & Automation", url: "https://uvaisv-portfolio.vercel.app/" }
+  ];
   const studyStyle = () => { const v = store.get("style", "standard"); return STYLES.some(([k]) => k === v) ? v : "standard"; };
   function applyPrefs() {
     document.documentElement.dataset.textsize = store.get("textsize", "m");
