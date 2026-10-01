@@ -3,7 +3,8 @@
  *   notes/index.html               all courses
  *   notes/<code>/index.html        one course, topics in priority order
  *   notes/<code>/<topic>/index.html one topic: notes, examples, diagrams, past questions
- * and sitemap.xml listing them. The app (app/) stays the main way to study;
+ * and sitemap.xml listing them, plus app/data/summary.json (Home progress, Continue) and
+ * app/data/search.json (Search) for the app. The app (app/) stays the main way to study;
  * every page links back into it. Topic priorities come from app/js/analysis.js,
  * the same code the app uses.
  *
@@ -259,6 +260,24 @@ function build() {
       urls.push(topicPath(c.code, t.id));
     }
   }
+  // Small data files for the app itself: per-course "study first" lists (Home progress and the
+  // Continue strip) and a search index of courses, topics and past questions (Search).
+  const summary = {}, search = { courses: [], topics: [], questions: [] };
+  for (const { c, course } of loaded) {
+    const analysis = analyse(course);
+    summary[c.code] = { topics: course.topics.length, mvp: analysis.mvp.map((id) => { const t = analysis.topics.find((x) => x.id === id); return [id, t.name, t.level.label]; }) };
+    search.courses.push([c.code, c.title, c.year]);
+    analysis.topics.forEach((t) => search.topics.push([c.code, t.id, t.name, t.level.label]));
+    const seen = new Set();
+    [...course.questions].sort((a, b) => b.s.localeCompare(a.s)).forEach((q) => {
+      const k = q.t.toLowerCase().replace(/[^a-z0-9]/g, "");
+      if (seen.has(k)) return;
+      seen.add(k);
+      search.questions.push([c.code, q.s, String(q.q), q.t, marks(q.m), q.topic]);
+    });
+  }
+  files.set("app/data/summary.json", JSON.stringify(summary) + "\n");
+  files.set("app/data/search.json", JSON.stringify(search) + "\n");
   files.set("sitemap.xml", `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 ${urls.map((u) => `  <url><loc>${SITE}${u}</loc></url>`).join("\n")}
@@ -280,10 +299,10 @@ if (process.argv.includes("--check")) {
   const stale = [...files].filter(([p, s]) => !fs.existsSync(path.join(ROOT, p)) || fs.readFileSync(path.join(ROOT, p), "utf8") !== s).map(([p]) => p);
   const extra = existing.filter((p) => !files.has(p));
   if (stale.length || extra.length) {
-    console.error(`Web pages are out of date (${stale.length} changed, ${extra.length} to remove). Run: node tools/build_pages.js`);
+    console.error(`Web pages or app search data are out of date (${stale.length} changed, ${extra.length} to remove). Run: node tools/build_pages.js`);
     process.exit(1);
   }
-  console.log(`Web pages are up to date (${files.size - 1} pages).`);
+  console.log(`Web pages are up to date (${[...files.keys()].filter((p) => p.startsWith(OUT)).length} pages).`);
 } else {
   existing.filter((p) => !files.has(p)).forEach((p) => fs.unlinkSync(path.join(ROOT, p)));
   for (const [p, s] of files) {
@@ -293,5 +312,5 @@ if (process.argv.includes("--check")) {
   // Remove folders left empty by deleted topics.
   const prune = (d) => { fs.readdirSync(d, { withFileTypes: true }).filter((e) => e.isDirectory()).forEach((e) => prune(path.join(d, e.name))); if (!fs.readdirSync(d).length) fs.rmdirSync(d); };
   prune(path.join(ROOT, OUT));
-  console.log(`Wrote ${files.size - 1} pages and sitemap.xml.`);
+  console.log(`Wrote ${[...files.keys()].filter((p) => p.startsWith(OUT)).length} pages, sitemap.xml and the app search data.`);
 }

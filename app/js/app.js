@@ -24,15 +24,15 @@
     }
   };
   /* ---------- viewer preferences (Settings) ---------- */
-  const APP_VERSION = "2.1";
+  const APP_VERSION = "3.0";
   const APP_RELEASED = "October 2026";
-  // Study styles change what a topic page shows; "standard" is the full notes as written.
+  // Study styles change what a topic page shows; "standard" (Full) is the notes as written and the default.
+  // The style is switched on the topic page itself, and also in Settings.
   const STYLES = [
-    ["standard", "Standard", "The full notes, as written"],
+    ["standard", "Full", "The full notes, as written"],
     ["short", "Short", "Quick revision: top points, formulas and steps"],
-    ["detailed", "Detailed", "Everything, with diagram explanations and past questions on the page"],
-    ["visual", "Visual", "Diagrams and formulas first, points as numbered cards"],
-    ["example", "Example-oriented", "The standard notes plus worked examples"]
+    ["example", "Examples", "The full notes plus worked examples"],
+    ["visual", "Visual", "Diagrams and formulas first, points as numbered cards"]
   ];
   // "Meet the creators" in Settings; the section is hidden while this list is empty.
   // Each entry: { name, role, url } — url is the person's portfolio, opened in a new tab.
@@ -42,7 +42,7 @@
   ];
   // "Send feedback" in Settings opens the student's mail app; hidden while this is empty.
   const FEEDBACK_EMAIL = "feedback.bcomradar@gmail.com";
-  const studyStyle = () => { const v = store.get("style", "standard"); return STYLES.some(([k]) => k === v) ? v : "standard"; };
+  const studyStyle = () => { const v = store.get("style", "standard"); return STYLES.some(([k]) => k === v) ? v : "standard"; };   // an old "detailed" choice reads as Full
   function applyPrefs() {
     document.documentElement.dataset.textsize = store.get("textsize", "m");
     document.documentElement.dataset.density = store.get("density", "comfortable");
@@ -69,21 +69,60 @@
 
   /* ---------- small components ---------- */
   const badge = (level) => `<span class="badge ${level.id}">${level.label}</span>`;
-  const evidence = (t, n, mcq) => `Asked in ${t.seen} of ${n} papers · avg ${Math.round(t.avg)} ${mcq ? "questions" : "marks"}`;
-  const doneMark = (code, id) => (isDone(code, id) ? `<span class="done-tick" aria-label="Done">✓</span>` : "");
+  const levelOf = (label) => ({ id: String(label).toLowerCase(), label });
+  const reduceMotion = () => matchMedia("(prefers-reduced-motion: reduce)").matches;
+  const TICK = `<svg class="tick" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>`;
+  const ARROW = `<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="M13 6l6 6-6 6"/></svg>`;
+  const SEARCH_ICON = `<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-4-4"/></svg>`;
 
+  // How often a topic was asked, one small bar per past paper (filled = asked that term).
+  const freqBars = (t) => `<span class="freq" aria-hidden="true">${t.bySession.map((m) => `<i${m > 0 ? ' class="on"' : ""}></i>`).join("")}</span>`;
+  const evidence = (t, n, mcq) => `Asked in ${t.seen} of ${n} papers · avg ${Math.round(t.avg)} ${mcq ? "questions" : "marks"}`;
+
+  // A topic in a list: a round check (one optional tap marks it done) and the topic itself.
   function topicRow(code, t, n, mcq) {
-    return `<a class="row" href="#/c/${code}/t/${t.id}">
-      <span class="row-main"><span class="row-title">${esc(t.name)}</span>
-        <span class="row-sub">${evidence(t, n, mcq)}</span></span>
-      <span class="row-end">${doneMark(code, t.id)}${badge(t.level)}<span class="chev" aria-hidden="true">›</span></span>
-    </a>`;
+    const done = isDone(code, t.id);
+    return `<div class="trow${done ? " done" : ""}">
+      <button type="button" class="tcheck" data-done="${code}/${t.id}" aria-pressed="${done}" aria-label="Done: ${esc(t.name)}">${TICK}</button>
+      <a class="row-link" href="#/c/${code}/t/${t.id}">
+        <span class="row-main"><span class="row-title">${esc(t.name)}</span>
+          <span class="row-sub">${freqBars(t)}<span>${t.seen}/${n} papers · avg ${Math.round(t.avg)} ${mcq ? "questions" : "marks"}</span></span></span>
+        <span class="row-end">${badge(t.level)}<span class="chev" aria-hidden="true">›</span></span>
+      </a>
+    </div>`;
   }
 
+  // A segmented control: buttons or links in a tray, with a highlight that slides to the
+  // selected item (see placeSlides). `from` is the index it slides from.
+  function placeSlides(root = document, animate = true) {
+    root.querySelectorAll("[data-slide-from]").forEach((box) => {
+      const ind = box.querySelector(".slide-ind");
+      if (!ind) return;
+      const items = [...box.children].filter((x) => x !== ind);
+      const cur = items.find((x) => ["aria-current", "aria-selected", "aria-checked", "aria-pressed"].some((a) => {
+        const v = x.getAttribute(a); return v === "true" || v === "page";
+      }));
+      if (!cur) { ind.style.opacity = "0"; return; }
+      const put = (el) => { ind.style.width = `${el.offsetWidth}px`; ind.style.transform = `translateX(${el.offsetLeft}px)`; };
+      const from = items[+box.dataset.slideFrom];
+      if (animate && from && from !== cur && !reduceMotion()) {
+        ind.style.transition = "none"; put(from); void ind.offsetWidth; ind.style.transition = "";
+      }
+      put(cur);
+      ind.style.opacity = "1";
+      box.dataset.slideFrom = String(items.indexOf(cur));
+    });
+  }
+  window.addEventListener("resize", () => placeSlides(document, false));
+
+  let lastTab = null;   // { code, i }: the course tab shown last, so the highlight slides from it
   function courseTabs(code, active) {
     const tabs = [["", "Study"], ["/papers", "Past papers"], ["/plan", "Plan"], ["/exam", "Exam tips"]];
-    return `<nav class="seg" aria-label="Course sections">${tabs.map(([p, l]) =>
-      `<a href="#/c/${code}${p}" ${active === p ? 'aria-current="page"' : ""}>${l}</a>`).join("")}</nav>`;
+    const i = tabs.findIndex(([p]) => p === active);
+    const from = lastTab && lastTab.code === code ? lastTab.i : i;
+    lastTab = { code, i };
+    return `<nav class="ctabs" aria-label="Course sections"><div class="segctl" data-slide-from="${from}">${tabs.map(([p, l]) =>
+      `<a href="#/c/${code}${p}" ${active === p ? 'aria-current="page"' : ""} data-replace>${l}</a>`).join("")}<span class="slide-ind" aria-hidden="true"></span></div></nav>`;
   }
 
   function examLine(c, course) {
@@ -95,10 +134,12 @@
     return c.exam ? `${c.exam.time} · ${c.exam.marks} marks · ${c.exam.format}` : "";
   }
 
+  // Course title with its facts as small chips; the header's back arrow returns to All courses.
   function courseHeader(c, course) {
-    return `<a class="back" href="#/">← All courses</a>
-      <h1>${esc(c.title)}</h1>
-      <p class="muted small head-meta">${esc(c.code)} · Year ${c.year}${examLine(c, course) ? ` · ${esc(examLine(c, course))}` : ""}</p>`;
+    setBack("#/", "All courses");
+    const line = examLine(c, course);
+    return `<h1>${esc(c.title)}</h1>
+      <p class="chips">${[c.code, `Year ${c.year}`, ...(line ? line.split(" · ") : [])].map((x) => `<span class="chip">${esc(x)}</span>`).join("")}</p>`;
   }
 
   // "Q1 + 2 from Part A + 2 from Part B" or "any 5 questions" (pattern.pick says it when neither fits).
@@ -131,51 +172,122 @@
   function figuresHtml(t, captions = true) {
     const figs = (t.figures || []).map((id) => window.FIGURES && window.FIGURES[id]).filter(Boolean);
     if (!figs.length) return "";
-    return `<h2>${figs.length > 1 ? "Diagrams" : "Diagram"}</h2>${figs.map((f) => `
+    return `<h2 id="sec-figures">${figs.length > 1 ? "Diagrams" : "Diagram"}</h2>${figs.map((f) => `
       <figure class="card fig"><figcaption class="fig-title">${esc(f.title)}</figcaption>${f.draw()}${captions ? `<p class="fig-note">${esc(f.caption)}</p>` : ""}</figure>`).join("")}`;
   }
 
-  // Worked examples (shown in the Example-oriented style). A blank line separates paragraphs.
+  // Worked examples (the Examples style). A blank line separates paragraphs.
   function examplesHtml(t) {
-    if (!t.examples || !t.examples.length) return `<h2>Examples</h2><p class="muted small">Examples for this topic are being added.</p>`;
-    return `<h2>${t.examples.length > 1 ? "Examples" : "Example"}</h2>${t.examples.map((e) => `
+    if (!t.examples || !t.examples.length) return `<h2 id="sec-examples">Examples</h2><p class="muted small">Examples for this topic are being added.</p>`;
+    return `<h2 id="sec-examples">${t.examples.length > 1 ? "Examples" : "Example"}</h2>${t.examples.map((e) => `
       <section class="card example">${e.split(/\n+/).map((l, i) => i ? `<p>${esc(l)}</p>` : `<h3>${esc(l)}</h3>`).join("")}</section>`).join("")}`;
   }
 
-  /* ---------- views ---------- */
-  async function viewHome() {
-    const { courses } = await load("data/courses.json");
-    let year = store.get("year", 1);
-    let query = "";
+  // A short message at the bottom of the screen, optionally with Undo. It never blocks anything.
+  let toastTimer = null;
+  function toast(html, undo) {
+    let el = document.getElementById("toast");
+    if (!el) { el = document.createElement("div"); el.id = "toast"; el.className = "toast"; el.setAttribute("role", "status"); document.body.appendChild(el); }
+    el.innerHTML = `<span>${html}</span>${undo ? `<button type="button">Undo</button>` : ""}`;
+    el.classList.remove("show"); void el.offsetWidth; el.classList.add("show");
+    if (undo) el.querySelector("button").addEventListener("click", () => { hideToast(); undo(); });
+    clearTimeout(toastTimer);
+    toastTimer = setTimeout(hideToast, 3200);
+  }
+  function hideToast() { const el = document.getElementById("toast"); if (el) el.classList.remove("show"); }
 
+  /* ---------- views ---------- */
+  // The one-line "Continue" strip on Home: the topic opened last, or once that is done, the next
+  // must-study topic of the same course. Shown only after a topic has been opened.
+  function continueStrip(summary) {
+    const last = store.get("last", null);
+    if (!last || !last.code || !summary[last.code]) return "";
+    let t = !isDone(last.code, last.id) ? { id: last.id, name: last.name, level: last.level } : null;
+    if (!t) { const nx = summary[last.code].mvp.find(([id]) => !isDone(last.code, id)); if (nx) t = { id: nx[0], name: nx[1], level: nx[2] }; }
+    if (!t) return "";
+    return `<a class="continue" href="#/c/${esc(last.code)}/t/${esc(t.id)}">
+      <span class="cont-main"><span class="cont-k">Continue · ${esc(last.code)}</span><span class="cont-n">${esc(t.name)} ${badge(levelOf(t.level))}</span></span>
+      <span class="cont-go" aria-hidden="true">${ARROW}</span></a>`;
+  }
+
+  async function viewHome() {
+    const [{ courses }, summary] = await Promise.all([load("data/courses.json"), load("data/summary.json").catch(() => ({}))]);
+    let year = store.get("year", 1);
     app.innerHTML = `
-      <div class="tabs" role="tablist" aria-label="Year">
-        ${[1, 2, 3].map((y) => `<button class="tab" role="tab" data-year="${y}" style="--tab-color:${YEAR_COLORS[y]}">Year ${y}</button>`).join("")}
+      ${continueStrip(summary)}
+      ${installCardHome()}
+      <a class="search-link" href="#/search">${SEARCH_ICON}<span>Search courses, topics or questions</span></a>
+      <div class="segctl years" role="tablist" aria-label="Year" data-slide-from="${year - 1}">
+        ${[1, 2, 3].map((y) => `<button type="button" role="tab" data-year="${y}" aria-selected="${y === year}">Year ${y}</button>`).join("")}<span class="slide-ind" aria-hidden="true"></span>
       </div>
-      <input id="q" class="search" type="search" placeholder="Search course code or name, e.g. 131" autocomplete="off" aria-label="Search courses">
-      <div id="list" class="list"></div>
-      <p class="muted small home-web">Every topic also has its own web page — <a href="../notes/">browse all notes</a> to share a topic link.</p>`;
+      <div id="list" class="list"></div>`;
+    bindInstallCard();
 
     const list = app.querySelector("#list");
     const render = () => {
-      app.querySelectorAll(".tab").forEach((b) => b.setAttribute("aria-selected", String(!query && +b.dataset.year === year)));
-      const q = query.toLowerCase().replace(/[\s-]/g, "");
-      const shown = courses.filter((c) => q
-        ? (c.code.toLowerCase().replace(/[\s-]/g, "") + c.title.toLowerCase().replace(/\s+/g, "")).includes(q)
-        : c.year === year);
-      list.innerHTML = shown.length ? shown.map((c) => `
-        <a class="row course" href="#/c/${esc(c.code)}" style="--year-color:${YEAR_COLORS[c.year]}">
+      list.innerHTML = courses.filter((c) => c.year === year).map((c) => {
+        const s = summary[c.code];
+        const d = s ? s.mvp.filter(([id]) => isDone(c.code, id)).length : 0;
+        const sub = !c.ready ? (c.papers ? `${c.papers} past papers` : "No past papers yet")
+          : s && d ? `<span class="mini" aria-hidden="true"><i style="width:${Math.round((d / s.mvp.length) * 100)}%"></i></span>${d} of ${s.mvp.length} must-study done`
+            : s ? `${s.topics} topics · ${s.mvp.length} to study first` : "Topics, notes and past papers";
+        return `<a class="row course" href="#/c/${esc(c.code)}" style="--year-color:${YEAR_COLORS[c.year]}">
           <span class="course-code">${esc(c.code)}</span>
-          <span class="row-main"><span class="row-title">${esc(c.title)}</span>
-            <span class="row-sub">${c.ready ? "Topics, notes, plan & past papers" : c.papers ? `${c.papers} past papers` : "No past papers yet"}${query ? ` · Year ${c.year}` : ""}</span></span>
+          <span class="row-main"><span class="row-title">${esc(c.title)}</span><span class="row-sub">${sub}</span></span>
           <span class="chev" aria-hidden="true">›</span>
-        </a>`).join("") : `<p class="muted">No course matches “${esc(query)}”.</p>`;
+        </a>`;
+      }).join("");
     };
-    app.querySelectorAll(".tab").forEach((b) => b.addEventListener("click", () => {
-      year = +b.dataset.year; store.set("year", year); query = ""; app.querySelector("#q").value = ""; render();
+    app.querySelectorAll("[data-year]").forEach((b) => b.addEventListener("click", () => {
+      year = +b.dataset.year; store.set("year", year);
+      app.querySelectorAll("[data-year]").forEach((x) => x.setAttribute("aria-selected", String(x === b)));
+      placeSlides(app); render();
     }));
-    app.querySelector("#q").addEventListener("input", (e) => { query = e.target.value.trim(); render(); });
     render();
+  }
+
+  /* ---------- search: courses, topics and past questions (data/search.json, built by tools/build_pages.js) ---------- */
+  let searchQ = "";
+  async function viewSearch() {
+    app.innerHTML = `<h1>Search</h1>
+      <input id="sq" class="search" type="search" enterkeyhint="search" placeholder="e.g. depreciation, ratio, 131" autocomplete="off" spellcheck="false" aria-label="Search courses, topics and past questions" value="${esc(searchQ)}">
+      <div id="sres" class="sres" aria-live="polite"></div>`;
+    const input = app.querySelector("#sq"), out = app.querySelector("#sres");
+    if (!searchQ) input.focus({ preventScroll: true });
+    out.innerHTML = `<p class="muted small">Loading…</p>`;
+    let idx;
+    try { idx = await load("data/search.json"); } catch (e) { out.innerHTML = `<p class="muted">Search needs an internet connection the first time.</p>`; return; }
+    const norm = (s) => String(s).toLowerCase().replace(/[^a-z0-9₹%]+/g, " ").trim();
+    const reEsc = (s) => s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+    let limit = 10;
+    const run = () => {
+      searchQ = input.value;
+      const q = norm(input.value);
+      if (q.length < 2) {
+        out.innerHTML = `<p class="muted small">Find a course, a topic, or a past exam question.</p>
+          <div class="chips">${["depreciation", "ratio analysis", "joint venture", "tally", "131"].map((x) => `<button type="button" class="chip chip-btn" data-try="${x}">${x}</button>`).join("")}</div>`;
+        return;
+      }
+      const words = q.split(" ");
+      const hit = (text) => { const n = norm(text), m = n.replace(/ /g, ""); return words.every((w) => n.includes(w) || m.includes(w)); };
+      const hl = (text) => words.filter((w) => w.length > 1).reduce((h, w) => h.replace(new RegExp(`(${reEsc(w)})(?![^<]*>)`, "ig"), "<mark>$1</mark>"), esc(text));
+      const courseName = Object.fromEntries(idx.courses.map((c) => [c[0], c[1]]));
+      const cs = idx.courses.filter((c) => hit(`${c[0]} ${c[1]}`)).slice(0, 5);
+      const rank = { Critical: 0, High: 1, Moderate: 2, Low: 3 };
+      const tp = idx.topics.filter((t) => hit(t[2])).sort((a, b) => rank[a[3]] - rank[b[3]]).slice(0, 8);
+      const qs = idx.questions.filter((x) => hit(x[3]));
+      out.innerHTML = (!cs.length && !tp.length && !qs.length) ? `<p class="muted">Nothing found for “${esc(input.value.trim())}”. Try a shorter word.</p>` : `
+        ${tp.length ? `<h2>Topics</h2><div class="rows card">${tp.map((t) => `<a class="row" href="#/c/${t[0]}/t/${t[1]}"><span class="row-main"><span class="row-title">${hl(t[2])}</span><span class="row-sub">${esc(t[0])} · ${esc(courseName[t[0]] || "")}</span></span><span class="row-end">${badge(levelOf(t[3]))}</span></a>`).join("")}</div>` : ""}
+        ${qs.length ? `<h2>Past questions <span class="muted small">(${qs.length})</span></h2><div class="rows card">${qs.slice(0, limit).map((x) => `<a class="row" href="#/c/${x[0]}/paper/${x[1]}/${encodeURIComponent(x[2])}"><span class="row-main"><span class="row-title q-title">${hl(x[3])}</span><span class="row-sub">${esc(x[0])} · ${sessionLabel(x[1])} · ${x[4]} marks</span></span><span class="chev" aria-hidden="true">›</span></a>`).join("")}</div>
+          ${qs.length > limit ? `<button type="button" class="btn secondary wide" id="more">Show more questions</button>` : ""}` : ""}
+        ${cs.length ? `<h2>Courses</h2><div class="rows card">${cs.map((c) => `<a class="row" href="#/c/${c[0]}"><span class="row-main"><span class="row-title">${hl(c[1])}</span><span class="row-sub">${hl(c[0])} · Year ${c[2]}</span></span><span class="chev" aria-hidden="true">›</span></a>`).join("")}</div>` : ""}`;
+      const more = out.querySelector("#more");
+      if (more) more.addEventListener("click", () => { limit += 20; run(); });
+    };
+    let timer = null;
+    input.addEventListener("input", () => { limit = 10; clearTimeout(timer); timer = setTimeout(run, 90); });
+    out.addEventListener("click", (e) => { const b = e.target.closest("[data-try]"); if (b) { input.value = b.dataset.try; run(); } });
+    run();
   }
 
   async function getCourse(code) {
@@ -204,6 +316,9 @@
     const others = topics.filter((t) => !analysis.mvp.includes(t.id));
     const mcq = !!course.pattern.mcq;
     const repeated = course.repeated || [];
+    const mvp = analysis.mvp.map(byId);
+    const doneN = mvp.filter((t) => isDone(code, t.id)).length;
+    const next = mvp.find((t) => !isDone(code, t.id));
     const repeatItem = (r) => `<li><span class="rep-q">${esc(r.t)}</span>
         <span class="rep-opts">${r.opts.map((o, i) => `<span>(${i + 1}) ${esc(o)}</span>`).join("")}</span>
         ${r.a ? `<span class="rep-ans"><strong>Answer:</strong> ${answerText(r.a, r.opts[r.a - 1])}</span>` : ""}
@@ -221,7 +336,11 @@
             : `They have carried about ${Math.round(groups[0].covered)} marks on an average paper${(course.pattern.spare || SPARE) >= 1 ? ` — enough to answer ${esc(pickText(course.pattern))}` : ""}. Based on ${n} past papers.`}</p>
         ${course.pattern.caution ? `<p class="note small">${esc(course.pattern.caution)}</p>` : ""}
         ${compulsory && compulsory.sweep ? `<p class="note small"><strong>${esc(compulsory.name)}:</strong> ${esc(compulsory.sweep)}</p>` : ""}
+        ${doneN ? `<div class="prog"><span class="bar" aria-hidden="true"><i style="width:${Math.round((doneN / mvp.length) * 100)}%"></i></span><span>${doneN} of ${mvp.length} done</span></div>` : ""}
+        ${next ? `<a class="btn start-btn" href="#/c/${code}/t/${next.id}"><span>${doneN ? "Next" : "Start"}: ${esc(next.name)}</span>${ARROW}</a>`
+          : `<p class="all-done">${TICK} All of these are done. Revise them, or carry on with the other topics.</p>`}
         ${groups.map((g) => `${split ? `<h3>${esc(g.name)}</h3>` : ""}<div class="rows">${g.ids.map((id) => topicRow(code, byId(id), n, mcq)).join("")}</div>`).join("")}
+        <a class="text-link revise-link" href="#/c/${code}/revise">Quick revision of these topics →</a>
       </section>
 
       ${repeated.length ? `<h2>Asked again and again</h2>
@@ -230,7 +349,7 @@
         ${repeated.length > 8 ? `<details><summary>Show all ${repeated.length}</summary><ul class="replist">${repeated.slice(8).map(repeatItem).join("")}</ul></details>` : ""}
       </section>` : ""}
 
-      <div class="section-head"><h2>Latest past papers</h2><a href="#/c/${code}/papers">All ${papers.length} →</a></div>
+      <div class="section-head"><h2>Latest past papers</h2><a class="text-link" href="#/c/${code}/papers">All ${papers.length} →</a></div>
       ${paperButtons(code, papers, 4)}
 
       ${others.length ? `<h2>Other topics</h2>
@@ -262,78 +381,173 @@
     const { c, course, analysis } = await getCourse(code);
     const t = analysis && analysis.topics.find((x) => x.id === id);
     if (!t) return viewNotFound();
+    setBack(`#/c/${code}/t/${id}`, t.name);
     const mcq = !!course.pattern.mcq;
     const asked = askedList(t);
     const papers = new Set(t.qs.map((q) => q.s)).size;
     app.innerHTML = `
-      <a class="back" href="#/c/${code}/t/${id}">← ${esc(t.name)}</a>
       <h1>Asked in past papers</h1>
-      <p class="muted small">${asked.length} questions from ${papers} of ${course.sessions.length} papers · most important first · ${esc(c.code)}</p>
+      <p class="muted small head-meta">${esc(t.name)} · ${asked.length} questions from ${papers} of ${course.sessions.length} papers · most important first · ${esc(c.code)}</p>
       <section class="card asked-card"><ul class="asked">${asked.map((q) => askedItem(code, q, mcq)).join("")}</ul></section>`;
   }
+
+  // The order a student studies a course in: the "study first" list, then the rest.
+  const studyOrder = (analysis) => [...analysis.mvp, ...analysis.topics.map((x) => x.id).filter((x) => !analysis.mvp.includes(x))];
 
   async function viewTopic(code, id) {
     const { c, course, analysis } = await getCourse(code);
     const t = analysis && analysis.topics.find((x) => x.id === id);
     if (!t) return viewNotFound();
+    setBack(`#/c/${code}`, c.title);
+    store.set("last", { code, id, name: t.name, level: t.level.label });
     const n = course.sessions.length;
     const mcq = !!course.pattern.mcq;
     const asked = askedList(t);
-    // Next topic in study order: the "study first" list, then the rest.
-    const order = [...analysis.mvp, ...analysis.topics.map((x) => x.id).filter((x) => !analysis.mvp.includes(x))];
+    const order = studyOrder(analysis);
     const next = analysis.topics.find((x) => x.id === order[order.indexOf(id) + 1]);
 
-    const style = studyStyle(), styleName = STYLES.find(([k]) => k === style)[1];
-    const short = style === "short", detailed = style === "detailed", visual = style === "visual";
+    const style = studyStyle();
+    const short = style === "short", visual = style === "visual";
     const SHORT_N = 4;
     const pointList = (list) => `<ul class="points">${list.map((p) => `<li>${esc(p)}</li>`).join("")}</ul>`;
     const pointsHtml = visual
-      ? `<h2>Key points</h2><ol class="pt-cards">${t.points.map((p, i) => `<li><span class="pt-n" aria-hidden="true">${i + 1}</span><span>${esc(p)}</span></li>`).join("")}</ol>`
-      : `<h2>Key points</h2>
+      ? `<h2 id="sec-points">Key points</h2><ol class="pt-cards">${t.points.map((p, i) => `<li><span class="pt-n" aria-hidden="true">${i + 1}</span><span>${esc(p)}</span></li>`).join("")}</ol>`
+      : `<h2 id="sec-points">Key points</h2>
       <section class="card" id="pts">${pointList(short ? t.points.slice(0, SHORT_N) : t.points)}${short && t.points.length > SHORT_N ? `<button type="button" class="more" id="morePts">Show all ${t.points.length} points</button>` : ""}</section>`;
     const methodHtml = t.method ? (visual
-      ? `<h2>How to solve</h2><ol class="flow-steps">${t.method.map((p) => `<li>${esc(p)}</li>`).join("")}</ol>`
-      : `<h2>How to solve</h2>
+      ? `<h2 id="sec-method">How to solve</h2><ol class="flow-steps">${t.method.map((p) => `<li>${esc(p)}</li>`).join("")}</ol>`
+      : `<h2 id="sec-method">How to solve</h2>
       <section class="card"><ol class="steps">${t.method.map((p) => `<li>${esc(p)}</li>`).join("")}</ol></section>`) : "";
-    const formulaHtml = t.formula && t.formula.length ? `<h2>Formulas</h2>
+    const formulaHtml = t.formula && t.formula.length ? `<h2 id="sec-formulas">Formulas</h2>
       <section class="card">${t.formula.map((f) => `<div class="formula">${esc(f)}</div>`).join("")}</section>` : "";
-    const frameHtml = t.frame && !short ? `<h2>How to write the answer</h2>
+    const frameHtml = t.frame && !short ? `<h2 id="sec-frame">How to write the answer</h2>
       <section class="card"><p class="flush">${esc(t.frame)}</p></section>` : "";
-    const mistakesHtml = t.mistakes && t.mistakes.length && !short ? `<h2>Common mistakes</h2>
+    const mistakesHtml = t.mistakes && t.mistakes.length && !short ? `<h2 id="sec-mistakes">Common mistakes</h2>
       <div class="callout warn"><ul class="points">${t.mistakes.map((m) => `<li>${esc(m)}</li>`).join("")}</ul></div>` : "";
-    const pastHtml = detailed && asked.length ? `<h2>Asked in past papers</h2>
-      <section class="card asked-card"><ul class="asked">${asked.slice(0, 5).map((q) => askedItem(code, q, mcq)).join("")}</ul></section>` : "";
     const body = visual
       ? [figuresHtml(t), formulaHtml, pointsHtml, methodHtml, frameHtml, mistakesHtml]
-      : [pointsHtml, style === "example" ? examplesHtml(t) : "", figuresHtml(t, !short), methodHtml, formulaHtml, frameHtml, mistakesHtml, pastHtml];
+      : [pointsHtml, style === "example" ? examplesHtml(t) : "", figuresHtml(t, !short), methodHtml, formulaHtml, frameHtml, mistakesHtml];
+    const html = body.join("\n");
+    // Jump chips for the sections this page actually has, in page order.
+    const CHIPS = [["sec-points", "Points"], ["sec-examples", "Examples"], ["sec-figures", "Diagram"], ["sec-method", "Method"], ["sec-formulas", "Formulas"], ["sec-frame", "Answer"], ["sec-mistakes", "Mistakes"]];
+    const chips = CHIPS.filter(([sid]) => html.includes(`id="${sid}"`)).sort((a, b) => html.indexOf(`id="${a[0]}"`) - html.indexOf(`id="${b[0]}"`));
+    const styleBtns = STYLES.map(([v, l]) => `<button type="button" data-style="${v}" aria-pressed="${v === style}">${l}</button>`).join("");
+    const done = isDone(code, id);
 
     app.innerHTML = `
-      <a class="back" href="#/c/${code}">← ${esc(c.title)}</a>
+      <p class="kicker">${esc(c.code)} · ${esc(c.title)}</p>
       <h1>${esc(t.name)}</h1>
       <p class="head-meta">${badge(t.level)} <span class="muted small">${evidence(t, n, mcq)}</span></p>
-      <p class="style-chip">Study style: <strong>${styleName}</strong> · <a href="#/settings">Change</a></p>
+      <div class="segctl styles" role="group" aria-label="Study style" data-slide-from="${STYLES.findIndex(([k]) => k === style)}">${styleBtns}<span class="slide-ind" aria-hidden="true"></span></div>
       <p class="lead">${esc(t.summary)}</p>
       ${t.units && t.units.length ? `<p class="book-ref"><span class="book-ref-h">In your IGNOU book</span>${t.units.map((u) =>
         `<span>${u.block ? `Block ${u.block} · ` : ""}Unit ${u.unit} ${esc(u.title)}${u.part ? ` <span class="muted">(${esc(u.part)})</span>` : ""}</span>`).join("")}</p>` : ""}
+      ${asked.length ? `<section class="card asked-card asked-top"><h3 class="card-h">Asked as</h3>
+        <ul class="asked">${asked.slice(0, 3).map((q) => askedItem(code, q, mcq)).join("")}</ul>
+        ${asked.length > 3 ? `<a class="text-link" href="#/c/${code}/t/${id}/asked">See all ${asked.length} past questions →</a>` : ""}</section>` : ""}
+      ${chips.length > 1 ? `<nav class="secnav" aria-label="On this page">${chips.map(([sid, l]) => `<button type="button" data-jump="${sid}">${l}</button>`).join("")}<a class="secnav-rev" href="#/c/${code}/t/${id}/revise">Revise</a></nav>` : ""}
 
-${body.join("\n")}
+${html}
 
-      <a class="btn secondary ai-btn" href="#/ask/${code}/${id}">${AI_SPARK} Ask AI about this topic</a>
-      ${asked.length ? `<a class="btn secondary see-all" href="#/c/${code}/t/${id}/asked">${detailed ? "All past questions" : "Asked in past papers"} (${asked.length}) <span aria-hidden="true">→</span></a>` : ""}
-
-      <div class="topic-foot">
-        <button type="button" class="btn secondary" id="done" aria-pressed="${isDone(code, id)}">${isDone(code, id) ? "✓ Done" : "Mark as done"}</button>
-        ${next ? `<a class="btn" href="#/c/${code}/t/${next.id}">Next: ${esc(next.name)} →</a>` : `<a class="btn" href="#/c/${code}">Back to course</a>`}
+      <div class="actbar">
+        <a class="btn secondary act-ai" href="#/ask/${code}/${id}" aria-label="Ask AI about this topic">${AI_SPARK}</a>
+        <button type="button" class="btn secondary act-done" id="done" aria-pressed="${done}">${done ? `${TICK} Done` : "Mark as done"}</button>
+        ${next ? `<a class="btn act-next" href="#/c/${code}/t/${next.id}" title="Next: ${esc(next.name)}">Next<span class="sr-only">: ${esc(next.name)}</span> ${ARROW}</a>`
+          : `<a class="btn act-next" href="#/c/${code}">Course ${ARROW}</a>`}
       </div>`;
 
     const more = app.querySelector("#morePts");
-    if (more) more.addEventListener("click", () => { app.querySelector("#pts").innerHTML = pointList(t.points); });
-    app.querySelector("#done").addEventListener("click", (e) => {
+    if (more) more.addEventListener("click", () => { const box = app.querySelector("#pts"); box.innerHTML = pointList(t.points); box.classList.add("grow"); });
+    app.querySelectorAll("[data-style]").forEach((b) => b.addEventListener("click", () => {
+      if (b.getAttribute("aria-pressed") === "true") return;
+      store.set("style", b.dataset.style);
+      refresh();
+    }));
+    const doneBtn = app.querySelector("#done");
+    const mvpIds = analysis.mvp;
+    const setDoneUi = (v) => {
+      doneBtn.setAttribute("aria-pressed", String(v));
+      doneBtn.innerHTML = v ? `${TICK} Done` : "Mark as done";
+      doneBtn.classList.toggle("pop", v);
+    };
+    doneBtn.addEventListener("click", () => {
       const v = !isDone(code, id);
       setDone(code, id, v);
-      e.currentTarget.setAttribute("aria-pressed", String(v));
-      e.currentTarget.textContent = v ? "✓ Done" : "Mark as done";
+      setDoneUi(v);
+      if (v) {
+        const inMvp = mvpIds.includes(id);
+        const k = mvpIds.filter((x) => isDone(code, x)).length;
+        toast(inMvp ? `${TICK} Done · ${k} of ${mvpIds.length} must-study topics` : `${TICK} Marked as done`, () => { setDone(code, id, false); setDoneUi(false); });
+      } else hideToast();
     });
+  }
+
+  /* ---------- revise mode: key points as cards, one at a time ---------- */
+  // A topic's points, formulas and common mistakes; or, for a course, the first points and the
+  // formulas of every "study first" topic, for the last hour before the exam.
+  async function viewRevise(code, topicId) {
+    const { c, analysis } = await getCourse(code);
+    if (!analysis) return viewNotFound();
+    const t = topicId ? analysis.topics.find((x) => x.id === topicId) : null;
+    if (topicId && !t) return viewNotFound();
+    if (t) setBack(`#/c/${code}/t/${t.id}`, t.name); else setBack(`#/c/${code}`, c.title);
+    const cardsOf = (x, few) => [
+      ...(few ? x.points.slice(0, 4) : x.points).map((p) => ({ k: "Key point", t: p, topic: x.name })),
+      ...(x.formula || []).map((f) => ({ k: "Formula", t: f, topic: x.name, mono: true })),
+      ...(few ? [] : (x.mistakes || []).map((m) => ({ k: "Common mistake", t: m, topic: x.name, warn: true })))
+    ];
+    const cards = t ? cardsOf(t, false) : analysis.mvp.flatMap((id) => cardsOf(analysis.topics.find((x) => x.id === id), true));
+    let i = 0;
+    app.innerHTML = `
+      <p class="kicker">${esc(c.code)} · Revise</p>
+      <h1>${t ? esc(t.name) : "Study-first topics"}</h1>
+      <div class="rv-prog" aria-hidden="true"><i id="rvBar"></i></div>
+      <div class="rv-stage" id="rvStage" tabindex="0" aria-roledescription="flashcards" aria-label="Revision cards. Swipe or use the arrow keys."></div>
+      <div class="rv-nav">
+        <button type="button" class="btn secondary" id="rvPrev">‹ Back</button>
+        <span class="muted small" id="rvCount" aria-live="polite"></span>
+        <button type="button" class="btn" id="rvNext">Next ›</button>
+      </div>
+      <p class="muted small rv-hint">Swipe left or right. Say each point in your own words before moving on.</p>`;
+    const stage = app.querySelector("#rvStage"), bar = app.querySelector("#rvBar"), count = app.querySelector("#rvCount");
+    const prevB = app.querySelector("#rvPrev"), nextB = app.querySelector("#rvNext");
+    const order = studyOrder(analysis);
+    const nextTopic = t ? analysis.topics.find((x) => x.id === order[order.indexOf(t.id) + 1]) : null;
+    const show = (dir) => {
+      const end = i >= cards.length;
+      const k = cards[i];
+      stage.innerHTML = end
+        ? `<div class="rv-card rv-end"><span class="rv-k">Finished</span><p class="rv-t">You went through ${cards.length} cards${t ? "" : ` from ${analysis.mvp.length} topics`}.</p>
+            <div class="rv-end-btns">${t ? `${isDone(code, t.id) ? "" : `<button type="button" class="btn" id="rvDone">Mark ${esc(t.name)} as done</button>`}
+              ${nextTopic ? `<a class="btn secondary" href="#/c/${code}/t/${nextTopic.id}">Next topic: ${esc(nextTopic.name)}</a>` : ""}`
+              : `<a class="btn" href="#/c/${code}">Back to the course</a>`}
+              <button type="button" class="btn secondary" id="rvAgain">Start again</button></div></div>`
+        : `<div class="rv-card${k.warn ? " warn" : ""}"><span class="rv-k">${k.k}${t ? "" : ` · ${esc(k.topic)}`}</span><p class="rv-t${k.mono ? " mono" : ""}">${esc(k.t)}</p></div>`;
+      const card = stage.firstElementChild;
+      if (dir && !reduceMotion()) card.classList.add(dir > 0 ? "in-right" : "in-left");
+      bar.style.width = `${Math.round((Math.min(i, cards.length) / cards.length) * 100)}%`;
+      count.textContent = end ? `${cards.length} of ${cards.length}` : `${i + 1} of ${cards.length}`;
+      prevB.disabled = i === 0;
+      nextB.hidden = end;
+      const again = stage.querySelector("#rvAgain");
+      if (again) again.addEventListener("click", () => { i = 0; show(-1); });
+      const doneB = stage.querySelector("#rvDone");
+      if (doneB) doneB.addEventListener("click", () => { setDone(code, t.id, true); doneB.outerHTML = `<p class="all-done">${TICK} Marked as done</p>`; });
+    };
+    const go = (d) => { const j = Math.max(0, Math.min(cards.length, i + d)); if (j !== i) { i = j; show(d); } };
+    prevB.addEventListener("click", () => go(-1));
+    nextB.addEventListener("click", () => go(1));
+    stage.addEventListener("keydown", (e) => { if (e.key === "ArrowRight") go(1); else if (e.key === "ArrowLeft") go(-1); });
+    // Swipe: a horizontal drag of 50px or more moves one card.
+    let x0 = null, y0 = null;
+    stage.addEventListener("pointerdown", (e) => { x0 = e.clientX; y0 = e.clientY; });
+    stage.addEventListener("pointerup", (e) => {
+      if (x0 === null) return;
+      const dx = e.clientX - x0, dy = e.clientY - y0;
+      x0 = null;
+      if (Math.abs(dx) > 50 && Math.abs(dx) > Math.abs(dy)) go(dx < 0 ? 1 : -1);
+    });
+    show(0);
   }
 
   /* ---------- past question view ---------- */
@@ -380,7 +594,7 @@ ${body.join("\n")}
   }
 
   async function viewQuestion(code, s, refText) {
-    const { c, course } = await getCourse(code);
+    const { c, course, analysis } = await getCourse(code);
     if (!course) return viewNotFound();
     const [papers, text] = await Promise.all([load("data/papers.json"), load(`data/text/${code}.json`).catch(() => null)]);
     const pdf = (papers[code] || []).find((p) => p.s === s);
@@ -391,24 +605,37 @@ ${body.join("\n")}
     let section = "";
     if (paper && q) for (const it of paper.items) { if (it === q) break; if (it.h) section = it.h; }
     const body = q ? questionBody(q, ref) : null;
-    const known = course.questions.find((x) => x.s === s && String(x.q) === refText);
-    const markText = paper && paper.mcq ? "1 mark" : body && body.marks ? `${body.marks} marks` : known ? `${marks(known.m)} marks` : "";
+    const known = course.questions.find((x) => x.s === s && String(x.q) === refText)
+      || course.questions.find((x) => x.s === s && parseRef(String(x.q)).n === ref.n);
+    const topic = known && analysis.topics.find((t) => t.id === known.topic);
+    const markText = paper && paper.mcq ? "1 mark" : body && body.marks ? `${body.marks} marks` : known && String(known.q) === refText ? `${marks(known.m)} marks` : "";
     const exact = (paper && paper.mcq) || course.topics.every((t) => t.kind === "theory") || (q && q.img);
     const ansKey = `${s}/${ref.n}`;
     const ans = q && q.o && course.answers && course.answers[ansKey];
+    // Back goes where the student came from (a topic, a list, search), else to the course.
+    setBack(prevHash ? `#${prevHash}` : `#/c/${code}`, prevHash ? "Back" : c.title);
+    // Previous and next question in the same paper.
+    const nums = paper ? [...new Set(paper.items.filter((it) => it.n).map((it) => it.n))] : [];
+    const at = nums.indexOf(ref.n);
+    const prevN = at > 0 ? nums[at - 1] : null, nextN = at >= 0 && at < nums.length - 1 ? nums[at + 1] : null;
     app.innerHTML = `
-      ${prevHash ? `<a class="back" href="#${prevHash}" id="back">← Back</a>` : `<a class="back" href="#/c/${code}">← ${esc(c.title)}</a>`}
+      <p class="kicker">${esc(c.code)} · ${esc(c.title)}</p>
       <h1>Question ${esc(label)}</h1>
       <p class="qv-meta"><span><strong>${sessionLabel(s)}</strong> term-end exam</span>${markText ? `<span><strong>${esc(markText)}</strong></span>` : ""}${section ? `<span>${esc(section)}</span>` : ""}</p>
-      <p class="muted small head-meta">${esc(c.code)} · ${esc(c.title)}</p>
+      ${topic ? `<a class="topic-link" href="#/c/${code}/t/${topic.id}"><span class="tl-main"><span class="tl-k">Topic</span><span class="tl-n">${esc(topic.name)} ${badge(topic.level)}</span></span><span class="tl-go">Read the notes ${ARROW}</span></a>` : ""}
       ${q ? `<section class="card qv">${body.html}</section>`
         : `<p class="muted">This question isn't available as text yet.</p>`}
       ${ans ? `<details class="qv-ans"><summary>Show answer</summary>
-        <p><strong>Answer:</strong> ${answerText(ans, q.o[ans - 1])}</p>
-        <p class="small muted">${ANSWER_NOTE}</p></details>` : ""}
+        <div class="details-body"><p><strong>Answer:</strong> ${answerText(ans, q.o[ans - 1])}</p>
+        <p class="small muted">${ANSWER_NOTE}</p></div></details>` : ""}
       ${q ? `<button type="button" class="btn ai-btn" id="aiSolve">${AI_SPARK} ${paper && paper.mcq ? "Ask AI to explain this" : "Ask AI to solve this"}</button>` : ""}
-      ${pdf ? `<a class="btn secondary qv-pdf" ${paperHref(code, pdf)} target="_blank" rel="noopener">Download full paper (PDF)</a>` : ""}
-      ${q && !exact ? `<p class="small muted">Text from the official paper; tables and formulas may look slightly different in print.</p>` : ""}`;
+      ${pdf ? `<a class="text-link qv-pdf" ${paperHref(code, pdf)} target="_blank" rel="noopener">Download the full ${sessionLabel(s)} paper (PDF)</a>` : ""}
+      ${q && !exact ? `<p class="small muted">Text from the official paper; tables and formulas may look slightly different in print.</p>` : ""}
+      ${nums.length > 1 && at >= 0 ? `<nav class="pager" aria-label="Questions in this paper">
+        ${prevN ? `<a class="pager-btn" href="#/c/${code}/paper/${s}/${prevN}" data-replace>‹ Q${prevN}</a>` : `<span></span>`}
+        <span class="muted small">${at + 1} of ${nums.length}</span>
+        ${nextN ? `<a class="pager-btn" href="#/c/${code}/paper/${s}/${nextN}" data-replace>Q${nextN} ›</a>` : `<span></span>`}
+      </nav>` : ""}`;
     // Wide tables (trial balances) shrink to fit the screen rather than hide columns.
     app.querySelectorAll(".ptable").forEach((t) => {
       const fit = t.clientWidth / t.scrollWidth;
@@ -416,12 +643,10 @@ ${body.join("\n")}
     });
     const solve = app.querySelector("#aiSolve");
     if (solve) solve.addEventListener("click", () => {
-      const topic = known && known.topic;
-      aiDraft = { key: `${code}/${topic || "-"}`, text: `${paper && paper.mcq ? "Explain the correct answer to this multiple-choice question" : "Solve this question"} from the ${sessionLabel(s)} ${c.code} term-end paper${markText ? ` (${markText})` : ""}${ref.subs.length ? `, part ${ref.subs.join(", ")}` : ""}:\n\n${questionText(q, ref)}` };
-      location.hash = `#/ask/${code}${topic ? `/${topic}` : ""}`;
+      const tid = known && known.topic;
+      aiDraft = { key: `${code}/${tid || "-"}`, text: `${paper && paper.mcq ? "Explain the correct answer to this multiple-choice question" : "Solve this question"} from the ${sessionLabel(s)} ${c.code} term-end paper${markText ? ` (${markText})` : ""}${ref.subs.length ? `, part ${ref.subs.join(", ")}` : ""}:\n\n${questionText(q, ref)}` };
+      location.hash = `#/ask/${code}${tid ? `/${tid}` : ""}`;
     });
-    const backLink = app.querySelector("#back");
-    if (backLink) backLink.addEventListener("click", (e) => { e.preventDefault(); history.back(); });
   }
 
   /* ---------- planner ---------- */
@@ -447,7 +672,7 @@ ${body.join("\n")}
     return solve ? `Learn the method, then solve: ${ref}.` : `Read the notes, then outline: ${ref}.`;
   }
 
-  function buildPlan(code, course, analysis, choice) {
+  function buildPlan(code, course, analysis, choice, doneSet) {
     const hours = choice.h;
     const mcq = !!course.pattern.mcq;
     const reserve = Math.max(0.5, hours * 0.15);
@@ -459,7 +684,7 @@ ${body.join("\n")}
       at = 0.5; left -= 0.5;
     }
     const todo = analysis.topics
-      .filter((x) => choice.pick(x, analysis) && !isDone(code, x.id))
+      .filter((x) => choice.pick(x, analysis) && !(doneSet ? doneSet.has(x.id) : isDone(code, x.id)))
       .map((t) => ({ t, need: HOURS_BY_KIND[t.kind] }));
     // When time is short, shrink every topic rather than dropping later ones:
     // the student needs enough topics to choose their questions from.
@@ -501,26 +726,48 @@ ${body.join("\n")}
     if (!course) return viewNotFound();
     let h = store.get("planHours", 6);
     if (!TIME_CHOICES.some((x) => x.h === h)) h = 6;
+    // Topics already done when the page opened stay out of the plan; ticking a slot marks its topic
+    // done but keeps it on screen (struck through) until the time choice changes.
+    let doneAtOpen = new Set(analysis.topics.filter((t) => isDone(code, t.id)).map((t) => t.id));
+    const start = new Date();
+    start.setSeconds(0, 0);
+    start.setMinutes(Math.ceil(start.getMinutes() / 5) * 5);
+    const at = (hrs) => new Date(start.getTime() + hrs * 3600e3).toLocaleTimeString([], { hour: "numeric", minute: "2-digit" }).replace(/\s/g, "\u202f").toLowerCase();
 
     app.innerHTML = `${courseHeader(c, course)}${courseTabs(code, "/plan")}
-      <p class="small muted">Time left before the exam:</p>
-      <div class="options" id="hours">${TIME_CHOICES.map((x) => `<button type="button" data-h="${x.h}">${x.label}</button>`).join("")}</div>
+      <p class="small muted flush">Time left before the exam</p>
+      <div class="segctl hours" role="group" aria-label="Time left" id="hours" data-slide-from="${TIME_CHOICES.findIndex((x) => x.h === h)}">${TIME_CHOICES.map((x) => `<button type="button" data-h="${x.h}" aria-pressed="${x.h === h}">${x.label}</button>`).join("")}<span class="slide-ind" aria-hidden="true"></span></div>
+      <p class="small muted plan-note" id="planNote"></p>
       <section class="card" id="plan"></section>`;
 
     const render = () => {
       const choice = TIME_CHOICES.find((x) => x.h === h);
-      app.querySelectorAll("#hours button").forEach((b) => b.setAttribute("aria-pressed", String(+b.dataset.h === h)));
-      const { slots, skipped } = buildPlan(code, course, analysis, choice);
+      const { slots, skipped } = buildPlan(code, course, analysis, choice, doneAtOpen);
+      const left = analysis.topics.filter((t) => choice.pick(t, analysis) && doneAtOpen.has(t.id)).length;
+      app.querySelector("#planNote").innerHTML = `${h > 8 ? "" : `Starting now, at ${at(0)}.`}${left ? ` ${left} topic${left > 1 ? "s" : ""} you marked done ${left > 1 ? "are" : "is"} left out.` : ""}`;
       app.querySelector("#plan").innerHTML = `
-        ${slots.map((s) => `<div class="slot">
-          <span class="slot-time">${h > 8 ? duration(s.to - s.from) : `${clock(s.from)}–${clock(s.to)}`}</span>
-          <span><span class="slot-what">${s.id ? `<a href="#/c/${code}/t/${s.id}">${esc(s.what)}</a>` : esc(s.what)}</span> ${s.level ? badge(s.level) : ""}<br>
-          <span class="slot-how">${esc(s.how)}</span></span></div>`).join("")}
+        ${slots.map((sl) => { const ticked = sl.id && isDone(code, sl.id);
+          return `<div class="slot${ticked ? " ticked" : ""}">
+          ${sl.id ? `<button type="button" class="slot-check" data-slot="${sl.id}" aria-pressed="${ticked}" aria-label="Done: ${esc(sl.what)}">${TICK}</button>` : `<span class="slot-check-gap"></span>`}
+          <span class="slot-time">${h > 8 ? duration(sl.to - sl.from) : `${at(sl.from)}<br>– ${at(sl.to)}`}</span>
+          <span><span class="slot-what">${sl.id ? `<a href="#/c/${code}/t/${sl.id}">${esc(sl.what)}</a>` : esc(sl.what)}</span> ${sl.level ? badge(sl.level) : ""}<br>
+          <span class="slot-how">${esc(sl.how)}</span></span></div>`; }).join("")}
         ${skipped.length ? `<p class="small muted">No time left for: ${skipped.map((t) => esc(t.name)).join(", ")}.</p>` : ""}`;
     };
     app.querySelector("#hours").addEventListener("click", (e) => {
       const b = e.target.closest("button"); if (!b) return;
-      h = +b.dataset.h; store.set("planHours", h); render();
+      h = +b.dataset.h; store.set("planHours", h);
+      doneAtOpen = new Set(analysis.topics.filter((t) => isDone(code, t.id)).map((t) => t.id));
+      app.querySelectorAll("#hours button").forEach((x) => x.setAttribute("aria-pressed", String(x === b)));
+      placeSlides(app);
+      render();
+    });
+    app.querySelector("#plan").addEventListener("click", (e) => {
+      const b = e.target.closest("[data-slot]"); if (!b) return;
+      const v = !isDone(code, b.dataset.slot);
+      setDone(code, b.dataset.slot, v);
+      b.setAttribute("aria-pressed", String(v));
+      b.closest(".slot").classList.toggle("ticked", v);
     });
     render();
   }
@@ -589,24 +836,28 @@ ${body.join("\n")}
   async function viewSettings(sub) {
     const { courses } = await load("data/courses.json");
     const papers = courses.reduce((a, c) => a + (c.papers || 0), 0);
-    const seg = (name, key, def, opts) => `<div class="seg" role="radiogroup" aria-label="${name}">${opts.map(([v, l]) =>
-      `<button type="button" role="radio" class="seg-btn" data-key="${key}" data-val="${v}" aria-checked="${v === store.get(key, def)}">${l}</button>`).join("")}</div>`;
+    const toggles = (name, attr, cur, opts) => `<div class="segctl" role="radiogroup" aria-label="${name}" data-slide-from="${Math.max(0, opts.findIndex(([v]) => v === cur))}">${opts.map(([v, l]) =>
+      `<button type="button" role="radio" ${attr}="${v}" aria-checked="${v === cur}">${l}</button>`).join("")}<span class="slide-ind" aria-hidden="true"></span></div>`;
     const theme = store.get("theme", null) || "system";
     app.innerHTML = `
       <h1>Settings</h1>
 
-      <h2 id="install"${sub === "install" ? " data-anchor" : ""}>Install app</h2>
-      <section class="card" id="installBox">${installCardHtml()}</section>
-
-      <h2>Study style</h2>
-      <p class="muted small">How topic pages show your notes. Change it any time.</p>
+      <h2 class="group-h">Study</h2>
+      <p class="muted small">How topic pages show your notes. You can also switch at the top of any topic.</p>
       <div class="choices" role="radiogroup" aria-label="Study style">${STYLES.map(([v, l, d]) => `
         <button type="button" role="radio" class="choice" data-style="${v}" aria-checked="${v === studyStyle()}">
           <span class="choice-l">${l}${v === "standard" ? ` <span class="muted small">(default)</span>` : ""}</span>
           <span class="choice-d">${d}</span></button>`).join("")}
       </div>
 
-      <h2 id="ai"${sub === "ai" ? " data-anchor" : ""}>AI assistant</h2>
+      <h2 class="group-h">Display</h2>
+      <section class="card display-card">
+        <div class="opt"><span class="opt-l" id="lTheme">Theme</span>${toggles("Theme", "data-theme-v", theme, [["light", "Light"], ["dark", "Dark"], ["system", "Auto"]])}</div>
+        <div class="opt"><span class="opt-l">Text size</span>${toggles("Text size", "data-textsize", store.get("textsize", "m"), [["s", "Small"], ["m", "Default"], ["l", "Large"], ["xl", "X-large"]])}</div>
+        <div class="opt"><span class="opt-l">Density</span>${toggles("Text density", "data-density", store.get("density", "comfortable"), [["comfortable", "Comfortable"], ["compact", "Compact"]])}</div>
+      </section>
+
+      <h2 class="group-h" id="ai"${sub === "ai" ? " data-anchor" : ""}>AI assistant</h2>
       <section class="card ai-set">
         <p class="small" id="aiStatus"></p>
         <label class="field-l" for="aiKeyIn">Your Gemini API key</label>
@@ -619,42 +870,28 @@ ${body.join("\n")}
           <button type="button" class="btn secondary" id="aiRemove">Remove key</button>
         </div>
         <p class="small" id="aiMsg" role="status"></p>
-        <label class="field-l" for="aiModelSel">Model</label>
-        <select id="aiModelSel" class="search"></select>
-        <p class="small"><a href="#/ai-guide">How to get a free Gemini API key →</a></p>
+        <div id="aiModelBox"><label class="field-l" for="aiModelSel">Model</label>
+        <select id="aiModelSel" class="search"></select></div>
+        <p class="small field-help"><a href="#/ai-guide">How to get a free Gemini API key →</a></p>
         <p class="small muted flush">Your key is saved only in this browser on this device and is sent only to Google. Anyone using this device could see it, so remove it on a shared phone.</p>
       </section>
 
-      <h2>Text size</h2>
-      ${seg("Text size", "textsize", "m", [["s", "Small"], ["m", "Default"], ["l", "Large"], ["xl", "Extra large"]])}
+      <h2 class="group-h" id="install"${sub === "install" ? " data-anchor" : ""}>App</h2>
+      <section class="card" id="installBox">${installCardHtml()}</section>
+      <div class="rows card">
+        <button type="button" class="row row-btn" id="showWelcome"><span class="row-main"><span class="row-title">Show the welcome screen</span><span class="row-sub">What the app does, in one screen</span></span><span class="chev" aria-hidden="true">›</span></button>
+      </div>
 
-      <h2>Text density</h2>
-      ${seg("Text density", "density", "comfortable", [["comfortable", "Comfortable"], ["compact", "Compact"]])}
-
-      <h2>Theme</h2>
-      <div class="seg" role="radiogroup" aria-label="Theme">${[["light", "Light"], ["dark", "Dark"], ["system", "Same as device"]].map(([v, l]) =>
-        `<button type="button" role="radio" class="seg-btn" data-theme="${v}" aria-checked="${v === theme}">${l}</button>`).join("")}</div>
-
-      <h2>Welcome screen</h2>
-      <button type="button" class="btn secondary" id="showWelcome">Show the welcome screen</button>
-
-      <h2>About</h2>
-      <section class="card about">
-        <div class="about-head"><img src="icons/icon.svg" width="48" height="48" alt="">
-          <div><strong>BCom Radar</strong><br><span class="muted small">Version ${APP_VERSION} · ${APP_RELEASED}</span></div></div>
-        <p class="small">Exam preparation for IGNOU BCOMF (B.Com) students: topics ranked from past papers, short notes checked against the study material, diagrams, past papers and a study plan.</p>
-        <p class="small muted flush">${courses.length} courses · ${papers} past papers · no sign-up; your settings and progress stay on this phone.</p>
-      </section>
-
-      ${FEEDBACK_EMAIL ? `<h2>Send feedback</h2>
-      <section class="card fb">
-        <p class="small">Found a mistake in the notes, or have an idea? Tell us — it opens your email app with the details filled in.</p>
+      <h2 class="group-h">Help</h2>
+      ${FEEDBACK_EMAIL ? `<section class="card fb">
+        <h3 class="card-h">Send feedback</h3>
+        <p class="small">Found a mistake in the notes, or have an idea? Tell us. It opens your email app with the details filled in.</p>
         <div class="fb-btns">${[["mistake", "Report a mistake"], ["idea", "Suggest a feature"], ["other", "Other feedback"]].map(([k, l]) =>
           `<a class="btn secondary" href="${feedbackMail(k)}">${l}</a>`).join("")}</div>
-        <p class="small muted flush">No email app? Write to <a href="mailto:${esc(FEEDBACK_EMAIL)}">${esc(FEEDBACK_EMAIL)}</a>.</p>
+        <p class="small muted flush field-help">No email app? Write to <a href="mailto:${esc(FEEDBACK_EMAIL)}">${esc(FEEDBACK_EMAIL)}</a>.</p>
       </section>` : ""}
 
-      ${CREATORS.length ? `<h2>Meet the creators</h2>
+      ${CREATORS.length ? `<h3 class="sub-h">Meet the creators</h3>
       <div class="creators">${CREATORS.map((p) => `
         <a class="card creator" href="${esc(p.url)}" target="_blank" rel="noopener noreferrer">
           <span class="creator-av" aria-hidden="true">${esc(p.name.split(/\s+/).map((w) => w[0]).slice(0, 2).join("").toUpperCase())}</span>
@@ -662,17 +899,21 @@ ${body.join("\n")}
         </a>`).join("")}
       </div>` : ""}
 
-      <h2>Disclaimer</h2>
-      <p class="note small">Independent study aid, not affiliated with IGNOU. Topic priorities are guidance, not a guarantee.</p>`;
+      <h3 class="sub-h">About</h3>
+      <section class="card about">
+        <div class="about-head"><img src="icons/icon.svg" width="48" height="48" alt="">
+          <div><strong>BCom Radar</strong><br><span class="muted small">Version ${APP_VERSION} · ${APP_RELEASED}</span></div></div>
+        <p class="small">Exam preparation for IGNOU BCOMF (B.Com) students: topics ranked from past papers, short notes checked against the study material, diagrams, past papers and a study plan.</p>
+        <p class="small muted">${courses.length} courses · ${papers} past papers · no sign-up; your settings and progress stay on this phone.</p>
+        <p class="small field-help"><a href="../notes/">Every topic as a web page, to share a link →</a></p>
+        <p class="note small flush">Independent study aid, not affiliated with IGNOU. Topic priorities are guidance, not a guarantee.</p>
+      </section>`;
 
-    const pick = (sel, b) => app.querySelectorAll(sel).forEach((x) => x.setAttribute("aria-checked", String(x === b)));
+    const pick = (sel, b) => { app.querySelectorAll(sel).forEach((x) => x.setAttribute("aria-checked", String(x === b))); placeSlides(app); };
     app.querySelectorAll(".choice").forEach((b) => b.addEventListener("click", () => { store.set("style", b.dataset.style); pick(".choice", b); }));
-    app.querySelectorAll(".seg-btn[data-key]").forEach((b) => b.addEventListener("click", () => {
-      store.set(b.dataset.key, b.dataset.val); applyPrefs(); pick(`.seg-btn[data-key="${b.dataset.key}"]`, b);
-    }));
-    app.querySelectorAll(".seg-btn[data-theme]").forEach((b) => b.addEventListener("click", () => {
-      setTheme(b.dataset.theme === "system" ? null : b.dataset.theme); pick(".seg-btn[data-theme]", b);
-    }));
+    app.querySelectorAll("[data-textsize]").forEach((b) => b.addEventListener("click", () => { store.set("textsize", b.dataset.textsize); applyPrefs(); pick("[data-textsize]", b); }));
+    app.querySelectorAll("[data-density]").forEach((b) => b.addEventListener("click", () => { store.set("density", b.dataset.density); applyPrefs(); pick("[data-density]", b); }));
+    app.querySelectorAll("[data-theme-v]").forEach((b) => b.addEventListener("click", () => { setTheme(b.dataset.themeV === "system" ? null : b.dataset.themeV); pick("[data-theme-v]", b); }));
     app.querySelector("#showWelcome").addEventListener("click", showWelcome);
     bindInstall(app.querySelector("#installBox"));
 
@@ -689,7 +930,7 @@ ${body.join("\n")}
         ? `<span class="ok-tick">✓</span> Key saved (ending <code>${esc(k.slice(-4))}</code>). <a href="#/ask">Open Ask AI</a>`
         : "Not set up. The assistant needs your own free Gemini API key.";
       app.querySelector("#aiRemove").hidden = !k;
-      modelSel.disabled = !k;
+      app.querySelector("#aiModelBox").hidden = !k;
       fillModels(store.get("aiModels", []));
     };
     status();
@@ -901,11 +1142,11 @@ ${body.join("\n")}
     }
     const key = `${ctx.c ? ctx.c.code : "-"}/${ctx.t ? ctx.t.id : "-"}`;
     const chat = aiChats[key] || (aiChats[key] = []);
-    const back = ctx.t ? `<a class="back" href="#/c/${ctx.c.code}/t/${ctx.t.id}">← ${esc(ctx.t.name)}</a>`
-      : ctx.c ? `<a class="back" href="#/c/${ctx.c.code}">← ${esc(ctx.c.title)}</a>` : "";
+    if (ctx.t) setBack(`#/c/${ctx.c.code}/t/${ctx.t.id}`, ctx.t.name);
+    else if (ctx.c) setBack(`#/c/${ctx.c.code}`, ctx.c.title);
 
     if (!aiKey()) {
-      app.innerHTML = `${back}
+      app.innerHTML = `
         <h1>Ask AI</h1>
         <p class="muted">Ask any study question — explain a topic, write a model answer, or solve a past-paper problem step by step.</p>
         <section class="card ai-setup">
@@ -933,25 +1174,28 @@ ${body.join("\n")}
       "Solve: find the break-even point if fixed cost is ₹60,000, price ₹50 and variable cost ₹30"
     ];
 
-    app.innerHTML = `${back}
-      <h1>Ask AI</h1>
-      <div class="ai-ctx">
-        <label>Course<select id="aiCourse"><option value="">Any subject</option>${ready.map((c) =>
-          `<option value="${c.code}"${ctx.c && ctx.c.code === c.code ? " selected" : ""}>${esc(c.code)} · ${esc(c.title)}</option>`).join("")}</select></label>
-        ${ctx.c ? `<label>Topic<select id="aiTopic"><option value="">Whole course</option>${ctx.topics.map((t) =>
-          `<option value="${t.id}"${ctx.t && ctx.t.id === t.id ? " selected" : ""}>${esc(t.name)}</option>`).join("")}</select></label>` : ""}
-      </div>
-      <div id="aiLog" class="ai-log" aria-live="polite"></div>
-      <div id="aiSugg" class="ai-sugg">${suggestions.map((s) => `<button type="button" class="ai-chip">${esc(s)}</button>`).join("")}</div>
-      <form id="aiForm" class="ai-form">
-        <label for="aiIn" class="sr-only">Your question</label>
-        <textarea id="aiIn" rows="3" placeholder="Ask a question, or paste one from a past paper…"></textarea>
-        <div class="ai-actions">
-          <button type="button" class="btn secondary" id="aiNew">New chat</button>
-          <button type="submit" class="btn" id="aiSend">Send</button>
+    const ctxName = ctx.t ? `${ctx.t.name} · ${ctx.c.code}` : ctx.c ? `${ctx.c.code} · ${ctx.c.title}` : "Any subject";
+    app.innerHTML = `
+      <div class="ai-head"><h1>Ask AI</h1><button type="button" class="text-link" id="aiNew">New chat</button></div>
+      <details class="ai-ctxbox">
+        <summary><span class="ctx-chip">${esc(ctxName)}</span><span class="text-link">Change</span></summary>
+        <div class="ai-ctx">
+          <label>Course<select id="aiCourse"><option value="">Any subject</option>${ready.map((c) =>
+            `<option value="${c.code}"${ctx.c && ctx.c.code === c.code ? " selected" : ""}>${esc(c.code)} · ${esc(c.title)}</option>`).join("")}</select></label>
+          ${ctx.c ? `<label>Topic<select id="aiTopic"><option value="">Whole course</option>${ctx.topics.map((t) =>
+            `<option value="${t.id}"${ctx.t && ctx.t.id === t.id ? " selected" : ""}>${esc(t.name)}</option>`).join("")}</select></label>` : ""}
         </div>
-      </form>
-      <p class="small muted">AI answers can be wrong — check them against your study material. Your questions go from this device to Google using your key. <a href="#/settings/ai">AI settings</a></p>`;
+      </details>
+      <div id="aiLog" class="ai-log" aria-live="polite"></div>
+      <p class="small muted ai-foot">AI answers can be wrong — check them against your study material. Your questions go from this device to Google using your key. <a href="#/settings/ai">AI settings</a></p>
+      <div class="composer">
+        <div id="aiSugg" class="ai-sugg">${suggestions.map((s) => `<button type="button" class="ai-chip">${esc(s)}</button>`).join("")}</div>
+        <form id="aiForm" class="ai-form">
+          <label for="aiIn" class="sr-only">Your question</label>
+          <textarea id="aiIn" rows="1" placeholder="Ask, or paste a question…"></textarea>
+          <button type="submit" class="send-btn" id="aiSend" aria-label="Send"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 19V5"/><path d="M6 11l6-6 6 6"/></svg></button>
+        </form>
+      </div>`;
 
     const log = app.querySelector("#aiLog"), input = app.querySelector("#aiIn"), sendBtn = app.querySelector("#aiSend");
     const sugg = app.querySelector("#aiSugg");
@@ -979,22 +1223,24 @@ ${body.join("\n")}
       if (aiBusy) { aiBusy.abort(); return; }
       ask(input.value);
     });
-    input.addEventListener("keydown", (e) => { if (e.key === "Enter" && (e.ctrlKey || e.metaKey)) { e.preventDefault(); app.querySelector("#aiForm").requestSubmit(); } });
+    // The question box grows with what is typed, up to about 7 lines.
+    const fit = () => { input.style.height = "auto"; input.style.height = `${Math.min(input.scrollHeight, 168)}px`; };
+    input.addEventListener("input", fit);
+    input.addEventListener("keydown", (e) => { if (e.key === "Enter" && (e.ctrlKey || e.metaKey)) { e.preventDefault(); input.form.requestSubmit(); } });
     // A question handed over from a past paper: show it ready to send, not buried under suggestions.
     if (aiDraft && aiDraft.key === key) {
       input.value = aiDraft.text;
       aiDraft = null;
       sugg.hidden = true;
-      input.rows = Math.min(10, Math.max(4, Math.ceil(input.value.length / 38) + input.value.split("\n").length));
-      const form = app.querySelector("#aiForm");
-      form.dataset.anchor = "";   // the router scrolls this into view
-      form.insertAdjacentHTML("afterbegin", `<p class="ai-ready small" role="status">Question added from the past paper — check it and tap <strong>Send</strong>.</p>`);
+      fit();
+      app.querySelector(".composer").insertAdjacentHTML("afterbegin", `<p class="ai-ready small" role="status">Question added from the past paper. Check it and tap Send.</p>`);
     }
 
     async function ask(q) {
       q = String(q || "").trim();
       if (!q || aiBusy) return;
       input.value = "";
+      fit();
       chat.push({ role: "user", text: q });
       const ans = { role: "model", text: "" };
       chat.push(ans);
@@ -1003,7 +1249,7 @@ ${body.join("\n")}
       last.innerHTML = `<p class="muted ai-wait">Thinking…</p>`;
       log.lastElementChild.scrollIntoView({ block: "nearest" });
       aiBusy = new AbortController();
-      sendBtn.textContent = "Stop";
+      sendBtn.classList.add("busy"); sendBtn.setAttribute("aria-label", "Stop");
       let pending = false;
       try {
         const res = await aiAsk(chat.slice(0, -1).filter((m) => !m.error), aiSystem(ctx), (text) => {
@@ -1020,14 +1266,14 @@ ${body.join("\n")}
         else { ans.error = true; ans.text = err.friendly || "Couldn't reach Google's AI service. Check your internet connection and try again."; }
       } finally {
         aiBusy = null;
-        if (sendBtn.isConnected) { sendBtn.textContent = "Send"; render(); }
+        if (sendBtn.isConnected) { sendBtn.classList.remove("busy"); sendBtn.setAttribute("aria-label", "Send"); render(); }
       }
     }
   }
 
   function viewAiGuide() {
+    setBack("#/settings/ai", "AI settings");
     app.innerHTML = `
-      <a class="back" href="#/settings/ai">← AI settings</a>
       <h1>Get a free Gemini API key</h1>
       <p class="muted">BCom Radar's AI assistant runs on Google Gemini. You use your own key, so there is no sign-up with us and no charge from us. It takes about two minutes.</p>
 
@@ -1039,7 +1285,7 @@ ${body.join("\n")}
         <li><strong>Tap “Create API key”.</strong> If it asks for a project, choose the one it suggests or let it create a new one.</li>
         <li><strong>Copy the key.</strong> It is a long code that usually starts with <code>AIza</code>. Use the copy button next to it.</li>
         <li><strong>Paste it in BCom Radar.</strong> Go to <a href="#/settings/ai">Settings → AI assistant</a>, paste the key and tap <em>Save and test</em>. A green tick means it works.</li>
-        <li><strong>Start asking.</strong> Tap <span class="kbd">${AI_SPARK}</span> at the top, or <em>Ask AI about this topic</em> on any topic page.</li>
+        <li><strong>Start asking.</strong> Tap <em>Ask AI</em> in the bottom bar, or the <span class="kbd">${AI_SPARK}</span> button at the bottom of any topic page.</li>
       </ol>
 
       <h2>Good to know</h2>
@@ -1105,6 +1351,25 @@ ${body.join("\n")}
   }
   function bindInstall(root) {
     root.querySelectorAll("[data-install]").forEach((b) => b.addEventListener("click", (e) => { e.stopPropagation(); startInstall(); }));
+  }
+
+  // A small card on Home for students who never saw the welcome screen's install button. It shows
+  // on the first 3 app opens at most, never once installed, and ✕ hides it for good.
+  const homeVisits = (() => { const n = store.get("instVisits", 0) + 1; store.set("instVisits", n); return n; })();
+  function installCardHome() {
+    if (runningInstalled() || store.get("installed", false) || store.get("instHidden", false) || homeVisits > 3) return "";
+    return `<div class="inst-card" id="instCard">
+      <img src="icons/icon.svg" width="36" height="36" alt="">
+      <span class="inst-main"><strong>Install BCom Radar</strong><span class="muted small">Opens like an app, works offline.</span></span>
+      <button type="button" class="btn inst-go" data-install>Install</button>
+      <button type="button" class="inst-x" id="instX" aria-label="Don't show this again">✕</button>
+    </div>`;
+  }
+  function bindInstallCard() {
+    const card = document.getElementById("instCard");
+    if (!card) return;
+    bindInstall(card);
+    card.querySelector("#instX").addEventListener("click", () => { store.set("instHidden", true); card.remove(); });
   }
 
   // Must run inside the tap that asked for it: the browser only shows its prompt then.
@@ -1212,25 +1477,40 @@ ${body.join("\n")}
   }
 
   function viewNotFound() {
-    app.innerHTML = `<h1>Page not found</h1><p><a href="#/">Go to all courses</a></p>`;
+    setBack("#/", "All courses");
+    app.innerHTML = `<h1>Page not found</h1><p class="muted">This page doesn't exist, or the link is incomplete.</p><a class="btn" href="#/">Go to all courses</a>`;
   }
 
   /* ---------- router ---------- */
-  let prevHash = null;   // the page before this one, for the question view's Back link
+  let prevHash = null;   // the page before this one (the header back arrow returns there when it is the parent)
   let thisHash = null;
+  let replacing = false; // the current change came from a data-replace link
+  let back = null;       // { href, label } for the header back arrow; each view sets it, Home and the tabs don't
+  const setBack = (href, label) => { back = { href, label }; };
+  const topBack = document.getElementById("topBack"), topBackLabel = document.getElementById("topBackLabel");
+  const brand = document.getElementById("brand"), tabbar = document.getElementById("tabbar");
+  const fixedSlot = document.getElementById("fixed");
+  const SKELETON = `<div class="skeleton" aria-label="Loading"><div class="sk sk-title"></div><div class="sk sk-line"></div><div class="sk sk-row"></div><div class="sk sk-row"></div><div class="sk sk-row"></div></div>`;
+  let quiet = false;     // refresh(): re-render the same page in place, keeping the scroll position
+
   async function route() {
-    prevHash = thisHash;
-    thisHash = location.hash.replace(/^#/, "") || "/";
+    // A swap (data-replace) keeps the page before, so Back still returns past the swapped pages.
+    if (!quiet) { if (!replacing) prevHash = thisHash; replacing = false; thisHash = location.hash.replace(/^#/, "") || "/"; }
+    back = null;
     const parts = location.hash.replace(/^#\/?/, "").split("/").filter(Boolean).map(decodeURIComponent);
+    const slow = quiet ? null : setTimeout(() => { app.innerHTML = SKELETON; }, 160);
     try {
       if (!parts.length) await viewHome();
+      else if (parts[0] === "search") await viewSearch();
       else if (parts[0] === "settings") await viewSettings(parts[1]);
       else if (parts[0] === "ask") await viewAsk(parts[1], parts[2]);
       else if (parts[0] === "ai-guide") viewAiGuide();
       else if (parts[0] === "c" && parts[1]) {
         const code = parts[1];
         if (parts[2] === "t" && parts[3] && parts[4] === "asked") await viewAsked(code, parts[3]);
+        else if (parts[2] === "t" && parts[3] && parts[4] === "revise") await viewRevise(code, parts[3]);
         else if (parts[2] === "t" && parts[3]) await viewTopic(code, parts[3]);
+        else if (parts[2] === "revise") await viewRevise(code, null);
         else if (parts[2] === "paper" && parts[3]) await viewQuestion(code, parts[3], parts[4]);
         else if (parts[2] === "plan") await viewPlan(code);
         else if (parts[2] === "exam") await viewExam(code);
@@ -1238,17 +1518,96 @@ ${body.join("\n")}
         else await viewCourse(code);
       } else viewNotFound();
     } catch (err) {
-      app.innerHTML = `<h1>Couldn't load this page</h1><p class="muted">Check your connection and try again.</p>`;
+      app.innerHTML = `<h1>Couldn't load this page</h1><p class="muted">Check your connection and try again.</p><button type="button" class="btn" onclick="location.reload()">Try again</button>`;
       console.error(err);
     }
+    clearTimeout(slow);
+
+    // Header: a back arrow with the parent's name on inner pages, the app name on Home and the tabs.
+    topBack.hidden = !back;
+    brand.hidden = !!back;
+    if (back) { topBack.href = back.href; topBackLabel.textContent = back.label; topBack.setAttribute("aria-label", `Back to ${back.label}`); }
+    const tab = !parts.length || parts[0] === "c" ? "home" : parts[0] === "ai-guide" ? "ask" : parts[0];
+    tabbar.querySelectorAll("a").forEach((a) => { if (a.dataset.nav === tab) a.setAttribute("aria-current", "page"); else a.removeAttribute("aria-current"); });
+    const h1 = app.querySelector("h1");
+    const code = parts[0] === "c" && parts[1] ? parts[1] : null;
+    document.title = h1 && parts.length ? `${h1.textContent.trim()}${code && !h1.textContent.includes(code) ? ` · ${code}` : ""} · BCom Radar` : "BCom Radar";
+    // Bars fixed to the bottom live outside <main>: its page-change animation would otherwise pin them to the page.
+    fixedSlot.replaceChildren(...app.querySelectorAll(":scope > .actbar, :scope > .composer"));
+    document.body.classList.toggle("has-actbar", !!fixedSlot.querySelector(".actbar"));
+    document.body.classList.toggle("has-composer", !!fixedSlot.querySelector(".composer"));
+    placeSlides(app, true);
+    spySections();
+    if (quiet) return;
+    if (!reduceMotion()) { app.classList.remove("enter"); void app.offsetWidth; app.classList.add("enter"); }
+    hideToast();
     window.scrollTo(0, 0);
     const anchor = app.querySelector("[data-anchor]");
     if (anchor) anchor.scrollIntoView();
     app.focus({ preventScroll: true });
   }
 
-  /* ---------- theme ---------- */
-  const themeBtn = document.getElementById("themeToggle");
+  // Re-render the current page in place (after a style switch or a Done tap), keeping the scroll.
+  async function refresh() {
+    const y = window.scrollY;
+    quiet = true;
+    try { await route(); } finally { quiet = false; }
+    window.scrollTo(0, y);
+  }
+
+  // The back arrow uses the browser's own Back when the parent is the page before, so the
+  // scroll position comes back too.
+  topBack.addEventListener("click", (e) => {
+    if (back && prevHash && back.href === `#${prevHash}`) { e.preventDefault(); history.back(); }
+  });
+
+  // Links marked data-replace (course tabs, question pager) swap the page without adding to history.
+  document.addEventListener("click", (e) => {
+    const a = e.target.closest("a[data-replace]");
+    if (!a || e.ctrlKey || e.metaKey || e.shiftKey) return;
+    e.preventDefault();
+    if (a.getAttribute("href") === location.hash) return;
+    replacing = true;
+    location.replace(a.getAttribute("href"));
+  });
+
+  // Round checks on topic rows: one tap marks a topic done (or not), nothing else asked.
+  app.addEventListener("click", (e) => {
+    const b = e.target.closest("[data-done]");
+    if (!b) return;
+    const [code, id] = b.dataset.done.split("/");
+    const v = !isDone(code, id);
+    setDone(code, id, v);
+    refresh();
+  });
+
+  // Topic page: section chips jump to a section and follow the scroll.
+  app.addEventListener("click", (e) => {
+    const b = e.target.closest("[data-jump]");
+    if (!b) return;
+    const h = document.getElementById(b.dataset.jump);
+    if (h) { spyHold = Date.now() + 900; markChip(b.dataset.jump); h.scrollIntoView({ behavior: reduceMotion() ? "auto" : "smooth", block: "start" }); }
+  });
+  let spyHold = 0, spyTick = false;
+  function markChip(id) {
+    app.querySelectorAll(".secnav [data-jump]").forEach((x) => {
+      const on = x.dataset.jump === id;
+      x.classList.toggle("on", on);
+      if (on && x.scrollIntoView) { const nav = x.parentElement; nav.scrollTo({ left: x.offsetLeft - 16, behavior: reduceMotion() ? "auto" : "smooth" }); }
+    });
+  }
+  function spySections() {
+    const nav = app.querySelector(".secnav");
+    if (!nav || Date.now() < spyHold) return;
+    const line = nav.getBoundingClientRect().bottom + 24;
+    let cur = null;
+    nav.querySelectorAll("[data-jump]").forEach((b) => { const h = document.getElementById(b.dataset.jump); if (h && h.getBoundingClientRect().top <= line) cur = b.dataset.jump; });
+    const on = nav.querySelector(".on");
+    if ((on && on.dataset.jump) !== cur) { if (cur) markChip(cur); else if (on) on.classList.remove("on"); }
+  }
+  window.addEventListener("scroll", () => { if (spyTick) return; spyTick = true; requestAnimationFrame(() => { spyTick = false; spySections(); }); }, { passive: true });
+
+  /* ---------- theme (Settings → Display) ---------- */
   function setTheme(t) {   // "light", "dark" or null to follow the device
     if (t) document.documentElement.dataset.theme = t;
     else delete document.documentElement.dataset.theme;
@@ -1256,13 +1615,6 @@ ${body.join("\n")}
   }
   const savedTheme = store.get("theme", null);
   if (savedTheme) document.documentElement.dataset.theme = savedTheme;
-  themeBtn.addEventListener("click", () => {
-    const dark = document.documentElement.dataset.theme
-      ? document.documentElement.dataset.theme === "dark"
-      : matchMedia("(prefers-color-scheme: dark)").matches;
-    setTheme(dark ? "light" : "dark");
-    if (location.hash.replace(/^#\/?/, "") === "settings") viewSettings();
-  });
 
   window.addEventListener("hashchange", route);
   route();
