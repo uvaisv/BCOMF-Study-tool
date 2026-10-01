@@ -2,31 +2,317 @@
   "programme": "BCOMF",
   "note": "Course list compiled from search results; verify against the official BCOMF programme guide.",
   "courses": [
-    { "code": "BCOC-131", "title": "Financial Accounting", "year": 1, "type": "mixed", "exam": { "time": "3 hours", "marks": 100, "format": "Written" }, "papers": 11, "ready": true },
-    { "code": "BCOC-132", "title": "Business Organisation and Management", "year": 1, "type": "theory", "exam": { "time": "3 hours", "marks": 100, "format": "Written" }, "papers": 11, "ready": true },
-    { "code": "BECC-101", "title": "Introductory Microeconomics", "year": 1, "type": "mixed", "exam": { "time": "3 hours", "marks": 100, "format": "Written" }, "papers": 11, "ready": true },
-    { "code": "BRL-101", "title": "Overview of Retailing", "year": 1, "type": "theory", "exam": { "time": "3 hours", "marks": 100, "format": "Written" }, "papers": 8, "ready": true },
-    { "code": "BCOS-183", "title": "Computer Application in Business", "year": 1, "type": "mixed", "exam": { "time": "3 hours", "marks": 100, "format": "Written" }, "papers": 9, "ready": true },
-    { "code": "BCOS-186", "title": "Personal Selling and Salesmanship", "year": 1, "type": "theory", "exam": { "time": "3 hours", "marks": 100, "format": "Written" }, "papers": 9, "ready": true },
-    { "code": "BEVAE-181", "title": "Environmental Studies", "year": 1, "type": "mcq", "exam": { "time": "2 hours", "marks": 50, "format": "MCQ" }, "papers": 11, "ready": true },
-    { "code": "BEDSV-101", "title": "Value Education", "year": 1, "type": "theory", "exam": { "time": "3 hours", "marks": 100, "format": "Written" }, "papers": 4, "ready": true },
-
-    { "code": "BCOC-133", "title": "Business Law", "year": 2, "type": "theory", "exam": { "time": "3 hours", "marks": 100, "format": "Written" }, "papers": 11, "ready": true },
-    { "code": "BCOC-134", "title": "Business Mathematics and Statistics", "year": 2, "type": "numerical", "exam": { "time": "3 hours", "marks": 100, "format": "Written" }, "papers": 11, "ready": true },
-    { "code": "BCOC-136", "title": "Income Tax Law and Practice", "year": 2, "type": "mixed", "exam": { "time": "3 hours", "marks": 100, "format": "Written" }, "papers": 9, "ready": true },
-    { "code": "BCOE-141", "title": "Principles of Marketing", "year": 2, "type": "theory", "exam": { "time": "3 hours", "marks": 100, "format": "Written" }, "papers": 9, "ready": true },
-    { "code": "BCOS-184", "title": "E-Commerce", "year": 2, "type": "theory", "exam": { "time": "3 hours", "marks": 100, "format": "Written" }, "papers": 9, "ready": true },
-    { "code": "BCOS-185", "title": "Entrepreneurship", "year": 2, "type": "theory", "exam": { "time": "3 hours", "marks": 100, "format": "Written" }, "papers": 9, "ready": true },
-    { "code": "BEGAE-182", "title": "English Communication Skills", "year": 2, "type": "theory", "exam": { "time": "2 hours", "marks": 50, "format": "Written" }, "papers": 11, "ready": true },
-    { "code": "BPAS-184", "title": "Logistics Management", "year": 2, "type": "theory", "exam": { "time": "2 hours", "marks": 50, "format": "Written" }, "papers": 9, "ready": true },
-
-    { "code": "BCOC-135", "title": "Company Law", "year": 3, "type": "theory", "exam": { "time": "3 hours", "marks": 100, "format": "Written" }, "papers": 9, "ready": true },
-    { "code": "BCOC-137", "title": "Corporate Accounting", "year": 3, "type": "mixed", "exam": { "time": "3 hours", "marks": 100, "format": "Written" }, "papers": 9, "ready": true },
-    { "code": "CPI-102", "title": "Redressal of Consumer Grievances: Role of Various Stakeholders", "year": 3, "type": "theory", "exam": { "time": "3 hours", "marks": 100, "format": "Written" }, "papers": 12, "ready": true },
-    { "code": "BPCS-186", "title": "Managing Stress", "year": 3, "type": "theory", "exam": { "time": "2 hours", "marks": 50, "format": "Written" }, "papers": 9, "ready": true },
-    { "code": "BCOC-138", "title": "Cost Accounting", "year": 3, "type": "mixed", "exam": { "time": "3 hours", "marks": 100, "format": "Written" }, "papers": 8, "ready": true },
-    { "code": "BCOE-142", "title": "Management Accounting", "year": 3, "type": "mixed", "exam": { "time": "3 hours", "marks": 100, "format": "Written" }, "papers": 9, "ready": true },
-    { "code": "BMS-1", "title": "Introduction to NGO Management", "year": 3, "type": "theory", "exam": { "time": "2 hours", "marks": 50, "format": "Written" }, "papers": 12, "ready": true },
-    { "code": "BECS-184", "title": "Data Analysis", "year": 3, "type": "mixed", "exam": { "time": "3 hours", "marks": 100, "format": "Written" }, "papers": 8 }
+    {
+      "code": "BCOC-131",
+      "title": "Financial Accounting",
+      "year": 1,
+      "type": "mixed",
+      "exam": {
+        "time": "3 hours",
+        "marks": 100,
+        "format": "Written"
+      },
+      "papers": 11,
+      "ready": true
+    },
+    {
+      "code": "BCOC-132",
+      "title": "Business Organisation and Management",
+      "year": 1,
+      "type": "theory",
+      "exam": {
+        "time": "3 hours",
+        "marks": 100,
+        "format": "Written"
+      },
+      "papers": 11,
+      "ready": true
+    },
+    {
+      "code": "BECC-101",
+      "title": "Introductory Microeconomics",
+      "year": 1,
+      "type": "mixed",
+      "exam": {
+        "time": "3 hours",
+        "marks": 100,
+        "format": "Written"
+      },
+      "papers": 11,
+      "ready": true
+    },
+    {
+      "code": "BRL-101",
+      "title": "Overview of Retailing",
+      "year": 1,
+      "type": "theory",
+      "exam": {
+        "time": "3 hours",
+        "marks": 100,
+        "format": "Written"
+      },
+      "papers": 8,
+      "ready": true
+    },
+    {
+      "code": "BCOS-183",
+      "title": "Computer Application in Business",
+      "year": 1,
+      "type": "mixed",
+      "exam": {
+        "time": "3 hours",
+        "marks": 100,
+        "format": "Written"
+      },
+      "papers": 9,
+      "ready": true
+    },
+    {
+      "code": "BCOS-186",
+      "title": "Personal Selling and Salesmanship",
+      "year": 1,
+      "type": "theory",
+      "exam": {
+        "time": "3 hours",
+        "marks": 100,
+        "format": "Written"
+      },
+      "papers": 9,
+      "ready": true
+    },
+    {
+      "code": "BEVAE-181",
+      "title": "Environmental Studies",
+      "year": 1,
+      "type": "mcq",
+      "exam": {
+        "time": "2 hours",
+        "marks": 50,
+        "format": "MCQ"
+      },
+      "papers": 11,
+      "ready": true
+    },
+    {
+      "code": "BEDSV-101",
+      "title": "Value Education",
+      "year": 1,
+      "type": "theory",
+      "exam": {
+        "time": "3 hours",
+        "marks": 100,
+        "format": "Written"
+      },
+      "papers": 4,
+      "ready": true
+    },
+    {
+      "code": "BCOC-133",
+      "title": "Business Law",
+      "year": 2,
+      "type": "theory",
+      "exam": {
+        "time": "3 hours",
+        "marks": 100,
+        "format": "Written"
+      },
+      "papers": 11,
+      "ready": true
+    },
+    {
+      "code": "BCOC-134",
+      "title": "Business Mathematics and Statistics",
+      "year": 2,
+      "type": "numerical",
+      "exam": {
+        "time": "3 hours",
+        "marks": 100,
+        "format": "Written"
+      },
+      "papers": 11,
+      "ready": true
+    },
+    {
+      "code": "BCOC-136",
+      "title": "Income Tax Law and Practice",
+      "year": 2,
+      "type": "mixed",
+      "exam": {
+        "time": "3 hours",
+        "marks": 100,
+        "format": "Written"
+      },
+      "papers": 9,
+      "ready": true
+    },
+    {
+      "code": "BCOE-141",
+      "title": "Principles of Marketing",
+      "year": 2,
+      "type": "theory",
+      "exam": {
+        "time": "3 hours",
+        "marks": 100,
+        "format": "Written"
+      },
+      "papers": 9,
+      "ready": true
+    },
+    {
+      "code": "BCOS-184",
+      "title": "E-Commerce",
+      "year": 2,
+      "type": "theory",
+      "exam": {
+        "time": "3 hours",
+        "marks": 100,
+        "format": "Written"
+      },
+      "papers": 9,
+      "ready": true
+    },
+    {
+      "code": "BCOS-185",
+      "title": "Entrepreneurship",
+      "year": 2,
+      "type": "theory",
+      "exam": {
+        "time": "3 hours",
+        "marks": 100,
+        "format": "Written"
+      },
+      "papers": 9,
+      "ready": true
+    },
+    {
+      "code": "BEGAE-182",
+      "title": "English Communication Skills",
+      "year": 2,
+      "type": "theory",
+      "exam": {
+        "time": "2 hours",
+        "marks": 50,
+        "format": "Written"
+      },
+      "papers": 11,
+      "ready": true
+    },
+    {
+      "code": "BPAS-184",
+      "title": "Logistics Management",
+      "year": 2,
+      "type": "theory",
+      "exam": {
+        "time": "2 hours",
+        "marks": 50,
+        "format": "Written"
+      },
+      "papers": 9,
+      "ready": true
+    },
+    {
+      "code": "BCOC-135",
+      "title": "Company Law",
+      "year": 3,
+      "type": "theory",
+      "exam": {
+        "time": "3 hours",
+        "marks": 100,
+        "format": "Written"
+      },
+      "papers": 9,
+      "ready": true
+    },
+    {
+      "code": "BCOC-137",
+      "title": "Corporate Accounting",
+      "year": 3,
+      "type": "mixed",
+      "exam": {
+        "time": "3 hours",
+        "marks": 100,
+        "format": "Written"
+      },
+      "papers": 9,
+      "ready": true
+    },
+    {
+      "code": "CPI-102",
+      "title": "Redressal of Consumer Grievances: Role of Various Stakeholders",
+      "year": 3,
+      "type": "theory",
+      "exam": {
+        "time": "3 hours",
+        "marks": 100,
+        "format": "Written"
+      },
+      "papers": 12,
+      "ready": true
+    },
+    {
+      "code": "BPCS-186",
+      "title": "Managing Stress",
+      "year": 3,
+      "type": "theory",
+      "exam": {
+        "time": "2 hours",
+        "marks": 50,
+        "format": "Written"
+      },
+      "papers": 9,
+      "ready": true
+    },
+    {
+      "code": "BCOC-138",
+      "title": "Cost Accounting",
+      "year": 3,
+      "type": "mixed",
+      "exam": {
+        "time": "3 hours",
+        "marks": 100,
+        "format": "Written"
+      },
+      "papers": 8,
+      "ready": true
+    },
+    {
+      "code": "BCOE-142",
+      "title": "Management Accounting",
+      "year": 3,
+      "type": "mixed",
+      "exam": {
+        "time": "3 hours",
+        "marks": 100,
+        "format": "Written"
+      },
+      "papers": 9,
+      "ready": true
+    },
+    {
+      "code": "BMS-1",
+      "title": "Introduction to NGO Management",
+      "year": 3,
+      "type": "theory",
+      "exam": {
+        "time": "2 hours",
+        "marks": 50,
+        "format": "Written"
+      },
+      "papers": 12,
+      "ready": true
+    },
+    {
+      "code": "BECS-184",
+      "title": "Data Analysis",
+      "year": 3,
+      "type": "mixed",
+      "exam": {
+        "time": "3 hours",
+        "marks": 100,
+        "format": "Written"
+      },
+      "papers": 8,
+      "ready": true
+    }
   ]
 }

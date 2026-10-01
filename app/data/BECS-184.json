@@ -1,0 +1,1894 @@
+{
+ "code": "BECS-184",
+ "title": "Data Analysis",
+ "pattern": {
+  "time": "3 hours",
+  "marks": 100,
+  "questions": 12,
+  "attempt": 7,
+  "each": 20,
+  "parts": [
+   {
+    "id": "A",
+    "name": "Section A (2 of 4, 20 marks each)",
+    "attempt": 2,
+    "of": 4,
+    "each": 20
+   },
+   {
+    "id": "B",
+    "name": "Section B (5 of 7–8, 12 marks each)",
+    "attempt": 5,
+    "of": 8,
+    "each": 12
+   }
+  ],
+  "summary": "Section A: answer 2 of 4 questions (20 marks each). Section B: answer 5 of 7 or 8 questions (12 marks each); the last question is three short notes of 4 marks. The same paper is set for BA, B.Com and B.Sc. Expect one or two short sums (correlation, mean and SD, histogram)."
+ },
+ "blocksOfficial": true,
+ "sessions": [
+  "2022-12",
+  "2023-06",
+  "2023-12",
+  "2024-06",
+  "2024-12",
+  "2025-06",
+  "2025-12",
+  "2026-06"
+ ],
+ "sessionNotes": {
+  "2022-12": "Section B had 7 questions.",
+  "2023-06": "Section B had 7 questions.",
+  "2023-12": "Section B had 7 questions.",
+  "2024-06": "Section B had 7 questions."
+ },
+ "examTips": {
+  "choosing": [
+   "Composite index (steps, ranking method, PQLI, HDI) was asked in 7 of the 8 papers — prepare it first.",
+   "Central tendency, data collection tools, hypothesis testing, correlation and graphs come up in almost every paper.",
+   "In Section B write about 300 words per 12-mark answer; for short notes, about 100 words each with one example.",
+   "Draw diagrams (skewness, kurtosis, normal curve, histogram, ogive) wherever they fit — they earn marks."
+  ],
+  "numerical": [
+   "Practise: correlation coefficient with its t-test, sample mean and SD, harmonic/geometric mean, percentile rank, and drawing a histogram on graph paper.",
+   "Show the working table (X, Y, X², Y², XY) — method marks are given even if arithmetic slips.",
+   "For the sample SD divide by n − 1 and say so."
+  ]
+ },
+ "blocks": [
+  {
+   "no": 1,
+   "title": "Review of Mathematical and Statistical Concepts"
+  },
+  {
+   "no": 2,
+   "title": "Data Collection and Presentation of Data"
+  },
+  {
+   "no": 3,
+   "title": "Analysis of Quantitative Data"
+  },
+  {
+   "no": 4,
+   "title": "Composite Index Numbers and Qualitative Data"
+  }
+ ],
+ "topics": [
+  {
+   "id": "composite",
+   "name": "Composite Index (PQLI, HDI, GDI)",
+   "block": 4,
+   "kind": "theory",
+   "units": [
+    {
+     "block": 4,
+     "unit": 10,
+     "title": "Composite Index Numbers"
+    }
+   ],
+   "summary": "Meaning of a composite index, the ten steps in building one, handling missing values and outliers, the four methods (simple ranking, indices, mean standardisation, range equalisation), PQLI, HDI and GDI, merits and limitations.",
+   "points": [
+    "A composite index combines several indicators of a many-sided idea (development, deprivation, food security) into one score, so regions or years can be ranked and compared.",
+    "All indicators must point the same way (unidirectional): a negative indicator such as the share of agricultural labourers is converted, e.g. 100 − value, before combining.",
+    "Steps in construction: theoretical framework → selection of indicators → imputation of missing data → multivariate analysis of the indicators → normalisation → weighting and aggregation → uncertainty and sensitivity analysis → going back to the detail → links to other indicators → visualisation of results.",
+    "Missing values: drop the cases only if few are missing and dropping does not bias the result (missing data are often commoner among poorer households); otherwise impute (e.g. a group average) and record how it was done. Extreme values (outliers) must be checked because they can become unintended benchmarks.",
+    "Simple ranking method: rank every unit on each indicator (1 = best), add or average the ranks; the unit with the best average rank is the most developed.",
+    "Indices method: express each unit's value as an index with the group average = 100, then average the indices. Mean standardisation: divide each value by the mean of that indicator (Malkangiri 73 ÷ 59 = 1.237) and average the results.",
+    "Range equalisation (max–min, used by UNDP for the HDI): index = (actual − minimum) ÷ (maximum − minimum), giving 0 to 1; the minimum and maximum are 'goalposts', taken from the data or set by judgement.",
+    "PQLI (Morris D. Morris, 1979): average of three indicators — life expectancy, infant mortality and literacy — each scaled 0–100 (worst to best) with equal weights; e.g. (75 + 40 + 65) ÷ 3 = 60. It was not a UNDP index, although one past paper calls it so.",
+    "HDI (UNDP): health (life expectancy at birth, goalposts 20–85 years), education (expected and mean years of schooling) and standard of living (per-capita income, PPP $, in logs); dimension indices by the max–min formula, HDI = their geometric mean. GDI = female HDI ÷ male HDI.",
+    "Merits: sums up many indicators in one number for policy, eases comparison across regions and over time, easy to communicate. Limitations: can mislead if badly built, choice of weights and goalposts involves value judgement, results change with the method chosen."
+   ],
+   "frame": "Definition → steps in order (or the method asked, with a small worked table) → an example index (HDI/PQLI) → merits and limitations → conclusion.",
+   "mistakes": [
+    "Combining indicators that point in opposite directions without converting them first.",
+    "Writing that PQLI was made by UNDP — it was Morris D. Morris's index; the HDI is UNDP's.",
+    "Using an arithmetic mean for the HDI — it is the geometric mean of the three dimension indices."
+   ],
+   "method": [
+    "Make every indicator point the same way (positive or negative).",
+    "Ranking: rank each indicator, average the ranks. Indices: value ÷ group average × 100, then average. Mean standardisation: value ÷ mean, then average.",
+    "Range equalisation: (X − min) ÷ (max − min) for each indicator, then average (or geometric mean for HDI).",
+    "Arrange units by the final score and interpret (most and least developed)."
+   ],
+   "formula": [
+    "Range equalisation index = (X − Min) ÷ (Max − Min)",
+    "Mean standardisation = X ÷ X̄",
+    "PQLI = (Life expectancy index + Infant mortality index + Literacy index) ÷ 3",
+    "HDI = (I_health × I_education × I_income)^(1/3)",
+    "GDI = HDI_female ÷ HDI_male"
+   ],
+   "examples": [
+    "Example: simple ranking method for three districts\nIndicators (all positive): literacy %, households with safe water %, villages with paved roads %.\nDistrict A: 70, 80, 40 → ranks 1, 2, 2. District B: 60, 85, 50 → ranks 2, 1, 1. District C: 50, 60, 30 → ranks 3, 3, 3.\nAverage rank: A = 5/3 = 1.67, B = 4/3 = 1.33, C = 3. B is the most developed and C the most backward.\nHad one indicator been negative (e.g. % agricultural labourers), it would first be converted (100 − value) so that all point the same way.",
+    "Example: range equalisation and PQLI\nFemale literacy in a district is 54% with goalposts 10% (minimum) and 70% (maximum): index = (54 − 10) ÷ (70 − 10) = 0.733. Doing this for every indicator and averaging gives the district's composite index (for the HDI, a geometric mean of the dimension indices is used).\nPQLI: if a country rates 75 on life expectancy, 40 on infant mortality and 65 on literacy (each on a 0–100 scale), PQLI = (75 + 40 + 65) ÷ 3 = 60."
+   ]
+  },
+  {
+   "id": "central-tendency",
+   "name": "Measures of Central Tendency & Position",
+   "block": 1,
+   "kind": "mixed",
+   "units": [
+    {
+     "block": 1,
+     "unit": 2,
+     "title": "Statistical Concepts",
+     "part": "2.4 and 2.6"
+    }
+   ],
+   "summary": "Mean (arithmetic, weighted, geometric, harmonic), median and mode, their relationship in symmetrical and skewed data, which to choose, and measures of position — z scores, percentiles, quartiles and deciles.",
+   "points": [
+    "Central tendency is the tendency of data to cluster around a central value; the usual measures are the arithmetic mean, median and mode (also weighted, geometric and harmonic means).",
+    "Mean: uses every value, varies least from sample to sample, allows algebra (combined mean) — but is pulled by outliers and cannot be found for open-ended classes.",
+    "Median: the middle value; best for skewed data and open-ended classes, little affected by extreme values. Mode: the most frequent value; the only average for nominal data (e.g. most-preferred brand or colour), may not exist or may not be unique.",
+    "Geometric mean suits rates of growth and ratios (average growth over several years); harmonic mean suits rates and speeds, e.g. average price when equal amounts of money are spent on each good.",
+    "Symmetrical distribution: mean = median = mode. Moderately skewed: Mode = 3 Median − 2 Mean (Karl Pearson). Positive skew: mean > median > mode; negative skew: mean < median < mode.",
+    "Measurement scale decides the average: nominal → mode; ordinal → median; interval/ratio → mean (median if skewed).",
+    "Measures of position: z score = (X − mean) ÷ SD, which compares positions in different distributions; percentiles divide data into 100 parts, quartiles into 4, deciles into 10. The median is the 50th percentile and Q2.",
+    "Percentile rank of a value = (number of values below it + 0.5) ÷ n × 100. A percentile is a position, not a percentage of marks."
+   ],
+   "frame": "Definition → each measure with formula, merits and limits → relationship (symmetrical vs skewed) → when to use which → short worked example.",
+   "mistakes": [
+    "Using the arithmetic mean for averaging growth rates (use the geometric mean) or for rates with equal spending (use the harmonic mean).",
+    "Confusing percentile with percentage.",
+    "Writing that the mean is the best average for nominal data — only the mode works there."
+   ],
+   "method": [
+    "Ungrouped: mean = ΣX/n; median = middle value after arranging; mode = most frequent value.",
+    "Grouped: mean = Σfm/N; median = L + (N/2 − cf)/f × h; mode = L + (f₁ − f₀)/(2f₁ − f₀ − f₂) × h.",
+    "Harmonic mean = n ÷ Σ(1/X) (weighted: Σf ÷ Σ(f/X)); geometric mean = (X₁ × X₂ × … × Xn)^(1/n).",
+    "Percentile rank: arrange the data, count values below X, apply (below + 0.5)/n × 100."
+   ],
+   "formula": [
+    "Mode = 3 Median − 2 Mean",
+    "H.M. = n ÷ Σ(1/X)",
+    "G.M. = (X₁X₂…Xn)^(1/n)",
+    "z = (X − X̄) ÷ s",
+    "Percentile rank = (values below + 0.5) ÷ n × 100"
+   ],
+   "examples": [
+    "Example: harmonic mean (June 2024, Q1(b))\nMarks X: 10, 20, 30, 40, 50 with frequencies 2, 4, 8, 3, 3 (N = 20).\nΣ(f/X) = 2/10 + 4/20 + 8/30 + 3/40 + 3/50 = 0.2 + 0.2 + 0.2667 + 0.075 + 0.06 = 0.8017.\nH.M. = N ÷ Σ(f/X) = 20 ÷ 0.8017 = 24.95.",
+    "Example: which average? (Dec 2023 Q2(b), June 2024 Q2(b), Dec 2024 Q2(b))\nAverage price: goods cost ₹10/kg and ₹5/kg and ₹20 is spent, taking ₹10 on each (equal spending). That buys 1 kg + 2 kg = 3 kg, so the average price is 20 ÷ 3 = ₹6.67/kg — the harmonic mean of 10 and 5, not the arithmetic mean of ₹7.50.\nPercentile rank: scores 2, 3, 5, 6, 8, 10, 12, 15, 18, 20. Seven scores are below 15, so its percentile rank = (7 + 0.5) ÷ 10 × 100 = 75th percentile.\nGrowth rates 10%, 20%, 18%, −9%, 11%: use the geometric mean of the growth factors: (1.10 × 1.20 × 1.18 × 0.91 × 1.11)^(1/5) = 1.0949, i.e. 9.49% a year (the arithmetic mean, 10%, overstates it)."
+   ]
+  },
+  {
+   "id": "dispersion",
+   "name": "Measures of Dispersion",
+   "block": 1,
+   "kind": "mixed",
+   "units": [
+    {
+     "block": 1,
+     "unit": 2,
+     "title": "Statistical Concepts",
+     "part": "2.5"
+    }
+   ],
+   "summary": "Meaning of dispersion, absolute and relative measures — range, quartile deviation, mean deviation, standard deviation and variance, coefficient of variation — and which measure is most reliable.",
+   "points": [
+    "Dispersion is the spread of values around the centre; a small dispersion means the data are uniform, a large one means they vary a lot.",
+    "A good measure is rigidly defined, based on all items, easy to understand and compute, little affected by extreme items and capable of algebraic treatment.",
+    "Absolute measures (in the units of the data): range, quartile deviation, mean deviation, standard deviation. Relative measures (unit-free, for comparison): coefficients of range, quartile deviation, mean deviation, and the coefficient of variation.",
+    "Range = largest − smallest; simplest but depends only on two extreme values.",
+    "Mean deviation = average of absolute deviations from the mean (or median); ignores signs, so it is less suited to algebra.",
+    "Standard deviation (Karl Pearson, 1893) = square root of the mean of squared deviations from the mean; variance = SD². For a sample, divide by n − 1 to get an unbiased estimate.",
+    "Standard deviation is the most reliable measure: it uses all values, is rigidly defined, is used in further analysis (correlation, tests) and varies least between samples.",
+    "Coefficient of variation = SD ÷ mean × 100. It is better than SD for comparing series with different units or very different means; the lower CV is the more consistent series."
+   ],
+   "frame": "Meaning → table of absolute vs relative measures → each with formula and one merit/limit → most reliable measure with reasons → small example.",
+   "mistakes": [
+    "Comparing the SDs of two series with different means or units instead of their CVs.",
+    "Dividing by n instead of n − 1 when the question asks for the sample SD of a sample.",
+    "Forgetting the units of the SD (same as the data) and that CV is a percentage."
+   ],
+   "method": [
+    "Find the mean.",
+    "Take deviations d = X − mean and square them.",
+    "Sample variance s² = Σd² ÷ (n − 1); s = √s² (population: divide by N).",
+    "CV = s ÷ mean × 100; compare CVs to judge consistency."
+   ],
+   "formula": [
+    "s = √[Σ(X − X̄)² ÷ (n − 1)]",
+    "σ = √[Σ(X − μ)² ÷ N]",
+    "CV = (SD ÷ Mean) × 100",
+    "Coefficient of range = (L − S) ÷ (L + S)"
+   ],
+   "examples": [
+    "Example: mean and SD of a sample (June 2023, Q2(a))\nHeights of 7 plants (cm): 52, 35, 25, 45, 55, 20, 13. Mean = 245 ÷ 7 = 35 cm.\nDeviations: 17, 0, −10, 10, 20, −15, −22; squares: 289, 0, 100, 100, 400, 225, 484 → Σd² = 1,598.\nSample SD s = √(1,598 ÷ 6) = √266.33 = 16.32 cm (divide by n − 1 because it is a sample; dividing by n would give 15.11).",
+    "Example: why CV is better for comparing\nFactory A: mean wage ₹500, SD ₹50 → CV = 10%. Factory B: mean wage ₹200, SD ₹30 → CV = 15%.\nA has the larger SD but the smaller CV, so wages in A are more uniform. The SD alone misleads because the means differ."
+   ]
+  },
+  {
+   "id": "presentation",
+   "name": "Classification, Tabulation, Diagrams & Graphs",
+   "block": 2,
+   "kind": "mixed",
+   "units": [
+    {
+     "block": 2,
+     "unit": 6,
+     "title": "Data Presentation"
+    }
+   ],
+   "summary": "Objectives and types of classification, frequency distributions, tabulation and the parts of a table, bar diagrams, pie charts and pictograms, histogram, frequency polygon, ogives, importance and misuse of graphs.",
+   "points": [
+    "Classification groups data by common characteristics — it condenses data, shows similarities and differences, and makes comparison possible.",
+    "Types: simple array (data in ascending or descending order), discrete frequency distribution (each value with its frequency, using tally marks), grouped frequency distribution (exclusive classes like 10–20, 20–30 or inclusive classes like 10–19, 20–29) and cumulative ('less than' and 'more than') distributions; also classification by attribute, geography or time.",
+    "Tabulation presents classified data in rows and columns. Parts of a table: table number, title, caption (column headings), stub (row headings), body, head note (units), footnote and source.",
+    "Rules for a table: compact and clear, logical order, units stated, related items placed together, totals where useful, full source given.",
+    "Diagrams (bar, multiple bar, component bar, pie chart, pictogram) only display data; graphs (line graph, histogram, frequency polygon, frequency curve, ogive) can also be used for analysis.",
+    "Bar diagram vs histogram: bars have equal width and gaps and suit categories; a histogram's bars touch, the width is the class interval and the area shows frequency — it is for continuous grouped data.",
+    "Frequency polygon: join the mid-points of the histogram's tops (adding empty classes at both ends). Its advantages over a histogram: several distributions can be compared on one graph, and it shows the shape of the distribution more clearly.",
+    "Ogive: 'less than' cumulative frequencies against upper class limits (rising curve) and 'more than' against lower limits (falling curve); where they cross is the median. Graphs also show trends, help forecasting and reveal correlation (scatter diagram).",
+    "Misuse: a y-axis that does not start at zero, unequal scales or 3-D effects can exaggerate small differences."
+   ],
+   "frame": "Meaning and purpose → types or parts (as asked) → a neat labelled diagram from given or hypothetical data → advantages/precautions → conclusion.",
+   "mistakes": [
+    "Leaving gaps between histogram bars, or drawing a histogram for categories.",
+    "Not labelling axes, scale and title.",
+    "Plotting a 'less than' ogive against mid-points instead of upper class limits."
+   ],
+   "method": [
+    "Histogram: classes on the x-axis (continuous, exclusive limits), frequency on the y-axis; draw touching bars; label axes and title.",
+    "If class widths differ, plot frequency density (frequency ÷ width).",
+    "Frequency polygon: mark mid-point of each bar top, join with straight lines, close at the mid-points of empty classes at each end."
+   ],
+   "examples": [
+    "Example: histogram and frequency polygon (Dec 2023 Q10)\nValue 5–10, 10–15, 15–20, 20–25, 25–30 with frequencies 12, 25, 30, 40, 20.\nHistogram: mark 5, 10, … 30 on the x-axis and frequency 0–40 on the y-axis; draw touching bars of heights 12, 25, 30, 40 and 20; title and label both axes. The tallest bar (20–25) is the modal class.\nFrequency polygon: join the mid-points of the bar tops (7.5, 12.5, 17.5, 22.5, 27.5) and close at 2.5 and 32.5 on the x-axis.",
+    "Example: parts of a table\nTable 3 (table number): Enrolment by Course and Gender, 2025 (title). Stub: courses (B.Com, BA, B.Sc) in rows. Caption: Male, Female, Total in columns. Head note: (in thousands). Body: the figures. Footnote: '*Provisional'. Source: University Annual Report 2025."
+   ]
+  },
+  {
+   "id": "surveys",
+   "name": "Census, Sample Surveys & Errors",
+   "block": 2,
+   "kind": "theory",
+   "units": [
+    {
+     "block": 2,
+     "unit": 4,
+     "title": "Data Collection: Methods and Sources"
+    }
+   ],
+   "summary": "Census and sample survey, population, frame and sampling fraction, random and non-random sampling, stages in planning and organising an enquiry, sampling and non-sampling errors, cost of an enquiry and choosing between a census and a survey.",
+   "points": [
+    "Population (universe): all units under study; a list of the units is the frame (sampling frame). A census enumerates every unit (e.g. India's Population Census, the Economic Census); a sample survey covers a selected subset (e.g. NSSO surveys, Annual Survey of Industries).",
+    "Sampling fraction = sample size ÷ population size.",
+    "Random sampling gives every unit a known chance of selection, so conclusions about the population and the size of the sampling error can be worked out. Non-random sampling (convenience, purposive, snowball, quota) gives no such assurance; it suits exploratory work.",
+    "Stages in planning and organising a census or survey: (1) scope and objectives with a tabulation plan, (2) preparation of the frame, (3) finalising the schedule or questionnaire, (4) manual of instructions and training of field staff, (5) scrutiny note and coding plan, (6) recruitment and manpower planning, (7) organisation of fieldwork.",
+    "Organising fieldwork: allot workloads to investigators and supervisors, keep forms and stationery supplied, answer field queries quickly, keep a leave reserve, and dispatch filled schedules safely for processing.",
+    "Sampling error: the difference between the sample result and the true population value that arises because only a sample is studied; it can be estimated and controlled (by sample size) only in random samples.",
+    "Non-sampling errors (in census and survey alike): errors of measurement, false or cooked-up data, investigator and respondent bias, recall lapse, faulty or incomplete frame, non-response, and processing and presentation errors. Remedies: clear definitions, training, supervision, cross-checks, short reference periods, an up-to-date frame.",
+    "Why a sample survey may be preferred to a census: lower cost, faster results, can be repeated more often, easier to organise, better training and supervision so fewer non-sampling errors, more detailed data. A census is needed when figures are required for every small area or unit.",
+    "Cost and duration depend on: census or survey, the number and spread of units, the amount of data per unit, and the mode of collection (visit, mail, phone, records)."
+   ],
+   "frame": "Definitions (census, survey, frame) → stages or types of errors as headed points with remedies → comparison or conclusion.",
+   "mistakes": [
+    "Saying non-sampling errors occur only in sample surveys — they occur in censuses too, often more.",
+    "Calling convenience sampling 'random'."
+   ],
+   "examples": [
+    "Example: planning a household consumption survey\nScope and objectives with a tabulation plan (expenditure by item and income group) → frame (the latest census house list) → schedule (items, reference period 30 days) → instruction manual and training (what counts as consumption) → scrutiny note and coding plan → recruitment of investigators and supervisors → fieldwork (workloads, supplies, quick answers to queries, safe dispatch of schedules).\nWith 400 households sampled from 20,000, the sampling fraction is 400 ÷ 20,000 = 0.02 (2%).",
+    "Example: spotting non-sampling errors\nA respondent rounds her age to 40 (measurement error); an investigator fills a form without visiting (cooked-up data); a husband answers for his wife about her work (respondent bias); a farmer forgets last year's illness (recall lapse); new houses are missing from an old list (faulty frame); locked houses are skipped (non-response). Asking people outside a mall is convenience (non-random) sampling: cheap and quick, but its results cannot be generalised, and the sampling error cannot be measured."
+   ]
+  },
+  {
+   "id": "tools",
+   "name": "Tools & Methods of Data Collection",
+   "block": 2,
+   "kind": "theory",
+   "units": [
+    {
+     "block": 2,
+     "unit": 4,
+     "title": "Data Collection: Methods and Sources",
+     "part": "4.2 Methods"
+    },
+    {
+     "block": 2,
+     "unit": 5,
+     "title": "Tools of Data Collection"
+    }
+   ],
+   "summary": "Primary and secondary data collection: census, survey, observation and experimental methods; quantitative tools (questionnaire, schedule, interview) and qualitative tools (participant observation, focused interview, oral and life histories, case study, group and focus group discussions, key informants, narratives).",
+   "points": [
+    "Primary data are collected first-hand for the study; secondary data were collected by someone else (census reports, NSSO, RBI, Economic Survey, CMIE). Four methods of collecting primary data: census, sample survey, observation and experiment.",
+    "Observation records events as they happen (temperature, blood pressure); the experimental method controls other factors to measure the effect of one (e.g. manure on yield).",
+    "Quantitative research: one reality, researcher separate from the subject, large representative samples, testing hypotheses (deductive). Its tools: questionnaire, schedule, structured interview, observation.",
+    "Questionnaire (filled by the respondent) vs schedule (filled by the investigator, who asks the questions). A good questionnaire: covering letter, short, simple language, no personal or sensitive questions, no double negatives, logical order from general to specific, no leading questions, neat layout.",
+    "Interviews: structured (fixed questions, comparable answers — for descriptive studies) or unstructured (flexible, open questions — for exploratory and qualitative research; rich insight but costly, needs skill, risk of bias, answers hard to compare).",
+    "Qualitative research: many socially constructed realities, researcher close to the subject, small purposive samples, inductive. Its tools: participant observation, focused (in-depth) interview, oral and life histories, case study, group discussion, focus group discussion, key informants, narratives.",
+    "Participant observation: the researcher lives and works with the group — natural, detailed data; but not standardised and the researcher may lose objectivity. Non-participant or quasi-participant observation (watching from outside, video) reduces these drawbacks.",
+    "Case study (Yin): an in-depth study of one unit (firm, village) in its real-life context, using several sources of evidence — holistic, inductive and idiographic. Focus group discussion: a planned discussion of 6–10 people led by a moderator to learn group norms and meanings.",
+    "Key informants: people who know the community well (officials, health workers, leaders, shopkeepers). Narratives: letting respondents tell their own stories, since different people read the same question differently."
+   ],
+   "frame": "Meaning → the tools asked, each with features, advantages and limitations → when to use which → conclusion.",
+   "mistakes": [
+    "Mixing up questionnaire and schedule.",
+    "Calling a focus group discussion just a 'group interview' — stress the moderator and group interaction."
+   ],
+   "examples": [
+    "Example: five questions for a Swachh Bharat study (Dec 2024 Q10)\n1. Does your household have its own toilet? (Yes/No)\n2. If yes, do all members use it regularly? (Always/Sometimes/Never)\n3. How is household waste disposed of? (Collected by panchayat/Dumped in open/Burnt/Other)\n4. Has anyone from the panchayat explained the scheme to you? (Yes/No)\n5. How has village cleanliness changed in the last three years? (Improved a lot/Somewhat/No change/Worse)\nThey are short, simple, neutral and closed, ordered from general to specific, and avoid personal or leading questions.",
+    "Example: choosing tools for a study of migrant workers\nA structured schedule for 300 workers (wages, hours, remittances) gives comparable numbers. Then a focus group discussion of 8 workers explores shared problems, life histories of 5 workers show how migration changed their families, a contractor and a union leader serve as key informants, and a month of non-participant observation at the work site checks what people say against what they do."
+   ]
+  },
+  {
+   "id": "correlation",
+   "name": "Correlation & Regression (Bivariate Analysis)",
+   "block": 3,
+   "kind": "mixed",
+   "units": [
+    {
+     "block": 3,
+     "unit": 8,
+     "title": "Bivariate Data Analysis"
+    }
+   ],
+   "summary": "Bivariate analysis, scatter plots, Pearson's correlation coefficient and its significance test, correlation vs causation, regression lines and coefficients, coefficient of determination and standard error of estimate.",
+   "points": [
+    "Bivariate analysis studies the relationship between two variables (advertising and sales, study hours and marks); start with a scatter plot.",
+    "Pearson's product-moment correlation coefficient r measures the strength and direction of a linear relationship; −1 ≤ r ≤ +1; r = 0 means no linear relation. It is independent of origin and scale.",
+    "Test of significance: H₀: ρ = 0 vs H₁: ρ ≠ 0; t = r√(n − 2) ÷ √(1 − r²) with n − 2 degrees of freedom; reject H₀ if |t| exceeds the critical value.",
+    "Correlation is not causation. A significant r may come from: X causing Y, Y causing X (reverse), a third (lurking) variable causing both, a complex set of many variables, or coincidence. Averages can exaggerate correlation.",
+    "To study cause and effect: plan an experiment or control the other factors, check the time order (the cause comes first), rule out third variables, and use regression with the cause as the independent variable.",
+    "Regression estimates one variable from another. Y on X: Y = a + bX, found by least squares (minimise the sum of squared vertical errors) from the normal equations ΣY = na + bΣX and ΣXY = aΣX + bΣX².",
+    "Properties of regression coefficients: both have the same sign as r; r = ±√(b_yx × b_xy) (geometric mean); if one exceeds 1 the other is below 1; independent of origin but not of scale; both lines pass through (X̄, Ȳ); r = ±1 → lines coincide, r = 0 → lines perpendicular.",
+    "Coefficient of determination r² = explained variation ÷ total variation — the share of the change in Y explained by X (r = 0.9 → 81%).",
+    "Standard error of estimate = √[Σ(Y − Ŷ)² ÷ (n − 2)] — the spread of actual values around the regression line; smaller means better predictions."
+   ],
+   "frame": "Meaning → formula and working (for sums) or properties as headed points → interpretation in words → conclusion.",
+   "mistakes": [
+    "Concluding causation from a high r.",
+    "Using regression to predict when r is not significant.",
+    "Mixing up b_yx (Y on X) and b_xy (X on Y)."
+   ],
+   "method": [
+    "Table of X, Y, X², Y², XY; find the totals.",
+    "r = [nΣXY − ΣXΣY] ÷ √{[nΣX² − (ΣX)²][nΣY² − (ΣY)²]}.",
+    "Significance: t = r√(n − 2)/√(1 − r²); compare with the critical t at n − 2 d.f.",
+    "Regression Y on X: b = [nΣXY − ΣXΣY] ÷ [nΣX² − (ΣX)²]; a = Ȳ − bX̄."
+   ],
+   "formula": [
+    "r = [nΣXY − ΣXΣY] ÷ √{[nΣX² − (ΣX)²][nΣY² − (ΣY)²]}",
+    "t = r√(n − 2) ÷ √(1 − r²)",
+    "b = [nΣXY − ΣXΣY] ÷ [nΣX² − (ΣX)²], a = Ȳ − bX̄",
+    "r² = Explained variation ÷ Total variation"
+   ],
+   "examples": [
+    "Example: correlation and its significance (Dec 2022, Q2)\nCars X: 63.0, 29.0, 20.8, 19.1, 13.4, 8.5; revenue Y: 7.0, 3.9, 2.1, 2.8, 1.4, 1.5 (n = 6).\nΣX = 153.8, ΣY = 18.7, ΣXY = 682.77, ΣX² = 5,859.26, ΣY² = 80.67.\nr = (6 × 682.77 − 153.8 × 18.7) ÷ √[(6 × 5,859.26 − 153.8²)(6 × 80.67 − 18.7²)] = 1,220.56 ÷ 1,242.96 = 0.982.\nt = r√(n − 2) ÷ √(1 − r²) = 0.982 × 2 ÷ √(1 − 0.964) = 10.39 > 2.776 (critical value, 4 d.f.) → reject H₀: the correlation is significant.",
+    "Example: correlation vs causation, and r²\nIce-cream sales and drowning deaths are highly correlated, but both are caused by hot weather (a lurking third variable). To test whether a smart board raises marks, compare a class taught with it and a similar class without it, before and after (control other factors), then test the difference in means.\nIf r = 0.9 between advertising and sales, r² = 0.81: 81% of the variation in sales is explained by advertising, and 19% by other factors."
+   ]
+  },
+  {
+   "id": "hypothesis",
+   "name": "Hypothesis Testing, z/t Tests & ANOVA",
+   "block": 3,
+   "kind": "theory",
+   "units": [
+    {
+     "block": 3,
+     "unit": 7,
+     "title": "Univariate Data Analysis",
+     "part": "7.3.6"
+    },
+    {
+     "block": 3,
+     "unit": 8,
+     "title": "Bivariate Data Analysis",
+     "part": "8.6 and ANOVA"
+    }
+   ],
+   "summary": "Null and alternative hypotheses, one- and two-tailed tests, steps in testing, type I and II errors, level of significance and power, the p-value method, z and t tests, F-test for variances and ANOVA for three or more means.",
+   "points": [
+    "A statistical hypothesis is a claim about a population parameter. Null hypothesis H₀: no difference (contains '='); alternative H₁: there is a difference (≠ two-tailed; > right-tailed; < left-tailed).",
+    "Steps (traditional method): state H₀ and H₁ → choose the level of significance α and the test → find the critical value(s) → compute the test statistic from the sample → reject H₀ if it falls in the critical region → state the conclusion in words.",
+    "Type I error: rejecting a true H₀ (probability α). Type II error: not rejecting a false H₀ (probability β). Power = 1 − β. Reducing α raises β for a given sample; a larger sample reduces both.",
+    "Which is more serious depends on the case: convicting an innocent person or approving a harmful drug (type I) is usually treated as worse, so α is kept small (0.05 or 0.01).",
+    "p-value method: the p-value is the probability of getting a result at least as extreme as the sample's if H₀ is true. If p ≤ α reject H₀; if p > α do not reject.",
+    "z-test: population SD known, or large samples (n ≥ 30). t-test: population SD unknown and a small sample from a roughly normal population; d.f. = n − 1. Both compare one mean with a value, or two means; a z-test also compares two proportions.",
+    "F-test compares two variances (F = larger variance ÷ smaller variance).",
+    "ANOVA tests three or more means at once using F = between-group variance ÷ within-group variance. Repeated t-tests are avoided because they ignore the other means, inflate the chance of a type I error and need many tests (3 means → 3 tests, 5 → 10). Assumptions: normal populations, independent samples, equal variances.",
+    "MANOVA extends ANOVA to two or more dependent variables at once (e.g. effect of teaching method on both marks and attendance)."
+   ],
+   "frame": "Definitions → steps or comparison as headed points → a short worked illustration (H₀, H₁, decision) → conclusion.",
+   "mistakes": [
+    "Writing 'accept H₀' as proof that it is true — say 'do not reject'.",
+    "Putting the '=' sign in H₁.",
+    "Using many t-tests instead of ANOVA for three or more groups."
+   ],
+   "examples": [
+    "Example: a one-sample test\nA battery maker claims a mean life of 36 months. A sample of 36 batteries with an additive averages 37.5 months; σ = 3 months.\nH₀: μ = 36; H₁: μ > 36 (right-tailed), α = 0.05, critical z = 1.645.\nz = (37.5 − 36) ÷ (3/√36) = 1.5 ÷ 0.5 = 3.0 > 1.645 → reject H₀: the additive increases battery life. Since z = 3 has a p-value of about 0.001 < 0.05, the p-value method gives the same decision.",
+    "Example: types of error and ANOVA\nType I: a court convicts an innocent person (H₀ 'innocent' rejected though true). Type II: a guilty person goes free. A drug regulator keeps α small because approving a useless drug (type I) is very costly.\nTo compare mean yields of three fertilisers, use one ANOVA F-test (between-group variance ÷ within-group variance) instead of three t-tests, which would raise the overall chance of a type I error."
+   ]
+  },
+  {
+   "id": "inference",
+   "name": "Normal Distribution, Estimation & Sampling Concepts",
+   "block": 3,
+   "kind": "theory",
+   "units": [
+    {
+     "block": 3,
+     "unit": 7,
+     "title": "Univariate Data Analysis"
+    }
+   ],
+   "summary": "Exploratory data analysis and boxplots, parameters and statistics, random variables and probability distributions, the normal and standard normal distributions, central limit theorem, standard error, point and interval estimation, properties of a good estimator and the t distribution.",
+   "points": [
+    "Descriptive statistics summarise the data in hand; inferential statistics use a sample to draw conclusions about a population, with a measured risk of error.",
+    "Parameter: a numerical summary of the population (μ, σ), usually unknown. Statistic: the same summary computed from a sample (X̄, s), used to estimate the parameter.",
+    "Random variable: a variable whose value depends on chance (number of heads in 3 tosses, daily rainfall). A probability distribution lists its values with their probabilities; for a continuous variable, probabilities are areas under the curve, the curve is never negative and the total area is 1.",
+    "Normal distribution: bell-shaped, symmetrical, unimodal; mean = median = mode at the centre; continuous; tails never touch the x-axis; total area 1; about 68%, 95% and 99.7% of values lie within 1, 2 and 3 SDs of the mean.",
+    "Standard normal distribution: mean 0, SD 1; any normal value is converted by z = (X − μ) ÷ σ and areas read from the z table — used to find probabilities and percentages.",
+    "Central limit theorem: the distribution of the sample mean approaches normal as n grows (n ≥ 30 is usually enough), whatever the shape of the population. Its standard deviation is the standard error = σ ÷ √n.",
+    "Point estimate: a single value (sample mean 65). Interval estimate (confidence interval): a range believed to contain the parameter with a stated confidence, e.g. 95% CI = X̄ ± 1.96 σ/√n. Higher confidence gives a wider interval.",
+    "A good estimator is unbiased (its expected value equals the parameter), consistent (approaches the parameter as n grows) and efficient (has the smallest variance).",
+    "t distribution: bell-shaped and symmetric about 0 like the normal, but flatter with heavier tails; a family of curves indexed by degrees of freedom (n − 1); approaches the normal as d.f. increase. Used for small samples when σ is unknown.",
+    "Boxplot (five-number summary: minimum, Q1, median, Q3, maximum) shows the centre, spread, skewness and outliers at a glance."
+   ],
+   "frame": "Definition → properties or comparison as numbered points → a small numerical or diagram illustration → uses → conclusion.",
+   "mistakes": [
+    "Saying the normal curve touches the x-axis.",
+    "Confusing the standard deviation of the data with the standard error of the mean.",
+    "Thinking a 95% interval contains 95% of the data values."
+   ],
+   "formula": [
+    "z = (X − μ) ÷ σ",
+    "Standard error = σ ÷ √n",
+    "95% CI for μ = X̄ ± 1.96 σ/√n",
+    "t = (X̄ − μ) ÷ (s/√n), d.f. = n − 1"
+   ],
+   "examples": [
+    "Example: normal distribution and a confidence interval\nMarks are normal with mean 50 and SD 10. A student scoring 70 has z = (70 − 50) ÷ 10 = 2, so about 97.7% of students scored below them. About 95% of students lie between 30 and 70 (mean ± 2 SD).\nA sample of 100 students has mean marks 65 with σ = 10: standard error = 10 ÷ √100 = 1, so the 95% CI = 65 ± 1.96 × 1 = 63.04 to 66.96.",
+    "Example: parameter vs statistic, and degrees of freedom\nThe average income of all households in a city (μ) is a parameter; the average of 500 sampled households (X̄ = ₹32,000) is a statistic used to estimate it.\nDegrees of freedom: if 5 values must average 10 (total 50), four can be anything, but the fifth is then fixed — so d.f. = n − 1 = 4."
+   ]
+  },
+  {
+   "id": "multivariate",
+   "name": "Multivariate Data Analysis",
+   "block": 3,
+   "kind": "theory",
+   "units": [
+    {
+     "block": 3,
+     "unit": 9,
+     "title": "Multivariate Data Analysis"
+    }
+   ],
+   "summary": "Meaning of multivariate analysis, dependence and interdependence techniques, the main techniques (factor, multiple regression, discriminant and logistic, canonical correlation, MANOVA, conjoint, cluster, perceptual mapping, correspondence) and guidelines for interpreting results.",
+   "points": [
+    "Univariate analysis studies one variable, bivariate two, multivariate three or more variables together — needed because economic and social outcomes depend on many interacting factors.",
+    "Classification: dependence methods (some variables explain others) — multiple regression, multiple discriminant analysis, MANOVA, canonical correlation; interdependence methods (no dependent variable) — factor analysis, cluster analysis, multidimensional scaling, latent structure analysis. The choice also depends on whether data are metric (interval, ratio) or non-metric (nominal, ordinal).",
+    "Factor / principal component analysis: condenses many correlated variables into a few underlying factors (e.g. 20 survey items → 3 factors of satisfaction).",
+    "Multiple regression: one metric dependent variable explained by several independent variables (Y = a + b₁X₁ + b₂X₂ + …), e.g. sales on price, advertising and income.",
+    "Discriminant analysis and logistic regression: predict a categorical outcome (default / no default; buyer / non-buyer).",
+    "Canonical correlation: relationship between two sets of variables. MANOVA: compares group means on several dependent variables at once.",
+    "Conjoint analysis: how customers trade off product features. Cluster analysis: groups similar cases (market segments). Perceptual mapping: a visual map of how consumers see competing brands. Correspondence analysis: a picture of cross-tabulated categories.",
+    "Guidelines for interpreting results: establish practical as well as statistical significance; remember that sample size affects all results; know your data (outliers, missing values, assumptions); strive for model parsimony; look at your errors; validate the results; use software carefully.",
+    "Structured approach (six steps): define the problem, objectives and technique → develop the analysis plan → evaluate the assumptions → estimate the model and assess fit → interpret the variate → validate the model."
+   ],
+   "frame": "Meaning → classification → 4–6 techniques with one-line use and an example each (or the guidelines, if asked) → conclusion.",
+   "mistakes": [
+    "Listing techniques without saying which are dependence and which interdependence methods.",
+    "Treating statistical significance alone as proof that a result matters."
+   ],
+   "examples": [
+    "Example: choosing a multivariate technique\nPredict a household's monthly spending from income, family size and education → multiple regression (dependence, metric outcome).\nPredict whether a borrower will default (yes/no) → discriminant analysis or logistic regression.\nGroup 1,000 customers into segments by buying habits → cluster analysis (interdependence).\nReduce 20 satisfaction questions to a few underlying factors → factor analysis.\nCompare three teaching methods on both marks and attendance together → MANOVA."
+   ]
+  },
+  {
+   "id": "qualitative",
+   "name": "Qualitative Research & Analysis",
+   "block": 4,
+   "kind": "theory",
+   "units": [
+    {
+     "block": 4,
+     "unit": 11,
+     "title": "Analysis of Qualitative Data"
+    },
+    {
+     "block": 2,
+     "unit": 5,
+     "title": "Tools of Data Collection",
+     "part": "5.2"
+    }
+   ],
+   "summary": "Qualitative vs quantitative research, qualitative research designs (phenomenology, ethnography, grounded theory, participatory action research, case study), qualitative data and sampling, and the approaches, techniques and steps of qualitative data analysis.",
+   "points": [
+    "Qualitative research studies meanings, experiences and social processes in depth, usually with small purposive samples and words rather than numbers; quantitative research measures and tests hypotheses on large samples.",
+    "Differences: constructed and multiple realities vs a single reality; researcher involved vs detached; inductive vs deductive; small purposive vs large random samples; findings bound to context vs generalisable; words, observations and texts vs numbers.",
+    "Designs: phenomenology (people's lived experience, e.g. losing a job), ethnography ('portrait of a people' — long participant observation of a group's culture), grounded theory (Glaser and Strauss — theory built from the data through coding, memoing and constant comparison), participatory action research (the community studies and acts on its own problem with the researcher), case study.",
+    "Qualitative sampling: snowball (participants refer others), purposive, convenience, extreme/deviant case, homogeneous, maximum variation and opportunistic sampling.",
+    "Approaches to analysis: deductive (use a structure set in advance, e.g. the research questions — quick) or inductive (let themes emerge from the data — slower, used when little is known).",
+    "Techniques: content analysis (categorise and count words, themes), narrative analysis (reconstruct people's stories), discourse analysis (language in its context), framework analysis (familiarise → thematic framework → code → chart → map and interpret), grounded theory analysis, thematic analysis (identify recurring themes).",
+    "Steps in analysis: transcribe the data → organise it by research question → code it (descriptive, in-vivo, pattern codes) → validate (accuracy and reliability) → draw conclusions. Software: NVivo, ATLAS.ti, MAXQDA, HyperRESEARCH.",
+    "Epistemology is the theory of how we know — quantitative research assumes objective, value-free knowledge; qualitative research sees knowledge as built through interaction and interpretation."
+   ],
+   "frame": "Definition → comparison table or the designs/techniques asked → steps of analysis → a short example → conclusion.",
+   "mistakes": [
+    "Describing qualitative analysis as 'no analysis, just quotes' — show the coding and theme steps.",
+    "Confusing ethnography (culture of a group) with phenomenology (individual lived experience)."
+   ],
+   "examples": [
+    "Example: analysing interviews step by step\nA researcher interviews 15 women in self-help groups about empowerment. Transcribe the recordings into text → organise the answers under each research question → code them ('own income', 'say in decisions', 'confidence to travel'; in-vivo codes like 'my own money') → group the codes into themes (economic, social, personal) → validate by checking with participants and a second coder → write conclusions with quotations.\nIdeas emerging from the data (inductive) suit this kind of study because little was known beforehand.",
+    "Example: matching the design to the question\nWhat is it like to lose one's land to a dam? → phenomenology. How does a fishing village organise its daily life? → ethnography (months of participant observation). Why do small traders adopt or reject UPI? → grounded theory (build a theory from coded interviews). Villagers and a researcher together study and fix their water problem → participatory action research. One cooperative dairy studied in depth → case study."
+   ]
+  },
+  {
+   "id": "shape",
+   "name": "Skewness & Kurtosis",
+   "block": 1,
+   "kind": "theory",
+   "units": [
+    {
+     "block": 1,
+     "unit": 2,
+     "title": "Statistical Concepts",
+     "part": "2.5.5"
+    }
+   ],
+   "summary": "Shape of a distribution: symmetry and skewness (Karl Pearson and Bowley's coefficients), kurtosis (Pearson's β₂ and the three types of curves) and how they describe a distribution.",
+   "points": [
+    "Skewness means lack of symmetry. In a symmetrical distribution mean = median = mode and the two tails are equal.",
+    "Positive (right) skew: a long tail to the right; mean > median > mode (e.g. incomes). Negative (left) skew: a long tail to the left; mean < median < mode (e.g. marks in an easy test). Note: the study material's sentence that the mode is highest in both cases is wrong for positive skew.",
+    "Karl Pearson's coefficient of skewness = (Mean − Mode) ÷ SD, or 3(Mean − Median) ÷ SD when the mode is ill-defined.",
+    "Bowley's coefficient = (Q₃ + Q₁ − 2 Median) ÷ (Q₃ − Q₁); it uses quartiles, so it works for open-ended distributions; it lies between −1 and +1.",
+    "Kurtosis measures peakedness (or flatness) compared with the normal curve. Karl Pearson's measure: β₂ = μ₄ ÷ μ₂² and γ₂ = β₂ − 3.",
+    "Three types: mesokurtic (normal, β₂ = 3, γ₂ = 0), leptokurtic (more peaked, β₂ > 3), platykurtic (flatter, β₂ < 3).",
+    "Skewness tells the direction and size of asymmetry (the relative size of the two tails); kurtosis tells how peaked or heavy-tailed it is. Together with the mean and SD they describe the shape fully."
+   ],
+   "frame": "Definitions → diagrams of the three skew shapes and three kurtosis curves → measures with formulas → how to read the shape → conclusion.",
+   "mistakes": [
+    "Writing mode > median > mean for a positively skewed distribution (that is negative skew).",
+    "Forgetting to draw and label the diagrams when asked."
+   ],
+   "formula": [
+    "Sk(Pearson) = (Mean − Mode) ÷ SD = 3(Mean − Median) ÷ SD",
+    "Sk(Bowley) = (Q₃ + Q₁ − 2Md) ÷ (Q₃ − Q₁)",
+    "β₂ = μ₄ ÷ μ₂², γ₂ = β₂ − 3"
+   ],
+   "examples": [
+    "Example: measuring skewness\nIncomes in a town: mean ₹40,000, median ₹36,000, mode ₹28,000 (note 3 × 36,000 − 2 × 40,000 = 28,000), SD ₹16,000.\nKarl Pearson's Sk = (40,000 − 28,000) ÷ 16,000 = +0.75; using the median, 3(40,000 − 36,000) ÷ 16,000 = +0.75 too. Positive: a long right tail (a few very high incomes), with mean > median > mode.\nBowley: Q1 = 24,000, median 36,000, Q3 = 56,000 → (56,000 + 24,000 − 72,000) ÷ 32,000 = +0.25.",
+    "Example: kurtosis\nIf β₂ = μ₄ ÷ μ₂² = 4.2, then γ₂ = 1.2 > 0 → leptokurtic (more peaked, heavier tails than normal). If β₂ = 2.1 → platykurtic (flatter). If β₂ = 3 → mesokurtic (normal)."
+   ]
+  },
+  {
+   "id": "data-basics",
+   "name": "Data, Variables, Scales & Sources",
+   "block": 1,
+   "kind": "theory",
+   "units": [
+    {
+     "block": 1,
+     "unit": 2,
+     "title": "Statistical Concepts",
+     "part": "2.2"
+    },
+    {
+     "block": 2,
+     "unit": 4,
+     "title": "Data Collection: Methods and Sources",
+     "part": "4.7 Secondary data"
+    }
+   ],
+   "summary": "Meaning of statistics and data, qualitative and quantitative variables, discrete and continuous variables, measurement scales, types of data (time series, cross-section, pooled, panel), primary and secondary sources, and sources and limitations of secondary data.",
+   "points": [
+    "Statistics (singular) means the methods of collecting, organising, analysing and interpreting data; (plural) the numerical data themselves.",
+    "Qualitative variables are categories (gender, religion); quantitative variables are numbers — discrete (counted: children in a family) or continuous (measured: height, temperature). An explanatory (independent) variable is used to explain or predict a response (dependent) variable.",
+    "Measurement scales: nominal (named categories, no order — gender), ordinal (ordered categories, unequal gaps — good/average/poor), interval (equal gaps, no true zero — temperature in °C, IQ), ratio (equal gaps and a true zero — height, income). The scale decides which statistics can be used.",
+    "Types of data: time series (one variable over time — GDP by year), cross-section (many units at one time — Census 2011), pooled (both combined), panel or longitudinal (the same units followed over time).",
+    "Primary data: collected first-hand for the purpose; costly but specific. Secondary data: collected by others; cheaper and quicker but may not fit the purpose.",
+    "Sources of secondary data in India: MoSPI (Statistical Abstract), Census reports, NSSO surveys, Annual Survey of Industries, RBI (Handbook of Statistics, bulletins, DBIE), Economic Survey, Budget documents, Labour Bureau, CMIE and EPWRF databases, international bodies (UN, World Bank, ILO).",
+    "Limitations of secondary data: may not suit the purpose, different definitions and units, may be outdated, unknown accuracy, bias of the original collector. Before use, record who collected it, when, how, the title, edition and publisher.",
+    "Quantitative data are summarised by tables, graphs, averages, dispersion, skewness and correlation; qualitative data by frequencies, percentages, the mode and by coding themes."
+   ],
+   "frame": "Definitions → classification (variables, scales or sources) with an example each → suitability or limitations → conclusion.",
+   "mistakes": [
+    "Calling temperature in °C a ratio scale (it has no true zero).",
+    "Confusing cross-section with time-series data."
+   ],
+   "examples": [
+    "Examples: classify the variable and its scale\nGender → qualitative, nominal. Satisfaction (high/medium/low) → qualitative, ordinal. Temperature in °C → quantitative, interval (no true zero). Monthly income → quantitative, ratio, continuous. Number of children → quantitative, discrete.\nFor a study of the share of women doing home-based work (yes/no) the data are nominal, so the right average is the mode (most common category), reported with percentages.",
+    "Examples: types and sources of data\nIndia's GDP for 2000–2025 → time series. Literacy of all states in Census 2011 → cross-section. The same 2,000 households surveyed every year → panel. A researcher using NSSO unit data or the RBI Handbook → secondary data; first record who collected it, when, how and with which definitions."
+   ]
+  },
+  {
+   "id": "math",
+   "name": "Sets, Relations, Logic & Mathematical Modelling",
+   "block": 1,
+   "kind": "theory",
+   "units": [
+    {
+     "block": 1,
+     "unit": 1,
+     "title": "Mathematical Concepts"
+    }
+   ],
+   "summary": "Sets and their representation, types of sets, set relations and operations with their laws, relations and functions, logic (statements, connectives, arguments, symbolic language), proof techniques and the use of mathematical modelling in economics.",
+   "points": [
+    "A set is a well-defined collection of distinct objects. Representation: roster or tabular form, V = {a, e, i, o, u}; set-builder form, {x : x ∈ N, x < 10}.",
+    "Special sets: empty (null) set ∅, universal set U, finite and infinite sets, singleton, subsets and proper subsets, equal sets, intervals as sets, number sets (N, Z, Q, R).",
+    "Operations: union (X ∪ Y), intersection (X ∩ Y), difference (X − Y), symmetric difference (X Δ Y = (X ∪ Y) − (X ∩ Y)) and complement (X′ = U − X). Laws: commutative, associative, distributive, identity, idempotent, and De Morgan's laws (X ∪ Y)′ = X′ ∩ Y′ and (X ∩ Y)′ = X′ ∪ Y′.",
+    "Cartesian product X × Y = all ordered pairs (x, y). A relation from X to Y is a subset of X × Y, with a domain, range and co-domain. A function relates each element of the domain to exactly one element of the co-domain.",
+    "Logic is about reasoning correctly — deriving conclusions from given facts so that every careful person reaches the same answer. Kinds of reasoning: deduction, induction and abduction.",
+    "Symbolic language: statements are named P, Q, …; truth values True and False; connectives — negation (~), conjunction (∧), disjunction (∨), conditional (→) and biconditional (↔), defined by truth tables. An argument is a set of premises and a conclusion.",
+    "Logic matters in data analysis because analysts must state assumptions clearly, draw valid conclusions from data, avoid fallacies (e.g. treating correlation as causation) and build and check models.",
+    "Proof techniques: direct proof and counter-example, contradiction and contrapositive, proof by cases, existence proof, mathematical induction, proof of equivalences.",
+    "Mathematical modelling (five-step process): define the economic problem → translate it into mathematical form (the model) → solve with mathematical tools → translate the result back into economics → check that it makes sense. Example: demand Q = 100 − 2P and supply Q = 20 + 2P give equilibrium P = 20, Q = 60."
+   ],
+   "frame": "Definition → representation or operations with small examples (Venn-type) → laws or uses → conclusion.",
+   "mistakes": [
+    "Repeating elements inside a set, e.g. {1, 2, 2, 3}.",
+    "Confusing subset (⊆) with element (∈)."
+   ],
+   "examples": [
+    "Example: set operations\nU = {1, 2, …, 8}, X = {1, 2, 3, 4}, Y = {2, 4, 5, 7}.\nX ∪ Y = {1, 2, 3, 4, 5, 7}; X ∩ Y = {2, 4}; X − Y = {1, 3}; X Δ Y = {1, 3, 5, 7}.\nX′ = {5, 6, 7, 8}, Y′ = {1, 3, 6, 8} → X′ ∩ Y′ = {6, 8} = (X ∪ Y)′ — De Morgan's law checks out.",
+    "Example: modelling and logic\nModelling: 'At what price does the market clear?' → model: demand Q = 100 − 2P, supply Q = 20 + 2P → solve 100 − 2P = 20 + 2P → P = 20, Q = 60 → interpret: price ₹20, 60 units → check: both equations give 60 ✓.\nLogic: P = 'it rains', Q = 'sales of umbrellas rise'. P → Q is false only when it rains and sales do not rise. From 'P → Q' and 'P', we may conclude Q (valid); from 'P → Q' and 'Q' we may not conclude P (a common fallacy)."
+   ]
+  }
+ ],
+ "questions": [
+  {
+   "s": "2022-12",
+   "q": "1",
+   "t": "Qualitative vs quantitative research design; techniques of qualitative data analysis",
+   "m": 20,
+   "k": "th",
+   "topic": "qualitative"
+  },
+  {
+   "s": "2022-12",
+   "q": "2(a)",
+   "t": "Correlation coefficient: rental cars and annual income",
+   "m": 15,
+   "k": "num",
+   "topic": "correlation"
+  },
+  {
+   "s": "2022-12",
+   "q": "2(b)",
+   "t": "Test the significance of the correlation coefficient (t-test)",
+   "m": 5,
+   "k": "num",
+   "topic": "correlation"
+  },
+  {
+   "s": "2022-12",
+   "q": "3(a)",
+   "t": "Measures of central tendency",
+   "m": 5,
+   "k": "th",
+   "topic": "central-tendency"
+  },
+  {
+   "s": "2022-12",
+   "q": "3(b)",
+   "t": "Relationship between mean, median and mode in symmetrical and skewed distributions",
+   "m": 10,
+   "k": "th",
+   "topic": "central-tendency"
+  },
+  {
+   "s": "2022-12",
+   "q": "3(c)",
+   "t": "When to use each measure of central tendency",
+   "m": 5,
+   "k": "th",
+   "topic": "central-tendency"
+  },
+  {
+   "s": "2022-12",
+   "q": "4",
+   "t": "Census vs survey data; stages in planning and organising censuses and surveys",
+   "m": 20,
+   "k": "th",
+   "topic": "surveys"
+  },
+  {
+   "s": "2022-12",
+   "q": "5",
+   "t": "Construction of the Physical Quality of Life Index (PQLI)",
+   "m": 12,
+   "k": "th",
+   "topic": "composite"
+  },
+  {
+   "s": "2022-12",
+   "q": "6(a)",
+   "t": "Sampling vs non-sampling errors",
+   "m": 4,
+   "k": "th",
+   "topic": "surveys"
+  },
+  {
+   "s": "2022-12",
+   "q": "6(b)",
+   "t": "Observation vs experimental method",
+   "m": 4,
+   "k": "th",
+   "topic": "tools"
+  },
+  {
+   "s": "2022-12",
+   "q": "6(c)",
+   "t": "Point estimate vs interval estimate",
+   "m": 4,
+   "k": "th",
+   "topic": "inference"
+  },
+  {
+   "s": "2022-12",
+   "q": "7(a)",
+   "t": "What is multivariate analysis?",
+   "m": 3,
+   "k": "th",
+   "topic": "multivariate"
+  },
+  {
+   "s": "2022-12",
+   "q": "7(b)",
+   "t": "Points to keep in mind when interpreting multivariate results",
+   "m": 3,
+   "k": "th",
+   "topic": "multivariate"
+  },
+  {
+   "s": "2022-12",
+   "q": "7(c)",
+   "t": "One multivariate technique and its application",
+   "m": 6,
+   "k": "th",
+   "topic": "multivariate"
+  },
+  {
+   "s": "2022-12",
+   "q": "8(a)",
+   "t": "Skewness and its measures, with a diagram",
+   "m": 6,
+   "k": "th",
+   "topic": "shape"
+  },
+  {
+   "s": "2022-12",
+   "q": "8(b)",
+   "t": "Karl Pearson's measure of kurtosis; three types of curves",
+   "m": 6,
+   "k": "th",
+   "topic": "shape"
+  },
+  {
+   "s": "2022-12",
+   "q": "9(a)",
+   "t": "Merits and demerits of a composite index",
+   "m": 6,
+   "k": "th",
+   "topic": "composite"
+  },
+  {
+   "s": "2022-12",
+   "q": "9(b)",
+   "t": "Range equalisation vs mean standardisation method",
+   "m": 6,
+   "k": "th",
+   "topic": "composite"
+  },
+  {
+   "s": "2022-12",
+   "q": "10(a)",
+   "t": "Choosing between a random and a non-random sample survey",
+   "m": 6,
+   "k": "th",
+   "topic": "surveys"
+  },
+  {
+   "s": "2022-12",
+   "q": "10(b)",
+   "t": "Unstructured interviews: advantages and disadvantages",
+   "m": 6,
+   "k": "th",
+   "topic": "tools"
+  },
+  {
+   "s": "2022-12",
+   "q": "11(a)",
+   "t": "Note: sampling fraction",
+   "m": 4,
+   "k": "th",
+   "topic": "surveys"
+  },
+  {
+   "s": "2022-12",
+   "q": "11(b)",
+   "t": "Note: coefficient of variation",
+   "m": 4,
+   "k": "th",
+   "topic": "dispersion"
+  },
+  {
+   "s": "2022-12",
+   "q": "11(c)",
+   "t": "Note: normal distribution curve",
+   "m": 4,
+   "k": "th",
+   "topic": "inference"
+  },
+  {
+   "s": "2022-12",
+   "q": "11(d)",
+   "t": "Note: ethnography",
+   "m": 4,
+   "k": "th",
+   "topic": "qualitative"
+  },
+  {
+   "s": "2023-06",
+   "q": "1",
+   "t": "Quantitative research, its attributes and data collection tools",
+   "m": 20,
+   "k": "th",
+   "topic": "tools"
+  },
+  {
+   "s": "2023-06",
+   "q": "2(a)",
+   "t": "Mean and standard deviation of plant heights (sample of 7)",
+   "m": 15,
+   "k": "num",
+   "topic": "dispersion"
+  },
+  {
+   "s": "2023-06",
+   "q": "2(b)",
+   "t": "Draw a histogram",
+   "m": 5,
+   "k": "num",
+   "topic": "presentation"
+  },
+  {
+   "s": "2023-06",
+   "q": "3(a)",
+   "t": "Meaning of measures of dispersion",
+   "m": 5,
+   "k": "th",
+   "topic": "dispersion"
+  },
+  {
+   "s": "2023-06",
+   "q": "3(b)",
+   "t": "Absolute and relative measures of dispersion",
+   "m": 10,
+   "k": "th",
+   "topic": "dispersion"
+  },
+  {
+   "s": "2023-06",
+   "q": "3(c)",
+   "t": "Most reliable measure of dispersion and why",
+   "m": 5,
+   "k": "th",
+   "topic": "dispersion"
+  },
+  {
+   "s": "2023-06",
+   "q": "4",
+   "t": "Non-sampling errors and their types",
+   "m": 20,
+   "k": "th",
+   "topic": "surveys"
+  },
+  {
+   "s": "2023-06",
+   "q": "5",
+   "t": "Type I and type II errors; which is more critical",
+   "m": 12,
+   "k": "th",
+   "topic": "hypothesis"
+  },
+  {
+   "s": "2023-06",
+   "q": "6(a)",
+   "t": "Cross-section vs panel data",
+   "m": 4,
+   "k": "th",
+   "topic": "data-basics"
+  },
+  {
+   "s": "2023-06",
+   "q": "6(b)",
+   "t": "Null vs alternative hypothesis",
+   "m": 4,
+   "k": "th",
+   "topic": "hypothesis"
+  },
+  {
+   "s": "2023-06",
+   "q": "6(c)",
+   "t": "Descriptive vs inferential statistics",
+   "m": 4,
+   "k": "th",
+   "topic": "inference"
+  },
+  {
+   "s": "2023-06",
+   "q": "7(a)",
+   "t": "What is bivariate analysis?",
+   "m": 3,
+   "k": "th",
+   "topic": "correlation"
+  },
+  {
+   "s": "2023-06",
+   "q": "7(b)",
+   "t": "Correlation and causation",
+   "m": 3,
+   "k": "th",
+   "topic": "correlation"
+  },
+  {
+   "s": "2023-06",
+   "q": "7(c)",
+   "t": "When z-test and t-test are used",
+   "m": 6,
+   "k": "th",
+   "topic": "hypothesis"
+  },
+  {
+   "s": "2023-06",
+   "q": "8(a)",
+   "t": "Kurtosis and its measures, with a diagram",
+   "m": 6,
+   "k": "th",
+   "topic": "shape"
+  },
+  {
+   "s": "2023-06",
+   "q": "8(b)",
+   "t": "How skewness and kurtosis determine shape",
+   "m": 6,
+   "k": "th",
+   "topic": "shape"
+  },
+  {
+   "s": "2023-06",
+   "q": "9(a)",
+   "t": "ANOVA and its use",
+   "m": 6,
+   "k": "th",
+   "topic": "hypothesis"
+  },
+  {
+   "s": "2023-06",
+   "q": "9(b)",
+   "t": "ANOVA vs MANOVA",
+   "m": 6,
+   "k": "th",
+   "topic": "multivariate"
+  },
+  {
+   "s": "2023-06",
+   "q": "10(a)",
+   "t": "Participant observation: advantages and disadvantages",
+   "m": 6,
+   "k": "th",
+   "topic": "tools"
+  },
+  {
+   "s": "2023-06",
+   "q": "10(b)",
+   "t": "How non-participant observation removes its drawbacks",
+   "m": 6,
+   "k": "th",
+   "topic": "tools"
+  },
+  {
+   "s": "2023-06",
+   "q": "11(a)",
+   "t": "Note: degrees of freedom",
+   "m": 4,
+   "k": "th",
+   "topic": "inference"
+  },
+  {
+   "s": "2023-06",
+   "q": "11(b)",
+   "t": "Note: coefficient of determination",
+   "m": 4,
+   "k": "th",
+   "topic": "correlation"
+  },
+  {
+   "s": "2023-06",
+   "q": "11(c)",
+   "t": "Note: focus group discussion",
+   "m": 4,
+   "k": "th",
+   "topic": "tools"
+  },
+  {
+   "s": "2023-06",
+   "q": "11(d)",
+   "t": "Note: grounded theory",
+   "m": 4,
+   "k": "th",
+   "topic": "qualitative"
+  },
+  {
+   "s": "2023-12",
+   "q": "1(a)",
+   "t": "Mathematical modelling and its steps",
+   "m": 10,
+   "k": "th",
+   "topic": "math"
+  },
+  {
+   "s": "2023-12",
+   "q": "1(b)",
+   "t": "Logic and why it matters in data analysis",
+   "m": 10,
+   "k": "th",
+   "topic": "math"
+  },
+  {
+   "s": "2023-12",
+   "q": "2(a)",
+   "t": "Measures of variability; the most reliable one",
+   "m": 10,
+   "k": "th",
+   "topic": "dispersion"
+  },
+  {
+   "s": "2023-12",
+   "q": "2(b)",
+   "t": "Average price per kg of two goods (₹10 and ₹5 per kg, ₹20 spent)",
+   "m": 10,
+   "k": "num",
+   "topic": "central-tendency"
+  },
+  {
+   "s": "2023-12",
+   "q": "3",
+   "t": "Composite index by the simple ranking method",
+   "m": 20,
+   "k": "th",
+   "topic": "composite"
+  },
+  {
+   "s": "2023-12",
+   "q": "4",
+   "t": "Univariate vs multivariate analysis; multivariate techniques",
+   "m": 20,
+   "k": "th",
+   "topic": "multivariate"
+  },
+  {
+   "s": "2023-12",
+   "q": "5",
+   "t": "Sampling frame; stages in planning and organising a survey",
+   "m": 12,
+   "k": "th",
+   "topic": "surveys"
+  },
+  {
+   "s": "2023-12",
+   "q": "6",
+   "t": "Data collection vs analysis; tools for qualitative data",
+   "m": 12,
+   "k": "th",
+   "topic": "tools"
+  },
+  {
+   "s": "2023-12",
+   "q": "7",
+   "t": "Characteristics and uses of the normal distribution",
+   "m": 12,
+   "k": "th",
+   "topic": "inference"
+  },
+  {
+   "s": "2023-12",
+   "q": "8",
+   "t": "Measurement scale and average for a study of home-based work",
+   "m": 12,
+   "k": "th",
+   "topic": "central-tendency"
+  },
+  {
+   "s": "2023-12",
+   "q": "9",
+   "t": "Features of the case study method",
+   "m": 12,
+   "k": "th",
+   "topic": "tools"
+  },
+  {
+   "s": "2023-12",
+   "q": "10",
+   "t": "Histogram: draw from a frequency table",
+   "m": 12,
+   "k": "num",
+   "topic": "presentation"
+  },
+  {
+   "s": "2023-12",
+   "q": "11(a)",
+   "t": "Note: coefficient of determination",
+   "m": 4,
+   "k": "th",
+   "topic": "correlation"
+  },
+  {
+   "s": "2023-12",
+   "q": "11(b)",
+   "t": "Note: estimator",
+   "m": 4,
+   "k": "th",
+   "topic": "inference"
+  },
+  {
+   "s": "2023-12",
+   "q": "11(c)",
+   "t": "Note: focus group discussion",
+   "m": 4,
+   "k": "th",
+   "topic": "tools"
+  },
+  {
+   "s": "2023-12",
+   "q": "11(d)",
+   "t": "Note: primary data",
+   "m": 4,
+   "k": "th",
+   "topic": "data-basics"
+  },
+  {
+   "s": "2023-12",
+   "q": "11(e)",
+   "t": "Note: data mining",
+   "m": 4,
+   "k": "th",
+   "topic": "data-basics"
+  },
+  {
+   "s": "2023-12",
+   "q": "11(f)",
+   "t": "Note: discrete variable",
+   "m": 4,
+   "k": "th",
+   "topic": "data-basics"
+  },
+  {
+   "s": "2024-06",
+   "q": "1(a)",
+   "t": "Quantitative vs qualitative data; summarising quantitative data",
+   "m": 15,
+   "k": "th",
+   "topic": "data-basics"
+  },
+  {
+   "s": "2024-06",
+   "q": "1(b)",
+   "t": "Harmonic mean from a frequency table",
+   "m": 5,
+   "k": "num",
+   "topic": "central-tendency"
+  },
+  {
+   "s": "2024-06",
+   "q": "2(a)",
+   "t": "Measures of position; the most widely used",
+   "m": 12,
+   "k": "th",
+   "topic": "central-tendency"
+  },
+  {
+   "s": "2024-06",
+   "q": "2(b)",
+   "t": "Percentile rank of a score of 15",
+   "m": 8,
+   "k": "num",
+   "topic": "central-tendency"
+  },
+  {
+   "s": "2024-06",
+   "q": "3(a)",
+   "t": "Correlation does not imply causation",
+   "m": 10,
+   "k": "th",
+   "topic": "correlation"
+  },
+  {
+   "s": "2024-06",
+   "q": "3(b)",
+   "t": "Characteristics and uses of the t distribution",
+   "m": 10,
+   "k": "th",
+   "topic": "inference"
+  },
+  {
+   "s": "2024-06",
+   "q": "4",
+   "t": "Composite index: steps in construction",
+   "m": 20,
+   "k": "th",
+   "topic": "composite"
+  },
+  {
+   "s": "2024-06",
+   "q": "5",
+   "t": "Primary vs secondary data; organising fieldwork",
+   "m": 12,
+   "k": "th",
+   "topic": "surveys"
+  },
+  {
+   "s": "2024-06",
+   "q": "6",
+   "t": "Convenience sampling (people outside a mall) and its significance",
+   "m": 12,
+   "k": "th",
+   "topic": "surveys"
+  },
+  {
+   "s": "2024-06",
+   "q": "7",
+   "t": "Case study vs participatory research",
+   "m": 12,
+   "k": "th",
+   "topic": "qualitative"
+  },
+  {
+   "s": "2024-06",
+   "q": "8",
+   "t": "Non-sampling errors and their sources",
+   "m": 12,
+   "k": "th",
+   "topic": "surveys"
+  },
+  {
+   "s": "2024-06",
+   "q": "9",
+   "t": "Is the coefficient of variation better than SD?",
+   "m": 12,
+   "k": "th",
+   "topic": "dispersion"
+  },
+  {
+   "s": "2024-06",
+   "q": "10",
+   "t": "Histogram; advantages of a frequency polygon",
+   "m": 12,
+   "k": "th",
+   "topic": "presentation"
+  },
+  {
+   "s": "2024-06",
+   "q": "11(i)",
+   "t": "Note: epistemology",
+   "m": 4,
+   "k": "th",
+   "topic": "qualitative"
+  },
+  {
+   "s": "2024-06",
+   "q": "11(ii)",
+   "t": "Note: explanatory variable",
+   "m": 4,
+   "k": "th",
+   "topic": "data-basics"
+  },
+  {
+   "s": "2024-06",
+   "q": "11(iii)",
+   "t": "Note: inferential statistics",
+   "m": 4,
+   "k": "th",
+   "topic": "inference"
+  },
+  {
+   "s": "2024-06",
+   "q": "11(iv)",
+   "t": "Note: ogive curve",
+   "m": 4,
+   "k": "th",
+   "topic": "presentation"
+  },
+  {
+   "s": "2024-06",
+   "q": "11(v)",
+   "t": "Note: outlier",
+   "m": 4,
+   "k": "th",
+   "topic": "inference"
+  },
+  {
+   "s": "2024-06",
+   "q": "11(vi)",
+   "t": "Note: model",
+   "m": 4,
+   "k": "th",
+   "topic": "math"
+  },
+  {
+   "s": "2024-12",
+   "q": "1",
+   "t": "Graphical presentation: importance, types and misuse",
+   "m": 20,
+   "k": "th",
+   "topic": "presentation"
+  },
+  {
+   "s": "2024-12",
+   "q": "2(a)",
+   "t": "Measures of central tendency",
+   "m": 10,
+   "k": "th",
+   "topic": "central-tendency"
+  },
+  {
+   "s": "2024-12",
+   "q": "2(b)",
+   "t": "Average growth rate of a company over 5 years",
+   "m": 10,
+   "k": "num",
+   "topic": "central-tendency"
+  },
+  {
+   "s": "2024-12",
+   "q": "3",
+   "t": "Tabulation: process, parts of a table and precautions",
+   "m": 20,
+   "k": "th",
+   "topic": "presentation"
+  },
+  {
+   "s": "2024-12",
+   "q": "4",
+   "t": "Sets and set operations with examples",
+   "m": 20,
+   "k": "th",
+   "topic": "math"
+  },
+  {
+   "s": "2024-12",
+   "q": "5",
+   "t": "Skewness vs kurtosis; inferring the shape",
+   "m": 12,
+   "k": "th",
+   "topic": "shape"
+  },
+  {
+   "s": "2024-12",
+   "q": "6(a)",
+   "t": "Random variable with real-life examples",
+   "m": 6,
+   "k": "th",
+   "topic": "inference"
+  },
+  {
+   "s": "2024-12",
+   "q": "6(b)",
+   "t": "Probability distribution; properties of a continuous one",
+   "m": 6,
+   "k": "th",
+   "topic": "inference"
+  },
+  {
+   "s": "2024-12",
+   "q": "7",
+   "t": "Point vs interval estimation; properties of a good estimator",
+   "m": 12,
+   "k": "th",
+   "topic": "inference"
+  },
+  {
+   "s": "2024-12",
+   "q": "8",
+   "t": "Composite index and steps in its construction",
+   "m": 12,
+   "k": "th",
+   "topic": "composite"
+  },
+  {
+   "s": "2024-12",
+   "q": "9",
+   "t": "Points to keep in mind when interpreting multivariate results",
+   "m": 12,
+   "k": "th",
+   "topic": "multivariate"
+  },
+  {
+   "s": "2024-12",
+   "q": "10",
+   "t": "A good questionnaire; five questions on Swachh Bharat",
+   "m": 12,
+   "k": "th",
+   "topic": "tools"
+  },
+  {
+   "s": "2024-12",
+   "q": "11",
+   "t": "Methods of primary data collection",
+   "m": 12,
+   "k": "th",
+   "topic": "tools"
+  },
+  {
+   "s": "2024-12",
+   "q": "12(a)",
+   "t": "Note: snowball sampling",
+   "m": 4,
+   "k": "th",
+   "topic": "qualitative"
+  },
+  {
+   "s": "2024-12",
+   "q": "12(b)",
+   "t": "Note: focus group discussion",
+   "m": 4,
+   "k": "th",
+   "topic": "tools"
+  },
+  {
+   "s": "2024-12",
+   "q": "12(c)",
+   "t": "Note: pie chart",
+   "m": 4,
+   "k": "th",
+   "topic": "presentation"
+  },
+  {
+   "s": "2024-12",
+   "q": "12(d)",
+   "t": "Note: frequency distribution",
+   "m": 4,
+   "k": "th",
+   "topic": "presentation"
+  },
+  {
+   "s": "2024-12",
+   "q": "12(e)",
+   "t": "Note: parameter and statistic",
+   "m": 4,
+   "k": "th",
+   "topic": "inference"
+  },
+  {
+   "s": "2025-06",
+   "q": "1(a)",
+   "t": "Sets and how they are represented",
+   "m": 10,
+   "k": "th",
+   "topic": "math"
+  },
+  {
+   "s": "2025-06",
+   "q": "1(b)",
+   "t": "Set operations and their properties",
+   "m": 10,
+   "k": "th",
+   "topic": "math"
+  },
+  {
+   "s": "2025-06",
+   "q": "2(a)",
+   "t": "Measures of central tendency for grouped data",
+   "m": 10,
+   "k": "th",
+   "topic": "central-tendency"
+  },
+  {
+   "s": "2025-06",
+   "q": "2(b)",
+   "t": "Average for consumer choice of a toothpaste brand",
+   "m": 10,
+   "k": "th",
+   "topic": "central-tendency"
+  },
+  {
+   "s": "2025-06",
+   "q": "3(a)",
+   "t": "Pearson's correlation coefficient and its properties",
+   "m": 10,
+   "k": "th",
+   "topic": "correlation"
+  },
+  {
+   "s": "2025-06",
+   "q": "3(b)",
+   "t": "Compute the correlation coefficient",
+   "m": 10,
+   "k": "num",
+   "topic": "correlation"
+  },
+  {
+   "s": "2025-06",
+   "q": "4",
+   "t": "Bivariate analysis: testing the effect of a smart board on marks",
+   "m": 20,
+   "k": "th",
+   "topic": "correlation"
+  },
+  {
+   "s": "2025-06",
+   "q": "5",
+   "t": "Composite index by the simple ranking method",
+   "m": 12,
+   "k": "th",
+   "topic": "composite"
+  },
+  {
+   "s": "2025-06",
+   "q": "6",
+   "t": "Methods of analysing qualitative data",
+   "m": 12,
+   "k": "th",
+   "topic": "qualitative"
+  },
+  {
+   "s": "2025-06",
+   "q": "7",
+   "t": "Need for and types of classification of data",
+   "m": 12,
+   "k": "th",
+   "topic": "presentation"
+  },
+  {
+   "s": "2025-06",
+   "q": "8",
+   "t": "Hypothesis and steps in hypothesis testing",
+   "m": 12,
+   "k": "th",
+   "topic": "hypothesis"
+  },
+  {
+   "s": "2025-06",
+   "q": "9",
+   "t": "Methods of primary data collection",
+   "m": 12,
+   "k": "th",
+   "topic": "tools"
+  },
+  {
+   "s": "2025-06",
+   "q": "10",
+   "t": "Preparing a histogram from hypothetical data",
+   "m": 12,
+   "k": "num",
+   "topic": "presentation"
+  },
+  {
+   "s": "2025-06",
+   "q": "11",
+   "t": "Properties of the normal distribution",
+   "m": 12,
+   "k": "th",
+   "topic": "inference"
+  },
+  {
+   "s": "2025-06",
+   "q": "12(i)",
+   "t": "Note: coefficient of determination",
+   "m": 4,
+   "k": "th",
+   "topic": "correlation"
+  },
+  {
+   "s": "2025-06",
+   "q": "12(ii)",
+   "t": "Note: sources of secondary data",
+   "m": 4,
+   "k": "th",
+   "topic": "data-basics"
+  },
+  {
+   "s": "2025-06",
+   "q": "12(iii)",
+   "t": "Note: focus group discussions",
+   "m": 4,
+   "k": "th",
+   "topic": "tools"
+  },
+  {
+   "s": "2025-06",
+   "q": "12(iv)",
+   "t": "Note: characteristics of a good questionnaire",
+   "m": 4,
+   "k": "th",
+   "topic": "tools"
+  },
+  {
+   "s": "2025-06",
+   "q": "12(v)",
+   "t": "Note: non-sampling errors",
+   "m": 4,
+   "k": "th",
+   "topic": "surveys"
+  },
+  {
+   "s": "2025-12",
+   "q": "1",
+   "t": "Measures of central tendency; their relationship; when median and mode suit",
+   "m": 20,
+   "k": "th",
+   "topic": "central-tendency"
+  },
+  {
+   "s": "2025-12",
+   "q": "2(a)",
+   "t": "Methods of primary data collection",
+   "m": 10,
+   "k": "th",
+   "topic": "tools"
+  },
+  {
+   "s": "2025-12",
+   "q": "2(b)",
+   "t": "Planning and organising a sample survey",
+   "m": 10,
+   "k": "th",
+   "topic": "surveys"
+  },
+  {
+   "s": "2025-12",
+   "q": "3",
+   "t": "Null vs alternative hypothesis; steps in testing",
+   "m": 20,
+   "k": "th",
+   "topic": "hypothesis"
+  },
+  {
+   "s": "2025-12",
+   "q": "4",
+   "t": "Composite index and its construction",
+   "m": 20,
+   "k": "th",
+   "topic": "composite"
+  },
+  {
+   "s": "2025-12",
+   "q": "5",
+   "t": "Bar diagram vs histogram; draw a histogram",
+   "m": 12,
+   "k": "num",
+   "topic": "presentation"
+  },
+  {
+   "s": "2025-12",
+   "q": "6",
+   "t": "The p-value method",
+   "m": 12,
+   "k": "th",
+   "topic": "hypothesis"
+  },
+  {
+   "s": "2025-12",
+   "q": "7",
+   "t": "Correlation vs causation; analysing cause and effect",
+   "m": 12,
+   "k": "th",
+   "topic": "correlation"
+  },
+  {
+   "s": "2025-12",
+   "q": "8",
+   "t": "Sources and limitations of secondary data",
+   "m": 12,
+   "k": "th",
+   "topic": "data-basics"
+  },
+  {
+   "s": "2025-12",
+   "q": "9",
+   "t": "Techniques of multivariate analysis",
+   "m": 12,
+   "k": "th",
+   "topic": "multivariate"
+  },
+  {
+   "s": "2025-12",
+   "q": "10",
+   "t": "Techniques of qualitative data analysis",
+   "m": 12,
+   "k": "th",
+   "topic": "qualitative"
+  },
+  {
+   "s": "2025-12",
+   "q": "11",
+   "t": "Coefficient of determination: concept and implications",
+   "m": 12,
+   "k": "th",
+   "topic": "correlation"
+  },
+  {
+   "s": "2025-12",
+   "q": "12(a)",
+   "t": "Note: confidence interval",
+   "m": 4,
+   "k": "th",
+   "topic": "inference"
+  },
+  {
+   "s": "2025-12",
+   "q": "12(b)",
+   "t": "Note: central limit theorem",
+   "m": 4,
+   "k": "th",
+   "topic": "inference"
+  },
+  {
+   "s": "2025-12",
+   "q": "12(c)",
+   "t": "Note: random variable",
+   "m": 4,
+   "k": "th",
+   "topic": "inference"
+  },
+  {
+   "s": "2025-12",
+   "q": "12(d)",
+   "t": "Note: standard error",
+   "m": 4,
+   "k": "th",
+   "topic": "inference"
+  },
+  {
+   "s": "2025-12",
+   "q": "12(e)",
+   "t": "Note: types of data",
+   "m": 4,
+   "k": "th",
+   "topic": "data-basics"
+  },
+  {
+   "s": "2026-06",
+   "q": "1",
+   "t": "Techniques of multivariate analysis",
+   "m": 20,
+   "k": "th",
+   "topic": "multivariate"
+  },
+  {
+   "s": "2026-06",
+   "q": "2",
+   "t": "Graphical presentation: importance and types of graphs",
+   "m": 20,
+   "k": "th",
+   "topic": "presentation"
+  },
+  {
+   "s": "2026-06",
+   "q": "3",
+   "t": "Regression Y = a + bX: finding a and b; properties of regression coefficients",
+   "m": 20,
+   "k": "th",
+   "topic": "correlation"
+  },
+  {
+   "s": "2026-06",
+   "q": "4",
+   "t": "Steps in constructing a composite index, with the HDI",
+   "m": 20,
+   "k": "th",
+   "topic": "composite"
+  },
+  {
+   "s": "2026-06",
+   "q": "5",
+   "t": "Testing a hypothesis about three or more means (ANOVA)",
+   "m": 12,
+   "k": "th",
+   "topic": "hypothesis"
+  },
+  {
+   "s": "2026-06",
+   "q": "6",
+   "t": "Correlation coefficient and testing its significance",
+   "m": 12,
+   "k": "th",
+   "topic": "correlation"
+  },
+  {
+   "s": "2026-06",
+   "q": "7",
+   "t": "Methods of collecting qualitative data",
+   "m": 12,
+   "k": "th",
+   "topic": "tools"
+  },
+  {
+   "s": "2026-06",
+   "q": "8",
+   "t": "Measures of central tendency; when the geometric mean suits",
+   "m": 12,
+   "k": "th",
+   "topic": "central-tendency"
+  },
+  {
+   "s": "2026-06",
+   "q": "9",
+   "t": "Why a sample survey may be preferred to a census",
+   "m": 12,
+   "k": "th",
+   "topic": "surveys"
+  },
+  {
+   "s": "2026-06",
+   "q": "10",
+   "t": "Skewness vs kurtosis, with diagrams",
+   "m": 12,
+   "k": "th",
+   "topic": "shape"
+  },
+  {
+   "s": "2026-06",
+   "q": "11",
+   "t": "Dispersion and its measures",
+   "m": 12,
+   "k": "th",
+   "topic": "dispersion"
+  },
+  {
+   "s": "2026-06",
+   "q": "12(a)",
+   "t": "Note: frequency polygon",
+   "m": 4,
+   "k": "th",
+   "topic": "presentation"
+  },
+  {
+   "s": "2026-06",
+   "q": "12(b)",
+   "t": "Note: standard normal distribution",
+   "m": 4,
+   "k": "th",
+   "topic": "inference"
+  },
+  {
+   "s": "2026-06",
+   "q": "12(c)",
+   "t": "Note: set operations",
+   "m": 4,
+   "k": "th",
+   "topic": "math"
+  },
+  {
+   "s": "2026-06",
+   "q": "12(d)",
+   "t": "Note: relations and functions",
+   "m": 4,
+   "k": "th",
+   "topic": "math"
+  },
+  {
+   "s": "2026-06",
+   "q": "12(e)",
+   "t": "Note: symbolic language",
+   "m": 4,
+   "k": "th",
+   "topic": "math"
+  }
+ ],
+ "notesSource": "Notes written from the IGNOU BECS-184 study material (Blocks 1–4, Units 1–11)."
+}
