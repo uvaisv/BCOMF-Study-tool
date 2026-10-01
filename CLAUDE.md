@@ -1,4 +1,4 @@
-# BCom Buddy — project rules
+# BCom Radar — project rules
 
 ## Product rule (from the product owner — applies to every change)
 

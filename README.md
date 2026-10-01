@@ -1,4 +1,4 @@
-# BCom Buddy
+# BCom Radar
 
 An exam-preparation tool for IGNOU BCOMF (B.Com Honours) students. It uses previous-year question papers to show which topics matter most, what to study first, and a plan for the time a student has left.
 
@@ -32,7 +32,7 @@ To get listed: open Google Search Console (https://search.google.com/search-cons
 
 `firebase.json` is ready: it publishes `index.html`, `app/` and `question-papers/` (exactly the site files — no `.git`, docs or config), sends `/` to `/app/`, and makes browsers re-check pages, scripts and data so updates show at once.
 
-1. Create a project at https://console.firebase.google.com (the free Spark plan is enough to start). The project ID becomes the address, e.g. `bcom-buddy` → `https://bcom-buddy.web.app/app/`.
+1. Create a project at https://console.firebase.google.com (the free Spark plan is enough to start). The project ID becomes the address, e.g. `bcom-radar` → `https://bcom-radar.web.app/app/`.
 2. On a computer with Node.js: `npm install -g firebase-tools`, then `firebase login`.
 3. In this folder: `firebase use --add` (pick the project), then `firebase deploy --only hosting`.
 4. Optional, deploy on every push: `firebase init hosting:github` (keep the existing `firebase.json` and `index.html` when asked).

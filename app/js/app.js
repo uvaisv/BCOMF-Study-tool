@@ -1,4 +1,4 @@
-/* BCom Buddy — single-page app, no build step.
+/* BCom Radar — single-page app, no build step.
  * Product rule (see CLAUDE.md): help students study, never add setup or extra work.
  * Every screen leads with something to study; tracking is one optional tap.
  * Topic priorities are computed from the past-paper questions in data/<CODE>.json,
@@ -697,7 +697,7 @@ ${body.join("\n")}
       <h2>About</h2>
       <section class="card about">
         <div class="about-head"><img src="icons/icon.svg" width="48" height="48" alt="">
-          <div><strong>BCom Buddy</strong><br><span class="muted small">Version ${APP_VERSION} · ${APP_RELEASED}</span></div></div>
+          <div><strong>BCom Radar</strong><br><span class="muted small">Version ${APP_VERSION} · ${APP_RELEASED}</span></div></div>
         <p class="small">Exam preparation for IGNOU BCOMF (B.Com) students: topics ranked from past papers, short notes checked against the study material, diagrams, past papers and a study plan.</p>
         <p class="small muted flush">${courses.length} courses · ${papers} past papers · no sign-up; your settings and progress stay on this phone.</p>
       </section>
@@ -825,7 +825,7 @@ ${body.join("\n")}
   // Instructions for the model, plus our notes on the topic so answers match them.
   function aiSystem(ctx) {
     const lines = [
-      "You are the study assistant inside BCom Buddy, an exam-preparation app for Indian students of the IGNOU B.Com (BCOMF) programme.",
+      "You are the study assistant inside BCom Radar, an exam-preparation app for Indian students of the IGNOU B.Com (BCOMF) programme.",
       "Help only with studying: accounting, commerce, business law, economics, taxation, management, statistics, English and the other courses of this programme, including how to write exam answers. Politely decline anything unrelated.",
       "Write in simple, clear English for an Indian undergraduate. Use ₹ for money, and Indian laws and examples.",
       "For a numerical problem: list the given data, state the formula, show every step of the working, check the arithmetic, and state the final answer clearly. Show journal entries, ledger accounts and statements as tables.",
@@ -1084,7 +1084,7 @@ ${body.join("\n")}
     app.innerHTML = `
       <a class="back" href="#/settings/ai">← AI settings</a>
       <h1>Get a free Gemini API key</h1>
-      <p class="muted">BCom Buddy's AI assistant runs on Google Gemini. You use your own key, so there is no sign-up with us and no charge from us. It takes about two minutes.</p>
+      <p class="muted">BCom Radar's AI assistant runs on Google Gemini. You use your own key, so there is no sign-up with us and no charge from us. It takes about two minutes.</p>
 
       <h2>Steps</h2>
       <ol class="guide-steps">
@@ -1093,7 +1093,7 @@ ${body.join("\n")}
         <li><strong>Sign in with your Google (Gmail) account.</strong> If asked, accept Google's terms. Google's terms say you must be 18 or older.</li>
         <li><strong>Tap “Create API key”.</strong> If it asks for a project, choose the one it suggests or let it create a new one.</li>
         <li><strong>Copy the key.</strong> It is a long code that usually starts with <code>AIza</code>. Use the copy button next to it.</li>
-        <li><strong>Paste it in BCom Buddy.</strong> Go to <a href="#/settings/ai">Settings → AI assistant</a>, paste the key and tap <em>Save and test</em>. A green tick means it works.</li>
+        <li><strong>Paste it in BCom Radar.</strong> Go to <a href="#/settings/ai">Settings → AI assistant</a>, paste the key and tap <em>Save and test</em>. A green tick means it works.</li>
         <li><strong>Start asking.</strong> Tap <span class="kbd">${AI_SPARK}</span> at the top, or <em>Ask AI about this topic</em> on any topic page.</li>
       </ol>
 
@@ -1101,7 +1101,7 @@ ${body.join("\n")}
       <ul class="points">
         <li><strong>Free tier:</strong> you don't need to add a card. The free tier has limits on requests per minute and per day; if you hit one, wait and try again.</li>
         <li><strong>Privacy:</strong> on the free tier Google may use what you send to improve its products, and people may review it. Don't type personal details such as phone numbers, Aadhaar or passwords.</li>
-        <li><strong>Keep your key secret:</strong> it works like a password. BCom Buddy saves it only in this browser on this device and sends it only to Google.</li>
+        <li><strong>Keep your key secret:</strong> it works like a password. BCom Radar saves it only in this browser on this device and sends it only to Google.</li>
         <li><strong>Lost or shared phone?</strong> Delete the key in Google AI Studio (API keys page) and create a new one. On a shared device, remove the key from Settings when you're done.</li>
         <li><strong>Check the answers:</strong> AI can make mistakes, especially with laws, tax rates and figures. Your study material is the final word.</li>
       </ul>
@@ -1121,15 +1121,15 @@ ${body.join("\n")}
       mistake: "Course code:\nTopic or question:\nWhat is wrong:\nWhat it should be (if you know):\n",
       idea: "My idea:\nHow it would help me:\n",
       other: ""
-    }[kind] + `\n— BCom Buddy ${APP_VERSION}`;
-    return `mailto:${FEEDBACK_EMAIL}?subject=${encodeURIComponent(`BCom Buddy: ${subj}`)}&body=${encodeURIComponent(body)}`;
+    }[kind] + `\n— BCom Radar ${APP_VERSION}`;
+    return `mailto:${FEEDBACK_EMAIL}?subject=${encodeURIComponent(`BCom Radar: ${subj}`)}&body=${encodeURIComponent(body)}`;
   }
 
   /* ---------- welcome screen (first open; again from Settings) ---------- */
   function showWelcome() {
     const el = document.createElement("div");
     el.className = "splash";
-    el.setAttribute("role", "dialog"); el.setAttribute("aria-modal", "true"); el.setAttribute("aria-label", "Welcome to BCom Buddy");
+    el.setAttribute("role", "dialog"); el.setAttribute("aria-modal", "true"); el.setAttribute("aria-label", "Welcome to BCom Radar");
     el.tabIndex = 0;
     el.innerHTML = `<div class="splash-in">
       <svg class="sp-logo" viewBox="0 0 512 512" aria-hidden="true">
@@ -1139,7 +1139,7 @@ ${body.join("\n")}
           <path class="sp-page sp-r" d="M262 170c34-22 84-30 138-24v176c-54-6-104 2-138 24z"/>
           <path class="sp-smile" d="M176 392q80 52 160 0"/>
         </g></svg>
-      <h1 class="sp-name">BCom Buddy</h1>
+      <h1 class="sp-name">BCom Radar</h1>
       <p class="sp-tag">Know what to study first — for IGNOU BCOMF exams</p>
       <ul class="sp-list">
         <li>Topics ranked by how often they are asked</li>
