@@ -489,3 +489,4 @@ body.no-scroll { overflow: hidden; }
 .guide-link { display: block; text-align: center; margin-top: 8px; }
 .kbd { display: inline-grid; place-items: center; width: 26px; height: 26px; vertical-align: middle; border-radius: 7px; border: 1px solid var(--border); background: var(--surface-2); }
 #ai, [data-anchor] { scroll-margin-top: 72px; }
+.ai-ready { margin: 0; padding: 8px 12px; border-radius: 10px; background: var(--accent-soft); }

@@ -22,6 +22,12 @@ Built around one rule (see `CLAUDE.md`): **help students study — never add set
 
 Courses with full analysis: all 8 Year 1 courses (BCOC-131, BCOC-132, BECC-101, BRL-101, BCOS-183, BCOS-186, BEVAE-181, BEDSV-101), all 8 Year 2 courses (BCOC-133, BCOC-134, BCOC-136, BCOE-141, BCOS-184, BCOS-185, BEGAE-182, BPAS-184), and all 8 Year 3 courses (BCOC-135, BCOC-137, BCOC-138, BCOE-142, CPI-102, BPCS-186, BMS-1, and BECS-184 Data Analysis, taken instead of the internship). BEVAE-181 is an MCQ paper: its 550 past questions are tagged by topic, and questions repeated across papers are listed on the course page. Most MCQs have an answer (`answers` in `BEVAE-181.json`, shown behind **Show answer** on the question and inline in the repeated list). IGNOU publishes no answer key, so these are our own answers, labelled as such. Answers that depend on IGNOU's own wording were checked against the IGNOU BEVAE-181 study material; 11 questions it does not settle (or that are misprinted) have no answer. Other courses show their past papers until their analysis is added.
 
+## Google Search
+
+`app/index.html` carries a search description, a canonical address and link-preview (Open Graph) tags; `robots.txt` and `sitemap.xml` sit at the site root. They all use the live address `https://bcomf-study.vercel.app` — if the site moves to its own domain, replace that address in those four files (`index.html`, `app/index.html`, `robots.txt`, `sitemap.xml`).
+
+To get listed: open Google Search Console (https://search.google.com/search-console), add the site, verify ownership (the HTML-tag method gives a `<meta name="google-site-verification" …>` line to paste into `app/index.html`), then submit `sitemap.xml`. The app uses `#` addresses, so Google indexes it as one page; searches for the name or the course codes find it, individual topics do not.
+
 ## Host on Google (Firebase Hosting)
 
 `firebase.json` is ready: it publishes `index.html`, `app/` and `question-papers/` (exactly the site files — no `.git`, docs or config), sends `/` to `/app/`, and makes browsers re-check pages, scripts and data so updates show at once.

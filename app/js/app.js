@@ -1011,7 +1011,16 @@ ${body.join("\n")}
       ask(input.value);
     });
     input.addEventListener("keydown", (e) => { if (e.key === "Enter" && (e.ctrlKey || e.metaKey)) { e.preventDefault(); app.querySelector("#aiForm").requestSubmit(); } });
-    if (aiDraft && aiDraft.key === key) { input.value = aiDraft.text; aiDraft = null; input.focus(); }
+    // A question handed over from a past paper: show it ready to send, not buried under suggestions.
+    if (aiDraft && aiDraft.key === key) {
+      input.value = aiDraft.text;
+      aiDraft = null;
+      sugg.hidden = true;
+      input.rows = Math.min(10, Math.max(4, Math.ceil(input.value.length / 38) + input.value.split("\n").length));
+      const form = app.querySelector("#aiForm");
+      form.dataset.anchor = "";   // the router scrolls this into view
+      form.insertAdjacentHTML("afterbegin", `<p class="ai-ready small" role="status">Question added from the past paper — check it and tap <strong>Send</strong>.</p>`);
+    }
 
     async function ask(q) {
       q = String(q || "").trim();

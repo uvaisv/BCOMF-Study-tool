@@ -769,5 +769,190 @@
     }
   };
 
+
+  /* ---------- data analysis (BECS-184) ---------- */
+  const npdf = (x, m = 0, sd = 1) => Math.exp(-0.5 * ((x - m) / sd) ** 2) / (sd * Math.sqrt(2 * Math.PI));
+  // Median of a density sampled on [a, b] (by cumulative area), so marked lines sit where they truly fall.
+  function medianOf(f, a, b) {
+    const n = 4000, h = (b - a) / n; let tot = 0; const c = [0];
+    for (let i = 1; i <= n; i++) { tot += (f(a + (i - 1) * h) + f(a + i * h)) * h / 2; c.push(tot); }
+    const i = c.findIndex((v) => v >= tot / 2); return a + i * h;
+  }
+  function meanOf(f, a, b) {
+    const n = 4000, h = (b - a) / n; let m = 0, t = 0;
+    for (let i = 0; i <= n; i++) { const x = a + i * h, w = f(x); m += x * w; t += w; }
+    return m / t;
+  }
+
+  F["normal-curve"] = {
+    title: "The normal curve: the 68–95–99.7 rule",
+    caption: "The normal curve is bell-shaped and symmetrical, with mean = median = mode at the centre; its tails come ever closer to the x-axis but never touch it, and the total area under it is 1. About 68.27% of values lie within 1 standard deviation of the mean, 95.45% within 2 and 99.73% within 3. For the standard normal curve the mean is 0 and the SD is 1, and any value is converted by z = (X − μ) ÷ σ.",
+    draw() {
+      const g = new Fig(250, "Normal curve with areas within one, two and three standard deviations").panel(8, 0, 0.47, 16, 172);
+      const f = (x) => npdf(x, 4, 1);
+      const shade = (a, b, cls) => { const pts = [[a, 0]]; for (let i = 0; i <= 40; i++) { const x = a + ((b - a) * i) / 40; pts.push([x, f(x)]); } pts.push([b, 0]); g.area(pts, cls); };
+      shade(3, 5, "a1");
+      g.axes("", "", false);
+      g.curve(f, 0.1, 7.9, "c1");
+      [-3, -2, -1, 0, 1, 2, 3].forEach((k) => g.add(`<text class="tick" x="${g.X(4 + k)}" y="${g.base() + 12}" text-anchor="middle">${k ? `μ${k > 0 ? "+" : "−"}${Math.abs(k) > 1 ? Math.abs(k) : ""}σ` : "μ"}</text>`));
+      g.add(`<path class="guide" d="M${g.X(4)} ${g.Y(f(4))}V${g.base()}"/>`);
+      g.text(4, f(4), "Mean = Median = Mode", { dy: -6, anchor: "middle", cls: "lbl sm" });
+      const by = (y) => g.bottom + 28 + y;
+      [[3, 5, "68.27%", 0], [2, 6, "95.45%", 18], [1, 7, "99.73%", 36]].forEach(([a, b, t, o]) => {
+        const yy = by(o);
+        g.add(`<path class="brk" d="M${g.X(a)} ${yy - 4}V${yy}H${g.X(b)}V${yy - 4}"/>`);
+        g.ptext((g.X(a) + g.X(b)) / 2, yy + 11, t, "lbl sm");
+      });
+      return g.svg();
+    }
+  };
+
+  F["dispersion-sd"] = {
+    title: "Same mean, different dispersion",
+    caption: "Both distributions have the same mean, but the values in B are spread twice as widely (its standard deviation is double). A small SD means values cluster close to the mean — the data are more uniform and the mean represents them better; a large SD means they are scattered. To compare series with different means or units, use the coefficient of variation (SD ÷ mean × 100).",
+    draw() {
+      const g = new Fig(220, "Two curves with the same mean and different standard deviations").panel(10, 0, 0.42, 20, 196).axes("Value", "", false);
+      g.curve((x) => npdf(x, 5, 1), 0.2, 9.8, "c1").curve((x) => npdf(x, 5, 2), 0.2, 9.8, "c2");
+      g.vline(5).add(`<text class="tick" x="${g.X(5)}" y="${g.base() + 12}" text-anchor="middle">mean</text>`);
+      g.text(6.1, npdf(6.1, 5, 1), "A: SD = 1", { dx: 6, dy: -2, cls: "lbl sm" });
+      g.text(8.2, npdf(8.2, 5, 2), "B: SD = 2", { dx: 2, dy: -10, cls: "lbl sm" });
+      return g.svg();
+    }
+  };
+
+  F["skewness"] = {
+    title: "Symmetrical and skewed distributions",
+    caption: "In a symmetrical distribution the mean, median and mode coincide. In a positively (right) skewed distribution the long tail is on the right and mean > median > mode — the few large values pull the mean up (incomes are a common example). In a negatively (left) skewed one the tail is on the left and mean < median < mode. The median always lies between the other two, and for moderate skew Mode ≈ 3 Median − 2 Mean. The lines here are computed from each curve.",
+    draw() {
+      const gam = (x) => (x <= 0 ? 0 : Math.pow(x, 0.9) * Math.exp(-x / 1.5));
+      const rows = [
+        ["Positive (right) skew", (x) => gam(x), "c2"],
+        ["Symmetrical", (x) => npdf(x, 4.5, 1.3), "c1"],
+        ["Negative (left) skew", (x) => gam(9 - x), "c3"],
+      ];
+      const g = new Fig(318, "Positively skewed, symmetrical and negatively skewed curves with mean, median and mode");
+      rows.forEach(([name, f, cls], i) => {
+        const top = 6 + i * 104, a = 0, b = 9;
+        const mode = argmin((x) => -f(x), a + 0.01, b - 0.01), md = medianOf(f, a, b), mn = meanOf(f, a, b);
+        const peak = f(mode);
+        g.panel(9, 0, peak * 1.05, top + 30, top + 92, 20, 300);
+        g.ptext(20, top + 12, name, "lbl", "start");
+        g.add(`<path class="ax" d="M20 ${top + 92}H300"/>`);
+        g.curve(f, a, b, cls, 200);
+        if (i === 1) {
+          g.vline(mn).ptext(g.X(mn), top + 24, "Mean = Median = Mode", "tick");
+        } else {
+          const marks = [[mode, "Mo"], [md, "Md"], [mn, "Mean"]].sort((p, q) => p[0] - q[0]);
+          marks.forEach(([x, t], j) => {
+            g.add(`<path class="guide" d="M${g.X(x)} ${top + 30}V${top + 92}"/>`);
+            g.ptext(g.X(x) + (j === 0 ? -2 : j === 2 ? 2 : 0), top + 24, t, "tick", j === 0 ? "end" : j === 2 ? "start" : "middle");
+          });
+        }
+      });
+      return g.svg();
+    }
+  };
+
+  F["kurtosis"] = {
+    title: "Leptokurtic, mesokurtic and platykurtic curves",
+    caption: "All three curves here have the same mean and the same standard deviation; they differ only in kurtosis. The mesokurtic curve is the normal curve (β₂ = 3). The leptokurtic curve is more sharply peaked with heavier tails (β₂ > 3), and the platykurtic curve is flatter-topped (β₂ < 3). Karl Pearson's measure: β₂ = μ₄ ÷ μ₂², γ₂ = β₂ − 3.",
+    draw() {
+      const lap = (x) => Math.exp(-Math.abs(x) / 0.70711) / (2 * 0.70711);          // Laplace, variance 1
+      const plat = (x) => 0.3207 * Math.exp(-Math.pow(Math.abs(x) / 1.7186, 4));   // generalised normal (β = 4), variance 1
+      const g = new Fig(262, "Three curves with equal variance and different peakedness").panel(8, 0, 0.74, 66, 248).axes("", "", false);
+      g.curve((x) => lap(x - 4), 0.1, 7.9, "c2", 240).curve((x) => npdf(x, 4, 1), 0.1, 7.9, "c1").curve((x) => plat(x - 4), 0.1, 7.9, "c3");
+      [["c2", "Leptokurtic (β₂ > 3)"], ["c1", "Mesokurtic, normal (β₂ = 3)"], ["c3", "Platykurtic (β₂ < 3)"]].forEach(([cls, t], i) => {
+        const y = 14 + i * 16;
+        g.add(`<path class="${cls}" d="M${g.l + 8} ${y - 4}H${g.l + 26}"/>`).ptext(g.l + 32, y, t, "lbl sm", "start");
+      });
+      return g.svg();
+    }
+  };
+
+  // Frequency table from the December 2023 paper (Q10): classes 5–10 … 25–30.
+  const HIST = { lo: 5, w: 5, f: [12, 25, 30, 40, 20] };
+
+  F["histogram-polygon"] = {
+    title: "Histogram and frequency polygon",
+    caption: "Data from the December 2023 paper: classes 5–10, 10–15, 15–20, 20–25, 25–30 with frequencies 12, 25, 30, 40, 20. In a histogram the bars touch, the width is the class interval and the height (area) is the frequency — unlike a bar diagram, whose separate bars stand for categories. The frequency polygon joins the mid-points of the bar tops and is closed at the mid-points of the empty classes at each end; several polygons can be drawn on one graph to compare distributions.",
+    draw() {
+      const { lo, w, f } = HIST;
+      const g = new Fig(240, "Histogram with frequency polygon").panel(35, 0, 46, 16, 200).axes("Value", "Frequency", false);
+      f.forEach((v, i) => { const a = lo + i * w; g.area([[a, 0], [a, v], [a + w, v], [a + w, 0]], "a1"); g.add(`<path class="c1 thin" d="M${g.X(a)} ${g.Y(0)}V${g.Y(v)}H${g.X(a + w)}V${g.Y(0)}"/>`); });
+      const pts = [[lo - w / 2, 0], ...f.map((v, i) => [lo + i * w + w / 2, v]), [lo + f.length * w + w / 2, 0]];
+      let d = ""; pts.forEach(([x, y], i) => { d += `${i ? "L" : "M"}${g.X(x).toFixed(1)} ${g.Y(y).toFixed(1)}`; });
+      g.add(`<path class="c2" d="${d}"/>`);
+      pts.forEach(([x, y]) => g.pt(x, y, "pt2"));
+      [5, 10, 15, 20, 25, 30].forEach((x) => g.add(`<text class="tick" x="${g.X(x)}" y="${g.base() + 12}" text-anchor="middle">${x}</text>`));
+      [10, 20, 30, 40].forEach((v) => g.add(`<text class="tick" x="${g.l - 4}" y="${g.Y(v) + 4}" text-anchor="end">${v}</text>`));
+      g.text(22.5, 40, "Histogram", { dy: -16, anchor: "middle", cls: "lbl sm" });
+      g.text(0.6, 38, "Frequency polygon", { cls: "lbl sm" });
+      return g.svg();
+    }
+  };
+
+  F["ogive"] = {
+    title: "'Less than' and 'more than' ogives",
+    caption: "Same data (December 2023 paper). The 'less than' ogive plots cumulative frequencies 12, 37, 67, 107, 127 against the upper class limits and rises; the 'more than' ogive plots 127, 115, 90, 60, 20 against the lower class limits and falls. They cross at N/2 = 63.5, and the x-value there is the median: 15 + (63.5 − 37) ÷ 30 × 5 = 19.42. Ogives also give quartiles, deciles and percentiles in the same way.",
+    draw() {
+      const { lo, w, f } = HIST, N = f.reduce((a, b) => a + b, 0);
+      const less = [[lo, 0]], more = [];
+      let c = 0; f.forEach((v, i) => { c += v; less.push([lo + (i + 1) * w, c]); });
+      c = N; f.forEach((v, i) => { more.push([lo + i * w, c]); c -= v; }); more.push([lo + f.length * w, 0]);
+      const g = new Fig(240, "Rising less-than ogive and falling more-than ogive crossing at the median").panel(35, 0, 140, 16, 200).axes("Value", "Cumulative frequency", false);
+      const path = (pts, cls) => { let d = ""; pts.forEach(([x, y], i) => { d += `${i ? "L" : "M"}${g.X(x).toFixed(1)} ${g.Y(y).toFixed(1)}`; }); g.add(`<path class="${cls}" d="${d}"/>`); };
+      path(less, "c1"); path(more, "c2");
+      less.forEach(([x, y]) => g.pt(x, y)); more.forEach(([x, y]) => g.pt(x, y, "pt2"));
+      const med = 15 + ((N / 2 - 37) / 30) * 5;
+      g.guide(med, N / 2, `Md ≈ ${med.toFixed(1)}`, `${N / 2}`).dot(med, N / 2);
+      [5, 10, 25, 30].forEach((x) => g.add(`<text class="tick" x="${g.X(x)}" y="${g.base() + 12}" text-anchor="middle">${x}</text>`));
+      g.text(30, 127, "'Less than'", { dx: -4, dy: -8, anchor: "end", cls: "lbl sm" });
+      g.text(10, 115, "'More than'", { dx: 6, dy: 14, cls: "lbl sm" });
+      return g.svg();
+    }
+  };
+
+  F["test-regions"] = {
+    title: "Two-tailed test at α = 0.05",
+    caption: "Under H₀ the test statistic follows the standard normal curve. With α = 0.05 split between the two tails, the critical values are ±1.96: if the computed z falls in either shaded tail (2.5% each), reject H₀; if it falls in the middle 95%, do not reject H₀. For a right-tailed test the whole 5% is in the right tail (critical z = 1.645). Rejecting a true H₀ in this way is a type I error, whose probability is α.",
+    draw() {
+      const g = new Fig(230, "Standard normal curve with rejection regions beyond plus and minus 1.96").panel(8, 0, 0.46, 30, 182);
+      const f = (x) => npdf(x, 4, 1), c = 1.96;
+      const shade = (a, b) => { const pts = [[a, 0]]; for (let i = 0; i <= 30; i++) { const x = a + ((b - a) * i) / 30; pts.push([x, f(x)]); } pts.push([b, 0]); g.area(pts, "a2"); };
+      shade(0.1, 4 - c); shade(4 + c, 7.9);
+      g.axes("z", "", false).curve(f, 0.1, 7.9, "c1");
+      g.guide(4 - c, f(4 - c), "−1.96", null).guide(4 + c, f(4 + c), "+1.96", null);
+      g.add(`<text class="tick" x="${g.X(4)}" y="${g.base() + 12}" text-anchor="middle">0</text>`);
+      g.text(4, 0.12, "Do not reject H₀", { anchor: "middle", cls: "lbl sm" }).text(4, 0.12, "(95%)", { anchor: "middle", dy: 12, cls: "lbl sm" });
+      g.ptext(g.X(1), 20, "Reject H₀", "lbl sm").ptext(g.X(7), 20, "Reject H₀", "lbl sm");
+      g.text(1, 0.03, "2.5%", { anchor: "middle", dy: -8, cls: "tick" }).text(7, 0.03, "2.5%", { anchor: "middle", dy: -8, cls: "tick" });
+      return g.svg();
+    }
+  };
+
+  F["composite-steps"] = {
+    title: "Building a composite index",
+    caption: "The study material lists ten steps: theoretical framework, selection of indicators, imputation of missing data, multivariate analysis of the indicators, normalisation, weighting and aggregation, uncertainty and sensitivity analysis, back to the detail, links to other indicators, and visualisation. They group into the six stages shown. Normalisation can be by ranks, indices (average = 100), mean standardisation (value ÷ mean) or range equalisation ((X − min) ÷ (max − min)).",
+    draw() {
+      return vflow("Six stages of composite index construction", [["Theoretical framework", "what is measured, sub-groups"], ["Select indicators", "quality, availability, proxies"], ["Missing values and outliers", "impute or drop; check extremes"], ["Normalise", "make unidirectional; ranks, indices, max–min"], ["Weight and aggregate", "average or geometric mean"], ["Test and present", "sensitivity, links, visualisation"]]).svg();
+    }
+  };
+
+  F["survey-stages"] = {
+    title: "Planning and organising a census or survey",
+    caption: "The seven stages in the study material. The tabulation plan drawn up first decides what data the schedule must collect. A good, up-to-date frame avoids coverage errors; the instruction manual and training reduce measurement errors; the scrutiny note guides checking and coding; and careful organisation of fieldwork — workloads, supplies, quick replies to queries, a leave reserve and safe dispatch of schedules — keeps the enquiry on time.",
+    draw() {
+      return vflow("Seven stages from objectives to fieldwork", [["Scope and objectives", "tabulation plan, reference period"], ["Frame of the enquiry", "up-to-date list of units"], ["Schedule or questionnaire", "items of information"], ["Instruction manual and training", "definitions, cross-checks"], ["Scrutiny note and coding plan", "how filled forms are checked"], ["Recruitment and manpower", "investigators, supervisors"], ["Organisation of fieldwork", "workloads, supplies, dispatch"]]).svg();
+    }
+  };
+
+  F["qda-steps"] = {
+    title: "Steps in qualitative data analysis",
+    caption: "Recordings and notes are first transcribed into text, then organised by research question. Coding assigns short labels (descriptive, in-vivo — the respondents' own words — or pattern codes) to pieces of text, and related codes are grouped into themes. Validation checks accuracy and reliability (for example a second coder, or checking back with participants) before conclusions are drawn. Software such as NVivo or ATLAS.ti helps with coding.",
+    draw() {
+      return vflow("Transcribe, organise, code, validate, conclude", [["Transcribe", "recordings and notes into text"], ["Organise", "by research question or objective"], ["Code", "label ideas; group into themes"], ["Validate", "accuracy and reliability"], ["Conclude", "findings with quotations"]]).svg();
+    }
+  };
+
   window.FIGURES = F;
 })();

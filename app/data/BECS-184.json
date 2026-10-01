@@ -118,6 +118,9 @@
     "HDI = (I_health × I_education × I_income)^(1/3)",
     "GDI = HDI_female ÷ HDI_male"
    ],
+   "figures": [
+    "composite-steps"
+   ],
    "examples": [
     "Example: simple ranking method for three districts\nIndicators (all positive): literacy %, households with safe water %, villages with paved roads %.\nDistrict A: 70, 80, 40 → ranks 1, 2, 2. District B: 60, 85, 50 → ranks 2, 1, 1. District C: 50, 60, 30 → ranks 3, 3, 3.\nAverage rank: A = 5/3 = 1.67, B = 4/3 = 1.33, C = 3. B is the most developed and C the most backward.\nHad one indicator been negative (e.g. % agricultural labourers), it would first be converted (100 − value) so that all point the same way.",
     "Example: range equalisation and PQLI\nFemale literacy in a district is 54% with goalposts 10% (minimum) and 70% (maximum): index = (54 − 10) ÷ (70 − 10) = 0.733. Doing this for every indicator and averaging gives the district's composite index (for the HDI, a geometric mean of the dimension indices is used).\nPQLI: if a country rates 75 on life expectancy, 40 on infant mortality and 65 on literacy (each on a 0–100 scale), PQLI = (75 + 40 + 65) ÷ 3 = 60."
@@ -166,6 +169,9 @@
     "z = (X − X̄) ÷ s",
     "Percentile rank = (values below + 0.5) ÷ n × 100"
    ],
+   "figures": [
+    "skewness"
+   ],
    "examples": [
     "Example: harmonic mean (June 2024, Q1(b))\nMarks X: 10, 20, 30, 40, 50 with frequencies 2, 4, 8, 3, 3 (N = 20).\nΣ(f/X) = 2/10 + 4/20 + 8/30 + 3/40 + 3/50 = 0.2 + 0.2 + 0.2667 + 0.075 + 0.06 = 0.8017.\nH.M. = N ÷ Σ(f/X) = 20 ÷ 0.8017 = 24.95.",
     "Example: which average? (Dec 2023 Q2(b), June 2024 Q2(b), Dec 2024 Q2(b))\nAverage price: goods cost ₹10/kg and ₹5/kg and ₹20 is spent, taking ₹10 on each (equal spending). That buys 1 kg + 2 kg = 3 kg, so the average price is 20 ÷ 3 = ₹6.67/kg — the harmonic mean of 10 and 5, not the arithmetic mean of ₹7.50.\nPercentile rank: scores 2, 3, 5, 6, 8, 10, 12, 15, 18, 20. Seven scores are below 15, so its percentile rank = (7 + 0.5) ÷ 10 × 100 = 75th percentile.\nGrowth rates 10%, 20%, 18%, −9%, 11%: use the geometric mean of the growth factors: (1.10 × 1.20 × 1.18 × 0.91 × 1.11)^(1/5) = 1.0949, i.e. 9.49% a year (the arithmetic mean, 10%, overstates it)."
@@ -213,6 +219,9 @@
     "CV = (SD ÷ Mean) × 100",
     "Coefficient of range = (L − S) ÷ (L + S)"
    ],
+   "figures": [
+    "dispersion-sd"
+   ],
    "examples": [
     "Example: mean and SD of a sample (June 2023, Q2(a))\nHeights of 7 plants (cm): 52, 35, 25, 45, 55, 20, 13. Mean = 245 ÷ 7 = 35 cm.\nDeviations: 17, 0, −10, 10, 20, −15, −22; squares: 289, 0, 100, 100, 400, 225, 484 → Σd² = 1,598.\nSample SD s = √(1,598 ÷ 6) = √266.33 = 16.32 cm (divide by n − 1 because it is a sample; dividing by n would give 15.11).",
     "Example: why CV is better for comparing\nFactory A: mean wage ₹500, SD ₹50 → CV = 10%. Factory B: mean wage ₹200, SD ₹30 → CV = 15%.\nA has the larger SD but the smaller CV, so wages in A are more uniform. The SD alone misleads because the means differ."
@@ -253,6 +262,10 @@
     "If class widths differ, plot frequency density (frequency ÷ width).",
     "Frequency polygon: mark mid-point of each bar top, join with straight lines, close at the mid-points of empty classes at each end."
    ],
+   "figures": [
+    "histogram-polygon",
+    "ogive"
+   ],
    "examples": [
     "Example: histogram and frequency polygon (Dec 2023 Q10)\nValue 5–10, 10–15, 15–20, 20–25, 25–30 with frequencies 12, 25, 30, 40, 20.\nHistogram: mark 5, 10, … 30 on the x-axis and frequency 0–40 on the y-axis; draw touching bars of heights 12, 25, 30, 40 and 20; title and label both axes. The tallest bar (20–25) is the modal class.\nFrequency polygon: join the mid-points of the bar tops (7.5, 12.5, 17.5, 22.5, 27.5) and close at 2.5 and 32.5 on the x-axis.",
     "Example: parts of a table\nTable 3 (table number): Enrolment by Course and Gender, 2025 (title). Stub: courses (B.Com, BA, B.Sc) in rows. Caption: Male, Female, Total in columns. Head note: (in thousands). Body: the figures. Footnote: '*Provisional'. Source: University Annual Report 2025."
@@ -286,6 +299,9 @@
    "mistakes": [
     "Saying non-sampling errors occur only in sample surveys — they occur in censuses too, often more.",
     "Calling convenience sampling 'random'."
+   ],
+   "figures": [
+    "survey-stages"
    ],
    "examples": [
     "Example: planning a household consumption survey\nScope and objectives with a tabulation plan (expenditure by item and income group) → frame (the latest census house list) → schedule (items, reference period 30 days) → instruction manual and training (what counts as consumption) → scrutiny note and coding plan → recruitment of investigators and supervisors → fieldwork (workloads, supplies, quick answers to queries, safe dispatch of schedules).\nWith 400 households sampled from 20,000, the sampling fraction is 400 ÷ 20,000 = 0.02 (2%).",
@@ -374,6 +390,10 @@
     "b = [nΣXY − ΣXΣY] ÷ [nΣX² − (ΣX)²], a = Ȳ − bX̄",
     "r² = Explained variation ÷ Total variation"
    ],
+   "figures": [
+    "correlation-types",
+    "regression-lines"
+   ],
    "examples": [
     "Example: correlation and its significance (Dec 2022, Q2)\nCars X: 63.0, 29.0, 20.8, 19.1, 13.4, 8.5; revenue Y: 7.0, 3.9, 2.1, 2.8, 1.4, 1.5 (n = 6).\nΣX = 153.8, ΣY = 18.7, ΣXY = 682.77, ΣX² = 5,859.26, ΣY² = 80.67.\nr = (6 × 682.77 − 153.8 × 18.7) ÷ √[(6 × 5,859.26 − 153.8²)(6 × 80.67 − 18.7²)] = 1,220.56 ÷ 1,242.96 = 0.982.\nt = r√(n − 2) ÷ √(1 − r²) = 0.982 × 2 ÷ √(1 − 0.964) = 10.39 > 2.776 (critical value, 4 d.f.) → reject H₀: the correlation is significant.",
     "Example: correlation vs causation, and r²\nIce-cream sales and drowning deaths are highly correlated, but both are caused by hot weather (a lurking third variable). To test whether a smart board raises marks, compare a class taught with it and a similar class without it, before and after (control other factors), then test the difference in means.\nIf r = 0.9 between advertising and sales, r² = 0.81: 81% of the variation in sales is explained by advertising, and 19% by other factors."
@@ -416,6 +436,9 @@
     "Putting the '=' sign in H₁.",
     "Using many t-tests instead of ANOVA for three or more groups."
    ],
+   "figures": [
+    "test-regions"
+   ],
    "examples": [
     "Example: a one-sample test\nA battery maker claims a mean life of 36 months. A sample of 36 batteries with an additive averages 37.5 months; σ = 3 months.\nH₀: μ = 36; H₁: μ > 36 (right-tailed), α = 0.05, critical z = 1.645.\nz = (37.5 − 36) ÷ (3/√36) = 1.5 ÷ 0.5 = 3.0 > 1.645 → reject H₀: the additive increases battery life. Since z = 3 has a p-value of about 0.001 < 0.05, the p-value method gives the same decision.",
     "Example: types of error and ANOVA\nType I: a court convicts an innocent person (H₀ 'innocent' rejected though true). Type II: a guilty person goes free. A drug regulator keeps α small because approving a useless drug (type I) is very costly.\nTo compare mean yields of three fertilisers, use one ANOVA F-test (between-group variance ÷ within-group variance) instead of three t-tests, which would raise the overall chance of a type I error."
@@ -457,6 +480,9 @@
     "Standard error = σ ÷ √n",
     "95% CI for μ = X̄ ± 1.96 σ/√n",
     "t = (X̄ − μ) ÷ (s/√n), d.f. = n − 1"
+   ],
+   "figures": [
+    "normal-curve"
    ],
    "examples": [
     "Example: normal distribution and a confidence interval\nMarks are normal with mean 50 and SD 10. A student scoring 70 has z = (70 − 50) ÷ 10 = 2, so about 97.7% of students scored below them. About 95% of students lie between 30 and 70 (mean ± 2 SD).\nA sample of 100 students has mean marks 65 with σ = 10: standard error = 10 ÷ √100 = 1, so the 95% CI = 65 ± 1.96 × 1 = 63.04 to 66.96.",
@@ -530,6 +556,9 @@
     "Describing qualitative analysis as 'no analysis, just quotes' — show the coding and theme steps.",
     "Confusing ethnography (culture of a group) with phenomenology (individual lived experience)."
    ],
+   "figures": [
+    "qda-steps"
+   ],
    "examples": [
     "Example: analysing interviews step by step\nA researcher interviews 15 women in self-help groups about empowerment. Transcribe the recordings into text → organise the answers under each research question → code them ('own income', 'say in decisions', 'confidence to travel'; in-vivo codes like 'my own money') → group the codes into themes (economic, social, personal) → validate by checking with participants and a second coder → write conclusions with quotations.\nIdeas emerging from the data (inductive) suit this kind of study because little was known beforehand.",
     "Example: matching the design to the question\nWhat is it like to lose one's land to a dam? → phenomenology. How does a fishing village organise its daily life? → ethnography (months of participant observation). Why do small traders adopt or reject UPI? → grounded theory (build a theory from coded interviews). Villagers and a researcher together study and fix their water problem → participatory action research. One cooperative dairy studied in depth → case study."
@@ -567,6 +596,10 @@
     "Sk(Pearson) = (Mean − Mode) ÷ SD = 3(Mean − Median) ÷ SD",
     "Sk(Bowley) = (Q₃ + Q₁ − 2Md) ÷ (Q₃ − Q₁)",
     "β₂ = μ₄ ÷ μ₂², γ₂ = β₂ − 3"
+   ],
+   "figures": [
+    "skewness",
+    "kurtosis"
    ],
    "examples": [
     "Example: measuring skewness\nIncomes in a town: mean ₹40,000, median ₹36,000, mode ₹28,000 (note 3 × 36,000 − 2 × 40,000 = 28,000), SD ₹16,000.\nKarl Pearson's Sk = (40,000 − 28,000) ÷ 16,000 = +0.75; using the median, 3(40,000 − 36,000) ÷ 16,000 = +0.75 too. Positive: a long right tail (a few very high incomes), with mean > median > mode.\nBowley: Q1 = 24,000, median 36,000, Q3 = 56,000 → (56,000 + 24,000 − 72,000) ÷ 32,000 = +0.25.",
