@@ -41,6 +41,9 @@
     ["visual", "Visual", "Diagrams and formulas first, points as numbered cards"],
     ["example", "Example-oriented", "The standard notes plus worked examples"]
   ];
+  // "Meet the creators" in Settings; the section is hidden while this list is empty.
+  // Each entry: { name, role, url } — url is the person's portfolio, opened in a new tab.
+  const CREATORS = [];
   const studyStyle = () => { const v = store.get("style", "standard"); return STYLES.some(([k]) => k === v) ? v : "standard"; };
   function applyPrefs() {
     document.documentElement.dataset.textsize = store.get("textsize", "m");
@@ -693,6 +696,14 @@ ${body.join("\n")}
         <p class="small">Exam preparation for IGNOU BCOMF (B.Com) students: topics ranked from past papers, short notes checked against the study material, diagrams, past papers and a study plan.</p>
         <p class="small muted flush">${courses.length} courses · ${papers} past papers · no sign-up; your settings and progress stay on this phone.</p>
       </section>
+
+      ${CREATORS.length ? `<h2>Meet the creators</h2>
+      <div class="creators">${CREATORS.map((p) => `
+        <a class="card creator" href="${esc(p.url)}" target="_blank" rel="noopener noreferrer">
+          <span class="creator-av" aria-hidden="true">${esc(p.name.split(/\s+/).map((w) => w[0]).slice(0, 2).join("").toUpperCase())}</span>
+          <span class="creator-main"><strong>${esc(p.name)}</strong>${p.role ? `<span class="muted small">${esc(p.role)}</span>` : ""}<span class="small creator-link">View portfolio ↗</span></span>
+        </a>`).join("")}
+      </div>` : ""}
 
       <h2>Disclaimer</h2>
       <p class="note small">Independent study aid, not affiliated with IGNOU. Topic priorities are guidance, not a guarantee.</p>`;

@@ -490,3 +490,9 @@ body.no-scroll { overflow: hidden; }
 .kbd { display: inline-grid; place-items: center; width: 26px; height: 26px; vertical-align: middle; border-radius: 7px; border: 1px solid var(--border); background: var(--surface-2); }
 #ai, [data-anchor] { scroll-margin-top: 72px; }
 .ai-ready { margin: 0; padding: 8px 12px; border-radius: 10px; background: var(--accent-soft); }
+.creators { display: grid; gap: 8px; }
+.creator { display: flex; align-items: center; gap: 12px; margin: 0; text-decoration: none; color: inherit; }
+.creator:hover { border-color: var(--accent); }
+.creator-av { flex: none; display: grid; place-items: center; width: 44px; height: 44px; border-radius: 50%; background: var(--accent-soft); color: var(--accent); font-weight: 800; }
+.creator-main { display: grid; gap: 2px; }
+.creator-link { color: var(--accent); font-weight: 600; }
