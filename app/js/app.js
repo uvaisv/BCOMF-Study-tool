@@ -595,6 +595,9 @@ ${body.join("\n")}
     app.innerHTML = `
       <h1>Settings</h1>
 
+      <h2 id="install"${sub === "install" ? " data-anchor" : ""}>Install app</h2>
+      <section class="card" id="installBox">${installCardHtml()}</section>
+
       <h2>Study style</h2>
       <p class="muted small">How topic pages show your notes. Change it any time.</p>
       <div class="choices" role="radiogroup" aria-label="Study style">${STYLES.map(([v, l, d]) => `
@@ -671,6 +674,7 @@ ${body.join("\n")}
       setTheme(b.dataset.theme === "system" ? null : b.dataset.theme); pick(".seg-btn[data-theme]", b);
     }));
     app.querySelector("#showWelcome").addEventListener("click", showWelcome);
+    bindInstall(app.querySelector("#installBox"));
 
     // AI key: saved only after Google confirms it works.
     const keyIn = app.querySelector("#aiKeyIn"), msg = app.querySelector("#aiMsg"), modelSel = app.querySelector("#aiModelSel");
@@ -1067,6 +1071,104 @@ ${body.join("\n")}
   }
 
   /* ---------- welcome screen (first open; again from Settings) ---------- */
+  /* ---------- install as a home-screen app ---------- */
+  // Chrome, Edge and Samsung Internet on Android offer a one-tap install (beforeinstallprompt).
+  // iPhone browsers and in-app browsers (Instagram, Facebook) do not, so those get short steps.
+  const INSTALL_ICON = `<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12"/><path d="M7 10l5 5 5-5"/><path d="M5 21h14"/></svg>`;
+  const SHARE_ICON = `<svg class="kbd-ico" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-label="Share"><path d="M12 15V3"/><path d="M8 7l4-4 4 4"/><path d="M6 11H5a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1v-8a1 1 0 0 0-1-1h-1"/></svg>`;
+  let installPrompt = null;
+  window.addEventListener("beforeinstallprompt", (e) => { e.preventDefault(); installPrompt = e; });
+  window.addEventListener("appinstalled", () => { installPrompt = null; store.set("installed", true); refreshInstall(); });
+  const runningInstalled = () => matchMedia("(display-mode: standalone)").matches || navigator.standalone === true;
+
+  function browserKind() {
+    const ua = navigator.userAgent;
+    if (/FBAN|FBAV|FB_IAB|Instagram|Line\/|Snapchat|; wv\)/i.test(ua)) return "inapp";
+    if (/iPad|iPhone|iPod/.test(ua) || (navigator.platform === "MacIntel" && navigator.maxTouchPoints > 1)) return "ios";
+    if (/SamsungBrowser/.test(ua)) return "samsung";
+    if (/Android/.test(ua)) return "android";
+    return "desktop";
+  }
+
+  // The Settings card: what installing gives, and a button (or "already installed").
+  function installCardHtml() {
+    if (runningInstalled()) return `<p class="flush"><span class="ok">✓</span> You are using the installed app.</p>`;
+    return `<p class="small">Add BCom Radar to your home screen. It opens full screen like any other app — no Play Store, no sign-up — and pages you have opened also work without internet.</p>
+        ${store.get("installed", false)
+          ? `<p class="small"><span class="ok">✓</span> Installed on this phone — open it from your home screen.</p>
+        <button type="button" class="btn secondary install-btn" data-install>${INSTALL_ICON} Install again</button>`
+          : `<button type="button" class="btn install-btn" data-install>${INSTALL_ICON} Install app</button>`}`;
+  }
+  function refreshInstall() {
+    const box = document.getElementById("installBox");
+    if (box) { box.innerHTML = installCardHtml(); bindInstall(box); }
+  }
+  function bindInstall(root) {
+    root.querySelectorAll("[data-install]").forEach((b) => b.addEventListener("click", (e) => { e.stopPropagation(); startInstall(); }));
+  }
+
+  // Must run inside the tap that asked for it: the browser only shows its prompt then.
+  function startInstall() {
+    if (installPrompt) {
+      const p = installPrompt;
+      installPrompt = null;   // a prompt can be shown only once
+      p.prompt();
+      p.userChoice.then((c) => { if (c.outcome === "accepted") store.set("installed", true); refreshInstall(); }).catch(() => {});
+      return;
+    }
+    showInstallSteps();
+  }
+
+  function showInstallSteps() {
+    const kind = browserKind();
+    const link = location.origin + location.pathname;
+    const steps = {
+      inapp: { lead: "You opened this inside another app (like Instagram or Facebook), which cannot install apps. Open it in your phone's browser first:",
+        list: ["Tap the <strong>⋮</strong> or <strong>•••</strong> menu at the top.", "Choose <strong>Open in browser</strong> (or Open in Chrome / Safari).", "Then tap <strong>Install app</strong> in Settings again."] },
+      ios: { lead: "On iPhone and iPad, apps are added from the Share menu:",
+        list: [`Tap the <strong>Share</strong> button ${SHARE_ICON} — at the bottom in Safari, at the top right in Chrome.`, "Scroll down and tap <strong>Add to Home Screen</strong>.", "Tap <strong>Add</strong>. BCom Radar appears on your home screen."] },
+      samsung: { lead: "In Samsung Internet:",
+        list: ["Tap the <strong>≡</strong> menu at the bottom right.", "Tap <strong>Add page to</strong> → <strong>Home screen</strong> (or <strong>Install app</strong> if you see it).", "Tap <strong>Add</strong>."] },
+      android: { lead: "In Chrome:",
+        list: ["Tap the <strong>⋮</strong> menu at the top right.", "Tap <strong>Install app</strong> or <strong>Add to Home screen</strong>.", "Tap <strong>Install</strong>. BCom Radar appears on your home screen."],
+        note: "Opened the link from WhatsApp? Tap <strong>⋮</strong> → <strong>Open in Chrome</strong> first." },
+      desktop: { lead: "On a computer, in Chrome or Edge:",
+        list: ["Click the install icon at the right end of the address bar,", "or open the <strong>⋮</strong> / <strong>…</strong> menu and look for <strong>Install BCom Radar</strong>."],
+        note: "Best on your phone: open bcomradar.vercel.app there and install it from Settings." }
+    }[kind];
+    const back = document.createElement("div");
+    back.className = "sheet-back";
+    back.innerHTML = `<div class="sheet" role="dialog" aria-modal="true" aria-labelledby="sheetT" tabindex="-1">
+        <h2 id="sheetT">Install BCom Radar</h2>
+        <p class="small">${steps.lead}</p>
+        <ol class="steps">${steps.list.map((x) => `<li>${x}</li>`).join("")}</ol>
+        ${steps.note ? `<p class="muted small">${steps.note}</p>` : ""}
+        <div class="sheet-btns">
+          ${kind === "inapp" ? `<button type="button" class="btn secondary" id="sheetCopy">Copy link</button>` : ""}
+          <button type="button" class="btn" id="sheetOk">Got it</button>
+        </div>
+      </div>`;
+    const before = document.activeElement;
+    document.body.appendChild(back);
+    document.body.classList.add("no-scroll");
+    const sheet = back.querySelector(".sheet");
+    sheet.focus();
+    const close = () => {
+      back.remove();
+      document.body.classList.remove("no-scroll");
+      if (before && before.focus) before.focus({ preventScroll: true });
+    };
+    back.addEventListener("click", (e) => { if (e.target === back) close(); });
+    back.addEventListener("keydown", (e) => { if (e.key === "Escape") close(); });
+    back.querySelector("#sheetOk").addEventListener("click", close);
+    const copy = back.querySelector("#sheetCopy");
+    if (copy) copy.addEventListener("click", () => {
+      const done = () => { copy.textContent = "Link copied ✓"; };
+      if (navigator.clipboard) navigator.clipboard.writeText(link).then(done, () => { copy.textContent = link; });
+      else copy.textContent = link;
+    });
+  }
+
   function showWelcome() {
     const el = document.createElement("div");
     el.className = "splash";
@@ -1088,6 +1190,7 @@ ${body.join("\n")}
         <li>Diagrams, formulas and answer outlines</li>
         <li>Past papers and a study plan, one tap away</li>
       </ul>
+      ${runningInstalled() ? "" : `<button type="button" class="sp-install" data-install>${INSTALL_ICON} Install the app</button>`}
       <p class="sp-tap">Tap anywhere to continue</p>
     </div>`;
     document.body.appendChild(el);
@@ -1099,6 +1202,11 @@ ${body.join("\n")}
       document.body.classList.remove("no-scroll");
       setTimeout(() => el.remove(), 320);
     };
+    const inst = el.querySelector("[data-install]");
+    if (inst) {
+      inst.addEventListener("click", (e) => { e.stopPropagation(); close(); startInstall(); });
+      inst.addEventListener("keydown", (e) => e.stopPropagation());   // Enter/Space on the button installs, not "continue"
+    }
     el.addEventListener("click", close);
     el.addEventListener("keydown", (e) => { if (["Enter", " ", "Escape"].includes(e.key)) { e.preventDefault(); close(); } });
   }
