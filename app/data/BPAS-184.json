@@ -78,6 +78,9 @@
      "unit": 8,
      "title": "Information Monitoring"
     }
+   ],
+   "examples": [
+    "Example: one order through a logistics information system\nA shop orders 200 cartons online. The order-management module checks stock in the WMS and reserves it; the warehouse prints a pick list and scans barcodes as cartons are packed; the TMS books a truck and shares a GPS tracking link; the invoice is raised automatically in the ERP. The manager's dashboard flags only exceptions — say, a delivery running late — so attention goes where it is needed."
    ]
   },
   {
@@ -103,6 +106,9 @@
      "unit": 11,
      "title": "Green Logistics"
     }
+   ],
+   "examples": [
+    "Example: greening a distribution network\nA FMCG company moves long-haul freight from trucks to rail, consolidates half-empty loads into full ones, switches city delivery to electric vans, and puts solar panels and LED lights on its warehouse roof. It measures its carbon footprint each year using the GHG Protocol and sets a target to cut emissions per tonne-km by 20% in five years."
    ]
   },
   {
@@ -140,6 +146,9 @@
      "title": "Effective Logistics Management: Challenges",
      "part": "13.2 Challenges"
     }
+   ],
+   "examples": [
+    "Example: four types of logistics in one company\nA shoe maker brings leather from suppliers (inbound), moves cut pieces between stitching and finishing lines (in-plant), ships finished shoes to stores and online buyers (outbound), and collects returned or worn-out shoes for repair and recycling (reverse logistics). Getting the right size, in the right quantity, to the right store, before the festival season, at the right cost, is the 7 Rs in action."
    ]
   },
   {
@@ -170,6 +179,9 @@
      "title": "Effective Logistics Management: Challenges",
      "part": "13.4 Customer management"
     }
+   ],
+   "examples": [
+    "Example: the three stages of customer service\nPre-transaction: an online seller publishes a clear return policy and a promise of delivery in 3 days. Transaction: the item is in stock, the order is accurate and arrives on time. Post-transaction: it handles a damaged-item complaint with a quick replacement. Customer success goes further — a B2B supplier helps a client restaurant plan its weekly orders so it never runs short."
    ]
   },
   {
@@ -195,6 +207,9 @@
      "unit": 4,
      "title": "Logistics Management Cycle"
     }
+   ],
+   "examples": [
+    "Example: one weak link breaks the cycle\nA district health store under-forecasts demand for ORS packets before the monsoon. Procurement buys too little; stock runs out in clinics just as diarrhoea cases rise. Even good storage and transport cannot fix a wrong forecast — which is why the cycle (selection, forecasting, procurement, storage, distribution, use) is managed as one system, linked by its information system."
    ]
   },
   {
@@ -220,6 +235,9 @@
      "unit": 5,
      "title": "Procurement of Material and Inventory Control"
     }
+   ],
+   "examples": [
+    "Example: ABC and VED in a hospital store\nABC by value: 10% of items (cancer drugs, stents) take 70% of spending → strict control and frequent review (A). Cotton and gloves are many items of low value (C) → simple, bulk ordering.\nVED by criticality: oxygen and anaesthesia drugs are Vital — they must never run out, even if cheap; a particular brand of soap is Desirable. Combining both, a cheap but vital drug gets high safety stock."
    ]
   },
   {
@@ -244,6 +262,9 @@
      "unit": 6,
      "title": "Material Handling and Packaging"
     }
+   ],
+   "examples": [
+    "Example: applying material-handling principles\nA warehouse moves goods in loose cartons by hand. It shifts to palletised unit loads moved by forklifts and pallet jacks, cutting the number of handlings, damage and worker strain. Fast-moving items are placed near the dispatch bay to reduce travel. Later, an automated storage and retrieval system (AS/RS) is added for small, high-value parts."
    ]
   },
   {
@@ -276,6 +297,9 @@
    ],
    "figures": [
     "supply-chain"
+   ],
+   "examples": [
+    "Example: the bullwhip effect\nCustomer demand for a biscuit rises 10% during a festival. The retailer, fearing shortage, raises its orders 20%; the distributor, seeing that jump, orders 40% more; the factory schedules 60% more production. After the festival, everyone is overstocked. Sharing real point-of-sale data along the chain (and vendor-managed inventory) dampens these swings."
    ]
   },
   {
@@ -306,6 +330,9 @@
      "title": "Effective Logistics Management: Challenges",
      "part": "13.3 Efficient transportation"
     }
+   ],
+   "examples": [
+    "Example: choosing a mode and the documents\nPerishable flowers from Bengaluru to Dubai → air (fast; airway bill). Coal from Odisha to a power plant in Punjab → rail (bulk, long distance; railway receipt). Furniture from a Jodhpur factory to a Delhi shop → road (door to door; lorry receipt and an e-way bill for goods over ₹50,000). Cars exported to Africa → sea (cheapest for heavy loads; bill of lading).\nA cross-docking warehouse unloads incoming trucks and reloads goods onto outbound trucks the same day, without storing them."
    ]
   },
   {
@@ -331,6 +358,9 @@
      "unit": 12,
      "title": "Outsourcing Logistics Management: Issues"
     }
+   ],
+   "examples": [
+    "Example: outsourcing with a service-level agreement\nAn online fashion brand hands warehousing and delivery to a 3PL so it can focus on design and marketing. The contract's SLA sets KPIs — 99% picking accuracy, dispatch within 24 hours, damage below 0.5% — with penalties and monthly reviews. The brand keeps access to the 3PL's stock data through a shared system, so it does not lose visibility or control."
    ]
   }
  ],

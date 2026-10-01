@@ -51,6 +51,9 @@
       "units": [
         { "block": 5, "unit": 1, "title": "Value Development through Social Institutions: Family and Neighbourhood" },
         { "block": 5, "unit": 3, "title": "Role of Parents" }
+      ],
+      "examples": [
+        "Example: imprint, modelling and socialisation\nA toddler copies her parents greeting elders with folded hands (imprint). As a child she admires an aunt who volunteers at a shelter and starts helping too (modelling). As a teenager she joins the school's community service club and adopts its shared values (socialisation).\nParents who explain why a rule matters ('we don't take others' things because they feel hurt') — induction — build stronger values than parents who only punish."
       ]
     },
     {
@@ -76,6 +79,10 @@
         { "block": 3, "unit": 1, "title": "Theories of Goodness" },
         { "block": 3, "unit": 2, "title": "Theories of Conduct" },
         { "block": 3, "unit": 3, "title": "Reason and Emotions in Human Conduct" }
+      ],
+      "examples": [
+        "Example: intention, free will and the three facets\nTwo students both return a lost wallet. One does it out of concern for the owner; the other only because a camera was watching. The act is the same, but the intention differs — and moral judgement looks at the intention.\nCaring (feeling for the owner), judging (deciding that returning it is right) and acting (actually returning it) must all be present for fully moral behaviour.",
+        "Example: theories of conduct applied\nShould a company tell customers about a minor defect? Kant's universalisability: if every firm hid defects, no one could trust any product — so disclose. Act utilitarianism: weigh total happiness in this one case. Rule utilitarianism: follow the rule 'always disclose defects', because that rule produces the most good overall."
       ]
     },
     {
@@ -100,6 +107,10 @@
         { "block": 4, "unit": 3, "title": "Values: Conflict and Resolution" },
         { "block": 4, "unit": 4, "title": "Process of Human Adjustment" },
         { "block": 4, "unit": 1, "title": "Process of Socialization" }
+      ],
+      "examples": [
+        "Example: conflict resolved three ways\nTwo roommates clash over study time and music.\nWin–lose: one forces the other to stay silent. Lose–lose: they agree no one plays music at all, and both are unhappy. Win–win: one uses headphones and the other studies in the library in the evening — both needs are met.",
+        "Example: helping a maladjusted child\nAfter his parents' separation, a 10-year-old becomes withdrawn and aggressive in class (an adjustment disorder within three months of the change). The teacher talks with him daily, pairs him with a kind 'buddy', discusses rather than punishes his outbursts, and informs the counsellor and parents."
       ]
     },
     {
@@ -119,6 +130,9 @@
       "mistakes": [],
       "units": [
         { "block": 3, "unit": 4, "title": "Character and Personality" }
+      ],
+      "examples": [
+        "Example: Peck's character types in one situation\nA cashier finds ₹500 extra in the till.\nAmoral: pockets it without any thought. Expedient: keeps it unless someone may find out. Conforming: returns it because 'that is the rule'. Irrational-conscientious: returns it out of rigid guilt, without understanding why. Rational-altruistic: returns it because they understand it belongs to a customer who may need it — the most mature level."
       ]
     },
     {
@@ -143,6 +157,9 @@
         { "block": 2, "unit": 1, "title": "Indian Culture and Human Values" },
         { "block": 2, "unit": 2, "title": "Values Enshrined in Indian Philosophy" },
         { "block": 2, "unit": 3, "title": "Cultural Pluralism in Indian Society" }
+      ],
+      "examples": [
+        "Example: cultural pluralism in a housing colony\nFamilies from Kerala, Punjab and Assam live in one colony. They celebrate Onam, Lohri and Bihu together, share food and learn each other's festivals, while each family keeps its own language and customs. This is pluralism — acceptance, appreciation and adjustment without losing identity — unlike assimilation, where everyone is expected to become the same."
       ]
     },
     {
@@ -166,6 +183,9 @@
       "units": [
         { "block": 1, "unit": 1, "title": "Social Malaise and the Need for Value Education" },
         { "block": 1, "unit": 2, "title": "Concept of Morality and Moral Education", "part": "Moral vs religious education" }
+      ],
+      "examples": [
+        "Example: building values into an ordinary lesson\nA commerce teacher teaching profit calculation adds a short case: a shopkeeper who could earn more by using false weights but chooses not to. Students discuss what they would do and why. Honesty is taught inside the subject, through discussion rather than a lecture — and the teacher's own fairness in marking is the strongest lesson of all."
       ]
     },
     {
@@ -188,6 +208,9 @@
       "units": [
         { "block": 5, "unit": 2, "title": "School and Peer" },
         { "block": 5, "unit": 4, "title": "Influence of Media on Value Development" }
+      ],
+      "examples": [
+        "Example: peer pressure and media literacy\nA 15-year-old's friends start vaping and tease him for refusing. A school peer-mentor programme pairs him with older students who refuse confidently — peers used for good.\nThe same student sees an influencer advertise a 'miracle' weight-loss drink. A media-literacy class teaches him to ask: who paid for this? What is the evidence? What is left out? — so he uses media consciously instead of being used by it."
       ]
     },
     {
@@ -209,6 +232,9 @@
       "units": [
         { "block": 1, "unit": 4, "title": "Pillars of Democracy: Living in Peace and Harmony" },
         { "block": 2, "unit": 4, "title": "Values for Sustainable Development" }
+      ],
+      "examples": [
+        "Example: democracy in a classroom and sustainability in a school\nA class elects its monitor, decides its picnic spot by vote and lets every student speak in discussions — equality, freedom and participation practised as a way of life.\nThe same school starts rain-water harvesting, composts canteen waste and replaces plastic with steel tumblers — students learn respect for future generations by doing, not only by reading."
       ]
     }
   ],

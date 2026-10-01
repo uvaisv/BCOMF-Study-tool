@@ -51,6 +51,9 @@
         { "unit": 3, "title": "Retail Formats" },
         { "unit": 9, "title": "Rural Retailing and E-Tailing", "part": "E-tailing and franchising" },
         { "unit": 10, "title": "Emerging Trends and Careers in Retail Industry", "part": "Cash and carry" }
+      ],
+      "examples": [
+        "Examples: matching formats\nThe kirana shop on the corner (traditional, credit and personal service); a supermarket with self-service aisles; a hypermarket on the highway with groceries plus electronics; a jewellery speciality store; a discount store with everyday low prices; Amway distributors (direct selling, non-store); a vending machine at a station; a cash-and-carry wholesale store that only serves registered businesses."
       ]
     },
     {
@@ -74,7 +77,10 @@
       "units": [
         { "unit": 2, "title": "Retail Consumer" }
       ],
-      "figures": ["buying-process"]
+      "figures": ["buying-process"],
+      "examples": [
+        "Example: situational variables change the purchase\nThe same shopper buys a cheap umbrella at a station kiosk when it suddenly rains (time pressure, physical surroundings), but a branded gift set after comparing stores when shopping for a friend's wedding (task: a gift, with social surroundings — friends along). The store's image — clean, helpful staff, fair prices — decides where she shops in the second case."
+      ]
     },
     {
       "id": "store",
@@ -96,6 +102,9 @@
       "mistakes": [],
       "units": [
         { "unit": 5, "title": "Store Design and Visual Merchandising" }
+      ],
+      "examples": [
+        "Example: layout and display decisions\nA supermarket uses a grid layout with milk and bread at the back, so shoppers pass other aisles. A boutique uses a free-form layout to encourage browsing. A department store uses a racetrack loop leading past every department.\nImpulse items such as chocolates sit at the billing counter (point-of-purchase display); soft lighting, music and a pleasant scent make customers stay longer."
       ]
     },
     {
@@ -119,6 +128,9 @@
       "units": [
         { "unit": 1, "title": "Retail Scenario" },
         { "unit": 9, "title": "Rural Retailing and E-Tailing", "part": "Rural retailing" }
+      ],
+      "examples": [
+        "Example: a trend in practice — omnichannel and quick commerce\nA customer checks a shirt on a retailer's app, tries it in the store, finds her size out of stock, orders it from the store's tablet for home delivery, and pays by UPI. Meanwhile her groceries arrive in 15 minutes from a quick-commerce dark store. Rising incomes, smartphones and digital payments make both possible, while high rents and supply-chain gaps remain challenges."
       ]
     },
     {
@@ -139,6 +151,9 @@
       "mistakes": [],
       "units": [
         { "unit": 11, "title": "Ethics in Retailing" }
+      ],
+      "examples": [
+        "Example: ethical and unethical practices\nUnethical: raising the 'MRP' before announcing a 50% discount; selling goods near expiry without disclosure; charging for a branded carry bag without telling the customer first (held an unfair trade practice by consumer forums). Ethical: clear prices, honest weights, prompt payment to small suppliers, and fair wages and safety for staff — building trust that brings customers back."
       ]
     },
     {
@@ -160,6 +175,9 @@
       "mistakes": [],
       "units": [
         { "unit": 8, "title": "Technology in Retailing" }
+      ],
+      "examples": [
+        "Example: technology from shelf to customer\nRFID tags let staff count the whole store's stock in minutes; the POS system bills, updates stock and shows the day's best sellers; low stock triggers an automatic reorder in the ERP; the loyalty app sends a personalised coupon. Online, the store appears in free search results through SEO and buys search ads (SEM) during the festival sale."
       ]
     },
     {
@@ -182,6 +200,9 @@
       "units": [
         { "unit": 4, "title": "Sourcing and Merchandising" },
         { "unit": 5, "title": "Store Design and Visual Merchandising" }
+      ],
+      "examples": [
+        "Example: a merchandise budget\nPlanned sales for October ₹10 lakh; planned reductions (markdowns and shrinkage) ₹1 lakh; desired closing stock ₹6 lakh; opening stock ₹5 lakh.\nPlanned purchases = 10 + 1 + 6 − 5 = ₹12 lakh.\nCross merchandising: pasta displayed with sauce and cheese raises the average bill; visual merchandising puts winter wear on mannequins at the entrance in November."
       ]
     },
     {
@@ -203,6 +224,9 @@
       "units": [
         { "unit": 1, "title": "Retail Scenario" },
         { "unit": 10, "title": "Emerging Trends and Careers in Retail Industry", "part": "Careers in retail" }
+      ],
+      "examples": [
+        "Example: the wheel of retailing\nA discount chain enters with bare stores, few services and very low prices. As it grows, it adds air-conditioning, trial rooms, home delivery and a loyalty programme — costs and prices rise. That leaves room for a new low-price entrant (now often an online seller) to repeat the cycle."
       ]
     },
     {
@@ -225,6 +249,9 @@
       "units": [
         { "unit": 6, "title": "Retail Operations and Store Management" },
         { "unit": 7, "title": "Legal Environment and Security Issues", "part": "Security issues" }
+      ],
+      "examples": [
+        "Example: retail performance measures\nAnnual sales ₹1.2 crore from a 4,000 sq ft store → ₹3,000 per sq ft.\nGross margin ₹30 lakh on average inventory (at cost) of ₹10 lakh → GMROI 3 (each rupee of stock earns ₹3 of margin).\nOn one day 1,000 people enter and 250 buy → conversion rate 25%; sales ₹5 lakh ÷ 250 bills → average transaction value ₹2,000.\nShrinkage from shoplifting is controlled with EAS tags, CCTV and bag checks."
       ]
     },
     {
@@ -243,6 +270,9 @@
       "mistakes": [],
       "units": [
         { "unit": 4, "title": "Sourcing and Merchandising" }
+      ],
+      "examples": [
+        "Example: weighted scoring of two suppliers\nWeights: price 40%, quality 30%, delivery 20%, service 10%.\nSupplier A scores 8, 7, 9, 6 → 3.2 + 2.1 + 1.8 + 0.6 = 7.7.\nSupplier B scores 9, 6, 6, 8 → 3.6 + 1.8 + 1.2 + 0.8 = 7.4.\nA wins although B is cheaper, because of better quality and delivery."
       ]
     },
     {
@@ -261,6 +291,9 @@
       "mistakes": [],
       "units": [
         { "unit": 7, "title": "Legal Environment and Security Issues" }
+      ],
+      "examples": [
+        "Example: input tax credit under GST\nA retailer buys a mixer for ₹1,000 + 18% GST (₹180) and sells it for ₹1,500 + 18% GST (₹270). It pays the government only ₹270 − ₹180 = ₹90, the tax on its value addition of ₹500. Before GST, taxes at different stages could pile up as tax on tax (cascading).\nA customer sold a mixer that breaks in a week can complain to the District Consumer Commission under the Consumer Protection Act, 2019."
       ]
     },
     {
@@ -278,6 +311,9 @@
       "mistakes": [],
       "units": [
         { "unit": 4, "title": "Sourcing and Merchandising", "part": "Pricing strategies" }
+      ],
+      "examples": [
+        "Example: mark-up and pricing strategies\nCost ₹400; mark-up 25% on cost → price ₹500. The same ₹100 is a 20% mark-up on the selling price (100 ÷ 500).\nPsychological pricing: ₹499 instead of ₹500. Loss leader: sugar sold at cost to bring shoppers in. EDLP: steady low prices every day. High-low: higher regular prices with frequent sales. Bundle: shampoo + conditioner pack at ₹299."
       ]
     }
   ],
