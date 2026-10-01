@@ -47,6 +47,8 @@
     { name: "Abdul Shukkoor", role: "Finance, Accounting & AI", url: "https://abdul-shukkoor.vercel.app/" },
     { name: "Muhammed Uvais V.", role: "Finance, AI & Automation", url: "https://uvaisv-portfolio.vercel.app/" }
   ];
+  // "Send feedback" in Settings opens the student's mail app; hidden while this is empty.
+  const FEEDBACK_EMAIL = "";
   const studyStyle = () => { const v = store.get("style", "standard"); return STYLES.some(([k]) => k === v) ? v : "standard"; };
   function applyPrefs() {
     document.documentElement.dataset.textsize = store.get("textsize", "m");
@@ -700,6 +702,14 @@ ${body.join("\n")}
         <p class="small muted flush">${courses.length} courses · ${papers} past papers · no sign-up; your settings and progress stay on this phone.</p>
       </section>
 
+      ${FEEDBACK_EMAIL ? `<h2>Send feedback</h2>
+      <section class="card fb">
+        <p class="small">Found a mistake in the notes, or have an idea? Tell us — it opens your email app with the details filled in.</p>
+        <div class="fb-btns">${[["mistake", "Report a mistake"], ["idea", "Suggest a feature"], ["other", "Other feedback"]].map(([k, l]) =>
+          `<a class="btn secondary" href="${feedbackMail(k)}">${l}</a>`).join("")}</div>
+        <p class="small muted flush">No email app? Write to <a href="mailto:${esc(FEEDBACK_EMAIL)}">${esc(FEEDBACK_EMAIL)}</a>.</p>
+      </section>` : ""}
+
       ${CREATORS.length ? `<h2>Meet the creators</h2>
       <div class="creators">${CREATORS.map((p) => `
         <a class="card creator" href="${esc(p.url)}" target="_blank" rel="noopener noreferrer">
@@ -1102,6 +1112,17 @@ ${body.join("\n")}
         <li><em>“Limit reached”</em> — the free quota is used up for now; try again later.</li>
         <li><em>“Couldn't reach Google”</em> — check your internet connection. The assistant needs internet even though the notes work offline.</li>
       </ul>`;
+  }
+
+  // mailto: link with a subject and a short template; the version helps us trace problems.
+  function feedbackMail(kind) {
+    const subj = { mistake: "Mistake in the notes", idea: "Feature idea", other: "Feedback" }[kind];
+    const body = {
+      mistake: "Course code:\nTopic or question:\nWhat is wrong:\nWhat it should be (if you know):\n",
+      idea: "My idea:\nHow it would help me:\n",
+      other: ""
+    }[kind] + `\n— BCom Buddy ${APP_VERSION}`;
+    return `mailto:${FEEDBACK_EMAIL}?subject=${encodeURIComponent(`BCom Buddy: ${subj}`)}&body=${encodeURIComponent(body)}`;
   }
 
   /* ---------- welcome screen (first open; again from Settings) ---------- */

@@ -496,3 +496,5 @@ body.no-scroll { overflow: hidden; }
 .creator-av { flex: none; display: grid; place-items: center; width: 44px; height: 44px; border-radius: 50%; background: var(--accent-soft); color: var(--accent); font-weight: 800; }
 .creator-main { display: grid; gap: 2px; }
 .creator-link { color: var(--accent); font-weight: 600; }
+.fb-btns { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 12px; }
+.fb-btns .btn { flex: 1 1 140px; text-align: center; }
