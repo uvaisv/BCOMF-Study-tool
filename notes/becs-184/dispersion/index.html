@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Measures of Dispersion – BECS-184 Data Analysis notes | BCom Radar</title>
+  <meta name="description" content="Measures of Dispersion (BECS-184 Data Analysis): key points, worked examples and past exam questions. Meaning of dispersion, absolute and relative measures…">
+  <link rel="canonical" href="https://bcomradar.vercel.app/notes/becs-184/dispersion/">
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="BCom Radar">
+  <meta property="og:title" content="Measures of Dispersion – BECS-184 Data Analysis notes | BCom Radar">
+  <meta property="og:description" content="Measures of Dispersion (BECS-184 Data Analysis): key points, worked examples and past exam questions. Meaning of dispersion, absolute and relative measures…">
+  <meta property="og:url" content="https://bcomradar.vercel.app/notes/becs-184/dispersion/">
+  <meta property="og:image" content="https://bcomradar.vercel.app/app/icons/icon-512.png">
+  <meta name="twitter:card" content="summary">
+  <meta name="theme-color" content="#0f766e">
+  <link rel="icon" href="/app/icons/icon.svg" type="image/svg+xml">
+  <link rel="icon" href="/app/icons/favicon-32.png" sizes="32x32" type="image/png">
+  <link rel="apple-touch-icon" href="/app/icons/apple-touch-icon.png">
+  <link rel="stylesheet" href="/app/css/style.css">
+  <script>try{var d=document.documentElement,g=function(k){var v=localStorage.getItem(k);return v===null?null:JSON.parse(v)};if(g("theme"))d.dataset.theme=g("theme");d.dataset.textsize=g("textsize")||"m";d.dataset.density=g("density")||"comfortable"}catch(e){}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"All notes","item":"https://bcomradar.vercel.app/notes/"},{"@type":"ListItem","position":2,"name":"BECS-184 Data Analysis","item":"https://bcomradar.vercel.app/notes/becs-184/"},{"@type":"ListItem","position":3,"name":"Measures of Dispersion","item":"https://bcomradar.vercel.app/notes/becs-184/dispersion/"}]}</script>
+</head>
+<body class="web-page">
+  <header class="topbar">
+    <a href="/app/" class="brand" aria-label="BCom Radar app">
+      <img class="brand-mark" src="/app/icons/icon.svg" width="32" height="32" alt="">
+      <span class="brand-text">BCom Radar</span>
+    </a>
+    <div class="topbar-actions"><a class="top-open" href="/app/#/c/BECS-184/t/dispersion">Open in app</a></div>
+  </header>
+
+  <main class="container">
+    <nav class="crumbs" aria-label="Breadcrumb"><a href="/notes/">All notes</a><span aria-hidden="true">›</span><a href="/notes/becs-184/">BECS-184 Data Analysis</a></nav>
+
+    <h1>Measures of Dispersion</h1>
+    <p class="head-meta"><span class="badge moderate">Moderate</span> <span class="muted small">Asked in 5 of 8 papers · avg 9 marks</span></p>
+    <p class="lead">Meaning of dispersion, absolute and relative measures — range, quartile deviation, mean deviation, standard deviation and variance, coefficient of variation — and which measure is most reliable.</p>
+    <p class="book-ref"><span class="book-ref-h">In your IGNOU book</span><span>Block 1 · Unit 2 Statistical Concepts <span class="muted">(2.5)</span></span></p>
+
+    <h2>Key points</h2>
+    <section class="card"><ul class="points"><li>Dispersion is the spread of values around the centre; a small dispersion means the data are uniform, a large one means they vary a lot.</li><li>A good measure is rigidly defined, based on all items, easy to understand and compute, little affected by extreme items and capable of algebraic treatment.</li><li>Absolute measures (in the units of the data): range, quartile deviation, mean deviation, standard deviation. Relative measures (unit-free, for comparison): coefficients of range, quartile deviation, mean deviation, and the coefficient of variation.</li><li>Range = largest − smallest; simplest but depends only on two extreme values.</li><li>Mean deviation = average of absolute deviations from the mean (or median); ignores signs, so it is less suited to algebra.</li><li>Standard deviation (Karl Pearson, 1893) = square root of the mean of squared deviations from the mean; variance = SD². For a sample, divide by n − 1 to get an unbiased estimate.</li><li>Standard deviation is the most reliable measure: it uses all values, is rigidly defined, is used in further analysis (correlation, tests) and varies least between samples.</li><li>Coefficient of variation = SD ÷ mean × 100. It is better than SD for comparing series with different units or very different means; the lower CV is the more consistent series.</li></ul></section>
+
+    <h2>Worked examples</h2>
+    <section class="card example"><h3>Example: mean and SD of a sample (June 2023, Q2(a))</h3><p>Heights of 7 plants (cm): 52, 35, 25, 45, 55, 20, 13. Mean = 245 ÷ 7 = 35 cm.</p><p>Deviations: 17, 0, −10, 10, 20, −15, −22; squares: 289, 0, 100, 100, 400, 225, 484 → Σd² = 1,598.</p><p>Sample SD s = √(1,598 ÷ 6) = √266.33 = 16.32 cm (divide by n − 1 because it is a sample; dividing by n would give 15.11).</p></section>
+    <section class="card example"><h3>Example: why CV is better for comparing</h3><p>Factory A: mean wage ₹500, SD ₹50 → CV = 10%. Factory B: mean wage ₹200, SD ₹30 → CV = 15%.</p><p>A has the larger SD but the smaller CV, so wages in A are more uniform. The SD alone misleads because the means differ.</p></section>
+
+    <h2>Diagram</h2>
+    <figure class="card fig"><figcaption class="fig-title">Same mean, different dispersion</figcaption><svg viewBox="0 0 320 220" role="img" aria-label="Two curves with the same mean and different standard deviations"><path class="ax" d="M40 16V196M40 196H310"/><text class="axl" x="310" y="210" text-anchor="end">Value</text><path class="c1" d="M45.3 196.0L48.5 196.0L51.7 196.0L54.9 196.0L58.1 196.0L61.3 196.0L64.5 196.0L67.7 195.9L70.9 195.9L74.0 195.8L77.2 195.7L80.4 195.6L83.6 195.4L86.8 195.1L90.0 194.7L93.2 194.1L96.4 193.4L99.6 192.3L102.8 190.9L106.0 189.0L109.2 186.6L112.4 183.6L115.5 179.8L118.7 175.1L121.9 169.5L125.1 162.9L128.3 155.2L131.5 146.5L134.7 136.7L137.9 126.0L141.1 114.6L144.3 102.7L147.5 90.5L150.7 78.5L153.8 67.0L157.0 56.4L160.2 47.0L163.4 39.3L166.6 33.6L169.8 30.0L173.0 28.8L176.2 30.0L179.4 33.6L182.6 39.3L185.8 47.0L189.0 56.4L192.2 67.0L195.3 78.5L198.5 90.5L201.7 102.7L204.9 114.6L208.1 126.0L211.3 136.7L214.5 146.5L217.7 155.2L220.9 162.9L224.1 169.5L227.3 175.1L230.5 179.8L233.6 183.6L236.8 186.6L240.0 189.0L243.2 190.9L246.4 192.3L249.6 193.4L252.8 194.1L256.0 194.7L259.2 195.1L262.4 195.4L265.6 195.6L268.8 195.7L272.0 195.8L275.1 195.9L278.3 195.9L281.5 196.0L284.7 196.0L287.9 196.0L291.1 196.0L294.3 196.0L297.5 196.0L300.7 196.0"/><path class="c2" d="M45.3 191.3L48.5 190.6L51.7 189.8L54.9 188.9L58.1 187.9L61.3 186.8L64.5 185.6L67.7 184.2L70.9 182.8L74.0 181.2L77.2 179.5L80.4 177.6L83.6 175.6L86.8 173.5L90.0 171.2L93.2 168.9L96.4 166.4L99.6 163.7L102.8 161.0L106.0 158.2L109.2 155.3L112.4 152.4L115.5 149.3L118.7 146.3L121.9 143.3L125.1 140.2L128.3 137.3L131.5 134.3L134.7 131.5L137.9 128.8L141.1 126.2L144.3 123.8L147.5 121.5L150.7 119.5L153.8 117.7L157.0 116.1L160.2 114.8L163.4 113.8L166.6 113.0L169.8 112.6L173.0 112.4L176.2 112.6L179.4 113.0L182.6 113.8L185.8 114.8L189.0 116.1L192.2 117.7L195.3 119.5L198.5 121.5L201.7 123.8L204.9 126.2L208.1 128.8L211.3 131.5L214.5 134.3L217.7 137.3L220.9 140.2L224.1 143.3L227.3 146.3L230.5 149.3L233.6 152.4L236.8 155.3L240.0 158.2L243.2 161.0L246.4 163.7L249.6 166.4L252.8 168.9L256.0 171.2L259.2 173.5L262.4 175.6L265.6 177.6L268.8 179.5L272.0 181.2L275.1 182.8L278.3 184.2L281.5 185.6L284.7 186.8L287.9 187.9L291.1 188.9L294.3 189.8L297.5 190.6L300.7 191.3"/><path class="guide" d="M173 20V196"/><text class="tick" x="173" y="208" text-anchor="middle">mean</text><text class="lbl sm" x="208.3" y="102.7" text-anchor="start">A: SD = 1</text><text class="lbl sm" x="260.1" y="162.8" text-anchor="start">B: SD = 2</text></svg><p class="fig-note">Both distributions have the same mean, but the values in B are spread twice as widely (its standard deviation is double). A small SD means values cluster close to the mean — the data are more uniform and the mean represents them better; a large SD means they are scattered. To compare series with different means or units, use the coefficient of variation (SD ÷ mean × 100).</p></figure>
+
+    <h2>How to solve</h2>
+    <section class="card"><ol class="steps"><li>Find the mean.</li><li>Take deviations d = X − mean and square them.</li><li>Sample variance s² = Σd² ÷ (n − 1); s = √s² (population: divide by N).</li><li>CV = s ÷ mean × 100; compare CVs to judge consistency.</li></ol></section>
+
+    <h2>Formulas</h2>
+    <section class="card"><div class="formula">s = √[Σ(X − X̄)² ÷ (n − 1)]</div><div class="formula">σ = √[Σ(X − μ)² ÷ N]</div><div class="formula">CV = (SD ÷ Mean) × 100</div><div class="formula">Coefficient of range = (L − S) ÷ (L + S)</div></section>
+
+    <h2>How to write the answer</h2>
+    <section class="card"><p class="flush">Meaning → table of absolute vs relative measures → each with formula and one merit/limit → most reliable measure with reasons → small example.</p></section>
+
+    <h2>Common mistakes</h2>
+    <div class="callout warn"><ul class="points"><li>Comparing the SDs of two series with different means or units instead of their CVs.</li><li>Dividing by n instead of n − 1 when the question asks for the sample SD of a sample.</li><li>Forgetting the units of the SD (same as the data) and that CV is a percentage.</li></ul></div>
+
+    <h2>Asked in past papers</h2>
+    <p class="muted small">8 questions from 5 of 8 papers · most important first</p>
+    <section class="card asked-card"><ul class="asked"><li><a class="ask" href="/app/#/c/BECS-184/paper/2023-06/2(a)">
+      <span class="ask-main"><span class="ask-q">Mean and standard deviation of plant heights (sample of 7)</span>
+        <span class="ask-meta">Jun 2023 · 15 marks</span></span>
+      <span class="chev" aria-hidden="true">›</span></a></li><li><a class="ask" href="/app/#/c/BECS-184/paper/2026-06/11">
+      <span class="ask-main"><span class="ask-q">Dispersion and its measures</span>
+        <span class="ask-meta">Jun 2026 · 12 marks</span></span>
+      <span class="chev" aria-hidden="true">›</span></a></li><li><a class="ask" href="/app/#/c/BECS-184/paper/2024-06/9">
+      <span class="ask-main"><span class="ask-q">Is the coefficient of variation better than SD?</span>
+        <span class="ask-meta">Jun 2024 · 12 marks</span></span>
+      <span class="chev" aria-hidden="true">›</span></a></li><li><a class="ask" href="/app/#/c/BECS-184/paper/2023-12/2(a)">
+      <span class="ask-main"><span class="ask-q">Measures of variability; the most reliable one</span>
+        <span class="ask-meta">Dec 2023 · 10 marks</span></span>
+      <span class="chev" aria-hidden="true">›</span></a></li><li><a class="ask" href="/app/#/c/BECS-184/paper/2023-06/3(b)">
+      <span class="ask-main"><span class="ask-q">Absolute and relative measures of dispersion</span>
+        <span class="ask-meta">Jun 2023 · 10 marks</span></span>
+      <span class="chev" aria-hidden="true">›</span></a></li><li><a class="ask" href="/app/#/c/BECS-184/paper/2023-06/3(a)">
+      <span class="ask-main"><span class="ask-q">Meaning of measures of dispersion</span>
+        <span class="ask-meta">Jun 2023 · 5 marks</span></span>
+      <span class="chev" aria-hidden="true">›</span></a></li><li><a class="ask" href="/app/#/c/BECS-184/paper/2023-06/3(c)">
+      <span class="ask-main"><span class="ask-q">Most reliable measure of dispersion and why</span>
+        <span class="ask-meta">Jun 2023 · 5 marks</span></span>
+      <span class="chev" aria-hidden="true">›</span></a></li><li><a class="ask" href="/app/#/c/BECS-184/paper/2022-12/11(b)">
+      <span class="ask-main"><span class="ask-q">Note: coefficient of variation</span>
+        <span class="ask-meta">Dec 2022 · 4 marks</span></span>
+      <span class="chev" aria-hidden="true">›</span></a></li></ul></section>
+
+    <div class="web-cta-row">
+      <a class="btn" href="/app/#/c/BECS-184/t/dispersion">Study this in BCom Radar</a>
+      <a class="btn secondary" href="/app/#/ask/BECS-184/dispersion">Ask AI about this topic</a>
+    </div>
+
+    <nav class="topic-foot web-pager" aria-label="More topics">
+      <a class="btn secondary" href="/notes/becs-184/qualitative/">← Qualitative Research &amp; Analysis</a>
+      <a class="btn secondary" href="/notes/becs-184/data-basics/">Data, Variables, Scales &amp; Sources →</a>
+    </nav>
+    <footer class="page-foot">
+      <p>BCom Radar is a free, independent study aid for B.Com (BCOMF) students. It is not affiliated with or endorsed by IGNOU. Notes and examples are our own; past questions are quoted for study reference. Topic priorities are guidance, not a guarantee.</p>
+      <p><a href="/app/">Open BCom Radar</a> · <a href="/notes/">All notes</a></p>
+    </footer>
+  </main>
+</body>
+</html>

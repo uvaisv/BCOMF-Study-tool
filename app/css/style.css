@@ -380,6 +380,7 @@ html[data-density="compact"] .list, html[data-density="compact"] .rows { gap: 6p
 .example { border-left: 4px solid var(--fig-3); }
 .example p { margin: 0 0 8px; }
 .example p:last-child { margin-bottom: 0; }
+.example p, .example h3 { overflow-wrap: break-word; }
 .example h3 { font-size: 1rem; margin: 0 0 8px; color: var(--text); text-transform: none; letter-spacing: 0; }
 
 /* Settings */
@@ -498,3 +499,21 @@ body.no-scroll { overflow: hidden; }
 .creator-link { color: var(--accent); font-weight: 600; }
 .fb-btns { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 12px; }
 .fb-btns .btn { flex: 1 1 140px; text-align: center; }
+
+/* Web pages for search (notes/, built by tools/build_pages.js) */
+.top-open {
+  display: inline-flex; align-items: center; height: 40px; padding: 0 14px; border-radius: 10px;
+  background: var(--accent); color: var(--surface); font-weight: 700; font-size: .9rem; text-decoration: none; white-space: nowrap;
+}
+.crumbs { display: flex; flex-wrap: wrap; align-items: center; gap: 6px; margin-bottom: 8px; font-size: .9rem; font-weight: 600; color: var(--muted); }
+.crumbs a { text-decoration: none; }
+.crumbs:empty { display: none; }
+.web-page h1 { overflow-wrap: anywhere; }
+.btn.web-cta { display: block; margin-top: 20px; text-align: center; }
+.btn.web-cta + .muted { text-align: center; margin-top: 8px; }
+.web-cta-row { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 24px; }
+.web-cta-row .btn { flex: 1 1 200px; text-align: center; }
+.web-pager .btn { font-weight: 600; }
+.page-foot { margin-top: 32px; padding-top: 16px; border-top: 1px solid var(--border); font-size: .85rem; color: var(--muted); }
+.page-foot p { margin: 0 0 8px; }
+.home-web { margin-top: 20px; text-align: center; }

@@ -24,9 +24,18 @@ Courses with full analysis: all 8 Year 1 courses (BCOC-131, BCOC-132, BECC-101, 
 
 ## Google Search
 
-`app/index.html` carries a search description, a canonical address and link-preview (Open Graph) tags; `robots.txt` and `sitemap.xml` sit at the site root. They all use the live address `https://bcomradar.vercel.app` — if the site moves to its own domain, replace that address in those four files (`index.html`, `app/index.html`, `robots.txt`, `sitemap.xml`).
+`app/index.html` carries a search description, a canonical address and link-preview (Open Graph) tags; `robots.txt` and `sitemap.xml` sit at the site root. They all use the live address `https://bcomradar.vercel.app` — if the site moves to its own domain, replace that address in `index.html`, `app/index.html` and `robots.txt`, and in `SITE` at the top of `tools/build_pages.js`, then rebuild the pages.
 
-To get listed: open Google Search Console (https://search.google.com/search-console), add the site, verify ownership (the HTML-tag method gives a `<meta name="google-site-verification" …>` line to paste into `app/index.html`), then submit `sitemap.xml`. The app uses `#` addresses, so Google indexes it as one page; searches for the name or the course codes find it, individual topics do not.
+The app uses `#` addresses, which Google treats as one page. So every course and topic also gets a plain web page under `notes/` (`notes/<code>/` and `notes/<code>/<topic>/`), with the notes, worked examples, diagrams and past questions, each linking back into the app. These pages and `sitemap.xml` are **generated** from `app/data` — never edit them by hand:
+
+```
+node tools/build_pages.js          # rebuild notes/ and sitemap.xml
+node tools/build_pages.js --check  # fails if they are out of date
+```
+
+Run it after every change to `app/data/*.json` or `app/js/figures.js`, and commit the result.
+
+Search Console: the site is verified with the `google-site-verification` tag in `index.html` and `app/index.html` (keep it), and `sitemap.xml` is submitted there.
 
 ## Host on Google (Firebase Hosting)
 
@@ -56,6 +65,7 @@ To publish on Vercel, import the repo with Framework Preset **Other**, no build 
 ```
 app/
   index.html, css/, js/app.js
+  js/analysis.js          topic priorities, shared by the app and tools/build_pages.js
   js/figures.js           topic diagrams, drawn as SVG from equations; a topic lists them in "figures"
   manifest.webmanifest, sw.js, icons/   home-screen app: name, icon, full-screen launch, offline cache
   data/courses.json       all courses (year, exam format, paper count)
@@ -64,6 +74,8 @@ app/
   data/text/<CODE>.json   each paper's English questions as text, for the in-app paper view
   qimg/<CODE>/            question images for papers whose maths does not survive as text (BCOC-134)
 question-papers/          228 official papers + index.csv (see its README)
+notes/                    generated web pages per course and topic (tools/build_pages.js)
+tools/build_pages.js      builds notes/ and sitemap.xml from app/data
 ```
 
 ## How priorities are calculated
@@ -82,9 +94,10 @@ The minimum set takes topics in score order until they cover 1.2 × the marks a 
 1. Add the PDF under `question-papers/` and a row to `index.csv`.
 2. In `data/<CODE>.json`, add the session to `sessions` and one entry per question to `questions` (`s`, `q`, `t`, `m`, `k` = `th`/`num`, `topic`).
 3. Rebuild `app/data/papers.json` from `index.csv`, and `app/data/text/<CODE>.json` (the paper text for the in-app view) from the PDF.
+4. Run `node tools/build_pages.js` to update the web pages and sitemap.
 
 Every ranking, chart and plan updates automatically.
 
 ## Adding a course
 
-Create `app/data/<CODE>.json` in the same shape as `BCOC-131.json` and set `"ready": true` for it in `courses.json`.
+Create `app/data/<CODE>.json` in the same shape as `BCOC-131.json`, set `"ready": true` for it in `courses.json`, then run `node tools/build_pages.js`.

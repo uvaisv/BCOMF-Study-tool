@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Correlation &amp; Regression (Bivariate Analysis) – BECS-184 Data Analysis notes | BCom Radar</title>
+  <meta name="description" content="Correlation &amp; Regression (Bivariate Analysis) (BECS-184 Data Analysis): key points, worked examples and past exam questions. Bivariate analysis, scatter plots…">
+  <link rel="canonical" href="https://bcomradar.vercel.app/notes/becs-184/correlation/">
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="BCom Radar">
+  <meta property="og:title" content="Correlation &amp; Regression (Bivariate Analysis) – BECS-184 Data Analysis notes | BCom Radar">
+  <meta property="og:description" content="Correlation &amp; Regression (Bivariate Analysis) (BECS-184 Data Analysis): key points, worked examples and past exam questions. Bivariate analysis, scatter plots…">
+  <meta property="og:url" content="https://bcomradar.vercel.app/notes/becs-184/correlation/">
+  <meta property="og:image" content="https://bcomradar.vercel.app/app/icons/icon-512.png">
+  <meta name="twitter:card" content="summary">
+  <meta name="theme-color" content="#0f766e">
+  <link rel="icon" href="/app/icons/icon.svg" type="image/svg+xml">
+  <link rel="icon" href="/app/icons/favicon-32.png" sizes="32x32" type="image/png">
+  <link rel="apple-touch-icon" href="/app/icons/apple-touch-icon.png">
+  <link rel="stylesheet" href="/app/css/style.css">
+  <script>try{var d=document.documentElement,g=function(k){var v=localStorage.getItem(k);return v===null?null:JSON.parse(v)};if(g("theme"))d.dataset.theme=g("theme");d.dataset.textsize=g("textsize")||"m";d.dataset.density=g("density")||"comfortable"}catch(e){}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"All notes","item":"https://bcomradar.vercel.app/notes/"},{"@type":"ListItem","position":2,"name":"BECS-184 Data Analysis","item":"https://bcomradar.vercel.app/notes/becs-184/"},{"@type":"ListItem","position":3,"name":"Correlation & Regression (Bivariate Analysis)","item":"https://bcomradar.vercel.app/notes/becs-184/correlation/"}]}</script>
+</head>
+<body class="web-page">
+  <header class="topbar">
+    <a href="/app/" class="brand" aria-label="BCom Radar app">
+      <img class="brand-mark" src="/app/icons/icon.svg" width="32" height="32" alt="">
+      <span class="brand-text">BCom Radar</span>
+    </a>
+    <div class="topbar-actions"><a class="top-open" href="/app/#/c/BECS-184/t/correlation">Open in app</a></div>
+  </header>
+
+  <main class="container">
+    <nav class="crumbs" aria-label="Breadcrumb"><a href="/notes/">All notes</a><span aria-hidden="true">›</span><a href="/notes/becs-184/">BECS-184 Data Analysis</a></nav>
+
+    <h1>Correlation &amp; Regression (Bivariate Analysis)</h1>
+    <p class="head-meta"><span class="badge critical">Critical</span> <span class="muted small">Asked in 7 of 8 papers · avg 18 marks</span></p>
+    <p class="lead">Bivariate analysis, scatter plots, Pearson&#39;s correlation coefficient and its significance test, correlation vs causation, regression lines and coefficients, coefficient of determination and standard error of estimate.</p>
+    <p class="book-ref"><span class="book-ref-h">In your IGNOU book</span><span>Block 3 · Unit 8 Bivariate Data Analysis</span></p>
+
+    <h2>Key points</h2>
+    <section class="card"><ul class="points"><li>Bivariate analysis studies the relationship between two variables (advertising and sales, study hours and marks); start with a scatter plot.</li><li>Pearson&#39;s product-moment correlation coefficient r measures the strength and direction of a linear relationship; −1 ≤ r ≤ +1; r = 0 means no linear relation. It is independent of origin and scale.</li><li>Test of significance: H₀: ρ = 0 vs H₁: ρ ≠ 0; t = r√(n − 2) ÷ √(1 − r²) with n − 2 degrees of freedom; reject H₀ if |t| exceeds the critical value.</li><li>Correlation is not causation. A significant r may come from: X causing Y, Y causing X (reverse), a third (lurking) variable causing both, a complex set of many variables, or coincidence. Averages can exaggerate correlation.</li><li>To study cause and effect: plan an experiment or control the other factors, check the time order (the cause comes first), rule out third variables, and use regression with the cause as the independent variable.</li><li>Regression estimates one variable from another. Y on X: Y = a + bX, found by least squares (minimise the sum of squared vertical errors) from the normal equations ΣY = na + bΣX and ΣXY = aΣX + bΣX².</li><li>Properties of regression coefficients: both have the same sign as r; r = ±√(b_yx × b_xy) (geometric mean); if one exceeds 1 the other is below 1; independent of origin but not of scale; both lines pass through (X̄, Ȳ); r = ±1 → lines coincide, r = 0 → lines perpendicular.</li><li>Coefficient of determination r² = explained variation ÷ total variation — the share of the change in Y explained by X (r = 0.9 → 81%).</li><li>Standard error of estimate = √[Σ(Y − Ŷ)² ÷ (n − 2)] — the spread of actual values around the regression line; smaller means better predictions.</li></ul></section>
+
+    <h2>Worked examples</h2>
+    <section class="card example"><h3>Example: correlation and its significance (Dec 2022, Q2)</h3><p>Cars X: 63.0, 29.0, 20.8, 19.1, 13.4, 8.5; revenue Y: 7.0, 3.9, 2.1, 2.8, 1.4, 1.5 (n = 6).</p><p>ΣX = 153.8, ΣY = 18.7, ΣXY = 682.77, ΣX² = 5,859.26, ΣY² = 80.67.</p><p>r = (6 × 682.77 − 153.8 × 18.7) ÷ √[(6 × 5,859.26 − 153.8²)(6 × 80.67 − 18.7²)] = 1,220.56 ÷ 1,242.96 = 0.982.</p><p>t = r√(n − 2) ÷ √(1 − r²) = 0.982 × 2 ÷ √(1 − 0.964) = 10.39 &gt; 2.776 (critical value, 4 d.f.) → reject H₀: the correlation is significant.</p></section>
+    <section class="card example"><h3>Example: correlation vs causation, and r²</h3><p>Ice-cream sales and drowning deaths are highly correlated, but both are caused by hot weather (a lurking third variable). To test whether a smart board raises marks, compare a class taught with it and a similar class without it, before and after (control other factors), then test the difference in means.</p><p>If r = 0.9 between advertising and sales, r² = 0.81: 81% of the variation in sales is explained by advertising, and 19% by other factors.</p></section>
+
+    <h2>Diagrams</h2>
+    <figure class="card fig"><figcaption class="fig-title">Positive, negative and no correlation</figcaption><svg viewBox="0 0 320 170" role="img" aria-label="Scatter diagrams for positive, negative and no correlation"><path class="ax" d="M18 26V130M18 130H110"/><circle class="pt1" cx="68.8" cy="65.0" r="3.5"/><circle class="pt1" cx="74.1" cy="48.3" r="3.5"/><circle class="pt1" cx="32.0" cy="116.2" r="3.5"/><circle class="pt1" cx="96.7" cy="63.2" r="3.5"/><circle class="pt1" cx="31.9" cy="94.3" r="3.5"/><circle class="pt1" cx="79.0" cy="67.8" r="3.5"/><circle class="pt1" cx="41.2" cy="97.9" r="3.5"/><circle class="pt1" cx="37.1" cy="108.7" r="3.5"/><circle class="pt1" cx="87.6" cy="34.0" r="3.5"/><circle class="pt1" cx="29.3" cy="124.8" r="3.5"/><circle class="pt1" cx="53.8" cy="91.5" r="3.5"/><circle class="pt1" cx="88.4" cy="56.2" r="3.5"/><circle class="pt1" cx="67.2" cy="72.9" r="3.5"/><circle class="pt1" cx="69.1" cy="68.5" r="3.5"/><circle class="pt1" cx="54.9" cy="101.3" r="3.5"/><circle class="pt1" cx="68.4" cy="77.7" r="3.5"/><text class="lbl sm" x="62" y="16" text-anchor="middle">Positive</text><text class="lbl sm" x="62" y="150" text-anchor="middle">r = +0.90</text><path class="ax" d="M120 26V130M120 130H212"/><circle class="pt1" cx="160.6" cy="86.0" r="3.5"/><circle class="pt1" cx="137.3" cy="37.1" r="3.5"/><circle class="pt1" cx="194.4" cy="122.9" r="3.5"/><circle class="pt1" cx="173.3" cy="99.2" r="3.5"/><circle class="pt1" cx="172.3" cy="99.1" r="3.5"/><circle class="pt1" cx="182.7" cy="105.5" r="3.5"/><circle class="pt1" cx="146.7" cy="62.1" r="3.5"/><circle class="pt1" cx="170.7" cy="84.9" r="3.5"/><circle class="pt1" cx="160.4" cy="80.5" r="3.5"/><circle class="pt1" cx="144.4" cy="55.6" r="3.5"/><circle class="pt1" cx="128.9" cy="39.6" r="3.5"/><circle class="pt1" cx="148.3" cy="49.7" r="3.5"/><circle class="pt1" cx="179.6" cy="98.6" r="3.5"/><circle class="pt1" cx="163.7" cy="75.5" r="3.5"/><circle class="pt1" cx="195.3" cy="100.2" r="3.5"/><circle class="pt1" cx="156.2" cy="61.6" r="3.5"/><text class="lbl sm" x="164" y="16" text-anchor="middle">Negative</text><text class="lbl sm" x="164" y="150" text-anchor="middle">r = −0.95</text><path class="ax" d="M222 26V130M222 130H314"/><circle class="pt1" cx="288.4" cy="69.7" r="3.5"/><circle class="pt1" cx="241.8" cy="116.3" r="3.5"/><circle class="pt1" cx="262.0" cy="44.8" r="3.5"/><circle class="pt1" cx="282.9" cy="93.8" r="3.5"/><circle class="pt1" cx="251.3" cy="60.3" r="3.5"/><circle class="pt1" cx="265.7" cy="103.1" r="3.5"/><circle class="pt1" cx="239.0" cy="112.8" r="3.5"/><circle class="pt1" cx="242.3" cy="45.1" r="3.5"/><circle class="pt1" cx="259.4" cy="105.9" r="3.5"/><circle class="pt1" cx="265.2" cy="59.8" r="3.5"/><circle class="pt1" cx="259.6" cy="88.3" r="3.5"/><circle class="pt1" cx="282.3" cy="63.4" r="3.5"/><circle class="pt1" cx="235.1" cy="51.6" r="3.5"/><circle class="pt1" cx="272.4" cy="47.7" r="3.5"/><circle class="pt1" cx="300.6" cy="105.0" r="3.5"/><circle class="pt1" cx="282.7" cy="56.7" r="3.5"/><text class="lbl sm" x="266" y="16" text-anchor="middle">No correlation</text><text class="lbl sm" x="266" y="150" text-anchor="middle">r = −0.01</text></svg><p class="fig-note">In a scatter diagram each dot is one pair of values (X, Y). Dots rising from left to right show positive correlation, dots falling show negative correlation, and a shapeless cloud shows no correlation. The closer the dots lie to a straight line, the nearer r is to +1 or −1. The r shown for each is calculated from its dots.</p></figure>
+    <figure class="card fig"><figcaption class="fig-title">The two regression lines</figcaption><svg viewBox="0 0 320 250" role="img" aria-label="Regression lines of Y on X and X on Y crossing at the means"><path class="ax" d="M40 22V206M40 206H310"/><text class="axl" x="310" y="220" text-anchor="end">X</text><text class="axl" x="45" y="30">Y</text><text class="tick" x="36" y="218" text-anchor="end">O</text><circle class="pt1" cx="231.9" cy="85.1" r="3.5"/><circle class="pt1" cx="212.9" cy="78.6" r="3.5"/><circle class="pt1" cx="211.0" cy="75.7" r="3.5"/><circle class="pt1" cx="128.6" cy="145.5" r="3.5"/><circle class="pt1" cx="255.2" cy="59.8" r="3.5"/><circle class="pt1" cx="163.3" cy="115.6" r="3.5"/><circle class="pt1" cx="141.4" cy="164.1" r="3.5"/><circle class="pt1" cx="134.1" cy="131.2" r="3.5"/><circle class="pt1" cx="157.7" cy="145.5" r="3.5"/><circle class="pt1" cx="159.5" cy="105.6" r="3.5"/><circle class="pt1" cx="155.9" cy="106.1" r="3.5"/><circle class="pt1" cx="249.8" cy="51.2" r="3.5"/><circle class="pt1" cx="225.0" cy="84.1" r="3.5"/><circle class="pt1" cx="101.1" cy="150.0" r="3.5"/><path class="c2" d="M48.0 195.9L51.1 193.8L54.2 191.7L57.4 189.6L60.5 187.5L63.6 185.4L66.7 183.3L69.9 181.2L73.0 179.1L76.1 177.1L79.2 175.0L82.4 172.9L85.5 170.8L88.6 168.7L91.7 166.6L94.9 164.5L98.0 162.4L101.1 160.3L104.2 158.2L107.4 156.1L110.5 154.0L113.6 151.9L116.7 149.8L119.9 147.7L123.0 145.6L126.1 143.5L129.2 141.4L132.4 139.3L135.5 137.2L138.6 135.1L141.7 133.0L144.9 130.9L148.0 128.8L151.1 126.7L154.2 124.6L157.4 122.5L160.5 120.4L163.6 118.3L166.7 116.2L169.9 114.1L173.0 112.1L176.1 110.0L179.3 107.9L182.4 105.8L185.5 103.7L188.6 101.6L191.8 99.5L194.9 97.4L198.0 95.3L201.1 93.2L204.3 91.1L207.4 89.0L210.5 86.9L213.6 84.8L216.8 82.7L219.9 80.6L223.0 78.5L226.1 76.4L229.3 74.3L232.4 72.2L235.5 70.1L238.6 68.0L241.8 65.9L244.9 63.8L248.0 61.7L251.1 59.6L254.3 57.5L257.4 55.4L260.5 53.3L263.6 51.2L266.8 49.1L269.9 47.1L273.0 45.0L276.1 42.9L279.3 40.8L282.4 38.7L285.5 36.6L288.6 34.5L291.8 32.4L294.9 30.3L298.0 28.2"/><text class="lbl sm" x="48.6" y="180.1" text-anchor="start">Y on X</text><path class="c3" d="M63.1 200.6L65.8 198.5L68.4 196.4L71.1 194.3L73.8 192.1L76.4 190.0L79.1 187.9L81.7 185.8L84.4 183.7L87.0 181.6L89.7 179.4L92.3 177.3L95.0 175.2L97.6 173.1L100.3 171.0L102.9 168.9L105.6 166.8L108.2 164.6L110.9 162.5L113.5 160.4L116.2 158.3L118.8 156.2L121.5 154.1L124.1 152.0L126.8 149.8L129.5 147.7L132.1 145.6L134.8 143.5L137.4 141.4L140.1 139.3L142.7 137.2L145.4 135.0L148.0 132.9L150.7 130.8L153.3 128.7L156.0 126.6L158.6 124.5L161.3 122.3L163.9 120.2L166.6 118.1L169.2 116.0L171.9 113.9L174.5 111.8L177.2 109.7L179.9 107.5L182.5 105.4L185.2 103.3L187.8 101.2L190.5 99.1L193.1 97.0L195.8 94.8L198.4 92.7L201.1 90.6L203.7 88.5L206.4 86.4L209.0 84.3L211.7 82.2L214.3 80.0L217.0 77.9L219.6 75.8L222.3 73.7L224.9 71.6L227.6 69.5L230.2 67.4L232.9 65.2L235.6 63.1L238.2 61.0L240.9 58.9L243.5 56.8L246.2 54.7L248.8 52.5L251.5 50.4L254.1 48.3L256.8 46.2L259.4 44.1L262.1 42.0L264.7 39.9L267.4 37.7L270.0 35.6L272.7 33.5L275.3 31.4"/><text class="lbl sm" x="269.3" y="35.4" text-anchor="end">X on Y</text><path class="guide" d="M180.52165485847743 107.00614158464332V206"/><path class="guide" d="M180.52165485847743 107.00614158464332H40"/><text class="tick" x="180.52165485847743" y="218" text-anchor="middle">x̄</text><text class="tick" x="36" y="111.00614158464332" text-anchor="end">ȳ</text><circle class="dot" cx="180.52165485847743" cy="107.00614158464332" r="4"/><text class="lbl sm" x="188.5" y="121.0" text-anchor="start">(x̄, ȳ)</text><text class="lbl sm" x="44" y="14" text-anchor="start">r = +0.92 · byx = 0.99 · bxy = 0.85</text></svg><p class="fig-note">Y on X (used to estimate Y) and X on Y (used to estimate X) are different lines, and both pass through the point of means (x̄, ȳ). The closer they are, the stronger the correlation: they coincide when r = ±1 and are at right angles when r = 0. The r and slopes shown are calculated from these dots.</p></figure>
+
+    <h2>How to solve</h2>
+    <section class="card"><ol class="steps"><li>Table of X, Y, X², Y², XY; find the totals.</li><li>r = [nΣXY − ΣXΣY] ÷ √{[nΣX² − (ΣX)²][nΣY² − (ΣY)²]}.</li><li>Significance: t = r√(n − 2)/√(1 − r²); compare with the critical t at n − 2 d.f.</li><li>Regression Y on X: b = [nΣXY − ΣXΣY] ÷ [nΣX² − (ΣX)²]; a = Ȳ − bX̄.</li></ol></section>
+
+    <h2>Formulas</h2>
+    <section class="card"><div class="formula">r = [nΣXY − ΣXΣY] ÷ √{[nΣX² − (ΣX)²][nΣY² − (ΣY)²]}</div><div class="formula">t = r√(n − 2) ÷ √(1 − r²)</div><div class="formula">b = [nΣXY − ΣXΣY] ÷ [nΣX² − (ΣX)²], a = Ȳ − bX̄</div><div class="formula">r² = Explained variation ÷ Total variation</div></section>
+
+    <h2>How to write the answer</h2>
+    <section class="card"><p class="flush">Meaning → formula and working (for sums) or properties as headed points → interpretation in words → conclusion.</p></section>
+
+    <h2>Common mistakes</h2>
+    <div class="callout warn"><ul class="points"><li>Concluding causation from a high r.</li><li>Using regression to predict when r is not significant.</li><li>Mixing up b_yx (Y on X) and b_xy (X on Y).</li></ul></div>
+
+    <h2>Asked in past papers</h2>
+    <p class="muted small">13 questions from 7 of 8 papers · most important first</p>
+    <section class="card asked-card"><ul class="asked"><li><a class="ask" href="/app/#/c/BECS-184/paper/2026-06/3">
+      <span class="ask-main"><span class="ask-q">Regression Y = a + bX: finding a and b; properties of regression coefficients</span>
+        <span class="ask-meta">Jun 2026 · 20 marks</span></span>
+      <span class="chev" aria-hidden="true">›</span></a></li><li><a class="ask" href="/app/#/c/BECS-184/paper/2025-06/4">
+      <span class="ask-main"><span class="ask-q">Bivariate analysis: testing the effect of a smart board on marks</span>
+        <span class="ask-meta">Jun 2025 · 20 marks</span></span>
+      <span class="chev" aria-hidden="true">›</span></a></li><li><a class="ask" href="/app/#/c/BECS-184/paper/2022-12/2(a)">
+      <span class="ask-main"><span class="ask-q">Correlation coefficient: rental cars and annual income</span>
+        <span class="ask-meta">Dec 2022 · 15 marks</span></span>
+      <span class="chev" aria-hidden="true">›</span></a></li><li><a class="ask" href="/app/#/c/BECS-184/paper/2026-06/6">
+      <span class="ask-main"><span class="ask-q">Correlation coefficient and testing its significance</span>
+        <span class="ask-meta">Jun 2026 · 12 marks</span></span>
+      <span class="chev" aria-hidden="true">›</span></a></li><li><a class="ask" href="/app/#/c/BECS-184/paper/2025-12/7">
+      <span class="ask-main"><span class="ask-q">Correlation vs causation; analysing cause and effect</span>
+        <span class="ask-meta">Dec 2025 · 12 marks</span></span>
+      <span class="chev" aria-hidden="true">›</span></a></li><li><a class="ask" href="/app/#/c/BECS-184/paper/2025-12/11">
+      <span class="ask-main"><span class="ask-q">Coefficient of determination: concept and implications</span>
+        <span class="ask-meta">Dec 2025 · 12 marks</span></span>
+      <span class="chev" aria-hidden="true">›</span></a></li><li><a class="ask" href="/app/#/c/BECS-184/paper/2025-06/12(i)">
+      <span class="ask-main"><span class="ask-q">Note: coefficient of determination</span>
+        <span class="ask-meta">Asked 3× · Jun 2025 · 4 marks</span></span>
+      <span class="chev" aria-hidden="true">›</span></a></li><li><a class="ask" href="/app/#/c/BECS-184/paper/2025-06/3(a)">
+      <span class="ask-main"><span class="ask-q">Pearson&#39;s correlation coefficient and its properties</span>
+        <span class="ask-meta">Jun 2025 · 10 marks</span></span>
+      <span class="chev" aria-hidden="true">›</span></a></li><li><a class="ask" href="/app/#/c/BECS-184/paper/2025-06/3(b)">
+      <span class="ask-main"><span class="ask-q">Compute the correlation coefficient</span>
+        <span class="ask-meta">Jun 2025 · 10 marks</span></span>
+      <span class="chev" aria-hidden="true">›</span></a></li><li><a class="ask" href="/app/#/c/BECS-184/paper/2024-06/3(a)">
+      <span class="ask-main"><span class="ask-q">Correlation does not imply causation</span>
+        <span class="ask-meta">Jun 2024 · 10 marks</span></span>
+      <span class="chev" aria-hidden="true">›</span></a></li><li><a class="ask" href="/app/#/c/BECS-184/paper/2022-12/2(b)">
+      <span class="ask-main"><span class="ask-q">Test the significance of the correlation coefficient (t-test)</span>
+        <span class="ask-meta">Dec 2022 · 5 marks</span></span>
+      <span class="chev" aria-hidden="true">›</span></a></li><li><a class="ask" href="/app/#/c/BECS-184/paper/2023-06/7(a)">
+      <span class="ask-main"><span class="ask-q">What is bivariate analysis?</span>
+        <span class="ask-meta">Jun 2023 · 3 marks</span></span>
+      <span class="chev" aria-hidden="true">›</span></a></li><li><a class="ask" href="/app/#/c/BECS-184/paper/2023-06/7(b)">
+      <span class="ask-main"><span class="ask-q">Correlation and causation</span>
+        <span class="ask-meta">Jun 2023 · 3 marks</span></span>
+      <span class="chev" aria-hidden="true">›</span></a></li></ul></section>
+
+    <div class="web-cta-row">
+      <a class="btn" href="/app/#/c/BECS-184/t/correlation">Study this in BCom Radar</a>
+      <a class="btn secondary" href="/app/#/ask/BECS-184/correlation">Ask AI about this topic</a>
+    </div>
+
+    <nav class="topic-foot web-pager" aria-label="More topics">
+      <a class="btn secondary" href="/notes/becs-184/presentation/">← Classification, Tabulation, Diagrams &amp; Graphs</a>
+      <a class="btn secondary" href="/notes/becs-184/tools/">Tools &amp; Methods of Data Collection →</a>
+    </nav>
+    <footer class="page-foot">
+      <p>BCom Radar is a free, independent study aid for B.Com (BCOMF) students. It is not affiliated with or endorsed by IGNOU. Notes and examples are our own; past questions are quoted for study reference. Topic priorities are guidance, not a guarantee.</p>
+      <p><a href="/app/">Open BCom Radar</a> · <a href="/notes/">All notes</a></p>
+    </footer>
+  </main>
+</body>
+</html>

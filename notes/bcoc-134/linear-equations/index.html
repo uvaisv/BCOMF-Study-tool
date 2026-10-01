@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Inverse Matrix, Cramer&#39;s Rule &amp; Equations – BCOC-134 Business Mathematics and Statistics notes | BCom Radar</title>
+  <meta name="description" content="Inverse Matrix, Cramer&#39;s Rule &amp; Equations (BCOC-134 Business Mathematics and Statistics): key points, worked examples and past exam questions. Solve 2 or 3…">
+  <link rel="canonical" href="https://bcomradar.vercel.app/notes/bcoc-134/linear-equations/">
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="BCom Radar">
+  <meta property="og:title" content="Inverse Matrix, Cramer&#39;s Rule &amp; Equations – BCOC-134 Business Mathematics and Statistics notes | BCom Radar">
+  <meta property="og:description" content="Inverse Matrix, Cramer&#39;s Rule &amp; Equations (BCOC-134 Business Mathematics and Statistics): key points, worked examples and past exam questions. Solve 2 or 3…">
+  <meta property="og:url" content="https://bcomradar.vercel.app/notes/bcoc-134/linear-equations/">
+  <meta property="og:image" content="https://bcomradar.vercel.app/app/icons/icon-512.png">
+  <meta name="twitter:card" content="summary">
+  <meta name="theme-color" content="#0f766e">
+  <link rel="icon" href="/app/icons/icon.svg" type="image/svg+xml">
+  <link rel="icon" href="/app/icons/favicon-32.png" sizes="32x32" type="image/png">
+  <link rel="apple-touch-icon" href="/app/icons/apple-touch-icon.png">
+  <link rel="stylesheet" href="/app/css/style.css">
+  <script>try{var d=document.documentElement,g=function(k){var v=localStorage.getItem(k);return v===null?null:JSON.parse(v)};if(g("theme"))d.dataset.theme=g("theme");d.dataset.textsize=g("textsize")||"m";d.dataset.density=g("density")||"comfortable"}catch(e){}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"All notes","item":"https://bcomradar.vercel.app/notes/"},{"@type":"ListItem","position":2,"name":"BCOC-134 Business Mathematics and Statistics","item":"https://bcomradar.vercel.app/notes/bcoc-134/"},{"@type":"ListItem","position":3,"name":"Inverse Matrix, Cramer's Rule & Equations","item":"https://bcomradar.vercel.app/notes/bcoc-134/linear-equations/"}]}</script>
+</head>
+<body class="web-page">
+  <header class="topbar">
+    <a href="/app/" class="brand" aria-label="BCom Radar app">
+      <img class="brand-mark" src="/app/icons/icon.svg" width="32" height="32" alt="">
+      <span class="brand-text">BCom Radar</span>
+    </a>
+    <div class="topbar-actions"><a class="top-open" href="/app/#/c/BCOC-134/t/linear-equations">Open in app</a></div>
+  </header>
+
+  <main class="container">
+    <nav class="crumbs" aria-label="Breadcrumb"><a href="/notes/">All notes</a><span aria-hidden="true">›</span><a href="/notes/bcoc-134/">BCOC-134 Business Mathematics and Statistics</a></nav>
+
+    <h1>Inverse Matrix, Cramer&#39;s Rule &amp; Equations</h1>
+    <p class="head-meta"><span class="badge moderate">Moderate</span> <span class="muted small">Asked in 6 of 11 papers · avg 10 marks</span></p>
+    <p class="lead">Solve 2 or 3 equations by Cramer&#39;s rule or the matrix (inverse) method, or find an inverse.</p>
+    <p class="book-ref"><span class="book-ref-h">In your IGNOU book</span><span>Block 1 · Unit 3 Inverse of Matrices</span><span>Block 1 · Unit 2 Determinants <span class="muted">(2.5 Cramer&#39;s rule)</span></span></p>
+
+    <h2>Key points</h2>
+    <section class="card"><ul class="points"><li>A system AX = B has solution X = A⁻¹B when |A| ≠ 0.</li><li>Inverse exists only for a square matrix with non-zero determinant.</li><li>Properties: (A⁻¹)⁻¹ = A; (AB)⁻¹ = B⁻¹A⁻¹; (Aᵀ)⁻¹ = (A⁻¹)ᵀ; AA⁻¹ = A⁻¹A = I.</li><li>The book gives two routes to the inverse: determinant and adjoint, and elementary row operations ([A | I] → [I | A⁻¹]).</li><li>Rank: the maximum number of linearly independent rows (= columns); rank ≤ smaller of m and n. An n × n matrix has an inverse only if its rank is n.</li></ul></section>
+
+    <h2>Worked example</h2>
+    <section class="card example"><h3>Example: Cramer&#39;s rule</h3><p>Solve x + y + z = 6, 2x − y + z = 3, x + 2y − z = 2.</p><p>D = |1 1 1; 2 −1 1; 1 2 −1| = 1(1 − 2) − 1(−2 − 1) + 1(4 + 1) = 7.</p><p>Replace column 1 with (6, 3, 2): D₁ = 7; column 2: D₂ = 14; column 3: D₃ = 21.</p><p>x = 7/7 = 1, y = 14/7 = 2, z = 21/7 = 3.</p><p>Check in equation 3: 1 + 4 − 3 = 2 ✓.</p></section>
+
+    <h2>How to solve</h2>
+    <section class="card"><ol class="steps"><li>Cramer&#39;s rule: find D = |A|. Replace column 1 by constants → D₁; column 2 → D₂; column 3 → D₃.</li><li>x = D₁/D, y = D₂/D, z = D₃/D.</li><li>Inverse method: find |A|, the cofactor matrix, adjoint (transpose of cofactors), then A⁻¹ = adj A ÷ |A|.</li><li>Check: substitute the answers back into one equation.</li></ol></section>
+
+    <h2>Formulas</h2>
+    <section class="card"><div class="formula">A⁻¹ = adj(A) / |A|</div><div class="formula">Cofactor Cᵢⱼ = (−1)ⁱ⁺ʲ × Minorᵢⱼ</div></section>
+
+    <h2>Common mistakes</h2>
+    <div class="callout warn"><ul class="points"><li>Forgetting the sign pattern (+ − +) for cofactors.</li><li>Not transposing the cofactor matrix to get the adjoint.</li></ul></div>
+
+    <h2>Asked in past papers</h2>
+    <p class="muted small">6 questions from 6 of 11 papers · most important first</p>
+    <section class="card asked-card"><ul class="asked"><li><a class="ask" href="/app/#/c/BCOC-134/paper/2025-12/2(b)">
+      <span class="ask-main"><span class="ask-q">Cramer&#39;s rule for two equations</span>
+        <span class="ask-meta">Asked 2× · Dec 2025 · 10 marks</span></span>
+      <span class="chev" aria-hidden="true">›</span></a></li><li><a class="ask" href="/app/#/c/BCOC-134/paper/2026-06/2">
+      <span class="ask-main"><span class="ask-q">Inverse of a 3×3 matrix and check AA⁻¹ = I</span>
+        <span class="ask-meta">Jun 2026 · 20 marks</span></span>
+      <span class="chev" aria-hidden="true">›</span></a></li><li><a class="ask" href="/app/#/c/BCOC-134/paper/2023-12/2">
+      <span class="ask-main"><span class="ask-q">Solve two equations by Cramer&#39;s rule</span>
+        <span class="ask-meta">Dec 2023 · 20 marks</span></span>
+      <span class="chev" aria-hidden="true">›</span></a></li><li><a class="ask" href="/app/#/c/BCOC-134/paper/2023-06/2">
+      <span class="ask-main"><span class="ask-q">Solve three equations by matrix method</span>
+        <span class="ask-meta">Jun 2023 · 20 marks</span></span>
+      <span class="chev" aria-hidden="true">›</span></a></li><li><a class="ask" href="/app/#/c/BCOC-134/paper/2021-12/3(c)">
+      <span class="ask-main"><span class="ask-q">Solve three simultaneous equations</span>
+        <span class="ask-meta">Dec 2021 · 10 marks</span></span>
+      <span class="chev" aria-hidden="true">›</span></a></li><li><a class="ask" href="/app/#/c/BCOC-134/paper/2021-12/3(b)">
+      <span class="ask-main"><span class="ask-q">Inverse matrix and four properties</span>
+        <span class="ask-meta">Dec 2021 · 5 marks</span></span>
+      <span class="chev" aria-hidden="true">›</span></a></li></ul></section>
+
+    <div class="web-cta-row">
+      <a class="btn" href="/app/#/c/BCOC-134/t/linear-equations">Study this in BCom Radar</a>
+      <a class="btn secondary" href="/app/#/ask/BCOC-134/linear-equations">Ask AI about this topic</a>
+    </div>
+
+    <nav class="topic-foot web-pager" aria-label="More topics">
+      <a class="btn secondary" href="/notes/bcoc-134/maxima/">← Maxima, Minima &amp; Applications of Derivatives</a>
+      <a class="btn secondary" href="/notes/bcoc-134/correlation/">Correlation →</a>
+    </nav>
+    <footer class="page-foot">
+      <p>BCom Radar is a free, independent study aid for B.Com (BCOMF) students. It is not affiliated with or endorsed by IGNOU. Notes and examples are our own; past questions are quoted for study reference. Topic priorities are guidance, not a guarantee.</p>
+      <p><a href="/app/">Open BCom Radar</a> · <a href="/notes/">All notes</a></p>
+    </footer>
+  </main>
+</body>
+</html>

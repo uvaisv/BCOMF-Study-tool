@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Multivariate Data Analysis – BECS-184 Data Analysis notes | BCom Radar</title>
+  <meta name="description" content="Multivariate Data Analysis (BECS-184 Data Analysis): key points, worked examples and past exam questions. Meaning of multivariate analysis, dependence and…">
+  <link rel="canonical" href="https://bcomradar.vercel.app/notes/becs-184/multivariate/">
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="BCom Radar">
+  <meta property="og:title" content="Multivariate Data Analysis – BECS-184 Data Analysis notes | BCom Radar">
+  <meta property="og:description" content="Multivariate Data Analysis (BECS-184 Data Analysis): key points, worked examples and past exam questions. Meaning of multivariate analysis, dependence and…">
+  <meta property="og:url" content="https://bcomradar.vercel.app/notes/becs-184/multivariate/">
+  <meta property="og:image" content="https://bcomradar.vercel.app/app/icons/icon-512.png">
+  <meta name="twitter:card" content="summary">
+  <meta name="theme-color" content="#0f766e">
+  <link rel="icon" href="/app/icons/icon.svg" type="image/svg+xml">
+  <link rel="icon" href="/app/icons/favicon-32.png" sizes="32x32" type="image/png">
+  <link rel="apple-touch-icon" href="/app/icons/apple-touch-icon.png">
+  <link rel="stylesheet" href="/app/css/style.css">
+  <script>try{var d=document.documentElement,g=function(k){var v=localStorage.getItem(k);return v===null?null:JSON.parse(v)};if(g("theme"))d.dataset.theme=g("theme");d.dataset.textsize=g("textsize")||"m";d.dataset.density=g("density")||"comfortable"}catch(e){}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"All notes","item":"https://bcomradar.vercel.app/notes/"},{"@type":"ListItem","position":2,"name":"BECS-184 Data Analysis","item":"https://bcomradar.vercel.app/notes/becs-184/"},{"@type":"ListItem","position":3,"name":"Multivariate Data Analysis","item":"https://bcomradar.vercel.app/notes/becs-184/multivariate/"}]}</script>
+</head>
+<body class="web-page">
+  <header class="topbar">
+    <a href="/app/" class="brand" aria-label="BCom Radar app">
+      <img class="brand-mark" src="/app/icons/icon.svg" width="32" height="32" alt="">
+      <span class="brand-text">BCom Radar</span>
+    </a>
+    <div class="topbar-actions"><a class="top-open" href="/app/#/c/BECS-184/t/multivariate">Open in app</a></div>
+  </header>
+
+  <main class="container">
+    <nav class="crumbs" aria-label="Breadcrumb"><a href="/notes/">All notes</a><span aria-hidden="true">›</span><a href="/notes/becs-184/">BECS-184 Data Analysis</a></nav>
+
+    <h1>Multivariate Data Analysis</h1>
+    <p class="head-meta"><span class="badge high">High</span> <span class="muted small">Asked in 6 of 8 papers · avg 10 marks</span></p>
+    <p class="lead">Meaning of multivariate analysis, dependence and interdependence techniques, the main techniques (factor, multiple regression, discriminant and logistic, canonical correlation, MANOVA, conjoint, cluster, perceptual mapping, correspondence) and guidelines for interpreting results.</p>
+    <p class="book-ref"><span class="book-ref-h">In your IGNOU book</span><span>Block 3 · Unit 9 Multivariate Data Analysis</span></p>
+
+    <h2>Key points</h2>
+    <section class="card"><ul class="points"><li>Univariate analysis studies one variable, bivariate two, multivariate three or more variables together — needed because economic and social outcomes depend on many interacting factors.</li><li>Classification: dependence methods (some variables explain others) — multiple regression, multiple discriminant analysis, MANOVA, canonical correlation; interdependence methods (no dependent variable) — factor analysis, cluster analysis, multidimensional scaling, latent structure analysis. The choice also depends on whether data are metric (interval, ratio) or non-metric (nominal, ordinal).</li><li>Factor / principal component analysis: condenses many correlated variables into a few underlying factors (e.g. 20 survey items → 3 factors of satisfaction).</li><li>Multiple regression: one metric dependent variable explained by several independent variables (Y = a + b₁X₁ + b₂X₂ + …), e.g. sales on price, advertising and income.</li><li>Discriminant analysis and logistic regression: predict a categorical outcome (default / no default; buyer / non-buyer).</li><li>Canonical correlation: relationship between two sets of variables. MANOVA: compares group means on several dependent variables at once.</li><li>Conjoint analysis: how customers trade off product features. Cluster analysis: groups similar cases (market segments). Perceptual mapping: a visual map of how consumers see competing brands. Correspondence analysis: a picture of cross-tabulated categories.</li><li>Guidelines for interpreting results: establish practical as well as statistical significance; remember that sample size affects all results; know your data (outliers, missing values, assumptions); strive for model parsimony; look at your errors; validate the results; use software carefully.</li><li>Structured approach (six steps): define the problem, objectives and technique → develop the analysis plan → evaluate the assumptions → estimate the model and assess fit → interpret the variate → validate the model.</li></ul></section>
+
+    <h2>Worked example</h2>
+    <section class="card example"><h3>Example: choosing a multivariate technique</h3><p>Predict a household&#39;s monthly spending from income, family size and education → multiple regression (dependence, metric outcome).</p><p>Predict whether a borrower will default (yes/no) → discriminant analysis or logistic regression.</p><p>Group 1,000 customers into segments by buying habits → cluster analysis (interdependence).</p><p>Reduce 20 satisfaction questions to a few underlying factors → factor analysis.</p><p>Compare three teaching methods on both marks and attendance together → MANOVA.</p></section>
+
+    <h2>How to write the answer</h2>
+    <section class="card"><p class="flush">Meaning → classification → 4–6 techniques with one-line use and an example each (or the guidelines, if asked) → conclusion.</p></section>
+
+    <h2>Common mistakes</h2>
+    <div class="callout warn"><ul class="points"><li>Listing techniques without saying which are dependence and which interdependence methods.</li><li>Treating statistical significance alone as proof that a result matters.</li></ul></div>
+
+    <h2>Asked in past papers</h2>
+    <p class="muted small">6 questions from 6 of 8 papers · most important first</p>
+    <section class="card asked-card"><ul class="asked"><li><a class="ask" href="/app/#/c/BECS-184/paper/2026-06/1">
+      <span class="ask-main"><span class="ask-q">Techniques of multivariate analysis</span>
+        <span class="ask-meta">Asked 2× · Jun 2026 · 20 marks</span></span>
+      <span class="chev" aria-hidden="true">›</span></a></li><li><a class="ask" href="/app/#/c/BECS-184/paper/2023-12/4">
+      <span class="ask-main"><span class="ask-q">Univariate vs multivariate analysis; multivariate techniques</span>
+        <span class="ask-meta">Dec 2023 · 20 marks</span></span>
+      <span class="chev" aria-hidden="true">›</span></a></li><li><a class="ask" href="/app/#/c/BECS-184/paper/2024-12/9">
+      <span class="ask-main"><span class="ask-q">Points to keep in mind when interpreting multivariate results</span>
+        <span class="ask-meta">Asked 2× · Dec 2024 · 12 marks</span></span>
+      <span class="chev" aria-hidden="true">›</span></a></li><li><a class="ask" href="/app/#/c/BECS-184/paper/2023-06/9(b)">
+      <span class="ask-main"><span class="ask-q">ANOVA vs MANOVA</span>
+        <span class="ask-meta">Jun 2023 · 6 marks</span></span>
+      <span class="chev" aria-hidden="true">›</span></a></li><li><a class="ask" href="/app/#/c/BECS-184/paper/2022-12/7(c)">
+      <span class="ask-main"><span class="ask-q">One multivariate technique and its application</span>
+        <span class="ask-meta">Dec 2022 · 6 marks</span></span>
+      <span class="chev" aria-hidden="true">›</span></a></li><li><a class="ask" href="/app/#/c/BECS-184/paper/2022-12/7(a)">
+      <span class="ask-main"><span class="ask-q">What is multivariate analysis?</span>
+        <span class="ask-meta">Dec 2022 · 3 marks</span></span>
+      <span class="chev" aria-hidden="true">›</span></a></li></ul></section>
+
+    <div class="web-cta-row">
+      <a class="btn" href="/app/#/c/BECS-184/t/multivariate">Study this in BCom Radar</a>
+      <a class="btn secondary" href="/app/#/ask/BECS-184/multivariate">Ask AI about this topic</a>
+    </div>
+
+    <nav class="topic-foot web-pager" aria-label="More topics">
+      <a class="btn secondary" href="/notes/becs-184/math/">← Sets, Relations, Logic &amp; Mathematical Modelling</a>
+      <a class="btn secondary" href="/notes/becs-184/qualitative/">Qualitative Research &amp; Analysis →</a>
+    </nav>
+    <footer class="page-foot">
+      <p>BCom Radar is a free, independent study aid for B.Com (BCOMF) students. It is not affiliated with or endorsed by IGNOU. Notes and examples are our own; past questions are quoted for study reference. Topic priorities are guidance, not a guarantee.</p>
+      <p><a href="/app/">Open BCom Radar</a> · <a href="/notes/">All notes</a></p>
+    </footer>
+  </main>
+</body>
+</html>

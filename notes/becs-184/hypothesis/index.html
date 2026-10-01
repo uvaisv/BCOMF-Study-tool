@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Hypothesis Testing, z/t Tests &amp; ANOVA – BECS-184 Data Analysis notes | BCom Radar</title>
+  <meta name="description" content="Hypothesis Testing, z/t Tests &amp; ANOVA (BECS-184 Data Analysis): key points, worked examples and past exam questions. Null and alternative hypotheses, one- and…">
+  <link rel="canonical" href="https://bcomradar.vercel.app/notes/becs-184/hypothesis/">
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="BCom Radar">
+  <meta property="og:title" content="Hypothesis Testing, z/t Tests &amp; ANOVA – BECS-184 Data Analysis notes | BCom Radar">
+  <meta property="og:description" content="Hypothesis Testing, z/t Tests &amp; ANOVA (BECS-184 Data Analysis): key points, worked examples and past exam questions. Null and alternative hypotheses, one- and…">
+  <meta property="og:url" content="https://bcomradar.vercel.app/notes/becs-184/hypothesis/">
+  <meta property="og:image" content="https://bcomradar.vercel.app/app/icons/icon-512.png">
+  <meta name="twitter:card" content="summary">
+  <meta name="theme-color" content="#0f766e">
+  <link rel="icon" href="/app/icons/icon.svg" type="image/svg+xml">
+  <link rel="icon" href="/app/icons/favicon-32.png" sizes="32x32" type="image/png">
+  <link rel="apple-touch-icon" href="/app/icons/apple-touch-icon.png">
+  <link rel="stylesheet" href="/app/css/style.css">
+  <script>try{var d=document.documentElement,g=function(k){var v=localStorage.getItem(k);return v===null?null:JSON.parse(v)};if(g("theme"))d.dataset.theme=g("theme");d.dataset.textsize=g("textsize")||"m";d.dataset.density=g("density")||"comfortable"}catch(e){}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"All notes","item":"https://bcomradar.vercel.app/notes/"},{"@type":"ListItem","position":2,"name":"BECS-184 Data Analysis","item":"https://bcomradar.vercel.app/notes/becs-184/"},{"@type":"ListItem","position":3,"name":"Hypothesis Testing, z/t Tests & ANOVA","item":"https://bcomradar.vercel.app/notes/becs-184/hypothesis/"}]}</script>
+</head>
+<body class="web-page">
+  <header class="topbar">
+    <a href="/app/" class="brand" aria-label="BCom Radar app">
+      <img class="brand-mark" src="/app/icons/icon.svg" width="32" height="32" alt="">
+      <span class="brand-text">BCom Radar</span>
+    </a>
+    <div class="topbar-actions"><a class="top-open" href="/app/#/c/BECS-184/t/hypothesis">Open in app</a></div>
+  </header>
+
+  <main class="container">
+    <nav class="crumbs" aria-label="Breadcrumb"><a href="/notes/">All notes</a><span aria-hidden="true">›</span><a href="/notes/becs-184/">BECS-184 Data Analysis</a></nav>
+
+    <h1>Hypothesis Testing, z/t Tests &amp; ANOVA</h1>
+    <p class="head-meta"><span class="badge high">High</span> <span class="muted small">Asked in 4 of 8 papers · avg 11 marks</span></p>
+    <p class="lead">Null and alternative hypotheses, one- and two-tailed tests, steps in testing, type I and II errors, level of significance and power, the p-value method, z and t tests, F-test for variances and ANOVA for three or more means.</p>
+    <p class="book-ref"><span class="book-ref-h">In your IGNOU book</span><span>Block 3 · Unit 7 Univariate Data Analysis <span class="muted">(7.3.6)</span></span><span>Block 3 · Unit 8 Bivariate Data Analysis <span class="muted">(8.6 and ANOVA)</span></span></p>
+
+    <h2>Key points</h2>
+    <section class="card"><ul class="points"><li>A statistical hypothesis is a claim about a population parameter. Null hypothesis H₀: no difference (contains &#39;=&#39;); alternative H₁: there is a difference (≠ two-tailed; &gt; right-tailed; &lt; left-tailed).</li><li>Steps (traditional method): state H₀ and H₁ → choose the level of significance α and the test → find the critical value(s) → compute the test statistic from the sample → reject H₀ if it falls in the critical region → state the conclusion in words.</li><li>Type I error: rejecting a true H₀ (probability α). Type II error: not rejecting a false H₀ (probability β). Power = 1 − β. Reducing α raises β for a given sample; a larger sample reduces both.</li><li>Which is more serious depends on the case: convicting an innocent person or approving a harmful drug (type I) is usually treated as worse, so α is kept small (0.05 or 0.01).</li><li>p-value method: the p-value is the probability of getting a result at least as extreme as the sample&#39;s if H₀ is true. If p ≤ α reject H₀; if p &gt; α do not reject.</li><li>z-test: population SD known, or large samples (n ≥ 30). t-test: population SD unknown and a small sample from a roughly normal population; d.f. = n − 1. Both compare one mean with a value, or two means; a z-test also compares two proportions.</li><li>F-test compares two variances (F = larger variance ÷ smaller variance).</li><li>ANOVA tests three or more means at once using F = between-group variance ÷ within-group variance. Repeated t-tests are avoided because they ignore the other means, inflate the chance of a type I error and need many tests (3 means → 3 tests, 5 → 10). Assumptions: normal populations, independent samples, equal variances.</li><li>MANOVA extends ANOVA to two or more dependent variables at once (e.g. effect of teaching method on both marks and attendance).</li></ul></section>
+
+    <h2>Worked examples</h2>
+    <section class="card example"><h3>Example: a one-sample test</h3><p>A battery maker claims a mean life of 36 months. A sample of 36 batteries with an additive averages 37.5 months; σ = 3 months.</p><p>H₀: μ = 36; H₁: μ &gt; 36 (right-tailed), α = 0.05, critical z = 1.645.</p><p>z = (37.5 − 36) ÷ (3/√36) = 1.5 ÷ 0.5 = 3.0 &gt; 1.645 → reject H₀: the additive increases battery life. Since z = 3 has a p-value of about 0.001 &lt; 0.05, the p-value method gives the same decision.</p></section>
+    <section class="card example"><h3>Example: types of error and ANOVA</h3><p>Type I: a court convicts an innocent person (H₀ &#39;innocent&#39; rejected though true). Type II: a guilty person goes free. A drug regulator keeps α small because approving a useless drug (type I) is very costly.</p><p>To compare mean yields of three fertilisers, use one ANOVA F-test (between-group variance ÷ within-group variance) instead of three t-tests, which would raise the overall chance of a type I error.</p></section>
+
+    <h2>Diagram</h2>
+    <figure class="card fig"><figcaption class="fig-title">Two-tailed test at α = 0.05</figcaption><svg viewBox="0 0 320 230" role="img" aria-label="Standard normal curve with rejection regions beyond plus and minus 1.96"><polygon class="a2" points="43.3,182.0 43.3,181.9 45.5,181.9 47.6,181.9 49.8,181.9 51.9,181.8 54.1,181.8 56.2,181.7 58.4,181.7 60.5,181.6 62.7,181.5 64.8,181.3 67.0,181.2 69.1,181.0 71.3,180.8 73.4,180.5 75.6,180.2 77.7,179.8 79.9,179.4 82.0,178.9 84.2,178.3 86.3,177.6 88.5,176.8 90.6,175.9 92.8,174.8 94.9,173.6 97.1,172.3 99.2,170.8 101.4,169.0 103.5,167.1 105.7,165.0 107.8,162.7 107.8,182.0"/><polygon class="a2" points="238.2,182.0 238.2,162.7 240.3,165.0 242.5,167.1 244.6,169.0 246.8,170.8 248.9,172.3 251.1,173.6 253.2,174.8 255.4,175.9 257.5,176.8 259.7,177.6 261.8,178.3 264.0,178.9 266.1,179.4 268.3,179.8 270.4,180.2 272.6,180.5 274.7,180.8 276.9,181.0 279.0,181.2 281.2,181.3 283.3,181.5 285.5,181.6 287.6,181.7 289.8,181.7 291.9,181.8 294.1,181.8 296.2,181.9 298.4,181.9 300.5,181.9 302.7,181.9 302.7,182.0"/><path class="ax" d="M40 26V182M40 182H310"/><text class="axl" x="310" y="196" text-anchor="end">z</text><path class="c1" d="M43.3 181.9L46.6 181.9L49.8 181.9L53.1 181.8L56.3 181.7L59.5 181.6L62.8 181.5L66.0 181.3L69.3 181.0L72.5 180.6L75.7 180.2L79.0 179.6L82.2 178.8L85.5 177.9L88.7 176.7L92.0 175.2L95.2 173.5L98.4 171.3L101.7 168.8L104.9 165.8L108.2 162.3L111.4 158.3L114.6 153.7L117.9 148.6L121.1 143.0L124.4 136.8L127.6 130.1L130.9 123.0L134.1 115.5L137.3 107.8L140.6 100.0L143.8 92.3L147.1 84.8L150.3 77.6L153.5 70.9L156.8 64.9L160.0 59.8L163.3 55.7L166.5 52.7L169.8 50.8L173.0 50.2L176.2 50.8L179.5 52.7L182.7 55.7L186.0 59.8L189.2 64.9L192.5 70.9L195.7 77.6L198.9 84.8L202.2 92.3L205.4 100.0L208.7 107.8L211.9 115.5L215.1 123.0L218.4 130.1L221.6 136.8L224.9 143.0L228.1 148.6L231.4 153.7L234.6 158.3L237.8 162.3L241.1 165.8L244.3 168.8L247.6 171.3L250.8 173.5L254.0 175.2L257.3 176.7L260.5 177.9L263.8 178.8L267.0 179.6L270.3 180.2L273.5 180.6L276.7 181.0L280.0 181.3L283.2 181.5L286.5 181.6L289.7 181.7L292.9 181.8L296.2 181.9L299.4 181.9L302.7 181.9"/><path class="guide" d="M107.83 162.68907926372907V182"/><text class="tick" x="107.83" y="194" text-anchor="middle">−1.96</text><path class="guide" d="M238.17 162.68907926372907V182"/><text class="tick" x="238.17" y="194" text-anchor="middle">+1.96</text><text class="tick" x="173" y="194" text-anchor="middle">0</text><text class="lbl sm" x="173.0" y="142.3" text-anchor="middle">Do not reject H₀</text><text class="lbl sm" x="173.0" y="154.3" text-anchor="middle">(95%)</text><text class="lbl sm" x="73.25" y="20" text-anchor="middle">Reject H₀</text><text class="lbl sm" x="272.75" y="20" text-anchor="middle">Reject H₀</text><text class="tick" x="73.3" y="164.1" text-anchor="middle">2.5%</text><text class="tick" x="272.8" y="164.1" text-anchor="middle">2.5%</text></svg><p class="fig-note">Under H₀ the test statistic follows the standard normal curve. With α = 0.05 split between the two tails, the critical values are ±1.96: if the computed z falls in either shaded tail (2.5% each), reject H₀; if it falls in the middle 95%, do not reject H₀. For a right-tailed test the whole 5% is in the right tail (critical z = 1.645). Rejecting a true H₀ in this way is a type I error, whose probability is α.</p></figure>
+
+    <h2>How to write the answer</h2>
+    <section class="card"><p class="flush">Definitions → steps or comparison as headed points → a short worked illustration (H₀, H₁, decision) → conclusion.</p></section>
+
+    <h2>Common mistakes</h2>
+    <div class="callout warn"><ul class="points"><li>Writing &#39;accept H₀&#39; as proof that it is true — say &#39;do not reject&#39;.</li><li>Putting the &#39;=&#39; sign in H₁.</li><li>Using many t-tests instead of ANOVA for three or more groups.</li></ul></div>
+
+    <h2>Asked in past papers</h2>
+    <p class="muted small">8 questions from 4 of 8 papers · most important first</p>
+    <section class="card asked-card"><ul class="asked"><li><a class="ask" href="/app/#/c/BECS-184/paper/2025-12/3">
+      <span class="ask-main"><span class="ask-q">Null vs alternative hypothesis; steps in testing</span>
+        <span class="ask-meta">Dec 2025 · 20 marks</span></span>
+      <span class="chev" aria-hidden="true">›</span></a></li><li><a class="ask" href="/app/#/c/BECS-184/paper/2026-06/5">
+      <span class="ask-main"><span class="ask-q">Testing a hypothesis about three or more means (ANOVA)</span>
+        <span class="ask-meta">Jun 2026 · 12 marks</span></span>
+      <span class="chev" aria-hidden="true">›</span></a></li><li><a class="ask" href="/app/#/c/BECS-184/paper/2025-12/6">
+      <span class="ask-main"><span class="ask-q">The p-value method</span>
+        <span class="ask-meta">Dec 2025 · 12 marks</span></span>
+      <span class="chev" aria-hidden="true">›</span></a></li><li><a class="ask" href="/app/#/c/BECS-184/paper/2025-06/8">
+      <span class="ask-main"><span class="ask-q">Hypothesis and steps in hypothesis testing</span>
+        <span class="ask-meta">Jun 2025 · 12 marks</span></span>
+      <span class="chev" aria-hidden="true">›</span></a></li><li><a class="ask" href="/app/#/c/BECS-184/paper/2023-06/5">
+      <span class="ask-main"><span class="ask-q">Type I and type II errors; which is more critical</span>
+        <span class="ask-meta">Jun 2023 · 12 marks</span></span>
+      <span class="chev" aria-hidden="true">›</span></a></li><li><a class="ask" href="/app/#/c/BECS-184/paper/2023-06/7(c)">
+      <span class="ask-main"><span class="ask-q">When z-test and t-test are used</span>
+        <span class="ask-meta">Jun 2023 · 6 marks</span></span>
+      <span class="chev" aria-hidden="true">›</span></a></li><li><a class="ask" href="/app/#/c/BECS-184/paper/2023-06/9(a)">
+      <span class="ask-main"><span class="ask-q">ANOVA and its use</span>
+        <span class="ask-meta">Jun 2023 · 6 marks</span></span>
+      <span class="chev" aria-hidden="true">›</span></a></li><li><a class="ask" href="/app/#/c/BECS-184/paper/2023-06/6(b)">
+      <span class="ask-main"><span class="ask-q">Null vs alternative hypothesis</span>
+        <span class="ask-meta">Jun 2023 · 4 marks</span></span>
+      <span class="chev" aria-hidden="true">›</span></a></li></ul></section>
+
+    <div class="web-cta-row">
+      <a class="btn" href="/app/#/c/BECS-184/t/hypothesis">Study this in BCom Radar</a>
+      <a class="btn secondary" href="/app/#/ask/BECS-184/hypothesis">Ask AI about this topic</a>
+    </div>
+
+    <nav class="topic-foot web-pager" aria-label="More topics">
+      <a class="btn secondary" href="/notes/becs-184/surveys/">← Census, Sample Surveys &amp; Errors</a>
+      <a class="btn secondary" href="/notes/becs-184/math/">Sets, Relations, Logic &amp; Mathematical Modelling →</a>
+    </nav>
+    <footer class="page-foot">
+      <p>BCom Radar is a free, independent study aid for B.Com (BCOMF) students. It is not affiliated with or endorsed by IGNOU. Notes and examples are our own; past questions are quoted for study reference. Topic priorities are guidance, not a guarantee.</p>
+      <p><a href="/app/">Open BCom Radar</a> · <a href="/notes/">All notes</a></p>
+    </footer>
+  </main>
+</body>
+</html>

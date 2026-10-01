@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Ratios, Capital Budgeting &amp; Depreciation – BCOS-183 Computer Application in Business notes | BCom Radar</title>
+  <meta name="description" content="Ratios, Capital Budgeting &amp; Depreciation (BCOS-183 Computer Application in Business): key points, worked examples and past exam questions. Ratio analysis, NPV…">
+  <link rel="canonical" href="https://bcomradar.vercel.app/notes/bcos-183/finance-excel/">
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="BCom Radar">
+  <meta property="og:title" content="Ratios, Capital Budgeting &amp; Depreciation – BCOS-183 Computer Application in Business notes | BCom Radar">
+  <meta property="og:description" content="Ratios, Capital Budgeting &amp; Depreciation (BCOS-183 Computer Application in Business): key points, worked examples and past exam questions. Ratio analysis, NPV…">
+  <meta property="og:url" content="https://bcomradar.vercel.app/notes/bcos-183/finance-excel/">
+  <meta property="og:image" content="https://bcomradar.vercel.app/app/icons/icon-512.png">
+  <meta name="twitter:card" content="summary">
+  <meta name="theme-color" content="#0f766e">
+  <link rel="icon" href="/app/icons/icon.svg" type="image/svg+xml">
+  <link rel="icon" href="/app/icons/favicon-32.png" sizes="32x32" type="image/png">
+  <link rel="apple-touch-icon" href="/app/icons/apple-touch-icon.png">
+  <link rel="stylesheet" href="/app/css/style.css">
+  <script>try{var d=document.documentElement,g=function(k){var v=localStorage.getItem(k);return v===null?null:JSON.parse(v)};if(g("theme"))d.dataset.theme=g("theme");d.dataset.textsize=g("textsize")||"m";d.dataset.density=g("density")||"comfortable"}catch(e){}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"All notes","item":"https://bcomradar.vercel.app/notes/"},{"@type":"ListItem","position":2,"name":"BCOS-183 Computer Application in Business","item":"https://bcomradar.vercel.app/notes/bcos-183/"},{"@type":"ListItem","position":3,"name":"Ratios, Capital Budgeting & Depreciation","item":"https://bcomradar.vercel.app/notes/bcos-183/finance-excel/"}]}</script>
+</head>
+<body class="web-page">
+  <header class="topbar">
+    <a href="/app/" class="brand" aria-label="BCom Radar app">
+      <img class="brand-mark" src="/app/icons/icon.svg" width="32" height="32" alt="">
+      <span class="brand-text">BCom Radar</span>
+    </a>
+    <div class="topbar-actions"><a class="top-open" href="/app/#/c/BCOS-183/t/finance-excel">Open in app</a></div>
+  </header>
+
+  <main class="container">
+    <nav class="crumbs" aria-label="Breadcrumb"><a href="/notes/">All notes</a><span aria-hidden="true">›</span><a href="/notes/bcos-183/">BCOS-183 Computer Application in Business</a></nav>
+
+    <h1>Ratios, Capital Budgeting &amp; Depreciation</h1>
+    <p class="head-meta"><span class="badge critical">Critical</span> <span class="muted small">Asked in 6 of 9 papers · avg 15 marks</span></p>
+    <p class="lead">Ratio analysis, NPV and IRR (with Excel syntax), depreciation methods, loan and lease statements, payroll.</p>
+    <p class="book-ref"><span class="book-ref-h">In your IGNOU book</span><span>Block 5 · Unit 20 Creating Business Spreadsheets</span></p>
+
+    <h2>Key points</h2>
+    <section class="card"><ul class="points"><li>Loan statement: prepared by the lender — loan amount, interest rate, period and instalments (Excel =PMT gives the EMI). Lease statement: the periodic payments by the lessee (tenant) to the lessor (owner).</li><li>Ratio analysis uses the trading account, profit and loss account and balance sheet to judge the firm&#39;s position.</li><li>Current ratio = current assets ÷ current liabilities (2:1 is the usual norm). Quick ratio = quick assets ÷ current liabilities (1:1).</li><li>Gross profit ratio = GP ÷ net sales × 100; net profit ratio = NP ÷ net sales × 100; inventory turnover = cost of goods sold ÷ average inventory.</li><li>Payroll statement: employee name, code, category, basic pay, allowances and perquisites, deductions, tax and net salary.</li><li>Capital budgeting evaluates long-term projects by their cash inflows and outflows. NPV = present value of inflows − outlay (accept if positive); IRR is the rate at which NPV = 0 (accept if above the cost of capital).</li><li>In Excel: =NPV(rate, later cash flows) + the initial outlay (entered as negative); =IRR(range including the outlay).</li><li>Depreciation: straight line (same amount each year, =SLN) and diminishing balance (fixed % of the reducing balance, =DB).</li></ul></section>
+
+    <h2>Worked examples</h2>
+    <section class="card example"><h3>Example: EMI with PMT</h3><p>A loan of ₹1,00,000 at 10% a year, repaid monthly over 12 months:</p><p>=PMT(10%/12, 12, -100000) gives an EMI of ₹8,791.59.</p></section>
+    <section class="card example"><h3>Example: NPV and IRR in Excel</h3><p>Outlay ₹1,00,000 in B1 (entered as −100000); inflows of ₹45,000 in B2:B4 for 3 years; cost of capital 10%.</p><p>=NPV(10%, B2:B4) + B1 = 1,11,908 − 1,00,000 = ₹11,908 → positive, so accept.</p><p>=IRR(B1:B4) ≈ 16.6%, above the 10% cost of capital.</p><p>Depreciation of a ₹1,00,000 asset, scrap ₹10,000, life 5 years: =SLN(100000, 10000, 5) = ₹18,000 a year.</p></section>
+
+    <h2>Formulas</h2>
+    <section class="card"><div class="formula">Current ratio = CA / CL</div><div class="formula">NPV = Σ CFₜ/(1 + r)ᵗ − C₀</div><div class="formula">=PMT(rate, nper, pv)</div></section>
+
+    <h2>How to write the answer</h2>
+    <section class="card"><p class="flush">Definition → formula → small example → interpretation.</p></section>
+
+    <h2>Common mistakes</h2>
+    <div class="callout warn"><ul class="points"><li>Forgetting that Excel&#39;s NPV() does not include the year-0 outlay.</li></ul></div>
+
+    <h2>Asked in past papers</h2>
+    <p class="muted small">11 questions from 6 of 9 papers · most important first</p>
+    <section class="card asked-card"><ul class="asked"><li><a class="ask" href="/app/#/c/BCOS-183/paper/2026-06/2">
+      <span class="ask-main"><span class="ask-q">Capital budgeting and its methods</span>
+        <span class="ask-meta">Jun 2026 · 20 marks</span></span>
+      <span class="chev" aria-hidden="true">›</span></a></li><li><a class="ask" href="/app/#/c/BCOS-183/paper/2023-12/6">
+      <span class="ask-main"><span class="ask-q">Capital budgeting: NPV and IRR in Excel</span>
+        <span class="ask-meta">Dec 2023 · 20 marks</span></span>
+      <span class="chev" aria-hidden="true">›</span></a></li><li><a class="ask" href="/app/#/c/BCOS-183/paper/2023-06/7">
+      <span class="ask-main"><span class="ask-q">Ratio analysis: current, quick, GP, operating cost ratios</span>
+        <span class="ask-meta">Jun 2023 · 20 marks</span></span>
+      <span class="chev" aria-hidden="true">›</span></a></li><li><a class="ask" href="/app/#/c/BCOS-183/paper/2022-12/6">
+      <span class="ask-main"><span class="ask-q">Comment: payroll; capital budgeting</span>
+        <span class="ask-meta">Dec 2022 · 20 marks</span></span>
+      <span class="chev" aria-hidden="true">›</span></a></li><li><a class="ask" href="/app/#/c/BCOS-183/paper/2025-12/3(b)">
+      <span class="ask-main"><span class="ask-q">IRR and NPV in capital budgeting</span>
+        <span class="ask-meta">Dec 2025 · 10 marks</span></span>
+      <span class="chev" aria-hidden="true">›</span></a></li><li><a class="ask" href="/app/#/c/BCOS-183/paper/2025-12/5(b)">
+      <span class="ask-main"><span class="ask-q">Ratio analysis: current, quick, operating cost, inventory turnover</span>
+        <span class="ask-meta">Dec 2025 · 10 marks</span></span>
+      <span class="chev" aria-hidden="true">›</span></a></li><li><a class="ask" href="/app/#/c/BCOS-183/paper/2025-06/1(b)">
+      <span class="ask-main"><span class="ask-q">Depreciation accounting: straight line vs diminishing balance</span>
+        <span class="ask-meta">Jun 2025 · 10 marks</span></span>
+      <span class="chev" aria-hidden="true">›</span></a></li><li><a class="ask" href="/app/#/c/BCOS-183/paper/2025-06/4(b)">
+      <span class="ask-main"><span class="ask-q">Loan vs lease statement and their components</span>
+        <span class="ask-meta">Jun 2025 · 10 marks</span></span>
+      <span class="chev" aria-hidden="true">›</span></a></li><li><a class="ask" href="/app/#/c/BCOS-183/paper/2025-06/6(c%2Cd)">
+      <span class="ask-main"><span class="ask-q">Distinguish: NPV vs IRR; current vs quick ratio</span>
+        <span class="ask-meta">Jun 2025 · 8 marks</span></span>
+      <span class="chev" aria-hidden="true">›</span></a></li><li><a class="ask" href="/app/#/c/BCOS-183/paper/2025-12/2(c)">
+      <span class="ask-main"><span class="ask-q">Compare: straight line vs diminishing balance</span>
+        <span class="ask-meta">Dec 2025 · 4 marks</span></span>
+      <span class="chev" aria-hidden="true">›</span></a></li><li><a class="ask" href="/app/#/c/BCOS-183/paper/2025-06/7(b)">
+      <span class="ask-main"><span class="ask-q">Net profit and gross profit ratios</span>
+        <span class="ask-meta">Jun 2025 · 4 marks</span></span>
+      <span class="chev" aria-hidden="true">›</span></a></li></ul></section>
+
+    <div class="web-cta-row">
+      <a class="btn" href="/app/#/c/BCOS-183/t/finance-excel">Study this in BCom Radar</a>
+      <a class="btn secondary" href="/app/#/ask/BCOS-183/finance-excel">Ask AI about this topic</a>
+    </div>
+
+    <nav class="topic-foot web-pager" aria-label="More topics">
+      <a class="btn secondary" href="/notes/bcos-183/software-os/">← Software &amp; Operating Systems</a>
+      <a class="btn secondary" href="/notes/bcos-183/networks/">Networks, Internet &amp; E-mail →</a>
+    </nav>
+    <footer class="page-foot">
+      <p>BCom Radar is a free, independent study aid for B.Com (BCOMF) students. It is not affiliated with or endorsed by IGNOU. Notes and examples are our own; past questions are quoted for study reference. Topic priorities are guidance, not a guarantee.</p>
+      <p><a href="/app/">Open BCom Radar</a> · <a href="/notes/">All notes</a></p>
+    </footer>
+  </main>
+</body>
+</html>

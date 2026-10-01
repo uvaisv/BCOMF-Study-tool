@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Normal Distribution, Estimation &amp; Sampling Concepts – BECS-184 Data Analysis notes | BCom Radar</title>
+  <meta name="description" content="Normal Distribution, Estimation &amp; Sampling Concepts (BECS-184 Data Analysis): key points, worked examples and past exam questions. Exploratory data analysis…">
+  <link rel="canonical" href="https://bcomradar.vercel.app/notes/becs-184/inference/">
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="BCom Radar">
+  <meta property="og:title" content="Normal Distribution, Estimation &amp; Sampling Concepts – BECS-184 Data Analysis notes | BCom Radar">
+  <meta property="og:description" content="Normal Distribution, Estimation &amp; Sampling Concepts (BECS-184 Data Analysis): key points, worked examples and past exam questions. Exploratory data analysis…">
+  <meta property="og:url" content="https://bcomradar.vercel.app/notes/becs-184/inference/">
+  <meta property="og:image" content="https://bcomradar.vercel.app/app/icons/icon-512.png">
+  <meta name="twitter:card" content="summary">
+  <meta name="theme-color" content="#0f766e">
+  <link rel="icon" href="/app/icons/icon.svg" type="image/svg+xml">
+  <link rel="icon" href="/app/icons/favicon-32.png" sizes="32x32" type="image/png">
+  <link rel="apple-touch-icon" href="/app/icons/apple-touch-icon.png">
+  <link rel="stylesheet" href="/app/css/style.css">
+  <script>try{var d=document.documentElement,g=function(k){var v=localStorage.getItem(k);return v===null?null:JSON.parse(v)};if(g("theme"))d.dataset.theme=g("theme");d.dataset.textsize=g("textsize")||"m";d.dataset.density=g("density")||"comfortable"}catch(e){}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"All notes","item":"https://bcomradar.vercel.app/notes/"},{"@type":"ListItem","position":2,"name":"BECS-184 Data Analysis","item":"https://bcomradar.vercel.app/notes/becs-184/"},{"@type":"ListItem","position":3,"name":"Normal Distribution, Estimation & Sampling Concepts","item":"https://bcomradar.vercel.app/notes/becs-184/inference/"}]}</script>
+</head>
+<body class="web-page">
+  <header class="topbar">
+    <a href="/app/" class="brand" aria-label="BCom Radar app">
+      <img class="brand-mark" src="/app/icons/icon.svg" width="32" height="32" alt="">
+      <span class="brand-text">BCom Radar</span>
+    </a>
+    <div class="topbar-actions"><a class="top-open" href="/app/#/c/BECS-184/t/inference">Open in app</a></div>
+  </header>
+
+  <main class="container">
+    <nav class="crumbs" aria-label="Breadcrumb"><a href="/notes/">All notes</a><span aria-hidden="true">›</span><a href="/notes/becs-184/">BECS-184 Data Analysis</a></nav>
+
+    <h1>Normal Distribution, Estimation &amp; Sampling Concepts</h1>
+    <p class="head-meta"><span class="badge high">High</span> <span class="muted small">Asked in 8 of 8 papers · avg 14 marks</span></p>
+    <p class="lead">Exploratory data analysis and boxplots, parameters and statistics, random variables and probability distributions, the normal and standard normal distributions, central limit theorem, standard error, point and interval estimation, properties of a good estimator and the t distribution.</p>
+    <p class="book-ref"><span class="book-ref-h">In your IGNOU book</span><span>Block 3 · Unit 7 Univariate Data Analysis</span></p>
+
+    <h2>Key points</h2>
+    <section class="card"><ul class="points"><li>Descriptive statistics summarise the data in hand; inferential statistics use a sample to draw conclusions about a population, with a measured risk of error.</li><li>Parameter: a numerical summary of the population (μ, σ), usually unknown. Statistic: the same summary computed from a sample (X̄, s), used to estimate the parameter.</li><li>Random variable: a variable whose value depends on chance (number of heads in 3 tosses, daily rainfall). A probability distribution lists its values with their probabilities; for a continuous variable, probabilities are areas under the curve, the curve is never negative and the total area is 1.</li><li>Normal distribution: bell-shaped, symmetrical, unimodal; mean = median = mode at the centre; continuous; tails never touch the x-axis; total area 1; about 68%, 95% and 99.7% of values lie within 1, 2 and 3 SDs of the mean.</li><li>Standard normal distribution: mean 0, SD 1; any normal value is converted by z = (X − μ) ÷ σ and areas read from the z table — used to find probabilities and percentages.</li><li>Central limit theorem: the distribution of the sample mean approaches normal as n grows (n ≥ 30 is usually enough), whatever the shape of the population. Its standard deviation is the standard error = σ ÷ √n.</li><li>Point estimate: a single value (sample mean 65). Interval estimate (confidence interval): a range believed to contain the parameter with a stated confidence, e.g. 95% CI = X̄ ± 1.96 σ/√n. Higher confidence gives a wider interval.</li><li>A good estimator is unbiased (its expected value equals the parameter), consistent (approaches the parameter as n grows) and efficient (has the smallest variance).</li><li>t distribution: bell-shaped and symmetric about 0 like the normal, but flatter with heavier tails; a family of curves indexed by degrees of freedom (n − 1); approaches the normal as d.f. increase. Used for small samples when σ is unknown.</li><li>Boxplot (five-number summary: minimum, Q1, median, Q3, maximum) shows the centre, spread, skewness and outliers at a glance.</li></ul></section>
+
+    <h2>Worked examples</h2>
+    <section class="card example"><h3>Example: normal distribution and a confidence interval</h3><p>Marks are normal with mean 50 and SD 10. A student scoring 70 has z = (70 − 50) ÷ 10 = 2, so about 97.7% of students scored below them. About 95% of students lie between 30 and 70 (mean ± 2 SD).</p><p>A sample of 100 students has mean marks 65 with σ = 10: standard error = 10 ÷ √100 = 1, so the 95% CI = 65 ± 1.96 × 1 = 63.04 to 66.96.</p></section>
+    <section class="card example"><h3>Example: parameter vs statistic, and degrees of freedom</h3><p>The average income of all households in a city (μ) is a parameter; the average of 500 sampled households (X̄ = ₹32,000) is a statistic used to estimate it.</p><p>Degrees of freedom: if 5 values must average 10 (total 50), four can be anything, but the fifth is then fixed — so d.f. = n − 1 = 4.</p></section>
+
+    <h2>Diagram</h2>
+    <figure class="card fig"><figcaption class="fig-title">The normal curve: the 68–95–99.7 rule</figcaption><svg viewBox="0 0 320 250" role="img" aria-label="Normal curve with areas within one, two and three standard deviations"><polygon class="a1" points="139.8,172.0 139.8,91.7 141.4,87.7 143.1,83.7 144.7,79.7 146.4,75.8 148.1,72.0 149.7,68.4 151.4,64.8 153.1,61.4 154.7,58.2 156.4,55.1 158.0,52.3 159.7,49.8 161.4,47.5 163.0,45.4 164.7,43.7 166.3,42.2 168.0,41.1 169.7,40.2 171.3,39.8 173.0,39.6 174.7,39.8 176.3,40.2 178.0,41.1 179.7,42.2 181.3,43.7 183.0,45.4 184.6,47.5 186.3,49.8 188.0,52.3 189.6,55.1 191.3,58.2 192.9,61.4 194.6,64.8 196.3,68.4 197.9,72.0 199.6,75.8 201.3,79.7 202.9,83.7 204.6,87.7 206.3,91.7 206.3,172.0"/><path class="ax" d="M40 12V172M40 172H310"/><path class="c1" d="M43.3 171.9L46.6 171.9L49.8 171.9L53.1 171.8L56.3 171.7L59.5 171.6L62.8 171.5L66.0 171.3L69.3 171.0L72.5 170.6L75.7 170.2L79.0 169.6L82.2 168.8L85.5 167.9L88.7 166.7L92.0 165.2L95.2 163.4L98.4 161.3L101.7 158.7L104.9 155.7L108.2 152.2L111.4 148.2L114.6 143.6L117.9 138.5L121.1 132.8L124.4 126.6L127.6 119.8L130.9 112.7L134.1 105.2L137.3 97.5L140.6 89.7L143.8 81.9L147.1 74.3L150.3 67.1L153.5 60.4L156.8 54.4L160.0 49.3L163.3 45.1L166.5 42.1L169.8 40.2L173.0 39.6L176.2 40.2L179.5 42.1L182.7 45.1L186.0 49.3L189.2 54.4L192.5 60.4L195.7 67.1L198.9 74.3L202.2 81.9L205.4 89.7L208.7 97.5L211.9 105.2L215.1 112.7L218.4 119.8L221.6 126.6L224.9 132.8L228.1 138.5L231.4 143.6L234.6 148.2L237.8 152.2L241.1 155.7L244.3 158.7L247.6 161.3L250.8 163.4L254.0 165.2L257.3 166.7L260.5 167.9L263.8 168.8L267.0 169.6L270.3 170.2L273.5 170.6L276.7 171.0L280.0 171.3L283.2 171.5L286.5 171.6L289.7 171.7L292.9 171.8L296.2 171.9L299.4 171.9L302.7 171.9"/><text class="tick" x="73.25" y="184" text-anchor="middle">μ−3σ</text><text class="tick" x="106.5" y="184" text-anchor="middle">μ−2σ</text><text class="tick" x="139.75" y="184" text-anchor="middle">μ−σ</text><text class="tick" x="173" y="184" text-anchor="middle">μ</text><text class="tick" x="206.25" y="184" text-anchor="middle">μ+σ</text><text class="tick" x="239.5" y="184" text-anchor="middle">μ+2σ</text><text class="tick" x="272.75" y="184" text-anchor="middle">μ+3σ</text><path class="guide" d="M173 39.58511544122658V172"/><text class="lbl sm" x="173.0" y="33.6" text-anchor="middle">Mean = Median = Mode</text><path class="brk" d="M139.75 196V200H206.25V196"/><text class="lbl sm" x="173" y="211" text-anchor="middle">68.27%</text><path class="brk" d="M106.5 214V218H239.5V214"/><text class="lbl sm" x="173" y="229" text-anchor="middle">95.45%</text><path class="brk" d="M73.25 232V236H272.75V232"/><text class="lbl sm" x="173" y="247" text-anchor="middle">99.73%</text></svg><p class="fig-note">The normal curve is bell-shaped and symmetrical, with mean = median = mode at the centre; its tails come ever closer to the x-axis but never touch it, and the total area under it is 1. About 68.27% of values lie within 1 standard deviation of the mean, 95.45% within 2 and 99.73% within 3. For the standard normal curve the mean is 0 and the SD is 1, and any value is converted by z = (X − μ) ÷ σ.</p></figure>
+
+    <h2>Formulas</h2>
+    <section class="card"><div class="formula">z = (X − μ) ÷ σ</div><div class="formula">Standard error = σ ÷ √n</div><div class="formula">95% CI for μ = X̄ ± 1.96 σ/√n</div><div class="formula">t = (X̄ − μ) ÷ (s/√n), d.f. = n − 1</div></section>
+
+    <h2>How to write the answer</h2>
+    <section class="card"><p class="flush">Definition → properties or comparison as numbered points → a small numerical or diagram illustration → uses → conclusion.</p></section>
+
+    <h2>Common mistakes</h2>
+    <div class="callout warn"><ul class="points"><li>Saying the normal curve touches the x-axis.</li><li>Confusing the standard deviation of the data with the standard error of the mean.</li><li>Thinking a 95% interval contains 95% of the data values.</li></ul></div>
+
+    <h2>Asked in past papers</h2>
+    <p class="muted small">19 questions from 8 of 8 papers · most important first</p>
+    <section class="card asked-card"><ul class="asked"><li><a class="ask" href="/app/#/c/BECS-184/paper/2025-06/11">
+      <span class="ask-main"><span class="ask-q">Properties of the normal distribution</span>
+        <span class="ask-meta">Jun 2025 · 12 marks</span></span>
+      <span class="chev" aria-hidden="true">›</span></a></li><li><a class="ask" href="/app/#/c/BECS-184/paper/2024-12/7">
+      <span class="ask-main"><span class="ask-q">Point vs interval estimation; properties of a good estimator</span>
+        <span class="ask-meta">Dec 2024 · 12 marks</span></span>
+      <span class="chev" aria-hidden="true">›</span></a></li><li><a class="ask" href="/app/#/c/BECS-184/paper/2023-12/7">
+      <span class="ask-main"><span class="ask-q">Characteristics and uses of the normal distribution</span>
+        <span class="ask-meta">Dec 2023 · 12 marks</span></span>
+      <span class="chev" aria-hidden="true">›</span></a></li><li><a class="ask" href="/app/#/c/BECS-184/paper/2024-06/3(b)">
+      <span class="ask-main"><span class="ask-q">Characteristics and uses of the t distribution</span>
+        <span class="ask-meta">Jun 2024 · 10 marks</span></span>
+      <span class="chev" aria-hidden="true">›</span></a></li><li><a class="ask" href="/app/#/c/BECS-184/paper/2024-12/6(a)">
+      <span class="ask-main"><span class="ask-q">Random variable with real-life examples</span>
+        <span class="ask-meta">Dec 2024 · 6 marks</span></span>
+      <span class="chev" aria-hidden="true">›</span></a></li><li><a class="ask" href="/app/#/c/BECS-184/paper/2024-12/6(b)">
+      <span class="ask-main"><span class="ask-q">Probability distribution; properties of a continuous one</span>
+        <span class="ask-meta">Dec 2024 · 6 marks</span></span>
+      <span class="chev" aria-hidden="true">›</span></a></li><li><a class="ask" href="/app/#/c/BECS-184/paper/2026-06/12(b)">
+      <span class="ask-main"><span class="ask-q">Note: standard normal distribution</span>
+        <span class="ask-meta">Jun 2026 · 4 marks</span></span>
+      <span class="chev" aria-hidden="true">›</span></a></li><li><a class="ask" href="/app/#/c/BECS-184/paper/2025-12/12(a)">
+      <span class="ask-main"><span class="ask-q">Note: confidence interval</span>
+        <span class="ask-meta">Dec 2025 · 4 marks</span></span>
+      <span class="chev" aria-hidden="true">›</span></a></li><li><a class="ask" href="/app/#/c/BECS-184/paper/2025-12/12(b)">
+      <span class="ask-main"><span class="ask-q">Note: central limit theorem</span>
+        <span class="ask-meta">Dec 2025 · 4 marks</span></span>
+      <span class="chev" aria-hidden="true">›</span></a></li><li><a class="ask" href="/app/#/c/BECS-184/paper/2025-12/12(c)">
+      <span class="ask-main"><span class="ask-q">Note: random variable</span>
+        <span class="ask-meta">Dec 2025 · 4 marks</span></span>
+      <span class="chev" aria-hidden="true">›</span></a></li><li><a class="ask" href="/app/#/c/BECS-184/paper/2025-12/12(d)">
+      <span class="ask-main"><span class="ask-q">Note: standard error</span>
+        <span class="ask-meta">Dec 2025 · 4 marks</span></span>
+      <span class="chev" aria-hidden="true">›</span></a></li><li><a class="ask" href="/app/#/c/BECS-184/paper/2024-12/12(e)">
+      <span class="ask-main"><span class="ask-q">Note: parameter and statistic</span>
+        <span class="ask-meta">Dec 2024 · 4 marks</span></span>
+      <span class="chev" aria-hidden="true">›</span></a></li><li><a class="ask" href="/app/#/c/BECS-184/paper/2024-06/11(iii)">
+      <span class="ask-main"><span class="ask-q">Note: inferential statistics</span>
+        <span class="ask-meta">Jun 2024 · 4 marks</span></span>
+      <span class="chev" aria-hidden="true">›</span></a></li><li><a class="ask" href="/app/#/c/BECS-184/paper/2024-06/11(v)">
+      <span class="ask-main"><span class="ask-q">Note: outlier</span>
+        <span class="ask-meta">Jun 2024 · 4 marks</span></span>
+      <span class="chev" aria-hidden="true">›</span></a></li><li><a class="ask" href="/app/#/c/BECS-184/paper/2023-12/11(b)">
+      <span class="ask-main"><span class="ask-q">Note: estimator</span>
+        <span class="ask-meta">Dec 2023 · 4 marks</span></span>
+      <span class="chev" aria-hidden="true">›</span></a></li><li><a class="ask" href="/app/#/c/BECS-184/paper/2023-06/6(c)">
+      <span class="ask-main"><span class="ask-q">Descriptive vs inferential statistics</span>
+        <span class="ask-meta">Jun 2023 · 4 marks</span></span>
+      <span class="chev" aria-hidden="true">›</span></a></li><li><a class="ask" href="/app/#/c/BECS-184/paper/2023-06/11(a)">
+      <span class="ask-main"><span class="ask-q">Note: degrees of freedom</span>
+        <span class="ask-meta">Jun 2023 · 4 marks</span></span>
+      <span class="chev" aria-hidden="true">›</span></a></li><li><a class="ask" href="/app/#/c/BECS-184/paper/2022-12/6(c)">
+      <span class="ask-main"><span class="ask-q">Point estimate vs interval estimate</span>
+        <span class="ask-meta">Dec 2022 · 4 marks</span></span>
+      <span class="chev" aria-hidden="true">›</span></a></li><li><a class="ask" href="/app/#/c/BECS-184/paper/2022-12/11(c)">
+      <span class="ask-main"><span class="ask-q">Note: normal distribution curve</span>
+        <span class="ask-meta">Dec 2022 · 4 marks</span></span>
+      <span class="chev" aria-hidden="true">›</span></a></li></ul></section>
+
+    <div class="web-cta-row">
+      <a class="btn" href="/app/#/c/BECS-184/t/inference">Study this in BCom Radar</a>
+      <a class="btn secondary" href="/app/#/ask/BECS-184/inference">Ask AI about this topic</a>
+    </div>
+
+    <nav class="topic-foot web-pager" aria-label="More topics">
+      <a class="btn secondary" href="/notes/becs-184/composite/">← Composite Index (PQLI, HDI, GDI)</a>
+      <a class="btn secondary" href="/notes/becs-184/surveys/">Census, Sample Surveys &amp; Errors →</a>
+    </nav>
+    <footer class="page-foot">
+      <p>BCom Radar is a free, independent study aid for B.Com (BCOMF) students. It is not affiliated with or endorsed by IGNOU. Notes and examples are our own; past questions are quoted for study reference. Topic priorities are guidance, not a guarantee.</p>
+      <p><a href="/app/">Open BCom Radar</a> · <a href="/notes/">All notes</a></p>
+    </footer>
+  </main>
+</body>
+</html>

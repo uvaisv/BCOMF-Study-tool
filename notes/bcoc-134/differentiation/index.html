@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Differentiation (dy/dx) – BCOC-134 Business Mathematics and Statistics notes | BCom Radar</title>
+  <meta name="description" content="Differentiation (dy/dx) (BCOC-134 Business Mathematics and Statistics): key points, worked examples and past exam questions. Usually &#39;find dy/dx, any four&#39; for…">
+  <link rel="canonical" href="https://bcomradar.vercel.app/notes/bcoc-134/differentiation/">
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="BCom Radar">
+  <meta property="og:title" content="Differentiation (dy/dx) – BCOC-134 Business Mathematics and Statistics notes | BCom Radar">
+  <meta property="og:description" content="Differentiation (dy/dx) (BCOC-134 Business Mathematics and Statistics): key points, worked examples and past exam questions. Usually &#39;find dy/dx, any four&#39; for…">
+  <meta property="og:url" content="https://bcomradar.vercel.app/notes/bcoc-134/differentiation/">
+  <meta property="og:image" content="https://bcomradar.vercel.app/app/icons/icon-512.png">
+  <meta name="twitter:card" content="summary">
+  <meta name="theme-color" content="#0f766e">
+  <link rel="icon" href="/app/icons/icon.svg" type="image/svg+xml">
+  <link rel="icon" href="/app/icons/favicon-32.png" sizes="32x32" type="image/png">
+  <link rel="apple-touch-icon" href="/app/icons/apple-touch-icon.png">
+  <link rel="stylesheet" href="/app/css/style.css">
+  <script>try{var d=document.documentElement,g=function(k){var v=localStorage.getItem(k);return v===null?null:JSON.parse(v)};if(g("theme"))d.dataset.theme=g("theme");d.dataset.textsize=g("textsize")||"m";d.dataset.density=g("density")||"comfortable"}catch(e){}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"All notes","item":"https://bcomradar.vercel.app/notes/"},{"@type":"ListItem","position":2,"name":"BCOC-134 Business Mathematics and Statistics","item":"https://bcomradar.vercel.app/notes/bcoc-134/"},{"@type":"ListItem","position":3,"name":"Differentiation (dy/dx)","item":"https://bcomradar.vercel.app/notes/bcoc-134/differentiation/"}]}</script>
+</head>
+<body class="web-page">
+  <header class="topbar">
+    <a href="/app/" class="brand" aria-label="BCom Radar app">
+      <img class="brand-mark" src="/app/icons/icon.svg" width="32" height="32" alt="">
+      <span class="brand-text">BCom Radar</span>
+    </a>
+    <div class="topbar-actions"><a class="top-open" href="/app/#/c/BCOC-134/t/differentiation">Open in app</a></div>
+  </header>
+
+  <main class="container">
+    <nav class="crumbs" aria-label="Breadcrumb"><a href="/notes/">All notes</a><span aria-hidden="true">›</span><a href="/notes/bcoc-134/">BCOC-134 Business Mathematics and Statistics</a></nav>
+
+    <h1>Differentiation (dy/dx)</h1>
+    <p class="head-meta"><span class="badge critical">Critical</span> <span class="muted small">Asked in 9 of 11 papers · avg 16 marks</span></p>
+    <p class="lead">Usually &#39;find dy/dx, any four&#39; for 20 marks — pure practice, very predictable.</p>
+    <p class="book-ref"><span class="book-ref-h">In your IGNOU book</span><span>Block 2 · Unit 7 Concept of Differentiation</span></p>
+
+    <h2>Key points</h2>
+    <section class="card"><ul class="points"><li>Derivative dy/dx = rate of change of y with respect to x.</li><li>Standard results: d/dx(xⁿ) = n·xⁿ⁻¹; d/dx(constant) = 0; d/dx(eˣ) = eˣ; d/dx(log x) = 1/x; d/dx(aˣ) = aˣ·log a.</li><li>Implicit functions (e.g. x² + y² = 25): differentiate both sides, collect dy/dx terms.</li><li>Parametric (x = at², y = 2at): dy/dx = (dy/dt) ÷ (dx/dt).</li><li>Function of a function (y = u³, u = 3x + 9): chain rule dy/dx = dy/du × du/dx.</li><li>Differentiation by first principle: dy/dx = lim h→0 [f(x + h) − f(x)] / h.</li></ul></section>
+
+    <h2>Worked examples</h2>
+    <section class="card example"><h3>Example: product, quotient and chain rules</h3><p>Product: y = (x² + 1)(3x − 2) → dy/dx = (x² + 1)·3 + (3x − 2)·2x = 9x² − 4x + 3.</p><p>Quotient: y = (2x + 1)/(x − 3) → dy/dx = [(x − 3)·2 − (2x + 1)·1]/(x − 3)² = −7/(x − 3)².</p><p>Chain: y = (3x + 9)³ → put u = 3x + 9: dy/dx = 3u² × 3 = 9(3x + 9)².</p></section>
+    <section class="card example"><h3>Example: implicit, parametric and logarithmic</h3><p>Implicit: x² + y² = 25 → 2x + 2y·dy/dx = 0 → dy/dx = −x/y; at (3, 4) the slope is −3/4.</p><p>Parametric: x = at², y = 2at → dx/dt = 2at, dy/dt = 2a → dy/dx = 2a/2at = 1/t.</p><p>Logarithmic: y = xˣ → log y = x·log x → (1/y)·dy/dx = log x + 1 → dy/dx = xˣ(1 + log x).</p></section>
+
+    <h2>How to solve</h2>
+    <section class="card"><ol class="steps"><li>Identify the form: sum, product, quotient, chain, implicit or parametric.</li><li>Write the rule you are using as the first line.</li><li>Differentiate each part, then simplify.</li><li>For xˣ type: take log on both sides, then differentiate (logarithmic differentiation).</li></ol></section>
+
+    <h2>Formulas</h2>
+    <section class="card"><div class="formula">Product: d(uv)/dx = u·dv/dx + v·du/dx</div><div class="formula">Quotient: d(u/v)/dx = (v·du/dx − u·dv/dx) / v²</div><div class="formula">Chain: dy/dx = dy/du × du/dx</div></section>
+
+    <h2>Common mistakes</h2>
+    <div class="callout warn"><ul class="points"><li>Wrong sign order in the quotient rule (it is v·u′ − u·v′).</li><li>Forgetting to multiply by du/dx in the chain rule.</li></ul></div>
+
+    <h2>Asked in past papers</h2>
+    <p class="muted small">7 questions from 9 of 11 papers · most important first</p>
+    <section class="card asked-card"><ul class="asked"><li><a class="ask" href="/app/#/c/BCOC-134/paper/2026-06/4">
+      <span class="ask-main"><span class="ask-q">Find dy/dx (any four)</span>
+        <span class="ask-meta">Asked 5× · Jun 2026 · 20 marks</span></span>
+      <span class="chev" aria-hidden="true">›</span></a></li><li><a class="ask" href="/app/#/c/BCOC-134/paper/2024-06/3">
+      <span class="ask-main"><span class="ask-q">Find dy/dx (four parts)</span>
+        <span class="ask-meta">Asked 2× · Jun 2024 · 20 marks</span></span>
+      <span class="chev" aria-hidden="true">›</span></a></li><li><a class="ask" href="/app/#/c/BCOC-134/paper/2020-12/4(a)">
+      <span class="ask-main"><span class="ask-q">dy/dx of (2x² − 6)(3x³ + 8)</span>
+        <span class="ask-meta">Dec 2020 · 15 marks</span></span>
+      <span class="chev" aria-hidden="true">›</span></a></li><li><a class="ask" href="/app/#/c/BCOC-134/paper/2021-12/4(a)">
+      <span class="ask-main"><span class="ask-q">Find dy/dx</span>
+        <span class="ask-meta">Dec 2021 · 10 marks</span></span>
+      <span class="chev" aria-hidden="true">›</span></a></li><li><a class="ask" href="/app/#/c/BCOC-134/paper/2026-06/1(a)">
+      <span class="ask-main"><span class="ask-q">Short answer: dy/dx of x(x + 1)(x + 2)</span>
+        <span class="ask-meta">Jun 2026 · 2.5 marks</span></span>
+      <span class="chev" aria-hidden="true">›</span></a></li><li><a class="ask" href="/app/#/c/BCOC-134/paper/2024-12/1(a)">
+      <span class="ask-main"><span class="ask-q">Short answer: dy/dx of f(x)·g(x)</span>
+        <span class="ask-meta">Dec 2024 · 2.5 marks</span></span>
+      <span class="chev" aria-hidden="true">›</span></a></li><li><a class="ask" href="/app/#/c/BCOC-134/paper/2024-06/1(a)">
+      <span class="ask-main"><span class="ask-q">Short answer: dy/dx of x·log x</span>
+        <span class="ask-meta">Jun 2024 · 2.5 marks</span></span>
+      <span class="chev" aria-hidden="true">›</span></a></li></ul></section>
+
+    <div class="web-cta-row">
+      <a class="btn" href="/app/#/c/BCOC-134/t/differentiation">Study this in BCom Radar</a>
+      <a class="btn secondary" href="/app/#/ask/BCOC-134/differentiation">Ask AI about this topic</a>
+    </div>
+
+    <nav class="topic-foot web-pager" aria-label="More topics">
+      <a class="btn secondary" href="/notes/bcoc-134/interest/">← Simple &amp; Compound Interest</a>
+      <a class="btn secondary" href="/notes/bcoc-134/matrices/">Matrices &amp; Determinants →</a>
+    </nav>
+    <footer class="page-foot">
+      <p>BCom Radar is a free, independent study aid for B.Com (BCOMF) students. It is not affiliated with or endorsed by IGNOU. Notes and examples are our own; past questions are quoted for study reference. Topic priorities are guidance, not a guarantee.</p>
+      <p><a href="/app/">Open BCom Radar</a> · <a href="/notes/">All notes</a></p>
+    </footer>
+  </main>
+</body>
+</html>

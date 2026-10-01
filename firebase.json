@@ -9,7 +9,8 @@
       "**/node_modules/**",
       "README.md",
       "CLAUDE.md",
-      "question-papers/README.md"
+      "question-papers/README.md",
+      "tools/**"
     ],
     "redirects": [
       {
