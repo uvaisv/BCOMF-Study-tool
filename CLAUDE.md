@@ -21,3 +21,4 @@ Check every UI change against these rules before shipping.
 - Priorities are guidance from past papers, never a guarantee — keep that wording.
 - Not an official IGNOU product: no IGNOU logo or branding.
 - Static site, no build step; test at phone width (390px) in light and dark mode before pushing.
+- **AI assistant is optional.** Nothing in the app may depend on it. It uses the student's own Gemini key, stored only on their device; never add a shared key, a proxy that sees keys, or analytics on questions. Answers must carry the reminder that AI can be wrong, and model text must always be escaped before rendering.

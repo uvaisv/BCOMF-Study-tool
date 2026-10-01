@@ -31,8 +31,8 @@
     }
   };
   /* ---------- viewer preferences (Settings) ---------- */
-  const APP_VERSION = "2.0";
-  const APP_RELEASED = "September 2026";
+  const APP_VERSION = "2.1";
+  const APP_RELEASED = "October 2026";
   // Study styles change what a topic page shows; "standard" is the full notes as written.
   const STYLES = [
     ["standard", "Standard", "The full notes, as written"],
@@ -369,6 +369,7 @@
 
 ${body.join("\n")}
 
+      <a class="btn secondary ai-btn" href="#/ask/${code}/${id}">${AI_SPARK} Ask AI about this topic</a>
       ${asked.length ? `<a class="btn secondary see-all" href="#/c/${code}/t/${id}/asked">${detailed ? "All past questions" : "Asked in past papers"} (${asked.length}) <span aria-hidden="true">→</span></a>` : ""}
 
       <div class="topic-foot">
@@ -456,12 +457,19 @@ ${body.join("\n")}
       ${ans ? `<details class="qv-ans"><summary>Show answer</summary>
         <p><strong>Answer:</strong> ${answerText(ans, q.o[ans - 1])}</p>
         <p class="small muted">${ANSWER_NOTE}</p></details>` : ""}
+      ${q ? `<button type="button" class="btn ai-btn" id="aiSolve">${AI_SPARK} ${paper && paper.mcq ? "Ask AI to explain this" : "Ask AI to solve this"}</button>` : ""}
       ${pdf ? `<a class="btn secondary qv-pdf" ${paperHref(code, pdf)} target="_blank" rel="noopener">Download full paper (PDF)</a>` : ""}
       ${q && !exact ? `<p class="small muted">Text from the official paper; tables and formulas may look slightly different in print.</p>` : ""}`;
     // Wide tables (trial balances) shrink to fit the screen rather than hide columns.
     app.querySelectorAll(".ptable").forEach((t) => {
       const fit = t.clientWidth / t.scrollWidth;
       if (fit < 1) t.style.fontSize = `${Math.max(0.6, 0.8 * fit * 0.97).toFixed(3)}rem`;
+    });
+    const solve = app.querySelector("#aiSolve");
+    if (solve) solve.addEventListener("click", () => {
+      const topic = known && known.topic;
+      aiDraft = { key: `${code}/${topic || "-"}`, text: `${paper && paper.mcq ? "Explain the correct answer to this multiple-choice question" : "Solve this question"} from the ${sessionLabel(s)} ${c.code} term-end paper${markText ? ` (${markText})` : ""}${ref.subs.length ? `, part ${ref.subs.join(", ")}` : ""}:\n\n${questionText(q, ref)}` };
+      location.hash = `#/ask/${code}${topic ? `/${topic}` : ""}`;
     });
     const backLink = app.querySelector("#back");
     if (backLink) backLink.addEventListener("click", (e) => { e.preventDefault(); history.back(); });
@@ -629,7 +637,7 @@ ${body.join("\n")}
       ${notes ? `<ul class="points small muted">${notes}</ul>` : ""}`;
   }
 
-  async function viewSettings() {
+  async function viewSettings(sub) {
     const { courses } = await load("data/courses.json");
     const papers = courses.reduce((a, c) => a + (c.papers || 0), 0);
     const seg = (name, key, def, opts) => `<div class="seg" role="radiogroup" aria-label="${name}">${opts.map(([v, l]) =>
@@ -645,6 +653,25 @@ ${body.join("\n")}
           <span class="choice-l">${l}${v === "standard" ? ` <span class="muted small">(default)</span>` : ""}</span>
           <span class="choice-d">${d}</span></button>`).join("")}
       </div>
+
+      <h2 id="ai"${sub === "ai" ? " data-anchor" : ""}>AI assistant</h2>
+      <section class="card ai-set">
+        <p class="small" id="aiStatus"></p>
+        <label class="field-l" for="aiKeyIn">Your Gemini API key</label>
+        <div class="ai-key-row">
+          <input id="aiKeyIn" class="search" type="password" autocomplete="off" autocapitalize="off" spellcheck="false" placeholder="Paste your key (usually starts with AIza…)">
+          <button type="button" class="btn secondary" id="aiShow" aria-pressed="false">Show</button>
+        </div>
+        <div class="ai-key-btns">
+          <button type="button" class="btn" id="aiSave">Save and test</button>
+          <button type="button" class="btn secondary" id="aiRemove">Remove key</button>
+        </div>
+        <p class="small" id="aiMsg" role="status"></p>
+        <label class="field-l" for="aiModelSel">Model</label>
+        <select id="aiModelSel" class="search"></select>
+        <p class="small"><a href="#/ai-guide">How to get a free Gemini API key →</a></p>
+        <p class="small muted flush">Your key is saved only in this browser on this device and is sent only to Google. Anyone using this device could see it, so remove it on a shared phone.</p>
+      </section>
 
       <h2>Text size</h2>
       ${seg("Text size", "textsize", "m", [["s", "Small"], ["m", "Default"], ["l", "Large"], ["xl", "Extra large"]])}
@@ -679,6 +706,379 @@ ${body.join("\n")}
       setTheme(b.dataset.theme === "system" ? null : b.dataset.theme); pick(".seg-btn[data-theme]", b);
     }));
     app.querySelector("#showWelcome").addEventListener("click", showWelcome);
+
+    // AI key: saved only after Google confirms it works.
+    const keyIn = app.querySelector("#aiKeyIn"), msg = app.querySelector("#aiMsg"), modelSel = app.querySelector("#aiModelSel");
+    const fillModels = (names) => {
+      const cur = aiModel();
+      const list = names.includes(cur) ? names : [cur, ...names];
+      modelSel.innerHTML = list.map((n) => `<option value="${esc(n)}"${n === cur ? " selected" : ""}>${esc(n)}</option>`).join("");
+    };
+    const status = () => {
+      const k = aiKey();
+      app.querySelector("#aiStatus").innerHTML = k
+        ? `<span class="ok-tick">✓</span> Key saved (ending <code>${esc(k.slice(-4))}</code>). <a href="#/ask">Open Ask AI</a>`
+        : "Not set up. The assistant needs your own free Gemini API key.";
+      app.querySelector("#aiRemove").hidden = !k;
+      modelSel.disabled = !k;
+      fillModels(store.get("aiModels", []));
+    };
+    status();
+    app.querySelector("#aiShow").addEventListener("click", (e) => {
+      const show = keyIn.type === "password";
+      keyIn.type = show ? "text" : "password";
+      e.currentTarget.textContent = show ? "Hide" : "Show";
+      e.currentTarget.setAttribute("aria-pressed", String(show));
+    });
+    app.querySelector("#aiSave").addEventListener("click", async (e) => {
+      const k = keyIn.value.replace(/\s+/g, "") || aiKey();
+      if (!k) { msg.textContent = "Paste your key first."; return; }
+      const btn = e.currentTarget;
+      btn.disabled = true; msg.className = "small"; msg.textContent = "Checking the key with Google…";
+      try {
+        const names = await aiListModels(k);
+        store.set("aiKey", k);
+        store.set("aiModels", names);
+        if (!names.includes(store.get("aiModel", ""))) store.set("aiModel", aiPickModel(names));
+        keyIn.value = "";
+        msg.className = "small ok"; msg.textContent = `✓ Your key works. Using ${aiModel()}.`;
+        status();
+      } catch (err) {
+        msg.className = "small bad";
+        msg.textContent = err.friendly || "Couldn't reach Google. Check your internet connection and try again.";
+      } finally { btn.disabled = false; }
+    });
+    app.querySelector("#aiRemove").addEventListener("click", () => {
+      store.set("aiKey", ""); store.set("aiModel", ""); store.set("aiModels", []);
+      msg.className = "small"; msg.textContent = "Key removed from this device.";
+      status();
+    });
+    modelSel.addEventListener("change", () => store.set("aiModel", modelSel.value));
+  }
+
+  /* ---------- AI study assistant (the student's own Gemini API key) ---------- */
+  // Optional. Requests go straight from this device to Google's Gemini API with the key the
+  // student saved in Settings; the key stays in this browser's storage and nowhere else.
+  const AI_BASE = "https://generativelanguage.googleapis.com/v1beta";
+  const AI_DEFAULT_MODEL = "gemini-2.5-flash";
+  const AI_KEY_PAGE = "https://aistudio.google.com/app/apikey";
+  const aiKey = () => String(store.get("aiKey", "") || "").trim();
+  const aiModel = () => store.get("aiModel", "") || AI_DEFAULT_MODEL;
+  const aiChats = {};   // conversations for this visit, one per course/topic
+  let aiDraft = null;   // { key, text } handed over from a past-question page
+  let aiBusy = null;    // AbortController of the answer being written
+
+  async function aiError(r) {
+    let msg = "";
+    try { const d = await r.json(); msg = (d.error && d.error.message) || ""; } catch (e) { /* not JSON */ }
+    const err = new Error(msg || `HTTP ${r.status}`);
+    err.status = r.status;
+    err.friendly = r.status === 400 && /api key/i.test(msg) ? "Google didn't accept this API key. Copy it again from Google AI Studio and save it in Settings."
+      : r.status === 401 || r.status === 403 ? "This key can't use the Gemini API. Create a key in Google AI Studio and save it in Settings."
+      : r.status === 429 ? "You've reached your free Gemini limit for now. Wait a minute and try again (the daily limit resets the next day)."
+      : r.status === 404 ? "That AI model isn't available for your key."
+      : r.status >= 500 ? "Google's AI service is busy right now. Please try again in a moment."
+      : `The AI service returned an error${msg ? `: ${msg}` : "."}`;
+    return err;
+  }
+
+  // Gemini models this key can use for chat.
+  async function aiListModels(key) {
+    const r = await fetch(`${AI_BASE}/models?pageSize=1000`, { headers: { "x-goog-api-key": key } });
+    if (!r.ok) throw await aiError(r);
+    const d = await r.json();
+    return (d.models || []).filter((m) => (m.supportedGenerationMethods || []).includes("generateContent"))
+      .map((m) => m.name.replace(/^models\//, "")).filter((n) => /^gemini-/.test(n));
+  }
+  // The newest stable "flash" model: quick, and inside the free tier.
+  function aiPickModel(names) {
+    const ver = (n) => parseFloat((/^gemini-(\d+(?:\.\d+)?)/.exec(n) || [])[1] || 0);
+    const stable = names.filter((n) => /flash/.test(n) && !/lite|preview|exp|image|tts|live|audio|thinking|embed/.test(n))
+      .sort((a, b) => ver(b) - ver(a) || a.length - b.length);
+    return stable[0] || names.find((n) => /flash/.test(n)) || names[0] || AI_DEFAULT_MODEL;
+  }
+
+  // Instructions for the model, plus our notes on the topic so answers match them.
+  function aiSystem(ctx) {
+    const lines = [
+      "You are the study assistant inside BCom Buddy, an exam-preparation app for Indian students of the IGNOU B.Com (BCOMF) programme.",
+      "Help only with studying: accounting, commerce, business law, economics, taxation, management, statistics, English and the other courses of this programme, including how to write exam answers. Politely decline anything unrelated.",
+      "Write in simple, clear English for an Indian undergraduate. Use ₹ for money, and Indian laws and examples.",
+      "For a numerical problem: list the given data, state the formula, show every step of the working, check the arithmetic, and state the final answer clearly. Show journal entries, ledger accounts and statements as tables.",
+      "For a theory question: give an exam-ready answer — a short definition or introduction, the main points under headings, an example, and a brief conclusion. If the marks are given, match the length roughly to the marks.",
+      "Never invent case names, section numbers, dates or figures. If a law, rate or limit may have changed, say so and advise checking the latest study material. If you are not sure, say that you are not sure.",
+      "Format with Markdown: ### headings, bullet or numbered lists, **bold** for key terms, and tables. Do not use LaTeX; write formulas in plain text, for example Profit = Sales − Cost."
+    ];
+    if (ctx.c) lines.push("", `The student is studying ${ctx.c.code} ${ctx.c.title}.`);
+    if (ctx.t) {
+      const t = ctx.t;
+      lines.push(`Current topic: ${t.name}. The app's notes on it are below — keep your answer consistent with them.`, `Summary: ${t.summary || ""}`,
+        ...t.points.map((p) => `- ${p}`));
+      if (t.formula && t.formula.length) lines.push(`Formulas: ${t.formula.join("; ")}`);
+      if (t.method && t.method.length) lines.push(`Method: ${t.method.join(" ")}`);
+    }
+    return lines.join("\n");
+  }
+
+  // Streams an answer; onText gets the whole text so far.
+  async function aiAsk(history, system, onText, signal) {
+    const key = aiKey();
+    const body = JSON.stringify({
+      systemInstruction: { parts: [{ text: system }] },
+      contents: history.map((m) => ({ role: m.role, parts: [{ text: m.text }] })),
+      generationConfig: { temperature: 0.4 }
+    });
+    const send = (model) => fetch(`${AI_BASE}/models/${encodeURIComponent(model)}:streamGenerateContent?alt=sse`,
+      { method: "POST", headers: { "Content-Type": "application/json", "x-goog-api-key": key }, body, signal });
+    let r = await send(aiModel());
+    if (r.status === 404) {   // the saved model was retired: switch to a current one once
+      const model = aiPickModel(await aiListModels(key));
+      store.set("aiModel", model);
+      r = await send(model);
+    }
+    if (!r.ok) throw await aiError(r);
+    const reader = r.body.getReader();
+    const dec = new TextDecoder();
+    let buf = "", text = "", finish = "", blocked = "";
+    const take = (line) => {
+      line = line.trim();
+      if (!line.startsWith("data:")) return;
+      let d;
+      try { d = JSON.parse(line.slice(5)); } catch (e) { return; }
+      if (d.promptFeedback && d.promptFeedback.blockReason) blocked = d.promptFeedback.blockReason;
+      const cand = (d.candidates || [])[0];
+      if (!cand) return;
+      if (cand.finishReason) finish = cand.finishReason;
+      const piece = ((cand.content && cand.content.parts) || []).filter((p) => p.text && !p.thought).map((p) => p.text).join("");
+      if (piece) { text += piece; onText(text); }
+    };
+    for (;;) {
+      const { value, done } = await reader.read();
+      if (done) break;
+      buf += dec.decode(value, { stream: true });
+      let i;
+      while ((i = buf.indexOf("\n")) >= 0) { take(buf.slice(0, i)); buf = buf.slice(i + 1); }
+    }
+    take(buf);
+    return { text, finish, blocked };
+  }
+
+  // A small Markdown renderer for answers. Everything is escaped first, so the model's
+  // text can never inject HTML; only the tags made here appear.
+  function md(src) {
+    const inline = (s) => esc(s)
+      .replace(/`([^`]+)`/g, "<code>$1</code>")
+      .replace(/\*\*([^*]+)\*\*/g, "<strong>$1</strong>")
+      .replace(/(^|[\s(])\*([^*\s][^*]*?)\*(?=[\s).,;:!?]|$)/g, "$1<em>$2</em>");
+    const lines = String(src).replace(/\r/g, "").split("\n");
+    const out = [];
+    let para = [];
+    const flush = () => { if (para.length) { out.push(`<p>${para.map(inline).join("<br>")}</p>`); para = []; } };
+    const cells = (l) => l.trim().replace(/^\|/, "").replace(/\|$/, "").split("|").map((c) => c.trim());
+    for (let i = 0; i < lines.length; i++) {
+      const l = lines[i];
+      if (/^\s*```/.test(l)) {
+        flush();
+        const code = [];
+        while (++i < lines.length && !/^\s*```/.test(lines[i])) code.push(lines[i]);
+        out.push(`<pre><code>${esc(code.join("\n"))}</code></pre>`);
+      } else if (/^\s*#{1,6}\s/.test(l)) {
+        flush();
+        const n = /^\s*(#+)/.exec(l)[1].length;
+        out.push(`<${n <= 3 ? "h3" : "h4"}>${inline(l.replace(/^\s*#+\s*/, "").replace(/\s*#+\s*$/, ""))}</${n <= 3 ? "h3" : "h4"}>`);
+      } else if (/^\s*\|/.test(l) && i + 1 < lines.length && /^\s*\|?\s*:?-{2,}/.test(lines[i + 1])) {
+        flush();
+        const head = cells(l);
+        const rows = [];
+        i++;
+        while (i + 1 < lines.length && /^\s*\|/.test(lines[i + 1])) rows.push(cells(lines[++i]));
+        out.push(`<div class="md-table"><table><thead><tr>${head.map((c) => `<th>${inline(c)}</th>`).join("")}</tr></thead><tbody>${
+          rows.map((r) => `<tr>${r.map((c) => `<td>${inline(c)}</td>`).join("")}</tr>`).join("")}</tbody></table></div>`);
+      } else if (/^\s*([-*•]|\d+[.)])\s+/.test(l)) {
+        flush();
+        const ordered = /^\s*\d/.test(l);
+        const items = [];
+        i--;
+        while (i + 1 < lines.length && /^\s*([-*•]|\d+[.)])\s+/.test(lines[i + 1]) && /^\s*\d/.test(lines[i + 1]) === ordered)
+          items.push(lines[++i].replace(/^\s*([-*•]|\d+[.)])\s+/, ""));
+        out.push(`<${ordered ? "ol" : "ul"}>${items.map((x) => `<li>${inline(x)}</li>`).join("")}</${ordered ? "ol" : "ul"}>`);
+      } else if (/^\s*(-{3,}|\*{3,})\s*$/.test(l)) { flush(); out.push("<hr>"); }
+      else if (!l.trim()) flush();
+      else para.push(l);
+    }
+    flush();
+    return out.join("");
+  }
+
+  // Plain text of a past question, to hand to the assistant.
+  // Only the part asked (and any lines shared by all parts) when a part is given.
+  function questionText(q, ref) {
+    const plain = (s) => String(s).replace(/\^\{([^}]*)\}/g, "^$1").replace(/_\{([^}]*)\}/g, "_$1");
+    const keep = (b) => !b.s || !ref || !ref.subs.length || ref.subs.includes(b.s);
+    const body = (q.b || []).filter(keep).map((b) => b.or ? "Or" : b.t ? b.t.map(plain).join("\n") : `${plain(b.p)}${b.m ? ` [${b.m}]` : ""}`);
+    const opts = (q.o || []).map((o, i) => `${String.fromCharCode(97 + i)}) ${plain(o)}`);
+    return [...body, ...opts].join("\n");
+  }
+
+  const AI_SPARK = `<svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l1.9 5.6L19.5 9.5l-5.6 1.9L12 17l-1.9-5.6L4.5 9.5l5.6-1.9z"/><path d="M19 14l.9 2.6 2.6.9-2.6.9L19 21l-.9-2.6-2.6-.9 2.6-.9z"/></svg>`;
+
+  async function viewAsk(code, topicId) {
+    const { courses } = await load("data/courses.json");
+    const ready = courses.filter((c) => c.ready);
+    const ctx = {};
+    if (code) {
+      const g = await getCourse(code);
+      if (g.c && g.analysis) { ctx.c = g.c; ctx.topics = g.analysis.topics; ctx.t = topicId ? g.analysis.topics.find((t) => t.id === topicId) : null; }
+    }
+    const key = `${ctx.c ? ctx.c.code : "-"}/${ctx.t ? ctx.t.id : "-"}`;
+    const chat = aiChats[key] || (aiChats[key] = []);
+    const back = ctx.t ? `<a class="back" href="#/c/${ctx.c.code}/t/${ctx.t.id}">← ${esc(ctx.t.name)}</a>`
+      : ctx.c ? `<a class="back" href="#/c/${ctx.c.code}">← ${esc(ctx.c.title)}</a>` : "";
+
+    if (!aiKey()) {
+      app.innerHTML = `${back}
+        <h1>Ask AI</h1>
+        <p class="muted">Ask any study question — explain a topic, write a model answer, or solve a past-paper problem step by step.</p>
+        <section class="card ai-setup">
+          <p><strong>One-time setup:</strong> the assistant runs on Google Gemini with your own free API key. Getting one takes about two minutes.</p>
+          <div class="ai-setup-btns">
+            <a class="btn" href="#/ai-guide">How to get a free key</a>
+            <a class="btn secondary" href="#/settings/ai">I have a key — add it</a>
+          </div>
+        </section>`;
+      return;
+    }
+
+    const suggestions = ctx.t ? [
+      `Explain "${ctx.t.name}" in simple words`,
+      ctx.t.kind && ctx.t.kind !== "theory" ? `Give me a numerical problem on ${ctx.t.name} and solve it step by step` : `Write a 10-mark exam answer on ${ctx.t.name}`,
+      `Quiz me with 5 short questions on ${ctx.t.name}, then show the answers`,
+      `What mistakes do students make on ${ctx.t.name}?`
+    ] : ctx.c ? [
+      `Which topics of ${ctx.c.title} are most important, and why?`,
+      `Explain the basic ideas of ${ctx.c.title} simply`,
+      `Quiz me with 5 questions from ${ctx.c.title}`
+    ] : [
+      "Explain the difference between capital and revenue expenditure",
+      "How should I write a 10-mark theory answer?",
+      "Solve: find the break-even point if fixed cost is ₹60,000, price ₹50 and variable cost ₹30"
+    ];
+
+    app.innerHTML = `${back}
+      <h1>Ask AI</h1>
+      <div class="ai-ctx">
+        <label>Course<select id="aiCourse"><option value="">Any subject</option>${ready.map((c) =>
+          `<option value="${c.code}"${ctx.c && ctx.c.code === c.code ? " selected" : ""}>${esc(c.code)} · ${esc(c.title)}</option>`).join("")}</select></label>
+        ${ctx.c ? `<label>Topic<select id="aiTopic"><option value="">Whole course</option>${ctx.topics.map((t) =>
+          `<option value="${t.id}"${ctx.t && ctx.t.id === t.id ? " selected" : ""}>${esc(t.name)}</option>`).join("")}</select></label>` : ""}
+      </div>
+      <div id="aiLog" class="ai-log" aria-live="polite"></div>
+      <div id="aiSugg" class="ai-sugg">${suggestions.map((s) => `<button type="button" class="ai-chip">${esc(s)}</button>`).join("")}</div>
+      <form id="aiForm" class="ai-form">
+        <label for="aiIn" class="sr-only">Your question</label>
+        <textarea id="aiIn" rows="3" placeholder="Ask a question, or paste one from a past paper…"></textarea>
+        <div class="ai-actions">
+          <button type="button" class="btn secondary" id="aiNew">New chat</button>
+          <button type="submit" class="btn" id="aiSend">Send</button>
+        </div>
+      </form>
+      <p class="small muted">AI answers can be wrong — check them against your study material. Your questions go from this device to Google using your key. <a href="#/settings/ai">AI settings</a></p>`;
+
+    const log = app.querySelector("#aiLog"), input = app.querySelector("#aiIn"), sendBtn = app.querySelector("#aiSend");
+    const sugg = app.querySelector("#aiSugg");
+    const bubble = (m) => m.role === "user"
+      ? `<div class="ai-msg user">${esc(m.text).replace(/\n/g, "<br>")}</div>`
+      : `<div class="ai-msg bot${m.error ? " err" : ""}"><div class="ai-md">${m.error ? esc(m.text) : md(m.text)}</div>${m.text && !m.error ? `<button type="button" class="ai-copy">Copy</button>` : ""}</div>`;
+    const render = () => {
+      log.innerHTML = chat.map(bubble).join("");
+      sugg.hidden = chat.length > 0;
+      log.querySelectorAll(".ai-copy").forEach((b, i) => b.addEventListener("click", () => {
+        const bots = chat.filter((m) => m.role === "model" && !m.error && m.text);
+        if (navigator.clipboard) navigator.clipboard.writeText(bots[i].text).then(() => { b.textContent = "Copied"; }, () => {});
+      }));
+    };
+    render();
+
+    const go = (c, t) => location.replace(`#/ask${c ? `/${c}${t ? `/${t}` : ""}` : ""}`);
+    app.querySelector("#aiCourse").addEventListener("change", (e) => go(e.target.value, ""));
+    const topicSel = app.querySelector("#aiTopic");
+    if (topicSel) topicSel.addEventListener("change", (e) => go(ctx.c.code, e.target.value));
+    app.querySelector("#aiNew").addEventListener("click", () => { if (aiBusy) aiBusy.abort(); chat.length = 0; render(); input.focus(); });
+    sugg.querySelectorAll(".ai-chip").forEach((b) => b.addEventListener("click", () => ask(b.textContent)));
+    app.querySelector("#aiForm").addEventListener("submit", (e) => {
+      e.preventDefault();
+      if (aiBusy) { aiBusy.abort(); return; }
+      ask(input.value);
+    });
+    input.addEventListener("keydown", (e) => { if (e.key === "Enter" && (e.ctrlKey || e.metaKey)) { e.preventDefault(); app.querySelector("#aiForm").requestSubmit(); } });
+    if (aiDraft && aiDraft.key === key) { input.value = aiDraft.text; aiDraft = null; input.focus(); }
+
+    async function ask(q) {
+      q = String(q || "").trim();
+      if (!q || aiBusy) return;
+      input.value = "";
+      chat.push({ role: "user", text: q });
+      const ans = { role: "model", text: "" };
+      chat.push(ans);
+      render();
+      const last = log.lastElementChild.querySelector(".ai-md");
+      last.innerHTML = `<p class="muted ai-wait">Thinking…</p>`;
+      log.lastElementChild.scrollIntoView({ block: "nearest" });
+      aiBusy = new AbortController();
+      sendBtn.textContent = "Stop";
+      let pending = false;
+      try {
+        const res = await aiAsk(chat.slice(0, -1).filter((m) => !m.error), aiSystem(ctx), (text) => {
+          ans.text = text;
+          if (!pending) { pending = true; requestAnimationFrame(() => { pending = false; if (last.isConnected) last.innerHTML = md(ans.text); }); }
+        }, aiBusy.signal);
+        if (!res.text) {
+          ans.error = true;
+          ans.text = res.blocked || res.finish === "SAFETY" ? "The AI declined to answer this. Try rephrasing your question."
+            : "No answer came back. Please try again.";
+        } else if (res.finish === "MAX_TOKENS") ans.text += "\n\n*(The answer was cut short — ask “continue” for the rest.)*";
+      } catch (err) {
+        if (err.name === "AbortError") { if (!ans.text) { ans.error = true; ans.text = "Stopped."; } }
+        else { ans.error = true; ans.text = err.friendly || "Couldn't reach Google's AI service. Check your internet connection and try again."; }
+      } finally {
+        aiBusy = null;
+        if (sendBtn.isConnected) { sendBtn.textContent = "Send"; render(); }
+      }
+    }
+  }
+
+  function viewAiGuide() {
+    app.innerHTML = `
+      <a class="back" href="#/settings/ai">← AI settings</a>
+      <h1>Get a free Gemini API key</h1>
+      <p class="muted">BCom Buddy's AI assistant runs on Google Gemini. You use your own key, so there is no sign-up with us and no charge from us. It takes about two minutes.</p>
+
+      <h2>Steps</h2>
+      <ol class="guide-steps">
+        <li><strong>Open Google AI Studio.</strong> Tap the button below; it opens Google's own site in a new tab.
+          <a class="btn secondary guide-link" href="${AI_KEY_PAGE}" target="_blank" rel="noopener noreferrer">Open Google AI Studio ↗</a></li>
+        <li><strong>Sign in with your Google (Gmail) account.</strong> If asked, accept Google's terms. Google's terms say you must be 18 or older.</li>
+        <li><strong>Tap “Create API key”.</strong> If it asks for a project, choose the one it suggests or let it create a new one.</li>
+        <li><strong>Copy the key.</strong> It is a long code that usually starts with <code>AIza</code>. Use the copy button next to it.</li>
+        <li><strong>Paste it in BCom Buddy.</strong> Go to <a href="#/settings/ai">Settings → AI assistant</a>, paste the key and tap <em>Save and test</em>. A green tick means it works.</li>
+        <li><strong>Start asking.</strong> Tap <span class="kbd">${AI_SPARK}</span> at the top, or <em>Ask AI about this topic</em> on any topic page.</li>
+      </ol>
+
+      <h2>Good to know</h2>
+      <ul class="points">
+        <li><strong>Free tier:</strong> you don't need to add a card. The free tier has limits on requests per minute and per day; if you hit one, wait and try again.</li>
+        <li><strong>Privacy:</strong> on the free tier Google may use what you send to improve its products, and people may review it. Don't type personal details such as phone numbers, Aadhaar or passwords.</li>
+        <li><strong>Keep your key secret:</strong> it works like a password. BCom Buddy saves it only in this browser on this device and sends it only to Google.</li>
+        <li><strong>Lost or shared phone?</strong> Delete the key in Google AI Studio (API keys page) and create a new one. On a shared device, remove the key from Settings when you're done.</li>
+        <li><strong>Check the answers:</strong> AI can make mistakes, especially with laws, tax rates and figures. Your study material is the final word.</li>
+      </ul>
+
+      <h2>If it doesn't work</h2>
+      <ul class="points">
+        <li><em>“Key not accepted”</em> — copy the whole key again with no spaces, and paste it once more.</li>
+        <li><em>“Limit reached”</em> — the free quota is used up for now; try again later.</li>
+        <li><em>“Couldn't reach Google”</em> — check your internet connection. The assistant needs internet even though the notes work offline.</li>
+      </ul>`;
   }
 
   /* ---------- welcome screen (first open; again from Settings) ---------- */
@@ -731,7 +1131,9 @@ ${body.join("\n")}
     const parts = location.hash.replace(/^#\/?/, "").split("/").filter(Boolean).map(decodeURIComponent);
     try {
       if (!parts.length) await viewHome();
-      else if (parts[0] === "settings") await viewSettings();
+      else if (parts[0] === "settings") await viewSettings(parts[1]);
+      else if (parts[0] === "ask") await viewAsk(parts[1], parts[2]);
+      else if (parts[0] === "ai-guide") viewAiGuide();
       else if (parts[0] === "c" && parts[1]) {
         const code = parts[1];
         if (parts[2] === "t" && parts[3] && parts[4] === "asked") await viewAsked(code, parts[3]);
@@ -747,6 +1149,8 @@ ${body.join("\n")}
       console.error(err);
     }
     window.scrollTo(0, 0);
+    const anchor = app.querySelector("[data-anchor]");
+    if (anchor) anchor.scrollIntoView();
     app.focus({ preventScroll: true });
   }
 
