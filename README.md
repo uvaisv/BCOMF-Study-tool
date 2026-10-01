@@ -24,7 +24,7 @@ Courses with full analysis: all 8 Year 1 courses (BCOC-131, BCOC-132, BECC-101, 
 
 ## Google Search
 
-`app/index.html` carries a search description, a canonical address and link-preview (Open Graph) tags; `robots.txt` and `sitemap.xml` sit at the site root. They all use the live address `https://bcomf-study.vercel.app` — if the site moves to its own domain, replace that address in those four files (`index.html`, `app/index.html`, `robots.txt`, `sitemap.xml`).
+`app/index.html` carries a search description, a canonical address and link-preview (Open Graph) tags; `robots.txt` and `sitemap.xml` sit at the site root. They all use the live address `https://bcomradar.vercel.app` (the old `https://bcomf-study.vercel.app` redirects there) — if the site moves to its own domain, replace that address in those four files (`index.html`, `app/index.html`, `robots.txt`, `sitemap.xml`).
 
 To get listed: open Google Search Console (https://search.google.com/search-console), add the site, verify ownership (the HTML-tag method gives a `<meta name="google-site-verification" …>` line to paste into `app/index.html`), then submit `sitemap.xml`. The app uses `#` addresses, so Google indexes it as one page; searches for the name or the course codes find it, individual topics do not.
 

@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://bcomf-study.vercel.app/sitemap.xml
+Sitemap: https://bcomradar.vercel.app/sitemap.xml
