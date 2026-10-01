@@ -22,6 +22,17 @@ Built around one rule (see `CLAUDE.md`): **help students study — never add set
 
 Courses with full analysis: all 8 Year 1 courses (BCOC-131, BCOC-132, BECC-101, BRL-101, BCOS-183, BCOS-186, BEVAE-181, BEDSV-101), all 8 Year 2 courses (BCOC-133, BCOC-134, BCOC-136, BCOE-141, BCOS-184, BCOS-185, BEGAE-182, BPAS-184), and 7 of the 8 Year 3 courses (BCOC-135, BCOC-137, BCOC-138, BCOE-142, CPI-102, BPCS-186, BMS-1). BECS-184 Data Analysis (taken instead of the internship) shows its 8 past papers; its analysis is not added yet. BEVAE-181 is an MCQ paper: its 550 past questions are tagged by topic, and questions repeated across papers are listed on the course page. Most MCQs have an answer (`answers` in `BEVAE-181.json`, shown behind **Show answer** on the question and inline in the repeated list). IGNOU publishes no answer key, so these are our own answers, labelled as such. Answers that depend on IGNOU's own wording were checked against the IGNOU BEVAE-181 study material; 11 questions it does not settle (or that are misprinted) have no answer. Other courses show their past papers until their analysis is added.
 
+## Host on Google (Firebase Hosting)
+
+`firebase.json` is ready: it publishes `index.html`, `app/` and `question-papers/` (exactly the site files — no `.git`, docs or config), sends `/` to `/app/`, and makes browsers re-check pages, scripts and data so updates show at once.
+
+1. Create a project at https://console.firebase.google.com (the free Spark plan is enough to start). The project ID becomes the address, e.g. `bcom-buddy` → `https://bcom-buddy.web.app/app/`.
+2. On a computer with Node.js: `npm install -g firebase-tools`, then `firebase login`.
+3. In this folder: `firebase use --add` (pick the project), then `firebase deploy --only hosting`.
+4. Optional, deploy on every push: `firebase init hosting:github` (keep the existing `firebase.json` and `index.html` when asked).
+
+Notes: browser storage is per address, so students who move from another address start fresh (progress, settings and their AI key must be set again) and should reinstall the home-screen app. The free plan includes 10 GB of storage and 360 MB of downloads a day; past-paper PDFs use most of that, so heavy use may need the pay-as-you-go plan.
+
 ## Run it
 
 It is a static site — no build step.
