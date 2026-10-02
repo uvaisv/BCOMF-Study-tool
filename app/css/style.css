@@ -813,3 +813,11 @@ body.has-composer main.container { padding-bottom: calc(240px + env(safe-area-in
 .slot-check { position: relative; }
 .slot-check::after { content: ""; position: absolute; inset: -9px; }   /* a 44px tap area around the 26px box */
 .chip-btn { min-height: 38px; }
+
+/* Settings rows: title, current value, chevron */
+.set-row { min-height: 52px; }
+.rows.card .set-row { padding: 10px 2px; }
+.set-v { flex: none; color: var(--muted); font-size: .88rem; }
+.set-v .ok { color: var(--done); font-weight: 600; }
+.fb-stack { display: grid; gap: 8px; }
+.fb-stack .btn { text-align: center; }

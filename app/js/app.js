@@ -833,31 +833,117 @@ ${html}
       ${notes ? `<ul class="points small muted">${notes}</ul>` : ""}`;
   }
 
+  // Settings: one short screen of groups (Study · Display · AI assistant · App · Help).
+  // Display switches work in place; everything longer opens on its own page (#/settings/<sub>).
   async function viewSettings(sub) {
-    const { courses } = await load("data/courses.json");
-    const papers = courses.reduce((a, c) => a + (c.papers || 0), 0);
+    if (sub === "style") return viewSettingsStyle();
+    if (sub === "ai") return viewSettingsAi();
+    if (sub === "feedback" && FEEDBACK_EMAIL) return viewSettingsFeedback();
+    if (sub === "creators" && CREATORS.length) return viewSettingsCreators();
+    if (sub === "about") return viewSettingsAbout();
     const toggles = (name, attr, cur, opts) => `<div class="segctl" role="radiogroup" aria-label="${name}" data-slide-from="${Math.max(0, opts.findIndex(([v]) => v === cur))}">${opts.map(([v, l]) =>
       `<button type="button" role="radio" ${attr}="${v}" aria-checked="${v === cur}">${l}</button>`).join("")}<span class="slide-ind" aria-hidden="true"></span></div>`;
+    const row = (href, title, value) => `<a class="row set-row" href="${href}"><span class="row-main"><span class="row-title">${title}</span></span>${value ? `<span class="set-v">${value}</span>` : ""}<span class="chev" aria-hidden="true">›</span></a>`;
     const theme = store.get("theme", null) || "system";
+    const styleName = STYLES.find(([k]) => k === studyStyle())[1];
+    const installed = runningInstalled();
     app.innerHTML = `
       <h1>Settings</h1>
 
       <h2 class="group-h">Study</h2>
+      <div class="rows card">${row("#/settings/style", "Study style", esc(styleName))}</div>
+
+      <h2 class="group-h">Display</h2>
+      <section class="card display-card">
+        <div class="opt"><span class="opt-l">Theme</span>${toggles("Theme", "data-theme-v", theme, [["light", "Light"], ["dark", "Dark"], ["system", "Auto"]])}</div>
+        <div class="opt"><span class="opt-l">Text size</span>${toggles("Text size", "data-textsize", store.get("textsize", "m"), [["s", "Small"], ["m", "Default"], ["l", "Large"], ["xl", "X-large"]])}</div>
+        <div class="opt"><span class="opt-l">Density</span>${toggles("Text density", "data-density", store.get("density", "comfortable"), [["comfortable", "Comfortable"], ["compact", "Compact"]])}</div>
+      </section>
+
+      <h2 class="group-h">AI assistant</h2>
+      <div class="rows card">${row("#/settings/ai", "Gemini API key", aiKey() ? `<span class="ok">✓ Saved</span>` : "Not set up")}</div>
+
+      <h2 class="group-h">App</h2>
+      <div class="rows card">
+        ${installed ? `<div class="row set-row"><span class="row-main"><span class="row-title">Install app</span></span><span class="set-v"><span class="ok">✓ Installed</span></span></div>`
+          : `<button type="button" class="row set-row row-btn" data-install><span class="row-main"><span class="row-title">Install app</span><span class="row-sub">Opens like an app, works offline</span></span><span class="set-v">${store.get("installed", false) ? `<span class="ok">✓ Added</span>` : ""}</span><span class="chev" aria-hidden="true">›</span></button>`}
+        <button type="button" class="row set-row row-btn" id="showWelcome"><span class="row-main"><span class="row-title">Show the welcome screen</span></span><span class="chev" aria-hidden="true">›</span></button>
+      </div>
+
+      <h2 class="group-h">Help</h2>
+      <div class="rows card">
+        ${FEEDBACK_EMAIL ? row("#/settings/feedback", "Send feedback") : ""}
+        ${CREATORS.length ? row("#/settings/creators", "Meet the creators") : ""}
+        ${row("#/settings/about", "About &amp; disclaimer", `v${APP_VERSION}`)}
+        <a class="row set-row" href="../notes/"><span class="row-main"><span class="row-title">All notes as web pages</span><span class="row-sub">To share a topic link</span></span><span class="chev" aria-hidden="true">↗</span></a>
+      </div>`;
+
+    const pick = (sel, b) => { app.querySelectorAll(sel).forEach((x) => x.setAttribute("aria-checked", String(x === b))); placeSlides(app); };
+    app.querySelectorAll("[data-textsize]").forEach((b) => b.addEventListener("click", () => { store.set("textsize", b.dataset.textsize); applyPrefs(); pick("[data-textsize]", b); }));
+    app.querySelectorAll("[data-density]").forEach((b) => b.addEventListener("click", () => { store.set("density", b.dataset.density); applyPrefs(); pick("[data-density]", b); }));
+    app.querySelectorAll("[data-theme-v]").forEach((b) => b.addEventListener("click", () => { setTheme(b.dataset.themeV === "system" ? null : b.dataset.themeV); pick("[data-theme-v]", b); }));
+    app.querySelector("#showWelcome").addEventListener("click", showWelcome);
+    bindInstall(app);
+  }
+
+  function viewSettingsStyle() {
+    setBack("#/settings", "Settings");
+    app.innerHTML = `
+      <h1>Study style</h1>
       <p class="muted small">How topic pages show your notes. You can also switch at the top of any topic.</p>
       <div class="choices" role="radiogroup" aria-label="Study style">${STYLES.map(([v, l, d]) => `
         <button type="button" role="radio" class="choice" data-style="${v}" aria-checked="${v === studyStyle()}">
           <span class="choice-l">${l}${v === "standard" ? ` <span class="muted small">(default)</span>` : ""}</span>
           <span class="choice-d">${d}</span></button>`).join("")}
-      </div>
+      </div>`;
+    app.querySelectorAll(".choice").forEach((b) => b.addEventListener("click", () => {
+      store.set("style", b.dataset.style);
+      app.querySelectorAll(".choice").forEach((x) => x.setAttribute("aria-checked", String(x === b)));
+    }));
+  }
 
-      <h2 class="group-h">Display</h2>
-      <section class="card display-card">
-        <div class="opt"><span class="opt-l" id="lTheme">Theme</span>${toggles("Theme", "data-theme-v", theme, [["light", "Light"], ["dark", "Dark"], ["system", "Auto"]])}</div>
-        <div class="opt"><span class="opt-l">Text size</span>${toggles("Text size", "data-textsize", store.get("textsize", "m"), [["s", "Small"], ["m", "Default"], ["l", "Large"], ["xl", "X-large"]])}</div>
-        <div class="opt"><span class="opt-l">Density</span>${toggles("Text density", "data-density", store.get("density", "comfortable"), [["comfortable", "Comfortable"], ["compact", "Compact"]])}</div>
+  function viewSettingsFeedback() {
+    setBack("#/settings", "Settings");
+    app.innerHTML = `
+      <h1>Send feedback</h1>
+      <p>Found a mistake in the notes, or have an idea? Tell us. It opens your email app with the details filled in.</p>
+      <div class="fb-btns fb-stack">${[["mistake", "Report a mistake"], ["idea", "Suggest a feature"], ["other", "Other feedback"]].map(([k, l]) =>
+        `<a class="btn secondary" href="${feedbackMail(k)}">${l}</a>`).join("")}</div>
+      <p class="small muted field-help">No email app? Write to <a href="mailto:${esc(FEEDBACK_EMAIL)}">${esc(FEEDBACK_EMAIL)}</a>.</p>`;
+  }
+
+  function viewSettingsCreators() {
+    setBack("#/settings", "Settings");
+    app.innerHTML = `
+      <h1>Meet the creators</h1>
+      <div class="creators">${CREATORS.map((p) => `
+        <a class="card creator" href="${esc(p.url)}" target="_blank" rel="noopener noreferrer">
+          <span class="creator-av" aria-hidden="true">${esc(p.name.split(/\s+/).map((w) => w[0]).slice(0, 2).join("").toUpperCase())}</span>
+          <span class="creator-main"><strong>${esc(p.name)}</strong>${p.role ? `<span class="muted small">${esc(p.role)}</span>` : ""}<span class="small creator-link">View portfolio ↗</span></span>
+        </a>`).join("")}
+      </div>`;
+  }
+
+  async function viewSettingsAbout() {
+    setBack("#/settings", "Settings");
+    const { courses } = await load("data/courses.json");
+    const papers = courses.reduce((a, c) => a + (c.papers || 0), 0);
+    app.innerHTML = `
+      <h1>About</h1>
+      <section class="card about">
+        <div class="about-head"><img src="icons/icon.svg" width="48" height="48" alt="">
+          <div><strong>BCom Radar</strong><br><span class="muted small">Version ${APP_VERSION} · ${APP_RELEASED}</span></div></div>
+        <p class="small">Exam preparation for IGNOU BCOMF (B.Com) students: topics ranked from past papers, short notes checked against the study material, diagrams, past papers and a study plan.</p>
+        <p class="small muted flush">${courses.length} courses · ${papers} past papers · no sign-up; your settings and progress stay on this phone.</p>
       </section>
+      <h2>Disclaimer</h2>
+      <p class="note small">Independent study aid, not affiliated with IGNOU. Topic priorities are guidance from past papers, not a guarantee.</p>`;
+  }
 
-      <h2 class="group-h" id="ai"${sub === "ai" ? " data-anchor" : ""}>AI assistant</h2>
+  function viewSettingsAi() {
+    setBack("#/settings", "Settings");
+    app.innerHTML = `
+      <h1>AI assistant</h1>
       <section class="card ai-set">
         <p class="small" id="aiStatus"></p>
         <label class="field-l" for="aiKeyIn">Your Gemini API key</label>
@@ -872,50 +958,9 @@ ${html}
         <p class="small" id="aiMsg" role="status"></p>
         <div id="aiModelBox"><label class="field-l" for="aiModelSel">Model</label>
         <select id="aiModelSel" class="search"></select></div>
-        <p class="small field-help"><a href="#/ai-guide">How to get a free Gemini API key →</a></p>
-        <p class="small muted flush">Your key is saved only in this browser on this device and is sent only to Google. Anyone using this device could see it, so remove it on a shared phone.</p>
       </section>
-
-      <h2 class="group-h" id="install"${sub === "install" ? " data-anchor" : ""}>App</h2>
-      <section class="card" id="installBox">${installCardHtml()}</section>
-      <div class="rows card">
-        <button type="button" class="row row-btn" id="showWelcome"><span class="row-main"><span class="row-title">Show the welcome screen</span><span class="row-sub">What the app does, in one screen</span></span><span class="chev" aria-hidden="true">›</span></button>
-      </div>
-
-      <h2 class="group-h">Help</h2>
-      ${FEEDBACK_EMAIL ? `<section class="card fb">
-        <h3 class="card-h">Send feedback</h3>
-        <p class="small">Found a mistake in the notes, or have an idea? Tell us. It opens your email app with the details filled in.</p>
-        <div class="fb-btns">${[["mistake", "Report a mistake"], ["idea", "Suggest a feature"], ["other", "Other feedback"]].map(([k, l]) =>
-          `<a class="btn secondary" href="${feedbackMail(k)}">${l}</a>`).join("")}</div>
-        <p class="small muted flush field-help">No email app? Write to <a href="mailto:${esc(FEEDBACK_EMAIL)}">${esc(FEEDBACK_EMAIL)}</a>.</p>
-      </section>` : ""}
-
-      ${CREATORS.length ? `<h3 class="sub-h">Meet the creators</h3>
-      <div class="creators">${CREATORS.map((p) => `
-        <a class="card creator" href="${esc(p.url)}" target="_blank" rel="noopener noreferrer">
-          <span class="creator-av" aria-hidden="true">${esc(p.name.split(/\s+/).map((w) => w[0]).slice(0, 2).join("").toUpperCase())}</span>
-          <span class="creator-main"><strong>${esc(p.name)}</strong>${p.role ? `<span class="muted small">${esc(p.role)}</span>` : ""}<span class="small creator-link">View portfolio ↗</span></span>
-        </a>`).join("")}
-      </div>` : ""}
-
-      <h3 class="sub-h">About</h3>
-      <section class="card about">
-        <div class="about-head"><img src="icons/icon.svg" width="48" height="48" alt="">
-          <div><strong>BCom Radar</strong><br><span class="muted small">Version ${APP_VERSION} · ${APP_RELEASED}</span></div></div>
-        <p class="small">Exam preparation for IGNOU BCOMF (B.Com) students: topics ranked from past papers, short notes checked against the study material, diagrams, past papers and a study plan.</p>
-        <p class="small muted">${courses.length} courses · ${papers} past papers · no sign-up; your settings and progress stay on this phone.</p>
-        <p class="small field-help"><a href="../notes/">Every topic as a web page, to share a link →</a></p>
-        <p class="note small flush">Independent study aid, not affiliated with IGNOU. Topic priorities are guidance, not a guarantee.</p>
-      </section>`;
-
-    const pick = (sel, b) => { app.querySelectorAll(sel).forEach((x) => x.setAttribute("aria-checked", String(x === b))); placeSlides(app); };
-    app.querySelectorAll(".choice").forEach((b) => b.addEventListener("click", () => { store.set("style", b.dataset.style); pick(".choice", b); }));
-    app.querySelectorAll("[data-textsize]").forEach((b) => b.addEventListener("click", () => { store.set("textsize", b.dataset.textsize); applyPrefs(); pick("[data-textsize]", b); }));
-    app.querySelectorAll("[data-density]").forEach((b) => b.addEventListener("click", () => { store.set("density", b.dataset.density); applyPrefs(); pick("[data-density]", b); }));
-    app.querySelectorAll("[data-theme-v]").forEach((b) => b.addEventListener("click", () => { setTheme(b.dataset.themeV === "system" ? null : b.dataset.themeV); pick("[data-theme-v]", b); }));
-    app.querySelector("#showWelcome").addEventListener("click", showWelcome);
-    bindInstall(app.querySelector("#installBox"));
+      <p class="small field-help"><a href="#/ai-guide">How to get a free Gemini API key →</a></p>
+      <p class="small muted">Your key is saved only in this browser on this device and is sent only to Google. Anyone using this device could see it, so remove it on a shared phone.</p>`;
 
     // AI key: saved only after Google confirms it works.
     const keyIn = app.querySelector("#aiKeyIn"), msg = app.querySelector("#aiMsg"), modelSel = app.querySelector("#aiModelSel");
@@ -1336,18 +1381,8 @@ ${html}
     return "desktop";
   }
 
-  // The Settings card: what installing gives, and a button (or "already installed").
-  function installCardHtml() {
-    if (runningInstalled()) return `<p class="flush"><span class="ok">✓</span> You are using the installed app.</p>`;
-    return `<p class="small">Add BCom Radar to your home screen. It opens full screen like any other app — no Play Store, no sign-up — and pages you have opened also work without internet.</p>
-        ${store.get("installed", false)
-          ? `<p class="small"><span class="ok">✓</span> Installed on this phone — open it from your home screen.</p>
-        <button type="button" class="btn secondary install-btn" data-install>${INSTALL_ICON} Install again</button>`
-          : `<button type="button" class="btn install-btn" data-install>${INSTALL_ICON} Install app</button>`}`;
-  }
   function refreshInstall() {
-    const box = document.getElementById("installBox");
-    if (box) { box.innerHTML = installCardHtml(); bindInstall(box); }
+    if (/^#\/settings\/?$/.test(location.hash)) refresh();
   }
   function bindInstall(root) {
     root.querySelectorAll("[data-install]").forEach((b) => b.addEventListener("click", (e) => { e.stopPropagation(); startInstall(); }));
