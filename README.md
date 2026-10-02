@@ -9,6 +9,7 @@ An exam-preparation tool for IGNOU BCOMF (B.Com Honours) students. It uses previ
 Built around one rule (see `CLAUDE.md`): **help students study — never add setup or extra work.**
 
 - **Welcome screen**: on the first open only, an animated full-screen welcome says what the app gives (ranked topics, notes, diagrams, past papers, a plan), with an *Install the app* button; tap anywhere to continue.
+- **Launch screen**: on every later open, the logo with a radar ring and a real past-paper fact ("Sale of Goods Act came up in every one of the last 11 BCOC-133 papers" — the student's last course first) on the app's own background, between the usual header and tab bar. It holds for 3 seconds from opening (longer only while the page is still loading; a tap skips it), then the logo moves up into the header and the page fades in.
 - **Navigation**: a bottom bar (**Home · Search · Ask AI · Settings**) on every screen, and a back arrow with the parent page's name in the header on every inner page (it uses the browser's Back when that is the parent, so the scroll position comes back).
 - **Home**: the course list by year. Once a topic has been opened, a one-line **Continue** strip above it leads to that topic (or, once it is done, the next "study first" topic). Course rows show the topic count, or *2 of 7 must-study done* with a small bar once started. On the first 3 opens, a small card offers to install the app (✕ hides it for good).
 - **Search** finds courses, topics (with their priority) and past questions across all courses, from `app/data/search.json`.
@@ -67,7 +68,7 @@ To publish on Vercel, import the repo with Framework Preset **Other**, no build 
 ```
 app/
   index.html, css/, js/app.js
-  data/summary.json       generated: each course's "study first" topics (Home progress, Continue)
+  data/summary.json       generated: each course's "study first" topics (Home progress, Continue) and its most-asked topic (launch screen fact)
   data/search.json        generated: courses, topics and past questions for Search
   data/choices.json       generated: questions with an internal choice ("any 4 of 6"), for the readiness check
   js/analysis.js          topic priorities, shared by the app and tools/build_pages.js

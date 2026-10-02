@@ -24,7 +24,7 @@
     }
   };
   /* ---------- viewer preferences (Settings) ---------- */
-  const APP_VERSION = "3.1";
+  const APP_VERSION = "3.2";
   const APP_RELEASED = "October 2026";
   // Study styles change what a topic page shows; "standard" (Full) is the notes as written and the default.
   // The style is switched on the topic page itself, and also in Settings.
@@ -1751,9 +1751,66 @@ ${html}
   const savedTheme = store.get("theme", null);
   if (savedTheme) document.documentElement.dataset.theme = savedTheme;
 
+  /* ---------- launch screen (every open after the first) ---------- */
+  // Shown from the first paint (index.html adds html.launching). It holds until LAUNCH_HOLD ms after the
+  // app was opened, or longer only while the first page is still loading; a tap or key skips the wait.
+  // Meanwhile it shows real past-paper facts: the student's last course first, then others.
+  const LAUNCH_HOLD = 3000;
+  function launchScreen(ready) {
+    const html = document.documentElement, el = document.getElementById("launch");
+    if (!el || !html.classList.contains("launching")) return;
+    const factEl = document.getElementById("launchFact");
+    let loaded = false, waited = false, done = false, rot = null;
+    if (navigator.onLine === false) document.getElementById("launchOff").hidden = false;
+    const factHtml = (code, [, name, seen, of]) => `<span class="k">From the last ${of} ${esc(code)} papers</span><b>${esc(name)}</b> came up in ${seen === of ? "every one" : `${seen} of the ${of}`}.`;
+    load("data/summary.json").then((summary) => {
+      if (done) return;
+      const codes = Object.keys(summary).filter((c) => summary[c].fact).sort(() => Math.random() - 0.5);
+      const last = store.get("last", null);
+      if (last && codes.includes(last.code)) codes.unshift(...codes.splice(codes.indexOf(last.code), 1));
+      if (!codes.length) return;
+      let i = 0;
+      const show = () => { const c = codes[i++ % codes.length]; factEl.innerHTML = factHtml(c, summary[c].fact); factEl.classList.add("show"); };
+      show();
+      rot = setInterval(() => { factEl.classList.remove("show"); setTimeout(() => { if (!done) show(); }, reduceMotion() ? 0 : 250); }, LAUNCH_HOLD);
+    }).catch(() => {});
+
+    const finish = () => {
+      if (done || !loaded || !waited) return;
+      done = true;
+      clearInterval(rot);
+      window.removeEventListener("keydown", skip);
+      // The big logo moves into the header's logo; the launch fades; the page underneath fades up.
+      const logo = document.getElementById("launchLogo"), mark = brand.querySelector(".brand-mark");
+      const fly = !reduceMotion() && !brand.hidden && mark ? logo.cloneNode() : null;
+      if (fly) {
+        const a = logo.getBoundingClientRect();
+        fly.className = "l-fly";
+        Object.assign(fly.style, { left: `${a.left}px`, top: `${a.top}px`, width: `${a.width}px`, height: `${a.height}px` });
+        document.body.appendChild(fly);
+        logo.style.visibility = "hidden";
+        mark.style.opacity = "0";
+      }
+      el.classList.add("out");
+      html.classList.remove("launching");
+      if (fly) {
+        const a = fly.getBoundingClientRect(), b = mark.getBoundingClientRect();
+        fly.style.transform = `translate(${b.left - a.left}px, ${b.top - a.top}px) scale(${b.width / a.width})`;
+      }
+      if (!reduceMotion()) app.classList.add("l-in-page");
+      setTimeout(() => { if (mark) mark.style.opacity = ""; if (fly) fly.remove(); el.remove(); app.classList.remove("l-in-page"); }, 400);
+    };
+    const skip = () => { waited = true; finish(); };
+    el.addEventListener("click", skip);
+    window.addEventListener("keydown", skip);
+    setTimeout(skip, Math.max(0, LAUNCH_HOLD - performance.now()));
+    ready.then(() => { loaded = true; finish(); });
+  }
+
   window.addEventListener("hashchange", route);
-  route();
+  const firstPage = route();
   if (!store.get("welcomed", false)) showWelcome();
+  else launchScreen(firstPage);
 
   // Makes the app installable as a home-screen app and keeps opened pages readable offline.
   if ("serviceWorker" in navigator) navigator.serviceWorker.register("sw.js").catch(() => {});

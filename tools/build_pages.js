@@ -301,6 +301,9 @@ function build() {
   for (const { c, course } of loaded) {
     const analysis = analyse(course);
     summary[c.code] = { topics: course.topics.length, mvp: analysis.mvp.map((id) => { const t = analysis.topics.find((x) => x.id === id); return [id, t.name, t.level.label]; }) };
+    // The launch screen's fact: the topic asked in the most papers (ties go to the higher-ranked one).
+    const top = analysis.topics.reduce((a, t) => (t.seen > a.seen ? t : a));
+    if (top.seen) summary[c.code].fact = [top.id, top.name, top.seen, course.sessions.length];
     search.courses.push([c.code, c.title, c.year]);
     analysis.topics.forEach((t) => search.topics.push([c.code, t.id, t.name, t.level.label]));
     const seen = new Set();

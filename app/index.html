@@ -23,6 +23,8 @@
   <meta name="mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <link rel="stylesheet" href="css/style.css">
+  <!-- Before first paint: the saved theme, and the launch screen on every open except the first (the welcome screen plays then). -->
+  <script>try{var d=document.documentElement,t=JSON.parse(localStorage.getItem("theme"));if(t)d.dataset.theme=t;if(localStorage.getItem("welcomed")==="true")d.classList.add("launching")}catch(e){}</script>
 </head>
 <body>
   <header class="topbar">
@@ -35,6 +37,16 @@
       <span id="topBackLabel">Back</span>
     </a>
   </header>
+
+  <div class="launch" id="launch" aria-hidden="true">
+    <div class="l-in">
+      <div class="l-radar"><span class="l-ring"></span><span class="l-ring"></span><span class="l-ring"></span><img class="l-logo" id="launchLogo" src="icons/icon.svg" width="72" height="72" alt=""></div>
+      <p class="l-name">BCom Radar</p>
+      <div class="l-bar"><i></i></div>
+      <p class="l-fact" id="launchFact"></p>
+      <p class="l-off" id="launchOff" hidden>Offline · opening your saved pages</p>
+    </div>
+  </div>
 
   <main id="app" class="container" tabindex="-1">
     <div class="skeleton" aria-label="Loading"><div class="sk sk-title"></div><div class="sk sk-line"></div><div class="sk sk-row"></div><div class="sk sk-row"></div><div class="sk sk-row"></div></div>

@@ -375,6 +375,46 @@ html[data-density="compact"] .list, html[data-density="compact"] .rows { gap: 6p
 .choice-d { font-size: .85rem; color: var(--muted); }
 .about-head { display: flex; gap: 12px; align-items: center; margin-bottom: 10px; }
 
+/* Launch screen: every open after the first, on the app's own background between the header and
+   the tab bar. It holds for 3 s (a tap skips it), then the logo moves into the header and the page fades up. */
+.launch { display: none; }
+html.launching .launch, .launch.out {
+  position: fixed; inset: 0; z-index: 15; display: grid; place-items: center; text-align: center;
+  padding: calc(var(--topbar-h) + env(safe-area-inset-top, 0px)) 24px calc(var(--tabbar-h) + env(safe-area-inset-bottom, 0px));
+  background: var(--bg); cursor: pointer; -webkit-tap-highlight-color: transparent;
+}
+html.launching body { overflow: hidden; }
+html.launching .brand-mark { opacity: 0; }
+.launch.out { opacity: 0; pointer-events: none; transition: opacity .22s ease; }
+/* If the app script never runs (offline before the first visit), the page underneath still shows. */
+html.launching .launch { animation: l-bail 0s 12s forwards; }
+@keyframes l-bail { to { visibility: hidden; } }
+.l-in { display: grid; justify-items: center; gap: 12px; margin-top: -24px; }
+.l-radar { position: relative; width: 128px; height: 128px; display: grid; place-items: center; }
+.l-ring { position: absolute; inset: 26px; border-radius: 50%; border: 2px solid var(--accent); opacity: 0; animation: l-ping 1.8s cubic-bezier(.2, .6, .3, 1) infinite; }
+.l-ring:nth-child(2) { animation-delay: .6s; } .l-ring:nth-child(3) { animation-delay: 1.2s; }
+@keyframes l-ping { 0% { transform: scale(.75); opacity: .45; } 100% { transform: scale(1.5); opacity: 0; } }
+.l-logo { position: relative; display: block; width: 72px; height: 72px; filter: drop-shadow(0 6px 14px rgba(15, 118, 110, .25)); }
+.l-fly { position: fixed; z-index: 40; margin: 0; transform-origin: 0 0; transition: transform .25s cubic-bezier(.3, .7, .2, 1); pointer-events: none; }
+.l-name { margin: 0; font-size: 1.35rem; font-weight: 800; letter-spacing: -.01em; }
+.l-bar { position: relative; width: 96px; height: 3px; border-radius: 2px; background: var(--surface-2); overflow: hidden; }
+.l-bar i { position: absolute; top: 0; bottom: 0; width: 40%; border-radius: 2px; background: var(--accent); animation: l-slide 1.1s ease-in-out infinite; }
+@keyframes l-slide { from { left: -40%; } to { left: 100%; } }
+.l-fact { margin: 4px 0 0; max-width: 270px; min-height: 4.4em; font-size: .9rem; line-height: 1.45; color: var(--muted); opacity: 0; transition: opacity .25s ease; }
+.l-fact.show { opacity: 1; }
+.l-fact b { color: var(--text); }
+.l-fact .k { display: block; margin-bottom: 2px; font-size: .68rem; font-weight: 800; letter-spacing: .08em; text-transform: uppercase; color: var(--accent); }
+.l-off { margin: 0; font-size: .8rem; color: var(--muted); }
+/* The page under the launch screen fades up in a short stagger as it hands over. */
+main.l-in-page > * { animation: page-in .2s ease-out backwards; }
+main.l-in-page > :nth-child(2) { animation-delay: .03s; } main.l-in-page > :nth-child(3) { animation-delay: .06s; }
+main.l-in-page > :nth-child(4) { animation-delay: .09s; } main.l-in-page > :nth-child(n+5) { animation-delay: .12s; }
+@media (prefers-reduced-motion: reduce) {
+  .l-ring, .l-bar i, main.l-in-page > * { animation: none !important; }
+  .l-ring:first-child { opacity: .25; transform: scale(1.15); }
+  .launch.out, .l-fact, .l-fly { transition: none !important; }
+}
+
 /* Welcome screen */
 body.no-scroll { overflow: hidden; }
 .splash {
