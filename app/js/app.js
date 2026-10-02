@@ -875,7 +875,6 @@ ${html}
         ${FEEDBACK_EMAIL ? row("#/settings/feedback", "Send feedback") : ""}
         ${CREATORS.length ? row("#/settings/creators", "Meet the creators") : ""}
         ${row("#/settings/about", "About &amp; disclaimer", `v${APP_VERSION}`)}
-        <a class="row set-row" href="../notes/"><span class="row-main"><span class="row-title">All notes as web pages</span><span class="row-sub">To share a topic link</span></span><span class="chev" aria-hidden="true">↗</span></a>
       </div>`;
 
     const pick = (sel, b) => { app.querySelectorAll(sel).forEach((x) => x.setAttribute("aria-checked", String(x === b))); placeSlides(app); };
