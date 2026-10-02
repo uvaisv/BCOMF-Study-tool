@@ -62,7 +62,9 @@
 
   async function load(path) {
     if (!cache[path]) {
-      cache[path] = fetch(path).then((r) => { if (!r.ok) throw new Error(path); return r.json(); });
+      // A failed load is forgotten, so the next try fetches again (e.g. after the connection comes back).
+      cache[path] = fetch(path).then((r) => { if (!r.ok) throw new Error(path); return r.json(); })
+        .catch((e) => { delete cache[path]; throw e; });
     }
     return cache[path];
   }
@@ -1641,7 +1643,10 @@ ${html}
     if (!quiet) { if (!replacing) prevHash = thisHash; replacing = false; thisHash = location.hash.replace(/^#/, "") || "/"; }
     back = null;
     const parts = location.hash.replace(/^#\/?/, "").split("/").filter(Boolean).map(decodeURIComponent);
-    const slow = quiet ? null : setTimeout(() => { app.innerHTML = SKELETON; }, 160);
+    // The skeleton shows only while the new page hasn't drawn anything yet: a view that draws first and
+    // then waits for data (Search) must not be covered by it.
+    const shown = app.firstElementChild;
+    const slow = quiet ? null : setTimeout(() => { if (app.firstElementChild === shown) app.innerHTML = SKELETON; }, 160);
     try {
       if (!parts.length) await viewHome();
       else if (parts[0] === "search") await viewSearch();
@@ -1823,6 +1828,8 @@ ${html}
 
   window.addEventListener("hashchange", route);
   const firstPage = route();
+  // Search's index (~70 KB) loads in the background once the first page is up, so Search opens ready.
+  firstPage.then(() => { const go = () => load("data/search.json").catch(() => {}); if (window.requestIdleCallback) requestIdleCallback(go, { timeout: 2000 }); else setTimeout(go, 800); });
   if (!store.get("welcomed", false)) showWelcome();
   else launchScreen(firstPage);
 
