@@ -1045,6 +1045,7 @@ ${html}
         <li><strong>Past question papers</strong> © Indira Gandhi National Open University (IGNOU), from the papers it publishes at <a href="https://webservices.ignou.ac.in/Pre-Question/" target="_blank" rel="noopener noreferrer">webservices.ignou.ac.in</a>. Shown here so students can practise; all rights stay with IGNOU.</li>
         <li><strong>Study material:</strong> the notes are written in our own words and point to the blocks and units of IGNOU's self-learning material on <a href="https://egyankosh.ac.in/" target="_blank" rel="noopener noreferrer">eGyanKosh</a>, which IGNOU shares under a Creative Commons BY-NC-SA licence.</li>
         <li><strong>MCQ answers</strong> are our own, not an official IGNOU key.</li>
+        <li><strong>Visits</strong> are counted anonymously with Vercel Web Analytics: no cookies, no sign-in, and nothing about you, your progress or your questions.</li>
       </ul>
       ${FEEDBACK_EMAIL ? `<p class="small muted rights-note">Rights holder and want something changed or removed? Email <a href="mailto:${FEEDBACK_EMAIL}">${FEEDBACK_EMAIL}</a> and we will act on it quickly.</p>` : ""}`;
   }
@@ -1626,6 +1627,27 @@ ${html}
     app.innerHTML = `<h1>Page not found</h1><p class="muted">This page doesn't exist, or the link is incomplete.</p><a class="btn" href="#/">Go to all courses</a>`;
   }
 
+  /* ---------- visitor counting (Vercel Web Analytics; Settings → About says so) ---------- */
+  // Anonymous page views, on the live site only: every app open, then Home, course and topic pages,
+  // so the free plan's 50,000 events a month go a long way. Nothing about the student is sent: no
+  // progress, no settings, no AI questions; Vercel's counter sets no cookies.
+  const COUNT = location.hostname === "bcomradar.vercel.app";
+  if (COUNT) {
+    window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
+    const s = document.createElement("script");
+    s.defer = true; s.src = "/_vercel/insights/script.js"; s.dataset.disableAutoTrack = "1";
+    document.head.appendChild(s);
+  }
+  let counted = false;
+  function countView(parts) {
+    if (!COUNT) return;
+    const course = parts[0] === "c" && parts.length === 2, topic = parts[0] === "c" && parts[2] === "t" && parts.length === 4;
+    if (counted && parts.length && !course && !topic) return;
+    counted = true;
+    const route = !parts.length ? "/" : course ? "/c/[code]" : topic ? "/c/[code]/t/[topic]" : parts[0] === "c" ? `/c/[code]/${parts[2]}` : `/${parts[0]}`;
+    window.va("pageview", { route, path: `/${parts.map(encodeURIComponent).join("/")}` });
+  }
+
   /* ---------- router ---------- */
   let prevHash = null;   // the page before this one (the header back arrow returns there when it is the parent)
   let thisHash = null;
@@ -1688,6 +1710,7 @@ ${html}
     placeSlides(app, true);
     spySections();
     if (quiet) return;
+    countView(parts);
     if (!reduceMotion()) { app.classList.remove("enter"); void app.offsetWidth; app.classList.add("enter"); }
     hideToast();
     window.scrollTo(0, 0);
