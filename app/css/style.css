@@ -375,16 +375,15 @@ html[data-density="compact"] .list, html[data-density="compact"] .rows { gap: 6p
 .choice-d { font-size: .85rem; color: var(--muted); }
 .about-head { display: flex; gap: 12px; align-items: center; margin-bottom: 10px; }
 
-/* Launch screen: every open after the first, on the app's own background between the header and
-   the tab bar. It holds for 3 s (a tap skips it), then the logo moves into the header and the page fades up. */
+/* Launch screen: every open after the first, full screen on the app's own background. It holds for 3 s
+   (a tap skips it), then the logo moves into the header's logo while the header, tab bar and page appear. */
 .launch { display: none; }
 html.launching .launch, .launch.out {
-  position: fixed; inset: 0; z-index: 15; display: grid; place-items: center; text-align: center;
-  padding: calc(var(--topbar-h) + env(safe-area-inset-top, 0px)) 24px calc(var(--tabbar-h) + env(safe-area-inset-bottom, 0px));
+  position: fixed; inset: 0; z-index: 35; display: grid; place-items: center; text-align: center;
+  padding: env(safe-area-inset-top, 0px) 24px env(safe-area-inset-bottom, 0px);
   background: var(--bg); cursor: pointer; -webkit-tap-highlight-color: transparent;
 }
 html.launching body { overflow: hidden; }
-html.launching .brand-mark { opacity: 0; }
 .launch.out { opacity: 0; pointer-events: none; transition: opacity .22s ease; }
 /* If the app script never runs (offline before the first visit), the page underneath still shows. */
 html.launching .launch { animation: l-bail 0s 12s forwards; }
@@ -405,6 +404,7 @@ html.launching .launch { animation: l-bail 0s 12s forwards; }
 .l-fact b { color: var(--text); }
 .l-fact .k { display: block; margin-bottom: 2px; font-size: .68rem; font-weight: 800; letter-spacing: .08em; text-transform: uppercase; color: var(--accent); }
 .l-off { margin: 0; font-size: .8rem; color: var(--muted); }
+.l-tap { position: absolute; left: 0; right: 0; bottom: calc(28px + env(safe-area-inset-bottom, 0px)); margin: 0; font-size: .8rem; font-weight: 600; color: var(--muted); }
 /* The page under the launch screen fades up in a short stagger as it hands over. */
 main.l-in-page > * { animation: page-in .2s ease-out backwards; }
 main.l-in-page > :nth-child(2) { animation-delay: .03s; } main.l-in-page > :nth-child(3) { animation-delay: .06s; }

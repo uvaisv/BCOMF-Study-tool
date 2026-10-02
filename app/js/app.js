@@ -1752,7 +1752,7 @@ ${html}
   if (savedTheme) document.documentElement.dataset.theme = savedTheme;
 
   /* ---------- launch screen (every open after the first) ---------- */
-  // Shown from the first paint (index.html adds html.launching). It holds until LAUNCH_HOLD ms after the
+  // Full screen from the first paint (index.html adds html.launching). It holds until LAUNCH_HOLD ms after the
   // app was opened, or longer only while the first page is still loading; a tap or key skips the wait.
   // Meanwhile it shows real past-paper facts: the student's last course first, then others.
   const LAUNCH_HOLD = 3000;
@@ -1793,6 +1793,8 @@ ${html}
       }
       el.classList.add("out");
       html.classList.remove("launching");
+      const bar = document.querySelector('meta[name="theme-color"]');
+      if (bar && bar.dataset.app) bar.content = bar.dataset.app;
       if (fly) {
         const a = fly.getBoundingClientRect(), b = mark.getBoundingClientRect();
         fly.style.transform = `translate(${b.left - a.left}px, ${b.top - a.top}px) scale(${b.width / a.width})`;
