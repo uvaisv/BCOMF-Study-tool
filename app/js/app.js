@@ -1436,6 +1436,7 @@ ${html}
       <h2>Good to know</h2>
       <ul class="points">
         <li><strong>Free tier:</strong> you don't need to add a card. The free tier has limits on requests per minute and per day; if you hit one, wait and try again.</li>
+        <li><strong>Keep billing off:</strong> don't set up billing for the project your key belongs to. In AI Studio's API keys list, its plan should say <em>Free</em>. A free-tier key can't run up a bill, even if someone else gets hold of it.</li>
         <li><strong>Privacy:</strong> on the free tier Google may use what you send to improve its products, and people may review it. Don't type personal details such as phone numbers, Aadhaar or passwords.</li>
         <li><strong>Keep your key secret:</strong> it works like a password. BCom Radar saves it only in this browser on this device and sends it only to Google.</li>
         <li><strong>Lost or shared phone?</strong> Delete the key in Google AI Studio (API keys page) and create a new one. On a shared device, remove the key from Settings when you're done.</li>
@@ -1654,7 +1655,7 @@ ${html}
         else await viewCourse(code);
       } else viewNotFound();
     } catch (err) {
-      app.innerHTML = `<h1>Couldn't load this page</h1><p class="muted">Check your connection and try again.</p><button type="button" class="btn" onclick="location.reload()">Try again</button>`;
+      app.innerHTML = `<h1>Couldn't load this page</h1><p class="muted">Check your connection and try again.</p><button type="button" class="btn" data-reload>Try again</button>`;
       console.error(err);
     }
     clearTimeout(slow);
@@ -1706,6 +1707,9 @@ ${html}
     replacing = true;
     location.replace(a.getAttribute("href"));
   });
+
+  // "Try again" on a page that couldn't load (no inline handlers: the site's CSP forbids them).
+  app.addEventListener("click", (e) => { if (e.target.closest("[data-reload]")) location.reload(); });
 
   // Round checks on topic rows: one tap marks a topic done (or not), nothing else asked.
   app.addEventListener("click", (e) => {

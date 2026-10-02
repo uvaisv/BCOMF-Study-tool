@@ -1,0 +1,8 @@
+# Repo files that are not part of the website (the repo is private; Vercel would publish them).
+/CLAUDE.md
+/README.md
+/.gitignore
+/firebase.json
+/tools/
+/question-papers/README.md
+/question-papers/index.csv

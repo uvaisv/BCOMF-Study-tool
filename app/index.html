@@ -23,9 +23,8 @@
   <meta name="mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <link rel="stylesheet" href="css/style.css">
-  <!-- Before first paint: the saved theme, and the full-screen launch screen on every open except the first
-       (the welcome screen plays then). Meanwhile the phone's status bar takes the launch background. -->
-  <script>try{var d=document.documentElement,t=JSON.parse(localStorage.getItem("theme"));if(t)d.dataset.theme=t;if(localStorage.getItem("welcomed")==="true"){d.classList.add("launching");var m=document.querySelector('meta[name="theme-color"]'),k=t||(matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light");if(m){m.dataset.app=m.content;m.content=k==="dark"?"#0f1419":"#f6f7f9"}}}catch(e){}</script>
+  <!-- Before first paint: saved theme and text size, and the launch screen (see js/boot.js). -->
+  <script src="js/boot.js" data-launch></script>
 </head>
 <body>
   <header class="topbar">

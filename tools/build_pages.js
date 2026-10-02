@@ -58,7 +58,7 @@ function askedList(t) {
 
 /* ---------- page shell ---------- */
 // Saved app settings (theme, text size, density) apply here too: same site, same storage.
-const PREFS = `<script>try{var d=document.documentElement,g=function(k){var v=localStorage.getItem(k);return v===null?null:JSON.parse(v)};if(g("theme"))d.dataset.theme=g("theme");d.dataset.textsize=g("textsize")||"m";d.dataset.density=g("density")||"comfortable"}catch(e){}</script>`;
+const PREFS = `<script src="/app/js/boot.js"></script>`;   // saved theme, text size and density before the first paint (no inline scripts: see vercel.json)
 
 function page({ urlPath, title, description, crumbs, openHref, body }) {
   const url = SITE + urlPath;

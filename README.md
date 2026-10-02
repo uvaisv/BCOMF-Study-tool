@@ -63,11 +63,14 @@ Then open http://localhost:8000 (it forwards to `app/`).
 
 To publish on Vercel, import the repo with Framework Preset **Other**, no build command, and the Root Directory left as the repo root: the root `index.html` redirects to `app/`, and the paper downloads are served from `question-papers/` (named `<CODE> <Mon YYYY>.pdf`). Every push to `main` then updates the site.
 
+**Security** (`vercel.json`): every page is sent with a Content-Security-Policy that allows scripts, styles and data only from the site itself, plus the Gemini API for Ask AI; no inline scripts or `on…=` handlers run, and no other site can show BCom Radar in a frame. `.vercelignore` keeps repo files that are not part of the website (CLAUDE.md, README.md, tools/, firebase.json, the papers' README and index.csv) off the site.
+
 ## Layout
 
 ```
 app/
   index.html, css/, js/app.js
+  js/boot.js              runs before the first paint (app and notes pages): saved theme and text size, launch screen
   data/summary.json       generated: each course's "study first" topics (Home progress, Continue) and its most-asked topic (launch screen fact)
   data/search.json        generated: courses, topics and past questions for Search
   data/choices.json       generated: questions with an internal choice ("any 4 of 6"), for the readiness check
@@ -82,6 +85,7 @@ app/
 question-papers/          228 official papers + index.csv (see its README)
 notes/                    generated web pages per course and topic (tools/build_pages.js)
 tools/build_pages.js      builds notes/, sitemap.xml, app/data/summary.json and app/data/search.json from app/data
+vercel.json, .vercelignore   security headers for every page; repo files kept off the site
 ```
 
 ## How priorities are calculated
