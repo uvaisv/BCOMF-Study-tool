@@ -302,6 +302,7 @@
     const { c, course, analysis } = await getCourse(code);
     if (!c) return viewNotFound();
     const papers = (await load("data/papers.json"))[code] || [];
+    const choices = course ? await courseChoices(code) : null;
     if (!course) {
       app.innerHTML = `${courseHeader(c)}
         <h2>Past papers</h2>
@@ -343,7 +344,7 @@
         <a class="text-link revise-link" href="#/c/${code}/revise">Quick revision of these topics →</a>
       </section>
 
-      ${readyCard(code, course, analysis)}
+      ${readyCard(code, course, analysis, choices)}
 
       ${repeated.length ? `<h2>Asked again and again</h2>
       <p class="muted small">These exact questions have come up in more than one paper. Read them with the topic notes.${repeated.some((r) => r.a) ? ` ${ANSWER_NOTE}` : ""}</p>
@@ -493,11 +494,14 @@ ${html}
   const asMarks = (pct, course) => Math.round((pct * course.pattern.marks) / 100);
   const rTone = (pct) => (pct >= 75 ? "ok" : pct >= 45 ? "mid" : "no");
 
-  function readyCard(code, course, analysis) {
+  // Internal choices ("any four of the following") per course, from data/choices.json (built by tools/build_pages.js).
+  const courseChoices = async (code) => ((await load("data/choices.json").catch(() => ({})))[code]) || null;
+
+  function readyCard(code, course, analysis, choices) {
     const known = doneTopics(code, analysis);
     if (!known.size) return `<p class="muted small ready-hint">Tick topics as you finish them, and the app checks them against every past paper of this course.</p>`;
-    const r = readiness(course, known);
-    const nx = bestNext(course, known, studyOrder(analysis), "marks");
+    const r = readiness(course, known, choices);
+    const nx = bestNext(course, known, studyOrder(analysis), "marks", choices);
     const t = nx && analysis.topics.find((x) => x.id === nx.id);
     const n = course.sessions.length;
     return `<section class="card ready-card">
@@ -515,13 +519,14 @@ ${html}
     const { c, course, analysis } = await getCourse(code);
     if (!course) return viewNotFound();
     setBack(`#/c/${code}`, c.title);
+    const choices = await courseChoices(code);
     const known = doneTopics(code, analysis);
-    const r = readiness(course, known);
+    const r = readiness(course, known, choices);
     const mode = readyMode(r.hasChoice);
     const n = course.sessions.length;
     if (!readySel || readySel.code !== code) readySel = { code, i: n - 1 };   // the latest paper
     const sel = Math.min(readySel.i, n - 1);
-    const nx = known.size < analysis.topics.length ? bestNext(course, known, studyOrder(analysis), mode) : null;
+    const nx = known.size < analysis.topics.length ? bestNext(course, known, studyOrder(analysis), mode, choices) : null;
     const nt = nx && analysis.topics.find((x) => x.id === nx.id);
     const topicName = (id) => { const t = analysis.topics.find((x) => x.id === id); return t ? t.name : id; };
     const p = r.papers[sel];
@@ -548,13 +553,13 @@ ${html}
 
     const qRow = (q) => {
       const tag = mode === "marks" ? `${Math.round(q.km * 10) / 10} / ${Math.round(q.tm * 10) / 10}${q.chosen ? " ★" : ""}` : q.ok ? "can answer" : q.some ? "partly" : "not yet";
-      const items = q.versions.map((v, k) => `${k ? `<span class="rq-or">or</span>` : ""}${v.items.map(([id, m]) => `<span class="rq-t${known.has(id) ? " k" : ""}">${known.has(id) ? "✓ " : ""}${esc(topicName(id))} <span class="rq-m">· ${Math.round(m * 10) / 10}</span></span>`).join("")}`).join("");
-      return `<a class="rq" href="#/c/${code}/paper/${p.s}/${q.n}"><span class="rq-n">Q${q.n}</span><span class="rq-main">${items}</span><span class="rtag ${q.ok ? "ok" : q.some ? "mid" : "no"}">${tag}</span></a>`;
+      const items = q.versions.map((v, k) => `${k ? `<span class="rq-or">or</span>` : ""}${v.items.map(([id, m]) => `<span class="rq-t${known.has(id) ? " k" : ""}">${known.has(id) ? "✓ " : ""}${esc(topicName(id))} <span class="rq-m">· ${Math.round(((m * (v.choice ? v.choice[1] : 1)) / (v.choice ? v.choice[0] : 1)) * 10) / 10}</span></span>`).join("")}`).join("");
+      return `<a class="rq" href="#/c/${code}/paper/${p.s}/${q.n}"><span class="rq-n">Q${q.n}</span><span class="rq-main">${q.choice ? `<span class="rq-or">any ${q.choice[0]} of ${q.choice[1]}</span>` : ""}${items}</span><span class="rtag ${q.ok ? "ok" : q.some ? "mid" : "no"}">${tag}</span></a>`;
     };
     const detail = `<h2 class="rd-h"><span>${sessionLabel(p.s)} paper</span><span class="rd-r">${mode === "marks" ? `about ${Math.round(p.marks)} of ${Math.round(p.outOf)} marks` : p.enough ? "Fully covered ✓" : `${p.short} more question${p.short > 1 ? "s" : ""} needed`}</span></h2>
       ${p.groups.map((g) => `<div class="rgrp"><div class="rgrp-h"><span>${g.name ? `${esc(g.name)} · ` : ""}${g.compulsory ? "compulsory" : `answer ${g.attempt} of ${g.of}`}</span><span>${mode === "marks" ? `${Math.round(g.marks)} of ${Math.round(g.outOf)}` : g.compulsory ? `${g.got} of ${g.qs.length} known` : `you could answer ${g.got}`}</span></div>
         ${g.qs.map(qRow).join("")}</div>`).join("")}
-      ${mode === "marks" ? `<p class="muted small rd-foot">★ the questions you'd choose. A question counts in full when you've done all its topics, and in part when you've done some.</p>` : ""}`;
+      ${mode === "marks" ? `<p class="muted small rd-foot">★ the questions you'd choose. A question counts in full when you've done all its topics, and in part when you've done some. In "any 4 of 6" questions, 4 known parts are the whole question.</p>` : ""}`;
 
     app.innerHTML = `
       <p class="kicker">${esc(c.code)} · ${esc(c.title)}</p>

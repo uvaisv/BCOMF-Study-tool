@@ -4,7 +4,8 @@
  *   notes/<code>/index.html        one course, topics in priority order
  *   notes/<code>/<topic>/index.html one topic: notes, examples, diagrams, past questions
  * and sitemap.xml listing them, plus app/data/summary.json (Home progress, Continue) and
- * app/data/search.json (Search) for the app. The app (app/) stays the main way to study;
+ * app/data/search.json (Search) and app/data/choices.json (internal choices, for the readiness
+ * check) for the app. The app (app/) stays the main way to study;
  * every page links back into it. Topic priorities come from app/js/analysis.js,
  * the same code the app uses.
  *
@@ -243,6 +244,40 @@ function topicPage(c, course, analysis, t) {
   });
 }
 
+/* ---------- internal choices ("any four of the following"), for the readiness check ---------- */
+// From each paper's text (app/data/text/<CODE>.json): a question whose opening line says
+// "any N of the following" and lists M lettered parts, N < M. Keyed "<session>/<question>",
+// with "/or" for the alternative of an Or question. Value: [N, M].
+const NUM = { one: 1, two: 2, three: 3, four: 4, five: 5, six: 6, seven: 7, eight: 8 };
+const ANY_OF = /\bany\s*(one|two|three|four|five|six|seven|eight|\d)\s*(?:of\s*)?(?:the\s*)?following/i;
+function findChoices(loaded) {
+  const out = {};
+  for (const { c } of loaded) {
+    const f = path.join(APP, "data/text", `${c.code}.json`);
+    if (!fs.existsSync(f)) continue;
+    const text = JSON.parse(fs.readFileSync(f, "utf8"));
+    const map = {};
+    for (const [s, paper] of Object.entries(text.papers || {})) {
+      for (const it of paper.items || []) {
+        if (!it.n) continue;
+        const versions = [[]];
+        (it.b || []).forEach((b) => { if (b.or) versions.push([]); else versions[versions.length - 1].push(b); });
+        versions.forEach((blocks, v) => {
+          let lead = null;
+          for (const b of blocks) { if (b.s) break; if (b.p && ANY_OF.test(b.p)) { lead = b; break; } }
+          if (!lead) return;
+          const w = ANY_OF.exec(lead.p)[1].toLowerCase();
+          const n = NUM[w] || +w;
+          const m = blocks.filter((b) => b.s).length;
+          if (n > 0 && m > n) map[`${s}/${it.n}${v ? "/or" : ""}`] = [n, m];
+        });
+      }
+    }
+    if (Object.keys(map).length) out[c.code] = map;
+  }
+  return out;
+}
+
 /* ---------- build ---------- */
 function build() {
   const { courses } = readJson("data/courses.json");
@@ -277,6 +312,7 @@ function build() {
     });
   }
   files.set("app/data/summary.json", JSON.stringify(summary) + "\n");
+  files.set("app/data/choices.json", JSON.stringify(findChoices(loaded)) + "\n");
   files.set("app/data/search.json", JSON.stringify(search) + "\n");
   files.set("sitemap.xml", `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">

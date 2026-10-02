@@ -78,7 +78,9 @@
     return p.parts.map((g) => ({ id: g.id, name: g.name.replace(/\s*\(.*\)\s*$/, ""), attempt: g.attempt, of: g.of }));
   }
 
-  function paperResult(course, s, known) {
+  // choices: this course's internal choices from data/choices.json, { "<session>/<n>[/or]": [N, M] }.
+  // In "any N of M parts", knowing N of the parts is the whole question, so known marks scale by M/N.
+  function paperResult(course, s, known, choices) {
     const groups = paperGroups(course);
     const partOf = (n, q) => {
       if (q.part) return q.part;
@@ -98,12 +100,16 @@
     });
     const res = groups.map((g) => {
       const qs = [...nums.values()].filter((q) => q.part === g.id).sort((a, b) => a.n - b.n).map((q) => {
-        const vs = q.versions.filter(Boolean).map((items) => {
-          const t = items.reduce((a, [, m]) => a + m, 0), k = items.reduce((a, [id, m]) => a + (known.has(id) ? m : 0), 0);
-          return { items, t, k, ok: t > 0 && k >= ANSWERABLE * t - 1e-9 };
-        });
+        const vs = q.versions.map((items, v) => {
+          if (!items) return null;
+          const choice = choices && choices[`${s}/${q.n}${v ? "/or" : ""}`];
+          const t = items.reduce((a, [, m]) => a + m, 0);
+          const raw = items.reduce((a, [id, m]) => a + (known.has(id) ? m : 0), 0);
+          const k = choice ? Math.min(t, (raw * choice[1]) / choice[0]) : raw;
+          return { items, t, k, choice, ok: t > 0 && k >= ANSWERABLE * t - 1e-9 };
+        }).filter(Boolean);
         const best = vs.reduce((x, y) => (y.k > x.k ? y : x));
-        return { n: q.n, versions: vs, ok: vs.some((v) => v.ok), km: best.k, tm: Math.max(...vs.map((v) => v.t)), some: vs.some((v) => v.k > 0) };
+        return { n: q.n, versions: vs, ok: vs.some((v) => v.ok), km: best.k, tm: Math.max(...vs.map((v) => v.t)), some: vs.some((v) => v.k > 0), choice: (vs.find((v) => v.choice) || {}).choice };
       });
       const got = qs.filter((q) => q.ok).length;
       const compulsory = g.attempt >= g.of;
@@ -128,8 +134,8 @@
   }
 
   // known: a Set of topic ids the student has marked done.
-  function readiness(course, known) {
-    const papers = course.sessions.map((s) => paperResult(course, s, known));
+  function readiness(course, known, choices) {
+    const papers = course.sessions.map((s) => paperResult(course, s, known, choices));
     const hasChoice = paperGroups(course).some((g) => g.attempt < g.of);
     return {
       papers, hasChoice,
@@ -141,12 +147,12 @@
 
   // The not-done topic that helps most next: by marks (default) or by papers fully covered.
   // `order` lists topic ids in study order and breaks ties.
-  function bestNext(course, known, order, by) {
-    const base = readiness(course, known);
+  function bestNext(course, known, order, by, choices) {
+    const base = readiness(course, known, choices);
     let best = null;
     order.forEach((id) => {
       if (known.has(id)) return;
-      const r = readiness(course, new Set([...known, id]));
+      const r = readiness(course, new Set([...known, id]), choices);
       const key = by === "full" ? [r.enough, r.answerable, r.pct] : [r.pct, r.enough, r.answerable];
       const better = !best || key.some((v, i) => key.slice(0, i).every((w, j) => Math.abs(w - best.key[j]) < 1e-9) && v > best.key[i] + 1e-9);
       if (better) best = { id, key, r };
