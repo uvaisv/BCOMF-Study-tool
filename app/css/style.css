@@ -914,3 +914,4 @@ body.has-composer main.container { padding-bottom: calc(240px + env(safe-area-in
 .rtopics > summary { padding: 10px 0; color: var(--text); font-weight: 700; }
 .rtopics > summary .muted { font-weight: 600; color: var(--accent); }
 .rtopics .rows.card { margin-top: 6px; }
+.rights-note { margin-top: 12px; }

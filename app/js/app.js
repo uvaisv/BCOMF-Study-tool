@@ -1037,7 +1037,14 @@ ${html}
         <p class="small muted flush">${courses.length} courses · ${papers} past papers · no sign-up; your settings and progress stay on this phone.</p>
       </section>
       <h2>Disclaimer</h2>
-      <p class="note small">Independent study aid, not affiliated with IGNOU. Topic priorities are guidance from past papers, not a guarantee.</p>`;
+      <p class="note small">Independent study aid, not affiliated with IGNOU. Topic priorities are guidance from past papers, not a guarantee.</p>
+      <h2>Sources &amp; credits</h2>
+      <ul class="points small">
+        <li><strong>Past question papers</strong> © Indira Gandhi National Open University (IGNOU), from the papers it publishes at <a href="https://webservices.ignou.ac.in/Pre-Question/" target="_blank" rel="noopener noreferrer">webservices.ignou.ac.in</a>. Shown here so students can practise; all rights stay with IGNOU.</li>
+        <li><strong>Study material:</strong> the notes are written in our own words and point to the blocks and units of IGNOU's self-learning material on <a href="https://egyankosh.ac.in/" target="_blank" rel="noopener noreferrer">eGyanKosh</a>, which IGNOU shares under a Creative Commons BY-NC-SA licence.</li>
+        <li><strong>MCQ answers</strong> are our own, not an official IGNOU key.</li>
+      </ul>
+      ${FEEDBACK_EMAIL ? `<p class="small muted rights-note">Rights holder and want something changed or removed? Email <a href="mailto:${FEEDBACK_EMAIL}">${FEEDBACK_EMAIL}</a> and we will act on it quickly.</p>` : ""}`;
   }
 
   function viewSettingsAi() {
