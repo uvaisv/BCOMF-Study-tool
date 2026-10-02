@@ -55,7 +55,7 @@
   /* ---------- helpers ---------- */
   const esc = (s) => String(s == null ? "" : s).replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
   const MONTHS = { "06": "Jun", "12": "Dec", "02": "Feb" };
-  const sessionLabel = (s) => `${MONTHS[s.slice(5)] || s.slice(5)} ${s.slice(0, 4)}`;
+  const sessionLabel = (s) => esc(`${MONTHS[s.slice(5)] || s.slice(5)} ${s.slice(0, 4)}`);   // escaped: a link can carry any text here
   const clock = (h) => { const m = Math.round(h * 60); return `${Math.floor(m / 60)}:${String(m % 60).padStart(2, "0")}`; };
   const duration = (h) => { const m = Math.round(h * 60); return m < 60 ? `${m}m` : `${Math.floor(m / 60)}h${m % 60 ? ` ${m % 60}m` : ""}`; };
   const marks = (m) => Math.round(m * 10) / 10;
@@ -270,7 +270,8 @@
       }
       const words = q.split(" ");
       const hit = (text) => { const n = norm(text), m = n.replace(/ /g, ""); return words.every((w) => n.includes(w) || m.includes(w)); };
-      const hl = (text) => words.filter((w) => w.length > 1).reduce((h, w) => h.replace(new RegExp(`(${reEsc(w)})(?![^<]*>)`, "ig"), "<mark>$1</mark>"), esc(text));
+      const hlRe = words.some((w) => w.length > 1) ? new RegExp(`(${words.filter((w) => w.length > 1).map(reEsc).join("|")})`, "ig") : null;
+      const hl = (text) => (hlRe ? String(text).split(hlRe).map((x, i) => (i % 2 ? `<mark>${esc(x)}</mark>` : esc(x))).join("") : esc(text));
       const courseName = Object.fromEntries(idx.courses.map((c) => [c[0], c[1]]));
       const cs = idx.courses.filter((c) => hit(`${c[0]} ${c[1]}`)).slice(0, 5);
       const rank = { Critical: 0, High: 1, Moderate: 2, Low: 3 };
@@ -695,7 +696,7 @@ ${html}
 
   async function viewQuestion(code, s, refText) {
     const { c, course, analysis } = await getCourse(code);
-    if (!course) return viewNotFound();
+    if (!course || !course.sessions.includes(s)) return viewNotFound();
     const [papers, text] = await Promise.all([load("data/papers.json"), load(`data/text/${code}.json`).catch(() => null)]);
     const pdf = (papers[code] || []).find((p) => p.s === s);
     const paper = text && text.papers[s];
