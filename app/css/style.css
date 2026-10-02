@@ -658,7 +658,7 @@ main h2[id^="sec-"] { scroll-margin-top: calc(var(--topbar-h) + 64px); }
 .actbar .act-ai { flex: none; width: 50px; padding: 0; color: var(--accent); }
 .actbar .act-done { flex: 1; }
 .actbar .act-next { flex: 1; }
-.act-done[aria-pressed="true"] { background: var(--done); border-color: var(--done); color: var(--surface); }
+.btn.secondary.act-done[aria-pressed="true"] { background: var(--done); border-color: var(--done); color: var(--surface); }
 .act-done .tick path { stroke-dasharray: 24; stroke-dashoffset: 0; }
 .act-done.pop { animation: pop .34s cubic-bezier(.2, 1.6, .4, 1); }
 .act-done.pop .tick path { animation: draw .35s ease-out both; }
