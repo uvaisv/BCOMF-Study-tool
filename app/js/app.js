@@ -9,7 +9,7 @@
   const app = document.getElementById("app");
   const cache = {};
   const YEAR_COLORS = { 1: "var(--y1)", 2: "var(--y2)", 3: "var(--y3)" };
-  const { SPARE, analyse } = window.ANALYSIS;   // js/analysis.js
+  const { SPARE, analyse, readiness, bestNext } = window.ANALYSIS;   // js/analysis.js
   const HOURS_BY_KIND = { theory: 1, numerical: 1.5, mixed: 2 };
   const PAPER_ROOT = "../";   // where question-papers/ sits, relative to this page
 
@@ -24,7 +24,7 @@
     }
   };
   /* ---------- viewer preferences (Settings) ---------- */
-  const APP_VERSION = "3.0";
+  const APP_VERSION = "3.1";
   const APP_RELEASED = "October 2026";
   // Study styles change what a topic page shows; "standard" (Full) is the notes as written and the default.
   // The style is switched on the topic page itself, and also in Settings.
@@ -343,6 +343,8 @@
         <a class="text-link revise-link" href="#/c/${code}/revise">Quick revision of these topics →</a>
       </section>
 
+      ${readyCard(code, course, analysis)}
+
       ${repeated.length ? `<h2>Asked again and again</h2>
       <p class="muted small">These exact questions have come up in more than one paper. Read them with the topic notes.${repeated.some((r) => r.a) ? ` ${ANSWER_NOTE}` : ""}</p>
       <section class="card"><ul class="replist">${repeated.slice(0, 8).map(repeatItem).join("")}</ul>
@@ -480,6 +482,99 @@ ${html}
         toast(inMvp ? `${TICK} Done · ${k} of ${mvpIds.length} must-study topics` : `${TICK} Marked as done`, () => { setDone(code, id, false); setDoneUi(false); });
       } else hideToast();
     });
+  }
+
+  /* ---------- readiness: the topics marked done, replayed against every past paper ---------- */
+  // Marks: roughly how much of each paper the student could have written, choosing their best
+  // questions. Full answers: whether the done topics covered every question the paper asks for.
+  // Both are about past papers, never a prediction (CLAUDE.md: priorities are guidance).
+  const doneTopics = (code, analysis) => new Set(analysis.topics.filter((t) => isDone(code, t.id)).map((t) => t.id));
+  const readyMode = (hasChoice) => (hasChoice && store.get("readyView", "marks") === "full" ? "full" : "marks");
+  const asMarks = (pct, course) => Math.round((pct * course.pattern.marks) / 100);
+  const rTone = (pct) => (pct >= 75 ? "ok" : pct >= 45 ? "mid" : "no");
+
+  function readyCard(code, course, analysis) {
+    const known = doneTopics(code, analysis);
+    if (!known.size) return `<p class="muted small ready-hint">Tick topics as you finish them, and the app checks them against every past paper of this course.</p>`;
+    const r = readiness(course, known);
+    const nx = bestNext(course, known, studyOrder(analysis), "marks");
+    const t = nx && analysis.topics.find((x) => x.id === nx.id);
+    const n = course.sessions.length;
+    return `<section class="card ready-card">
+        <h2 class="ready-h">Your preparation vs past papers</h2>
+        <p class="ready-big"><b class="${rTone(r.pct)}">${asMarks(r.pct, course)}</b><span>of ${course.pattern.marks} marks you could have written, on average</span></p>
+        <p class="muted small">${r.hasChoice ? `Full answers in ${r.enough} of ${n} papers · ` : ""}from the ${known.size} topic${known.size > 1 ? "s" : ""} you marked done</p>
+        ${t && nx.morePct >= 0.5 ? `<a class="ready-next" href="#/c/${code}/t/${t.id}"><span><span class="rn-k">Study next</span><span class="rn-n">${esc(t.name)}</span></span><span class="rn-g">+${asMarks(nx.morePct, course)} marks</span></a>` : ""}
+        <a class="text-link" href="#/c/${code}/ready">See it paper by paper →</a>
+      </section>`;
+  }
+
+  let readySel = null;   // { code, i }: the paper shown in detail, kept while the page re-renders
+  let readyOpen = false; // the topic list stays open while ticking topics in it
+  async function viewReady(code) {
+    const { c, course, analysis } = await getCourse(code);
+    if (!course) return viewNotFound();
+    setBack(`#/c/${code}`, c.title);
+    const known = doneTopics(code, analysis);
+    const r = readiness(course, known);
+    const mode = readyMode(r.hasChoice);
+    const n = course.sessions.length;
+    if (!readySel || readySel.code !== code) readySel = { code, i: n - 1 };   // the latest paper
+    const sel = Math.min(readySel.i, n - 1);
+    const nx = known.size < analysis.topics.length ? bestNext(course, known, studyOrder(analysis), mode) : null;
+    const nt = nx && analysis.topics.find((x) => x.id === nx.id);
+    const topicName = (id) => { const t = analysis.topics.find((x) => x.id === id); return t ? t.name : id; };
+    const p = r.papers[sel];
+    const needText = (() => {
+      const g = p.groups.filter((x) => !x.compulsory);
+      return g.length === 1 && !g[0].name ? `${g[0].attempt} questions` : g.map((x) => `${x.attempt} from ${x.name}`).join(" + ");
+    })();
+    const lowI = r.papers.reduce((a, x, i) => (x.pct < r.papers[a].pct ? i : a), 0);
+
+    const big = mode === "marks"
+      ? `<p class="ready-big"><b class="${rTone(r.pct)}">${asMarks(r.pct, course)}</b><span>of ${course.pattern.marks} marks, on average</span></p>
+         <p class="muted small">${known.size ? `What you could have written in each past paper with the ${known.size} topic${known.size > 1 ? "s" : ""} you marked done, choosing your best questions. Lowest: ${asMarks(r.papers[lowI].pct, course)} in ${sessionLabel(r.papers[lowI].s)}.` : "Mark topics as done (below, or on any topic page) to see what they would have earned you in each past paper."}</p>`
+      : `<p class="ready-big"><b class="${r.enough === n ? "ok" : r.enough >= n * 0.6 ? "mid" : "no"}">${r.enough} of ${n}</b><span>past papers fully covered</span></p>
+         <p class="muted small">Papers where the topics you marked done would have let you answer ${esc(needText)} in full.</p>`;
+    const chips = r.papers.map((x, i) => {
+      const tone = mode === "marks" ? rTone(x.pct) : x.enough ? "ok" : "no";
+      const v = mode === "marks" ? asMarks(x.pct, course) : x.enough ? "✓" : `${x.got}/${x.need}`;
+      return `<button type="button" class="pchip ${tone}" data-paper="${i}" aria-pressed="${i === sel}" aria-label="${sessionLabel(x.s)}: ${mode === "marks" ? `about ${v} marks` : x.enough ? "fully covered" : `${x.got} of ${x.need} questions`}"><span class="pc-s">${sessionLabel(x.s).replace(/ 20(\d\d)$/, " ’$1")}</span><span class="pc-v">${v}</span></button>`;
+    }).join("");
+    const allDone = mode === "marks" ? r.pct >= 99.5 : r.enough === n;
+    const nextHtml = allDone ? `<p class="all-done">${TICK} ${mode === "marks" ? "Every past paper fully covered." : "Enough in every past paper."} Time to revise.</p>`
+      : nt && (mode === "marks" ? nx.morePct >= 0.5 : nx.morePapers > 0 || nx.moreAnswerable > 0)
+        ? `<a class="ready-next" href="#/c/${code}/t/${nt.id}"><span><span class="rn-k">Study next</span><span class="rn-n">${esc(nt.name)}</span></span><span class="rn-g">${mode === "marks" ? `+${asMarks(nx.morePct, course)} marks` : nx.morePapers > 0 ? `+${nx.morePapers} paper${nx.morePapers > 1 ? "s" : ""}` : `+${nx.moreAnswerable} questions`}</span></a>` : "";
+
+    const qRow = (q) => {
+      const tag = mode === "marks" ? `${Math.round(q.km * 10) / 10} / ${Math.round(q.tm * 10) / 10}${q.chosen ? " ★" : ""}` : q.ok ? "can answer" : q.some ? "partly" : "not yet";
+      const items = q.versions.map((v, k) => `${k ? `<span class="rq-or">or</span>` : ""}${v.items.map(([id, m]) => `<span class="rq-t${known.has(id) ? " k" : ""}">${known.has(id) ? "✓ " : ""}${esc(topicName(id))} <span class="rq-m">· ${Math.round(m * 10) / 10}</span></span>`).join("")}`).join("");
+      return `<a class="rq" href="#/c/${code}/paper/${p.s}/${q.n}"><span class="rq-n">Q${q.n}</span><span class="rq-main">${items}</span><span class="rtag ${q.ok ? "ok" : q.some ? "mid" : "no"}">${tag}</span></a>`;
+    };
+    const detail = `<h2 class="rd-h"><span>${sessionLabel(p.s)} paper</span><span class="rd-r">${mode === "marks" ? `about ${Math.round(p.marks)} of ${Math.round(p.outOf)} marks` : p.enough ? "Fully covered ✓" : `${p.short} more question${p.short > 1 ? "s" : ""} needed`}</span></h2>
+      ${p.groups.map((g) => `<div class="rgrp"><div class="rgrp-h"><span>${g.name ? `${esc(g.name)} · ` : ""}${g.compulsory ? "compulsory" : `answer ${g.attempt} of ${g.of}`}</span><span>${mode === "marks" ? `${Math.round(g.marks)} of ${Math.round(g.outOf)}` : g.compulsory ? `${g.got} of ${g.qs.length} known` : `you could answer ${g.got}`}</span></div>
+        ${g.qs.map(qRow).join("")}</div>`).join("")}
+      ${mode === "marks" ? `<p class="muted small rd-foot">★ the questions you'd choose. A question counts in full when you've done all its topics, and in part when you've done some.</p>` : ""}`;
+
+    app.innerHTML = `
+      <p class="kicker">${esc(c.code)} · ${esc(c.title)}</p>
+      <h1>How ready am I?</h1>
+      ${r.hasChoice ? `<div class="segctl rmode" role="group" aria-label="Show" data-slide-from="${mode === "marks" ? 0 : 1}"><button type="button" data-rmode="marks" aria-pressed="${mode === "marks"}">Marks</button><button type="button" data-rmode="full" aria-pressed="${mode === "full"}">Full answers</button><span class="slide-ind" aria-hidden="true"></span></div>` : ""}
+      <section class="card ready-card">
+        ${big}
+        <div class="pchips" role="group" aria-label="Past papers">${chips}</div>
+        ${known.size ? nextHtml : ""}
+      </section>
+      <section class="card rd" id="rdetail">${detail}</section>
+      <details class="rtopics"${readyOpen ? " open" : ""}>
+        <summary>Topics you've done: ${known.size} of ${analysis.topics.length} <span class="muted small">· change</span></summary>
+        <div class="rows card">${studyOrder(analysis).map((id) => topicRow(code, analysis.topics.find((t) => t.id === id), n, !!course.pattern.mcq)).join("")}</div>
+      </details>
+      <p class="muted small">Based on the ${n} past papers in the app, not a prediction of the next one. A question counts as answerable when the topics you've done carry at least three quarters of its marks.</p>`;
+
+    app.querySelector(".rtopics").addEventListener("toggle", (e) => { readyOpen = e.currentTarget.open; });
+    app.querySelectorAll("[data-rmode]").forEach((b) => b.addEventListener("click", () => { store.set("readyView", b.dataset.rmode); refresh(); }));
+    app.querySelectorAll("[data-paper]").forEach((b) => b.addEventListener("click", () => { readySel = { code, i: +b.dataset.paper }; refresh(); }));
   }
 
   /* ---------- revise mode: key points as cards, one at a time ---------- */
@@ -1545,6 +1640,7 @@ ${html}
         else if (parts[2] === "t" && parts[3] && parts[4] === "revise") await viewRevise(code, parts[3]);
         else if (parts[2] === "t" && parts[3]) await viewTopic(code, parts[3]);
         else if (parts[2] === "revise") await viewRevise(code, null);
+        else if (parts[2] === "ready") await viewReady(code);
         else if (parts[2] === "paper" && parts[3]) await viewQuestion(code, parts[3], parts[4]);
         else if (parts[2] === "plan") await viewPlan(code);
         else if (parts[2] === "exam") await viewExam(code);

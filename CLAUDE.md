@@ -19,6 +19,7 @@ Check every UI change against these rules before shipping.
 
 - Topic priorities are computed from tagged past-paper questions (`app/data/<CODE>.json`); never hand-set a priority.
 - Priorities are guidance from past papers, never a guarantee — keep that wording.
+- The readiness check ("How ready am I?") says what the done topics *would have* covered in past papers. Never word it as a prediction or a pass/fail result, and never show a pass mark.
 - Not an official IGNOU product: no IGNOU logo or branding.
 - Static site, no build step; test at phone width (390px) in light and dark mode before pushing.
 - **Navigation:** the bottom bar (Home · Search · Ask AI · Settings) and the header back arrow (set with `setBack(href, label)` in each inner view) are the only navigation chrome; don't add back links inside pages. Bars fixed to the bottom of a page go in `.actbar` or `.composer`, which the router moves out of `<main>`.

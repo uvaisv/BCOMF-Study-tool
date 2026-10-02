@@ -821,3 +821,56 @@ body.has-composer main.container { padding-bottom: calc(240px + env(safe-area-in
 .set-v .ok { color: var(--done); font-weight: 600; }
 .fb-stack { display: grid; gap: 8px; }
 .fb-stack .btn { text-align: center; }
+
+/* Readiness: done topics vs past papers (course page card and #/c/<code>/ready) */
+.ready-hint { margin: -2px 0 14px; }
+.ready-card { display: grid; gap: 10px; }
+.ready-h { margin: 0; font-size: 1rem; }
+.ready-big { display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 10px; margin: 0; }
+.ready-big b { font-size: 2.4rem; line-height: 1; font-weight: 800; letter-spacing: -.02em; font-variant-numeric: tabular-nums; color: var(--accent); }
+.ready-big b.ok { color: var(--done); } .ready-big b.mid { color: var(--high); } .ready-big b.no { color: var(--critical); }
+.ready-big span { font-weight: 600; }
+.ready-card > .muted { margin: 0; }
+.ready-next {
+  display: flex; align-items: center; gap: 10px; padding: 10px 12px; border-radius: 12px; background: var(--accent-soft); color: var(--text); text-decoration: none;
+}
+.ready-next > span:first-child { flex: 1; min-width: 0; display: grid; gap: 1px; }
+.rn-k { font-size: .72rem; font-weight: 800; letter-spacing: .05em; text-transform: uppercase; color: var(--accent); }
+.rn-n { font-weight: 700; line-height: 1.3; }
+.rn-g { flex: none; font-weight: 800; color: var(--accent); font-variant-numeric: tabular-nums; }
+.rmode { margin: 10px 0 12px; }
+.rmode > button { flex: 1 1 0; }
+.pchips { display: grid; grid-template-columns: repeat(auto-fill, minmax(64px, 1fr)); gap: 6px; }
+.pchip {
+  display: grid; justify-items: center; gap: 1px; padding: 7px 2px; border-radius: 10px; border: 1.5px solid transparent; font: inherit; cursor: pointer;
+  -webkit-tap-highlight-color: transparent; transition: transform .12s ease;
+}
+.pchip:active { transform: scale(.95); }
+.pc-s { font-size: .72rem; font-weight: 700; white-space: nowrap; }
+.pc-v { font-size: .95rem; font-weight: 800; font-variant-numeric: tabular-nums; }
+.pchip.ok { background: color-mix(in srgb, var(--done) 14%, var(--surface)); color: var(--done); }
+.pchip.mid { background: var(--high-soft); color: var(--high); }
+.pchip.no { background: var(--critical-soft); color: var(--critical); }
+.pchip[aria-pressed="true"] { border-color: currentColor; }
+.rd-h { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: baseline; gap: 4px 10px; margin: 0 0 4px; font-size: 1rem; }
+.rd-r { font-size: .86rem; color: var(--accent); }
+.rgrp { margin-top: 10px; }
+.rgrp-h { display: flex; justify-content: space-between; gap: 8px; padding-bottom: 4px; border-bottom: 1px solid var(--border); font-size: .8rem; font-weight: 700; color: var(--muted); }
+.rq { display: grid; grid-template-columns: 34px minmax(0, 1fr) auto; gap: 8px; align-items: start; padding: 9px 0; border-bottom: 1px solid var(--border); color: inherit; text-decoration: none; font-size: .9rem; }
+.rq:last-child { border-bottom: 0; }
+.rq:active { background: color-mix(in srgb, var(--surface-2) 70%, transparent); }
+.rq-n { font-weight: 800; color: var(--muted); font-variant-numeric: tabular-nums; }
+.rq-main { min-width: 0; display: grid; gap: 2px; }
+.rq-t { color: var(--muted); line-height: 1.35; }
+.rq-t.k { color: var(--text); }
+.rq-m { font-size: .8rem; color: var(--muted); }
+.rq-or { font-size: .72rem; font-weight: 700; text-transform: uppercase; color: var(--muted); }
+.rtag { justify-self: end; font-size: .74rem; font-weight: 800; padding: 2px 8px; border-radius: 999px; white-space: nowrap; font-variant-numeric: tabular-nums; }
+.rtag.ok { background: color-mix(in srgb, var(--done) 14%, var(--surface)); color: var(--done); }
+.rtag.mid { background: var(--high-soft); color: var(--high); }
+.rtag.no { background: var(--critical-soft); color: var(--critical); }
+.rd-foot { margin: 10px 0 0; }
+.rtopics { margin: 18px 0 12px; }
+.rtopics > summary { padding: 10px 0; color: var(--text); font-weight: 700; }
+.rtopics > summary .muted { font-weight: 600; color: var(--accent); }
+.rtopics .rows.card { margin-top: 6px; }

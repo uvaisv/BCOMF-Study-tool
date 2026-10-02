@@ -65,7 +65,97 @@
     return { topics, mvp, groups, compulsory };
   }
 
-  const api = { LEVELS, RECENT, SPARE, analyse };
+  /* ---------- readiness: the student's done topics replayed against every past paper ---------- */
+  // A question counts as answerable when the done topics carry at least this share of its marks
+  // (a 10 + 10 question on two topics needs both).
+  const ANSWERABLE = 0.75;
+
+  // The sections of a paper and which questions belong to each. Questions carry `part` where the
+  // data has it; otherwise sections are filled in paper order by their size ("2 of 3", "3 of 5").
+  function paperGroups(course) {
+    const p = course.pattern;
+    if (!p.parts) return [{ id: "all", name: "", attempt: p.attempt, of: p.questions }];
+    return p.parts.map((g) => ({ id: g.id, name: g.name.replace(/\s*\(.*\)\s*$/, ""), attempt: g.attempt, of: g.of }));
+  }
+
+  function paperResult(course, s, known) {
+    const groups = paperGroups(course);
+    const partOf = (n, q) => {
+      if (q.part) return q.part;
+      if (groups.length === 1) return groups[0].id;
+      let k = 0;
+      for (const g of groups) { k += g.of; if (n <= k) return g.id; }
+      return groups[groups.length - 1].id;
+    };
+    // question number → its versions (an "Or" question has two), each a list of [topic, marks]
+    const nums = new Map();
+    course.questions.filter((q) => q.s === s).forEach((q) => {
+      const n = +String(q.q).match(/^\d+/)[0];
+      const v = /\(or\)/i.test(q.q) ? 1 : 0;
+      if (!nums.has(n)) nums.set(n, { n, part: partOf(n, q), versions: [] });
+      const e = nums.get(n);
+      (e.versions[v] = e.versions[v] || []).push([q.topic, q.m]);
+    });
+    const res = groups.map((g) => {
+      const qs = [...nums.values()].filter((q) => q.part === g.id).sort((a, b) => a.n - b.n).map((q) => {
+        const vs = q.versions.filter(Boolean).map((items) => {
+          const t = items.reduce((a, [, m]) => a + m, 0), k = items.reduce((a, [id, m]) => a + (known.has(id) ? m : 0), 0);
+          return { items, t, k, ok: t > 0 && k >= ANSWERABLE * t - 1e-9 };
+        });
+        const best = vs.reduce((x, y) => (y.k > x.k ? y : x));
+        return { n: q.n, versions: vs, ok: vs.some((v) => v.ok), km: best.k, tm: Math.max(...vs.map((v) => v.t)), some: vs.some((v) => v.k > 0) };
+      });
+      const got = qs.filter((q) => q.ok).length;
+      const compulsory = g.attempt >= g.of;
+      // Marks: your best `attempt` questions by what you know, out of the best `attempt` by full marks.
+      const take = Math.min(g.attempt, qs.length);
+      const chosen = [...qs].sort((a, b) => b.km - a.km).slice(0, take);
+      const marks = chosen.reduce((a, q) => a + q.km, 0);
+      const outOf = [...qs].sort((a, b) => b.tm - a.tm).slice(0, take).reduce((a, q) => a + q.tm, 0);
+      chosen.forEach((q) => { if (q.km > 0) q.chosen = true; });
+      return { ...g, qs, got, compulsory, met: compulsory || got >= g.attempt, marks, outOf };
+    });
+    const choice = res.filter((g) => !g.compulsory);
+    // With no choice anywhere (an MCQ paper, or every question compulsory), "enough" means every question.
+    const enough = choice.length ? choice.every((g) => g.met) : res.every((g) => g.qs.every((q) => q.ok));
+    const marks = res.reduce((a, g) => a + g.marks, 0), outOf = res.reduce((a, g) => a + g.outOf, 0);
+    return {
+      s, groups: res, enough, marks, outOf, pct: outOf ? (100 * marks) / outOf : 0,
+      got: choice.reduce((a, g) => a + Math.min(g.got, g.attempt), 0),
+      need: choice.reduce((a, g) => a + g.attempt, 0),
+      short: choice.reduce((a, g) => a + Math.max(0, g.attempt - g.got), 0)
+    };
+  }
+
+  // known: a Set of topic ids the student has marked done.
+  function readiness(course, known) {
+    const papers = course.sessions.map((s) => paperResult(course, s, known));
+    const hasChoice = paperGroups(course).some((g) => g.attempt < g.of);
+    return {
+      papers, hasChoice,
+      enough: papers.filter((r) => r.enough).length,
+      answerable: papers.reduce((a, r) => a + r.got, 0),
+      pct: papers.reduce((a, r) => a + r.pct, 0) / papers.length   // average share of the paper's marks
+    };
+  }
+
+  // The not-done topic that helps most next: by marks (default) or by papers fully covered.
+  // `order` lists topic ids in study order and breaks ties.
+  function bestNext(course, known, order, by) {
+    const base = readiness(course, known);
+    let best = null;
+    order.forEach((id) => {
+      if (known.has(id)) return;
+      const r = readiness(course, new Set([...known, id]));
+      const key = by === "full" ? [r.enough, r.answerable, r.pct] : [r.pct, r.enough, r.answerable];
+      const better = !best || key.some((v, i) => key.slice(0, i).every((w, j) => Math.abs(w - best.key[j]) < 1e-9) && v > best.key[i] + 1e-9);
+      if (better) best = { id, key, r };
+    });
+    if (!best) return null;
+    return { id: best.id, papers: best.r.enough, morePapers: best.r.enough - base.enough, pct: best.r.pct, morePct: best.r.pct - base.pct, moreAnswerable: best.r.answerable - base.answerable };
+  }
+
+  const api = { LEVELS, RECENT, SPARE, analyse, readiness, bestNext };
   if (typeof module !== "undefined" && module.exports) module.exports = api;
   else root.ANALYSIS = api;
 })(typeof window !== "undefined" ? window : this);
