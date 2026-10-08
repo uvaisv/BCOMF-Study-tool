@@ -40,6 +40,11 @@
     { name: "Abdul Shukkoor", role: "Finance, Accounting & AI", url: "https://abdul-shukkoor.vercel.app/" },
     { name: "Muhammed Uvais V.", role: "Finance, AI & Automation", url: "https://uvaisv-portfolio.vercel.app/" }
   ];
+  // "More apps" in Settings: the makers' other apps, one card each, opened in a new tab; hidden while empty.
+  // Each entry: { name, tag, blurb, url } — url is the app's https address.
+  const OTHER_APPS = [
+    { name: "CMA Radar", tag: "ICMAI CMA Final", blurb: "Where the exam marks are in every CMA Final paper, the usual paper pattern, and MCQs with ICMAI's answers.", url: "https://cmaradar.vercel.app/" }
+  ];
   // "Send feedback" in Settings opens the student's mail app; hidden while this is empty.
   const FEEDBACK_EMAIL = "feedback.bcomradar@gmail.com";
   const studyStyle = () => { const v = store.get("style", "standard"); return STYLES.some(([k]) => k === v) ? v : "standard"; };   // an old "detailed" choice reads as Full
@@ -972,6 +977,14 @@ ${html}
           : `<button type="button" class="row set-row row-btn" data-install><span class="row-main"><span class="row-title">Install app</span><span class="row-sub">Opens like an app, works offline</span></span><span class="set-v">${store.get("installed", false) ? `<span class="ok">✓ Added</span>` : ""}</span><span class="chev" aria-hidden="true">›</span></button>`}
         <button type="button" class="row set-row row-btn" id="showWelcome"><span class="row-main"><span class="row-title">Show the welcome screen</span></span><span class="chev" aria-hidden="true">›</span></button>
       </div>
+
+      ${OTHER_APPS.length ? `<h2 class="group-h">More apps</h2>
+      <div class="creators">${OTHER_APPS.map((a) => `
+        <a class="card creator" href="${esc(a.url)}" target="_blank" rel="noopener noreferrer">
+          <span class="creator-av" aria-hidden="true">${esc(a.name.split(/\s+/).map((w) => w[0]).slice(0, 2).join("").toUpperCase())}</span>
+          <span class="creator-main"><strong>${esc(a.name)}</strong><span class="muted small">${esc(a.tag)}</span><span class="small">${esc(a.blurb)}</span><span class="small creator-link">Open ${esc(new URL(a.url).host)} ↗</span></span>
+        </a>`).join("")}
+      </div>` : ""}
 
       <h2 class="group-h">Help</h2>
       <div class="rows card">
