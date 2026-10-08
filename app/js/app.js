@@ -41,9 +41,10 @@
     { name: "Muhammed Uvais V.", role: "Finance, AI & Automation", url: "https://uvaisv-portfolio.vercel.app/" }
   ];
   // "More apps" in Settings: the makers' other apps, one card each, opened in a new tab; hidden while empty.
-  // Each entry: { name, tag, blurb, url } — url is the app's https address.
+  // Each entry: { name, tag, blurb, url, icon } — url is the app's https address; icon is a file in icons/
+  // (the Content-Security-Policy allows images only from this site), shown instead of the initials.
   const OTHER_APPS = [
-    { name: "CMA Radar", tag: "ICMAI CMA Final", blurb: "Where the exam marks are in every CMA Final paper, the usual paper pattern, and MCQs with ICMAI's answers.", url: "https://cmaradar.vercel.app/" }
+    { name: "CMA Radar", tag: "ICMAI CMA Final", blurb: "Where the exam marks are in every CMA Final paper, the usual paper pattern, and MCQs with ICMAI's answers.", url: "https://cmaradar.vercel.app/", icon: "icons/cmaradar.svg" }
   ];
   // "Send feedback" in Settings opens the student's mail app; hidden while this is empty.
   const FEEDBACK_EMAIL = "feedback.bcomradar@gmail.com";
@@ -981,7 +982,7 @@ ${html}
       ${OTHER_APPS.length ? `<h2 class="group-h">More apps</h2>
       <div class="creators">${OTHER_APPS.map((a) => `
         <a class="card creator" href="${esc(a.url)}" target="_blank" rel="noopener noreferrer">
-          <span class="creator-av" aria-hidden="true">${esc(a.name.split(/\s+/).map((w) => w[0]).slice(0, 2).join("").toUpperCase())}</span>
+          ${a.icon ? `<img class="creator-icon" src="${esc(a.icon)}" width="44" height="44" alt="">` : `<span class="creator-av" aria-hidden="true">${esc(a.name.split(/\s+/).map((w) => w[0]).slice(0, 2).join("").toUpperCase())}</span>`}
           <span class="creator-main"><strong>${esc(a.name)}</strong><span class="muted small">${esc(a.tag)}</span><span class="small">${esc(a.blurb)}</span><span class="small creator-link">Open ${esc(new URL(a.url).host)} ↗</span></span>
         </a>`).join("")}
       </div>` : ""}

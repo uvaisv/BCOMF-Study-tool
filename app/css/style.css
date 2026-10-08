@@ -509,6 +509,7 @@ body.no-scroll { overflow: hidden; }
 .creator { display: flex; align-items: center; gap: 12px; margin: 0; text-decoration: none; color: inherit; }
 .creator:hover { border-color: var(--accent); }
 .creator-av { flex: none; display: grid; place-items: center; width: 44px; height: 44px; border-radius: 50%; background: var(--accent-soft); color: var(--accent); font-weight: 800; }
+.creator-icon { flex: none; width: 44px; height: 44px; border-radius: 10px; }
 .creator-main { display: grid; gap: 2px; }
 .creator-link { color: var(--accent); font-weight: 600; }
 .fb-btns { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 12px; }
