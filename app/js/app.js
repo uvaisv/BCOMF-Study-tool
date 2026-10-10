@@ -45,7 +45,7 @@
   // Each entry: { name, tag, blurb, url, icon } — url is the app's https address; icon is a file in icons/
   // (the Content-Security-Policy allows images only from this site), shown instead of the initials.
   const OTHER_APPS = [
-    { name: "CMA Radar", tag: "ICMAI CMA Final", blurb: "Where the exam marks are in every CMA Final paper, the usual paper pattern, and MCQs with ICMAI's answers.", url: "https://cmaradar.vercel.app/", icon: "icons/cmaradar.svg" }
+    { name: "CMA Radar", tag: "ICMAI CMA Final and Inter", blurb: "Where the exam marks are in CMA Final and Intermediate papers, the usual paper pattern, and MCQs with ICMAI's answers.", url: "https://cmaradar.vercel.app/", icon: "icons/cmaradar.svg" }
   ];
   // "Send feedback" in Settings opens the student's mail app; hidden while this is empty.
   const FEEDBACK_EMAIL = "feedback.bcomradar@gmail.com";
