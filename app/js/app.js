@@ -35,10 +35,11 @@
     ["visual", "Visual", "Diagrams and formulas first, points as numbered cards"]
   ];
   // "Meet the creators" in Settings; the section is hidden while this list is empty.
-  // Each entry: { name, role, url } — url is the person's portfolio, opened in a new tab.
+  // Each entry: { name, url } — url is the person's portfolio, opened in a new tab.
+  // An optional role shows as a line under the name.
   const CREATORS = [
-    { name: "Abdul Shukkoor", role: "Finance, Accounting & AI", url: "https://abdul-shukkoor.vercel.app/" },
-    { name: "Muhammed Uvais V.", role: "Finance, AI & Automation", url: "https://uvaisv-portfolio.vercel.app/" }
+    { name: "Abdul Shukkoor", url: "https://abdul-shukkoor.vercel.app/" },
+    { name: "Muhammed Uvais V.", url: "https://uvaisv-portfolio.vercel.app/" }
   ];
   // "More apps" in Settings: the makers' other apps, one card each, opened in a new tab; hidden while empty.
   // Each entry: { name, tag, blurb, url, icon } — url is the app's https address; icon is a file in icons/
