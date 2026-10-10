@@ -62,7 +62,7 @@ python3 -m http.server 8000
 
 Then open http://localhost:8000 (it forwards to `app/`).
 
-To publish on Vercel, import the repo with Framework Preset **Other**, no build command, and the Root Directory left as the repo root: the root `index.html` redirects to `app/`, and the paper downloads are served from `question-papers/` (named `<CODE> <Mon YYYY>.pdf`). Every push to `main` then updates the site.
+To publish on Vercel, import the repo with Framework Preset **Other**, no build command, and the Root Directory left as the repo root: `vercel.json` sends the root address to `app/` with a permanent (308) redirect, and `trailingSlash` sends `/app` and other folder paths to their `/`-ending form (the root `index.html` still forwards to `app/` when the site is served elsewhere), and the paper downloads are served from `question-papers/` (named `<CODE> <Mon YYYY>.pdf`). Every push to `main` then updates the site.
 
 **Security** (`vercel.json`): every page is sent with a Content-Security-Policy that allows scripts, styles and data only from the site itself, plus the Gemini API for Ask AI; no inline scripts or `on…=` handlers run, and no other site can show BCom Radar in a frame. `.vercelignore` keeps repo files that are not part of the website (CLAUDE.md, README.md, tools/, firebase.json, the papers' README and index.csv) off the site.
 
