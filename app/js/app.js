@@ -1061,6 +1061,7 @@ ${html}
         <li><strong>Study material:</strong> the notes are written in our own words and point to the blocks and units of IGNOU's self-learning material on <a href="https://egyankosh.ac.in/" target="_blank" rel="noopener noreferrer">eGyanKosh</a>, which IGNOU shares under a Creative Commons BY-NC-SA licence.</li>
         <li><strong>MCQ answers</strong> are our own, not an official IGNOU key.</li>
         <li><strong>Visits</strong> are counted anonymously with Vercel Web Analytics: no cookies, no sign-in, and nothing about you, your progress or your questions.</li>
+        <li><strong>Students using the app</strong> are counted with a random code kept on this device, sent once a day with the year you have open (to the CMA Radar site, which keeps the count). It is not linked to your name or number, and nothing you mark, search or ask is sent.</li>
       </ul>
       ${FEEDBACK_EMAIL ? `<p class="small muted rights-note">Rights holder and want something changed or removed? Email <a href="mailto:${FEEDBACK_EMAIL}">${FEEDBACK_EMAIL}</a> and we will act on it quickly.</p>` : ""}`;
   }
@@ -1652,6 +1653,27 @@ ${html}
     const s = document.createElement("script");
     s.defer = true; s.src = "/_vercel/insights/script.js"; s.dataset.disableAutoTrack = "1";
     document.head.appendChild(s);
+  }
+  /* Anonymous device count, live site only (sent to CMA Radar's counter, which keeps BCom's numbers apart):
+     on first open a random code is kept on this device; once a day (India time) it is sent with the day it was
+     made and the year the student has open. Nothing else: no name, progress, settings, searches or AI questions.
+     A failed send (offline) is tried again on a later open. */
+  if (COUNT) {
+    try {
+      const day = new Date(Date.now() + 19800000).toISOString().slice(0, 10);
+      let id = store.get("devId", "");
+      if (!/^[0-9a-f]{32}$/.test(id)) {
+        const a = new Uint8Array(16); crypto.getRandomValues(a);
+        id = Array.from(a, (x) => x.toString(16).padStart(2, "0")).join("");
+        store.set("devId", id); store.set("devFirst", day);
+      }
+      if (store.get("devLast", "") !== day) {
+        fetch("https://cmaradar.vercel.app/api/count", {
+          method: "POST", headers: { "Content-Type": "application/json" }, keepalive: true,
+          body: JSON.stringify({ a: "bcom", id, f: store.get("devFirst", day), c: "y" + store.get("year", 1) }),
+        }).then((r) => { if (r.ok) store.set("devLast", day); }, () => {});
+      }
+    } catch (e) { /* storage or crypto unavailable: not counted */ }
   }
   let counted = false;
   function countView(parts) {
