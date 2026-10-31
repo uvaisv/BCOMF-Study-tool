@@ -224,13 +224,14 @@
     let year = store.get("year", 1);
     app.innerHTML = `
       ${continueStrip(summary)}
-      ${installCardHome()}
+      ${installCardHome()}${tutorialCardHome()}
       <a class="search-link" href="#/search">${SEARCH_ICON}<span>Search courses, topics or questions</span></a>
       <div class="segctl years" role="tablist" aria-label="Year" data-slide-from="${year - 1}">
         ${[1, 2, 3].map((y) => `<button type="button" role="tab" data-year="${y}" aria-selected="${y === year}">Year ${y}</button>`).join("")}<span class="slide-ind" aria-hidden="true"></span>
       </div>
       <div id="list" class="list"></div>`;
     bindInstallCard();
+    bindTutorialCard();
 
     const list = app.querySelector("#list");
     const render = () => {
@@ -960,6 +961,13 @@ ${html}
     app.innerHTML = `
       <h1>Settings</h1>
 
+      <h2 class="group-h">Tutorial</h2>
+      <div class="rows card"><a class="row set-row" data-tut href="${TUT_URL}" target="_blank" rel="noopener noreferrer">
+        <span class="tut-ic" aria-hidden="true">${PLAY_ICON}</span>
+        <span class="row-main"><span class="row-title">How to use BCom Radar</span><span class="row-sub">Watch on YouTube${store.get("tutYt", false) ? "" : ` <span class="new-tag">New</span>`}</span></span>
+        <span class="ext-go" aria-hidden="true">↗</span><span class="sr-only">Opens YouTube in a new tab</span>
+      </a></div>
+
       <h2 class="group-h">Study</h2>
       <div class="rows card">${row("#/settings/style", "Study style", esc(styleName))}</div>
 
@@ -1518,8 +1526,9 @@ ${html}
   // A small card on Home for students who never saw the welcome screen's install button. It shows
   // on the first 3 app opens at most, never once installed, and ✕ hides it for good.
   const homeVisits = (() => { const n = store.get("instVisits", 0) + 1; store.set("instVisits", n); return n; })();
+  const installCardWanted = () => !(runningInstalled() || store.get("installed", false) || store.get("instHidden", false) || homeVisits > 3);
   function installCardHome() {
-    if (runningInstalled() || store.get("installed", false) || store.get("instHidden", false) || homeVisits > 3) return "";
+    if (!installCardWanted()) return "";
     return `<div class="inst-card" id="instCard">
       <img src="icons/icon.svg" width="36" height="36" alt="">
       <span class="inst-main"><strong>Install BCom Radar</strong><span class="muted small">Opens like an app, works offline.</span></span>
@@ -1532,6 +1541,53 @@ ${html}
     if (!card) return;
     bindInstall(card);
     card.querySelector("#instX").addEventListener("click", () => { store.set("instHidden", true); card.remove(); });
+  }
+
+  /* ---------- tutorial video ----------
+     A plain link to YouTube: nothing from YouTube loads until a student taps it, and phones open the YouTube app.
+     Three places point to it: a small card on Home (3 opens, one card at a time with the install card, which goes
+     first), a "New" row at the top of Settings, and a red dot on the Settings tab until Settings is opened. */
+  const TUT_URL = "https://youtu.be/tNuWoKQU0aU";
+  const TUT_OPENS = 3;
+  const PLAY_ICON = `<svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5.5v13a1 1 0 0 0 1.5.86l10.5-6.5a1 1 0 0 0 0-1.72L9.5 4.64A1 1 0 0 0 8 5.5z"/></svg>`;
+  // Counts the opens where the card had the slot above the list; 99 once watched or closed.
+  const tutVisits = (() => {
+    if (store.get("tutSeen", false) || store.get("tutHidden", false)) return 99;
+    if (installCardWanted()) return 0;
+    const n = store.get("tutOpens", 0) + 1; store.set("tutOpens", n); return n;
+  })();
+  function tutorialCardHome() {
+    if (tutVisits < 1 || tutVisits > TUT_OPENS || store.get("tutSeen", false) || store.get("tutHidden", false)) return "";
+    return `<div class="inst-card" id="tutCard">
+      <span class="tut-ic" aria-hidden="true">${PLAY_ICON}</span>
+      <span class="inst-main"><strong>Watch the tutorial</strong><span class="muted small">How to use the app</span></span>
+      <a class="btn inst-go" data-tut href="${TUT_URL}" target="_blank" rel="noopener noreferrer">Watch<span class="sr-only"> on YouTube, opens in a new tab</span></a>
+      <button type="button" class="inst-x" id="tutX" aria-label="Don't show this again">✕</button>
+    </div>`;
+  }
+  function bindTutorialCard() {
+    const x = document.getElementById("tutX");
+    if (x) x.addEventListener("click", () => { store.set("tutHidden", true); document.getElementById("tutCard")?.remove(); });
+  }
+  // Tapping any tutorial link counts as watched: the card, the "New" tag and the dot all go.
+  document.addEventListener("click", (e) => {
+    if (!e.target.closest("a[data-tut]")) return;
+    store.set("tutSeen", true); store.set("tutYt", true); store.set("tutDot", true);
+    document.getElementById("tutCard")?.remove();
+    document.querySelectorAll(".new-tag").forEach((n) => n.remove());
+    syncTabDot();
+  });
+  // The red dot on the Settings tab: there until the student opens Settings (or watches the video).
+  function syncTabDot() {
+    const a = tabbar.querySelector('a[data-nav="settings"]');
+    if (!a) return;
+    const want = !store.get("tutDot", false);
+    const dot = a.querySelector(".tab-dot");
+    if (want && !dot) {
+      const d = document.createElement("i"); d.className = "tab-dot"; d.setAttribute("aria-hidden", "true");
+      const s = document.createElement("span"); s.className = "sr-only tab-dot-sr"; s.textContent = ", new: tutorial video";
+      a.append(d, s);
+    } else if (!want && dot) { dot.remove(); a.querySelector(".tab-dot-sr")?.remove(); }
   }
 
   // Must run inside the tap that asked for it: the browser only shows its prompt then.
@@ -1737,6 +1793,8 @@ ${html}
     if (back) { topBack.href = back.href; topBackLabel.textContent = back.label; topBack.setAttribute("aria-label", `Back to ${back.label}`); }
     const tab = !parts.length || parts[0] === "c" ? "home" : parts[0] === "ai-guide" ? "ask" : parts[0];
     tabbar.querySelectorAll("a").forEach((a) => { if (a.dataset.nav === tab) a.setAttribute("aria-current", "page"); else a.removeAttribute("aria-current"); });
+    if (tab === "settings") store.set("tutDot", true);   // opening Settings is what the dot asked for
+    syncTabDot();
     const h1 = app.querySelector("h1");
     const code = parts[0] === "c" && parts[1] ? parts[1] : null;
     document.title = h1 && parts.length ? `${h1.textContent.trim()}${code && !h1.textContent.includes(code) ? ` · ${code}` : ""} · BCom Radar` : "BCom Radar";

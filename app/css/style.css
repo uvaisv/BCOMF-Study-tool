@@ -585,6 +585,8 @@ body.no-scroll { overflow: hidden; }
 .tabbar a svg { transition: transform .18s ease; }
 .tabbar a[aria-current="page"] svg { transform: translateY(-1px) scale(1.06); }
 .tabbar a:active svg { transform: scale(.9); }
+.tabbar a { position: relative; }
+.tab-dot { position: absolute; top: 9px; left: calc(50% + 7px); width: 10px; height: 10px; border-radius: 50%; background: #c62a2f; box-shadow: 0 0 0 2px var(--surface); }
 @media (min-width: 760px) { .tabbar { left: 50%; right: auto; width: 720px; transform: translateX(-50%); border-left: 1px solid var(--border); border-right: 1px solid var(--border); border-radius: 16px 16px 0 0; } }
 
 /* Segmented control: a tray with a highlight that slides to the chosen item (placeSlides) */
@@ -824,6 +826,11 @@ body.has-composer main.container { padding-bottom: calc(240px + env(safe-area-in
 .inst-main { flex: 1; min-width: 0; display: grid; line-height: 1.3; }
 .btn.inst-go { min-height: 38px; padding: 0 14px; font-size: .88rem; }
 .inst-x { flex: none; width: 40px; height: 40px; border: 0; background: none; color: var(--muted); font-size: 1rem; cursor: pointer; border-radius: 10px; }
+
+/* Tutorial video: play badge, "New" tag, and the Settings row's outbound arrow */
+.tut-ic { flex: none; width: 36px; height: 36px; border-radius: 10px; display: grid; place-items: center; background: var(--accent-soft); color: var(--accent); }
+.new-tag { display: inline-block; vertical-align: middle; margin-left: 6px; padding: 1px 8px; border-radius: 999px; background: #c62a2f; color: #fff; font-size: .68rem; font-weight: 700; letter-spacing: .03em; text-transform: uppercase; }
+.ext-go { flex: none; color: var(--muted); font-size: 1.05rem; line-height: 1; }
 
 /* Revise mode: one card at a time */
 .rv-prog { height: 5px; border-radius: 3px; background: var(--surface-2); overflow: hidden; margin: 10px 0 14px; }
