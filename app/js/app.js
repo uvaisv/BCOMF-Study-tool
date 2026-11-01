@@ -42,10 +42,12 @@
     { name: "Muhammed Uvais V.", url: "https://uvaisv-portfolio.vercel.app/" }
   ];
   // "More apps" in Settings: the makers' other apps, one card each, opened in a new tab; hidden while empty.
-  // Each entry: { name, tag, blurb, url, icon } — url is the app's https address; icon is a file in icons/
-  // (the Content-Security-Policy allows images only from this site), shown instead of the initials.
+  // Each entry: { name, tag, blurb, url, icon, cta? } — url is the app's https address; icon is a file in icons/
+  // (the Content-Security-Policy allows images only from this site), shown instead of the initials;
+  // cta replaces the "Open <site> ↗" line (for a download page rather than a website).
   const OTHER_APPS = [
-    { name: "CMA Radar", tag: "ICMAI CMA Final and Inter", blurb: "Where the exam marks are in CMA Final and Intermediate papers, the usual paper pattern, and MCQs with ICMAI's answers.", url: "https://cmaradar.vercel.app/", icon: "icons/cmaradar.svg" }
+    { name: "CMA Radar", tag: "ICMAI CMA Final and Inter", blurb: "Where the exam marks are in CMA Final and Intermediate papers, the usual paper pattern, and MCQs with ICMAI's answers.", url: "https://cmaradar.vercel.app/", icon: "icons/cmaradar.svg" },
+    { name: "Kaash", tag: "Expense tracker · Android", blurb: "Log income and expenses, see balances across cash, bank and UPI, and keep track of who owes whom. No sign-up; your data stays on your phone.", url: "https://github.com/shukkoorabdul63-dot/kaash-releases/releases/latest", icon: "icons/kaash.svg", cta: "Get the Android app" }
   ];
   // "Send feedback" in Settings opens the student's mail app; hidden while this is empty.
   const FEEDBACK_EMAIL = "feedback.bcomradar@gmail.com";
@@ -992,7 +994,7 @@ ${html}
       <div class="creators">${OTHER_APPS.map((a) => `
         <a class="card creator" href="${esc(a.url)}" target="_blank" rel="noopener noreferrer">
           ${a.icon ? `<img class="creator-icon" src="${esc(a.icon)}" width="44" height="44" alt="">` : `<span class="creator-av" aria-hidden="true">${esc(a.name.split(/\s+/).map((w) => w[0]).slice(0, 2).join("").toUpperCase())}</span>`}
-          <span class="creator-main"><strong>${esc(a.name)}</strong><span class="muted small">${esc(a.tag)}</span><span class="small">${esc(a.blurb)}</span><span class="small creator-link">Open ${esc(new URL(a.url).host)} ↗</span></span>
+          <span class="creator-main"><strong>${esc(a.name)}</strong><span class="muted small">${esc(a.tag)}</span><span class="small">${esc(a.blurb)}</span><span class="small creator-link">${a.cta ? esc(a.cta) : `Open ${esc(new URL(a.url).host)}`} ↗</span></span>
         </a>`).join("")}
       </div>` : ""}
 
