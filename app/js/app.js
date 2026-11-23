@@ -1131,7 +1131,7 @@ ${html}
         const names = await aiListModels(k);
         store.set("aiKey", k);
         store.set("aiModels", names);
-        if (!names.includes(store.get("aiModel", ""))) store.set("aiModel", aiPickModel(names));
+        if (!names.includes(store.get("aiModel", ""))) { store.set("aiModel", aiPickModel(names)); store.set("aiPinned", false); }
         keyIn.value = "";
         msg.className = "small ok"; msg.textContent = `✓ Your key works. Using ${aiModel()}.`;
         status();
@@ -1141,11 +1141,11 @@ ${html}
       } finally { btn.disabled = false; }
     });
     app.querySelector("#aiRemove").addEventListener("click", () => {
-      store.set("aiKey", ""); store.set("aiModel", ""); store.set("aiModels", []);
+      store.set("aiKey", ""); store.set("aiModel", ""); store.set("aiModels", []); store.set("aiPinned", false);
       msg.className = "small"; msg.textContent = "Key removed from this device.";
       status();
     });
-    modelSel.addEventListener("change", () => store.set("aiModel", modelSel.value));
+    modelSel.addEventListener("change", () => { store.set("aiModel", modelSel.value); store.set("aiPinned", true); });   // chosen by the student: never replaced behind their back
   }
 
   /* ---------- AI study assistant (the student's own Gemini API key) ---------- */
@@ -1183,12 +1183,25 @@ ${html}
       .map((m) => m.name.replace(/^models\//, "")).filter((n) => /^gemini-/.test(n));
   }
   // The newest stable "flash" model: quick, and inside the free tier.
+  const aiVer = (n) => parseFloat((/^gemini-(\d+(?:\.\d+)?)/.exec(n) || [])[1] || 0);
+  const aiStable = (names) => names.filter((n) => /flash/.test(n) && !/lite|preview|exp|image|tts|live|audio|thinking|embed/.test(n))
+    .sort((a, b) => aiVer(b) - aiVer(a) || a.length - b.length);
   function aiPickModel(names) {
-    const ver = (n) => parseFloat((/^gemini-(\d+(?:\.\d+)?)/.exec(n) || [])[1] || 0);
-    const stable = names.filter((n) => /flash/.test(n) && !/lite|preview|exp|image|tts|live|audio|thinking|embed/.test(n))
-      .sort((a, b) => ver(b) - ver(a) || a.length - b.length);
-    return stable[0] || names.find((n) => /flash/.test(n)) || names[0] || AI_DEFAULT_MODEL;
+    return aiStable(names)[0] || names.find((n) => /flash/.test(n)) || names[0] || AI_DEFAULT_MODEL;
   }
+  // When `model` is busy: the newest stable Flash model older than it, from the list saved with the key
+  // (or Google's list, asked once when none is saved). "" when there is none.
+  async function aiOlderModel(key, model) {
+    let names = store.get("aiModels", []);
+    if (!Array.isArray(names) || !names.length) { try { names = await aiListModels(key); } catch (e) { return ""; } }
+    return aiStable(names.filter((n) => typeof n === "string")).find((n) => n !== model && aiVer(n) < aiVer(model)) || "";
+  }
+  const aiPause = (ms, signal) => new Promise((done, stop) => {   // a wait that Stop can cut short
+    const gone = () => stop(new DOMException("Stopped", "AbortError"));
+    if (signal && signal.aborted) return gone();
+    const t = setTimeout(done, ms);
+    if (signal) signal.addEventListener("abort", () => { clearTimeout(t); gone(); }, { once: true });
+  });
 
   // Instructions for the model, plus our notes on the topic so answers match them.
   function aiSystem(ctx) {
@@ -1222,11 +1235,28 @@ ${html}
     });
     const send = (model) => fetch(`${AI_BASE}/models/${encodeURIComponent(model)}:streamGenerateContent?alt=sse`,
       { method: "POST", headers: { "Content-Type": "application/json", "x-goog-api-key": key }, body, signal });
-    let r = await send(aiModel());
-    if (r.status === 404) {   // the saved model was retired: switch to a current one once
-      const model = aiPickModel(await aiListModels(key));
-      store.set("aiModel", model);
+    let model = aiModel(), used = "", busy = "", gone = "";   // used: the model that answered, when it is not the saved one; busy / gone: why
+    let r = await send(model);
+    if (r.status === 404) {   // Google has no such model for this key
+      const pick = aiPickModel(await aiListModels(key));
+      if (pick !== model) {
+        // A model the app picked itself is replaced for good. One the student chose in Settings stays chosen:
+        // only this question is answered by the newest model (and the answer says so).
+        if (store.get("aiPinned", false)) { gone = model; used = pick; } else store.set("aiModel", pick);
+        model = pick;
+        r = await send(model);
+      }
+    }
+    if (r.status >= 500) {   // Google is busy (a new model often is): once more on the same model, then once on an older stable one for this question only
+      await aiPause(1200, signal);
       r = await send(model);
+      if (r.status >= 500) {
+        const older = await aiOlderModel(key, model);
+        if (older) {
+          try { const r2 = await send(older); if (r2.ok) { r = r2; busy = model; used = older; } }
+          catch (e) { if (e.name === "AbortError") throw e; /* any other failure: the busy message below */ }
+        }
+      }
     }
     if (!r.ok) throw await aiError(r);
     const reader = r.body.getReader();
@@ -1252,7 +1282,7 @@ ${html}
       while ((i = buf.indexOf("\n")) >= 0) { take(buf.slice(0, i)); buf = buf.slice(i + 1); }
     }
     take(buf);
-    return { text, finish, blocked };
+    return { text, finish, blocked, used, busy, gone };
   }
 
   // A small Markdown renderer for answers. Everything is escaped first, so the model's
@@ -1383,7 +1413,7 @@ ${html}
     const sugg = app.querySelector("#aiSugg");
     const bubble = (m) => m.role === "user"
       ? `<div class="ai-msg user">${esc(m.text).replace(/\n/g, "<br>")}</div>`
-      : `<div class="ai-msg bot${m.error ? " err" : ""}"><div class="ai-md">${m.error ? esc(m.text) : md(m.text)}</div>${m.text && !m.error ? `<button type="button" class="ai-copy">Copy</button>` : ""}</div>`;
+      : `<div class="ai-msg bot${m.error ? " err" : ""}"><div class="ai-md">${m.error ? esc(m.text) : md(m.text)}</div>${m.note ? `<p class="small muted ai-note">${esc(m.note)}</p>` : ""}${m.text && !m.error ? `<button type="button" class="ai-copy">Copy</button>` : ""}</div>`;
     const render = () => {
       log.innerHTML = chat.map(bubble).join("");
       sugg.hidden = chat.length > 0;
@@ -1442,7 +1472,12 @@ ${html}
           ans.error = true;
           ans.text = res.blocked || res.finish === "SAFETY" ? "The AI declined to answer this. Try rephrasing your question."
             : "No answer came back. Please try again.";
-        } else if (res.finish === "MAX_TOKENS") ans.text += "\n\n*(The answer was cut short — ask “continue” for the rest.)*";
+        } else {
+          if (res.finish === "MAX_TOKENS") ans.text += "\n\n*(The answer was cut short — ask “continue” for the rest.)*";
+          // shown escaped, under the answer
+          if (res.gone) ans.note = `${res.gone} isn't available for your key, so ${res.used} answered. Pick another model in AI settings.`;
+          else if (res.used) ans.note = `Answered with ${res.used} because ${res.busy} was busy.`;
+        }
       } catch (err) {
         if (err.name === "AbortError") { if (!ans.text) { ans.error = true; ans.text = "Stopped."; } }
         else { ans.error = true; ans.text = err.friendly || "Couldn't reach Google's AI service. Check your internet connection and try again."; }
