@@ -1128,12 +1128,13 @@ ${html}
       const btn = e.currentTarget;
       btn.disabled = true; msg.className = "small"; msg.textContent = "Checking the key with Google…";
       try {
-        const names = await aiListModels(k);
+        const names = await aiListModels(k, undefined, (text) => { msg.textContent = text; });
+        if (!names.length) { msg.className = "small bad"; msg.textContent = "Google listed no chat models for this key."; return; }
         store.set("aiKey", k);
         store.set("aiModels", names);
         if (!names.includes(store.get("aiModel", ""))) store.set("aiModel", aiPickModel(names));
         keyIn.value = "";
-        msg.className = "small ok"; msg.textContent = `✓ Your key works. Using ${aiModel()}.`;
+        msg.className = "small ok"; msg.textContent = `✓ Key saved. Selected model: ${aiModel()}.`;
         status();
       } catch (err) {
         msg.className = "small bad";
@@ -1160,25 +1161,62 @@ ${html}
   let aiDraft = null;   // { key, text } handed over from a past-question page
   let aiBusy = null;    // AbortController of the answer being written
 
-  async function aiError(r) {
-    let msg = "";
-    try { const d = await r.json(); msg = (d.error && d.error.message) || ""; } catch (e) { /* not JSON */ }
-    const err = new Error(msg || `HTTP ${r.status}`);
-    err.status = r.status;
-    err.friendly = r.status === 400 && /api key/i.test(msg) ? "Google didn't accept this API key. Copy it again from Google AI Studio and save it in Settings."
-      : r.status === 401 || r.status === 403 ? "This key can't use the Gemini API. Create a key in Google AI Studio and save it in Settings."
-      : r.status === 429 ? "You've reached your free Gemini limit for now. Wait a minute and try again (the daily limit resets the next day)."
-      : r.status === 404 ? "That AI model isn't available for your key."
-      : r.status >= 500 ? "Google's AI service is busy right now. Please try again in a moment."
-      : `The AI service returned an error${msg ? `: ${msg}` : "."}`;
+  function aiError(status, message, model) {
+    const reasons = {
+      401: "Check the saved API key in Settings.",
+      403: "Check this key's Gemini permissions in Google AI Studio.",
+      404: "Choose an available model in AI settings.",
+      429: "Your Gemini project reached a rate or quota limit. Check its limits in Google AI Studio.",
+      500: "Gemini had an internal error. Try again later.",
+      502: "Google's gateway could not reach Gemini. Try again later.",
+      503: "Gemini is temporarily unavailable. Try again later or choose another model in AI settings.",
+      504: "Gemini timed out. Try again or start a new chat with a shorter question."
+    };
+    const err = new Error(message || "Gemini request failed");
+    err.status = status;
+    const reason = status === 400 && /api key/i.test(message) ? "Google did not accept this key. Check it in AI settings."
+      : reasons[status] || message || "Gemini could not complete this request.";
+    err.friendly = [model || "Gemini model list", status, reason].filter(Boolean).join(" · ");
     return err;
   }
 
+  async function aiResponseError(response, model) {
+    const data = await response.json().catch(() => null);
+    const err = aiError(response.status, data?.error?.message, model);
+    const after = response.headers.get("Retry-After");
+    if (after) err.retryAfter = /^\d+$/.test(after) ? Number(after) * 1000 : Date.parse(after) - Date.now();
+    return err;
+  }
+
+  function aiWait(ms, signal) {
+    return new Promise((resolve, reject) => {
+      const abort = () => { clearTimeout(timer); reject(new DOMException("Stopped", "AbortError")); };
+      const timer = setTimeout(() => { signal?.removeEventListener("abort", abort); resolve(); }, ms);
+      if (signal?.aborted) abort();
+      else signal?.addEventListener("abort", abort, { once: true });
+    });
+  }
+
+  async function aiWithRetries(request, signal, onRetry) {
+    for (let attempt = 0; ; attempt++) {
+      try { return await request(); } catch (err) {
+        if (signal?.aborted) throw new DOMException("Stopped", "AbortError");
+        if (err.partial || attempt >= 2 || ![500, 502, 503, 504].includes(err.status)) throw err;
+        const delay = Math.max(1000 * 2 ** attempt + Math.random() * 250, err.retryAfter || 0);
+        if (delay > 10000) throw err;
+        onRetry?.(`Gemini is temporarily unavailable. Retrying (${attempt + 1} of 2)…`);
+        await aiWait(delay, signal);
+      }
+    }
+  }
+
   // Gemini models this key can use for chat.
-  async function aiListModels(key) {
-    const r = await fetch(`${AI_BASE}/models?pageSize=1000`, { headers: { "x-goog-api-key": key } });
-    if (!r.ok) throw await aiError(r);
-    const d = await r.json();
+  async function aiListModels(key, signal, onRetry) {
+    const d = await aiWithRetries(async () => {
+      const r = await fetch(`${AI_BASE}/models?pageSize=1000`, { headers: { "x-goog-api-key": key }, signal });
+      if (!r.ok) throw await aiResponseError(r);
+      return r.json();
+    }, signal, onRetry);
     return (d.models || []).filter((m) => (m.supportedGenerationMethods || []).includes("generateContent"))
       .map((m) => m.name.replace(/^models\//, "")).filter((n) => /^gemini-/.test(n));
   }
@@ -1213,22 +1251,33 @@ ${html}
   }
 
   // Streams an answer; onText gets the whole text so far.
-  async function aiAsk(history, system, onText, signal) {
+  async function aiAsk(history, system, onText, signal, onRetry) {
     const key = aiKey();
     const body = JSON.stringify({
       systemInstruction: { parts: [{ text: system }] },
       contents: history.map((m) => ({ role: m.role, parts: [{ text: m.text }] })),
       generationConfig: { temperature: 0.4 }
     });
-    const send = (model) => fetch(`${AI_BASE}/models/${encodeURIComponent(model)}:streamGenerateContent?alt=sse`,
-      { method: "POST", headers: { "Content-Type": "application/json", "x-goog-api-key": key }, body, signal });
-    let r = await send(aiModel());
-    if (r.status === 404) {   // the saved model was retired: switch to a current one once
-      const model = aiPickModel(await aiListModels(key));
-      store.set("aiModel", model);
-      r = await send(model);
+    const send = (model) => aiWithRetries(async () => {
+      const r = await fetch(`${AI_BASE}/models/${encodeURIComponent(model)}:streamGenerateContent?alt=sse`,
+        { method: "POST", headers: { "Content-Type": "application/json", "x-goog-api-key": key }, body, signal });
+      if (!r.ok) throw await aiResponseError(r, model);
+      return aiReadStream(r, model, onText);
+    }, signal, onRetry);
+    const model = aiModel();
+    try { return await send(model); } catch (err) {
+      if (err.status !== 404 || err.partial || signal.aborted) throw err;
+      const names = await aiListModels(key, signal, onRetry);
+      store.set("aiModels", names);
+      const available = names.filter((name) => name !== model);
+      if (!available.length) throw err;
+      const replacement = aiPickModel(available);
+      store.set("aiModel", replacement);
+      return send(replacement);
     }
-    if (!r.ok) throw await aiError(r);
+  }
+
+  async function aiReadStream(r, model, onText) {
     const reader = r.body.getReader();
     const dec = new TextDecoder();
     let buf = "", text = "", finish = "", blocked = "";
@@ -1237,6 +1286,7 @@ ${html}
       if (!line.startsWith("data:")) return;
       let d;
       try { d = JSON.parse(line.slice(5)); } catch (e) { return; }
+      if (d.error) throw aiError(d.error.code, d.error.message, model);
       if (d.promptFeedback && d.promptFeedback.blockReason) blocked = d.promptFeedback.blockReason;
       const cand = (d.candidates || [])[0];
       if (!cand) return;
@@ -1244,15 +1294,24 @@ ${html}
       const piece = ((cand.content && cand.content.parts) || []).filter((p) => p.text && !p.thought).map((p) => p.text).join("");
       if (piece) { text += piece; onText(text); }
     };
-    for (;;) {
-      const { value, done } = await reader.read();
-      if (done) break;
-      buf += dec.decode(value, { stream: true });
-      let i;
-      while ((i = buf.indexOf("\n")) >= 0) { take(buf.slice(0, i)); buf = buf.slice(i + 1); }
+    try {
+      for (;;) {
+        const { value, done } = await reader.read();
+        if (done) break;
+        buf += dec.decode(value, { stream: true });
+        let i;
+        while ((i = buf.indexOf("\n")) >= 0) { take(buf.slice(0, i)); buf = buf.slice(i + 1); }
+      }
+      take(buf + dec.decode());
+      if (text && !finish && !blocked) throw aiError(null, "The response stream ended early.", model);
+      return { text, finish, blocked };
+    } catch (err) {
+      err.partial = Boolean(text);
+      await reader.cancel().catch(() => {});
+      throw err;
+    } finally {
+      reader.releaseLock();
     }
-    take(buf);
-    return { text, finish, blocked };
   }
 
   // A small Markdown renderer for answers. Everything is escaped first, so the model's
@@ -1383,7 +1442,7 @@ ${html}
     const sugg = app.querySelector("#aiSugg");
     const bubble = (m) => m.role === "user"
       ? `<div class="ai-msg user">${esc(m.text).replace(/\n/g, "<br>")}</div>`
-      : `<div class="ai-msg bot${m.error ? " err" : ""}"><div class="ai-md">${m.error ? esc(m.text) : md(m.text)}</div>${m.text && !m.error ? `<button type="button" class="ai-copy">Copy</button>` : ""}</div>`;
+      : `<div class="ai-msg bot${m.error ? " err" : ""}"><div class="ai-md">${m.error ? esc(m.text) : md(m.text)}</div>${m.notice ? `<p class="small muted">${esc(m.notice)}</p>` : ""}${m.text && !m.error ? `<button type="button" class="ai-copy">Copy</button>` : ""}</div>`;
     const render = () => {
       log.innerHTML = chat.map(bubble).join("");
       sugg.hidden = chat.length > 0;
@@ -1437,15 +1496,17 @@ ${html}
         const res = await aiAsk(chat.slice(0, -1).filter((m) => !m.error), aiSystem(ctx), (text) => {
           ans.text = text;
           if (!pending) { pending = true; requestAnimationFrame(() => { pending = false; if (last.isConnected) last.innerHTML = md(ans.text); }); }
-        }, aiBusy.signal);
+        }, aiBusy.signal, (text) => { last.textContent = text; });
         if (!res.text) {
           ans.error = true;
           ans.text = res.blocked || res.finish === "SAFETY" ? "The AI declined to answer this. Try rephrasing your question."
             : "No answer came back. Please try again.";
         } else if (res.finish === "MAX_TOKENS") ans.text += "\n\n*(The answer was cut short — ask “continue” for the rest.)*";
       } catch (err) {
-        if (err.name === "AbortError") { if (!ans.text) { ans.error = true; ans.text = "Stopped."; } }
-        else { ans.error = true; ans.text = err.friendly || "Couldn't reach Google's AI service. Check your internet connection and try again."; }
+        const reason = err.name === "AbortError" ? "Stopped."
+          : err.friendly || "Couldn't reach Gemini. Check your internet connection and try again.";
+        if (ans.text) ans.notice = `Answer incomplete. ${reason}`;
+        else { ans.error = true; ans.text = reason; }
       } finally {
         aiBusy = null;
         if (sendBtn.isConnected) { sendBtn.classList.remove("busy"); sendBtn.setAttribute("aria-label", "Send"); render(); }
